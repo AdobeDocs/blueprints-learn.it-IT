@@ -5,7 +5,7 @@ user-guide-description: Le blueprint sono implementazioni ripetibili per risolve
 product: adobe experience platform
 role: Architetto, Sviluppatore, Business Practices
 translation-type: tm+mt
-source-git-commit: af73c0fa0576cd836685824964bade10c0e0110d
+source-git-commit: c867a2956363ae495492a8ad33fd6c2aee9f5f5c
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
    + [Flusso dei dati di Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
-+ Profilo e Audience Activation{#audience-activation}
++ Attivazione pubblico e profilo{#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
    + [Audience Activation anonimo](/help/blueprints/audience-activation/anonymous.md)
    + [Audience Activation online/offline](/help/blueprints/audience-activation/online-offline.md)
@@ -29,18 +29,16 @@ ht-degree: 2%
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
    + [Consolidamento dei dati comportamentali digitali](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
    + [Disflessione chiamata](/help/blueprints/customer-journey-analytics/call-deflect.md)
-+ Scienza dati personalizzata per l&#39;arricchimento del profilo{#data-science}
-   + [Panoramica](/help/blueprints/data-science/overview.md)
-+ Preparazione e acquisizione dei dati{#data-ingestion}
++ Raccolta e preparazione dei dati{#data-ingestion}
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
-+ Esplorazione e reporting dei dati aziendali{#data-exploration}
-   + [Panoramica](/help/blueprints/data-exploration/overview.md)
+   + [Raccolta dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
++ Analisi dei dati e scienza dei dati personalizzata{#data-exploration}
+   + [Panoramica](/help/blueprints/data-insights/overview.md)
+   + [Data Science personalizzato per l&#39;arricchimento del profilo](/help/blueprints/data-insights/data-science.md)
 + Orchestrazione messaggi multicanale{#multi-channel-message-orchestration}
    + [Panoramica](/help/blueprints/multi-channel-message-orchestration/overview.md)
    + [Messaggistica in batch e Experience Platform](/help/blueprints/multi-channel-message-orchestration/batch-messaging.md)
    + [Messaggistica e Experience Platform attivati](/help/blueprints/multi-channel-message-orchestration/triggered-messaging.md)
-+ Raccolta dati Enterprise lato server{#server-side-enterprise-data-collection}
-   + [Panoramica](/help/blueprints/server-side-enterprise-data-collection/overview.md)
 + Personalizzazione web e mobile{#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione web comportamentale](/help/blueprints/web-personalization/behavioral.md)
