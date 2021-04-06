@@ -2,14 +2,14 @@
 title: Blueprint di esperienza digitale
 description: I progetti Digital Experience Blueprint sono implementazioni ripetibili per affrontare strategie e risolvere problemi aziendali consolidati. Accelerano il time-to-value e forniscono un percorso veloce per il successo.
 solution: Experience Platform
+exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 37ef1ea91b3cf83e9ab444fa0f907d4115d0fd24
+source-git-commit: 28915e33bffece1d365803db1b03c0460224dd32
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # Blueprint di esperienza digitale
 
@@ -19,7 +19,7 @@ Ogni Blueprint offre ai clienti Adobi una serie di artefatti che spiegano il pro
 
 ## Novità
 
-* **[Blueprint di Customer Activity Hub](/help/blueprints/customer-activity-hub/overview.md)**
+* **[Blueprint di Customer Activity Hub](/help/blueprints/audience-activation/customer-activity.md)**
 
    *Fornire il contesto per il supporto e le vendite assistito dagli agenti.*
 * **[Blueprint aziendale per l’esplorazione e il reporting dei dati](/help/blueprints/data-exploration/overview.md)**
