@@ -5,9 +5,9 @@ user-guide-description: Le blueprint sono implementazioni ripetibili per risolve
 product: adobe experience platform
 role: Architetto, Sviluppatore, Business Practices
 translation-type: tm+mt
-source-git-commit: 4f952331b25ce0b0941d110976d2a0eda061c4b3
+source-git-commit: af73c0fa0576cd836685824964bade10c0e0110d
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '117'
 ht-degree: 2%
 
 ---
@@ -19,12 +19,12 @@ ht-degree: 2%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
    + [Flusso dei dati di Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
-+ Audience Activation{#audience-activation}
++ Profilo e Audience Activation{#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
    + [Audience Activation anonimo](/help/blueprints/audience-activation/anonymous.md)
    + [Audience Activation online/offline](/help/blueprints/audience-activation/online-offline.md)
-+ Hub attività cliente{#customer-activity-hub}
-   + [Panoramica](/help/blueprints/customer-activity-hub/overview.md)
+   + [Attivazione a destinazioni Enterprise](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + [Hub attività cliente](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
    + [Consolidamento dei dati comportamentali digitali](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
