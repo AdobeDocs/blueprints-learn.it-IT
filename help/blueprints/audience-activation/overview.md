@@ -1,26 +1,26 @@
 ---
-title: Blueprint di profilo e Audience Activation
-description: Distribuisci pubblicità cross-channel attivata dal pubblico con ​ Real-time Customer Data Platform.
+title: Pubblico e attivazione profilo
+description: Offri ai clienti esperienze personalizzate basate su profili e attivate dal pubblico con ​ Real-time Customer Data Platform.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: af73c0fa0576cd836685824964bade10c0e0110d
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
 
-# Blueprint di profilo e Audience Activation
+# Pubblico ed Audience Activation
 
-L’attivazione di profili e tipi di pubblico-primi è la chiave per il successo in un mondo di marketing basato sui dati. Tuttavia, molti marchi continuano a concentrare i loro sforzi sull’attivazione Channel-first, che spesso offre una portata e una personalizzazione incoerenti. Con un approccio di tipo channel-first, ogni canale agisce come un silos in cui la personalizzazione cerca di indirizzare solo i clienti che interagiscono con il marchio su quel canale. Questo approccio non riflette la realtà in cui i clienti interagiscono con i brand in diversi punti di contatto. L’attivazione di Audience-first consente ai brand di collegare le interazioni dei clienti su più canali, per fornire un pubblico centralizzato che può essere attivato su tutti i canali.
+L’attivazione di profili e tipi di pubblico-primi è la chiave per il successo in un mondo di marketing basato sui dati. Tuttavia, molti marchi continuano a concentrare i loro sforzi sull’attivazione Channel-first, che spesso offre una portata e una personalizzazione incoerenti. Con un approccio di tipo channel-first, ogni canale agisce come un silos in cui la personalizzazione cerca di indirizzare solo i clienti che interagiscono con il marchio su quel canale. Questo approccio non riflette la realtà in cui i clienti interagiscono con i brand in diversi punti di contatto. L’attivazione di profili e tipi di pubblico consente ai brand di collegare le interazioni dei clienti su più canali, per fornire un profilo e un pubblico centralizzati che possono essere attivati su tutti i canali.
 
-## Scenari
+## Blueprint
 
-| Scenario | Descrizione | Applicazioni Experience Cloud |
+| Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
 | **[Audience Activation pubblicitario e web anonimo](anonymous.md)** | <ul><li>Puoi indirizzare l’attività ai diversi canali web e pubblicitari per ottenere dati anonimi e comportamentali sui clienti.</li><li>Effettua l’integrazione con i dati del pubblico di terze parti per una maggiore personalizzazione.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
 | **[Online/Offline + Profilo e Audience Activation PII](online-offline.md)** | <ul><li>Attiva destinazioni basate su profili note come provider di posta elettronica, social network e destinazioni pubblicitarie. </li><li>Utilizza gli attributi e gli eventi offline come ordini offline, transazioni, CRM o dati fedeltà insieme al comportamento online per il targeting online e la personalizzazione.</li></ul> | <ul><li>Adobe Experience Platform</li><li> Piattaforma dati cliente in tempo reale</li><li>Adobe Audience Manager (opzionale)</li></ul> |
