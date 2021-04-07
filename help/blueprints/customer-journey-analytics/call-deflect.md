@@ -1,18 +1,18 @@
 ---
-title: Scenario di analisi della deflessione delle chiamate
+title: Blueprint di analisi della deflessione delle chiamate
 description: Analizza il comportamento dei clienti prima che contengano il call center.
 solution: Experience Platform, Customer Journey Analytics
 kt: 7209
+exl-id: 13593c1c-4c58-4b8a-aa6c-7530fd679a14
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-
-# Scenario di analisi del Percorso di riflessione delle chiamate
+# Blueprint di analisi del Percorso di riflessione delle chiamate
 
 Analizza il comportamento di un cliente tra desktop e dispositivi mobili prima che contatta il call center. Identifica le opportunità per migliorare il percorso dei clienti comprendendo quali azioni i clienti tentano di completare, quali contenuti visualizzano e quali termini cercano prima di contattare l’assistenza clienti. Determina i contenuti e gli strumenti self-service che possono essere migliorati per aiutare i clienti a risolvere i problemi senza dover effettuare l’accesso.
 
