@@ -1,21 +1,21 @@
 ---
-title: Blueprint Customer Journey Analytics
+title: Customer Journey Analytics
 description: Unificare e analizzare dati e comportamenti dei clienti in tutto il percorso cliente
 solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
+exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 2%
+source-wordcount: '292'
+ht-degree: 4%
 
 ---
 
+# Customer Journey Analytics
 
-# Blueprint Customer Journey Analytics
-
-Blueprint di Customer Journey Analytics mostra come i marchi possono unificare i dati e il comportamento dei clienti da vari canali di interazione e fonti per creare una visualizzazione basata sul percorso di tutte le interazioni dei clienti. Reporting and analysis può essere eseguito nel servizio applicazione di Customer Journey Analytics per valutare e ottenere informazioni approfondite sui pattern di interazione e comportamento dei clienti.
+Il Customer Journey Analytics mostra come i marchi possono unificare i dati e il comportamento dei clienti da vari canali e fonti di interazione per creare una visualizzazione basata sul percorso di tutte le interazioni dei clienti. Reporting and analysis può essere eseguito nel servizio applicazione di Customer Journey Analytics per valutare e ottenere informazioni approfondite sui pattern di interazione e comportamento dei clienti.
 
 Analisi comuni includono:
 
@@ -25,9 +25,9 @@ Analisi comuni includono:
 * Quali campagne hanno portato alla conversione e ad un maggiore coinvolgimento?
 * Analisi dell’utilizzo degli strumenti per ottimizzare le esperienze self-service
 
-## Scenari
+## Blueprint
 
-| Scenario | Descrizione | Applicazioni Experience Cloud |
+| Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
 | **[Consolidamento dei dati comportamentali digitali](digital-behavioral-data-consolidation.md)** | <ul><li>Avere un’unica vista consolidata del comportamento dei clienti tra vari canali unificando i dati provenienti da varie proprietà web, mobili e offline.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (facoltativo)</li></ul> |
 | **[Deflessione del call center](call-deflect.md)** | <ul><li>Determina quali comportamenti sono più indicativi e generano chiamate assistite da parte dell’agente, raggruppando i dati del Call Center con dati web, mobili e altri dati di interazione.</li><li>Queste informazioni possono quindi essere utilizzate per ottimizzare l’esperienza del cliente e ridurre il percorso delle interazioni assistite dagli agenti tramite contenuti e strumenti ottimizzati per il self-service.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
