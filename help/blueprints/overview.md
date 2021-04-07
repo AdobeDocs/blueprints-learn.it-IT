@@ -4,9 +4,9 @@ description: I progetti Digital Experience Blueprint sono implementazioni ripeti
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 3f27f27159d9fb07124f289164dd85941ec58a25
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Ogni Blueprint offre ai clienti Adobi una serie di artefatti che spiegano il pro
 * **[Blueprint di Customer Activity Hub](/help/blueprints/audience-activation/customer-activity.md)**
 
    *Fornire il contesto per il supporto e le vendite assistito dagli agenti.*
-* **[Blueprint aziendale per l’esplorazione e il reporting dei dati](/help/blueprints/data-insights/overview.md)**
+* **[Blueprint di analisi dei dati e intelligenza](/help/blueprints/data-insights/overview.md)**
 
    *Eseguire query esplorative e analisi dei dati nel lago dati.*
 * **[Blueprint Customer Journey Analytics](/help/blueprints/customer-journey-analytics/overview.md)**
