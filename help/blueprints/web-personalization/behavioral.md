@@ -5,9 +5,9 @@ solution: Experience Platform, Target, Audience Manager, Analytics, Experience C
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,24 @@ Personalizza in base al comportamento online e ai dati sul pubblico.
 
 Per impostazione predefinita, il servizio di condivisione dei segmenti consente di condividere un massimo di 75 tipi di pubblico per ciascuna suite di rapporti di Adobe Analytics. Se per la condivisione di tipi di pubblico viene utilizzato un Audience Manager, non vi è alcun limite al numero di tipi di pubblico che possono essere condivisi. 
 
+## Modelli di implementazione
+
+Il modello di personalizzazione web/mobile può essere implementato tramite i seguenti approcci come descritto di seguito.
+
+1. Utilizzo di Platform Web SDK/Mobile SDK e Edge Network.
+1. Utilizzo di SDK tradizionali specifici per le applicazioni (ad esempio, AppMeasurement.js)
+
+### 1. Piattaforma SDK per web/dispositivi mobili e approccio Edge
+
+<img src="assets/websdkflow.svg" alt="Architettura di riferimento per l’SDK per web Platform/Mobile e l’approccio di rete Edge" style="border:1px solid #4a4a4a" />
+
+### 2. Approccio SDK specifico per l’applicazione
+
+<img src="assets/appsdkflow.png" alt="Architettura di riferimento per l’approccio SDK specifico per l’applicazione" style="border:1px solid #4a4a4a" />
+
+
+
+
 ## Prerequisiti per l’implementazione
 
 | Applicazione/Servizio | Libreria richiesta | Note |
@@ -65,21 +83,6 @@ Per impostazione predefinita, il servizio di condivisione dei segmenti consente 
 1. [Richiedi il provisioning per i servizi di condivisione delle persone e del pubblico (tipi di pubblico condivisi)](https://www.adobe.com/go/audiences)
 1. Crea segmenti in [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) o [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html) e [configura tali tipi di pubblico per la condivisione nell&#39;Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html) (se utilizzi Audience Manager o Adobe Analytics)
 1. Una volta che i tipi di pubblico sono disponibili in Adobe Target, possono essere utilizzati per [eseguire il targeting delle esperienze con Adobe Target](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)
-
-
-## Implementazione dei diagrammi del flusso di dati
-
-Il Blueprint di personalizzazione web/mobile può essere implementato utilizzando l’SDK per web di Platform o Mobile e la rete Edge, oppure utilizzando gli SDK tradizionali specifici per le applicazioni (ad esempio, AppMeasurement.js).
-
-### Piattaforma Web/Mobile SDK e approccio alla rete Edge
-
-<img src="assets/websdkflow.svg" alt="Architettura di riferimento per l’SDK per web Platform/Mobile e l’approccio di rete Edge" style="border:1px solid #4a4a4a" />
-
-
-### Approccio SDK specifico per l&#39;applicazione
-
-<img src="assets/appsdkflow.png" alt="Architettura di riferimento per l’approccio SDK specifico per l’applicazione" style="border:1px solid #4a4a4a" />
-
 
 ## Documentazione correlata
 
