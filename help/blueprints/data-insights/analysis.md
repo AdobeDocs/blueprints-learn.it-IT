@@ -6,9 +6,9 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: 77ddc003d4328074ad269de5837a02f5e6d6add5
+source-git-commit: cd98c46d948af9026449c947496df82fd1be6718
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,6 @@ Alcune protezioni si applicano al timeout della query e alla quantità di dati i
 ## Applicazioni
 
 * Adobe Experience Platform
-
-## Scenari
-
-| Scenario | Descrizione | Applicazioni/servizi Experience Cloud |
-|---|---|---|
-| **Esplorazione dei dati - query non elaborata dei dati** | <ul><li>Scrivi ed esegui query SQL nel data lake utilizzando l&#39;interfaccia utente di query interattiva o un client SQL connesso. Data Science Workspace può anche essere utilizzato per eseguire query e ottenere informazioni dai dati non elaborati in Experience Platform.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
-| **Dashboard aziendale** | <ul><li>Collega gli strumenti di Business Intelligence ad Experience Platform per visualizzare i dati per il dashboarding e i casi d’uso di reporting.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
 ## Architettura
 
