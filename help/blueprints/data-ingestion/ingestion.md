@@ -6,9 +6,9 @@ kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1,5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: 77ddc003d4328074ad269de5837a02f5e6d6add5
+source-git-commit: cd98c46d948af9026449c947496df82fd1be6718
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Il piano di preparazione e acquisizione dei dati include tutti i metodi con cui i dati possono essere preparati e acquisiti in Adobe Experience Platform.
 
-La preparazione dei dati include la mappatura dei dati di origine allo schema Experience Data Model (XDM). Include inoltre l’esecuzione di trasformazioni sui dati, tra cui la formattazione della data, la suddivisione/concatenazione/conversioni dei campi e l’unione/l’unione/il reinserimento dei record. La preparazione dei dati consente di unificare i dati dei clienti per fornire analisi aggregate/filtrate, compresi i rapporti o la preparazione dei dati per l’assemblaggio del profilo cliente/scienza/attivazione dei dati.
+La preparazione dei dati include la mappatura dei dati di origine sullo schema Experience Data Model (XDM). Include inoltre l’esecuzione di trasformazioni sui dati, tra cui la formattazione della data, la suddivisione/concatenazione/conversioni dei campi e l’unione/l’unione/il reinserimento dei record. La preparazione dei dati consente di unificare i dati dei clienti per fornire analisi aggregate/filtrate, compresi i rapporti o la preparazione dei dati per l’assemblaggio del profilo cliente/scienza/attivazione dei dati.
 
 ## Architettura
 
