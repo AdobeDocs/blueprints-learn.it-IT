@@ -5,29 +5,22 @@ solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
 translation-type: tm+mt
-source-git-commit: 7a097d7579d0e217ee5c6b469856bf786b17e6cb
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 # Progettazione dati personalizzata per la blueprint di arricchimento dei profili
 
-Questo Blueprint mostra come i dati in Adobe Experience Platform vengono utilizzati da Data Science Workspace per addestrare, implementare e valutare modelli per fornire informazioni sull&#39;apprendimento automatico. Questi modelli possono essere inviati direttamente a un set di dati abilitato per Profilo cliente in tempo reale. Esempi di informazioni sull’apprendimento automatico includono il valore del ciclo di vita, l’affinità tra prodotti e categorie, la propensione alla conversione o la propensione all’abbandono.
+La blueprint di Custom Data Science for Profile Enrichment illustra come i dati in Adobe Experience Platform possono essere utilizzati in Data Science Workspace per addestrare, implementare e valutare modelli per fornire informazioni sull’apprendimento automatico. Questi modelli possono essere inviati direttamente a un set di dati abilitato per Profilo cliente in tempo reale per arricchire ulteriormente i profili dei clienti. Queste informazioni possono quindi essere utilizzate per la personalizzazione. Esempi di informazioni sull’apprendimento automatico includono il punteggio del valore del ciclo di vita, l’affinità tra prodotti e categorie, la propensione alla conversione o la propensione all’abbandono.
 
 ## Casi d&#39;uso
 
 * Estrarre informazioni approfondite e individuare i pattern dai dati dei clienti in Experience Platform. Treni e modelli di punteggio da questi dati.
-* Arricchisci il Profilo del cliente in tempo reale con informazioni e attributi basati su modelli per una personalizzazione più granulare e un&#39;ottimizzazione ottimizzata dei percorsi.
+* Arricchisci il Profilo del cliente in tempo reale con approfondimenti e attributi basati su modelli per una personalizzazione più granulare e percorsi ottimizzati.
 * Modelli di formazione e punteggio per determinare le informazioni sui clienti, ad esempio il valore del ciclo di vita del cliente, la propensione alla conversione o al abbandono, le affinità di prodotti e contenuti e i punteggi di coinvolgimento.
-
-## Scenari
-
-| Scenario | Descrizione dello scenario | Applicazioni Experience Cloud |
-|---|---|---|
-| Scienza dei dati esplorativi | <ul><li>Scopri segnali, completezza, correttezza dei dati</li><li>Scopri nuove informazioni utilizzando gli strumenti di scienza dei dati</li></ul> | <ul><li>Experience Platform Intelligence</li></ul> |
-| Arricchimento del profilo con AI/ML<br> - batch | <ul><li>Scopri, autore, formazione, implementazione, valutazione e operazionalizzazione dei modelli.</li><li>Previsione del modello push al profilo o al data lake per l&#39;attivazione basata su batch.</li></ul> | <ul><li>Experience Platform Intelligence</li></ul> |
 
 ## Architettura
 
