@@ -6,18 +6,18 @@ kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: f5d8b3fea11df0ffaeb59f0b53e93d76426ef252
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
 # Raccolta e preparazione dei dati
 
-Raccolta e preparazione dei dati include tutti i metodi con cui i dati possono essere preparati e acquisiti in Adobe Experience Platform. Oltre alla possibilità di raccogliere i dati su Adobe Experience Platform Edge Network per l’inoltro lato server alle destinazioni aziendali.
+Raccolta e preparazione dei dati include tutti i metodi con cui i dati possono essere preparati e acquisiti in Adobe Experience Platform. Oltre alla possibilità di raccogliere dati su Adobe Experience Platform Edge Network e il successivo inoltro di dati tramite l’inoltro lato a destinazioni aziendali.
 
-La preparazione dei dati include la mappatura dei dati di origine allo schema Experience Data Model (XDM). Include inoltre l’esecuzione di trasformazioni sui dati, tra cui la formattazione della data, la suddivisione/concatenazione/conversioni dei campi e l’unione/l’unione/il reinserimento dei record. La preparazione dei dati consente di unificare i dati dei clienti per fornire analisi aggregate/filtrate, compresi i rapporti o la preparazione dei dati per l’assemblaggio del profilo cliente/scienza/attivazione dei dati.
+La preparazione dei dati include la mappatura dei dati di origine sullo schema Experience Data Model (XDM). Include inoltre l’esecuzione di trasformazioni sui dati, tra cui la formattazione della data, la suddivisione/concatenazione/conversioni dei campi e l’unione/l’unione/il reinserimento dei record. La preparazione dei dati consente di unificare i dati dei clienti per fornire analisi aggregate/filtrate, compresi i rapporti o la preparazione dei dati per l’assemblaggio del profilo cliente/scienza/attivazione dei dati.
 
 ## Blueprint
 
