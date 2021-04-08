@@ -6,7 +6,7 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -14,7 +14,6 @@ ht-degree: 0%
 ---
 
 # Personalizzazione web e mobile
-
 
 La personalizzazione web e mobile si occupa della possibilità di utilizzare la segmentazione del pubblico in più applicazioni per personalizzare e ottimizzare le esperienze dei clienti. Puoi utilizzare i comportamenti dei clienti, i dati demografici, il livello di fedeltà e le transazioni precedenti per personalizzare layout, azioni di invito all’azione e contenuti.
 
