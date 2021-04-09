@@ -5,9 +5,9 @@ solution: Experience Platform, Target, Audience Manager, Analytics, Experience C
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 translation-type: tm+mt
-source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
+source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -88,15 +88,15 @@ Il modello di personalizzazione web/mobile può essere implementato tramite i se
 
 * [Tipi di pubblico di Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 * [Integrare Audience Manager con Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
-* [Condivisione dei segmenti di Adobe Analytics tramite AAM](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
+* [Condivisione dei segmenti di Adobe Analytics tramite Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
 
 
 ## Post di blog correlati
 
-* [Blueprint per la personalizzazione web utilizzando il profilo cliente in tempo reale di Adobe Experience Platform](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
-* [Integrazione di Adobe Experience Platform Decisioning Engine con AEM siti web](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
-* [In che modo Adobe Experience Platform Predictive Audiences migliora le esperienze personalizzate](https://medium.com/adobetech/how-adobe-experience-platform-predictive-audiences-improves-personalized-experiences-1f75a60cb7a3)
-* [Adobe Experience Platform Web SDK per Gestione dell&#39;audience](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
-* [Implementazione del profilo cliente in tempo reale di Adobe Experience Platform tramite il nostro programma &quot;Zero cliente&quot;](https://medium.com/adobetech/implementing-adobe-experience-platform-real-time-customer-profile-through-our-customer-zero-32e7cd952896)
-* [In che modo Adobe Experience Platform può aiutare i clienti a personalizzare la messaggistica mobile in tempo reale con Journey Orchestration Service e un fornitore di messaggistica mobile](https://medium.com/adobetech/how-adobe-experience-platform-helped-a-client-personalize-their-mobile-messaging-in-real-time-with-7d634aefa098)
-* [Segmentazione in secondi: Realtà dei profili cliente in tempo reale grazie a Adobe Experience Platform](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)
+* [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
+* [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
+* [[!DNL How Adobe Experience Platform Predictive Audiences improves Personalized Experiences]](https://medium.com/adobetech/how-adobe-experience-platform-predictive-audiences-improves-personalized-experiences-1f75a60cb7a3)
+* [[!DNL Adobe Experience Platform Web SDK for Audience Management]](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
+* [[!DNL Implementing Adobe Experience Platform Real-Time Customer Profile through our “Customer Zero” Program]](https://medium.com/adobetech/implementing-adobe-experience-platform-real-time-customer-profile-through-our-customer-zero-32e7cd952896)
+* [[!DNL How Adobe Experience Platform Can Help Customers Personalize Their Mobile Messaging in Real-Time with Journey Orchestration Service and a Mobile Messaging Vendor]](https://medium.com/adobetech/how-adobe-experience-platform-helped-a-client-personalize-their-mobile-messaging-in-real-time-with-7d634aefa098)
+* [[!DNL Segmentation in Seconds: How Adobe Experience Platform Made Real-time Customer Profiles a Reality]](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)
