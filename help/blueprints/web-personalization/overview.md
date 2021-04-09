@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
+source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ La personalizzazione web e mobile si occupa della possibilità di utilizzare la 
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
-| **[Personalizzazione comportamentale](behavioral.md)** | <ul><li>Personalizzare in base al comportamento online e ai dati sul pubblico</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(facoltativo)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
-| **[Personalizzazione web online/offline](online-offline.md)** | <ul><li>Personalizza con attributi ed eventi offline (transazioni, prenotazioni, CRM e dati fedeltà).</li><li>Sincronizza la personalizzazione tra web, e-mail e altri canali noti.</li></ul> | <ul><li>[!UICONTROL Piattaforma dati cliente in tempo reale]</li><li>Adobe Target</li><li>Adobe Analytics *(facoltativo)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
+| **[Personalizzazione web/mobile comportamentale](behavioral.md)** | <ul><li>Personalizzare in base al comportamento online e ai dati sul pubblico</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(facoltativo)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
+| **[Personalizzazione online/offline Web/mobile](online-offline.md)** | <ul><li>Personalizza con attributi ed eventi offline (transazioni, prenotazioni, CRM e dati fedeltà).</li><li>Sincronizza la personalizzazione tra web, e-mail e altri canali noti.</li></ul> | <ul><li>[!UICONTROL Piattaforma dati cliente in tempo reale]</li><li>Adobe Target</li><li>Adobe Analytics *(facoltativo)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
 
 ## Post di blog correlati
 
