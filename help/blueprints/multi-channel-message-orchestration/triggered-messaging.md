@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: 2404d871a852df8fed3adb97a79cc15e994db762
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform com
 1. Crea qualsiasi namespace specifico per il cliente.
 1. Aggiungi identità agli schemi.
 1. Abilita schemi e set di dati per il profilo.
-1. Imposta le regole di unione per le diverse visualizzazioni di Profilo cliente in tempo reale (facoltativo).
+1. Imposta le regole di unione per le diverse visualizzazioni di [!UICONTROL Profilo cliente in tempo reale] (facoltativo).
 1. Crea segmenti per l’utilizzo della campagna.
 
 #### Origini/Destinazioni
