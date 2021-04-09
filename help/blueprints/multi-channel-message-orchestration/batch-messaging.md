@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
+source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Esegui campagne di messaggistica pianificate e batch utilizzando Adobe Experienc
 
 ## Architettura
 
-<img src="assets/aepbatch.svg" alt="Architettura di riferimento per lo scenario Messaggistica in batch e Adobe Experience Platform" style="border:1px solid #4a4a4a" />
+<img src="assets/aepbatch.svg" alt="Architettura di riferimento per la messaggistica in batch e la blueprint Adobe Experience Platform" style="border:1px solid #4a4a4a" />
 
 ## Guardrail
 
@@ -69,7 +69,7 @@ Esegui campagne di messaggistica pianificate e batch utilizzando Adobe Experienc
 1. Crea qualsiasi namespace specifico per il cliente.
 1. Aggiungi identità agli schemi.
 1. Abilita schemi e set di dati per il profilo.
-1. Imposta le regole di unione per le diverse visualizzazioni di Profilo cliente in tempo reale (facoltativo).
+1. Imposta le regole di unione per le diverse visualizzazioni di [!UICONTROL Profilo cliente in tempo reale] (facoltativo).
 1. Crea segmenti per l’utilizzo della campagna.
 
 #### Origini / Destinazioni
