@@ -1,20 +1,20 @@
 ---
 title: Messaggi attivati e blueprint Adobe Experience Platform
-description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale streaming dati, profili cliente e segmentazione.
+description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale di dati in streaming, profili cliente e segmentazione.
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 2404d871a852df8fed3adb97a79cc15e994db762
+source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '607'
 ht-degree: 1%
 
 ---
 
 # Messaggi attivati e blueprint Adobe Experience Platform
 
-Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale streaming dati, profili cliente e segmentazione.
+Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale di dati in streaming, profili cliente e segmentazione.
 
 ## Casi d&#39;uso
 
@@ -25,7 +25,7 @@ Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform com
 
 ## Architettura
 
-<img src="assets/triggered.svg" alt="Architettura di riferimento per lo scenario di messaggistica attivata e Adobe Experience Platform" style="border:1px solid #4a4a4a" />
+<img src="assets/triggered.svg" alt="Architettura di riferimento per la blueprint Adobe Experience Platform e la messaggistica attivata" style="border:1px solid #4a4a4a" />
 
 ## Modelli di integrazione
 
