@@ -6,9 +6,9 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: cd98c46d948af9026449c947496df82fd1be6718
+source-git-commit: 9a5137c5e71946c258cb94188ee53d742396d361
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 L’analisi e l’intelligenza dei dati comprende la possibilità all’interno di Adobe Experience Platform di eseguire query esplorative e analisi dei dati esistenti nel data lake.
 
-Il servizio Query di Experience Platform consente l&#39;esecuzione di query SQL sui dati. Data Science Workspace consente l’esplorazione dei dati, la scienza dei dati e i carichi di lavoro di apprendimento automatico da eseguire sui dati.
+Il Experience Platform [!UICONTROL Query Service] consente l&#39;esecuzione di query SQL sui dati. [!UICONTROL Data Science ] Workspaceconsente l’esplorazione dei dati, la scienza dei dati e i carichi di lavoro di apprendimento automatico da eseguire sui dati.
 
-Inoltre, Experience Platform consente connessioni con client SQL di terze parti, interfacce e strumenti di Business Intelligence (BI) per connettersi, accedere ed eseguire query dirette ai dati all&#39;interno di Experience Platform, utilizzando il protocollo PostgreSQL.
+Inoltre, Experience Platform consente connessioni con client SQL di terze parti, interfacce e strumenti di Business Intelligence (BI) per connettersi, accedere ed eseguire query dirette ai dati all&#39;interno di Experience Platform, utilizzando il protocollo [!DNL PostgreSQL].
 
 Alcune protezioni si applicano al timeout della query e alla quantità di dati inclusi nel risultato della query, come indicato nei dettagli dello scenario.
 
@@ -47,10 +47,10 @@ Alcune protezioni si applicano al timeout della query e alla quantità di dati i
 
 1. Configura set di dati e schemi per l’inserimento dei dati nel data lake.
 1. Acquisisci dati.
-1. Conferma che i dati siano disponibili per Query Service e Data Science Workspace per l’accesso e la query non elaborati.
-1. Collegare gli strumenti di Business Intelligence e i client SQL a Query Service per visualizzazione, query dei dati e esplorazione.
+1. Conferma che i dati siano disponibili per [!UICONTROL Query Service] e [!UICONTROL Data Science Workspace] per l&#39;accesso e la query non elaborati.
+1. Connetti gli strumenti di Business Intelligence e i client SQL a [!UICONTROL Query Service] per visualizzazione, query dei dati e esplorazione.
 
 ## Documentazione correlata
 
 * [Descrizione del prodotto Adobe Experience Platform Intelligence](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Documentazione del servizio query](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
+* [[!UICONTROL Query ] ServiceDocumentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
