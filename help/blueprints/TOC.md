@@ -1,18 +1,18 @@
 ---
-user-guide-title: Blueprint di esperienza digitale
+user-guide-title: Blueprint per esperienze digitali
 breadcrumb-title: 'Blueprint '
 user-guide-description: Le blueprint sono implementazioni ripetibili per risolvere problemi aziendali consolidati e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
 translation-type: tm+mt
-source-git-commit: f5d8b3fea11df0ffaeb59f0b53e93d76426ef252
+source-git-commit: 04fa7c1f111a27e782d4a70282f51397a096b46c
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 2%
+source-wordcount: '115'
+ht-degree: 25%
 
 ---
 
-# Blueprint di esperienza digitale {#architecture}
+# Blueprint per esperienze digitali  {#architecture}
 
 + [Panoramica](/help/blueprints/overview.md)
 + Diagrammi di panoramica dell&#39;architettura{#architecture-overview}
@@ -31,7 +31,7 @@ ht-degree: 2%
    + [Disflessione chiamata](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + Raccolta e preparazione dei dati{#data-ingestion}
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
-   + [Acquisizione dei dati e preparazione all’Experience Platform](/help/blueprints/data-ingestion/ingestion.md)
+   + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
    + [Raccolta dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
 + Analisi dei dati, intelligenza e AI/ML{#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
@@ -43,6 +43,6 @@ ht-degree: 2%
    + [Messaggistica e Experience Platform attivati](/help/blueprints/multi-channel-message-orchestration/triggered-messaging.md)
 + Personalizzazione web e mobile{#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
-   + [Personalizzazione web comportamentale](/help/blueprints/web-personalization/behavioral.md)
-   + [Personalizzazione web online/offline](/help/blueprints/web-personalization/online-offline.md)
+   + [Personalizzazione comportamentale](/help/blueprints/web-personalization/behavioral.md)
+   + [Personalizzazione online/offline](/help/blueprints/web-personalization/online-offline.md)
 
