@@ -6,9 +6,9 @@ kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1,5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
+source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -41,12 +41,9 @@ La preparazione dei dati include la mappatura dei dati di origine sullo schema E
 | Metodi di preparazione dei dati | Descrizione |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [!UICONTROL Data Science Workspace]  - Preparazione dei dati | Trasformazione guidata da un modello, trasformazione scriptata.<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) |
->[!NOTE]
->
->| Strumento ETL esterno ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica] e così via) | Esegui trasformazioni complesse in strumenti ETL e utilizza API o connettori standard di origine Experience Platform per acquisire i dati risultanti.                                                                                                                                                               |
-
-| [!UICONTROL Servizio query] - Preparazione dati                                  | Join, Splits, Merge, Transform, Query e Filter in un nuovo set di dati. Utilizzo di Crea tabella come selezione (CTAS) <br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en#sql)                                                                       |
-| Funzioni mappatore XDM e preparazione dati (streaming e batch)     | Mappatura gli attributi di origine in formato CSV o JSON in attributi XDM durante l’acquisizione di Experienci Platform.<br>funzioni di calcolo sui dati durante l’acquisizione; ovvero formattazione dei dati, suddivisione, concatenazione e così via.<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) |
+| Strumento ETL esterno ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica] e così via) | Esegui trasformazioni complesse negli strumenti ETL e utilizza le API standard [!UICONTROL Servizio di flusso] o i connettori sorgente per acquisire i dati risultanti. |
+| [!UICONTROL Servizio query]  - Preparazione dati | Unisce, divide, unisce, trasforma, Query e filtra dati in un nuovo set di dati. Utilizzo di Crea tabella come selezione (CTAS) <br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en#sql) |
+| Funzioni mappatore XDM e preparazione dati (streaming e batch) | Mappa gli attributi di origine in formato CSV o JSON in attributi XDM durante l’acquisizione di Experienci Platform.<br>funzioni di calcolo sui dati durante l’acquisizione; ovvero formattazione dei dati, suddivisione, concatenazione e così via.<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) |
 
 ## Post di blog correlati
 
