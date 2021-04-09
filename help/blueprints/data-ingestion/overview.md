@@ -6,9 +6,9 @@ kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
+source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ La preparazione dei dati include la mappatura dei dati di origine sullo schema E
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
-| **[Preparazione e acquisizione dei dati in Experience Platform](ingestion.md)** | <ul><li>Il piano di preparazione e acquisizione dei dati include tutti i metodi con cui i dati possono essere preparati e acquisiti in Adobe Experience Platform.</ul></li> | <ul><li> Adobe Experience Platform </ul></li> |
-| **[Server Side Forwarding - Raccolta Enterprise](server-side-collection.md)** | <ul><li>Attiva destinazioni basate su profili note come provider di posta elettronica, social network e destinazioni pubblicitarie. </li><li>Utilizza gli attributi e gli eventi offline come ordini offline, transazioni, CRM o dati fedeltà insieme al comportamento online per il targeting online e la personalizzazione.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Piattaforma dati cliente in tempo reale]</li><li>Adobe Audience Manager (opzionale)</li></ul> |
+| **[Preparazione e acquisizione dei dati](ingestion.md)** | <ul><li>Il piano di preparazione e acquisizione dei dati include tutti i metodi con cui i dati possono essere preparati e acquisiti in Adobe Experience Platform.</ul></li> | <ul><li> Adobe Experience Platform </ul></li> |
+| **[Raccolta dati aziendali lato server](server-side-collection.md)** | <ul><li>Attiva destinazioni basate su profili note come provider di posta elettronica, social network e destinazioni pubblicitarie. </li><li>Utilizza gli attributi e gli eventi offline come ordini offline, transazioni, CRM o dati fedeltà insieme al comportamento online per il targeting online e la personalizzazione.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Piattaforma dati cliente in tempo reale]</li><li>Adobe Audience Manager (opzionale)</li></ul> |
