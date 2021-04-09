@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Esegui campagne di messaggistica pianificate e batch utilizzando Adobe Experienc
 * Campaign è l’origine della verità per tutti i profili attivi, il che significa che i profili devono esistere in Campaign e che i nuovi profili non devono essere creati in base ai segmenti di Experience Platform.
 * La realizzazione dell’appartenenza al segmento da Experience Platform è latente sia per il batch (1 al giorno) che per lo streaming (5 minuti)
 
-**Condivisione dei segmenti in tempo reale di Customer Data Platform nella campagna:**
+**[!UICONTROL Condivisione dei segmenti di Customer Data ] Platform in tempo reale per la campagna:**
 
 * Raccomandazione di un limite di 20 segmenti
 * L&#39;attivazione è limitata a ogni 24 ore
