@@ -4,18 +4,16 @@ description: I progetti Digital Experience Blueprint sono implementazioni ripeti
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 652f8d2cab997418aa8752d3d2c80f715ef6a85c
+source-git-commit: b5b2fff60678a9a36ffffd0a2bf22c8f76573a3e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '265'
+ht-degree: 2%
 
 ---
 
 # Blueprint per esperienze digitali
 
-I progetti Digital Experience Blueprint sono implementazioni ripetibili per affrontare strategie e risolvere problemi aziendali consolidati. Le blueprint accelerano il time-to-value e forniscono un percorso veloce per il successo.
-
-Ogni Blueprint offre ai clienti Adobi una serie di artefatti che spiegano il problema aziendale di alto valore, le architetture, le fasi di implementazione, le considerazioni tecniche e i collegamenti alla documentazione pertinente.
+I progetti Digital Experience Blueprint sono implementazioni ripetibili che ti permettono di affrontare la strategia e risolvere rapidamente i problemi aziendali esistenti. Ogni Blueprint fornisce una serie di artefatti che spiegano il problema aziendale di alto valore, le architetture, le fasi di implementazione, le considerazioni tecniche e i collegamenti alla documentazione pertinente.
 
 ## Novità
 
