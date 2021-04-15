@@ -5,18 +5,16 @@ solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
 translation-type: tm+mt
-source-git-commit: a63da7d5da3038cf66b5f2c99e117d4aa5b21cc1
+source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
 
 # Attivazione di tipi di pubblico e profili alla blueprint delle destinazioni Enterprise
 
-Replica e aggiornamento delle modifiche di profilo e pubblico negli archivi di dati aziendali per casi di attivazione e reporting. <!-- This sentence is difficult to mentally process because there's no verb. Describe what the customer can do with this feature. The first paragraph on a page should not be an abstract description.-->
-
-Avvia un&#39;azione di vendita o supporto al cliente tramite la notifica di un&#39;azione del cliente da [!UICONTROL Real-time Customer Data Platform] ai sistemi e alle applicazioni aziendali. <!-- What kinds of sales or support actions? You might add a "For example...." The content in these blueprints should be more simple and friendly.-->
+Condividi modifiche ed eventi di profilo e pubblico in streaming o in batch da [!UICONTROL Real-time Customer Data Platform] agli archivi dati e alle applicazioni aziendali. Questi eventi di profilo e pubblico possono essere utilizzati per avviare un&#39;azione di vendita o supporto al cliente, ad esempio per dare seguito a un processo di applicazione abbandonato o a una registrazione di un webinar oppure per aggiornare le applicazioni aziendali con gli attributi e le informazioni più recenti del cliente da [!UICONTROL Real-time Customer Data Platform].
 
 ## Casi d&#39;uso
 
@@ -49,7 +47,7 @@ Una volta al giorno o avviato manualmente tramite API.
 
 ## Passaggi di implementazione
 
-1. Creare schemi per i dati da acquisire. <!-- Cross-references to these topics would be helpful -->
+1. Creare schemi per i dati da acquisire.
 1. Crea set di dati per i dati da acquisire.
 1. Configura le identità e gli spazi dei nomi di identità corretti sullo schema per assicurarti che i dati acquisiti possano essere uniti in un profilo unificato.
 1. Abilita gli schemi e i set di dati per l’elaborazione dei profili.
