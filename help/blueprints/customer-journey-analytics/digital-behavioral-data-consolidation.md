@@ -1,18 +1,18 @@
 ---
-title: Blueprint di consolidamento dei dati comportamentali digitali
-description: Analizza ed estrae informazioni dalle interazioni dei clienti nel percorso di clienti.
+title: Analisi Percorso cross-channel
+description: Analizza ed estrai informazioni dalle interazioni dei clienti lungo l’intero percorso del cliente.
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
+source-wordcount: '568'
+ht-degree: 2%
 
 ---
 
-# Blueprint di consolidamento dei dati comportamentali digitali
+# Blueprint di analisi dei Percorsi cross-channel
 
 Avere un’unica vista consolidata del comportamento dei clienti tra vari canali unificando i dati provenienti da varie proprietà web, mobili e offline.
 
