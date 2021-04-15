@@ -5,10 +5,10 @@ user-guide-description: Le blueprint sono implementazioni ripetibili per risolve
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 04fa7c1f111a27e782d4a70282f51397a096b46c
+source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 25%
+ht-degree: 33%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 25%
    + [Hub attività cliente](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
-   + [Consolidamento dei dati comportamentali digitali](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
+   + [Analisi Percorso cross-channel](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
    + [Disflessione chiamata](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + Raccolta e preparazione dei dati{#data-ingestion}
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
