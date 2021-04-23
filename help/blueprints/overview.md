@@ -1,13 +1,13 @@
 ---
 title: Blueprint per esperienze digitali
-description: I progetti Digital Experience Blueprint sono implementazioni ripetibili per affrontare strategie e risolvere problemi aziendali consolidati. Accelerano il time-to-value e forniscono un percorso veloce per il successo.
+description: I blueprint per esperienze digitali sono implementazioni ripetibili che permettono di risolvere questioni di strategia e problemi di business noti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
 source-git-commit: b5b2fff60678a9a36ffffd0a2bf22c8f76573a3e
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 2%
+ht-degree: 37%
 
 ---
 
@@ -20,12 +20,12 @@ I progetti Digital Experience Blueprint sono implementazioni ripetibili che ti p
 * **[Attivazione di tipi di pubblico e profili alla blueprint delle destinazioni Enterprise](/help/blueprints/audience-activation/enterprise-destinations.md)**
 
    *Tieni i profili dei clienti aggiornati su tutti i sistemi per abilitare i team di vendita e supporto. &#x200B;*
-* **[Blueprint di Customer Activity Hub](/help/blueprints/audience-activation/customer-activity.md)**
+* **[Blueprint per hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)**
 
-   *Fornire il contesto per il supporto e le vendite assistito dagli agenti.*
+   *Fornire un contesto per il supporto e le vendite assistiti dagli agenti.*
 * **[Blueprint di analisi dei dati e intelligenza](/help/blueprints/data-insights/analysis.md)**
 
-   *Eseguire query esplorative e analisi dei dati nel lago dati.*
+   *Eseguire query esplorative e analisi dei dati nel data lake.*
 
 ## Blueprint in primo piano
 
@@ -38,8 +38,8 @@ I progetti Digital Experience Blueprint sono implementazioni ripetibili che ti p
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><img alt="immagine miniatura per la blueprint di Audience Activation online/offline" src="audience-activation/assets/onoff.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><strong>Audience Activation online/offline</strong></a></div>
-    <p><em>Distribuisci pubblicità cross-channel attivata dal pubblico.</em></p>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><strong>Audience Activation con dati online/offline</strong></a></div>
+    <p><em>Offri pubblicità multicanale attivata dal pubblico.</em></p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><img alt="immagine miniatura per la blueprint del consolidamento dei dati comportamentali digitali" src="customer-journey-analytics/assets/CJA.svg" /></a>
@@ -49,7 +49,7 @@ I progetti Digital Experience Blueprint sono implementazioni ripetibili che ti p
 </tr>
 </table>
 
-## Post di blog
+## Articoli di blog
 
 * [[!DNL Introducing Adobe Experience Platform’s New Digital Experience Blueprints]](https://medium.com/adobetech/introducing-adobe-experience-platforms-new-digital-experience-blueprints-93a6b5f5da7c)
 * [[!DNL Blueprint for Audience Activation in Adobe Experience Platform]](https://medium.com/adobetech/a-blueprint-for-audience-activation-in-adobe-experience-platform-b2b30fae90fd)
