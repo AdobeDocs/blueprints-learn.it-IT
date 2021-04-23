@@ -1,6 +1,6 @@
 ---
 title: Blueprint di analisi della deflessione delle chiamate
-description: Analizza il comportamento dei clienti prima che contengano il call center.
+description: Analizza il comportamento del cliente prima del contatto con il call center.
 solution: Experience Platform, Customer Journey Analytics
 kt: 7209
 exl-id: 13593c1c-4c58-4b8a-aa6c-7530fd679a14
@@ -8,79 +8,78 @@ translation-type: tm+mt
 source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
 source-wordcount: '658'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
 # Blueprint di analisi del Percorso di riflessione delle chiamate
 
-Analizza il comportamento di un cliente tra desktop e dispositivi mobili prima che contatta il call center. Identifica le opportunità per migliorare il percorso dei clienti comprendendo quali azioni i clienti tentano di completare, quali contenuti visualizzano e quali termini cercano prima di contattare l’assistenza clienti. Determina i contenuti e gli strumenti self-service che possono essere migliorati per aiutare i clienti a risolvere i problemi senza dover effettuare l’accesso.
+Analizza il comportamento di un cliente su desktop e dispositivi mobili prima del contatto con il call center. Identifica le opportunità per migliorare il percorso del cliente, comprendendo quali azioni tenta di completare, quali contenuti visualizza e quali termini cerca prima di contattare l’assistenza clienti. Determina i contenuti e gli strumenti self-service che possono essere migliorati per aiutare i clienti a risolvere i problemi in autonomia, senza ricorrere all’assistenza clienti.
 
-## Casi d&#39;uso
+## Casi di utilizzo
 
-* Analizzare il comportamento del cliente prima che i clienti contatta il supporto
-* Scopri le opportunità di migliorare le funzionalità self-service
+* Analizzare il comportamento del cliente prima della richiesta di supporto
+* Individuare opportunità di miglioramento delle funzionalità self-service
 
 ## Applicazioni
 
 * Adobe Experience Platform
 * Customer Journey Analytics
 
-## Modelli di integrazione
+## Pattern di integrazione
 
 * Adobe Experience Platform → Customer Journey Analytics
 
 ## Architettura
 
-<img src="assets/CJA.svg" alt="Architettura di riferimento per la blueprint del Customer Journey Analytics" style="border:1px solid #4a4a4a" />
+<img src="assets/CJA.svg" alt="Architettura di riferimento per il blueprint per Customer Journey Analytics" style="border:1px solid #4a4a4a" />
 
 ## Guardrail
 
-Acquisizione dei dati nel Customer Journey Analytics:
+Acquisizione dati in Customer Journey Analytics:
 
-* Assimilazione dati al lago: API ~ 7 GB/ora, connettore sorgente ~ 200 GB/ora, streaming al lago ~ 15 minuti, connettore sorgente Analytics al lago ~ 45 minuti.
-* Dopo la pubblicazione dei dati sul data lake, l&#39;elaborazione in Customer Journey Analytics può richiedere fino a 90 minuti.
+* Acquisizione in data lake: API ~ 7 GB/ora, connettore origine ~ 200 GB/ora, streaming verso data lake ~ 15 minuti, connettore origine di Analytics per data lake ~ 45 minuti.
+* Dopo la pubblicazione nel data lake, possono essere necessari fino a 90 minuti per l’elaborazione dei dati in Customer Journey Analytics.
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
-1. Configura set di dati e schemi.
-1. Inserire dati in Platform.
-I dati devono essere acquisiti in Platform prima dell’inserimento nel Customer Journey Analytics.
-1. Analizza i set di dati evento cross-channel.
-I set di dati analizzati nell’unione devono avere un ID comune dello spazio dei nomi o devono essere reimpostati tramite la funzionalità di unione dei Customer Journey Analytics basata sui campi. 
+1. Configurare i set di dati e gli schemi.
+1. Acquisire i dati in Platform.
+I dati devono essere acquisiti in Platform prima di essere acquisiti in Customer Journey Analytics.
+1. Analizzare i set di dati di eventi multicanale. I set di dati analizzati in unione devono avere un ID di namespace comune o essere riconfigurati tramite la funzionalità di unione basata sul campo di Customer Journey Analytics. 
 
    >[!NOTE]
    >
-   >Al momento, Customer Journey Analytics non utilizza i servizi Profilo di Experience Platform o Identity per l’unione.
+   >Customer Journey Analytics attualmente non utilizza il profilo o i servizi di identità di Experience Platform per l’unione dei dati.
 
-1. Esegui qualsiasi preparazione di dati personalizzati o utilizza l’unione di identità basata su campi sui dati per garantire una chiave comune tra i set di dati delle serie temporali da acquisire nel Customer Journey Analytics.
-1. Fornisci un ID primario per i dati di ricerca, che possono unirsi a un campo nei dati dell’evento. Conta come righe nella licenza.
-1. Imposta lo stesso ID principale sui dati del profilo come ID principale dei dati dell’evento.
-1. Configura una connessione dati per l’acquisizione di dati da Experience Platform a Customer Journey Analytics. Dopo l&#39;atterraggio dei dati nel lago dati, si trasforma in Customer Journey Analytics entro 90 minuti.
-1. Configura una visualizzazione dati sulla connessione per selezionare le dimensioni e le metriche specifiche da includere nella visualizzazione. Le impostazioni di attribuzione e allocazione sono configurate anche nella visualizzazione dati. Queste impostazioni vengono calcolate al momento del rapporto.
-1. Crea un progetto per configurare dashboard e rapporti in Analysis Workspace.
+1. Eseguire sui dati eventuali operazioni di preparazione personalizzata o unione delle identità basate sul campo, affinché in Customer Journey Analytics venga inserita una chiave comune per tutti i set di dati delle serie temporali.
+1. Nei dati di ricerca, fornire un ID primario che può essere associato a un campo nei dati dell’evento. Ai fini delle licenze conta come righe.
+1. Impostare lo stesso ID primario per i dati del profilo e i dati degli eventi.
+1. Configurare una connessione per l’acquisizione di dati da Experience Platform a Customer Journey Analytics. Una volta inseriti nel data lake, i dati vengono elaborati in Customer Journey Analytics entro 90 minuti.
+1. Configurare una vista dati sulla connessione per selezionare dimensioni e metriche specifiche da includere nella vista. Anche le impostazioni di attribuzione e allocazione vengono configurate nella vista dati. Queste impostazioni vengono calcolate al momento della generazione del rapporto.
+1. Creare un progetto per configurare dashboard e rapporti in Analysis Workspace.
 
 ## Considerazioni sull’implementazione
 
 ### Considerazioni sull’unione delle identità
 
-* I dati della serie temporale da separare devono avere lo stesso spazio dei nomi id su ogni record. Per collegare i dati del call center ai dati dei dispositivi anonimi, l’ID digitale deve essere associato all’ID chiamante. Questa associazione può avvenire attraverso diversi possibili meccanismi:
-   * Il numero di chiamata è un numero di chiamata univoco per quel visitatore per quel momento, insieme a una tabella di ricerca per tenere traccia della relazione.
-   * Richiedi all&#39;utente di eseguire l&#39;autenticazione prima di richiedere il supporto e di collegare questa autenticazione a un identificatore determinato dall&#39;agente di chiamata (ad esempio, numero di telefono o e-mail).
-   * Utilizza un partner di onboarding per aiutare a digitare identificatori di dispositivo online con identificatori noti associati alla richiesta di supporto.
-* Il processo di unione di diversi set di dati richiede una chiave primaria comune per la persona/entità nei set di dati.
-* Le unioni basate su chiave secondarie non sono attualmente supportate.
-* Il processo di unione delle identità basato sui campi consente di reinserire le identità nelle righe in base ai record ID transitori successivi, ad esempio un ID di autenticazione. Questo processo consente di risolvere record diversi a un singolo ID per l&#39;analisi a livello di persona anziché a livello di dispositivo o cookie.
-* Le cuciture succedono una volta alla settimana, con ripetizione dopo il punto.
+* I dati delle serie temporali da unire devono avere lo stesso ID di namespace su ogni record. Per connettere i dati del call center a dati anonimi di un dispositivo, l’ID digitale deve essere associato all’ID chiamante. Sono possibili diversi meccanismi per questa connessione:
+   * il numero di telefono deve essere univoco per quel visitatore in quel momento e una tabella di lookup tiene traccia della relazione.
+   * L’utente deve autenticarsi prima di richiedere assistenza e questa autenticazione deve essere associata a un identificatore determinato dall’operatore che risponde alla chiamata (ad esempio, numero di telefono o e-mail).
+   * Appoggiandosi a un partner di onboarding, è possibile associare l’identificatore del dispositivo online con identificatori noti della richiesta di assistenza.
+* Il processo di unione di set di dati eterogenei richiede una chiave persona/entità primaria comune a tutti i set di dati.
+* Le unioni basate su chiave secondaria attualmente non sono supportate.
+* Il processo di unione delle identità basate sul campo consente di riconfigurare le identità in righe in base a successivi record di ID transitori, come gli ID di autenticazione. Questo processo consente di risolvere diversi record in un unico ID per l’analisi a livello di persona invece che a livello di dispositivo o cookie.
+* L’unione avviene una volta alla settimana, con successiva ripetizione.
 
 ## Domande frequenti
 
 * Quali sono gli impatti a valle dei modelli di dati in Customer Journey Analytics?
 
-   Gli oggetti e gli attributi dello stesso campo XDM si uniscono in una dimensione del Customer Journey Analytics. Per unire più attributi da diversi set di dati alla stessa dimensione CJA, i set di dati devono fare riferimento allo stesso campo o schema XDM.
+   In Customer Journey Analytics gli oggetti e gli attributi dello stesso campo XDM si fondono in un’unica dimensione. Per unire più attributi di vari set di dati nella stessa dimensione di CJA, i set di dati devono fare riferimento allo stesso campo o schema XDM.
 
 ## Documentazione correlata
 
-* [Descrizione prodotto Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html)
-* [Documentazione del Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics.html)
-* [Esercitazioni sul Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html)
+* [Descrizione del prodotto Customer Journey Analytics](https://helpx.adobe.com/it/legal/product-descriptions/customer-journey-analytics.html)
+* [Documentazione di Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics.html?lang=it)
+* [Tutorial su Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html?lang=it)
