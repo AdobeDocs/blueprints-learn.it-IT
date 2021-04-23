@@ -1,6 +1,6 @@
 ---
-title: Blueprint Audience Activation anonimo
-description: Audience Activation anonimo.
+title: Audience Activation con dati anonimi Blueprint
+description: Audience Activation con dati anonimi.
 solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
@@ -9,18 +9,18 @@ translation-type: tm+mt
 source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 87%
 
 ---
 
 # Blueprint Audience Activation anonimo
 
-Puoi eseguire il targeting dei tipi di pubblico tra canali web e pubblicitari in base a dati dei clienti anonimi e comportamentali. Questa funzionalità consente esperienze cliente in tempo reale personalizzate e coerenti tra i diversi dispositivi.
+Puoi rivolgerti a un pubblico attraverso i canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti. Questa funzionalità consente esperienze personalizzate e coerenti in tempo reale con i clienti su tutti i dispositivi.
 
-## Casi d&#39;uso
+## Casi di utilizzo
 
-* Eseguire il targeting e la personalizzazione anonimi del pubblico digitale.
-* Crea tipi di pubblico per il targeting su reti pubblicitarie supportate.
+* Eseguire la personalizzazione e il targeting di un pubblico digitale anonimo.
+* Creare tipi di pubblico per il targeting su reti pubblicitarie supportate.
 
 ## Applicazioni
 
@@ -30,19 +30,19 @@ Puoi eseguire il targeting dei tipi di pubblico tra canali web e pubblicitari in
 
 <img src="assets/aam.svg" alt="Architettura di riferimento per la blueprint dell'Audience Activation anonimo" style="border:1px solid #4a4a4a" />
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 <!-- These steps should link to help. -->
 
-1. [Implementa l’Audience Manager ](https://experienceleague.corp.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides).
-1. Raccogli dati ad Audience Manager.
-1. Configura segnali e caratteristiche da utilizzare nelle definizioni dei segmenti.
-1. Crea segmenti in Audience Manager.
-1. Configura le destinazioni in Audience Manager per condividere i tipi di pubblico.
+1. [Implementare Audience Manager](https://experienceleague.corp.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides).
+1. Raccogliere i dati per Audience Manager.
+1. Configurare i segnali e le caratteristiche da utilizzare nelle definizioni dei segmenti.
+1. Creare i segmenti in Audience Manager.
+1. Configurare le destinazioni in Audience Manager per condividere i tipi di pubblico.
 
 ## Documentazione correlata
 
-* [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=en)
-* [Experience Cloud  [!UICONTROL Audiences]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
-* [Integrare Audience Manager con Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
-* [Condivisione dei segmenti di Adobe Analytics tramite Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
+* [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=it)
+* [[!UICONTROL Tipi di pubblico Experience Cloud]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=it)
+* [Integrare Audience Manager con Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=it)
+* [Condivisione dei segmenti di Adobe Analytics tramite Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=it)
