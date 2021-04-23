@@ -1,6 +1,6 @@
 ---
 title: Blueprint di personalizzazione web comportamentale
-description: Personalizza in base al comportamento online e ai dati sul pubblico.
+description: Personalizzare in base al comportamento online e ai dati del pubblico.
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
@@ -8,24 +8,24 @@ translation-type: tm+mt
 source-git-commit: 870541f548266ab82d74fec2e84b8cb6d5c952eb
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 0%
+ht-degree: 78%
 
 ---
 
 # Blueprint comportamentale per la personalizzazione web/mobile
 
-Personalizza in base al comportamento online e ai dati sul pubblico.
+Personalizzare in base al comportamento online e ai dati del pubblico.
 
-## Casi d&#39;uso
+## Casi di utilizzo
 
 * Ottimizzazione della pagina di destinazione
 * Targeting comportamentale
-* Personalizzazione basata su precedenti visualizzazioni di prodotto/contenuto, affinità prodotto/contenuto, attributi ambientali, dati di pubblico di terze parti e dati demografici
+* Personalizzazione basata su precedenti visualizzazioni di prodotti/contenuti, affinità di prodotti/contenuti, attributi ambientali, dati del pubblico di terze parti e dati demografici
 
 ## Applicazioni
 
 * Adobe Target
-* Adobe Analytics (facoltativo)
+* Adobe Analytics (opzionale)
 * Adobe Audience Manager (opzionale)
 
 ## Architettura
@@ -35,7 +35,7 @@ Personalizza in base al comportamento online e ai dati sul pubblico.
 
 ## Guardrail
 
-Per impostazione predefinita, il servizio di condivisione dei segmenti consente di condividere un massimo di 75 tipi di pubblico per ciascuna suite di rapporti di Adobe Analytics. Se per la condivisione di tipi di pubblico viene utilizzato un Audience Manager, non vi è alcun limite al numero di tipi di pubblico che possono essere condivisi. 
+Per impostazione predefinita, il servizio di condivisione dei segmenti consente di condividere un massimo di 75 tipi di pubblico per ogni suite di rapporti di Adobe Analytics. Se Audience Manager viene utilizzato per la condivisione del pubblico, non vi è alcun limite al numero di tipi di pubblico che possono essere condivisi. 
 
 ## Modelli di implementazione
 
@@ -50,48 +50,48 @@ Il modello di personalizzazione web/mobile può essere implementato tramite i se
 
 ### 2. Approccio SDK specifico per l’applicazione
 
-<img src="assets/appsdkflow.png" alt="Architettura di riferimento per l’approccio SDK specifico per l’applicazione" style="border:1px solid #4a4a4a" />
+<img src="assets/appsdkflow.png" alt="Architettura di riferimento per l’approccio con SDK specifico per applicazione" style="border:1px solid #4a4a4a" />
 
 
 
 
-## Prerequisiti per l’implementazione
+## Prerequisiti di implementazione
 
-| Applicazione/Servizio | Libreria richiesta | Note |
+| Applicazione/Servizio | Libreria necessaria | Note |
 |---|---|---|
 | Adobe Target | [!UICONTROL Platform Web SDK]*, at.js 0.9.1+ o mbox.js 61+ | at.js è da preferire in quanto mbox.js non viene più sviluppato. |
-| Adobe Audience Manager (facoltativo) | [!UICONTROL SDK] Web per piattaforma* o dil.js 5.0+ |  |
-| Adobe Analytics (facoltativo) | [!UICONTROL SDK per web di Platform]* o AppMeasurement.js 1.6.4+ |  |
+| Adobe Audience Manager (opzionale) | [!UICONTROL SDK] Web per piattaforma* o dil.js 5.0+ |  |
+| Adobe Analytics (opzionale) | [!UICONTROL SDK per web di Platform]* o AppMeasurement.js 1.6.4+ |  |
 | Servizio Experience Cloud Identity | [!UICONTROL SDK] per web di Platform* o VisitorAPI.js 2.0+ |  |
-| Experience Platform Mobile SDK (facoltativo) | 4.11 o superiore per iOS e Android™ |  |
-| Experience Platform Web SDK | 1.0, la versione corrente dell&#39;SDK Experience Platform ha [vari casi d&#39;uso non ancora supportati per le applicazioni Experience Cloud](https://github.com/adobe/alloy/projects/5) |  |
+| Experience Platform Mobile SDK (opzionale) | 4.11 o superiore per iOS e Android™ |  |
+| Experience Platform Web SDK | 1.0, la versione attuale di Experience Platform SDK presenta [diversi casi di utilizzo non ancora supportati per le applicazioni Experience Cloud](https://github.com/adobe/alloy/projects/5) |  |
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
-1. [Implementa ](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) Target Adobe per le tue applicazioni web o mobili.
+1. [Implementare Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=it) per le applicazioni web o mobili.
 
    Se utilizzi Audience Manager o Adobe Analytics:
 
-1. [Implementare Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html)
-1. [Implementare Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
-1. [Implementazione del servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html)
+1. [Implementare Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it)
+1. [Implementare Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=it)
+1. [Implementare Servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=it)
 
    >[!NOTE]
    >
-   >Ogni applicazione deve utilizzare l&#39;ID Experience Cloud e far parte della stessa organizzazione Experience Cloud per consentire la condivisione del pubblico tra le applicazioni.
+   >Per consentire la condivisione del pubblico tra diverse applicazioni, ogni applicazione deve utilizzare l’ID del servizio Experience Cloud ID e far parte della stessa organizzazione Experience Cloud.
 
-1. [Richiedi il provisioning per i servizi di condivisione delle persone e del pubblico (tipi di pubblico condivisi)](https://www.adobe.com/go/audiences)
-1. Crea segmenti in [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) o [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html) e [configura tali tipi di pubblico per la condivisione nell&#39;Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html) (se utilizzi Audience Manager o Adobe Analytics)
-1. Una volta che i tipi di pubblico sono disponibili in Adobe Target, possono essere utilizzati per [eseguire il targeting delle esperienze con Adobe Target](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)
+1. [Richiedere l’abilitazione dei servizi People e Audience Sharing (tipi di pubblico condivisi)](https://www.adobe.com/go/audiences)
+1. Creare segmenti in [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=it) o [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html?lang=it) e [configurare tali destinatari per la condivisione su Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=it) (se si utilizza Audience Manager o Adobe Analytics)
+1. Quando i tipi di pubblico sono disponibili in Adobe Target, è possibile utilizzarli per [esperienze di targeting in Adobe Target](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=it)
 
 ## Documentazione correlata
 
-* [Tipi di pubblico di Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
-* [Integrare Audience Manager con Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
+* [Tipi di pubblico Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=it)
+* [Integrare Audience Manager con Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=it)
 * [Condivisione dei segmenti di Adobe Analytics tramite Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
 
 
-## Post di blog correlati
+## Articoli di blog correlati
 
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
