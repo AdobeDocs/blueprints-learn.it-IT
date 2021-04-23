@@ -1,47 +1,47 @@
 ---
 user-guide-title: Blueprint per esperienze digitali
 breadcrumb-title: 'Blueprint '
-user-guide-description: Le blueprint sono implementazioni ripetibili per risolvere problemi aziendali consolidati e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
+user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
 translation-type: tm+mt
 source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 33%
+ht-degree: 78%
 
 ---
 
-# Blueprint per esperienze digitali  {#architecture}
+# Blueprint per esperienze digitali {#architecture}
 
 + [Panoramica](/help/blueprints/overview.md)
-+ Diagrammi di panoramica dell&#39;architettura{#architecture-overview}
++ Diagrammi di panoramica dell’architettura {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
-   + [Flusso dei dati di Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
+   + [Flusso di dati in Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
 + Attivazione pubblico e profilo{#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
-   + [Audience Activation anonimo](/help/blueprints/audience-activation/anonymous.md)
-   + [Audience Activation online/offline](/help/blueprints/audience-activation/online-offline.md)
+   + [Audience Activation con dati anonimi](/help/blueprints/audience-activation/anonymous.md)
+   + [Audience Activation con dati online/offline](/help/blueprints/audience-activation/online-offline.md)
    + [Attivazione a destinazioni Enterprise](/help/blueprints/audience-activation/enterprise-destinations.md)
-   + [Hub attività cliente](/help/blueprints/audience-activation/customer-activity.md)
-+ Customer Journey Analytics{#customer-journey-analytics}
+   + [Hub delle attività dei clienti ](/help/blueprints/audience-activation/customer-activity.md)
++ Customer Journey Analytics {#customer-journey-analytics}
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
    + [Analisi Percorso cross-channel](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
-   + [Disflessione chiamata](/help/blueprints/customer-journey-analytics/call-deflect.md)
+   + [Riduzione delle chiamate](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + Raccolta e preparazione dei dati{#data-ingestion}
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
-   + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
-   + [Raccolta dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
+   + [Preparazione e acquisizione dei dati ](/help/blueprints/data-ingestion/ingestion.md)
+   + [Raccolta dei dati aziendali lato server ](/help/blueprints/data-ingestion/server-side-collection.md)
 + Analisi dei dati, intelligenza e AI/ML{#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi dei dati e intelligenza](/help/blueprints/data-insights/analysis.md)
-   + [Data Science personalizzato per l&#39;arricchimento del profilo](/help/blueprints/data-insights/data-science.md)
-+ Orchestrazione messaggi multicanale{#multi-channel-message-orchestration}
+   + [Personalizzazione Data Science per l’arricchimento del profilo ](/help/blueprints/data-insights/data-science.md)
++ Orchestrazione dei messaggi multicanale {#multi-channel-message-orchestration}
    + [Panoramica](/help/blueprints/multi-channel-message-orchestration/overview.md)
-   + [Messaggistica in batch e Experience Platform](/help/blueprints/multi-channel-message-orchestration/batch-messaging.md)
-   + [Messaggistica e Experience Platform attivati](/help/blueprints/multi-channel-message-orchestration/triggered-messaging.md)
-+ Personalizzazione web e mobile{#web-personalization}
+   + [Messaggistica batch ed Experience Platform](/help/blueprints/multi-channel-message-orchestration/batch-messaging.md)
+   + [Messaggistica attivata ed Experience Platform](/help/blueprints/multi-channel-message-orchestration/triggered-messaging.md)
++ Personalizzazione web e mobile {#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione comportamentale](/help/blueprints/web-personalization/behavioral.md)
    + [Personalizzazione online/offline](/help/blueprints/web-personalization/online-offline.md)
