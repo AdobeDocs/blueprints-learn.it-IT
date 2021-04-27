@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: 37416aafc997838888edec2658d2621d20839f94
+source-git-commit: 2f35195b875d85033993f31c8cef0f85a7f6cccc
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 69%
+source-wordcount: '1091'
+ht-degree: 48%
 
 ---
 
@@ -35,11 +35,23 @@ Sincronizza la personalizzazione web con la posta elettronica e altre personaliz
 
 ## Guardrail
 
-* I segmenti condivisi da Experience Platform con Audience Manager vengono condivisi entro pochi minuti dalla realizzazione del segmento, sia con il metodo di streaming che con la valutazione batch. Esiste una sincronizzazione iniziale della configurazione del segmento tra Experience Platform ed Audience Manager di circa 4 ore affinché le appartenenze al segmento di Experience Platform inizino a essere realizzate nei profili di Audience Manager. Una volta all’interno dei profili di Audience Manager, le appartenenze ai segmenti di Experience Platform sono disponibili per la personalizzazione della stessa pagina tramite Adobe Target.
-* Tieni presente che per le realizzazioni di segmenti che si verificano all’interno della sincronizzazione della configurazione di segmenti di 4 ore tra Experience Platform e Audience Manager, queste realizzazioni di segmenti saranno realizzate in Audience Manager sul successivo processo di segmenti batch come segmenti &quot;esistenti&quot;.
-* Condivisione in batch di segmenti dall’Experience Platform: una volta al giorno o avviata manualmente tramite API. Una volta realizzate queste appartenenze, queste vengono condivise in Audience Manager in pochi minuti e sono disponibili per la personalizzazione della pagina stessa/successiva in Target.
-* La segmentazione in streaming viene realizzata entro circa 5 minuti. Una volta che queste realizzazioni dei segmenti si verificano, vengono condivisi in Audience Manager in pochi minuti e sono disponibili per la personalizzazione della pagina stessa/successiva in Target.
-* Per impostazione predefinita, il servizio di condivisione dei segmenti consente di condividere un massimo di 75 tipi di pubblico per ogni suite di rapporti di Adobe Analytics. Se il cliente dispone di una licenza di Audience Manager, non vi è alcun limite al numero di tipi di pubblico che possono essere condivisi tra Adobe Analytics e Adobe Target o Audience Manager e Adobe Target.
+### Guardrail per la valutazione e l’attivazione dei segmenti
+
+| Tipo di segmentazione | Frequenza | Throughput | Latenza (Valutazione segmento) | Latenza (attivazione segmento) |
+|-|-|-|-|-|-|
+| Segmentazione Edge | La segmentazione di Edge è attualmente in versione beta e consente di valutare la segmentazione in tempo reale valida su Experience Platform Edge Network per le decisioni in tempo reale e sulla stessa pagina tramite Adobe Target e Adobe Journey Optimizer. |  | ~100 ms | Disponibile immediatamente per la personalizzazione in Adobe Target, per la ricerca di profili nel profilo Edge e per l’attivazione tramite destinazioni basate su cookie. |
+| Segmentazione streaming | Ogni volta che un nuovo evento di streaming o un nuovo record viene acquisito nel profilo del cliente in tempo reale e la definizione del segmento è un segmento di streaming valido. <br>Consulta la  [documentazione sulla ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it) segmentazione per informazioni sui criteri dei segmenti in streaming | Fino a 1500 eventi al secondo.  | ~ p95 &lt;5min | Una volta realizzate queste realizzazioni, queste vengono condivise con Audience Manager e il servizio di condivisione del pubblico in pochi minuti e sono disponibili per la personalizzazione della pagina stessa/successiva in Adobe Target. |
+| Segmentazione incrementale | Una volta all’ora per i nuovi dati che sono stati acquisiti nel profilo del cliente in tempo reale dall’ultima valutazione del segmento incrementale o batch. |  |  | Una volta realizzate queste appartenenze, queste vengono condivise con Audience Manager e il servizio di condivisione del pubblico in pochi minuti e sono disponibili per la personalizzazione della pagina stessa/successiva in Adobe Target. |
+| Segmentazione in batch | Una volta al giorno in base a una pianificazione prestabilita del sistema impostata o ad hoc avviato manualmente tramite API. |  | Circa un&#39;ora per lavoro per un massimo di 10 TB di dimensioni dell&#39;archivio profili, 2 ore per lavoro per 10 TB a 100 TB di dimensioni dell&#39;archivio profili. Le prestazioni del processo del segmento batch dipendono dal numero di profili, dalle dimensioni dei profili e dal numero di segmenti valutati. | Una volta realizzate queste appartenenze, queste vengono condivise con Audience Manager e il servizio di condivisione del pubblico in pochi minuti e sono disponibili per la personalizzazione della pagina stessa/successiva in Adobe Target. |
+
+### Guardrail per la condivisione del pubblico tra più applicazioni
+
+
+| Pattern di integrazione di Audience Sharing | Dettaglio | Frequenza | Throughput | Latenza (Valutazione segmento) | Latenza (attivazione segmento) |
+|-|-|-|-|-|-|-|
+| Audience Manager di Real-time Customer Data Platform |  | In base al tipo di segmentazione - vedi la tabella delle protezioni di segmentazione riportata sopra. | In base al tipo di segmentazione - vedi la tabella delle protezioni di segmentazione riportata sopra. | In base al tipo di segmentazione - vedi la tabella delle protezioni di segmentazione riportata sopra. | Entro pochi minuti dal completamento della valutazione del segmento.<br>La sincronizzazione della configurazione iniziale del pubblico tra Real-time Customer Data Platform e Audience Manager richiede circa 4 ore.<br>Tutte le iscrizioni al pubblico realizzate durante il periodo di 4 ore verranno scritte in Audience Manager sul successivo processo di segmentazione del batch come appartenenze al pubblico &quot;esistenti&quot;. |
+| Adobe Analytics all’Audience Manager | Per impostazione predefinita è possibile condividere un massimo di 75 tipi di pubblico per ogni suite di rapporti di Adobe Analytics. Se viene utilizzata una licenza di Audience Manager, non vi è alcun limite al numero di tipi di pubblico che possono essere condivisi tra Adobe Analytics e Adobe Target o Adobe Audience Manager e Adobe Target. |  |  |  |  |
+| Adobe Analytics alla piattaforma dati cliente in tempo reale | Attualmente non disponibile. |  |  |  |  |
 
 ## Modelli di implementazione
 
@@ -84,7 +96,7 @@ Il modello di personalizzazione web/mobile può essere implementato tramite i se
 
 * [Condivisione dei segmenti Experience Platform con Audience Manager e altre soluzioni Experience Cloud](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=it)
 * [Panoramica sulla segmentazione in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=it)
-* [Segmentazione in streaming](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
+* [Segmentazione in streaming](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 * [Panoramica di Experience Platform Segment Builder](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=it)
 * [Connettore origini di Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it)
 * [Condivisione dei segmenti di Adobe Analytics tramite Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=it)
