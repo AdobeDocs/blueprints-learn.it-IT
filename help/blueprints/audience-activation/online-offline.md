@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: 24b6ffe3021389d33e84688a8f1a90711ca4b772
+source-git-commit: db083e30d8add029e99cade25d561a26da78338e
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 35%
+source-wordcount: '1040'
+ht-degree: 34%
 
 ---
 
@@ -51,8 +51,10 @@ Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo
 | Integrazioni di applicazioni di pubblico | Frequenza | Throughput/Volume | Latenza (valutazione del segmento) | Latenza (attivazione segmento) |
 |---|---|---|---|---|
 | Audience Manager di Real-time Customer Data Platform | In base al tipo di segmentazione, consulta la tabella delle protezioni di segmentazione riportata sopra. | In base al tipo di segmentazione, consulta la tabella delle protezioni di segmentazione riportata sopra. | In base al tipo di segmentazione, consulta la tabella delle protezioni di segmentazione riportata sopra. | Entro pochi minuti dal completamento della valutazione del segmento.<br>La sincronizzazione della configurazione iniziale del pubblico tra Real-time Customer Data Platform e Audience Manager richiede circa 4 ore.<br>Tutte le iscrizioni al pubblico realizzate durante il periodo di 4 ore verranno scritte in Audience Manager sul successivo processo di segmentazione del batch come appartenenze al pubblico &quot;esistenti&quot;. |
-| Adobe Analytics all’Audience Manager |  | Per impostazione predefinita è possibile condividere un massimo di 75 tipi di pubblico per ciascuna suite di rapporti di Adobe Analytics. Se viene utilizzata una licenza di Audience Manager, non vi è alcun limite al numero di tipi di pubblico che possono essere condivisi tra Adobe Analytics e Adobe Target o Adobe Audience Manager e Adobe Target. |  |  |
+| Piattaforma dati cliente in tempo reale per Ad Cloud | La condivisione di tipi di pubblico da Real-time Customer Data Platform a Adobe Advertising Cloud richiede un Audience Manager. Le stesse protezioni applicabili per la condivisione Real-time Customer Data Platform su Audience Manager si applicheranno all’integrazione dei tipi di pubblico Real-time Customer Data Platform in Advertising Cloud. | - | - | - |
 | Adobe Analytics alla piattaforma dati cliente in tempo reale | Non disponibile | Non disponibile | Non disponibile | Non disponibile |
+| Adobe Analytics all’Audience Manager | - | Per impostazione predefinita è possibile condividere un massimo di 75 tipi di pubblico per ciascuna suite di rapporti di Adobe Analytics. Se viene utilizzata una licenza di Audience Manager, non vi è alcun limite al numero di tipi di pubblico che possono essere condivisi tra Adobe Analytics e Adobe Target o Adobe Audience Manager e Adobe Target. | - | - |
+
 
 
 
