@@ -1,51 +1,51 @@
 ---
-title: Blueprint di Customer Activity Hub
-description: '[!UICONTROL Real-time Customer ] Profilelookups per fornire contesto per il supporto e le vendite assistite dagli agenti.'
+title: Blueprint per hub delle attività dei clienti
+description: '[!UICONTROL Le ricerche in Real-time Customer Profile forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore.]'
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c,4f15aa5d-9ee3-4d92-8012-3e2f0c0d615f
 translation-type: tm+mt
-source-git-commit: f217273f29e1091a121a60c2a19d71190df0f0ff
+source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 0%
+ht-degree: 90%
 
 ---
 
-# Blueprint di Customer Activity Hub
+# Blueprint per hub delle attività dei clienti
 
-La blueprint di Customer Activity Hub mostra come le applicazioni esterne possono accedere al [!UICONTROL Profilo cliente in tempo reale] di Adobe Experience Platform.
+Il blueprint per hub delle attività dei clienti mostra come le applicazioni esterne possono accedere a [!UICONTROL Real-time Customer Profile] di Adobe Experience Platform.
 
-Le applicazioni esterne possono accedere ai profili con una richiesta di GET API. Gli attributi, gli eventi, le appartenenze ai segmenti e le funzionalità basate su modelli memorizzate nel profilo possono quindi essere utilizzati in queste applicazioni esterne non di Adobe.
+Le applicazioni esterne possono accedere ai profili con una richiesta di GET API. Gli attributi, gli eventi, le appartenenze ai segmenti e le funzioni basate sul modello memorizzati nel profilo possono quindi essere utilizzati anche in tali applicazioni esterne non Adobe.
 
-Grazie a questa funzionalità, potresti visualizzare un contesto ricco quando un cliente chiama il tuo call center. Gli agenti di supporto possono avere visibilità del valore del ciclo di vita del cliente, della propensione a abbandono o dell’esposizione alle campagne di marketing, ad esempio. Gli agenti di vendita possono anche trarre vantaggio da un contesto più ampio o da informazioni approfondite sui loro clienti.
+Grazie a questa funzionalità, quando un cliente chiama il call center è possibile far emergere un contesto articolato. Gli operatori del supporto potrebbero, ad esempio, avere visibilità sul valore del ciclo di vita del cliente, sulla sua propensione all’abbandono o sulle campagne di marketing a cui è stato esposto. Gli agenti di vendita possono inoltre trarre vantaggio da un maggior contesto o da una migliore comprensione del cliente.
 
 >[!NOTE]
 >
->La latenza corrente supportata dall’API di ricerca del profilo è di circa 500 millisecondi, il che rende questo approccio inadatto all’integrazione del profilo con motori decisionali in tempo reale, come la personalizzazione web della stessa pagina o mobile.
+>La latenza corrente supportata dall’API di ricerca profilo è di circa 500 millisecondi, che rende questo approccio inadatto per l’integrazione del profilo con motori di decisione in tempo reale, ad esempio per la personalizzazione web o mobile della pagina corrente.
 
-## Casi d&#39;uso
+## Casi di utilizzo
 
-* Fornire un contesto di consumo più profondo alle interazioni supportate dagli agenti, ad esempio le esperienze di supporto e di vendita. Utilizzando la ricerca di profilo nell’Experience Platform, gli agenti possono ricevere più contesto sul consumatore, ad esempio acquisti recenti, interazioni di campagna, proprietà, appartenenze al pubblico e altri attributi e informazioni memorizzati nel profilo del cliente in tempo reale.
+* Contesto del consumatore più approfondito, per le interazioni tramite operatore, come le esperienze di assistenza tecnica o commerciale. Utilizzando la ricerca del profilo in Experience Platform, gli agenti possono ricevere maggiori informazioni di contesto sul cliente, come acquisti recenti, interazioni con le campagne, tendenze, pubblico di appartenenza e altri attributi e informazioni che vengono memorizzati nel profilo del cliente in tempo reale.
 
 ## Architettura
 
-<img src="assets/cah.svg" alt="Architettura di riferimento per la blueprint di Customer Activity Hub" style="border:1px solid #4a4a4a" />
+<img src="assets/customer_activity_hub.svg" alt="Architettura di riferimento per il blueprint per hub delle attività dei clienti" style="border:1px solid #4a4a4a" />
 
 ## Guardrail
 
-* [Guardrail per  [!UICONTROL Real-time Customer ] Profiledata](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [Guardrail per i dati di Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
-1. Configura set di dati e schemi.
+1. Configurare i set di dati e gli schemi.
 1. Configura [!UICONTROL Profilo cliente in tempo reale]: configura lo schema e il set di dati per [!UICONTROL Profilo cliente in tempo reale] e configura un criterio di unione e le identità.
-1. Acquisisci i dati in Platform ed elaborali in [!UICONTROL Profilo cliente in tempo reale].
-1. Utilizza l’API di entità per cercare un attributo di profilo, dall’entità record o dall’entità evento esperienza.
+1. Inserire i dati in Platform ed elaborarli per [!UICONTROL Real-time Customer Profile].
+1. Utilizzare l’API Entity per cercare un attributo di profilo, dall’entità record o dall’entità dell’evento dell’esperienza.
 
 ## Documentazione correlata
 
-* [Descrizione del prodotto Adobe Experience Platform Activation](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform0.html)
-* [[!UICONTROL Documentazione del ] profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en)
-* [Guardrail profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
-* [API di ricerca del profilo](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
+* [Descrizione del prodotto Adobe Experience Platform Activation](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform0.html)
+* [Documentazione di Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
+* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [API di ricerca profilo](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
