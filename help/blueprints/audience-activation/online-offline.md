@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: db083e30d8add029e99cade25d561a26da78338e
+source-git-commit: 76fe52d8e83e075f9e7ce6e8596880181b01a7fd
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 34%
+source-wordcount: '421'
+ht-degree: 79%
 
 ---
 
@@ -31,34 +31,11 @@ Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo
 
 ## Architettura
 
-<img src="assets/onoff.svg" alt="Architettura di riferimento per la blueprint di Audience Activation online/offline" style="border:1px solid #4a4a4a" />
+<img src="assets/online_offline_activation.svg" alt="Architettura di riferimento per la blueprint di Audience Activation online/offline" style="border:1px solid #4a4a4a" />
 
 ## Guardrail
 
-* [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
-
-### Guardrail per la valutazione e l’attivazione dei segmenti
-
-| Tipo di segmentazione | Frequenza | Throughput | Latenza (valutazione del segmento) | Latenza (attivazione segmento) | Payload di attivazione |
-|---|---|---|---|---|---|
-| Segmentazione Edge | La segmentazione Edge è attualmente in versione beta e consente di valutare la segmentazione in tempo reale valida su Experience Platform Edge Network per le decisioni in tempo reale e sulla stessa pagina tramite Adobe Target e Adobe Journey Optimizer. |  | ~100 ms | Disponibile immediatamente per la personalizzazione in Adobe Target, per la ricerca di profili nel profilo Edge e per l’attivazione tramite destinazioni basate su cookie. | Iscrizioni relative al pubblico disponibili in Edge per ricerche di profilo e destinazioni basate su cookie.<br>Le iscrizioni al pubblico e gli attributi del profilo sono disponibili per Adobe Target e Journey Optimizer. |
-| Segmentazione in streaming | Ogni volta che un nuovo evento di streaming o un nuovo record viene acquisito nel profilo del cliente in tempo reale e la definizione del segmento è un segmento di streaming valido. <br>Consulta la  [documentazione sulla ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it) segmentazione per informazioni sui criteri dei segmenti in streaming | Fino a 1500 eventi al secondo. | ~ p95 &lt;5min | Destinazioni streaming: Le iscrizioni al pubblico in streaming vengono attivate entro circa 10 minuti o in modalità micro-batch in base ai requisiti della destinazione.<br>Destinazioni pianificate: Le appartenenze al pubblico in streaming vengono attivate in batch in base al tempo di consegna della destinazione pianificato. | Destinazioni streaming: Modifiche all’appartenenza al pubblico, valori di identità e attributi di profilo.<br>Destinazioni pianificate: Modifiche all’appartenenza al pubblico, valori di identità e attributi di profilo. |
-| Segmentazione incrementale | Una volta all’ora per i nuovi dati che sono stati acquisiti nel profilo del cliente in tempo reale dall’ultima valutazione del segmento incrementale o batch. |  |  | Destinazioni streaming: Le iscrizioni incrementali al pubblico vengono attivate entro circa 10 minuti o in micro-batch in base ai requisiti della destinazione.<br>Destinazioni pianificate: Le iscrizioni incrementali al pubblico vengono attivate in batch in base al tempo di consegna pianificato per la destinazione. | Destinazioni streaming: Solo modifiche dell&#39;appartenenza al pubblico e valori di identità.<br>Destinazioni pianificate: Modifiche all’appartenenza al pubblico, valori di identità e attributi di profilo. |
-| Segmentazione in batch | Una volta al giorno in base a una pianificazione prestabilita del sistema impostata o avviata manualmente tramite API. |  | Circa un&#39;ora per lavoro per un massimo di 10 TB di dimensioni dell&#39;archivio profili, 2 ore per lavoro per 10 TB a 100 TB di dimensioni dell&#39;archivio profili. Le prestazioni del processo del segmento batch dipendono dal numero di profili, dalle dimensioni dei profili e dal numero di segmenti valutati. | Destinazioni streaming: Le iscrizioni a gruppi di pubblico vengono attivate entro circa 10 giorni dal completamento della valutazione della segmentazione o in micro-batch in base ai requisiti della destinazione.<br>Destinazioni pianificate: Le appartenenze a un pubblico batch vengono attivate in base al tempo di consegna della destinazione pianificato. | Destinazioni streaming: Solo modifiche dell&#39;appartenenza al pubblico e valori di identità.<br>Destinazioni pianificate: Modifiche all’appartenenza al pubblico, valori di identità e attributi di profilo. |
-
-### Guardrail per la condivisione del pubblico tra applicazioni diverse
-
-| Integrazioni di applicazioni di pubblico | Frequenza | Throughput/Volume | Latenza (valutazione del segmento) | Latenza (attivazione segmento) |
-|---|---|---|---|---|
-| Audience Manager di Real-time Customer Data Platform | In base al tipo di segmentazione, consulta la tabella delle protezioni di segmentazione riportata sopra. | In base al tipo di segmentazione, consulta la tabella delle protezioni di segmentazione riportata sopra. | In base al tipo di segmentazione, consulta la tabella delle protezioni di segmentazione riportata sopra. | Entro pochi minuti dal completamento della valutazione del segmento.<br>La sincronizzazione della configurazione iniziale del pubblico tra Real-time Customer Data Platform e Audience Manager richiede circa 4 ore.<br>Tutte le iscrizioni al pubblico realizzate durante il periodo di 4 ore verranno scritte in Audience Manager sul successivo processo di segmentazione del batch come appartenenze al pubblico &quot;esistenti&quot;. |
-| Piattaforma dati cliente in tempo reale per Ad Cloud | La condivisione di tipi di pubblico da Real-time Customer Data Platform a Adobe Advertising Cloud richiede un Audience Manager. Le stesse protezioni applicabili per la condivisione Real-time Customer Data Platform su Audience Manager si applicheranno all’integrazione dei tipi di pubblico Real-time Customer Data Platform in Advertising Cloud. | - | - | - |
-| Adobe Analytics alla piattaforma dati cliente in tempo reale | Non disponibile | Non disponibile | Non disponibile | Non disponibile |
-| Adobe Analytics all’Audience Manager | - | Per impostazione predefinita è possibile condividere un massimo di 75 tipi di pubblico per ciascuna suite di rapporti di Adobe Analytics. Se viene utilizzata una licenza di Audience Manager, non vi è alcun limite al numero di tipi di pubblico che possono essere condivisi tra Adobe Analytics e Adobe Target o Adobe Audience Manager e Adobe Target. | - | - |
-
-
-
-
-
+Fai riferimento alle protezioni come descritto nella pagina Panoramica sull&#39;attivazione del pubblico e del profilo - [LINK](overview.md)
 
 ## Fasi di implementazione
 
@@ -79,8 +56,8 @@ Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo
 ## Documentazione correlata
 
 * [Descrizione del prodotto Real-time Customer Data Platform](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform.html)
-* [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
-* [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
+* [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+* [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
 * [Documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=it)
 
 ## Video e tutorial correlati
