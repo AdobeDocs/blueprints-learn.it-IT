@@ -6,10 +6,10 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
+source-git-commit: 61cb72965cd528cf264231058b1010829a87df9e
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 90%
+source-wordcount: '247'
+ht-degree: 78%
 
 ---
 
@@ -21,6 +21,14 @@ Il per la personalizzazione web e mobile consente di utilizzare la segmentazione
 |---|---|---|
 | **[Personalizzazione web/mobile comportamentale](behavioral.md)** | <ul><li>Personalizzare in base al comportamento online e ai dati del pubblico</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
 | **[Personalizzazione online/offline Web/mobile](online-offline.md)** | <ul><li>Personalizza con attributi ed eventi offline (dati da transazioni, prenotazioni, sistema di gestione delle relazioni con i clienti e fedeltà).</li><li>Sincronizza la personalizzazione su web, e-mail e altri canali noti.</li></ul> | <ul><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Target</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
+
+## Guardrail per la personalizzazione web e mobile
+
+Fai riferimento alle protezioni nella sezione Blueprint di attivazione del pubblico e del profilo - [LINK](../audience-activation/overview.md)
+
+### Diagramma Guardrail personalizzazione online/offline
+
+<img src="assets/personalization_guardrails.svg" alt="Architettura di riferimento per la blueprint di personalizzazione web online/offline" style="border:1px solid #4a4a4a" />
 
 ## Articoli di blog correlati
 
