@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: ed56e79cd45c956cab23c640810dc8e1cc204c16
+source-git-commit: 61cb72965cd528cf264231058b1010829a87df9e
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 80%
+source-wordcount: '676'
+ht-degree: 77%
 
 ---
 
@@ -31,11 +31,17 @@ Sincronizza la personalizzazione web con la posta elettronica e altre personaliz
 
 ## Architettura
 
-<img src="assets/online_offline_personalization.svg" alt="Architettura di riferimento per la blueprint di personalizzazione web online/offline" style="border:1px solid #4a4a4a" />
+### Diagramma dell’architettura di personalizzazione online/offline con Real-time Customer Data Platform, Target ed Audience Manager
+
+<img src="assets/online_offline_personalization_with_apps.svg" alt="Architettura di riferimento per la blueprint di personalizzazione web online/offline" style="border:1px solid #4a4a4a" />
 
 ## Guardrail
 
 Fai riferimento alle protezioni nella sezione Blueprint di attivazione del pubblico e del profilo - [LINK](../audience-activation/overview.md)
+
+### Diagramma Guardrail personalizzazione online/offline
+
+<img src="assets/personalization_guardrails.svg" alt="Diagramma Guardrail per la Blueprint di personalizzazione web online/offline" style="border:1px solid #4a4a4a" />
 
 ## Modelli di implementazione
 
