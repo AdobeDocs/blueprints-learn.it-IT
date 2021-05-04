@@ -6,10 +6,10 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: 61cb72965cd528cf264231058b1010829a87df9e
+source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 78%
+source-wordcount: '255'
+ht-degree: 76%
 
 ---
 
@@ -24,7 +24,7 @@ Il per la personalizzazione web e mobile consente di utilizzare la segmentazione
 
 ## Guardrail per la personalizzazione web e mobile
 
-Fai riferimento alle protezioni nella sezione Blueprint di attivazione del pubblico e del profilo - [LINK](../audience-activation/overview.md)
+Per le protezioni relative all&#39;attivazione del pubblico e del profilo, fai riferimento alle protezioni nella sezione Blueprint di attivazione del pubblico e del profilo - [LINK](../audience-activation/overview.md)
 
 ### Diagramma Guardrail personalizzazione online/offline
 
