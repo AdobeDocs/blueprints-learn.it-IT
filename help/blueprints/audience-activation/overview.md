@@ -6,7 +6,7 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: 58368eb06b9bbd6c332424bdcfa2789dde7d4c2f
+source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 16%
@@ -29,11 +29,13 @@ Con l’approccio di priorità al canale, ogni canale funziona come un silo in c
 
 ## Guardrail per Blueprint di attivazione del pubblico e del profilo
 
+* [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+
 ### Diagramma del Guardrail
 
 <img src="assets/activation_guardrails.svg" alt="Diagramma di Guardrail per le Blueprint di attivazione del pubblico e del profilo" style="border:1px solid #4a4a4a" />
 
-* [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+
 
 ### Guardrail per la valutazione e l’attivazione dei segmenti
 
