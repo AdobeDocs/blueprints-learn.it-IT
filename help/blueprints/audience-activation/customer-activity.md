@@ -5,10 +5,10 @@ solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c,4f15aa5d-9ee3-4d92-8012-3e2f0c0d615f
 translation-type: tm+mt
-source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
+source-git-commit: 762836aba236ed78f4f396e8521a99c775dd52fc
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 90%
+source-wordcount: '419'
+ht-degree: 72%
 
 ---
 
@@ -42,7 +42,15 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 1. Configurare i set di dati e gli schemi.
 1. Configura [!UICONTROL Profilo cliente in tempo reale]: configura lo schema e il set di dati per [!UICONTROL Profilo cliente in tempo reale] e configura un criterio di unione e le identità.
 1. Inserire i dati in Platform ed elaborarli per [!UICONTROL Real-time Customer Profile].
-1. Utilizzare l’API Entity per cercare un attributo di profilo, dall’entità record o dall’entità dell’evento dell’esperienza.
+
+
+1. [Creare ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) schemi per l’acquisizione dei dati.
+1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) set di dati per i dati da acquisire.
+1. [Configurare correttamente le identità e i relativi namespace nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
+1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Acquisire i dati in Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion).
+1. [Imposta criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html)
+1. Utilizza l’ [API Entità per cercare un attributo di profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html), dall’entità record o dall’entità evento esperienza.
 
 ## Documentazione correlata
 
