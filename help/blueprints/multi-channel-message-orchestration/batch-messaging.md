@@ -5,10 +5,10 @@ solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: 37416aafc997838888edec2658d2621d20839f94
+source-git-commit: 81df87f850b7ac4be9dce7a3b96d39a3a47685c5
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 59%
+source-wordcount: '639'
+ht-degree: 49%
 
 ---
 
@@ -59,22 +59,23 @@ Esegui campagne di messaggistica pianificate e in batch utilizzando Adobe Experi
 
 #### Schema/Set di dati
 
-1. Configurare singoli schemi di profilo, di esperienza e di entità multiple in Experience Platform, in base ai dati forniti dal cliente
+1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple in Experience Platform, in base ai dati forniti dal cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
 1. Crea schemi Adobe Campaign per ampi log, trackingLog, indirizzi non recapitati e preferenze di profilo (facoltativo).
-1. Aggiungere le etichette di utilizzo dei dati al set di dati per la governance
-1. Creare le policy che necessarie per applicare la governance alle destinazioni
+1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) dati in Experience Platform per i dati da acquisire.
+1. [Aggiungi etichette di utilizzo dei dati ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) in Experience Platform al set di dati per la governance.
+1. [Creare le policy che necessarie per applicare la governance alle destinazioni](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html)
 
 #### Profilo/Identità
 
-1. Creare namespace specifici per il cliente
-1. Aggiungere le identità agli schemi
-1. Attivare gli schemi e i set di dati per il profilo
-1. Imposta le regole di unione per le diverse visualizzazioni di [!UICONTROL Profilo cliente in tempo reale] (facoltativo).
+1. [Crea qualsiasi namespace](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) specifico per il cliente.
+1. [Aggiungi identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
+1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Imposta ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) criteri di unione per diverse visualizzazioni del profilo cliente  [!UICONTROL in tempo reale]  (facoltativo).
 1. Crea segmenti per l’utilizzo di Adobe Campaign.
 
 #### Fonti / destinazioni
 
-1. Inserire i dati in Experience Platform utilizzando API di streaming e connettori di origini
+1. [Inserire i dati in Experience Platform utilizzando API di streaming e connettori di origini](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
 1. Configura la destinazione di archiviazione BLOB [!DNL Azure] da utilizzare con Adobe Campaign.
 
 #### Implementazione di app mobili
