@@ -6,10 +6,10 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
+source-git-commit: 6365fa00a77ba22774b2d6de3e882a3e09dcae0f
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 36%
+source-wordcount: '315'
+ht-degree: 31%
 
 ---
 
@@ -44,8 +44,9 @@ Per informazioni sulle best practice e le protezioni, consulta la documentazione
 
 ## Fasi di implementazione
 
-1. Configurare gli insiemi di dati e gli schemi per l’acquisizione dei dati nel data lake.
-1. Acquisire i dati.
+1. [Creare ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) schemi per l’acquisizione dei dati.
+1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) set di dati per i dati da acquisire.
+1. [Acquisire i dati in Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion).
 1. Conferma che i dati siano disponibili per [!UICONTROL Query Service] e [!UICONTROL Data Science Workspace] per l&#39;accesso e la query non elaborati.
 1. Connetti gli strumenti di Business Intelligence e i client SQL a [!UICONTROL Query Service] per visualizzazione, query dei dati e esplorazione.
 
