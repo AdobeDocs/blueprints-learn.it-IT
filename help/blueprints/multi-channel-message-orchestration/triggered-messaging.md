@@ -5,10 +5,10 @@ solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 81df87f850b7ac4be9dce7a3b96d39a3a47685c5
+source-git-commit: 01f70fe432d7be38b71889ae19c0d5fe4cf0f78a
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -78,7 +78,7 @@ Esegui esperienze e messaggi attivati, utilizzando Adobe Experience Platform com
 
 1. [Crea qualsiasi namespace](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) specifico per il cliente.
 1. [Aggiungi identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Abilita gli schemi e i set di dati per Profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
 1. [Imposta ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) criteri di unione per diverse visualizzazioni del profilo cliente  [!UICONTROL in tempo reale]  (facoltativo).
 1. Crea segmenti per l’utilizzo di Adobe Campaign.
 
