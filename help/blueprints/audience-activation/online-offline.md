@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
+source-git-commit: 2fc1adc04a9ca2184c88970d5ba0785957327f68
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 69%
+source-wordcount: '543'
+ht-degree: 63%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 69%
 Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistema di gestione delle relazioni con i clienti o fedeltà, insieme a dati sul comportamento online.
 
 Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie.
+
+La blueprint dell&#39;Audience Activation online/offline è allineata strettamente con la [attivazione del pubblico e del profilo con la blueprint delle applicazioni Experience Cloud](platform-and-applications.md). Ulteriori dettagli sono forniti in [Attivazione pubblico e profilo con Experience Cloud Applications Blueprint](platform-and-applications.md)   specifiche per le integrazioni tra le applicazioni Experience Platform e Experience Cloud.
 
 ## Casi di utilizzo
 
@@ -42,7 +44,7 @@ Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo
 
 ## Guardrail
 
-Fai riferimento alle protezioni come descritto nella pagina Panoramica sull&#39;attivazione del pubblico e del profilo - [LINK](overview.md)
+[Consulta le protezioni descritte nella pagina Panoramica sull’attivazione del pubblico e del profilo .](overview.md)
 
 ## Fasi di implementazione
 
