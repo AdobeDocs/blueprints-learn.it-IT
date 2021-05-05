@@ -5,10 +5,10 @@ solution: Experience Platform, Customer Journey Analytics
 kt: 7209
 exl-id: 13593c1c-4c58-4b8a-aa6c-7530fd679a14
 translation-type: tm+mt
-source-git-commit: 58368eb06b9bbd6c332424bdcfa2789dde7d4c2f
+source-git-commit: 6365fa00a77ba22774b2d6de3e882a3e09dcae0f
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 98%
+source-wordcount: '638'
+ht-degree: 93%
 
 ---
 
@@ -36,8 +36,9 @@ Analizza il comportamento di un cliente su desktop e dispositivi mobili prima de
 
 ## Fasi di implementazione
 
-1. Configurare i set di dati e gli schemi.
-1. Acquisire i dati in Platform.
+1. [Creare ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) schemi per l’acquisizione dei dati.
+1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) set di dati per i dati da acquisire.
+1. [Acquisire i dati in Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion).
 I dati devono essere acquisiti in Platform prima di essere acquisiti in Customer Journey Analytics.
 1. Analizzare i set di dati di eventi multicanale. I set di dati analizzati in unione devono avere un ID di namespace comune o essere riconfigurati tramite la funzionalità di unione basata sul campo di Customer Journey Analytics. 
 
