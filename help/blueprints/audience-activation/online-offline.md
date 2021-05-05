@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
+source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 66%
+ht-degree: 69%
 
 ---
 
@@ -49,10 +49,10 @@ Fai riferimento alle protezioni come descritto nella pagina Panoramica sull&#39;
 1. [Creare ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) schemi per l’acquisizione dei dati.
 1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) set di dati per i dati da acquisire.
 1. [Configurare correttamente le identità e i relativi namespace nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
-1. [Abilita gli schemi e i set di dati per Profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
+1. [Abilita gli schemi e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
 1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
 1. [Abilitare la condivisione dei segmenti Real-time Customer Data Platform tra Experience Platform e Audience Manager per i tipi di pubblico definiti in Experience Platform da condividere con Audience Manager.](https://www.adobe.com/go/audiences)
-1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it) segmenti in Experience Platform Il sistema determina automaticamente se il segmento viene valutato come batch o in streaming.
+1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it) segmenti in Experience Platform. Il sistema determina automaticamente se un segmento deve essere valutato in batch o in streaming.
 1. [Configurare le destinazioni per condividere gli attributi del profilo e delle appartenenze al pubblico con le destinazioni desiderate.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html)
 
 ## Considerazioni sull’implementazione
