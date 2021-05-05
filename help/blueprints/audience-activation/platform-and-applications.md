@@ -1,27 +1,27 @@
 ---
 title: Attivazione di tipi di pubblico e profili con Blueprint delle applicazioni Experience Cloud
-description: Gestisci profili e tipi di pubblico in Experience Platform e condividerli con Experience Cloud Applications.
+description: Gestisci profili e tipi di pubblico in Experience Platform e condividerli con le applicazioni Experience Cloud.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: null
 translation-type: tm+mt
-source-git-commit: c1a281f0808a0f081b2b63927a8bddb6377bbbad
+source-git-commit: 0f69d5b2422cc9750ed9c71ea0c10e3271973bf2
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
 # Attivazione di tipi di pubblico e profili con Blueprint delle applicazioni Experience Cloud
 
-Gestisci profili e tipi di pubblico in Experience Platform e condividerli con Experience Cloud Applications. Crea e condividi segmenti e approfondimenti di clienti avanzati in Experience Platform e condividi tali informazioni con le applicazioni Experience Cloud.
+Gestisci profili e tipi di pubblico in Experience Platform e condividerli con Experience Cloud Applications. Crea e condividi segmenti e informazioni approfondite sui clienti in Experience Platform e condividi con le applicazioni Experience Cloud.
 
 L&#39;attivazione con le applicazioni Experience Cloud è in linea con la [blueprint di Audience Activation online/offline](online-offline.md). Ulteriori dettagli sono forniti in questo modello specifico per le integrazioni tra le applicazioni Experience Platform e Experience Cloud.
 
 ## Casi di utilizzo
 
-* Personalizzazione e targeting tra i canali di interazione del cliente basati su Experience Cloud.
-* Condivisione di dati di pubblico e profilo con Experience Platform da e verso applicazioni Experience Cloud.
+* Personalizza ed esegui il targeting tra i canali di interazione del cliente basati su Experience Cloud.
+* Condividi i dati di pubblico e profilo tra le applicazioni Experience Platform e Experience Cloud.
 
 ## Applicazioni
 
@@ -29,9 +29,9 @@ L&#39;attivazione con le applicazioni Experience Cloud è in linea con la [bluep
 * [!UICONTROL Real-time Customer Data Platform]
 * Attivazione Experience Platform
 * Applicazioni Experience Cloud
-   * Audience Manager
-   * Target
-   * Campaign
+   * Adobe Audience Manager
+   * Adobe Target
+   * Adobe Campaign
    * Journey Optimizer
 
 ## Architettura
