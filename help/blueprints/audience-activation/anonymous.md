@@ -1,6 +1,6 @@
 ---
-title: Audience Activation con dati anonimi Blueprint
-description: Audience Activation con dati anonimi.
+title: Blueprint per attivazione del pubblico con dati anonimi
+description: Attivazione del pubblico con dati anonimi.
 solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
@@ -9,11 +9,11 @@ translation-type: tm+mt
 source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Blueprint Audience Activation anonimo
+# Blueprint per attivazione del pubblico con dati anonimi
 
 Puoi rivolgerti a un pubblico attraverso i canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti. Questa funzionalità consente esperienze personalizzate e coerenti in tempo reale con i clienti su tutti i dispositivi.
 
@@ -28,7 +28,7 @@ Puoi rivolgerti a un pubblico attraverso i canali web e pubblicitari sulla base 
 
 ## Architettura
 
-<img src="assets/anonymous_activation.svg" alt="Architettura di riferimento per la blueprint dell'Audience Activation anonimo" style="border:1px solid #4a4a4a" />
+<img src="assets/anonymous_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione del pubblico con dati anonimi" style="border:1px solid #4a4a4a" />
 
 ## Fasi di implementazione
 
@@ -43,6 +43,6 @@ Puoi rivolgerti a un pubblico attraverso i canali web e pubblicitari sulla base 
 ## Documentazione correlata
 
 * [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=it)
-* [[!UICONTROL Tipi di pubblico Experience Cloud]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=it)
+* [Experience Cloud [!UICONTROL Audiences]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=it)
 * [Integrare Audience Manager con Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=it)
-* [Condivisione dei segmenti di Adobe Analytics tramite Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=it)
+* [Condivisione dei segmenti Adobe Analytics tramite Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=it)
