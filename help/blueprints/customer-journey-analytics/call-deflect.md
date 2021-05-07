@@ -1,5 +1,5 @@
 ---
-title: Blueprint di analisi della deflessione delle chiamate
+title: Blueprint per analisi destinate alla riduzione delle chiamate
 description: Analizza il comportamento del cliente prima del contatto con il call center.
 solution: Experience Platform, Customer Journey Analytics
 kt: 7209
@@ -8,11 +8,11 @@ translation-type: tm+mt
 source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
-# Blueprint di analisi del Percorso di riflessione delle chiamate
+# Blueprint per analisi del percorso destinate alla riduzione delle chiamate
 
 Analizza il comportamento di un cliente su desktop e dispositivi mobili prima del contatto con il call center. Identifica le opportunità per migliorare il percorso del cliente, comprendendo quali azioni tenta di completare, quali contenuti visualizza e quali termini cerca prima di contattare l’assistenza clienti. Determina i contenuti e gli strumenti self-service che possono essere migliorati per aiutare i clienti a risolvere i problemi in autonomia, senza ricorrere all’assistenza clienti.
 
@@ -36,8 +36,8 @@ Analizza il comportamento di un cliente su desktop e dispositivi mobili prima de
 
 ## Fasi di implementazione
 
-1. [Creare ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) schemi per l’acquisizione dei dati.
-1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) set di dati per i dati da acquisire.
+1. [Creare schemi per i dati da acquisire.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
+1. [Creare set di dati per i dati da acquisire.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
 1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
 I dati devono essere acquisiti in Platform prima di essere acquisiti in Customer Journey Analytics.
 1. Analizzare i set di dati di eventi multicanale. I set di dati analizzati in unione devono avere un ID di namespace comune o essere riconfigurati tramite la funzionalità di unione basata sul campo di Customer Journey Analytics. 
