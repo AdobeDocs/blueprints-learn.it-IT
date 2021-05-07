@@ -9,13 +9,13 @@ translation-type: tm+mt
 source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Blueprint per preparazione e acquisizione dei dati
 
-Il blueprint per preparazione e acquisizione dei dati comprende tutti i metodi con cui i dati possono essere preparati e inseriti in Adobe Experience Platform.
+Il blueprint per la preparazione e acquisizione dei dati comprende tutti i metodi con cui i dati possono essere preparati e inseriti in Adobe Experience Platform.
 
 La preparazione dei dati include la mappatura dei dati di origine sullo schema Experience Data Model (XDM). Include inoltre l’esecuzione di trasformazioni sui dati, tra cui formattazione della data, suddivisione/concatenazione/conversioni di campi e unione/fusione/riconfigurazione di record. La preparazione dei dati è utile per unificare i dati dei clienti al fine di fornire analisi aggregate/filtrate, inclusa la creazione di rapporti o la preparazione dei dati per assemblaggio/data science/attivazione dei profili cliente.
 
@@ -40,10 +40,10 @@ La preparazione dei dati include la mappatura dei dati di origine sullo schema E
 
 | Metodi di preparazione dei dati | Descrizione |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [!UICONTROL Data Science Workspace]  - Preparazione dei dati | Trasformazione basata su modelli, trasformazione basata su script.<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=it) |
-| Strumento ETL esterno ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica] e così via) | Esegui trasformazioni complesse negli strumenti ETL e utilizza le API standard [!UICONTROL Servizio di flusso] o i connettori sorgente per acquisire i dati risultanti. |
-| [!UICONTROL Servizio query]  - Preparazione dati | Unisce, divide, unisce, trasforma, Query e filtra dati in un nuovo set di dati. Utilizzo di Crea tabella come selezione (CTAS) <br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it#sql) |
-| Funzioni mappatore XDM e preparazione dati (streaming e batch) | Mappa gli attributi di origine in formato CSV o JSON in attributi XDM durante l’acquisizione di Experienci Platform.<br>Elaborare le funzioni sui dati man mano che vengono acquisiti; ovvero, formattazione dei dati, suddivisione, concatenazione e così via.<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=it) |
+| [!UICONTROL Data Science Workspace]: preparazione dei dati | Trasformazione basata su modelli, trasformazione basata su script.<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=it) |
+| Strumento ETL esterno ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica] ecc.) | Eseguire trasformazioni complesse negli strumenti ETL e acquisire i dati risultanti mediante le API standard di Experience Platform [!UICONTROL Flow Service] o connettori di origini |
+| [!UICONTROL Query Service]: preparazione dei dati | Unire, separare, fondere, trasformare, interrogare e filtrare i dati in un nuovo set di dati <br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it#sql) sull’utilizzo di Create Table as Select (CTAS) |
+| Funzioni mappatore XDM e preparazione dati (streaming e batch) | Mappare gli attributi di origine in formato CSV o JSON su attributi XDM durante l’acquisizione in Experience Platform<br>Elaborare le funzioni sui dati man mano che vengono acquisiti; ovvero, formattazione dei dati, suddivisione, concatenazione e così via<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=it) |
 
 ## Articoli di blog correlati
 
