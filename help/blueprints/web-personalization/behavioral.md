@@ -1,5 +1,5 @@
 ---
-title: Blueprint di personalizzazione web comportamentale
+title: Blueprint per personalizzazione web basata sul comportamento
 description: Personalizzare in base al comportamento online e ai dati del pubblico.
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
@@ -8,11 +8,11 @@ translation-type: tm+mt
 source-git-commit: 76fe52d8e83e075f9e7ce6e8596880181b01a7fd
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Blueprint comportamentale per la personalizzazione web/mobile
+# Blueprint di personalizzazione web/mobile basata sul comportamento
 
 Personalizzare in base al comportamento online e ai dati del pubblico.
 
@@ -30,7 +30,7 @@ Personalizzare in base al comportamento online e ai dati del pubblico.
 
 ## Architettura
 
-<img src="assets/behavioral_personalization.svg" alt="Architettura di riferimento per il Blueprint di personalizzazione web comportamentale" style="border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.svg" alt="Architettura di riferimento per il blueprint per la personalizzazione web basata sul comportamento" style="border:1px solid #4a4a4a" />
 
 
 ## Guardrail
@@ -39,27 +39,27 @@ Per impostazione predefinita, il servizio di condivisione dei segmenti consente 
 
 ## Modelli di implementazione
 
-Il modello di personalizzazione web/mobile può essere implementato tramite i seguenti approcci come descritto di seguito.
+Il blueprint per la personalizzazione web/mobile può essere implementato con i metodi descritti di seguito.
 
-1. Utilizzo di [!UICONTROL Platform Web SDK] o [!UICONTROL Platform Mobile SDK] e [!UICONTROL Edge Network].
-1. Utilizzo di SDK tradizionali specifici per le applicazioni (ad esempio, AppMeasurement.js)
+1. Mediante [!UICONTROL Platform Web SDK] o [!UICONTROL Platform Mobile SDK] e [!UICONTROL rete Edge].
+1. Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AppMeasurement.js)
 
-### 1. Piattaforma SDK per web/dispositivi mobili e approccio Edge
+### 1. Mediante Platform Web/Mobile SDK e rete Edge
 
-<img src="assets/web_sdk_flow.svg" alt="Architettura di riferimento per l’approccio [!UICONTROL Platform Web SDK] o [!UICONTROL Platform Mobile SDK] e [!UICONTROL Edge Network]" style="border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.svg" alt="Architettura di riferimento per il metodo [!UICONTROL Platform Web SDK] o [!UICONTROL Platform Mobile SDK] e [!UICONTROL Edge Network]" style="border:1px solid #4a4a4a" />
 
-### 2. Approccio SDK specifico per l’applicazione
+### 2. Mediante SDK per specifiche applicazioni
 
-<img src="assets/app_sdk_flow.png" alt="Architettura di riferimento per l’approccio con SDK specifico per applicazione" style="border:1px solid #4a4a4a" />
+<img src="assets/app_sdk_flow.png" alt="Architettura di riferimento per l’approccio con SDK per specifiche applicazioni" style="border:1px solid #4a4a4a" />
 
 ## Prerequisiti di implementazione
 
 | Applicazione/Servizio | Libreria necessaria | Note |
 |---|---|---|
 | Adobe Target | [!UICONTROL Platform Web SDK]*, at.js 0.9.1+ o mbox.js 61+ | at.js è da preferire in quanto mbox.js non viene più sviluppato. |
-| Adobe Audience Manager (opzionale) | [!UICONTROL SDK] Web per piattaforma* o dil.js 5.0+ |  |
-| Adobe Analytics (opzionale) | [!UICONTROL SDK per web di Platform]* o AppMeasurement.js 1.6.4+ |  |
-| Servizio Experience Cloud Identity | [!UICONTROL SDK] per web di Platform* o VisitorAPI.js 2.0+ |  |
+| Adobe Audience Manager (opzionale) | [!UICONTROL Platform Web SDK]* o dil.js 5.0+ |  |
+| Adobe Analytics (opzionale) | [!UICONTROL Platform Web SDK]* o AppMeasurement.js 1.6.4+ |  |
+| Servizio Experience Cloud Identity | [!UICONTROL Platform Web SDK]* o VisitorAPI.js 2.0+ |  |
 | Experience Platform Mobile SDK (opzionale) | 4.11 o superiore per iOS e Android™ |  |
 | Experience Platform Web SDK | 1.0, la versione attuale di Experience Platform SDK presenta [diversi casi di utilizzo non ancora supportati per le applicazioni Experience Cloud](https://github.com/adobe/alloy/projects/5) |  |
 
@@ -67,7 +67,7 @@ Il modello di personalizzazione web/mobile può essere implementato tramite i se
 
 1. [Implementare Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=it) per le applicazioni web o mobili.
 
-   Se utilizzi Audience Manager o Adobe Analytics:
+   Se si utilizza Audience Manager o Adobe Analytics:
 
 1. [Implementare Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it)
 1. [Implementare Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=it)
@@ -83,7 +83,7 @@ Il modello di personalizzazione web/mobile può essere implementato tramite i se
 
 ## Documentazione correlata
 
-* [Tipi di pubblico Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=it)
+* [Experience Cloud Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=it)
 * [Integrare Audience Manager con Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=it)
 * [Condivisione dei segmenti di Adobe Analytics tramite Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
 
