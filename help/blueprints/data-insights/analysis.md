@@ -1,5 +1,5 @@
 ---
-title: Blueprint di analisi dei dati e intelligenza
+title: Blueprint per analisi e intelligence dei dati
 description: Questo blueprint dimostra la capacità di Adobe Experience Platform di eseguire query esplorative e analisi dei dati presenti nel data lake.
 solution: Experience Platform
 kt: 7207
@@ -9,19 +9,19 @@ translation-type: tm+mt
 source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 31%
+ht-degree: 85%
 
 ---
 
-# Blueprint di analisi dei dati e intelligenza
+# Blueprint per analisi e intelligence dei dati
 
-L’analisi e l’intelligenza dei dati comprende la possibilità all’interno di Adobe Experience Platform di eseguire query esplorative e analisi dei dati esistenti nel data lake.
+Il blueprint per analisi e intelligence dei dati comprende la capacità di Adobe Experience Platform di eseguire query esplorative e analisi dei dati presenti nel data lake.
 
-Il Experience Platform [!UICONTROL Query Service] consente l&#39;esecuzione di query SQL sui dati. [!UICONTROL Data Science ] Workspaceconsente l’esplorazione dei dati, la scienza dei dati e i carichi di lavoro di apprendimento automatico da eseguire sui dati.
+Experience Platform [!UICONTROL Query Service] consente di eseguire query SQL sui dati. [!UICONTROL Data Science Workspace] consente di eseguire esplorazione dei dati, data science e carichi di lavoro di apprendimento automatico.
 
-Inoltre, Experience Platform consente connessioni con client SQL di terze parti, interfacce e strumenti di Business Intelligence (BI) per connettersi, accedere ed eseguire query dirette ai dati all&#39;interno di Experience Platform, utilizzando il protocollo [!DNL PostgreSQL].
+Inoltre, Experience Platform consente connessioni con client SQL, interfacce e strumenti di Business Intelligence (BI) di terze parti per connettersi, accedere e interrogare direttamente i dati all’interno di Experience Platform, utilizzando il protocollo [!DNL PostgreSQL].
 
-Alcune protezioni si applicano al timeout della query e alla quantità di dati inclusi nel risultato della query, come indicato nei dettagli della blueprint.
+Alcuni guardrail riguardano il timeout delle query e la quantità di dati inclusi nel risultato della query, come indicato nei dettagli del blueprint.
 
 ## Casi di utilizzo
 
@@ -44,13 +44,13 @@ Per informazioni sulle best practice e le protezioni, consulta la documentazione
 
 ## Fasi di implementazione
 
-1. [Creare ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) schemi per l’acquisizione dei dati.
-1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) set di dati per i dati da acquisire.
+1. [Creare schemi per i dati da acquisire.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
+1. [Creare set di dati per i dati da acquisire.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
 1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
-1. Conferma che i dati siano disponibili per [!UICONTROL Query Service] e [!UICONTROL Data Science Workspace] per l&#39;accesso e la query non elaborati.
-1. Connetti gli strumenti di Business Intelligence e i client SQL a [!UICONTROL Query Service] per visualizzazione, query dei dati e esplorazione.
+1. Verificare che i dati siano disponibili per [!UICONTROL Query Service] e [!UICONTROL Data Science Workspace] per accesso e query raw.
+1. Collegare gli strumenti di Business Intelligence e i client SQL a [!UICONTROL Query Service] per la visualizzazione, l’interrogazione e l’esplorazione dei dati.
 
 ## Documentazione correlata
 
 * [Descrizione del prodotto Adobe Experience Platform Intelligence](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it)
+* Documentazione di [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it)
