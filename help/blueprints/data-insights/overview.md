@@ -1,27 +1,27 @@
 ---
-title: Analisi dei dati, intelligenza e AI/ML
-description: Questo modello mostra la capacità all’interno di Adobe Experience Platform di eseguire query esplorative e analisi dei dati esistenti nel data lake.
+title: Analisi dei dati, intelligence e AI/ML
+description: Questo blueprint dimostra la capacità di Adobe Experience Platform di eseguire query esplorative e analisi dei dati presenti nel data lake.
 solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9a5137c5e71946c258cb94188ee53d742396d361
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Analisi dei dati, intelligenza e AI/ML
+# Analisi dei dati, intelligence e AI/ML
 
-Analisi dei dati, intelligenza e AI/ML comprendono la possibilità all’interno di Adobe Experience Platform di eseguire query esplorative e analisi dei dati esistenti nel data lake.
+Il blueprint per analisi dei dati, intelligence e AI/ML comprende la capacità di Adobe Experience Platform di eseguire query esplorative e analisi dei dati presenti nel data lake.
 
-Il Experience Platform [!UICONTROL Query Service] consente l&#39;esecuzione di query SQL sui dati. Inoltre, Experience Platform consente connessioni con client SQL di terze parti, interfacce e strumenti di Business Intelligence (BI) per connettersi, accedere ed eseguire query dirette ai dati all&#39;interno di Experience Platform, utilizzando il protocollo [!DNL PostgreSQL].
+Experience Platform [!UICONTROL Query Service] consente di eseguire query SQL sui dati. Inoltre, Experience Platform consente connessioni con client SQL, interfacce e strumenti di Business Intelligence (BI) di terze parti per connettersi, accedere e interrogare direttamente i dati all’interno di Experience Platform, utilizzando il protocollo [!DNL PostgreSQL].
 
-[!UICONTROL Data Science ] Workspaceconsente l’esplorazione dei dati, la scienza dei dati e i carichi di lavoro di apprendimento automatico da eseguire sui dati. I modelli possono essere formati, valutati e operazionali per arricchire ulteriormente i profili dei clienti e ottenere informazioni più approfondite sui comportamenti e le esperienze dei clienti.
+[!UICONTROL Data Science Workspace] consente di eseguire esplorazione dei dati, data science e carichi di lavoro di apprendimento automatico. I modelli possono essere addestrati, valutati e operazionalizzati per arricchire ulteriormente i profili cliente e ottenere una conoscenza più approfondita dei comportamenti e delle esperienze dei clienti.
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
-| **[Analisi dei dati e intelligenza](analysis.md)** | <ul><li>Blueprint di analisi e intelligenza dei dati include i metodi con cui è possibile eseguire query e analisi dei dati per ottenere informazioni più approfondite in Adobe Experience Platform</ul></li> | <ul><li> Adobe Experience Platform Intelligence</ul></li> |
-| **[Data Science personalizzato per l&#39;arricchimento del profilo](data-science.md)** | <ul><li>Formazione, valutazione e operazionalizzazione dei modelli per arricchire ulteriormente i profili dei clienti e le informazioni sui clienti basate su modelli di azione</li></ul> | <ul><li>Adobe Experience Platform Intelligence</li><li> [!UICONTROL Piattaforma dati cliente in tempo reale]</li></ul> |
+| **[Analisi e intelligence dei dati](analysis.md)** | <ul><li>Il blueprint per analisi e intelligence dei dati include i metodi con cui è possibile eseguire query e analisi dei dati per ottenere elementi di conoscenza più approfonditi in Adobe Experience Platform</ul></li> | <ul><li> Adobe Experience Platform Intelligence</ul></li> |
+| **[Personalizzazione Data Science per l’arricchimento del profilo](data-science.md)** | <ul><li>Addestrare, valutare e operazionalizzare i modelli per arricchire ulteriormente i profili e gli elementi di conoscenza basati su modelli di azione dei clienti</li></ul> | <ul><li>Adobe Experience Platform Intelligence</li><li> [!UICONTROL Real-time Customer Data Platform]</li></ul> |
