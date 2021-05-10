@@ -6,10 +6,10 @@ kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
 translation-type: tm+mt
-source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
+source-git-commit: 53914ce36ef0e48734c04818fbf8a5285fbb14ab
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Puoi rivolgerti a un pubblico attraverso i canali web e pubblicitari sulla base 
 
 <!-- These steps should link to help. -->
 
-1. [Implementare Audience Manager](https://experienceleague.corp.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides).
+1. [Implementare Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides).
 1. Raccogliere i dati per Audience Manager.
 1. Configurare i segnali e le caratteristiche da utilizzare nelle definizioni dei segmenti.
 1. Creare i segmenti in Audience Manager.
