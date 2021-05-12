@@ -4,11 +4,10 @@ description: Gestisci profili e tipi di pubblico in Experience Platform e condiv
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: null
-translation-type: tm+mt
-source-git-commit: d81329f6e90a0bdc0b76a41e4045b8e1aa5f89cd
+source-git-commit: f527b23587e4ec893532997c3c99270946d7fa31
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 37%
+source-wordcount: '270'
+ht-degree: 39%
 
 ---
 
@@ -27,7 +26,7 @@ L&#39;attivazione con le applicazioni Experience Cloud è in linea con la [bluep
 
 * Adobe Experience Platform
 * [!UICONTROL Real-time Customer Data Platform]
-* Attivazione Experience Platform
+* Experience Platform Activation
 * Applicazioni Experience Cloud
    * Adobe Audience Manager
    * Adobe Target
@@ -36,9 +35,12 @@ L&#39;attivazione con le applicazioni Experience Cloud è in linea con la [bluep
 
 ## Architettura
 
-<img src="assets/activation+apps.svg" alt="Architettura di riferimento per Audience e Profile Activation con Experience Cloud Applications" style="border:1px solid #4a4a4a" />
+[Consulta la sezione Architettura di Experience Platform e applicazioni per ulteriori diagrammi di architettura relativi alle integrazioni di Experience Platform con le applicazioni di Experience Cloud.](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html)
 
-Consulta il [diagramma Adobe Experience Platform &amp; Applications](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html) per un diagramma di architettura aggiuntivo relativo ad Experience Platform e alle sue integrazioni con le applicazioni Experience Cloud.
+### Attivazione di pubblico e profilo con applicazioni Experience Cloud
+
+<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="Architettura di riferimento per Audience e Profile Activation con Experience Cloud Applications" style="border:1px solid #4a4a4a" />
+<br>
 
 ## Guardrail
 
@@ -46,13 +48,13 @@ Consulta le [protezioni nella pagina Panoramica sull&#39;attivazione del pubblic
 
 ## Documentazione correlata
 
-* [Descrizione del prodotto Real-time Customer Data Platform](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform.html)
+* Descrizione del prodotto [[!UICONTROL Real-time Customer Data Platform]](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform.html)
 * [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
 * [Documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=it)
 
 ## Video e tutorial correlati
 
-* [Panoramica di Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
-* [[!UICONTROL Demo di Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
+* Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
+* [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
 * [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it)
