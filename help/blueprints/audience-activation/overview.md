@@ -5,11 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-translation-type: tm+mt
-source-git-commit: 5471d9c0f6fdef6fbac72d5d35f32353ea5a5ee8
+source-git-commit: fb0ed8245f2be9b9260afbc3b749fde0eae58b5c
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 91%
+source-wordcount: '941'
+ht-degree: 66%
 
 ---
 
@@ -28,6 +27,17 @@ Con l’approccio di priorità al canale, ogni canale funziona come un silo in c
 | **[Attivazione di pubblico e profilo con applicazioni Experience Cloud](platform-and-applications.md)** | </ul><li>Gestisci profili e pubblico in Experience Platform e condividerli con Experience Cloud Applications</li><li>Crea e condividi segmenti e approfondimenti di clienti avanzati in Experience Platform e condividili con le applicazioni Experience Cloud</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Piattaforma dati cliente in tempo reale]</li><li>Attivazione Experience Platform</li><li>Applicazioni Experience Cloud</li></ul> |
 | **[Hub delle attività dei clienti](customer-activity.md)** | <ul><li>Contesto del consumatore più approfondito, per le interazioni tramite operatore, come le esperienze di assistenza tecnica o commerciale. Grazie alla possibilità di consultare il profilo in Experience Platform, gli agenti possono ricevere maggiori informazioni di contesto sul cliente, come acquisti recenti, interazioni con le campagne, tendenze, pubblico di appartenenza e altri attributi e informazioni che vengono memorizzati nel profilo del cliente in tempo reale.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
+## Architettura del profilo cliente in tempo reale
+
+L’illustrazione seguente illustra i componenti core del Profilo cliente in tempo reale dell’Experience Platform.
+
+Le prime origini dati vengono acquisite in Experience Platform. Se l’origine dati è configurata per l’elaborazione del profilo, verrà inserita nel Profilo del cliente in tempo reale. Viene creato un singolo frammento o documento di profilo per ogni origine dati e ogni record id principale configurato per ogni origine dati. Inoltre, quando i dati vengono acquisiti nel profilo, vengono elaborati anche dal servizio Identity. Qualsiasi record delle origini dati con più di un&#39;identità contrassegnata nello schema e con i valori corrispondenti compilati nel record verrà elaborato come relazione di identità all&#39;interno del servizio Identity.
+
+I record che hanno una sola identità non vengono elaborati dal servizio di identità in quanto tali record non dispongono di collegamenti di identità per popolare ulteriormente il grafico. Inoltre, il servizio Identity non distingue le identità primarie dalle identità secondarie. Si tratta semplicemente di elaborare relazioni di identità tra le diverse identità.
+
+L’unione dei frammenti di profilo si verifica quando il grafico delle identità fornisce le relazioni tra i vari frammenti di profilo sorgente che sono stati correlati. Il criterio di unione determina quali frammenti di origine e quale grafico di identità utilizzare al momento dell’unione dei frammenti. Ogni volta che il profilo accede all’unione dei frammenti di profilo, questa viene eseguita per garantire la visualizzazione combinata più aggiornata del profilo. Le regole di governance e policy garantiscono che solo i segmenti e gli attributi autorizzati possano essere attivati nelle destinazioni specificate.
+
+<img src="assets/profile_architecture.jpg" alt="Architettura di riferimento per il profilo cliente in tempo reale" style="border:1px solid #4a4a4a" />
 
 
 ## Guardrail per Blueprint di attivazione del pubblico e del profilo
