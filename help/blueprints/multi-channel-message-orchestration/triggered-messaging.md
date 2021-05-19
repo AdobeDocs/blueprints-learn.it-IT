@@ -1,20 +1,20 @@
 ---
-title: Messaggi attivati e blueprint Adobe Experience Platform
-description: Esegui esperienze e messaggi attivati, utilizzando Adobe Experience Platform come hub centrale da cui trasmettere dati, profili cliente e segmentazioni.
+title: Blueprint per messaggistica attivata e Adobe Experience Platform
+description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 01f70fe432d7be38b71889ae19c0d5fe4cf0f78a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '694'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
-# Messaggi attivati e blueprint Adobe Experience Platform
+# Blueprint per messaggistica attivata e Adobe Experience Platform
 
-Esegui esperienze e messaggi attivati, utilizzando Adobe Experience Platform come hub centrale da cui trasmettere dati, profili cliente e segmentazioni.
+Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 
 ## Casi di utilizzo
 
@@ -25,7 +25,7 @@ Esegui esperienze e messaggi attivati, utilizzando Adobe Experience Platform com
 
 ## Architettura
 
-<img src="assets/triggered.svg" alt="Architettura di riferimento per la blueprint Adobe Experience Platform e la messaggistica attivata" style="border:1px solid #4a4a4a" />
+<img src="assets/triggered.svg" alt="Architettura di riferimento per il blueprint per messaggistica attivata e Adobe Experience Platform" style="border:1px solid #4a4a4a" />
 
 ## Pattern di integrazione
 
@@ -68,27 +68,27 @@ Esegui esperienze e messaggi attivati, utilizzando Adobe Experience Platform com
 
 #### Schema/set di dati
 
-1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple in Experience Platform, in base ai dati forniti dal cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
-1. Crea schemi Adobe Campaign per ampi log, trackingLog, indirizzi non recapitati e preferenze di profilo (facoltativo).
-1. [Crea ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) dati in Experience Platform per i dati da acquisire.
-1. [Aggiungi etichette di utilizzo dei dati ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) in Experience Platform al set di dati per la governance.
-1. [Creare le policy che necessarie per applicare la governance alle destinazioni](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html)
+1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=it) in Experience Platform, in base ai dati forniti dal cliente
+1. Creare schemi di Adobe Campaign per broadLog, trackingLog, indirizzi non consegnabili e preferenze profilo (opzionale)
+1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
+1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
+1. [Creare i criteri](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) necessari per applicare la governance alle destinazioni
 
-#### Profilo/identità
+#### Profilo/Identità
 
-1. [Crea qualsiasi namespace](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html) specifico per il cliente.
-1. [Aggiungi identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html).
-1. [Abilita gli schemi e i set di dati per Profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Imposta ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) criteri di unione per diverse visualizzazioni del profilo cliente  [!UICONTROL in tempo reale]  (facoltativo).
-1. Crea segmenti per l’utilizzo di Adobe Campaign.
+1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
+1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
+1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
+1. Creare segmenti da utilizzare in Adobe Campaign
 
 #### Origini/Destinazioni
 
-1. [Acquisisci dati in Experience ](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) Platform utilizzando API di streaming e connettori sorgente.1. Configura la destinazione di archiviazione  [!DNL Azure] BLOB da utilizzare con Adobe Campaign.
+1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando le API di streaming e i connettori di origini. 1. Configurare la destinazione di archiviazione BLOB di [!DNL Azure] da utilizzare con Adobe Campaign.
 
 #### Implementazione di app mobili
 
-1. Implementa l’SDK per Adobe Campaign per Adobe Campaign Classic o l’SDK per Experience Platform per Adobe Campaign Standard. Se è presente un Experience Platform Launch, si consiglia di utilizzare l&#39;estensione Adobe Campaign Classic o Adobe Campaign Standard con Experience Platform SDK.
+1. Implementare Adobe Campaign SDK per Adobe Campaign Classic o Experience Platform SDK per Adobe Campaign Standard. Se è presente Experience Platform Launch, si consiglia di utilizzare l’estensione Adobe Campaign Classic o Adobe Campaign Standard con Experience Platform SDK.
 
 
 ### Journey Orchestration
