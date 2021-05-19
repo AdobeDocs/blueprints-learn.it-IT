@@ -1,26 +1,26 @@
 ---
-title: Attivazione di tipi di pubblico e profili con Blueprint delle applicazioni Experience Cloud
-description: Gestisci profili e tipi di pubblico in Experience Platform e condividerli con le applicazioni Experience Cloud.
+title: Blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud
+description: Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: null
 source-git-commit: f527b23587e4ec893532997c3c99270946d7fa31
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 39%
+ht-degree: 92%
 
 ---
 
-# Attivazione di tipi di pubblico e profili con Blueprint delle applicazioni Experience Cloud
+# Blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud
 
-Gestisci profili e tipi di pubblico in Experience Platform e condividerli con Experience Cloud Applications. Crea e condividi segmenti e informazioni approfondite sui clienti in Experience Platform e condividi con le applicazioni Experience Cloud.
+Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud. Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.
 
-L&#39;attivazione con le applicazioni Experience Cloud è in linea con la [blueprint di Audience Activation online/offline](online-offline.md).
+L’attivazione con applicazioni Experience Cloud è strettamente allineata al [blueprint Attivazione del pubblico con dati online/offline](online-offline.md).
 
 ## Casi di utilizzo
 
-* Personalizza ed esegui il targeting tra i canali di interazione del cliente basati su Experience Cloud.
-* Condividi i dati di pubblico e profilo tra le applicazioni Experience Platform e Experience Cloud.
+* Personalizzazione e targeting attraverso i canali di interazione con il cliente basati su Experience Cloud
+* Condivisione dei dati di pubblico e profilo tra Experience Platform e le applicazioni Experience Cloud
 
 ## Applicazioni
 
@@ -35,16 +35,16 @@ L&#39;attivazione con le applicazioni Experience Cloud è in linea con la [bluep
 
 ## Architettura
 
-[Consulta la sezione Architettura di Experience Platform e applicazioni per ulteriori diagrammi di architettura relativi alle integrazioni di Experience Platform con le applicazioni di Experience Cloud.](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html)
+[Consulta la sezione Architettura di Experience Platform e applicazioni per ulteriori diagrammi di architettura relativi alle integrazioni di Experience Platform con le applicazioni di Experience Cloud.](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=it)
 
-### Attivazione di pubblico e profilo con applicazioni Experience Cloud
+### Attivazione in base a pubblico e profili con le applicazioni Experience Cloud
 
-<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="Architettura di riferimento per Audience e Profile Activation con Experience Cloud Applications" style="border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="Architettura di riferimento per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud" style="border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrail
 
-Consulta le [protezioni nella pagina Panoramica sull&#39;attivazione del pubblico e del profilo](overview.md)
+Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a pubblico e profili](overview.md)
 
 ## Documentazione correlata
 
