@@ -4,11 +4,11 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b8770bdc4db581be11b347e3788b1d6e6534fe10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
