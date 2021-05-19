@@ -4,11 +4,11 @@ description: Analizza ed estrai informazioni dalle interazioni che avvengono dur
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +38,9 @@ Crea una visione unica e consolidata del comportamento dei clienti attraverso i 
 
 ## Fasi di implementazione
 
-1. [Creare schemi per i dati da acquisire.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
-1. [Creare set di dati per i dati da acquisire.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
-1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
+1. [Creare schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=it) per i dati da acquisire.
+1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
+1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform
 I dati devono essere inseriti in Platform prima di essere elaborati in Customer Journey Analytics.
 1. Analizzare i set di dati relativi agli eventi multicanale da analizzare in unione, per assicurarsi che abbiano un ID di namespace comune o che siano riconfigurati tramite la funzionalità di composizione basata sul campo di Customer Journey Analytics. 
 
