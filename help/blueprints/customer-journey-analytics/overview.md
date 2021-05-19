@@ -5,11 +5,11 @@ solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 58368eb06b9bbd6c332424bdcfa2789dde7d4c2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Le analisi più comuni includono:
 | **[Analisi del percorso cross-channel](digital-behavioral-data-consolidation.md)** | <ul><li>Crea una visione unica e consolidata del comportamento dei clienti attraverso i vari canali, grazie all’integrazione di dati provenienti da varie proprietà web, mobili e offline.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (opzionale)</li></ul> |
 | **[Analisi del percorso per la deviazione delle chiamate](call-deflect.md)** | <ul><li>Individua i comportamenti più indicativi nel determinare le chiamate a un operatore, unendo i dati del call center ai dati sulle interazioni web, mobili e di altro tipo.</li><li>Questi approfondimenti possono quindi essere utilizzati per ottimizzare l’esperienza del cliente con migliori strumenti e contenuti self-service, e quindi ridurre la necessità di parlare con un operatore.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
-## Guardrail per Blueprint Customer Journey Analytics
+## Guardrail relativi ai blueprint per Customer Journey Analytics
 
-### Diagramma del Guardrail
+### Diagramma dei guardrail
 
-<img src="assets/cja_guardrails.svg" alt="Diagramma Guardrail per le Blueprint del Customer Journey Analytics" style="border:1px solid #4a4a4a" />
+<img src="assets/cja_guardrails.svg" alt="Diagramma dei guardrail relativi ai blueprint per Customer Journey Analytics" style="border:1px solid #4a4a4a" />
 
 
 ## Articoli di blog correlati
