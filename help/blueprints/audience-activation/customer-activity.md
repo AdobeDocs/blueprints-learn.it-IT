@@ -4,11 +4,11 @@ description: Le ricerche in [!UICONTROL Real-time Customer Profile] forniscono i
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c,4f15aa5d-9ee3-4d92-8012-3e2f0c0d615f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '384'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 ## Fasi di implementazione
 
-1. [Creare schemi per i dati da acquisire.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
-1. [Creare set di dati per i dati da acquisire.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
-1. [Configurare correttamente le identità e i relativi namespace nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
-1. [Abilita gli schemi e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html).
-1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
-1. [Configurare i criteri](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) di unione.
-1. Utilizza l’ [API Entità per cercare un attributo di profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html), dall’entità record o dall’entità evento esperienza.
+1. [Creare schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=it) per i dati da acquisire.
+1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
+1. [Configurare correttamente le identità e i relativi namespace](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it) nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.
+1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it).
+1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
+1. [Impostare le regole di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it)
+1. Utilizzare l’[API delle entità per cercare un attributo di profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=it) dall’entità record o dall’entità dell’evento dell’esperienza
 
 ## Documentazione correlata
 
 * [Descrizione del prodotto Adobe Experience Platform Activation](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform0.html)
 * Documentazione di [[!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
-* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [API di ricerca profilo](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
