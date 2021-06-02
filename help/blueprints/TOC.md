@@ -4,18 +4,17 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-translation-type: ht
-source-git-commit: b8770bdc4db581be11b347e3788b1d6e6534fe10
-workflow-type: ht
-source-wordcount: '120'
-ht-degree: 100%
+source-git-commit: 70b3bf294741888c3d109a2d4ef710d428800abf
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 98%
 
 ---
 
 # Blueprint per esperienze digitali {#architecture}
 
 + [Panoramica](/help/blueprints/overview.md)
-+ Diagrammi di panoramica dell’architettura {#architecture-overview}
++ Panoramica dell&#39;architettura{#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
    + [Flusso di dati in Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
