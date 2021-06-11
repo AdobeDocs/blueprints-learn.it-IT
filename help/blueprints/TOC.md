@@ -5,16 +5,16 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
 source-git-commit: 70b3bf294741888c3d109a2d4ef710d428800abf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '119'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Blueprint per esperienze digitali {#architecture}
 
 + [Panoramica](/help/blueprints/overview.md)
-+ Panoramica dell&#39;architettura{#architecture-overview}
++ Panoramica dell’architettura {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
    + [Flusso di dati in Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
@@ -31,12 +31,12 @@ ht-degree: 98%
    + [Riduzione delle chiamate](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + Raccolta e preparazione dei dati {#data-ingestion}
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
-   + [Preparazione e acquisizione dei dati ](/help/blueprints/data-ingestion/ingestion.md)
-   + [Raccolta dei dati aziendali lato server ](/help/blueprints/data-ingestion/server-side-collection.md)
+   + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
+   + [Raccolta dei dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
 + Analisi dei dati, intelligence e AI/ML {#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)
-   + [Personalizzazione Data Science per l’arricchimento del profilo ](/help/blueprints/data-insights/data-science.md)
+   + [Personalizzazione Data Science per l’arricchimento del profilo](/help/blueprints/data-insights/data-science.md)
 + Orchestrazione dei messaggi multicanale {#multi-channel-message-orchestration}
    + [Panoramica](/help/blueprints/multi-channel-message-orchestration/overview.md)
    + [Messaggistica batch ed Experience Platform](/help/blueprints/multi-channel-message-orchestration/batch-messaging.md)
