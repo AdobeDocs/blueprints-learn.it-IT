@@ -4,10 +4,10 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
+source-git-commit: 366c1c90e8132faac85da17eade60e3b7be77906
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 100%
+source-wordcount: '118'
+ht-degree: 98%
 
 ---
 
@@ -29,6 +29,10 @@ ht-degree: 100%
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
    + [Analisi del percorso cross-channel](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
    + [Riduzione delle chiamate](/help/blueprints/customer-journey-analytics/call-deflect.md)
++ Percorsi cliente{#customer-journeys}
+   + [Panoramica](/help/blueprints/customer-journeys/overview.md)
+   + [Messaggistica batch ed Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
+   + [Messaggistica attivata ed Experience Platform](/help/blueprints/customer-journeys/triggered-messaging.md)
 + Raccolta e preparazione dei dati {#data-ingestion}
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
@@ -37,10 +41,6 @@ ht-degree: 100%
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)
    + [Personalizzazione Data Science per l’arricchimento del profilo](/help/blueprints/data-insights/data-science.md)
-+ Orchestrazione dei messaggi multicanale {#customer-journeys}
-   + [Panoramica](/help/blueprints/customer-journeys/overview.md)
-   + [Messaggistica batch ed Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
-   + [Messaggistica attivata ed Experience Platform](/help/blueprints/customer-journeys/triggered-messaging.md)
 + Personalizzazione web e mobile {#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione basata sul comportamento](/help/blueprints/web-personalization/behavioral.md)
