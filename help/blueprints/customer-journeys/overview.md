@@ -5,10 +5,10 @@ solution: Experience Platform
 kt: null
 thumbnail: null
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: faf65f9cd457982baea0a94275a441cd8b5c0b3a
+source-git-commit: 83cda30e0fac5c3a2c38ca4b2df2c2405736e4a0
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 54%
+source-wordcount: '190'
+ht-degree: 45%
 
 ---
 
@@ -18,6 +18,5 @@ I Percorsi dei clienti si occupano della possibilità per i brand di interagire 
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
-| **Messaggi batch e transazionali** | <ul><li>Crea ed esegui campagne in uscita pianificate e in batch</li><li>Inviare messaggi transazionali</li></ul> | <ul><li>Adobe Campaign Classic e Managed Services</li><li>Adobe Campaign Standard</li></ul> |
-| **[Messaggistica batch e Adobe Experience Platform](batch-messaging.md)** | <ul><li>Esegui campagne di messaggistica pianificate e in batch utilizzando Adobe Experience Platform come hub centrale per i profili clienti e la segmentazione</li></ul> | <ul><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Campaign Classic, Managed Services o Campaign Standard</li><li>Sono supportati i provider di messaggistica di terze parti</li></ul> |
-| **[Messaggistica attivata e Adobe Experience Platform](triggered-messaging.md)** | <ul><li>Esegui messaggi attivati e in streaming utilizzando Adobe Experience Platform, come hub centrale per lo streaming dei dati, i profili clienti e la segmentazione, con Journey Orchestration per l’orchestrazione del percorso in streaming e la distribuzione dei messaggi</li></ul> | <ul><li>Adobe Experience Platform</li><li>Journey Orchestration</li><li>Adobe Campaign o altra applicazione di terze parti per il recapito dei messaggi</li></ul> |
+| **[Adobe Campaign](batch-messaging.md)** | <ul><li>Esegui campagne di messaggistica pianificate e in batch utilizzando Adobe Experience Platform come hub centrale per i profili clienti e la segmentazione</li></ul> | <ul><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Campaign Classic, Managed Services o Campaign Standard</li><li>Sono supportati i provider di messaggistica di terze parti</li></ul> |
+| **[Journey Optimizer](journey-optimizer.md)** | <ul><li>Esegui messaggi attivati e in streaming utilizzando Adobe Experience Platform, come hub centrale per lo streaming dei dati, i profili clienti e la segmentazione, con Journey Orchestration per l’orchestrazione del percorso in streaming e la distribuzione dei messaggi</li></ul> | <ul><li>Adobe Experience Platform</li><li>Journey Optimizer</li></ul> |
