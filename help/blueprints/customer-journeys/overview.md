@@ -1,23 +1,20 @@
 ---
-title: 'Orchestrazione dei messaggi multicanale '
+title: 'Percorsi cliente '
 description: Offri esperienze individuali e just-in-time ai clienti su più schermi.
 solution: Experience Platform
 kt: null
 thumbnail: null
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
+source-git-commit: faf65f9cd457982baea0a94275a441cd8b5c0b3a
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 54%
 
 ---
 
-# Orchestrazione dei messaggi multicanale
+# Percorsi cliente
 
-L’orchestrazione dei messaggi multicanale mostra come i marchi possono interagire e comunicare in modo proattivo con i clienti attraverso canali quali e-mail, SMS e avvisi su dispositivi mobili.
-
-Gli strumenti di orchestrazione possono integrarsi con altri canali di interazione (ad esempio con i canali in entrata) per la personalizzazione su web e dispositivi mobili condividendo lo stato del pubblico con i motori di decisione degli altri canali. Vari fattori contribuiscono a determinare quali applicazioni e opzioni di distribuzione utilizzare, ad esempio se l’interazione con il cliente è basata su trigger o pianificata, quali dati sono necessari per il targeting e la personalizzazione e così via. Questi fattori determinano diversi scenari e opzioni di implementazione possibili nello sviluppo della capacità di orchestrazione dei messaggi.
-
+I Percorsi dei clienti si occupano della possibilità per i brand di interagire e comunicare in modo proattivo con i propri clienti attraverso canali quali e-mail, SMS e avvisi mobili. Gli strumenti di orchestrazione possono essere integrati anche con altri canali di interazione, ad esempio con i canali in entrata per la personalizzazione web/mobile, condividendo lo stato del pubblico con gli altri motori decisionali specifici del canale. Vari fattori determinano quali applicazioni e opzioni di distribuzione devono essere utilizzate per i Percorsi di clienti, ma possono essere riassunti in due approcci diversi:  reagire a un cliente quando interagisce (attivato) O reagisce a un gruppo di clienti mentre interagiscono (pianificato).
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
