@@ -4,8 +4,8 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-source-git-commit: 70b3bf294741888c3d109a2d4ef710d428800abf
-workflow-type: ht
+source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
+workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 100%
 
@@ -37,10 +37,10 @@ ht-degree: 100%
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)
    + [Personalizzazione Data Science per l’arricchimento del profilo](/help/blueprints/data-insights/data-science.md)
-+ Orchestrazione dei messaggi multicanale {#multi-channel-message-orchestration}
-   + [Panoramica](/help/blueprints/multi-channel-message-orchestration/overview.md)
-   + [Messaggistica batch ed Experience Platform](/help/blueprints/multi-channel-message-orchestration/batch-messaging.md)
-   + [Messaggistica attivata ed Experience Platform](/help/blueprints/multi-channel-message-orchestration/triggered-messaging.md)
++ Orchestrazione dei messaggi multicanale {#customer-journeys}
+   + [Panoramica](/help/blueprints/customer-journeys/overview.md)
+   + [Messaggistica batch ed Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
+   + [Messaggistica attivata ed Experience Platform](/help/blueprints/customer-journeys/triggered-messaging.md)
 + Personalizzazione web e mobile {#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione basata sul comportamento](/help/blueprints/web-personalization/behavioral.md)
