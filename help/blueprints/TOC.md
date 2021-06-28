@@ -4,10 +4,10 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-source-git-commit: d2bd81f4c4c7145508cfea74c74c0d9f62e0a884
+source-git-commit: 55e2bf2ac2339b0a6bf4a6ba3a4592ea511dd858
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 98%
+source-wordcount: '119'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 98%
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
    + [Raccolta dei dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
+   + [Experience Platform WebSDK](/help/blueprints/data-ingestion/websdk.md)
 + Analisi dei dati, intelligence e AI/ML {#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)
