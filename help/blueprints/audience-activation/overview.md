@@ -5,7 +5,7 @@ solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 8cdb08ae29b766adf16877919af82d0691768576
+source-git-commit: 55e2bf2ac2339b0a6bf4a6ba3a4592ea511dd858
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 100%
@@ -31,13 +31,13 @@ Con l’approccio di priorità al canale, ogni canale funziona come un silo in c
 
 L’illustrazione seguente illustra i componenti core di Real-time Customer Profile di Experience Platform.
 
+<img src="assets/profile_architecture.jpg" alt="Architettura di riferimento per Real-time Customer Profile" style="border:1px solid #4a4a4a" width="90%"/>
+
 Prima di tutto, le origini dati vengono acquisite in Experience Platform. Se l’origine dati è configurata per l’elaborazione del profilo, viene inserita in Real-time Customer Profile. Viene creato un singolo frammento o documento di profilo per ogni origine dati e ogni record di ID principale configurato per origine dati. Inoltre, quando i dati vengono acquisiti nel profilo, vengono elaborati anche dal servizio di identità. Ogni record dalle origini dati per il quale esistono più identità contrassegnate nello schema e i cui valori sono compilati nel record, verrà elaborato come relazione di identità all’interno del servizio di identità.
 
 I record a cui è associata una sola identità non vengono elaborati dal servizio di identità, in quanto non dispongono di ulteriori collegamenti di identità da inserire nel grafico. Inoltre, il servizio di identità non distingue le identità primarie da quelle secondarie. Vengono semplicemente elaborate le relazioni tra le diverse identità.
 
 L’unione di frammenti di profilo si verifica quando il grafico delle identità fornisce le relazioni tra i vari frammenti di profilo sorgente che sono stati correlati. Il criterio di unione determina quali frammenti di origine e quale grafico di identità utilizzare al momento dell’unione dei frammenti. Ogni volta che si accede al profilo, viene eseguita l’unione dei frammenti di profilo affinché la visualizzazione combinata del profilo sia sempre aggiornata. Le regole di governance e policy garantiscono che solo i segmenti e gli attributi autorizzati possano essere attivati nelle destinazioni specificate.
-
-<img src="assets/profile_architecture.jpg" alt="Architettura di riferimento per Real-time Customer Profile" style="border:1px solid #4a4a4a" />
 
 
 ## Guardrail per i blueprint Attivazione in base a pubblico e profili
