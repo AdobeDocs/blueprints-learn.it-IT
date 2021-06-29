@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 55e2bf2ac2339b0a6bf4a6ba3a4592ea511dd858
+source-git-commit: 64f29b492d010539e310c7d24979dedee56068f7
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 100%
+source-wordcount: '968'
+ht-degree: 97%
 
 ---
 
@@ -39,6 +39,11 @@ I record a cui è associata una sola identità non vengono elaborati dal servizi
 
 L’unione di frammenti di profilo si verifica quando il grafico delle identità fornisce le relazioni tra i vari frammenti di profilo sorgente che sono stati correlati. Il criterio di unione determina quali frammenti di origine e quale grafico di identità utilizzare al momento dell’unione dei frammenti. Ogni volta che si accede al profilo, viene eseguita l’unione dei frammenti di profilo affinché la visualizzazione combinata del profilo sia sempre aggiornata. Le regole di governance e policy garantiscono che solo i segmenti e gli attributi autorizzati possano essere attivati nelle destinazioni specificate.
 
+## Panoramica sulla segmentazione e sulla destinazione
+
+L’illustrazione seguente illustra i vari metodi di segmentazione e i vari pattern di attivazione di profili e pubblico.
+
+<img src="assets/segmentation_destination_overview.png" alt="Architettura di riferimento per Real-time Customer Profile" style="border:1px solid #4a4a4a" width="90%"/>
 
 ## Guardrail per i blueprint Attivazione in base a pubblico e profili
 
