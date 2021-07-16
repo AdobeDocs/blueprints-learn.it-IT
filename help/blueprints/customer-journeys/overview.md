@@ -1,5 +1,5 @@
 ---
-title: 'Percorsi cliente '
+title: 'Customer journey '
 description: Offri esperienze individuali e just-in-time ai clienti su più schermi.
 solution: Experience Platform
 kt: null
@@ -8,13 +8,13 @@ exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
 source-git-commit: 83cda30e0fac5c3a2c38ca4b2df2c2405736e4a0
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
-# Percorsi cliente
+# Customer journey
 
-I Percorsi dei clienti si occupano della possibilità per i brand di interagire e comunicare in modo proattivo con i propri clienti attraverso canali quali e-mail, SMS e avvisi mobili. Gli strumenti di orchestrazione possono essere integrati anche con altri canali di interazione, ad esempio con i canali in entrata per la personalizzazione web/mobile, condividendo lo stato del pubblico con gli altri motori decisionali specifici del canale. Vari fattori determinano quali applicazioni e opzioni di distribuzione devono essere utilizzate per i Percorsi di clienti, ma possono essere riassunti in due approcci diversi:  reagire a un cliente quando interagisce (attivato) O reagisce a un gruppo di clienti mentre interagiscono (pianificato).
+Il customer journey (o percorso del cliente) permette ai brand di interagire e comunicare in modo proattivo con i propri clienti attraverso canali quali e-mail, SMS e avvisi per dispositivi mobili. Gli strumenti di orchestrazione possono anche essere integrati con altri canali di interazione, ad esempio con i canali in entrata, per la personalizzazione su web e dispositivi mobili condividendo lo stato del pubblico con i motori di decisione degli altri canali. Vari fattori determinano quali applicazioni e opzioni di implementazione utilizzare per i customer journey, ma possono essere riassunti in due approcci diversi: reagire al momento del coinvolgimento di un cliente (attivato) OPPURE reagire al coinvolgimento di un gruppo di clienti (pianificato).
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
