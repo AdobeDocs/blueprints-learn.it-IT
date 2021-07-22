@@ -4,10 +4,10 @@ description: Sincronizza la personalizzazione web con la posta elettronica e alt
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 848f1366f3dd2d7948a31cfc606e906ec7f74fbb
+source-git-commit: 176f4950ffb5b21005b6ad8cfbb993186086442b
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 98%
+source-wordcount: '731'
+ht-degree: 86%
 
 ---
 
@@ -53,6 +53,11 @@ Il blueprint per la personalizzazione web/mobile può essere implementato con i 
 
 ## Prerequisiti di implementazione
 
+Prerequisiti per l’identità
+
+* La condivisione di tipi di pubblico da Adobe Experience Platform ad Adobe Target richiede l’utilizzo di ECID come identità.
+* Le identità alternative possono essere utilizzate per condividere i tipi di pubblico di Experience Platform in Adobe Target tramite Audience Manager, poiché l’Audience Manager è in grado di risolvere gli ID alternativi in un ECID, purché sia l’ECID che l’ID alternativo vengano raccolti ad Audience Manager. Tieni presente che Audience Manager e Target risolvono le iscrizioni al pubblico tramite l’identità ECID, pertanto ECID è ancora necessario per la condivisione finale del pubblico in Adobe Target.
+
 | Applicazione/Servizio | Libreria necessaria | Note |
 |---|---|---|
 | Adobe Target | [!UICONTROL Platform Web SDK]*, at.js 0.9.1+ o mbox.js 61+ | at.js è da preferire in quanto mbox.js non viene più sviluppato. |
@@ -61,6 +66,8 @@ Il blueprint per la personalizzazione web/mobile può essere implementato con i 
 | Servizio Experience Cloud ID | [!UICONTROL Platform Web SDK]* o VisitorAPI.js 2.0+ | (Consigliato) Utilizza Experience Platform Launch per implementare il servizio ID, in modo che l’ID venga impostato prima di qualsiasi chiamata |
 | Experience Platform Mobile SDK (opzionale) | 4.11 o superiore per iOS e Android™ |  |
 | Experience Platform Web SDK | 1.0, la versione attuale di Experience Platform SDK presenta [diversi casi di utilizzo non ancora supportati per le applicazioni Experience Cloud](https://github.com/adobe/alloy/projects/5) |  |
+
+
 
 
 ## Fasi di implementazione
