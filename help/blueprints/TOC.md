@@ -4,10 +4,10 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 1c352489190da65d9c39e126456980d7aa7981f1
+source-git-commit: c5fd3f33d48d830b5e5058b919e814e7f84ace81
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 97%
+source-wordcount: '121'
+ht-degree: 93%
 
 ---
 
@@ -45,5 +45,5 @@ ht-degree: 97%
 + Personalizzazione web e mobile {#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione basata sul comportamento](/help/blueprints/web-personalization/behavioral.md)
-   + [Personalizzazione con dati online/offline](/help/blueprints/web-personalization/online-offline.md)
+   + [Peronsalizzazione con dati online e offline](/help/blueprints/web-personalization/online-offline.md)
 
