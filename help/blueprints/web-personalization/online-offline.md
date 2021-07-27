@@ -1,17 +1,17 @@
 ---
-title: Blueprint per personalizzazione web con dati online/offline
+title: Personalizzazione web/mobile con dati online e offline
 description: Sincronizza la personalizzazione web con la posta elettronica e altre personalizzazioni di canali per utenti noti e anonimi.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 176f4950ffb5b21005b6ad8cfbb993186086442b
+source-git-commit: 3e3077c2a5f6dd67ccc4645ad2340efcbb4f4137
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 86%
+source-wordcount: '734'
+ht-degree: 84%
 
 ---
 
-# Blueprint per personalizzazione web/mobile con dati online/offline
+# Personalizzazione web/mobile con dati online e offline
 
 Sincronizza la personalizzazione web con la posta elettronica e altre personalizzazioni di canali per utenti noti e anonimi.
 
