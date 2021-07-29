@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 source-git-commit: 64f29b492d010539e310c7d24979dedee56068f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ Con l’approccio di priorità al canale, ogni canale funziona come un silo in c
 |---|---|---|
 | **[Attivazione del pubblico con dati anonimi](anonymous.md)** | <ul><li>Rivolgiti a un pubblico attraverso i vari canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti.</li><li>Per una maggiore personalizzazione, puoi integrarli con dati sul pubblico di terze parti.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
 | **[Attivazione del pubblico con dati online/offline](online-offline.md)** | <ul><li>Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie. </li><li>Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistemi di gestione delle relazioni con i clienti o fedeltà, insieme a dati sul comportamento online.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager (opzionale)</li></ul> |
-| **[Attivazione in base a pubblico e profili nelle destinazioni aziendali](enterprise-destinations.md)** | <ul><li>Replica e aggiorna le modifiche apportate a profili e pubblico negli archivi di dati aziendali, per utilizzarle a scopo di attivazione e reporting. </li></ul><ul><li>Avvia un’azione di vendita o supporto al cliente tramite la notifica di un’azione del cliente trasmessa da [!UICONTROL Real-time Customer Data Platform] ai sistemi e alle applicazioni aziendali.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Piattaforma dati cliente in tempo reale]</li><li>Experience Platform Activation</li><li>Adobe Audience Manager (opzionale)</li></ul> |
-| **[Attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md)** | <ul><li>Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.</li><li>Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Piattaforma dati cliente in tempo reale]</li><li>Attivazione Experience Platform</li><li>Applicazioni Experience Cloud</li></ul> |
+| **[Attivazione in base a pubblico e profili nelle destinazioni aziendali](enterprise-destinations.md)** | <ul><li>Replica e aggiorna le modifiche apportate a profili e pubblico negli archivi di dati aziendali, per utilizzarle a scopo di attivazione e reporting. </li></ul><ul><li>Avvia un’azione di vendita o supporto al cliente tramite la notifica di un’azione del cliente trasmessa da [!UICONTROL Real-time Customer Data Platform] ai sistemi e alle applicazioni aziendali.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform Activation</li><li>Adobe Audience Manager (opzionale)</li></ul> |
+| **[Attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md)** | <ul><li>Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.</li><li>Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform Activation</li><li>Applicazioni Experience Cloud</li></ul> |
 | **[Hub delle attività dei clienti](customer-activity.md)** | <ul><li>Contesto del consumatore più approfondito, per le interazioni tramite operatore, come le esperienze di assistenza tecnica o commerciale. Grazie alla possibilità di consultare il profilo in Experience Platform, gli agenti possono ricevere maggiori informazioni di contesto sul cliente, come acquisti recenti, interazioni con le campagne, tendenze, pubblico di appartenenza e altri attributi e informazioni che vengono memorizzati nel profilo del cliente in tempo reale.</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
 ## Architettura di Real-time Customer Profile
@@ -39,9 +39,9 @@ I record a cui è associata una sola identità non vengono elaborati dal servizi
 
 L’unione di frammenti di profilo si verifica quando il grafico delle identità fornisce le relazioni tra i vari frammenti di profilo sorgente che sono stati correlati. Il criterio di unione determina quali frammenti di origine e quale grafico di identità utilizzare al momento dell’unione dei frammenti. Ogni volta che si accede al profilo, viene eseguita l’unione dei frammenti di profilo affinché la visualizzazione combinata del profilo sia sempre aggiornata. Le regole di governance e policy garantiscono che solo i segmenti e gli attributi autorizzati possano essere attivati nelle destinazioni specificate.
 
-## Panoramica sulla segmentazione e sulla destinazione
+## Panoramica sulla segmentazione e sulle destinazioni
 
-L’illustrazione seguente illustra i vari metodi di segmentazione e i vari pattern di attivazione di profili e pubblico.
+L’illustrazione seguente descrive i vari metodi di segmentazione e pattern di attivazione di profili e pubblico.
 
 <img src="assets/segmentation_destination_overview.png" alt="Architettura di riferimento per Real-time Customer Profile" style="border:1px solid #4a4a4a" width="90%"/>
 
