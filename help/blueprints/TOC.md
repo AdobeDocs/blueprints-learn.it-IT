@@ -7,7 +7,7 @@ role: Architect, Developer, User
 source-git-commit: c5fd3f33d48d830b5e5058b919e814e7f84ace81
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 93%
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
    + [Analisi del percorso cross-channel](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
    + [Riduzione delle chiamate](/help/blueprints/customer-journey-analytics/call-deflect.md)
-+ Customer journey{#customer-journeys}
++ Customer journey {#customer-journeys}
    + [Panoramica](/help/blueprints/customer-journeys/overview.md)
    + [Messaggistica batch ed Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
    + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
@@ -37,7 +37,7 @@ ht-degree: 93%
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
    + [Raccolta dei dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
-   + [Experience Platform WebSDK](/help/blueprints/data-ingestion/websdk.md)
+   + [SDK Web di Experience Platform](/help/blueprints/data-ingestion/websdk.md)
 + Analisi dei dati, intelligence e IA/ML {#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)
