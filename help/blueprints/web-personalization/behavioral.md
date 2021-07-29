@@ -5,9 +5,9 @@ solution: Experience Platform, Target, Audience Manager, Analytics, Experience C
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 source-git-commit: 848f1366f3dd2d7948a31cfc606e906ec7f74fbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Il blueprint per la personalizzazione web/mobile può essere implementato con i 
 
 ### 1. Mediante Platform Web/Mobile SDK e rete Edge
 
-[Consulta l’Experience Platform Blueprint dell’SDK per web e dispositivi mobili](../data-ingestion/websdk.md)
+[Consulta il blueprint per l’SDK Web/Mobile di Experience Platform](../data-ingestion/websdk.md)
 
 ### 2. Mediante SDK per specifiche applicazioni
 
@@ -84,7 +84,7 @@ Il blueprint per la personalizzazione web/mobile può essere implementato con i 
 
 * [Experience Cloud Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=it)
 * [Integrare Audience Manager con Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=it)
-* [Condivisione dei segmenti di Adobe Analytics tramite Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
+* [Condivisione dei segmenti di Adobe Analytics tramite Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=it)
 
 
 ## Articoli di blog correlati
