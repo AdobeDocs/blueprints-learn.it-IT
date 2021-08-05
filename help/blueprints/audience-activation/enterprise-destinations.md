@@ -1,17 +1,17 @@
 ---
-title: Blueprint per attivazione in base a pubblico e profili nelle destinazioni aziendali
+title: Blueprint di Audience e Profile Activation to File and Enterprise Streaming Destinations
 description: Attivazione in base a pubblico e profili nelle destinazioni aziendali
 solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
-source-git-commit: 2fc1adc04a9ca2184c88970d5ba0785957327f68
+source-git-commit: 8f1d76c317dbe4c7e916b4513960b4549a2d3424
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 94%
 
 ---
 
-# Blueprint per attivazione in base a pubblico e profili nelle destinazioni aziendali
+# Blueprint di Audience e Profile Activation to File and Enterprise Streaming Destinations
 
 Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!UICONTROL Real-time Customer Data Platform] con archivi dati e applicazioni aziendali. Gli eventi di profilo e pubblico possono essere utilizzati per avviare un’azione di vendita o supporto al cliente, ad esempio per dare seguito all’abbandono di un processo di iscrizione o di registrazione a un webinar, oppure per aggiornare le applicazioni aziendali con gli attributi e le informazioni più recenti del cliente da [!UICONTROL Real-time Customer Data Platform].
 
