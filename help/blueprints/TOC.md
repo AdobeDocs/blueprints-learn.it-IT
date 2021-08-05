@@ -5,9 +5,9 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 role: Architect, Developer, User
 source-git-commit: c5fd3f33d48d830b5e5058b919e814e7f84ace81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '121'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,5 +45,5 @@ ht-degree: 95%
 + Personalizzazione web e mobile {#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione basata sul comportamento](/help/blueprints/web-personalization/behavioral.md)
-   + [Peronsalizzazione con dati online e offline](/help/blueprints/web-personalization/online-offline.md)
+   + [Personalizzazione con dati online e offline](/help/blueprints/web-personalization/online-offline.md)
 
