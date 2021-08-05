@@ -4,9 +4,9 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 606b209693213c3eb7875cb9eda67f989489114b
+source-git-commit: a13f31837a507711bb27f2fcc0d49c44ffe0a8d7
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '124'
 ht-degree: 91%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 91%
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
    + [Attivazione del pubblico con dati anonimi](/help/blueprints/audience-activation/anonymous.md)
    + [Attivazione con dati online e offline](/help/blueprints/audience-activation/online-offline.md)
-   + [Destinazioni di streaming file ed Enterprise](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + [Attivazione a destinazioni di streaming file ed Enterprise](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [Attivazione con applicazioni Experience Cloud](/help/blueprints/audience-activation/platform-and-applications.md)
    + [Hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics {#customer-journey-analytics}
