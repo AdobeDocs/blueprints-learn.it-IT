@@ -1,23 +1,23 @@
 ---
-title: Attivazione con Blueprint dati online e offline
+title: Blueprint per attivazione con dati online e offline
 description: Attivazione del pubblico con dati online/offline.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 source-git-commit: 0a1cd20e267136df305bba0b740ab57a450cb953
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Attivazione con Blueprint dati online e offline
+# Blueprint per attivazione con dati online e offline
 
 Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistema di gestione delle relazioni con i clienti o fedeltà, insieme a dati sul comportamento online.
 
 Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie.
 
-La blueprint Activation con dati online e offline è in linea con la [Attivazione pubblico e profilo con Experience Cloud Applications Blueprint](platform-and-applications.md). Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le applicazioni Experience Cloud sono disponibili nel [blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md).
+Il blueprint per l’attivazione con dati online e offline è strettamente allineato al [blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md). Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le applicazioni Experience Cloud sono disponibili nel [blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md).
 
 ## Casi di utilizzo
 
@@ -32,7 +32,7 @@ La blueprint Activation con dati online e offline è in linea con la [Attivazion
 
 ## Architettura
 
-### Attivazione con dati online e offline con destinazioni
+### Attivazione per destinazioni con dati online e offline
 
 <img src="assets/online_offline_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione del pubblico con dati online/offline" style="border:1px solid #4a4a4a" />
 <br>
@@ -69,4 +69,4 @@ La blueprint Activation con dati online e offline è in linea con la [Attivazion
 
 * Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
-* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
+* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it)
