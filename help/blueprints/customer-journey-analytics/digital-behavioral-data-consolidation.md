@@ -7,7 +7,7 @@ exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 source-git-commit: 2cf3445775b2db827938d2927214a4073da20cdb
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -39,8 +39,8 @@ Crea una visione unica e consolidata del comportamento dei clienti attraverso i 
 
 1. [Creare schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
-1. Inserire i dati in Experience Platform
-I dati devono essere inseriti in Platform prima di essere elaborati in Customer Journey Analytics. Per ulteriori informazioni sull’inserimento dei dati e sui tipi di origini dati, consulta la seguente documentazione. [Origini ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it) dati, incluso il Connettore dati di  [Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it). [Tutorial sull’acquisizione dei dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it)
+1. Inserisci dati[Ingest Data Tutorial](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
+I dati devono essere inseriti in Platform prima di essere elaborati in Customer Journey Analytics. Per ulteriori informazioni sull’inserimento dei dati e sui tipi di origini dati, consulta la seguente documentazione. [Origini ](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it) dati, compreso il connettore dati di  [Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it)
 1. Analizzare i set di dati relativi agli eventi multicanale da analizzare in unione, per assicurarsi che abbiano un ID di namespace comune o che siano riconfigurati tramite la funzionalità di composizione basata sul campo di Customer Journey Analytics. Consulta la documentazione sull’analisi cross channel per ulteriori informazioni sulle unione delle identità nel Customer Journey Analytics. [Unione identità](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en)
 
    >[!NOTE]
