@@ -7,8 +7,8 @@ thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
 source-git-commit: 724d4c1016bbbdc7431df159af052f587288d2bf
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +19,9 @@ Customer Journey Analytics mostra come i brand possono unificare i dati e il com
 Le analisi più comuni includono:
 
 * Percorsi di conversione migliori/peggiori
-* Coinvolgimento del canale e conversione
+* Coinvolgimento e conversione per canale
 * Contenuti più visualizzati
-* Categorie e prodotti principali
+* Categorie e prodotti di maggior successo
 * Campagne che hanno portato alla conversione e a un maggior coinvolgimento
 * Analisi dell’utilizzo degli strumenti per ottimizzare le esperienze self-service
 
