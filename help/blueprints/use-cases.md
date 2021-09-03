@@ -1,7 +1,7 @@
 ---
 title: Casi di utilizzo di blueprint di esperienza digitale
 description: I blueprint per esperienze digitali sono implementazioni ripetibili che permettono di risolvere questioni di strategia e problemi di business noti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
-source-git-commit: 988861c95a9f138acd8c6107e6c08b7e05e4e537
+source-git-commit: 3a923b26f91b9d40969a182bdd5271f40fb9a1d0
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 76%
@@ -22,16 +22,16 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td>Eseguire la personalizzazione e il targeting di un pubblico digitale anonimo.</td>
-  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=it">Attivazione del pubblico con dati anonimi</a></td>
-  <td rowspan="9" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Attivazione in base a pubblico e profili</td>
+  <td rowspan="9" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Attivazione in base a pubblico e profili</td>
  </tr>
  <tr>
   <td>Creare tipi di pubblico per il targeting su reti pubblicitarie supportate.</td>
  </tr>
  <tr>
   <td>Targeting per tipi di pubblico noti su destinazioni social e pubblicitarie.</td>
-  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a></td>
  </tr>
  <tr>
@@ -42,12 +42,12 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td>Attivazione di profili e pubblico per destinazioni di archiviazione cloud o di streaming per il tracciamento, l’archiviazione, l’analisi e l’attivazione di dati e informazioni sui clienti.</td>
-  <td><a
+  <td style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/enterprise-destinations.html?lang=en">Attivazione per destinazioni aziendali</a></td>
  </tr>
  <tr>
   <td>Personalizzazione e targeting attraverso i canali di interazione con il cliente basati su Experience Cloud</td>
-  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con applicazioni Experience Cloud</a></td>
  </tr>
  <tr>
@@ -55,22 +55,22 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td>Contesto del consumatore più approfondito, per le interazioni tramite operatore, come le esperienze di assistenza tecnica o commerciale. Utilizzando la ricerca del profilo in Experience Platform, gli agenti possono ricevere maggiori informazioni di contesto sul cliente, come acquisti recenti, interazioni con le campagne, tendenze, pubblico di appartenenza e altri attributi e informazioni che vengono memorizzati nel profilo del cliente in tempo reale.</td>
-  <td><a
+  <td style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/customer-activity.html?lang=en">Hub delle attività dei clienti</a></td>
  </tr>
  <tr>
   <td>Analizzare le interazioni con i clienti su desktop e dispositivi mobili per comprendere il comportamento dei clienti ed estrarre informazioni utili per ottimizzare le esperienze digitali.</td>
-  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=en">Croce
   Canale</a></td>
-  <td rowspan="4" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Customer Journey Analytics</td>
+  <td rowspan="4" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Customer Journey Analytics</td>
  </tr>
  <tr>
   <td>Analizzare le interazioni con i clienti attraverso i canali, inclusi i canali digitali e offline, come le interazioni di supporto e gli acquisti in-store per comprendere meglio e ottimizzare il percorso del cliente.</td>
  </tr>
  <tr>
   <td>Analizzare il comportamento del cliente prima della richiesta di supporto.</td>
-  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/call-deflect.html?lang=en">Riduzione delle chiamate</a></td>
  </tr>
  <tr>
@@ -78,17 +78,17 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td>Campagne e-mail pianificate.</td>
-  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=en">Batch
   Messaggistica e piattaforma</a></td>
-  <td rowspan="6" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Customer journey</td>
+  <td rowspan="6" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Customer journey</td>
  </tr>
  <tr>
   <td>Campagne di onboarding e di re-marketing.</td>
  </tr>
  <tr>
   <td>Messaggi attivati.</td>
-  <td rowspan="4" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="4" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en">Journey Optimizer</a></td>
  </tr>
  <tr>
@@ -102,14 +102,14 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td></td>
-  <td><a
+  <td style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/ingestion.html?lang=en">Dati
   Preparazione e acquisizione</a></td>
-  <td rowspan="4" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Raccolta e preparazione dei dati</td>
+  <td rowspan="4" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Raccolta e preparazione dei dati</td>
  </tr>
  <tr>
   <td>Raccolta dati dal web o dal dispositivo mobile mediante un unico tag di raccolta, alleggerendo il peso del codice sui browser e sulle applicazioni client. Propagazione dei dati raccolti in vari endpoint per un’unica origine di raccolta dati.</td>
-  <td rowspan="2" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/server-side-collection.html?lang=en">AEP
   Raccolta Enterprise (inoltro eventi)</a></td>
  </tr>
@@ -118,15 +118,15 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td></td>
-  <td><a
+  <td style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html?lang=en">SDK per web
   Raccolta dati</a></td>
  </tr>
  <tr>
   <td>Query interattiva e aggregazione dei dati.</td>
-  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-exploration/analysis.html?lang=en">Analisi e intelligence dei dati</a></td>
-  <td rowspan="6" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Dati
+  <td rowspan="6" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Dati
   Analytics, Intelligence e ML</td>
  </tr>
  <tr>
@@ -137,7 +137,7 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td>Estrarre approfondimenti e individuare gli schemi partendo dai dati dei clienti in Experience Platform Addestrare e valutare i modelli derivati da questi dati</td>
-  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-exploration/data-science.html?lang=en">Cliente
   Data Science per l'arricchimento del profilo</a></td>
  </tr>
@@ -149,9 +149,9 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td>Ottimizzazione della pagina di destinazione.</td>
-  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=en">Personalizzazione basata sul comportamento</a></td>
-  <td rowspan="6" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Personalizzazione web e mobile</td>
+  <td rowspan="6" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Personalizzazione web e mobile</td>
  </tr>
  <tr>
   <td>Targeting comportamentale.</td>
@@ -161,7 +161,7 @@ Quali di questi casi d&#39;uso sono importanti per la tua azienda? Scopri quali 
  </tr>
  <tr>
   <td>Ottimizzazione della pagina di destinazione.</td>
-  <td rowspan="3" border="1" valign="middle" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
+  <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html?lang=en">Personalizzazione con dati online/offline</a></td>
  </tr>
  <tr>
