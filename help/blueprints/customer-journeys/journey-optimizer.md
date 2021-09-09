@@ -4,10 +4,10 @@ description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: 93561231286b5bfd9bf3660399b542d27aedb52c
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 98%
+source-wordcount: '712'
+ht-degree: 95%
 
 ---
 
@@ -53,7 +53,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 
 ## Guardrail
 
-* Per ulteriori dettagli sulle limitazioni, fai clic su questo link.
+* Vedi il link per maggiori dettagli sulle protezioni per Journey Optimizer [LINK](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)
 * Segmenti batch: necessario comprendere il volume giornaliero di utenti qualificati e accertarsi che il sistema di destinazione sia in grado di gestire il throughput burst per percorso e per tutti i percorsi.
 * Segmenti in streaming: il burst iniziale delle qualifiche dei profili deve poter essere gestito insieme al volume giornaliero di qualificazione dello streaming, per ogni percorso e per tutti i percorsi.
 * Attività di aggiornamento del profilo: il profilo Real-time Customer Profile può essere aggiornato in modalità nativa dall’interno di un percorso.  L’elaborazione dell’aggiornamento nell’archivio dei profili avviene con un ritardo massimo di 1 minuto.
