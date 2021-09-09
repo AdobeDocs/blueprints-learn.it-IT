@@ -4,16 +4,16 @@ description: Trasmettere alle destinazioni i dati raccolti tramite gli SDK di Ex
 solution: Experience Platform,Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 3bcb5d798986e563fda6f40fc730ff62b74b3187
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '220'
+ht-degree: 82%
 
 ---
 
 # Blueprint per la raccolta di dati aziendali lato server
 
-Il blueprint per la raccolta di dati aziendali lato server mostra come i dati raccolti con gli SDK Web e Mobile di Adobe Experience Platform possono essere inoltrati dalla rete Edge di Experience Platform alla destinazione desiderata. È possibile inoltrare tutti i dati grezzi raccolti dagli SDK o dati specifici in base a eventi e regole, come configurato in Experience Platform Launch.
+Il blueprint per la raccolta di dati aziendali lato server mostra come i dati raccolti con gli SDK Web e Mobile di Adobe Experience Platform possono essere inoltrati dalla rete Edge di Experience Platform alla destinazione desiderata. Puoi inoltrare tutti i dati non elaborati raccolti dagli SDK o i dati specifici in base a eventi e regole, come configurato nelle proprietà dei tag (precedentemente Launch).
 
 ## Casi di utilizzo
 
@@ -30,8 +30,8 @@ Il blueprint per la raccolta di dati aziendali lato server mostra come i dati ra
 
 ## Documentazione correlata
 
-[Documentazione di Experience Platform Launch Server Side](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=it#server-side-info)
-[Video su Experience Platform Launch Server Side](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=it)
+* [Documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+* [Video sull’inoltro di eventi](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=it)
 
 ## Articoli di blog correlati
 

@@ -4,10 +4,10 @@ description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: dc13a1fe9a32f70497c5c73485618e6989b7a644
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 100%
+source-wordcount: '699'
+ht-degree: 98%
 
 ---
 
@@ -37,8 +37,8 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 
 * Per creare l’app, il cliente deve disporre di uno sviluppatore di app mobili.
 * SDK per dispositivi mobili di Adobe Experience Platform
-* Adobe Launch
-   * Proprietà mobile
+* Raccolta dati
+   * Proprietà dei tag mobili
       * Estensioni:
          * Estensione Adobe Journey Optimizer
          * Rete Edge di Adobe Experience Platform
@@ -73,7 +73,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 
 #### Schema/set di dati
 
-1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=it) in Experience Platform, in base ai dati forniti dal cliente
+1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) in Experience Platform, in base ai dati forniti dal cliente
 1. Creare schemi di Adobe Campaign per broadLog, trackingLog, indirizzi non consegnabili e preferenze profilo (opzionale)
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
 1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.

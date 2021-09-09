@@ -4,10 +4,10 @@ description: Analizza ed estrai informazioni dalle interazioni che avvengono dur
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
-source-git-commit: 2cf3445775b2db827938d2927214a4073da20cdb
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '622'
+ht-degree: 99%
 
 ---
 
@@ -37,10 +37,10 @@ Crea una visione unica e consolidata del comportamento dei clienti attraverso i 
 
 ## Fasi di implementazione
 
-1. [Creare schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=it) per i dati da acquisire.
+1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
-1. Acquisire i dati in Experience Platform.
-I dati devono essere acquisiti in Platform prima di poter essere elaborati in Customer Journey Analytics. Per ulteriori informazioni sull’acquisizione dei dati e sui tipi di origini dati, consulta la documentazione seguente. [Origini dati](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it), incluso [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it). [Tutorial sull’acquisizione dei dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it)
+1. [Acquisire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it).
+I dati devono essere acquisiti in Platform prima di poter essere elaborati in Customer Journey Analytics. Per ulteriori informazioni sull’acquisizione dei dati e sui tipi di origini dati, consulta la documentazione seguente. [Origini dati](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it), incluso [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it). [Tutorial sull’acquisizione dei dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
 1. Esaminare i set di dati relativi agli eventi multicanale da analizzare insieme, per assicurarsi che abbiano un ID di namespace comune o che siano riconfigurati tramite la funzionalità di composizione basata sul campo di Customer Journey Analytics. Per ulteriori informazioni sull’unione delle identità in Customer Journey Analytics, consulta la documentazione sulle analisi cross-channel. [Unione delle identità](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=it)
 
    >[!NOTE]

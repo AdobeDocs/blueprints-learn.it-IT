@@ -4,10 +4,10 @@ description: Questo blueprint mostra come Data Science Workspace di Adobe Experi
 solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
+source-git-commit: c26bf7523dc9b3310678a4129ea10ad06ef5e7cb
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '442'
+ht-degree: 83%
 
 ---
 
@@ -27,15 +27,15 @@ Il blueprint per la personalizzazione Data Science per l’arricchimento del pro
 
 ## Fasi di implementazione
 
-1. [Creare schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=it) per i dati da acquisire.
+1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
 1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
-1. Creare un notebook DSW
+1. [Creare un blocco appunti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/load-data-in-jupyterlab-notebooks.html?lang=en) DSW.
 1. Scegliere un linguaggio. Sono supportati Python e PySpark.
-1. Creare il modello nel notebook
-1. Addestrare il modello
-1. Valutare il modello per generare previsioni con i dati di destinazione
-1. Attivare il set di dati dei risultati del modello per il profilo se si devono trasferire in [!UICONTROL Real-time Customer Profile]
+1. [Creare il modello nel notebook](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/recipe-builder-template.html?lang=en)
+1. [Addestra il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en).
+1. [Valutare il modello per generare previsioni con i dati di destinazione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en)
+1. [Abilita il set di dati dei risultati del modello per il profilo, se invii i risultati del modello al profilo cliente  [!UICONTROL in tempo reale]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/dsw-profile-segmentation.html?lang=en).
 
 ## Documentazione correlata
 
