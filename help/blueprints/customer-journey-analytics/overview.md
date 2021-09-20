@@ -5,10 +5,10 @@ solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 724d4c1016bbbdc7431df159af052f587288d2bf
+source-git-commit: ec32344078e8bad9639d8d11ce93ed68fda186f3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '262'
+ht-degree: 91%
 
 ---
 
@@ -27,15 +27,12 @@ Le analisi più comuni includono:
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
-| **[Analisi del percorso cross-channel](digital-behavioral-data-consolidation.md)** | <ul><li>Crea una visione unica e consolidata del comportamento dei clienti attraverso i vari canali, grazie all’integrazione di dati provenienti da varie proprietà web, mobili e offline.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (opzionale)</li></ul> |
-| **[Analisi del percorso per la deviazione delle chiamate](call-deflect.md)** | <ul><li>Individua i comportamenti più indicativi nel determinare le chiamate a un operatore, unendo i dati del call center ai dati sulle interazioni web, mobili e di altro tipo.</li><li>Questi approfondimenti possono quindi essere utilizzati per ottimizzare l’esperienza del cliente con migliori strumenti e contenuti self-service, e quindi ridurre la necessità di parlare con un operatore.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
+| **[Analisi del percorso cross-channel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)** | <ul><li>Crea una visione unica e consolidata del comportamento dei clienti attraverso i vari canali, grazie all’integrazione di dati provenienti da varie proprietà web, mobili e offline.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (opzionale)</li></ul> |
+| **[Analisi del percorso per la deviazione delle chiamate](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>Individua i comportamenti più indicativi nel determinare le chiamate a un operatore, unendo i dati del call center ai dati sulle interazioni web, mobili e di altro tipo.</li><li>Questi approfondimenti possono quindi essere utilizzati per ottimizzare l’esperienza del cliente con migliori strumenti e contenuti self-service, e quindi ridurre la necessità di parlare con un operatore.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
-## Guardrail relativi ai blueprint per Customer Journey Analytics
+## Grafico Guardrail per Blueprint Customer Journey Analytics
 
-### Diagramma dei guardrail
-
-<img src="assets/cja_guardrails.png" alt="Diagramma dei guardrail relativi ai blueprint per Customer Journey Analytics" style="border:1px solid #4a4a4a" />
-
+![Diagramma di Guardrail](assets/cja_guardrails.png)
 
 ## Articoli di blog correlati
 
