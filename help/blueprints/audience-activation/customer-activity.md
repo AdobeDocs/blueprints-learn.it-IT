@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
 source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,5 +49,5 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 * [Descrizione del prodotto Adobe Experience Platform Activation](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform0.html)
 * Documentazione di [[!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
-* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [API di ricerca profilo](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
