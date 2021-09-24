@@ -6,15 +6,15 @@ product: adobe experience platform
 role: Architect, Developer, User
 source-git-commit: ec32344078e8bad9639d8d11ce93ed68fda186f3
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Blueprint per esperienze digitali {#architecture}
 
 + [Panoramica](/help/blueprints/overview.md)
-+ [Vedi tutti i casi d’uso](/help/blueprints/use-cases.md)
++ [Vedi tutti i casi di utilizzo](/help/blueprints/use-cases.md)
 + Panoramica dell’architettura {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)

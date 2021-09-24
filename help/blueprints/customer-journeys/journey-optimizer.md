@@ -38,7 +38,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 * Per creare l’app, il cliente deve disporre di uno sviluppatore di app mobili.
 * SDK per dispositivi mobili di Adobe Experience Platform
 * Raccolta dati
-   * Proprietà dei tag mobili
+   * Proprietà dei tag per dispositivi mobili
       * Estensioni:
          * Estensione Adobe Journey Optimizer
          * Rete Edge di Adobe Experience Platform
@@ -53,7 +53,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 
 ## Guardrail
 
-* Vedi il link per maggiori dettagli sulle protezioni per Journey Optimizer [LINK](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)
+* Vedi il link per maggiori dettagli sui guardrail per Journey Optimizer [LINK](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=it)
 * Segmenti batch: necessario comprendere il volume giornaliero di utenti qualificati e accertarsi che il sistema di destinazione sia in grado di gestire il throughput burst per percorso e per tutti i percorsi.
 * Segmenti in streaming: il burst iniziale delle qualifiche dei profili deve poter essere gestito insieme al volume giornaliero di qualificazione dello streaming, per ogni percorso e per tutti i percorsi.
 * Attività di aggiornamento del profilo: il profilo Real-time Customer Profile può essere aggiornato in modalità nativa dall’interno di un percorso.  L’elaborazione dell’aggiornamento nell’archivio dei profili avviene con un ritardo massimo di 1 minuto.
