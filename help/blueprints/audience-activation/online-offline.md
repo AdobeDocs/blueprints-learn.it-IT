@@ -4,10 +4,10 @@ description: Attivazione del pubblico con dati online/offline.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
-workflow-type: ht
-source-wordcount: '525'
-ht-degree: 100%
+source-git-commit: e4e4838813d68ed3dc209c71354a86c1af264f1a
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 93%
 
 ---
 
@@ -56,7 +56,7 @@ Il blueprint per l’attivazione con dati online e offline è strettamente allin
 
 * Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per [!UICONTROL Real-time Customer Profile].
 
-* Per gli scenari di attivazione in cui il pubblico viene condiviso tra Experience Platform e Audience Manager, tutte le identità incluse in [!UICONTROL Real-time Customer Profile] vengono condivise con Audience Manager. Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse in [!UICONTROL Real-time Customer Profile], oppure nel caso in cui le identità in [!UICONTROL Real-time Customer Profile] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
+* Per scenari di attivazione in cui i tipi di pubblico vengono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Attualmente, i namespace del cliente non sono condivisi. Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse in [!UICONTROL Real-time Customer Profile], oppure nel caso in cui le identità in [!UICONTROL Real-time Customer Profile] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
 
 ## Documentazione correlata
 
@@ -69,4 +69,4 @@ Il blueprint per l’attivazione con dati online e offline è strettamente allin
 
 * Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
-* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it)
+* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
