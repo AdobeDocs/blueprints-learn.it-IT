@@ -1,41 +1,42 @@
 ---
 title: Attivazione B2B
-description: Offri tipi di pubblico basati su account ed esperienze cliente incentrate sul profilo con Real-time Customer Data Platform ​.
+description: Offri a un pubblico basato su account esperienze personalizzate secondo i profili con Real-time Customer Data Platform.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
 exl-id: null
 source-git-commit: d811d82418d477372caa9e5b0b67af197275d459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '821'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Pubblico B2B e attivazione del profilo
+# Attivazione di profili e pubblico B2B
 
-Utilizza account, opportunità e informazioni principali collegate a un singolo cliente per creare profili b2b utilizzabili per migliorare la personalizzazione e il targeting tra i canali.
+Associa a un singolo cliente le informazioni relative all’account, alle opportunità e ai lead, per creare profili B2B con cui migliorare la personalizzazione e il targeting su tutti i canali.
 
 ## Casi di utilizzo
 
-* Crea tipi di pubblico di persone per il targeting e la personalizzazione tra canali diversi rispetto ai dati B2B, inclusi account, opportunità e lead.
-* Attiva i tipi di pubblico in qualsiasi destinazione di Experience Platform per il targeting e la personalizzazione.
+* Crea un pubblico basato su persone e utilizzalo per il targeting e la personalizzazione su canali diversi, grazie a dati B2B quali account, opportunità e lead.
+* Attiva uno specifico pubblico in qualsiasi destinazione di Experience Platform per attività di targeting e personalizzazione.
 
 ## Applicazioni
 
-* Real-time Customer Data Platform Edizione B2B
+* Real-time Customer Data Platform B2B Edition
 
 ## Pattern di integrazione
 
-* Origini dati B2B (Marketo, Salesforce, ecc.) -> Real-time Customer Data Platform B2B Edition -> Destinazioni È possibile utilizzare diverse origini dati B2B per mappare i dati su account, lead, opportunità e persone all’edizione B2B di Real-time Customer Data Platform.
+* Origini dati B2B (Marketo, Salesforce, ecc.) -> Real-time Customer Data Platform B2B Edition -> Destinazioni
+È possibile utilizzare diverse origini dati B2B per associare i dati da account, lead, opportunità e persone a Real-time Customer Data Platform B2B Edition.
 
 ## Architettura
 
-<img src="assets/b2b-activation.svg" alt="Architettura di riferimento per il Blueprint di attivazione B2B" style="border:1px solid #4a4a4a" />
+<img src="assets/b2b-activation.svg" alt="Architettura di riferimento per il blueprint Attivazione B2B" style="border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrail
 
-Tieni presente che le protezioni e le fasi di implementazione relative al Marketo Engage sono rilevanti solo quando il Marketo Engage è utilizzato come origine e/o destinazione.
+I guardrail e le fasi di implementazione relative a Marketo Engage sono applicabili solo quando si usa Marketo Engage come origine e/o destinazione.
 
 ### Supporto di più istanze e organizzazioni IMS:
 
@@ -43,58 +44,59 @@ Di seguito sono descritti i pattern supportati per la mappatura delle istanze di
 
 #### Marketo come origine dati per Experience Platform:
 
-* Sono supportate più istanze di Marketi Engage a un&#39;istanza di Experience Platform.
-* Non sono supportate più istanze di Marketi Engage a più istanze di Experience Platform.
-* Un&#39;istanza di Marketo Engage a più istanze di Experience Platform non è supportata.
-* È supportata un’istanza di Marketo Engage a un’istanza di Experience Platform e più sandbox.
+* Sono supportate più istanze di Marketo Engage per una istanza di Experience Platform.
+* Non sono supportate più istanze di Marketo Engage per più istanze di Experience Platform.
+* Non è supportata una istanza di Marketo Engage per più istanze di Experience Platform.
+* È supportata una istanza di Marketo Engage per una istanza di Experience Platform e più sandbox.
 
 #### Marketo come destinazione per Experience Platform:
 
-* È supportato l’Experience Platform a più istanze di Marketo Engage
-* Sono supportate molte istanze di Experience Platform a un&#39;istanza di Marketo Engage
+* È supportato Experience Platform per più istanze di Marketo Engage.
+* Sono supportate più istanze di Experience Platform per una istanza di Marketo Engage.
 
-#### Experience Platform di protezioni per profili e segmentazione:
+#### Guardrail per segmentazione e profili Experience Platform:
 
-* Vedi le protezioni di profilo e segmentazione per Experience Platform - [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
-* I segmenti B2B che includono account, lead, opportunità utilizzano relazioni con più entità che fanno sì che la valutazione dei segmenti diventi batch. La segmentazione in streaming è supportata per i segmenti che sono limitati a persone ed eventi.
+* Vedi i guardrail relativi a profili e segmentazione per Experience Platform: [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+* I segmenti B2B che includono account, lead e opportunità utilizzano relazioni con più entità e pertanto la valutazione dei segmenti viene eseguita in batch. La segmentazione in streaming è supportata per i segmenti limitati a persone ed eventi.
 
-#### Experience Platform - Connettore sorgente Marketo Engage:
+#### Connettore tra Experience Platform e origine Marketo Engage:
 
-* Il recupero storico può richiedere fino a 7 giorni per essere completato, a seconda del volume di dati.
-* Gli aggiornamenti e le modifiche dei dati in corso da Marketo vengono inviati ad Experience Platform tramite l’API streaming che può essere latente fino a circa 5 minuti al profilo e circa 15 minuti al data lake a seconda del volume.
+* Il recupero di dati storici può richiedere fino a 7 giorni, a seconda del volume di dati.
+* Gli aggiornamenti e le modifiche dei dati in corso da Marketo vengono inviati ad Experience Platform tramite l’API di streaming, con una latenza fino a circa 5 minuti per il profilo e circa 15 minuti per il data lake, a seconda del volume.
 
-#### Experience Platform - Connettore di destinazione Marketo:
+#### Connettore tra Experience Platform e destinazione Marketo:
 
-* La condivisione in streaming dei segmenti da Real-time Customer Data Platform al Marketo Engage può richiedere fino a 5 minuti.
-* La segmentazione in batch viene condivisa una volta al giorno in base al programma di segmentazione Experience Platform. I segmenti B2B che includono account, lead, opportunità utilizzano relazioni con più entità che fanno sì che il segmento diventi batch.
+* La condivisione in streaming dei segmenti da Real-time Customer Data Platform a Marketo Engage può richiedere fino a 5 minuti.
+* La segmentazione in batch viene condivisa una volta al giorno in base al programma di segmentazione di Experience Platform. I segmenti B2B che includono account, lead e opportunità utilizzano relazioni con più entità e pertanto la valutazione dei segmenti viene eseguita in batch.
 
-#### Guardrail di Marketo Engage:
+#### Guardrail per Marketo Engage:
 
-* I contatti e i lead devono essere acquisiti e definiti direttamente in Marketo Engage affinché il pubblico Real-time Customer Data Platform possa essere associato a un contatto e a un lead di Marketo Engage.
+* I contatti e i lead devono essere acquisiti e definiti direttamente in Marketo Engage affinché il pubblico Real-time Customer Data Platform possa essere associato a un contatto e un lead di Marketo Engage.
 
-#### Guardrail di destinazione
+#### Guardrail per destinazione
 
-* Per informazioni specifiche sulle destinazioni, consulta la documentazione di destinazione . [Linee guida sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en)
+* Per informazioni specifiche sulle destinazioni, consulta la relativa documentazione. [Linee guida sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it)
 
 
 ## Fasi di implementazione
 
-Per informazioni su come implementare e configurare l’edizione B2B di Real-time Customer Data Platform, consulta l’edizione B2B della documentazione Real-time Customer Data Platform. [Edizione B2B di Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
+Per informazioni su come implementare e configurare Real-time Customer Data Platform B2B Edition, consulta la relativa documentazione. [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
 
-Esistono due possibili pattern di implementazione. Sia la capacità di acquisire dati e profili B2B dal Marketo Engage che la capacità di acquisire dati B2B da altre fonti di dati CRM.
+Sono disponibili due pattern di implementazione: per acquisire dati e profili B2B da Marketo Engage, o per acquisire dati B2B da altri origini di dati CRM.
 
 ## Considerazioni sull’implementazione
 
-Indicazioni su considerazioni e configurazioni chiave del modello.
+Considerazioni chiavi e configurazioni del blueprint.
 
-* Integrazione CRM con e senza Marketo: Se l&#39;implementazione utilizzerà il Marketo Engage come origine e il Marketo Engage è connesso al sistema di gestione delle relazioni con i clienti, utilizza il connettore di origine Marketo in Experience Platform per acquisire i dati CRM in Experience Platform. Utilizza il connettore di origine Experience Platform se è necessario acquisire ulteriori tabelle. Se l&#39;implementazione non utilizza il Marketo Engage come origine, connetti l&#39;origine CRM direttamente ad AEP utilizzando il connettore di Experience Platform sorgente CRM.
-* Si sconsiglia l’avvio e l’aggiornamento al lead della sola edizione B2B di Real-time Customer Data Platform. Per questo caso d’uso si consiglia l’utilizzo di uno strumento di sviluppo del lead (ad esempio Marketo Engage).
-* Il connettore di destinazione Marketo Engage per AEP che invia i tipi di pubblico al Marketo Engage per l’attivazione, invia solo indirizzi e-mail ed ECID. Se il contatto non esiste già, non crea un nuovo lead, pertanto è necessario inserire i dati del profilo e del lead nel Marketo Engage.
+* Integrazione CRM con e senza Marketo: 
+Se l’implementazione utilizzerà Marketo Engage come origine, e Marketo Engage è connesso al sistema CRM, per acquisire i dati CRM in Experience Platform dovrai utilizzare il connettore di origine Marketo. Se dovranno essere acquisite altre tabelle di dati, utilizza il connettore di origine Experience Platform. Se nell’implementazione non viene utilizzato Marketo Engage come origine, connetti l’origine CRM direttamente ad AEP mediante il connettore per origine CRM di Experience Platform.
+* Si sconsiglia invece di avviare e seguire i lead unicamente da Real-time Customer Data Platform B2B Edition. Per questo caso di utilizzo si consiglia di utilizzare piuttosto uno strumento specifico, ad esempio Marketo Engage.
+* Il connettore di destinazione Marketo Engage per AEP che invia il pubblico a Marketo Engage per l’attivazione, invia solo indirizzi e-mail ed ECID. Se il contatto non esiste già, non viene creato un nuovo lead e sarà quindi necessario inserire i dati del profilo e del lead in Marketo Engage.
 
 ## Documentazione correlata
 
-* [Edizione B2B di Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
+* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
-* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=en)
-* [Adobe Experience Platform - Connettore sorgente Marketo](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it)
-* [Adobe Experience Platform - Connettore di destinazione Marketo](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html?lang=en)
+* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=it)
+* [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it)
+* [Connettore tra Adobe Experience Platform e destinazione Marketo](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html?lang=it)
