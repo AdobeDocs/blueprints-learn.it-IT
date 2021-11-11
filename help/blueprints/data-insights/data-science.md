@@ -4,8 +4,8 @@ description: Questo blueprint mostra come Data Science Workspace di Adobe Experi
 solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: c26bf7523dc9b3310678a4129ea10ad06ef5e7cb
-workflow-type: ht
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Il blueprint per la personalizzazione Data Science per l’arricchimento del pro
 
 ## Architettura
 
-<img src="assets/data_science.svg" alt="Architettura di riferimento per il blueprint per la personalizzazione Data Science per l’arricchimento del profilo" style="border:1px solid #4a4a4a" />
+<img src="assets/data_science.svg" alt="Architettura di riferimento per il blueprint per la personalizzazione Data Science per l’arricchimento del profilo" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Fasi di implementazione
 
@@ -34,7 +34,7 @@ Il blueprint per la personalizzazione Data Science per l’arricchimento del pro
 1. Scegliere un linguaggio. Sono supportati Python e PySpark.
 1. [Creare il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/recipe-builder-template.html?lang=it) nel notebook.
 1. [Addestrare il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=it).
-1. [Valutare il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=it) per generare previsioni con i dati di destinazione.
+1. [Valutare il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en) per generare previsioni con i dati di destinazione.
 1. [Attivare il set di dati dei risultati del modello per il profilo se si devono trasferire in [!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/dsw-profile-segmentation.html?lang=it).
 
 ## Documentazione correlata

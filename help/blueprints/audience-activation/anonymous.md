@@ -6,8 +6,8 @@ solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: f461f94dcd4a1c15e09269edcf0121f83f2f896d
-workflow-type: ht
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Puoi rivolgerti a un pubblico specifico su canali web e pubblicitari sulla base 
 
 ## Architettura
 
-<img src="assets/anonymous_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione del pubblico con dati anonimi" style="border:1px solid #4a4a4a" />
+<img src="assets/anonymous_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione del pubblico con dati anonimi" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Fasi di implementazione
 

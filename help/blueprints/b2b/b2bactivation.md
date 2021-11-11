@@ -4,8 +4,8 @@ description: Offri a un pubblico basato su account esperienze personalizzate sec
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
 exl-id: null
-source-git-commit: d811d82418d477372caa9e5b0b67af197275d459
-workflow-type: ht
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Associa a un singolo cliente le informazioni relative all’account, alle opport
 
 ## Architettura
 
-<img src="assets/b2b-activation.svg" alt="Architettura di riferimento per il blueprint Attivazione B2B" style="border:1px solid #4a4a4a" />
+<img src="assets/b2b-activation.svg" alt="Architettura di riferimento per il blueprint Attivazione B2B" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrail
@@ -95,7 +95,7 @@ Se l’implementazione utilizzerà Marketo Engage come origine, e Marketo Engage
 
 ## Documentazione correlata
 
-* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
+* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=it)
 * [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it)

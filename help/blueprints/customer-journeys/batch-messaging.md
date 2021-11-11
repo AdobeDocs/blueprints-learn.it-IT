@@ -4,8 +4,8 @@ description: Esegui campagne di messaggistica pianificate e in batch utilizzando
 solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
-workflow-type: ht
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Esegui campagne di messaggistica pianificate e in batch utilizzando Adobe Experi
 
 ## Architettura
 
-<img src="assets/aepbatch.svg" alt="Architettura di riferimento per il blueprint per messaggistica batch e Adobe Experience Platform" style="border:1px solid #4a4a4a" />
+<img src="assets/aepbatch.svg" alt="Architettura di riferimento per il blueprint per messaggistica batch e Adobe Experience Platform" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Guardrail
 
@@ -67,7 +67,7 @@ Condivisione dei segmenti di **[!UICONTROL Real-time Customer Data Platform] con
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Adobe Campaign

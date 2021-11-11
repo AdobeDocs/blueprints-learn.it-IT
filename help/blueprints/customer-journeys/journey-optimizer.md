@@ -4,8 +4,8 @@ description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: d19f42a181b51135c3cf672eeb957709279fe49a
-workflow-type: ht
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 
 ## Architettura
 
-<img src="assets/journey-optimizer.png" alt="Architettura di riferimento per il blueprint per messaggistica attivata e Adobe Experience Platform" style="border:1px solid #4a4a4a" />
+<img src="assets/journey-optimizer.png" alt="Architettura di riferimento per il blueprint per messaggistica attivata e Adobe Experience Platform" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Pattern di integrazione
 
@@ -82,7 +82,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Campaign
