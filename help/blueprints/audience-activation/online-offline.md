@@ -4,10 +4,10 @@ description: Attivazione del pubblico con dati online/offline.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
-workflow-type: ht
-source-wordcount: '532'
-ht-degree: 100%
+source-git-commit: c51ea51266ef61d5fdfdb50f4e0c1316790b1986
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 72%
 
 ---
 
@@ -56,7 +56,15 @@ Il blueprint per l’attivazione con dati online e offline è strettamente allin
 
 * Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per [!UICONTROL Real-time Customer Profile].
 
-* Per le situazioni di attivazione in cui i tipi di pubblico vengono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Al momento, gli spazi dei nomi del cliente non vengono condivisi. Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse in [!UICONTROL Real-time Customer Profile], oppure nel caso in cui le identità in [!UICONTROL Real-time Customer Profile] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
+### Condivisione del pubblico da Real-time Customer Data Platform a Audience Manager
+
+* L’appartenenza al pubblico da RT-CDP viene condivisa in Audience Manager in streaming non appena la valutazione del segmento viene completata e scritta nel profilo del cliente in tempo reale, sia che la valutazione del segmento si sia verificata in batch o in streaming. Se il profilo qualificato contiene le informazioni di indirizzamento regionali per i relativi dispositivi di profilo, l’appartenenza al pubblico da RTCDP è qualificata in modo in streaming sul server Edge associato. Se i profili di RTCDP non contengono informazioni di indirizzamento regionali, le appartenenze al profilo vengono inviate alla posizione di hub Audience Manager per la valutazione e l’attivazione basate su batch. I profili idonei per l’attivazione di Edge verranno attivati entro pochi minuti dalla qualifica del segmento da RTCDP, i profili non qualificati per l’attivazione di Edge saranno qualificati nell’hub di Audience Manager e potrebbero avere un intervallo di tempo di 12-24 ore per l’elaborazione.
+
+* Le informazioni di routing regionali su cui sono memorizzate le informazioni relative alla periferica del profilo in Audience Manager Edge possono essere raccolte da Analytics Data Connector quando i dati di Analytics sono abilitati per la raccolta al profilo oppure direttamente da WebSDK come set di dati separati della classe di record del profilo che devono quindi essere abilitati per il profilo.
+
+* Per le situazioni di attivazione in cui i tipi di pubblico vengono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Attualmente, i namespace personalizzati non sono condivisi.
+
+Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse in [!UICONTROL Real-time Customer Profile], oppure nel caso in cui le identità in [!UICONTROL Real-time Customer Profile] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
 
 ## Documentazione correlata
 
@@ -69,4 +77,4 @@ Il blueprint per l’attivazione con dati online e offline è strettamente allin
 
 * Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
-* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it)
+* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
