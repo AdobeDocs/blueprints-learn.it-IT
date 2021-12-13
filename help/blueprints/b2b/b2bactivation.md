@@ -3,8 +3,9 @@ title: Attivazione B2B
 description: Offri a un pubblico basato su account esperienze personalizzate secondo i profili con Real-time Customer Data Platform.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
-source-git-commit: bc8aab586175ab004614764645ee8a86713b407b
-workflow-type: ht
+exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
+source-git-commit: 7a26fa761cce509c15678a341e2ed3a8542330d6
+workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 100%
 
@@ -94,7 +95,7 @@ Se l’implementazione utilizzerà Marketo Engage come origine, e Marketo Engage
 
 ## Documentazione correlata
 
-* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
+* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=it)
 * [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it)

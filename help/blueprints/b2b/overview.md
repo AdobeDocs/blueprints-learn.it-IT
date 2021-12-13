@@ -1,18 +1,18 @@
 ---
-title: Attivazione e marketing B2B
+title: Analisi e attivazione B2B
 description: Offri a un pubblico basato su account esperienze personalizzate secondo i profili con Real-time Customer Data Platform.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
-thumbnail: null
-source-git-commit: bc8aab586175ab004614764645ee8a86713b407b
-workflow-type: ht
-source-wordcount: '161'
-ht-degree: 100%
+exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
+source-git-commit: 7a26fa761cce509c15678a341e2ed3a8542330d6
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 86%
 
 ---
 
 
-# Attivazione e marketing B2B
+# Analisi e attivazione B2B
 
 L’attivazione di profili e pubblico B2B è fondamentale per il successo nel mondo del data-driven marketing. Tuttavia, molti brand continuano a concentrarsi sull’attivazione in base al canale, che spesso risulta in incoerenza a livello di portata e personalizzazione.
 
@@ -20,4 +20,5 @@ Con l’approccio di priorità al canale, ogni canale funziona come un silo in c
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
+| **[Analisi B2B](b2bactivation.md)** | <ul><li>Includere le informazioni sull&#39;account B2B nell&#39;analisi del percorso cliente</li></ul> | <ul><li>Customer Journey Analytics Adobe</li></ul> |
 | **[Attivazione del pubblico B2B](b2bactivation.md)** | <ul><li>Rivolgiti a un pubblico B2B su tutti i canali; web, e-mail e pubblicitari.</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B Edition</li></ul> |
