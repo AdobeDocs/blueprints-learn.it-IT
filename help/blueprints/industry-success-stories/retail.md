@@ -3,7 +3,7 @@ title: Settore retail - Attivazione con applicazioni Experience Cloud
 description: Distribuzione in tempo reale di esperienze cliente su canali digitali, e-mail, push e web.
 solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
-source-git-commit: 6da7ce0e5ae27fd7946c57f1a05a55a98026839d
+source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 15%
@@ -22,18 +22,19 @@ Questo business integrato ha cercato di personalizzare l’intero percorso di cl
 
 ## Valore aziendale fornito
 
-| Obiettivi | tattiche | Valore non caricato |
+| Obiettivi | tattiche | Valore sbloccato |
 |---|---|---|
-| **Organizzazione di percorsi di clienti in tempo reale **<br></br>**Acquisti ripetuti da nuovi clienti **<br></br>**Migliorare l&#39;efficienza del marketing e ridurre i costi dei supporti**</ul> | <ul><li>Una strategia solida di dati e identità per generare un profilo completo in tempo reale.</li><li>Streaming di dati cliente e transazionali in tempo reale, con oltre 90 giorni di carico storico</li><li>La segmentazione in streaming su Google e Adobe Target consente di aumentare le risorse multimediali e le attività di personalizzazione.</li><li>Percorsi di clienti in tempo reale tramite Adobe Campaign che includono una strategia per misurare le prestazioni</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Distribuzione in tempo reale di esperienze cliente su media, e-mail, push e web</li><li><strong>Origini dati:</strong> Dati in streaming che coprono gli archivi di profilo, il sistema di ordini, il catalogo dei prodotti e i punti vendita al dettaglio di questo rivenditore.</li><li><strong>Attivazione di contenuti multimediali in tempo reale:</strong>Invio in streaming di segmenti a contenuti multimediali Google per l’attribuzione e la soppressione di annunci</li><li><strong>Personalizzazione web in tempo reale:</strong>Invio di segmenti in streaming ad Adobe Target per attivare l’esperienza web del retailer.</li><li><strong>Journey Orchestration su scala:</strong>Messaggi attivati in tempo reale arricchiti con tutti i dati dei clienti disponibili e attivazione in tempo reale nei canali e-mail e push</li></ul> |
+| **Organizzazione di percorsi di clienti in tempo reale **<br></br>**Acquisti ripetuti da nuovi clienti **<br></br>**Migliorare l&#39;efficienza del marketing e ridurre i costi dei supporti**</ul> | <ul><li>Una strategia solida di dati e identità per generare un profilo completo in tempo reale.</li><li>Streaming di dati cliente e transazionali in tempo reale, con oltre 90 giorni di carico storico</li><li>La segmentazione in streaming su Google e Adobe Target consente di aumentare le risorse multimediali e le attività di personalizzazione.</li><li>Percorsi di clienti in tempo reale tramite Adobe Campaign che includono una strategia per misurare le prestazioni</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> Distribuzione in tempo reale di esperienze cliente su media, e-mail, push e web</li><li><strong>Origini dati:</strong> Dati in streaming relativi a negozi di profili, sistemi di ordini, catalogo prodotti e punti vendita al dettaglio di questo retailer.</li><li><strong>Attivazione di contenuti multimediali in tempo reale:</strong>Invio in streaming di segmenti a contenuti multimediali Google per l’attribuzione e la soppressione di annunci</li><li><strong>Personalizzazione web in tempo reale:</strong>Invio di segmenti in streaming ad Adobe Target per attivare l’esperienza web del retailer.</li><li><strong>Journey Orchestration su scala:</strong>Messaggi attivati in tempo reale arricchiti con tutti i dati dei clienti disponibili e attivazione in tempo reale nei canali e-mail e push</li></ul> |
 
-## Blueprint chiave: Pubblico e attivazione con applicazioni Experience Cloud
+## Blueprint principale: Pubblico e attivazione con applicazioni Experience Cloud
 
-<strong>Descrizione</strong>
+### Descrizione
+
 <ul><li>Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.</li><li>Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.</li></ul>
 
-<strong>Applicazioni Experience Cloud</strong>
-<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform Activation</li><li>Applicazioni Experience Cloud</li></ul> 
-<br>
+### Applicazioni Experience Cloud
+
+<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform Activation</li><li>Applicazioni Experience Cloud</li></ul>
 
 ### Architettura Blueprint
 

@@ -1,12 +1,12 @@
 ---
 title: Analisi e attivazione B2B
-description: Offri a un pubblico basato su account esperienze personalizzate secondo i profili con Real-time Customer Data Platform.
+description: Offri tipi di pubblico basati su account e esperienze cliente incentrate sul profilo con Real-time Customer Data Platform ​.
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
-source-git-commit: 6da7ce0e5ae27fd7946c57f1a05a55a98026839d
+source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 86%
+ht-degree: 70%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 86%
 
 L’attivazione di profili e pubblico B2B è fondamentale per il successo nel mondo del data-driven marketing. Tuttavia, molti brand continuano a concentrarsi sull’attivazione in base al canale, che spesso risulta in incoerenza a livello di portata e personalizzazione.
 
-Con l’approccio di priorità al canale, ogni canale funziona come un silo in cui le attività di personalizzazione si rivolgono solo ai clienti che interagiscono con il brand su quel determinato canale. È una modalità che non riflette la realtà: i clienti infatti interagiscono con i brand tramite diversi punti di contatto. L’attivazione di profili e pubblico B2B consente ai brand di collegare le interazioni dei clienti su più canali, allineandole ai rispettivi account e alle informazioni basate sulle opportunità, per fornire un profilo e un pubblico centralizzati da attivare su tutti i canali.
+Con l’approccio di priorità al canale, ogni canale funziona come un silo in cui le attività di personalizzazione si rivolgono solo ai clienti che interagiscono con il brand su quel determinato canale. Questo approccio non riflette la realtà in cui i clienti interagiscono con i marchi in diversi punti di contatto. L’attivazione di profili e pubblico B2B consente ai brand di collegare le interazioni dei clienti su più canali, allineandole ai rispettivi account e alle informazioni basate sulle opportunità, per fornire un profilo e un pubblico centralizzati da attivare su tutti i canali.
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|

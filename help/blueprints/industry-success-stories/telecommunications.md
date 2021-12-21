@@ -3,7 +3,7 @@ title: Settore delle telecomunicazioni - Journey Optimizer per messaggi a impuls
 description: Fornisci ai clienti offerte personalizzate in tempo reale, con un onboarding efficiente per la fedeltà a lungo termine.
 solution: Experience Platform, Journey Optimizer
 kt: 9486
-source-git-commit: 7a81ea5d71355323a784e12207542fb7dd6b286b
+source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 12%
@@ -20,23 +20,24 @@ Questa limitazione doveva essere risolta al fine di avviare un seguito più temp
 ## Approccio Adobe
 
 * I dati di Adobe Analytics per identificare gli utenti che non sono riusciti a convertire per aggiungere una nuova riga sono inclusi come origine dati da utilizzare in Adobe Journey Optimizer.
-* Adobe Journey Optimizer utilizza una regola ogni volta quando i clienti ricevono un messaggio &quot;abbandono&quot; personalizzato progettato per incoraggiare un cliente a convertire aggiungendo una nuova riga al proprio account.
+* Adobe Journey Optimizer utilizza una regola nel momento in cui il cliente riceve un messaggio &quot;abbandonato&quot; personalizzato progettato per incoraggiare un cliente a convertire aggiungendo una nuova riga al proprio account.
 
 
 ## Valore aziendale fornito
 
-| Obiettivi | tattiche | Valore non caricato |
+| Obiettivi | tattiche | Valore sbloccato |
 |---|---|---|
-| **Aumento dei tassi di conversione delle campagne **<br></br>**Aumentare i ricavi annuali dei conti**</ul> | <ul><li>Crea un nuovo segmento in tempo quasi reale per gli utenti che hanno mostrato un interesse nell’aggiungere una riga ma non sono ancora stati convertiti.</li><li>Guidare il follow-up per i clienti non convertiti con un secondo punto di contatto per i non convertitori interessati. </li><li>Utilizza una strategia di test per misurare le prestazioni del percorso e ottimizzarle per la conversione tramite e-mail.</li></ul> | <ul><li><strong>Esperienze Di Alta Qualità E Rilevanti:</strong> Con l’orchestrazione dei percorsi in atto, i clienti sperimentano messaggi più pertinenti che riducono la fidelizzazione dell’elenco delle e-mail.</li><li><strong>Journey Orchestration su scala:</strong>È possibile creare un percorso personalizzato e più temporale per incrementare le conversioni e i ricavi totali.</li></ul> |
+| **Aumento dei tassi di conversione delle campagne **<br></br>**Aumentare i ricavi annuali dei conti**</ul> | <ul><li>Crea un nuovo segmento in tempo quasi reale per gli utenti che hanno mostrato un interesse nell’aggiungere una riga ma non sono ancora stati convertiti.</li><li>Seguito da dare ai clienti non convertiti con un secondo punto di contatto per i non convertitori interessati. </li><li>Utilizza una strategia di test per misurare le prestazioni del percorso e ottimizzarle per la conversione tramite e-mail.</li></ul> | <ul><li><strong>Esperienze Di Alta Qualità E Rilevanti:</strong> Con l’orchestrazione dei percorsi in atto, i clienti sperimentano messaggi più pertinenti che riducono la fidelizzazione dell’elenco delle e-mail.</li><li><strong>Journey Orchestration su scala:</strong>È possibile creare un percorso personalizzato e più temporale per incrementare le conversioni e i ricavi totali.</li></ul> |
 
-## Blueprint chiave: Pubblico e attivazione con applicazioni Experience Cloud
+## Blueprint principale: Pubblico e attivazione con applicazioni Experience Cloud
 
-<strong>Descrizione</strong>
+### Descrizione
+
 <ul><li>Esegui messaggi attivati e in streaming utilizzando Adobe Experience Platform, come hub centrale per lo streaming dei dati, i profili clienti e la segmentazione, con Journey Orchestration per l’orchestrazione del percorso in streaming e la distribuzione dei messaggi</li></ul>
 
-<strong>Applicazioni Experience Cloud</strong>
-<ul><li>Adobe Journey Optimizer</li></ul> 
-<br>
+### Applicazioni Experience Cloud
+
+<ul><li>Adobe Journey Optimizer</li></ul>
 
 ### Architettura Blueprint
 
