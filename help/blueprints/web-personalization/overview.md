@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 source-git-commit: 5cade6cb611e40d528834448d5cf5cb4316b6e4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ La personalizzazione web e mobile consente di utilizzare la segmentazione del pu
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
-| **[Personalizzazione web/mobile basata sul comportamento](behavioral.md)** | <ul><li>Personalizzare in base al comportamento online e ai dati del pubblico</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *(facoltativo)*</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
+| **[Personalizzazione web/mobile basata sul comportamento](behavioral.md)** | <ul><li>Personalizzare in base al comportamento online e ai dati del pubblico</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *(opzionale)*</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
 | **[Personalizzazione web e mobile con dati online e offline](online-offline.md)** | <ul><li>Personalizza con attributi ed eventi offline (dati da transazioni, prenotazioni, sistema di gestione delle relazioni con i clienti e fedeltà).</li><li>Sincronizza la personalizzazione su web, e-mail e altri canali noti.</li></ul> | <ul><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Target</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
 
 ## Guardrail per la personalizzazione web e mobile
