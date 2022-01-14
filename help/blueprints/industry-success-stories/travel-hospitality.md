@@ -1,34 +1,34 @@
 ---
-title: Settore dei viaggi e dell'ospitalità - Attivazione con dati online e offline
-description: Decisioni in tempo reale con un unico punto di vista consolidato del comportamento dei clienti tra diversi canali.
+title: Settore viaggi e hospitality - Attivazione con dati online e offline
+description: Decisioni in tempo reale con una singola vista consolidata del comportamento dei clienti su diversi canali.
 solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
 source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
 
-# Viaggi e ospitalità Sfida aziendale del settore
+# Le sfide nel settore viaggi e hospitality
 
-Una società di casinò e intrattenimento negli Stati Uniti voleva rivoluzionare la loro capacità di sfruttare i dati per creare connessioni personalizzate in tempo reale.  Questa visione è diventata ancora più vitale in quanto la pandemia COVID-19 ha cambiato il modo in cui i clienti interagiscono con le attività di viaggio e ospitalità.
+Una società di casinò e intrattenimento negli Stati Uniti voleva rivoluzionare la sua capacità di sfruttare i dati per creare connessioni personalizzate in tempo reale. Questa necessità si è fatta ancora più urgente con la pandemia da COVID-19 e il suo impatto sulle interazioni dei clienti nel settore viaggi e hospitality.
 
-Sfruttando le tecnologie e i servizi Adobi questa organizzazione è ora pronta ad eccellere nei suoi obiettivi ed è pronta ad affrontare il futuro post-pandemia.
+Sfruttando le tecnologie e i servizi Adobe, questa organizzazione è ora pronta a eccellere nei suoi obiettivi e ad affrontare il futuro post-pandemia.
 
 ## Approccio Adobe
 
-* Adobe Experience Platform è stato integrato nel loro stack di tecnologia esistente per fornire interazioni tra i clienti tra più soluzioni.
-* Real-time Customer Data Platform e Customer Journey Analytics attivati per fornire analisi continue e profili cliente personalizzati.
-* Sviluppato una visione olistica del percorso di clienti per supportare un’attribuzione di marketing efficace e un’allocazione delle risorse.
-* Ha risposto al COVID-19 con una strategia che ha preparato il suo business continuando a coinvolgere i suoi clienti.
+* Integrazione di Adobe Experience Platform nell’attuale stack di tecnologie per le interazioni dei clienti tra soluzioni diverse.
+* Attivazione di Real-time Customer Data Platform e Customer Journey Analytics per analisi continue e profili cliente personalizzati.
+* Sviluppo di una visione olistica della customer journey per ottimizzare l’efficacia dell’attribuzione marketing e dell’allocazione di risorse.
+* Risposta al COVID-19 con una duplice strategia di preparazione aziendale e continuo coinvolgimento dei clienti.
 
-## Valore aziendale fornito
+## Valore aziendale conseguito
 
-| Obiettivi | tattiche | Valore sbloccato |
+| Obiettivi | Tattiche | Nuovo valore |
 |---|---|---|
-| **Rendi ogni esperienza rilevante per quell&#39;ospite **<br></br>**Informazioni pronte per le aziende e democrazia dei dati tramite dashboard **<br></br>**Efficienza organizzativa e operativa**</ul> | <ul><li>Profili guest del programma di ricompense unificati creati utilizzando dati online e offline per l&#39;attivazione e la misurazione</li><li>Attivazione in tempo reale tra canali a velocità e scalabilità</li><li>Funzionalità di analisi a livello di cliente sbloccata con Analisi del Percorso cliente</li><li>Sviluppa informazioni intelligenti per migliorare l’attivazione imparando dai dati storici di interazione del flusso di clic.</li><li>Utilizza i dati online e offline per unificare la visualizzazione del cliente per le informazioni sui percorsi e i canali dei clienti.</li></ul> | <ul><li><strong> Attivazione cross-channel: </strong>Aumento del coinvolgimento nelle e-mail 3X, crescita del pubblico indirizzabile e crescita delle impression, esperienze web altamente personalizzate </li><li><strong>Intelligenza: </strong>Il programma di premi per gli ospiti gestisce una campagna di attivazione per ridurre i tassi di abbandono dei membri</li><li><strong>Generazione rapporti: </strong>Dati online/offline uniti con apprendisti AI/ML in un dashboard di percorso e attribuzione business friendly, riducendo al contempo la latenza (per giorni)</li><li><strong>Stack di tecnologie scalabili: </strong>Decine di milioni di profili su 7 canali pronti per l’esecuzione in scenari di cross-selling, up-sell e di ottimizzazione della spesa</li></ul> |
+| **Rendere ogni esperienza rilevante per il singolo ospite **<br></br>** Insignt attuabili e democratizzazione dei dati tramite dashboard **<br></br>** Efficienza organizzativa e operativa**</ul> | <ul><li>Creazione di profili cliente unificati per il programma fedeltà, utilizzando dati online e offline per attivazione e misurazione</li><li>Attivazione in tempo reale, veloce e scalabile, tra canali diversi</li><li>Funzionalità di analisi a livello di cliente tramite l’analisi della customer journey</li><li>Sviluppo di intelligence per migliorare l’attivazione, attingendo ai dati storici da interazioni click stream.</li><li>Utilizzo di dati online e offline per ottenere un quadro unificato del cliente con insights su tutte le customer journey e tutti i canali.</li></ul> | <ul><li><strong>Attivazione cross-channel: </strong>coinvolgimento da e-mail triplicato, aumento del pubblico indirizzabile e delle impressioni, esperienze web altamente personalizzate </li><li><strong>Intelligence: </strong>il programma fedeltà per gli ospiti alimenta una campagna di attivazione volta a ridurre il tasso di abbandono</li><li><strong>Reporting: </strong>dati online e offline consolidati mediante AI/ML in dashboard di facile lettura con informazioni sul percorso e l’attribuzione; riduzione della latenza (diversi giorni)</li><li><strong>Stack di tecnologie adattabili: </strong>decine di milioni di profili su 7 canali pronti per scenari di cross-selling, up-selling e ottimizzazione della spesa</li></ul> |
 
 ## Blueprint principale: Attivazione con dati online e offline
 
@@ -40,9 +40,9 @@ Sfruttando le tecnologie e i servizi Adobi questa organizzazione è ora pronta a
 
 <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager</li><li>Customer Journey Analytics</li></ul>
 
-### Architettura Blueprint
+### Architettura del blueprint
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it"><img alt="immagine thumbnail per un&#39;attività di viaggio e ospitalità che prende decisioni in tempo reale con un&#39;unica visione consolidata del comportamento dei clienti attraverso vari canali." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/online_offline_activation.svg"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it"><img alt="immagine miniatura per un’azienda nel settore viaggi e hospitality che prende decisioni in tempo reale con una singola vista consolidata del comportamento dei clienti su diversi canali." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/online_offline_activation.svg"/></a>
 
 
 
