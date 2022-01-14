@@ -1,25 +1,25 @@
 ---
 title: Analisi B2B
-description: Eseguire l’analisi del livello di account B2B con il ​ di Customer Journey Analytics.
+description: Analisi a livello di account B2B con Customer Journey Analytics.
 solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics
 kt: 9481
 source-git-commit: 279ebdb24b3f9ae5bfd9e3358bbcec1eb48cb4ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Analisi B2B
 
-L’analisi B2B può essere eseguita in Customer Journey Analytics specificando i dati a livello di conto anziché a livello di persona per l’analisi. Inoltre, i dati a livello di account possono essere correlati ai dati a livello di persona utilizzando set di dati di ricerca basati sull’account legati a persone nel Customer Journey Analytics.
+L’analisi B2B può essere eseguita in Customer Journey Analytics specificando i dati a livello di account anziché a livello di persona. Inoltre, i dati a livello di account possono essere correlati a quelli a livello di persona utilizzando set di dati basati su account associati alle persone in Customer Journey Analytics.
 
-L’analisi a livello di account può rispondere a domande quali
+L’analisi a livello di account può rispondere a domande quali:
 
-* A quale nome società corrisponde questo account?
-* Quanti dipendenti sono associati a questo account/azienda?
+* Quale nome di azienda corrisponde a questo account?
+* Quanti dipendenti sono associati a questo account o a questa azienda?
 * Quali ruoli sono rappresentati in questo account?
-* Come si comporta questo account nel suo complesso rispetto a una campagna di marketing specifica, rispetto a un altro account?
-* Alcuni ruoli (come IT Manager) in un account si comportano in modo diverso rispetto allo stesso ruolo in un account diverso?
+* Quali sono le prestazioni complessive di questo account, rispetto a un altro, per una specifica campagna di marketing?
+* Alcuni ruoli (come IT Manager) di un account si comportano in modo diverso rispetto allo stesso ruolo in un altro account?
 
-Qui puoi trovare tutti i dettagli sulla creazione di un&#39;analisi del percorso cliente basata sul livello dell&#39;account [B2B Aggiungi dati a livello di account come set di dati di ricerca](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=en)
+Per informazioni sulla creazione di un’analisi della customer journey a livello dell’account, consulta [B2B - Aggiungere dati a livello di account come set di dati di ricerca](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=it)
