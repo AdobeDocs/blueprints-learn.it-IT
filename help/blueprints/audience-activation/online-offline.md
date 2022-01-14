@@ -4,10 +4,10 @@ description: Attivazione del pubblico con dati online/offline.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: c51ea51266ef61d5fdfdb50f4e0c1316790b1986
-workflow-type: ht
-source-wordcount: '729'
-ht-degree: 100%
+source-git-commit: 0415f2fb46b3a8d667c938c6ae13affb683530c6
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ Il blueprint per l’attivazione con dati online e offline è strettamente allin
 
 * L’appartenenza a un pubblico viene condivisa direttamente da RTCDP a Audience Manager non appena la valutazione del segmento, in batch o in streaming, viene completata e inserita nel profilo cliente in tempo reale. Se il profilo qualificato contiene informazioni di indirizzamento regionali per i dispositivi del profilo, l’appartenenza al pubblico da RTCDP viene qualificata in modalità streaming nella relativa rete Edge di Audience Manager. Se i profili da RTCDP non contengono informazioni di indirizzamento regionali, i dati di appartenenza ai profili vengono inviati alla posizione dell’hub Audience Manager per la valutazione e l’attivazione in modalità batch. I profili idonei per l’attivazione Edge vengono attivati entro pochi minuti dalla qualifica del segmento in RTCDP. I profili non qualificati per l’attivazione Edge vengono gestiti nell’hub di Audience Manager e l’elaborazione potrebbe richiedere 12-24.
 
-* Le informazioni di indirizzamento regionali, relative alla rete Edge di Audience Manager su cui sono memorizzati i dati relativi al dispositivo del profilo, possono essere raccolte da Analytics Data Connector se i dati di Analytics sono abilitati per la raccolta nel profilo. In alternativa possono essere raccolte dal Web SDK come set di dati distinto per le classi di record del profilo, e tale set di dati deve quindi essere abilitato per il profilo.
+* Le informazioni di indirizzamento regionali su cui sono memorizzate le informazioni relative alla periferica del profilo di Audience Manager Edge possono essere raccolte dal Connettore dati di Analytics quando i dati di Analytics sono abilitati per la raccolta al profilo oppure direttamente dall’SDK per web come set di dati separati della classe di record del profilo che devono quindi essere abilitati per il profilo.
 
 * Per le situazioni di attivazione in cui i tipi di pubblico sono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Al momento, gli spazi dei nomi personalizzati non vengono condivisi.
 
@@ -77,4 +77,4 @@ Il pubblico di Experience Platform può essere condiviso tramite le destinazioni
 
 * Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
-* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it)
+* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
