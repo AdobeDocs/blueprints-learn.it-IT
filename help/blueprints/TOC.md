@@ -5,9 +5,9 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 role: Architect, Developer, User
 source-git-commit: 12a791205a2d8ee1cd0a7184eba54340f7d9ab1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '142'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 92%
 
 + [Panoramica](/help/blueprints/overview.md)
 + [Vedi tutti i casi di utilizzo](/help/blueprints/use-cases.md)
-+ Vedi tutte le storie di successo del settore{#industry-success-stories}
++ Vedi tutte le storie di successo nei diversi settori {#industry-success-stories}
    + [Panoramica](/help/blueprints/industry-success-stories/overview.md)
    + [Abbigliamento](/help/blueprints/industry-success-stories/apparel.md)
    + [Retail](/help/blueprints/industry-success-stories/retail.md)
    + [Telecomunicazioni](/help/blueprints/industry-success-stories/telecommunications.md)
-   + [Viaggi e ospitalità](/help/blueprints/industry-success-stories/travel-hospitality.md)
+   + [Viaggi e hospitality](/help/blueprints/industry-success-stories/travel-hospitality.md)
 + Panoramica dell’architettura {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
@@ -46,7 +46,7 @@ ht-degree: 92%
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
    + [Raccolta dei dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
    + [Experience Platform Web SDK](/help/blueprints/data-ingestion/websdk.md)
-+ Analisi dei dati, intelligence e IA/ML {#data-exploration}
++ Analisi dei dati, intelligence e AI/ML {#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)
    + [Personalizzazione Data Science per l’arricchimento del profilo](/help/blueprints/data-insights/data-science.md)
