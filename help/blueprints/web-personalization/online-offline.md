@@ -8,7 +8,7 @@ exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 source-git-commit: 0746a479d4e651244995a8c355ed4c58b968f0c1
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -72,11 +72,11 @@ Sincronizza la personalizzazione web con l’e-mail e altre personalizzazioni di
 
 ## Architettura
 
-Architettura della panoramica
+Architettura d’insieme
 
 <img src="assets/RTCDP+Target.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 
-Architettura del flusso di processo
+Architettura del flusso dei processi
 
 <img src="assets/RTCDP+Target_flow.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 
@@ -130,7 +130,7 @@ Prerequisiti per l’identità
 1. [Implementare Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=it) (opzionale)
 1. [Implementare Experience Platform e [!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it)
 1. Implementare il [servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=it) o [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it)
-1. [Abilitare Adobe Target come destinazione in Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) o per l’approccio alla condivisione del pubblico [Richiedi il provisioning per la condivisione del pubblico tra Experience Platform e Adobe Target (pubblico condiviso)](https://www.adobe.com/go/audiences) per condividere tipi di pubblico da Experience Platform a Target.
+1. [Abilitare Adobe Target come destinazione in Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it) o per l’approccio di condivisione del pubblico [Richiedere l’abilitazione del servizio Audience Sharing tra Experience Platform e Adobe Target (tipi di pubblico condivisi)](https://www.adobe.com/go/audiences) per condividere i tipi di pubblico da Experience Platform a Target.
    >[!NOTE]
    >
    >Quando si utilizza il servizio di condivisione del pubblico tra RTCDP e Adobe Target, i tipi di pubblico devono essere condivisi tramite Experience Cloud ID e far parte della stessa organizzazione Experience Cloud. Per supportare identità diverse da ECID è necessario usare Web SDK e Experience Edge Network.
