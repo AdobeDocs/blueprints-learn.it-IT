@@ -1,7 +1,6 @@
 ---
-source-git-commit: 8225c25ca54acb10ff9e9dd07d869b0c9a626c0b
-workflow-type: ht
-translation-type: ht
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -22,7 +21,7 @@ Il modo in cui puoi contribuire dipende da chi sei e dal tipo di modifiche che d
 
 ### Modifiche minori
 
-Se intendi contribuire a un articolo a titolo di cortesia con aggiornamenti minori, leggi l’articolo e fai clic sul collegamento **Edit** (Modifica) nell’articolo stesso, per accedere all’originale in GitHub. Quindi, utilizza l’interfaccia utente di GitHub per apportare le modifiche. Per ulteriori informazioni, consulta la [guida generale per contribuire alla documentazione Adobe](https://docs.adobe.com/content/help/it/contributor/contributor-guide/introduction.html).
+Se intendi contribuire a un articolo a titolo di cortesia con aggiornamenti minori, leggi l’articolo e fai clic sul collegamento **Edit** (Modifica) nell’articolo stesso, per accedere all’originale in GitHub. Quindi, utilizza l’interfaccia utente di GitHub per apportare le modifiche. Per ulteriori informazioni, consulta la [guida generale per contribuire alla documentazione Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
 Eventuali piccole correzioni o chiarimenti per la documentazione ed esempi di codice inviati in questo archivio sono soggetti alle condizioni d’uso di Adobe.
 
@@ -44,7 +43,7 @@ Se sei un autore tecnico, un manager di programma o uno sviluppatore del team de
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per modifiche di base o creare una copia dell’archivio per contributi di maggiore entità.
 
-Per dettagli consulta la [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/it/contributor/contributor-guide/introduction.html).
+Per dettagli consulta la [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
 ## Come utilizzare il linguaggio Markdown per formattare l’argomento
 
