@@ -7,13 +7,13 @@ exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
 source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Blueprint per la raccolta di dati aziendali lato server
 
-Il blueprint per la raccolta di dati aziendali lato server mostra come i dati raccolti con gli SDK Web e Mobile di Adobe Experience Platform possono essere inoltrati dalla rete Edge di Experience Platform alla destinazione desiderata. È possibile inoltrare tutti i dati grezzi raccolti dagli SDK o dati specifici in base a eventi e regole, come configurato nelle proprietà dei tag (precedentemente Launch).
+Il blueprint per la raccolta di dati aziendali lato server mostra come i dati raccolti con Adobe Experience Platform Web/Mobile SDK possono essere inoltrati dalla rete Edge di Experience Platform alla destinazione desiderata. È possibile inoltrare tutti i dati grezzi raccolti dagli SDK o dati specifici in base a eventi e regole, come configurato nelle proprietà dei tag (precedentemente Launch).
 
 ## Casi di utilizzo
 
@@ -32,7 +32,7 @@ Il blueprint per la raccolta di dati aziendali lato server mostra come i dati ra
 
 * [Documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)
 * [Video sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=it)
-* [lezione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) dell’esercitazione SDK per web
+* [Lezione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html?lang=it) nel tutorial su Web SDK
 
 ## Articoli di blog correlati
 

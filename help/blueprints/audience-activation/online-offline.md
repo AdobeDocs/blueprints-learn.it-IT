@@ -6,8 +6,8 @@ kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +60,7 @@ Il blueprint per l’attivazione con dati online e offline è strettamente allin
 
 * L’appartenenza a un pubblico viene condivisa direttamente da RTCDP a Audience Manager non appena la valutazione del segmento, in batch o in streaming, viene completata e inserita nel profilo cliente in tempo reale. Se il profilo qualificato contiene informazioni di indirizzamento regionali per i dispositivi del profilo, l’appartenenza al pubblico da RTCDP viene qualificata in modalità streaming nella relativa rete Edge di Audience Manager. Se i profili da RTCDP non contengono informazioni di indirizzamento regionali, i dati di appartenenza ai profili vengono inviati alla posizione dell’hub Audience Manager per la valutazione e l’attivazione in modalità batch. I profili idonei per l’attivazione Edge vengono attivati entro pochi minuti dalla qualifica del segmento in RTCDP. I profili non qualificati per l’attivazione Edge vengono gestiti nell’hub di Audience Manager e l’elaborazione potrebbe richiedere 12-24.
 
-* Le informazioni di indirizzamento regionali su cui sono memorizzate le informazioni relative alla periferica del profilo di Audience Manager Edge possono essere raccolte dal Connettore dati di Analytics quando i dati di Analytics sono abilitati per la raccolta al profilo oppure direttamente dall’SDK per web come set di dati separati della classe di record del profilo che devono quindi essere abilitati per il profilo.
+* Le informazioni di indirizzamento regionali, relative alla rete Edge di Audience Manager su cui sono memorizzati i dati relativi al dispositivo del profilo, possono essere raccolte da Analytics Data Connector se i dati di Analytics sono abilitati per la raccolta nel profilo. In alternativa possono essere raccolte dal Web SDK come set di dati distinto per le classi di record del profilo, e tale set di dati deve quindi essere abilitato per il profilo.
 
 * Per le situazioni di attivazione in cui i tipi di pubblico sono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Al momento, gli spazi dei nomi personalizzati non vengono condivisi.
 

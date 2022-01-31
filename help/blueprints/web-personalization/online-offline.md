@@ -7,8 +7,8 @@ kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ Il blueprint per la personalizzazione web/mobile può essere implementato con i 
 
 ### 1. Mediante Platform Web/Mobile SDK e rete Edge
 
-[Consulta il blueprint per l’SDK Web/Mobile di Experience Platform](../data-ingestion/websdk.md)
+[Consulta il blueprint per Experience Platform Web/Mobile SDK](../data-ingestion/websdk.md)
 
 ### 2. Mediante SDK per specifiche applicazioni
 
