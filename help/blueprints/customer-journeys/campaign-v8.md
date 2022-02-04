@@ -2,9 +2,7 @@
 title: Blueprint Campaign v8
 description: Adobe Campaign v8 è lo strumento di campagna di nuova generazione creato per i canali di marketing tradizionali come e-mail e direct mail. Fornisce solide funzionalità di ETL e gestione dei dati per aiutare a creare e curare la campagna perfetta. Il motore di orchestrazione fornisce programmi di marketing multi-touch avanzati con un focus principale sui percorsi basati su batch.  Viene inoltre fornito con un server di messaggistica scalabile in tempo reale che consente ai team di marketing di inviare messaggi predefiniti basati su un payload completo da qualsiasi sistema IT per elementi quali reimpostazione della password, conferma dell’ordine, e-Receips (Ricezione elettronica) e molto altro ancora.
 solution: Campaign v8
-hidefromtoc: true
-exl-id: f754d099-6842-4759-8e27-6a06d5d8c2e9
-source-git-commit: 13f750c0ff820ab01ed4fc615aba864bc2dc7b75
+source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 3%
@@ -32,7 +30,7 @@ Adobe Campaign v8 è lo strumento di campagna di nuova generazione creato per i 
 
 <br>
 
-## Scenari di blueprint
+## Pattern di integrazione
 
 | Scenario | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
