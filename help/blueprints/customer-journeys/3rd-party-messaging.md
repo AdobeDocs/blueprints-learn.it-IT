@@ -1,44 +1,24 @@
 ---
-title: Journey Optimizer - Blueprint per messaggistica attivata e Adobe Experience Platform
-description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
+title: Journey Optimizer - Blueprint di messaggistica di terze parti
+description: Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
 solution: Experience Platform, Journey Optimizer
-exl-id: 97831309-f235-4418-bd52-28af815e1878
+hidefromtoc: true
 source-git-commit: a86df4a1b2de38bcb244a6afe1cea87adc7e26fa
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 42%
+source-wordcount: '829'
+ht-degree: 35%
 
 ---
 
-# Journey Optimizer
+# Messaggistica di terze parti
 
-Adobe Journey Optimizer è un sistema appositamente progettato che consente ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli là dove si trovano. Le funzionalità di gestione dei dati sono state trasferite in Adobe Experience Platform, consentendo ai team di marketing di concentrarsi sul loro punto di forza: la creazione di percorsi cliente d’eccellenza e conversazioni personalizzate.  Questo blueprint delinea le funzionalità tecniche dell’applicazione e descrive i vari componenti dell’architettura di Adobe Journey Optimizer.
-
-<br>
-
-## Casi di utilizzo
-
-* Messaggi attivati
-* Conferma di benvenuto e registrazione
-* Abbandoni del carrello e del modulo di richiesta
-* Messaggi attivati dalla posizione
-* Esperienze all&#39;interno dello stadio
-* Esperienze di viaggio e ospitalità pre-arrivo e soggiorno
+Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
 
 <br>
 
 ## Architettura
 
-<img src="assets/ajo-architecture.svg" alt="Architettura di riferimento blueprint Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" />
-
-<br>
-
-## Scenari di blueprint
-
-| Scenario | Descrizione | Funzionalità |
-| :-- | :--- | :--- |
-| [Messaggistica di terze parti](3rd-party-messaging.md) | Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate | Distribuisci comunicazioni personalizzate 1:1 al momento ai clienti mentre interagiscono con il tuo marchio o azienda<br><br>Considerazioni:<br><ul><li>Il sistema di terze parti deve supportare token portatori per l&#39;autenticazione</li><li>Nessun supporto per gli IP statici a causa dell’architettura multi-tenant</li><li>Presta attenzione ai vincoli architettonici del sistema di terze parti quando si tratta di chiamate API al secondo.  Potrebbe essere necessario che il cliente acquisti un volume aggiuntivo dal fornitore di terze parti per supportare il volume proveniente da Journey Optimizer</li><li>Non supporta l’Offer decisioning nei messaggi o nei payload</li></ul> |
-| [Journey Optimizer con Adobe Campaign](ajo-and-campaign.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare esperienze 1:1 utilizzando il Profilo del cliente in tempo reale e come sfruttare il sistema di messaggistica transazionale nativo di Adobe Campaign per inviare il messaggio | Sfruttare il Profilo cliente in tempo reale e la potenza di Journey Optimizer per orchestrare le esperienze attuali e allo stesso tempo utilizzare le funzionalità di messaggistica nativa in tempo reale di Adobe Campaign per la comunicazione dell’ultimo miglio<br><br>Considerazioni:<br><ul><li>L’applicazione Campaign deve essere nella build v7 >21.1 o v8</li><li>Velocità effettiva messaggistica</li><ul><li>Campaign v7 - fino a 50.000 all’ora</li><li>Campaign v8 - fino a 1 milione all’ora</li><li>Campaign Standard - fino a 50 k all&#39;ora</li></ul><li>Non viene eseguita alcuna limitazione, pertanto i casi d’uso necessitano di un controllo tecnico da parte di un architetto Enterprise</li><li>Nessun supporto per l’utilizzo di Offer Decisioning nel messaggio inviato da Campaign</li></ul> |
+<img src="assets/3rd-party-messaging-architecture.svg" alt="Architettura di riferimento blueprint Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -50,16 +30,9 @@ Adobe Experience Platform
 * Per gli schemi basati su classi Experience Event, aggiungi il gruppo di campi &#39;Orchestration eventID quando vuoi che venga attivato un evento che non è un evento basato su regole
 * Per gli schemi basati su singole classi di profilo aggiungi il gruppo di campi &quot;Dettagli test profilo&quot; per poter caricare i profili di test da utilizzare con Journey Optimizer
 
-E-mail
+Applicazione di messaggistica di terze parti
 
-* Deve essere pronto un sottodominio per l’invio del messaggio
-* Il sottodominio può essere delegato completamente all’Adobe (consigliato) oppure i CNAME possono essere utilizzati per puntare a server DNS specifici per Adobe (personalizzati)
-* Per garantire il corretto recapito dei messaggi, è necessario un record TXT di Google per ciascun sottodominio
-
-Push per dispositivi mobili
-
-* Per creare l’app, il cliente deve disporre di uno sviluppatore di app mobili.
-* SDK per dispositivi mobili di Adobe Experience Platform
+* Deve supportare le chiamate API REST per l’invio di payload transazionali
 
 <br>
 
@@ -67,30 +40,37 @@ Push per dispositivi mobili
 
 [Journey Optimizer Guardrail Prodotto Link](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=it)
 
-Tieni presenti questi elementi non elencati nel link qui sopra:
+Guardrail Journey Optimizer aggiuntivi:
 
+* L’utilizzo dell’app tramite l’API è ora disponibile per garantire che il sistema di destinazione non sia saturato fino al punto dell’errore. Ciò significa che i messaggi che superano il limite verranno eliminati completamente e non inviati. La limitazione non è supportata.
+   * Numero massimo di connessioni - numero massimo di connessioni http/s gestite da una destinazione
+   * Numero massimo di chiamate - numero massimo di chiamate da effettuare nel parametro periodInMs
+   * periodInMs - tempo in millisecondi
+* I percorsi avviati dall’iscrizione a un segmento possono funzionare in due modalità:
+   * Segmenti in batch (aggiornati ogni 24 ore)
+   * Segmenti in streaming (&lt;5min qualifica)
 * Segmenti batch: necessario comprendere il volume giornaliero di utenti qualificati e accertarsi che il sistema di destinazione sia in grado di gestire il throughput burst per percorso e per tutti i percorsi.
 * Segmenti in streaming: il burst iniziale delle qualifiche dei profili deve poter essere gestito insieme al volume giornaliero di qualificazione dello streaming, per ogni percorso e per tutti i percorsi.
-* Supporta in modo nativo solo l’Offer decisioning nei messaggi (nessuna azione personalizzata)
-* Tipi di messaggi supportati:
-   * E-mail
-   * Push (FCM/APNS)
-   * Azioni personalizzate (tramite API Rest)
+* offer decisioning in non supportato
 * Integrazioni in uscita con sistemi di terze parti
    * Nessun supporto per un singolo IP statico in quanto l’infrastruttura è multi-tenant (deve elenco consentiti tutti gli IP del centro dati)
    * Sono supportati solo i metodi POST e PUT per le azioni personalizzate
-   * Autenticazione tramite token di autorizzazione o utente
+   * Supporto dell&#39;autenticazione: token | password | OAuth2
 * Non è possibile creare pacchetti e spostare singoli componenti di Adobe Experience Platform o Journey Optimizer tra diverse sandbox. Deve essere reimplementato nei nuovi ambienti
-
-### Guardrail per l’acquisizione dei dati
-
-<img src="assets/aep-data-ingestion-details-latency.svg" alt="Architettura di riferimento blueprint Journey Optimizer" style="width:80%; border:1px solid #4a4a4a" />
 
 <br>
 
-### Guardrail di attivazione
+Sistema di messaggistica di terze parti
 
-<img src="assets/ajo-activation-details-latency.svg" alt="Architettura di riferimento blueprint Journey Optimizer" style="width:80%; border:1px solid #4a4a4a" />
+* È necessario comprendere il carico che il sistema può supportare per le chiamate API transazionali
+   * Numero di chiamate consentite al secondo
+   * Numero di connessioni
+* Devi comprendere quale autenticazione è necessaria per effettuare chiamate API
+   * Tipo di autenticazione:  token | password | OAuth2 è supportato tramite Journey Optimizer
+   * Durata cache autenticazione:  per quanto tempo è valido il token? 
+* Se l’acquisizione batch è supportata solo, deve essere inviata in streaming a un motore di archiviazione cloud come Amazon Kinesis o Azure Event Grid 1st
+   * I dati possono essere batch di questi motori di archiviazione cloud e incanalati in terze parti
+   * Qualsiasi middleware richiesto è responsabilità del cliente o di terze parti di fornire
 
 <br>
 
@@ -120,20 +100,21 @@ Tieni presenti questi elementi non elencati nel link qui sopra:
 ### Journey Optimizer
 
 1. Configura l’origine dati di Experience Platform e determina quali campi devono essere memorizzati nella cache come parte dei dati profileStreaming utilizzati per avviare un percorso cliente deve prima essere configurato in Journey Optimizer per ottenere un ID orchestrazione. Questo ID di orchestrazione viene quindi fornito allo sviluppatore che potrà utilizzarlo con l’acquisizione
-1. Configurare le origini dati esterne.
-1. Configurare le azioni personalizzate.
+1. Configurare le origini dati esterne
+1. Configurare azioni personalizzate per l’applicazione di terze parti
 
-### Configurazione push mobile
+### Configurazione push mobile (opzionale se i token possono essere raccolti da terze parti)
 
 1. Implementa Experience Platform Mobile SDK per raccogliere token push e informazioni di accesso per eseguire il collegamento ai profili cliente noti
 1. Utilizza i tag di Adobe e crea una proprietà mobile con la seguente estensione:
-1. Adobe Journey Optimizer
-1. Rete Edge di Adobe Experience Platform
-1. Identità per Edge Network
-1. Mobile Core
+   * Adobe Journey Optimizer
+   * Rete Edge di Adobe Experience Platform
+   * Identità per Edge Network
+   * Mobile Core
 1. Assicurati di disporre di un datastream dedicato per le distribuzioni di app mobili rispetto alle distribuzioni web
 1. Per ulteriori informazioni, consulta [Guida a Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
 
+<br>
 
 ## Documentazione correlata
 
