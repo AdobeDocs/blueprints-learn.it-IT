@@ -2,9 +2,10 @@
 title: Blueprint di Campaign v7
 description: Adobe Campaign v7 è uno strumento di campagna generato per i canali di marketing tradizionali come e-mail e direct mail. Fornisce solide funzionalità di ETL e gestione dei dati per aiutare a creare e curare la campagna perfetta. Il motore di orchestrazione fornisce programmi di marketing multi-touch avanzati con un focus principale sui percorsi basati su batch.  Viene inoltre fornito con un server di messaggistica in tempo reale che consente ai team di marketing di inviare messaggi predefiniti basati su un payload completo da qualsiasi sistema IT per elementi quali reimpostazione della password, conferma dell’ordine, e-Receips (Ricezione elettronica) e molto altro ancora.
 solution: Campaign Classic v7
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
+source-git-commit: 0c072465c2cac954631fe3a8dbdcef280ee397ab
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
@@ -35,7 +36,7 @@ Adobe Campaign v7 è uno strumento di campagna generato per i canali di marketin
 | Scenario | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
 | [Journey Optimizer con Adobe Campaign](ajo-and-campaign.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare esperienze 1:1 utilizzando il Profilo del cliente in tempo reale e come sfruttare il sistema di messaggistica transazionale nativo di Adobe Campaign per inviare il messaggio | Sfruttare il Profilo cliente in tempo reale e la potenza di Journey Optimizer per orchestrare le esperienze attuali e allo stesso tempo utilizzare le funzionalità di messaggistica nativa in tempo reale di Adobe Campaign per la comunicazione dell’ultimo miglio<br><br>Considerazioni:<br><ul><li>Può inviare fino a 50.000 messaggi all&#39;ora tramite il server di messaggi in tempo reale<li>Journey Optimizer non esegue alcuna limitazione in modo da garantire il controllo tecnico da parte di un architetto aziendale pre-vendita</li><li>Offer Decisioning non è supportato nei payload del server di messaggistica in tempo reale Campaign v7</li></ul> |
-| [Real-Time CDP con Adobe Campaign](rtcdp-and-campaign.md) | Mostra come Adobe Experience Platform Real-Time CDP e il suo strumento di segmentazione centralizzata possono essere utilizzati con Adobe Campaign per fornire conversazioni personalizzate | <ul><li>Condivisione di tipi di pubblico dall’Experience Platform in modo nativo con Adobe Campaign v8 tramite una destinazione prodotta</li><li>Supporto nativo per l’acquisizione dei dati di consegna e interazione dalle conversazioni dei clienti nell’Experience Platform per migliorare sia il Profilo del cliente in tempo reale che per fornire rapporti cross-channel sulle campagne di messaggistica</li></ul> |
+| [Real-Time CDP con Adobe Campaign](rtcdp-and-campaign.md) | Mostra come Adobe Experience Platform Real-Time CDP e il suo strumento di segmentazione centralizzata possono essere utilizzati con Adobe Campaign per fornire conversazioni personalizzate | <ul><li>Condivisione di tipi di pubblico da Real-Time CDP ad Adobe Campaign tramite l’utilizzo di flussi di lavoro di scambio file di archiviazione cloud e di acquisizione Adobe Campaign </li><li>Condividi facilmente i dati di consegna e interazione dalle conversazioni dei clienti nella Real-time CDP di Adobe Campaign per migliorare sia il Profilo del cliente in tempo reale che il reporting cross-channel sulle campagne di messaggistica</li></ul> |
 
 <br>
 
@@ -88,9 +89,7 @@ Adobe Campaign v7 è uno strumento di campagna generato per i canali di marketin
 ### Ridimensionamento del server di messaggistica in tempo reale
 
 * Può inviare fino a 50.000 messaggi all&#39;ora
-* Per impostazione predefinita viene eseguito il provisioning di un solo (1) server di messaggistica in tempo reale. In questo modo, qualsiasi comunicazione con il server viene effettuata tramite un token di sessione che scade tra 24 ore
-* Facoltativamente è possibile distribuire fino a otto (8) server di messaggistica in tempo reale, ma l&#39;autenticazione supporta solo l&#39;utente/pass
-* L’approccio consigliato è sempre quello di utilizzare un server di messaggistica in tempo reale per sfruttare, ove possibile, l’autenticazione basata sui token di sessione
+* Per impostazione predefinita, sono disponibili due server di messaggistica in tempo reale. Possibilità di scalare fino a otto server di messaggistica in tempo reale.
 
 ### Configurazione SMS
 

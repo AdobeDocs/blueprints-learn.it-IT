@@ -2,9 +2,10 @@
 title: Blueprint Campaign v8
 description: Adobe Campaign v8 è lo strumento di campagna di nuova generazione creato per i canali di marketing tradizionali come e-mail e direct mail. Fornisce solide funzionalità di ETL e gestione dei dati per aiutare a creare e curare la campagna perfetta. Il motore di orchestrazione fornisce programmi di marketing multi-touch avanzati con un focus principale sui percorsi basati su batch.  Viene inoltre fornito con un server di messaggistica scalabile in tempo reale che consente ai team di marketing di inviare messaggi predefiniti basati su un payload completo da qualsiasi sistema IT per elementi quali reimpostazione della password, conferma dell’ordine, e-Receips (Ricezione elettronica) e molto altro ancora.
 solution: Campaign v8
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
+source-git-commit: 0c072465c2cac954631fe3a8dbdcef280ee397ab
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1035'
 ht-degree: 3%
 
 ---
@@ -89,9 +90,7 @@ Adobe Campaign v8 è lo strumento di campagna di nuova generazione creato per i 
 ### Ridimensionamento del server di messaggistica in tempo reale
 
 * Può inviare fino a 1 milione di messaggi all&#39;ora
-* Per impostazione predefinita viene eseguito il provisioning di un solo (1) server di messaggistica in tempo reale. In questo modo, qualsiasi comunicazione con il server viene effettuata tramite un token di sessione che scade tra 24 ore
-* Facoltativamente è possibile distribuire fino a otto (8) server di messaggistica in tempo reale, ma l&#39;autenticazione supporta solo l&#39;utente/pass
-* L’approccio consigliato è sempre quello di utilizzare un server di messaggistica in tempo reale per sfruttare, ove possibile, l’autenticazione basata sui token di sessione
+* Per impostazione predefinita, sono disponibili due server di messaggistica in tempo reale. Possibilità di scalare fino a otto server di messaggistica in tempo reale.
 
 ### Configurazione SMS
 
