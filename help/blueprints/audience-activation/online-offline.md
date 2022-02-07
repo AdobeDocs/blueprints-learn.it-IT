@@ -4,10 +4,10 @@ description: Attivazione del pubblico con dati online/offline.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
+source-git-commit: c4adcc5d23bb0482a348d7b5b2b70b06ff2873e8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '764'
+ht-degree: 79%
 
 ---
 
@@ -58,9 +58,9 @@ Il blueprint per l’attivazione con dati online e offline è strettamente allin
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Audience Manager
 
-* L’appartenenza a un pubblico viene condivisa direttamente da RTCDP a Audience Manager non appena la valutazione del segmento, in batch o in streaming, viene completata e inserita nel profilo cliente in tempo reale. Se il profilo qualificato contiene informazioni di indirizzamento regionali per i dispositivi del profilo, l’appartenenza al pubblico da RTCDP viene qualificata in modalità streaming nella relativa rete Edge di Audience Manager. Se i profili da RTCDP non contengono informazioni di indirizzamento regionali, i dati di appartenenza ai profili vengono inviati alla posizione dell’hub Audience Manager per la valutazione e l’attivazione in modalità batch. I profili idonei per l’attivazione Edge vengono attivati entro pochi minuti dalla qualifica del segmento in RTCDP. I profili non qualificati per l’attivazione Edge vengono gestiti nell’hub di Audience Manager e l’elaborazione potrebbe richiedere 12-24.
+* L’appartenenza a un pubblico viene condivisa direttamente da RTCDP a Audience Manager non appena la valutazione del segmento, in batch o in streaming, viene completata e inserita nel profilo cliente in tempo reale. Se il profilo qualificato contiene informazioni di indirizzamento regionali per i dispositivi del profilo, l’appartenenza al pubblico da RTCDP viene qualificata in modalità streaming nella relativa rete Edge di Audience Manager. Se le informazioni di indirizzamento regionali sono state applicate a un profilo con una marca temporale negli ultimi 14 giorni, verranno valutate in streaming in Audience Manager Edge. Se i profili di RTCDP non contengono informazioni di indirizzamento regionali o se le informazioni di indirizzamento regionale hanno una durata superiore a 14 giorni, le appartenenze al profilo vengono inviate all&#39;ubicazione di hub Audience Manager per la valutazione e l&#39;attivazione basate su batch. I profili idonei per l’attivazione di Edge verranno attivati entro pochi minuti dalla qualifica del segmento da RTCDP, i profili non qualificati per l’attivazione di Edge saranno qualificati nell’hub di Audience Manager e potrebbero avere un intervallo di tempo di 12-24 ore per l’elaborazione.
 
-* Le informazioni di indirizzamento regionali, relative alla rete Edge di Audience Manager su cui sono memorizzati i dati relativi al dispositivo del profilo, possono essere raccolte da Analytics Data Connector se i dati di Analytics sono abilitati per la raccolta nel profilo. In alternativa possono essere raccolte dal Web SDK come set di dati distinto per le classi di record del profilo, e tale set di dati deve quindi essere abilitato per il profilo.
+* Le informazioni di indirizzamento regionali su cui è memorizzato il profilo di Audience Manager di Edge possono essere raccolte ad Experience Platform da Audience Manager, Servizio ID visitatore, Analytics, Launch o direttamente dall’SDK per web come set di dati della classe di record di profilo separato utilizzando il gruppo di campi XDM &quot;informazioni sull’area di acquisizione dati&quot;.
 
 * Per le situazioni di attivazione in cui i tipi di pubblico sono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Al momento, gli spazi dei nomi personalizzati non vengono condivisi.
 
