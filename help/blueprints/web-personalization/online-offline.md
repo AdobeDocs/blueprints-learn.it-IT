@@ -5,9 +5,9 @@ landing-page-description: Sincronizza la personalizzazione web con l’e-mail e 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: d639a2c76290588f92e443f645e95864caac442a
+source-git-commit: 91db73c9fb14d461ee62444199c3d053bd094639
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1146'
 ht-degree: 68%
 
 ---
@@ -72,11 +72,11 @@ Sincronizza la personalizzazione web con l’e-mail e altre personalizzazioni di
 
 ## Architettura
 
-Architettura d’insieme
+Architettura dettagliata
 
 <img src="assets/RTCDP+Target.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 
-Architettura del flusso dei processi
+Diagramma della sequenza
 
 <img src="assets/RTCDP+Target_flow.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 
@@ -85,7 +85,7 @@ Architettura del flusso dei processi
 <img src="assets/RTCDP+Target_sequence.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 
 
-Architettura dettagliata
+Architettura d’insieme
 
 <img src="assets/personalization_with_apps.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a"/>
 
@@ -115,7 +115,7 @@ Prerequisiti per l’identità
 1. [Implementare Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it) (opzionale)
 1. [Implementare Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=it) (opzionale)
 1. [Implementare Experience Platform e [!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it)
-1. Implementare il [servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=it) o [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it) Experience Platform Web SDK è necessario per la segmentazione Edge in tempo reale, ma non è necessario per la condivisione di audience in streaming e batch da Real-time Customer Data Platform a Target. Al momento il supporto per la segmentazione in tempo reale tramite l’SDK mobile e l’API non è disponibile.
+1. Implementare il [servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=it) o [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it). Experience Platform Web SDK è necessario per la segmentazione Edge in tempo reale, ma non è necessario per la condivisione di audience in streaming e batch da Real-time Customer Data Platform a Target. Al momento il supporto per la segmentazione in tempo reale tramite l’SDK mobile e l’API non è disponibile.
 1. [Abilitare Adobe Target come destinazione in Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it) o per l’approccio di condivisione del pubblico [Richiedere l’abilitazione del servizio Audience Sharing tra Experience Platform e Adobe Target (tipi di pubblico condivisi)](https://www.adobe.com/go/audiences) per condividere i tipi di pubblico da Experience Platform a Target.
 
 ## Documentazione correlata
