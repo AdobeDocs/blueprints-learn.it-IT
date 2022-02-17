@@ -3,13 +3,15 @@ user-guide-title: Blueprint per esperienze digitali
 breadcrumb-title: 'Blueprint '
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
+mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 66b0ceec973d31a902eef0c3a86bd7fcd51b7b8a
+source-git-commit: 28774e211ceedec2e099abbe0dbfee91267bda21
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 86%
+source-wordcount: '172'
+ht-degree: 78%
 
 ---
+
 
 # Blueprint per esperienze digitali {#architecture}
 
@@ -28,7 +30,9 @@ ht-degree: 86%
 + Attivazione in base a pubblico e profili {#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
    + [Attivazione del pubblico con dati anonimi](/help/blueprints/audience-activation/anonymous.md)
-   + [Attivazione con dati online e offline](/help/blueprints/audience-activation/online-offline.md)
+   + [Attivazione a canali social e pubblicitari]{#audience-activation}
+      + [Attivazione con dati online e offline](/help/blueprints/audience-activation/online-offline.md)
+      + [Attivazione a tipi di pubblico personalizzati Facebook](/help/blueprints/audience-activation/destinations/facebook.md)
    + [Attivazione per destinazioni basate su file e streaming verso soluzioni aziendali](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [Attivazione con applicazioni Experience Cloud](/help/blueprints/audience-activation/platform-and-applications.md)
    + [Hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)
@@ -61,4 +65,3 @@ ht-degree: 86%
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione basata sul comportamento](/help/blueprints/web-personalization/behavioral.md)
    + [Personalizzazione con dati online e offline](/help/blueprints/web-personalization/online-offline.md)
-
