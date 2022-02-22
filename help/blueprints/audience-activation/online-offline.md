@@ -27,7 +27,7 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 ## Applicazioni
 
-* Adobe Experience Platform
+* Adobe Experience Platform 
 * [!UICONTROL Real-time Customer Data Platform]
 
 ## Architettura
