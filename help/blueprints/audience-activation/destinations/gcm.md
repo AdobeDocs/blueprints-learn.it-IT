@@ -1,79 +1,93 @@
 ---
-title: Blueprint per attivazione con dati online e offline
-description: Attivazione del pubblico con dati online/offline.
-solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+title: Attivazione a Customer Match di Google
+description: Attivazione a FGoogle Customer Match.
+solution: Experience Platform, Real-time Customer Data Platform, Data Collection
 kt: 7086
-source-git-commit: f1477d39a2b2349708ad74625bab6c5f4012ae1e
+source-git-commit: 0a0181a5fd84a645344fadefd47838237807c97c
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 79%
+source-wordcount: '1010'
+ht-degree: 3%
 
 ---
 
-# Blueprint per attivazione con dati online e offline
 
-Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistema di gestione delle relazioni con i clienti o fedeltà, insieme a dati sul comportamento online.
+# Attivazione a FGoogle Customer Match
 
-Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie.
-
-Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le applicazioni Experience Cloud sono disponibili nel [blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md).
+Acquisisci i dati dei clienti da più sorgenti per creare una singola visualizzazione del profilo del cliente, segmenta questi profili a tipi di pubblico generati per il marketing e la personalizzazione, condividi questi tipi di pubblico in Social Ad Networks, come Google Customer Match (Corrispondenza cliente), per eseguire il targeting e la personalizzazione delle campagne rispetto a tali tipi di pubblico. Customer Match di Google consente di utilizzare i dati online e offline per raggiungere e coinvolgere nuovamente i clienti sulle proprietà possedute e gestite di Google, ad esempio: Ricerca, acquisti, Gmail e YouTube.
 
 ## Casi di utilizzo
 
 * Targeting per tipi di pubblico noti su destinazioni social e pubblicitarie.
 * Personalizzazione online con attributi online e offline.
-* Attivazione del pubblico su canali noti, come e-mail e SMS.
 
 ## Applicazioni
 
-* Adobe Experience Platform
-* [!UICONTROL Real-time Customer Data Platform]
+* Real-time Customer Data Platform
 
 ## Architettura
 
-### Attivazione per destinazioni con dati online e offline
-
-<img src="assets/online_offline_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione del pubblico con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
-<br>
-
-## Guardrail
-
-[Fai riferimento ai guardrail come indicato nella panoramica Attivazione in base a pubblico e profili.](overview.md)
+<img src="../assets/gcm.png" alt="Architettura di riferimento per l’attivazione di Customer Match di Google" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Fasi di implementazione
 
-1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
-1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
-1. [Configurare correttamente le identità e i relativi spazi dei nomi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it) nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.
-1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it).
-1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
-1. [Abilitare la condivisione dei segmenti [!UICONTROL Real-time Customer Data Platform]](https://www.adobe.com/go/audiences) tra Experience Platform e Audience Manager per i tipi di pubblico definiti in Experience Platform da condividere con Audience Manager.
-1. [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it) in Experience Platform. Il sistema determina automaticamente se un segmento deve essere valutato in batch o in streaming.
-1. [Configurare le destinazioni](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html?lang=it) per condividere gli attributi del profilo e delle appartenenze al pubblico con le destinazioni desiderate.
+1. Configura i namespace Identity da utilizzare nelle origini dati Profilo.
+   * Utilizza i namespace predefiniti come E-mail, hash SHA256 e-mail, se disponibile.
+   * Google Customer Match contiene un elenco di identità supportate. Per attivare Google Customer Match, una delle identità supportate deve essere presente nei profili da attivare.
+   * Le seguenti identità sono attualmente supportate da Google Customer Match: GAID, IDFA, phone_sha256_e.164, email_lc_sha256, user_id.
+   * Per ulteriori dettagli consulta la sezione [Guida alla destinazione di Google Customer Match](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
+   * Crea spazi dei nomi personalizzati in cui gli spazi dei nomi predefiniti non sono disponibili per le identità applicabili.
+1. Configura gli schemi e i set di dati dell’origine dati del profilo.
+   * Crea schemi di record del profilo per tutti i dati di origine dei record del profilo.
+      * Specifica l&#39;identità principale e le identità secondarie per ogni schema.
+      * Abilita lo schema per l’acquisizione del profilo.
+   * Crea set di dati di record di profilo per tutti i dati di origine dei record di profilo, assegnando lo schema associato.
+      * Abilita il set di dati per l’acquisizione del profilo.
+   * Crea schemi evento esperienza profilo per tutti i dati sorgente basati su serie temporali del profilo.
+      * Specifica l&#39;identità principale e le identità secondarie per lo schema.
+   * Abilita lo schema per l’acquisizione del profilo.
+   * Crea set di dati evento esperienza profilo per tutti i dati origine evento esperienza profilo, assegnando lo schema associato.
+      * Abilita il set di dati per l’acquisizione del profilo.
+1. Acquisisci i dati di origine utilizzando un connettore di origine nel set di dati associato configurato in precedenza.
+   * Configura l’account del connettore di origine con le credenziali.
+   * Configura un flusso di dati per acquisire i dati dal file di origine o dalla posizione della cartella in una pianificazione specifica al set di dati specificato.
+   * Mappare tutti i campi dai dati di origine allo schema di destinazione.
+   * Trasforma tutti i campi nel formato corretto per l’acquisizione in Experience Platform.
+      * Trasformazioni delle date
+      * Se appropriato, effettua la trasformazione in minuscolo, ad esempio l’indirizzo e-mail
+      * Trasformazioni pattern (ad esempio numero telefonico)
+      * Aggiungi ID di record univoci per i record degli eventi di esperienza se non presenti nei dati di origine.
+      * Trasforma array e mappa campi di tipo per garantire la corretta mappatura e modellazione di array e mappe per la segmentazione in Experience Platform.
+1. Configura i criteri di unione profili per garantire la corretta configurazione del grafico delle identità e quali set di dati devono essere inclusi nell’unione dei profili.
+1. Dopo l’esecuzione dei flussi di dati, assicurati che l’inserimento dei dati del profilo sia andato a buon fine senza errori.
+   * Inspect è il grafico delle identità di diversi profili per garantire la corretta elaborazione delle relazioni di identità.
+   * Inspect gli attributi e gli eventi di diversi profili per garantire la corretta acquisizione di attributi ed eventi ai profili.
+1. Creare segmenti per creare tipi di pubblico di profilo
+   * Crea segmenti nel generatore di segmenti utilizzando regole per attributi ed eventi.
+   * Salva il segmento per la valutazione. I segmenti vengono valutati in base alla pianificazione specificata una volta al giorno.
+      * Se le regole del segmento sono idonee per la segmentazione in streaming, il segmento verrà valutato come nuovi dati di streaming vengono acquisiti per i profili. I segmenti in streaming verranno valutati anche una volta al giorno durante la segmentazione batch pianificata.
+1. Assicurati che i risultati del segmento siano come previsto.
+   * Esamina il conteggio dei risultati del segmento per i segmenti specificati.
+   * Investiga il profilo che deve essere incluso nel segmento per verificare che l’appartenenza al segmento sia inclusa nella parte di appartenenza al segmento del profilo.
+1. Configura la distribuzione del pubblico alla destinazione nella configurazione di Destinazione.
+   * Consulta la sezione [Guida alla destinazione di Google Customer Match](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html) per ulteriori dettagli sulla configurazione della destinazione Facebook.
+   * Durante la configurazione di una destinazione, seleziona il pubblico da attivare nella destinazione.
+   * Determina la data di inizio pianificata per cui desideri che il flusso di dati di destinazione inizi a consegnare il pubblico alla destinazione.
+   * Ogni destinazione dispone degli attributi obbligatori e facoltativi che verranno inviati.
+      * Per Google Customer Match una delle identità richieste deve essere inclusa e viene utilizzata per far corrispondere i profili nei tipi di pubblico all’interno di Experience Platform a un profilo che può essere targetizzato da Google Customer Match.
+   * Ogni destinazione dispone anche di un tipo di consegna specificato, in streaming o batch, in base a file o a payload JSON.
+      * Per Customer Match di Google, le iscrizioni al pubblico vengono distribuite in streaming a un endpoint Customer Match di Google in formato JSON.
+      * Le iscrizioni al pubblico verranno consegnate in modo in streaming dopo la valutazione dello streaming o della segmentazione in batch, ad Experience Platform.
+1. Assicurati che il flusso di destinazione abbia consegnato il pubblico alla destinazione come previsto.
+   * Controlla l’interfaccia di monitoraggio per confermare che il pubblico è stato consegnato con il numero di profili previsti. La dimensione del pubblico deve riflettere il numero previsto di profili attivati, osservando che una destinazione specifica come Google Customer Match richiederà alcuni campi, come un’identità hash e-mail, e se non presente nel profilo membro del pubblico, non verrà attivata nella destinazione.
+   * Controlla eventuali profili ignorati per le identità di profilo mancanti o gli attributi mancanti che erano obbligatori.
+   * Controlla eventuali altri errori che potrebbero essere da risolvere.
+1. Verifica che il pubblico sia stato attivato nella destinazione finale con il numero previsto di appartenenze al pubblico.
+   * Dopo aver completato il flusso di attivazione, passa al tuo account Google Ads. I segmenti attivati vengono visualizzati nel tuo account Google come elenchi di clienti. Tieni presente che a seconda della dimensione del segmento, alcuni tipi di pubblico non vengono compilati a meno che non vi siano più di 100 utenti attivi da servire.
 
-## Considerazioni sull’implementazione
+## Guardrail
 
-* Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per [!UICONTROL Real-time Customer Profile].
-
-### Condivisione del pubblico da Real-time Customer Data Platform a Audience Manager
-
-* L’appartenenza a un pubblico viene condivisa direttamente da RTCDP a Audience Manager non appena la valutazione del segmento, in batch o in streaming, viene completata e inserita nel profilo cliente in tempo reale. Se il profilo qualificato contiene informazioni di indirizzamento regionali per i dispositivi del profilo, l’appartenenza al pubblico da RTCDP viene qualificata in modalità streaming nella relativa rete Edge di Audience Manager. Se le informazioni di indirizzamento regionali sono state applicate a un profilo con una marca temporale negli ultimi 14 giorni, verranno valutate in streaming in Audience Manager Edge. Se i profili di RTCDP non contengono informazioni di indirizzamento regionali o se le informazioni di indirizzamento regionale hanno una durata superiore a 14 giorni, le appartenenze al profilo vengono inviate all&#39;ubicazione di hub Audience Manager per la valutazione e l&#39;attivazione basate su batch. I profili idonei per l’attivazione di Edge verranno attivati entro pochi minuti dalla qualifica del segmento da RTCDP, i profili non qualificati per l’attivazione di Edge saranno qualificati nell’hub di Audience Manager e potrebbero avere un intervallo di tempo di 12-24 ore per l’elaborazione.
-
-* Le informazioni di indirizzamento regionali su cui è memorizzato il profilo di Audience Manager di Edge possono essere raccolte ad Experience Platform da Audience Manager, Servizio ID visitatore, Analytics, Launch o direttamente dall’SDK per web come set di dati della classe di record di profilo separato utilizzando il gruppo di campi XDM &quot;informazioni sull’area di acquisizione dati&quot;.
-
-* Per le situazioni di attivazione in cui i tipi di pubblico sono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Al momento, gli spazi dei nomi personalizzati non vengono condivisi.
-
-Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse in [!UICONTROL Real-time Customer Profile], oppure nel caso in cui le identità in [!UICONTROL Real-time Customer Profile] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
+[Guardrail di profilo e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
 ## Documentazione correlata
 
-* Descrizione del prodotto [[!UICONTROL Real-time Customer Data Platform]](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform.html)
-* [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
-* [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
-* [Documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=it)
-
-## Video e tutorial correlati
-
-* Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
-* [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
-* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
+Attivazione a Customer Match di Google - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html)

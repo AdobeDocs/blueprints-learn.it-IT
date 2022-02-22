@@ -3,13 +3,13 @@ title: Attivazione a tipi di pubblico personalizzati Facebook
 description: Attivazione a tipi di pubblico personalizzati Facebook.
 solution: Experience Platform, Real-time Customer Data Platform, Data Collection
 kt: 7086
-source-git-commit: f1477d39a2b2349708ad74625bab6c5f4012ae1e
+exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
+source-git-commit: 051b094412419363e5e2406f2e436cc528bd409e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '957'
+ht-degree: 3%
 
 ---
-
 
 # Attivazione a tipi di pubblico personalizzati Facebook
 
@@ -19,7 +19,9 @@ Acquisisci i dati dei clienti da più sorgenti per creare una singola vista del 
 
 * Targeting per tipi di pubblico noti su destinazioni social e pubblicitarie.
 * Personalizzazione online con attributi online e offline.
-Applicazioni
+
+## Applicazioni
+
 * Real-time Customer Data Platform
 
 ## Architettura
@@ -32,7 +34,7 @@ Applicazioni
    * Utilizza i namespace predefiniti come E-mail, hash SHA256 e-mail, se disponibile.
    * Facebook dispone di un elenco di identità supportate. Per attivare i tipi di pubblico personalizzati di Facebook, una delle identità supportate deve essere presente nei profili da attivare.
    * Facebook supporta attualmente le seguenti identità: GAID, IDFA, phone_sha256, email_lc_sha256, extern_id.
-   * Per ulteriori dettagli consulta la sezione [Guida alla destinazione di facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en).
+   * Per ulteriori dettagli consulta la sezione [Guida alla destinazione di facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html).
    * Crea spazi dei nomi personalizzati in cui gli spazi dei nomi predefiniti non sono disponibili per le identità applicabili.
 1. Configura gli schemi e i set di dati dell’origine dati del profilo.
    * Crea schemi di record del profilo per tutti i dati di origine dei record del profilo.
@@ -67,7 +69,7 @@ Applicazioni
    * Esamina il conteggio dei risultati del segmento per i segmenti specificati.
    * Investiga il profilo che deve essere incluso nel segmento per verificare che l’appartenenza al segmento sia inclusa nella parte di appartenenza al segmento del profilo.
 1. Configura la distribuzione del pubblico alla destinazione nella configurazione di Destinazione.
-   * Consulta la sezione [Guida alla destinazione di facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en) per ulteriori dettagli sulla configurazione della destinazione Facebook.
+   * Consulta la sezione [Guida alla destinazione di facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html) per ulteriori dettagli sulla configurazione della destinazione Facebook.
    * Durante la configurazione di una destinazione, seleziona il pubblico da attivare nella destinazione.
    * Determina la data di inizio pianificata per cui desideri che il flusso di dati di destinazione inizi a consegnare il pubblico alla destinazione.
    * Ogni destinazione dispone degli attributi obbligatori e facoltativi che verranno inviati.
@@ -88,4 +90,4 @@ Applicazioni
 
 ## Documentazione correlata
 
-Attivazione a tipi di pubblico personalizzati Facebook - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en)
+Attivazione a tipi di pubblico personalizzati Facebook - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html)
