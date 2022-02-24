@@ -1,13 +1,13 @@
 ---
 title: Blueprint per hub delle attività dei clienti
-description: Le ricerche in [!UICONTROL Real-time Customer Profile] forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore.
+description: '"[!UICONTROL Le ricerche in Real-time Customer Profile forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore."]'
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
-workflow-type: ht
-source-wordcount: '382'
-ht-degree: 100%
+source-git-commit: 062701f2ee8d7b2a97db2ee8e75a4d0f42b59b53
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,5 +49,5 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 * [Descrizione del prodotto Adobe Experience Platform Activation](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform0.html)
 * Documentazione di [[!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
-* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [API di ricerca profilo](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
