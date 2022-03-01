@@ -5,10 +5,10 @@ landing-page-description: Sincronizza la personalizzazione web con l’e-mail e 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 2b2e9a7b849b71ac4b827a3783820a7e4b8ad6f1
+source-git-commit: bf2fd224c0eb3e4933dd39a9c26aeaf613fe5abc
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 47%
+source-wordcount: '1521'
+ht-degree: 48%
 
 ---
 
@@ -52,24 +52,24 @@ Sincronizza la personalizzazione web con l’e-mail e altre personalizzazioni di
     <td class="tg-0lax">1</td>
 <td class="tg-73oq">Valutazione dei segmenti in tempo reale sul server Edge condiviso da Real-time Customer Data Platform a Target</td>
     <td class="tg-0lax">- Valuta i tipi di pubblico in tempo reale sul server Edge per la personalizzazione della pagina corrente o successiva.<br>- Inoltre, tutti i segmenti valutati in streaming o in modalità batch verranno proiettati su Edge Network per essere inclusi nella valutazione e personalizzazione dei segmenti edge.</td>
-    <td class="tg-73oq"><br>- Modello di implementazione 1 descritto di seguito.<br>- È necessario implementare l’SDK web/mobile.<br>- Al momento il supporto per la segmentazione in tempo reale basato su SDK per dispositivi mobili e API non è disponibile<br>- Il Datastream deve essere configurato in Experience Edge con l’estensione Target e Experience Platform abilitata, l’ID Datastream verrà fornito nella configurazione di destinazione di Target.<br>- La destinazione di destinazione deve essere configurata in Real-time Customer Data Platform Destinations.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</td> 
+    <td class="tg-73oq">- Modello di implementazione 1 descritto di seguito.<br>- È necessario implementare l’SDK web/mobile.<br>- Al momento il supporto per la segmentazione in tempo reale basato su SDK per dispositivi mobili e API non è disponibile<br>- Il Datastream deve essere configurato in Experience Edge con l’estensione Target e Experience Platform abilitata, l’ID Datastream verrà fornito nella configurazione di destinazione di Target.<br>- La destinazione di destinazione deve essere configurata in Real-time Customer Data Platform Destinations.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</td> 
   </tr>
   <tr>
     <td class="tg-0lax">2</td>
     <td class="tg-73oq">Streaming e condivisione in batch dell'audience da Real-time Customer Data Platform a Target tramite l'approccio Edge</td>
     <td class="tg-0lax">- Condivisione di tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target tramite la rete Edge. I tipi di pubblico valutati in tempo reale richiedono Web SDK e la valutazione del pubblico in tempo reale, come descritto nel pattern di integrazione 1.<br>- Questa integrazione viene generalmente utilizzata per condividere i tipi di pubblico in streaming e batch utilizzando gli SDK tradizionali invece di eseguire la migrazione a Edge Collection e WebSDK, che potenzia i tipi di pubblico in tempo reale, in streaming e in batch come descritto nel punto di integrazione 1.</td>
-    <td class="tg-73oq"><br>- Modello di implementazione 1 o 2 descritto di seguito.<br>- L’SDK per web e dispositivi mobili non è necessario per la condivisione di tipi di pubblico in streaming e in batch su Target, anche se è necessario per abilitare la valutazione dei segmenti edge in tempo reale come descritto nel pattern di integrazione 1. <br>- Se si utilizza AT.js, è supportata solo l’integrazione del profilo rispetto allo spazio dei nomi di identità ECID. <br>- Per le ricerche dello spazio dei nomi di identità personalizzato in Edge, è necessaria la distribuzione WebSDK e ogni identità deve essere impostata come identità nella mappa di identità.<br>- Datastream deve essere configurato in Experience Edge, l’ID Datastream verrà fornito nella configurazione di destinazione di Target.<br>- La destinazione di destinazione deve essere configurata in Real-time Customer Data Platform Destinations.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</td>
+    <td class="tg-73oq">- Modello di implementazione 1 o 2 descritto di seguito.<br>- L’SDK per web e dispositivi mobili non è necessario per la condivisione di tipi di pubblico in streaming e in batch su Target, anche se è necessario per abilitare la valutazione dei segmenti edge in tempo reale come descritto nel pattern di integrazione 1. <br>- Se si utilizza AT.js, è supportata solo l’integrazione del profilo rispetto allo spazio dei nomi di identità ECID. <br>- Per le ricerche dello spazio dei nomi di identità personalizzato in Edge, è necessaria la distribuzione WebSDK e ogni identità deve essere impostata come identità nella mappa di identità.<br>- Datastream deve essere configurato in Experience Edge, l’ID Datastream verrà fornito nella configurazione di destinazione di Target.<br>- La destinazione di destinazione deve essere configurata in Real-time Customer Data Platform Destinations.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
     <td class="tg-73oq"><span style="font-weight:400;font-style:normal">Streaming e condivisione in batch dell'audience da Real-time Customer Data Platform a Target ed Audience Manager tramite l'approccio al servizio di condivisione del pubblico</span></td>
     <td class="tg-0lax"><span style="font-weight:400;font-style:normal">- Condividi tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target ed Audience Manager tramite il servizio Audience Sharing.<br> - Questo modello di integrazione può essere sfruttato quando è necessario un arricchimento aggiuntivo da dati di terze parti e da tipi di pubblico in Audience Manager. In caso contrario, si consiglia il pattern di integrazione 1 e 2. I tipi di pubblico valutati in tempo reale richiedono Web SDK e la valutazione del pubblico in tempo reale, come descritto nel pattern di integrazione 1.</span></td>
-    <td class="tg-73oq"><br>- Modello di implementazione 1 o 2 descritto di seguito.<br>- La distribuzione dell'SDK Web/Mobile non è necessaria per questa integrazione.<br>- È necessario il provisioning della proiezione del pubblico tramite il servizio di condivisione del pubblico.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.<br>- L’identità deve essere risolta in ECID affinché possa essere condivisa con la rete Edge e utilizzata da Target.</td>
+    <td class="tg-73oq">- Modello di implementazione 1 o 2 descritto di seguito.<br>- La distribuzione dell'SDK Web/Mobile non è necessaria per questa integrazione.<br>- È necessario il provisioning della proiezione del pubblico tramite il servizio di condivisione del pubblico.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.<br>- L’identità deve essere risolta in ECID affinché possa essere condivisa con la rete Edge e utilizzata da Target.</td>
   </tr>
 </tbody>
 </table>
 
-## Architettura per lo scenario 1 e 2: condivisione in tempo reale, in streaming e in batch del pubblico tramite la rete Edge
+## Scenario 1 e 2: condivisione in tempo reale, in streaming e in batch di pubblico su Adobe Target
 
 Architettura
 
@@ -79,11 +79,11 @@ Dettaglio sequenza
 
 <img src="assets/RTCDP+Target_flow.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 
-Architettura della panoramica per il modello di integrazione 1
+Scenario 1 e 2 - Architettura della panoramica
 
 <img src="assets/personalization_with_apps.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a"/>
 
-### I passaggi di implementazione per lo scenario 1 supportano anche lo scenario 2
+### I passaggi di implementazione per lo scenario del caso d&#39;uso 1 supportano anche lo scenario del caso d&#39;uso 2
 
 1. [Implementare Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=it) per le applicazioni web o mobili
 1. [Implementare Experience Platform e [!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it)
@@ -91,7 +91,7 @@ Architettura della panoramica per il modello di integrazione 1
 1. [Configurare la rete Edge con un Datastream Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 1. [Abilitare Adobe Target come destinazione in Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it)
 
-## Architettura per lo scenario 3: streaming e condivisione in batch del pubblico tramite il servizio di condivisione del pubblico su Adobe Target ed Audience Manager
+## Scenario 3 - Streaming e condivisione in batch del pubblico tramite il servizio di condivisione del pubblico su Adobe Target ed Audience Manager
 
 Architettura
 
@@ -108,7 +108,7 @@ Architettura
 1. (Facoltativo) [Configurare la rete Edge con un Datastream Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) Questo è necessario solo per il pattern di integrazione 2, in cui il pubblico non deve essere condiviso in Audience Manager o arricchito da tipi di pubblico o dati di Audience Manager.
 1. (Facoltativo) [Abilitare Adobe Target come destinazione in Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) per condividere audience in streaming e in batch da Real-time Customer Data Platform direttamente a Edge rispetto a tramite il servizio e l’Audience Manager di condivisione del pubblico.
 
-### Modelli di implementazione
+## Modelli di implementazione
 
 La personalizzazione online e offline è supportata tramite diversi approcci di implementazione.
 
@@ -119,9 +119,10 @@ Utilizzo di Edge Network con l’SDK Web/Mobile
 
 <br>
 Diagramma della sequenza
+
 <img src="assets/RTCDP+Target_sequence.png" alt="Architettura di riferimento per il blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 
-### Modello di implementazione 2 - Supporta gli scenari di caso d’uso 3 e 2. SDK specifici per l&#39;applicazione
+### Modello di implementazione 2 - Supporta gli scenari di caso d’uso 2 e 3. SDK specifici per l&#39;applicazione
 
 Utilizzo di SDK tradizionali specifici per le applicazioni (ad esempio, AT.js e AppMeasurement.js)
 <img src="assets/app_sdk_flow.png" alt="Architettura di riferimento per l’approccio con SDK per specifiche applicazioni" style="width:80%; border:1px solid #4a4a4a" />
@@ -134,8 +135,8 @@ Utilizzo di SDK tradizionali specifici per le applicazioni (ad esempio, AT.js e 
 
 Prerequisiti per l’identità
 
-* Qualsiasi identità primaria può essere sfruttata quando si utilizza il pattern di integrazione 1 descritto in precedenza con la rete Edge e WebSDK. La prima personalizzazione di accesso richiede che l’identità principale del set di richieste di personalizzazione corrisponda all’identità principale del profilo di Real-time Customer Data Platform. L’unione delle identità tra dispositivi anonimi e clienti noti viene elaborata sull’hub e successivamente proiettata sul server Edge. Pertanto, se l’identità principale è impostata come identificatore del dispositivo, i dati dei clienti noti non verranno applicati fino alle sessioni successive in cui i profili anonimi e noti sono stati unificati.
-* La condivisione di tipi di pubblico da Adobe Experience Platform ad Adobe Target richiede l’uso di ECID come identità quando si utilizza il servizio di condivisione del pubblico come descritto nel modello di integrazione 3 di cui sopra.
+* È possibile sfruttare qualsiasi identità primaria quando si utilizza il pattern di implementazione 1 descritto in precedenza con la rete Edge e l’SDK per web. La prima personalizzazione di accesso richiede che l’identità principale del set di richieste di personalizzazione corrisponda all’identità principale del profilo di Real-time Customer Data Platform. L’unione delle identità tra dispositivi anonimi e clienti noti viene elaborata sull’hub e successivamente proiettata sul server Edge.
+* La condivisione di tipi di pubblico da Adobe Experience Platform ad Adobe Target richiede l’utilizzo di ECID come identità quando si utilizza il servizio di condivisione del pubblico come descritto nel caso d’uso 3 di cui sopra.
 * Inoltre, è possibile utilizzare identità alternative per condividere i tipi di pubblico di Experience Platform con Adobe Target tramite Audience Manager. Experience Platform attiva i tipi di pubblico in Audience Manager tramite i seguenti spazi dei nomi supportati: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Tieni presente che Audience Manager e Target risolvono l’appartenenza a un pubblico tramite l’identità ECID. Pertanto l’ECID è comunque necessario per la condivisione finale del pubblico in Adobe Target.
 
 ## Documentazione correlata
