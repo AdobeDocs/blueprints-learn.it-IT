@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: bdbf083e60a94b29debb70976aad47a083b41e32
+source-git-commit: 274f87c0d9bf7e9276b978a097a9633a55f09ede
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 76%
+source-wordcount: '175'
+ht-degree: 82%
 
 ---
 
@@ -30,13 +30,14 @@ ht-degree: 76%
 + Attivazione in base a pubblico e profili {#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
    + [Attivazione del pubblico con dati anonimi](/help/blueprints/audience-activation/anonymous.md)
-   + [Attivazione con dati online e offline](/help/blueprints/audience-activation/online-offline.md)
-   + Attivazione a canali social e pubblicitari{#audience-activation}
-      + [Attivazione a tipi di pubblico personalizzati Facebook](/help/blueprints/audience-activation/destinations/facebook.md)
-      + [Attivazione a Customer Match di Google](/help/blueprints/audience-activation/destinations/gcm.md)
-   + [Attivazione per destinazioni basate su file e streaming verso soluzioni aziendali](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + Attivazione nota del cliente{#known-customer-audience-activation}
+      + [Panoramica](/help/blueprints/audience-activation/known.md)
+      + Attivazione a canali social e pubblicitari{#audience-activation}
+         + [Attivazione a tipi di pubblico personalizzati Facebook](/help/blueprints/audience-activation/destinations/facebook.md)
+         + [Attivazione a Customer Match di Google](/help/blueprints/audience-activation/destinations/gcm.md)
+      + [Attivazione per destinazioni basate su file e streaming verso soluzioni aziendali](/help/blueprints/audience-activation/enterprise-destinations.md)
+      + [Hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)
    + [Attivazione con applicazioni Experience Cloud](/help/blueprints/audience-activation/platform-and-applications.md)
-   + [Hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)
 + Attivazione e marketing B2B {#b2b-activation}
    + [Panoramica](/help/blueprints/b2b/overview.md)
    + [Attivazione B2B](/help/blueprints/b2b/b2bactivation.md)
