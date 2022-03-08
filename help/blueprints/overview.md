@@ -2,10 +2,10 @@
 title: Blueprint per esperienze digitali
 description: I blueprint per esperienze digitali sono implementazioni ripetibili che permettono di risolvere questioni di strategia e problemi di business noti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 274f87c0d9bf7e9276b978a097a9633a55f09ede
+source-git-commit: 7611084c357e721f954ff980ef88b965609dd5ed
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 85%
+source-wordcount: '255'
+ht-degree: 90%
 
 ---
 
@@ -35,8 +35,8 @@ I blueprint per esperienze digitali sono implementazioni ripetibili che permetto
     <p><em>Invia messaggi e influenza le esperienze dei clienti in tempo reale utilizzando [!UICONTROL Platform] come hub centrale.</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html"><img alt="immagine miniatura per la Blueprint di attivazione del cliente noto" src="audience-activation/assets/online_offline_activation.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html"><strong>Attivazione del pubblico con dati online/offline</strong></a></div>
+    <a href="/help/blueprints/audience-activation/known.md"><img alt="immagine miniatura per la Blueprint di attivazione del cliente noto" src="audience-activation/assets/online_offline_activation.svg" /></a>
+    <div><a href="/help/blueprints/audience-activation/known.md"><strong>Attivazione del pubblico con dati online/offline</strong></a></div>
     <p><em>Offri pubblicità multicanale attivata in base al pubblico.</em></p>
   </td>
   <td>
