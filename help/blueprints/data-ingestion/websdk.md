@@ -5,10 +5,10 @@ solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
-workflow-type: ht
-source-wordcount: '88'
-ht-degree: 100%
+source-git-commit: 992528c2dcde4a0ace0b67cb6c84de4844693304
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,4 +21,5 @@ Questo schema dell’architettura illustra i percorsi di integrazione e raccolta
 ## Documentazione di riferimento
 
 * [Panoramica di Experience Platform Web/Mobile SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it)
-* [Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html?lang=it)
+* [Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it)
+* [Esercitazione sull’implementazione di Adobe Experience Cloud nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)
