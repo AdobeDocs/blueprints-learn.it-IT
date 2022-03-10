@@ -1,17 +1,18 @@
 ---
-title: Real-Time CDP con blueprint Adobe Campaign
-description: Mostra come Adobe Experience Platform e il suo Profilo cliente in tempo reale e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe Campaign per fornire conversazioni personalizzate.
+title: Modello di integrazione Real-Time CDP con Adobe Campaign
+description: Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo reale e lo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate.
 solution: Experience Platform, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
+source-git-commit: e158cb7c14970a9deb035fde50c9c070b0760203
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 58%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Real-Time CDP con blueprint Adobe Campaign
+# Modello di integrazione Real-Time CDP con Adobe Campaign
 
-Mostra come Adobe Experience Platform e il suo Profilo cliente in tempo reale e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe Campaign per fornire conversazioni personalizzate.
+Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo reale e lo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate.
 
 <br>
 
@@ -24,13 +25,13 @@ Mostra come Adobe Experience Platform e il suo Profilo cliente in tempo reale e 
 
 ## Architettura
 
-<img src="assets/rtcdp-campaign-architecture.svg" alt="Architettura di riferimento per il blueprint per messaggistica batch e Adobe Experience Platform" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/rtcdp-campaign-architecture.svg" alt="Architettura di riferimento per i pattern di integrazione dei messaggi batch e Adobe Experience Platform" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
 ## Prerequisiti
 
-* Si consiglia di effettuare il provisioning di Experience Platform e Campaign nella stessa organizzazione IMS e di utilizzare Adobe Admin Console per l’accesso degli utenti. In questo modo i clienti possono utilizzare lo switcher della soluzione direttamente dall&#39;interfaccia utente di marketing
+* Si consiglia di effettuare il provisioning di Experience Platform e Campaign nella stessa organizzazione IMS e di utilizzare Adobe Admin Console per l’accesso degli utenti. I clienti potranno così passare da una soluzione all’altra direttamente dall’interfaccia utente per il marketing.
 
 <br>
 
@@ -38,19 +39,19 @@ Mostra come Adobe Experience Platform e il suo Profilo cliente in tempo reale e 
 
 ### Adobe Campaign
 
-* Supporta solo le distribuzioni di unità organizzative singole di Adobe Campaign
-* Adobe Campaign è la sorgente originale per tutti i profili attivi: i profili devono quindi esistere in Adobe Campaign e non dovrebbero essere creati nuovi profili in base ai segmenti di Experience Platform.
+* Supporta solo le implementazioni di Adobe Campaign per singole unità organizzative
+* Adobe Campaign è la singola origine per tutti i profili attivi: i profili devono quindi esistere in Adobe Campaign e non dovrebbero essere creati nuovi profili in base ai segmenti di Experience Platform.
 * I flussi di lavoro di esportazione da Campaign si devono eseguire al massimo ogni 4 ore.
-* Gli schemi e i set di dati XDM per Adobe Campaign wideLog, trackingLogs e gli indirizzi non consegnabili non sono pronti e devono essere progettati e costruiti
+* Gli schemi e i set di dati XDM per i broadLog, trackingLogs e gli indirizzi non consegnabili di Adobe Campaign non sono inclusi; devono essere progettati e realizzati.
 
-### Experience Platform di condivisione del segmento CDP
+### Condivisione dei segmenti Experience Platform CDP
 
-* Raccomandazione di un limite di 20 segmenti
-* L&#39;attivazione è limitata a ogni 24 ore
+* Si consiglia un limite di 20 segmenti
+* L’attivazione è limitata a ogni 24 ore
 * Sono disponibili per l’attivazione solo gli attributi dello schema di unione (nessun supporto per array/mappe/eventi esperienza)
-* Raccomandazione su non più di 20 attributi per segmento
+* Si raccomanda di non superare i 20 attributi per segmento
 * Un file per segmento di tutti i profili con stato di appartenenza “realized” OPPURE, se la partecipazione al segmento viene aggiunta al file come attributo, sia i profili “realized” che “exited”
-* Sono supportate le esportazioni incrementali e complete di segmenti
+* Sono supportate le esportazioni incrementali o di segmenti completi.
 * La crittografia dei file non è supportata.
 
 <br>
@@ -100,20 +101,21 @@ Mostra come Adobe Experience Platform e il suo Profilo cliente in tempo reale e 
 1. Inviare le preferenze profilo a Experience Platform tramite flussi di lavoro creati dal servizio di consulenza ogni quattro ore (facoltativo)
 
 
-### Configurazione push mobile
+### Configurazione push per dispositivi mobili
 
-* Due approcci supportati per l’integrazione con i dispositivi mobili per le notifiche push:
-   * SDK per dispositivi mobili di Experience Platform
-   * SDK per Campaign Mobile
-* Experience Platform di percorso dell’SDK di Mobile:
-   * Sfrutta i tag di Adobe e l’estensione Campaign Classic per configurare la tua integrazione con l’SDK di Experience Platform Mobile
-   * Necessità di una conoscenza operativa dei tag Adobi e della raccolta dei dati
-   * Per distribuire l&#39;SDK, integrarsi con FCM (Android) e APNS (iOS) per ottenere il token push, configurare l&#39;app per la ricezione di notifiche push e gestire le interazioni push, è necessario che l&#39;esperienza di sviluppo mobile con le notifiche push sia in Android che in iOS sia con FCM (Android) e APNS ()
+* Due approcci supportati per l’integrazione con dispositivi mobili per le notifiche push:
+   * Experience Platform Mobile SDK
+   * Campaign Mobile SDK
+* Approccio con Experience Platform Mobile SDK:
+   * Sfrutta i tag di Adobe e l’estensione Campaign Classic per configurare l’integrazione con Experience Platform Mobile SDK
+   * È richiesta la conoscenza delle funzioni Tag e Raccolta dati di Adobe.
+   * È richiesta esperienza di sviluppo mobile con notifiche push per Android e iOS per: implementazione dell’SDK; integrazione con FCM (Android) e APNS (iOS) per recuperare il token push token; configurazione dell’app per la ricezione delle notifiche push; e gestione delle interazioni push.
 * SDK per Campaign Mobile
-   * Segui la [Documentazione di Campaign SDK](SDK di Campaign Mobile) Segui la documentazione di distribuzione qui descritta.
+   * Consulta la [Documentazione di Campaign SDK] (Campaign Mobile SDK
+Consulta la documentazione per l’implementazione qui descritta)
 
    >[!IMPORTANT]
-   >Se distribuisci l’SDK di Campaign e lavori con altre applicazioni Experience Cloud, per la raccolta dei dati dovrai utilizzare l’SDK di Experience Platform Mobile. Questo creerà chiamate lato client duplicate sul dispositivo.
+   >Se implementi Campaign SDK e utilizzi altre applicazioni Experience Cloud, per la raccolta dati dovrai utilizzare Experience Platform Mobile SDK. Verranno create chiamate lato client duplicate sul dispositivo.
 
 ## Documentazione correlata
 
