@@ -4,10 +4,10 @@ description: Attivazione del pubblico con dati online/offline.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 7611084c357e721f954ff980ef88b965609dd5ed
+source-git-commit: 20dd657a85ffeb8ae2f160855369643c2f2743bb
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 76%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 ## Applicazioni
 
-* Adobe Experience Platform 
+* Adobe Experience Platform
 * [!UICONTROL Real-time Customer Data Platform]
 
 ## Architettura
@@ -56,15 +56,7 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 * Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per [!UICONTROL Real-time Customer Profile].
 
-### Condivisione del pubblico da Real-time Customer Data Platform a Audience Manager
-
-* L’appartenenza a un pubblico viene condivisa direttamente da RTCDP a Audience Manager non appena la valutazione del segmento, in batch o in streaming, viene completata e inserita nel profilo cliente in tempo reale. Se il profilo qualificato contiene informazioni di indirizzamento regionali per i dispositivi del profilo, l’appartenenza al pubblico da RTCDP viene qualificata in modalità streaming nella relativa rete Edge di Audience Manager. Se le informazioni di indirizzamento regionali sono state applicate a un profilo con una marca temporale negli ultimi 14 giorni, verranno valutate in streaming in Audience Manager Edge. Se i profili di RTCDP non contengono informazioni di indirizzamento regionali o se le informazioni di indirizzamento regionale hanno una durata superiore a 14 giorni, le appartenenze al profilo vengono inviate all&#39;ubicazione di hub Audience Manager per la valutazione e l&#39;attivazione basate su batch. I profili idonei per l’attivazione di Edge verranno attivati entro pochi minuti dalla qualifica del segmento da RTCDP, i profili non qualificati per l’attivazione di Edge saranno qualificati nell’hub di Audience Manager e potrebbero avere un intervallo di tempo di 12-24 ore per l’elaborazione.
-
-* Le informazioni di indirizzamento regionali su cui è memorizzato il profilo di Audience Manager di Edge possono essere raccolte ad Experience Platform da Audience Manager, Servizio ID visitatore, Analytics, Launch o direttamente dall’SDK per web come set di dati della classe di record di profilo separato utilizzando il gruppo di campi XDM &quot;informazioni sull’area di acquisizione dati&quot;.
-
-* Per le situazioni di attivazione in cui i tipi di pubblico sono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Al momento, gli spazi dei nomi personalizzati non vengono condivisi.
-
-Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse in [!UICONTROL Real-time Customer Profile], oppure nel caso in cui le identità in [!UICONTROL Real-time Customer Profile] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
+* Consulta la sezione [Attivazione di tipi di pubblico e profili con Blueprint delle applicazioni Experience Cloud](platform-and-applications.md) per ulteriori dettagli sulla condivisione di tipi di pubblico da Real-time Customer Data Platform ad Audience Manager, Analytics, Target, Campaign e Journey Optimizer.
 
 ## Documentazione correlata
 
