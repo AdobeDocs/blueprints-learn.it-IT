@@ -4,10 +4,10 @@ description: Gestisci profili e pubblico in Experience Platform e condividili co
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 20dd657a85ffeb8ae2f160855369643c2f2743bb
+source-git-commit: 8d9875595cb5cb4a4815fff9213defc2921e647d
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 86%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ L&#39;attivazione con le applicazioni Experience Cloud è in linea con le [Bluep
 
 ## Architettura
 
-[Consulta la sezione Architettura di Experience Platform e relative applicazioni per ulteriori diagrammi relativi alle integrazioni di Experience Platform con le applicazioni Experience Cloud.](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=it)
+Consulta la sezione [Sezione Architettura di Experience Platform e applicazioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=it) per ulteriori diagrammi di architettura relativi alle integrazioni Experience Platform con Experience Cloud Applications.
 
 ### Attivazione in base a pubblico e profili con le applicazioni Experience Cloud
 
