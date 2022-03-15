@@ -5,7 +5,7 @@ exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: 7611084c357e721f954ff980ef88b965609dd5ed
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ I blueprint per esperienze digitali sono implementazioni ripetibili che permetto
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it"><img alt="immagine miniatura per il blueprint Messaggistica attivata ed Experience Platform" src="customer-journeys/assets/ajo-architecture.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>Orchestrazione tra canali</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>Orchestrazione tra canali diversi</strong></a></div>
     <p><em>Invia messaggi e influenza le esperienze dei clienti in tempo reale utilizzando [!UICONTROL Platform] come hub centrale.</em></p>
   </td>
   <td>

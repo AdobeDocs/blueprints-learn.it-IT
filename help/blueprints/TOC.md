@@ -8,7 +8,7 @@ role: Architect, Developer, User
 source-git-commit: 274f87c0d9bf7e9276b978a097a9633a55f09ede
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 82%
+ht-degree: 98%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 82%
    + [Attivazione del pubblico con dati anonimi](/help/blueprints/audience-activation/anonymous.md)
    + Attivazione nota del cliente{#known-customer-audience-activation}
       + [Panoramica](/help/blueprints/audience-activation/known.md)
-      + Attivazione a canali social e pubblicitari{#audience-activation}
-         + [Attivazione a tipi di pubblico personalizzati Facebook](/help/blueprints/audience-activation/destinations/facebook.md)
-         + [Attivazione a Customer Match di Google](/help/blueprints/audience-activation/destinations/gcm.md)
+      + Attivazione per canali social e pubblicitari {#audience-activation}
+         + [Attivazione in Facebook Custom Audiences](/help/blueprints/audience-activation/destinations/facebook.md)
+         + [Attivazione per Google Customer Match](/help/blueprints/audience-activation/destinations/gcm.md)
       + [Attivazione per destinazioni basate su file e streaming verso soluzioni aziendali](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)
    + [Attivazione con applicazioni Experience Cloud](/help/blueprints/audience-activation/platform-and-applications.md)
@@ -45,13 +45,13 @@ ht-degree: 82%
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
 + Customer journey {#customer-journeys}
    + [Panoramica](/help/blueprints/customer-journeys/overview.md)
-   + Journey Optimizer{#journey-optimizer}
+   + Journey Optimizer {#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
       + [Journey Optimizer con Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
       + [Messaggistica di terze parti](/help/blueprints/customer-journeys/3rd-party-messaging.md)
-   + Campaign v8{#campaign-v8}
+   + Campaign v8 {#campaign-v8}
       + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
-   + Campaign v7{#campaign-v7}
+   + Campaign v7 {#campaign-v7}
       + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
       + [Real-Time CDP con Adobe Campaign](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
 + Raccolta e preparazione dei dati {#data-ingestion}
