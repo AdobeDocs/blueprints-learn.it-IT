@@ -1,11 +1,12 @@
 ---
-title: Journey Optimizer - Blueprint di messaggistica di terze parti
+title: Blueprint per Journey Optimizer - Messaggistica di terze parti
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
 solution: Experience Platform, Journey Optimizer
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
-workflow-type: tm+mt
+exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
+source-git-commit: b4706bad79833f77b529bad724d30e3d51645f38
+workflow-type: ht
 source-wordcount: '829'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +18,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messag
 
 ## Architettura
 
-<img src="assets/3rd-party-messaging-architecture.svg" alt="Architettura di riferimento blueprint Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/3rd-party-messaging-architecture.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -25,51 +26,51 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messag
 
 Adobe Experience Platform
 
-* Gli schemi e i set di dati devono essere configurati nel sistema prima di poter configurare le origini dati Journey Optimizer
-* Per gli schemi basati su classi Experience Event, aggiungi il gruppo di campi &#39;Orchestration eventID quando vuoi che venga attivato un evento che non è un evento basato su regole
-* Per gli schemi basati su singole classi di profilo aggiungi il gruppo di campi &quot;Dettagli test profilo&quot; per poter caricare i profili di test da utilizzare con Journey Optimizer
+* Gli schemi e i set di dati devono essere configurati nel sistema prima di poter configurare le origini dati di Journey Optimizer.
+* Per poter attivare un evento non basato su regole, aggiungi il gruppo di campi Orchestration eventID agli schemi di eventi Experience basati su classi.
+* Per poter caricare profili di test da utilizzare con Journey Optimizer, aggiungi il gruppo di campi “Profile test details” agli schemi per singoli profili basati su classi.
 
 Applicazione di messaggistica di terze parti
 
-* Deve supportare le chiamate API REST per l’invio di payload transazionali
+* Deve supportare le chiamate API REST per l’invio di payload transazionali.
 
 <br>
 
 ## Guardrail
 
-[Journey Optimizer Guardrail Prodotto Link](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=it)
+[Link al prodotto per i guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=it)
 
-Guardrail Journey Optimizer aggiuntivi:
+Ulteriori guardrail Journey Optimizer:
 
-* L’utilizzo dell’app tramite l’API è ora disponibile per garantire che il sistema di destinazione non sia saturato fino al punto dell’errore. Ciò significa che i messaggi che superano il limite verranno eliminati completamente e non inviati. La limitazione non è supportata.
-   * Numero massimo di connessioni - numero massimo di connessioni http/s gestite da una destinazione
-   * Numero massimo di chiamate - numero massimo di chiamate da effettuare nel parametro periodInMs
-   * periodInMs - tempo in millisecondi
-* I percorsi avviati dall’iscrizione a un segmento possono funzionare in due modalità:
-   * Segmenti in batch (aggiornati ogni 24 ore)
-   * Segmenti in streaming (&lt;5min qualifica)
+* Ora la funzione di limitazione è disponibile tramite API per evitare che il sistema di destinazione venga saturato fino al punto di errore. I messaggi che superano il limite massimo vengono eliminati completamente e non vengono mai inviati. La regolazione della limitazione non è supportata.
+   * Max connessioni: numero massimo di connessioni http/s che una destinazione può gestire
+   * Numero max chiamate: numero massimo di chiamate da effettuare nel parametro periodInMs
+   * periodInMs: tempo in millisecondi
+* I percorsi avviati dall’appartenenza a un segmento possono funzionare in due modalità:
+   * segmenti batch (aggiornati ogni 24 ore)
+   * segmenti in streaming (&lt;5 minuti di qualificazione)
 * Segmenti batch: necessario comprendere il volume giornaliero di utenti qualificati e accertarsi che il sistema di destinazione sia in grado di gestire il throughput burst per percorso e per tutti i percorsi.
 * Segmenti in streaming: il burst iniziale delle qualifiche dei profili deve poter essere gestito insieme al volume giornaliero di qualificazione dello streaming, per ogni percorso e per tutti i percorsi.
-* offer decisioning in non supportato
-* Integrazioni in uscita con sistemi di terze parti
-   * Nessun supporto per un singolo IP statico in quanto l’infrastruttura è multi-tenant (deve elenco consentiti tutti gli IP del centro dati)
-   * Sono supportati solo i metodi POST e PUT per le azioni personalizzate
-   * Supporto dell&#39;autenticazione: token | password | OAuth2
-* Non è possibile creare pacchetti e spostare singoli componenti di Adobe Experience Platform o Journey Optimizer tra diverse sandbox. Deve essere reimplementato nei nuovi ambienti
+* Offer Decisioning non è supportato.
+* Integrazioni in uscita verso sistemi di terze parti
+   * Singoli indirizzi IP statici non sono supportati, in quanto la nostra infrastruttura è multi-tenant (inserire tutti gli indirizzi IP dei datacenter nell’elenco degli IP consentiti).
+   * Per le azioni personalizzate sono supportati solo i metodi POST e PUT.
+   * Autenticazioni supportate: token | password | OAuth2
+* Non è possibile creare pacchetti e spostare singoli componenti di Adobe Experience Platform o Journey Optimizer tra diverse sandbox. È necessario reimplementarli nei nuovi ambienti.
 
 <br>
 
 Sistema di messaggistica di terze parti
 
-* È necessario comprendere il carico che il sistema può supportare per le chiamate API transazionali
+* È necessario determinare il carico di chiamate API transazionali che può essere supportato dal sistema.
    * Numero di chiamate consentite al secondo
    * Numero di connessioni
-* Devi comprendere quale autenticazione è necessaria per effettuare chiamate API
-   * Tipo di autenticazione:  token | password | OAuth2 è supportato tramite Journey Optimizer
-   * Durata cache autenticazione:  per quanto tempo è valido il token? 
-* Se l’acquisizione batch è supportata solo, deve essere inviata in streaming a un motore di archiviazione cloud come Amazon Kinesis o Azure Event Grid 1st
-   * I dati possono essere batch di questi motori di archiviazione cloud e incanalati in terze parti
-   * Qualsiasi middleware richiesto è responsabilità del cliente o di terze parti di fornire
+* È necessario determinare il tipo di autenticazione necessario per effettuare chiamate API.
+   * Tipi di autenticazione: token | password | OAuth2 supportati tramite Journey Optimizer
+   * Durata cache autenticazione: per quanto tempo resta valido il token? 
+* Se è supportata solo l’acquisizione batch, è necessario l’invio in streaming a un motore di archiviazione cloud come Amazon Kinesis o Azure Event Grid 1st.
+   * I dati possono essere inviati in batch a questi motori di archiviazione cloud e incanalati nel sistema di terze parti.
+   * Eventuale middleware necessario deve essere fornito dal cliente o da terze parti.
 
 <br>
 
@@ -87,38 +88,38 @@ Sistema di messaggistica di terze parti
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
-1. Crea segmenti per l’utilizzo del Percorso.
+1. Creare segmenti da utilizzare in Journey
 
 #### Origini/Destinazioni
 
-1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origini
+1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origini.
 
 ### Journey Optimizer
 
-1. Configura l’origine dati di Experience Platform e determina quali campi devono essere memorizzati nella cache come parte dei dati profileStreaming utilizzati per avviare un percorso cliente deve prima essere configurato in Journey Optimizer per ottenere un ID orchestrazione. Questo ID di orchestrazione viene quindi fornito allo sviluppatore che potrà utilizzarlo con l’acquisizione
-1. Configurare le origini dati esterne
-1. Configurare azioni personalizzate per l’applicazione di terze parti
+1. Configurare l’origine dati di Experience Platform e determinare quali campi devono essere memorizzati nella cache come parte dei dati del profilo. I dati in streaming utilizzati per avviare un percorso cliente devono prima essere configurati in Journey Optimizer, per ottenere un ID di orchestrazione. Questo ID di orchestrazione viene quindi fornito allo sviluppatore che potrà utilizzarlo con l’acquisizione.
+1. Configurare le origini dati esterne.
+1. Configurare le azioni personalizzate per l’applicazione di terze parti.
 
-### Configurazione push mobile (opzionale se i token possono essere raccolti da terze parti)
+### Configurazione push mobile (opzionale per l’eventuale raccolta di token da terze parti)
 
-1. Implementa Experience Platform Mobile SDK per raccogliere token push e informazioni di accesso per eseguire il collegamento ai profili cliente noti
-1. Utilizza i tag di Adobe e crea una proprietà mobile con la seguente estensione:
+1. Implementare Experience Platform Mobile SDK per raccogliere i token push e le informazioni di accesso da associare ai profili cliente noti.
+1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
    * Adobe Journey Optimizer
    * Rete Edge di Adobe Experience Platform
-   * Identità per Edge Network
+   * Identità  per rete Edge
    * Mobile Core
-1. Assicurati di disporre di un datastream dedicato per le distribuzioni di app mobili rispetto alle distribuzioni web
-1. Per ulteriori informazioni, consulta [Guida a Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
+1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
+1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
 
 <br>
 
 ## Documentazione correlata
 
 * [Documentazione di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
-* [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
+* [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
 * [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
 * [Documentazione di Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=it)
-* [Descrizione del prodotto Journey Optimizer](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
+* [Descrizione del prodotto Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
