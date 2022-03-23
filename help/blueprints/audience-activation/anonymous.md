@@ -6,10 +6,10 @@ solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: f46c09a88cf2b49c816ab27c5daef20c01e99b09
+source-git-commit: 64e7b61c1b4b1d600641fd3299a2b84154873cfb
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 40%
+source-wordcount: '397'
+ht-degree: 41%
 
 ---
 
@@ -26,6 +26,9 @@ L&#39;attivazione del pubblico anonimo è la capacità di indirizzare e personal
 
 ## Applicazioni
 
+* Audience Manager
+* Real-time Customer Data Platform
+
 Sia Audience Manager che Real-time Customer Data Platform possono essere utilizzati per alimentare l&#39;Audience Activation anonimo per le destinazioni onsite e pubblicitarie. Real-time Customer Data Platform supporta solo un sottoinsieme di destinazioni pubblicitarie con identificatori di dispositivo anonimi catalogati in [documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en).
 
 Microsoft Bing, Google DV360 e TradeDesk sono le principali destinazioni pubblicitarie Real-time Customer Data Platform supportate per il targeting basato su dispositivi anonimi. Oltre a questi, Real-time Customer Data Platform supporta numerose destinazioni basate su clienti note catalogate in [documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en) e come descritto nella [blueprint di attivazione dei clienti noto](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
@@ -34,9 +37,9 @@ Microsoft Bing, Google DV360 e TradeDesk sono le principali destinazioni pubblic
 
 <img src="assets/anonymous_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione del pubblico con dati anonimi" style="width:80%; border:1px solid #4a4a4a" />
 
-## Fasi di implementazione
+<br>
 
-<!-- These steps should link to help. -->
+## Fasi di implementazione
 
 1. [Implementare Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it#implementation-integration-guides).
 1. Raccogliere i dati per Audience Manager.
