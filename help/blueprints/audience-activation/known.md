@@ -4,10 +4,10 @@ description: Attivazione del pubblico con dati online/offline.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 20dd657a85ffeb8ae2f160855369643c2f2743bb
+source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '561'
+ht-degree: 72%
 
 ---
 
@@ -29,19 +29,25 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 * Adobe Experience Platform
 * [!UICONTROL Real-time Customer Data Platform]
+* È inoltre possibile sfruttare le destinazioni basate su persone di Audience Manager per l’attivazione basata su persone a Facebook, LinkedIn e Google Customer Match.
 
 ## Architettura
 
-### Attivazione per destinazioni con dati online e offline
+### Attivazione nota del cliente tramite Real-time Customer Data Platform
 
-<img src="assets/online_offline_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione del pubblico con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="Architettura di riferimento per la blueprint di attivazione del cliente noto" style="width:80%; border:1px solid #4a4a4a" />
+<br>
+
+### Attivazione nota del cliente tramite destinazioni basate su persone di Audience Manager
+
+<img src="assets/AAM_PBD.svg" alt="Architettura di riferimento per la blueprint di attivazione del cliente noto" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrail
 
 [Fai riferimento ai guardrail come indicato nella panoramica Attivazione in base a pubblico e profili](overview.md).
 
-## Fasi di implementazione
+## Passaggi di implementazione per Real-time Customer Data Platform
 
 1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
@@ -57,6 +63,12 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 * Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per [!UICONTROL Real-time Customer Profile].
 
 * Consulta la sezione [Attivazione di tipi di pubblico e profili con Blueprint delle applicazioni Experience Cloud](platform-and-applications.md) per ulteriori dettagli sulla condivisione di tipi di pubblico da Real-time Customer Data Platform ad Audience Manager, Analytics, Target, Campaign e Journey Optimizer.
+
+## Passaggi di implementazione per Audience Manager destinazioni basate su persone
+
+* Per informazioni dettagliate sull&#39;implementazione dell&#39;Audience Manager consulta quanto segue [documentazione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it).
+
+* Per informazioni dettagliate sull’implementazione delle destinazioni basate su persone in Audience Manager, consulta quanto segue [documentazione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/faqs/faq-people-based-destinations.html).
 
 ## Documentazione correlata
 
