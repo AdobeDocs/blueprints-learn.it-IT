@@ -5,7 +5,7 @@ exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ I blueprint per esperienze digitali sono implementazioni ripetibili che permetto
     <p><em>Invia messaggi e influenza le esperienze dei clienti in tempo reale utilizzando [!UICONTROL Platform] come hub centrale.</em></p>
   </td>
   <td>
-    <a href="/help/blueprints/audience-activation/known.md"><img alt="immagine miniatura per la Blueprint di attivazione del cliente noto" src="audience-activation/assets/known_activation.svg" /></a>
+    <a href="/help/blueprints/audience-activation/known.md"><img alt="immagine miniatura per Blueprint per l’attivazione di clienti noti" src="audience-activation/assets/known_activation.svg" /></a>
     <div><a href="/help/blueprints/audience-activation/known.md"><strong>Attivazione del pubblico con dati online/offline</strong></a></div>
     <p><em>Offri pubblicità multicanale attivata in base al pubblico.</em></p>
   </td>

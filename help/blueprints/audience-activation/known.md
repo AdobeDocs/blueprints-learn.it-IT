@@ -1,5 +1,5 @@
 ---
-title: Attivazione nota del cliente
+title: Attivazione dei clienti noti
 description: Attivazione del pubblico con dati online/offline.
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
@@ -7,15 +7,15 @@ exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 72%
+ht-degree: 82%
 
 ---
 
-# Blueprint di attivazione del cliente noto
+# Blueprint per l’attivazione di clienti noti
 
-Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistema di gestione delle relazioni con i clienti o fedeltà, insieme a dati sul comportamento online.
+Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistemi CRM o programma fedeltà, insieme a dati sul comportamento online.
 
-L&#39;espansione degli identificatori con controlli di governance integrati offre maggiori opportunità di comunicare con clienti noti. Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie.
+L’espansione degli identificatori con controlli di governance integrati offre maggiori opportunità di comunicare con clienti noti. Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie.
 
 Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le applicazioni Experience Cloud sono disponibili nel [blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md).
 
@@ -62,7 +62,7 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 * Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per [!UICONTROL Real-time Customer Profile].
 
-* Consulta la sezione [Attivazione di tipi di pubblico e profili con Blueprint delle applicazioni Experience Cloud](platform-and-applications.md) per ulteriori dettagli sulla condivisione di tipi di pubblico da Real-time Customer Data Platform ad Audience Manager, Analytics, Target, Campaign e Journey Optimizer.
+* Consulta la sezione [Blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md) per ulteriori dettagli sulla condivisione di tipi di pubblico da Real-time Customer Data Platform ad Audience Manager, Analytics, Target, Campaign e Journey Optimizer.
 
 ## Passaggi di implementazione per Audience Manager destinazioni basate su persone
 

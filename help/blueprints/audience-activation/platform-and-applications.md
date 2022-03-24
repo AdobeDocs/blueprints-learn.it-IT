@@ -7,7 +7,7 @@ exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
 source-git-commit: 2b4e1f7134b240b68a432bfd70fe698ff634857a
 workflow-type: tm+mt
 source-wordcount: '741'
-ht-degree: 79%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 79%
 
 Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud. Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.
 
-L&#39;attivazione con le applicazioni Experience Cloud è in linea con le [Blueprint di attivazione del cliente noto](known.md).
+L’attivazione con applicazioni Experience Cloud è strettamente allineata al [blueprint per l’attivazione dei clienti noti](known.md).
 
 ## Casi di utilizzo
 
@@ -35,7 +35,7 @@ L&#39;attivazione con le applicazioni Experience Cloud è in linea con le [Bluep
 
 ## Architettura
 
-Consulta la sezione [Sezione Architettura di Experience Platform e applicazioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=it) per ulteriori diagrammi di architettura relativi alle integrazioni Experience Platform con Experience Cloud Applications.
+Nella sezione sull’[architettura di Experience Platform e relative applicazioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=it) trovi ulteriori diagrammi relativi alle integrazioni di Experience Platform con le applicazioni Experience Cloud.
 
 ### Attivazione in base a pubblico e profili con le applicazioni Experience Cloud
 
@@ -60,15 +60,15 @@ Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a p
 
 * Per scenari di attivazione in cui i tipi di pubblico vengono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: ECID, IDFA, GAID, indirizzi e-mail con hash (EMAIL_LC_SHA256), AdCloud ID. Al momento, gli spazi dei nomi personalizzati non vengono condivisi.
 
-* Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse in [!UICONTROL Real-time Customer Profile], oppure nel caso in cui le identità in [!UICONTROL Real-time Customer Profile] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
+* Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse nel [!UICONTROL profilo cliente in tempo reale], oppure nel caso in cui le identità nel [!UICONTROL profilo cliente in tempo reale] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Target
 
-* Consulta la sezione [Web/Mobile Personalization con blueprint dati online e offline](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) per ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Target.
+* Nel [blueprint per la personalizzazione web e mobile con dati online e offline](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html?lang=it) trovi ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Target.
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Campaign e Journey Optimizer
 
-* Consulta la sezione [Blueprint dei Percorsi dei clienti](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html) per ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Campaign e Journey Optimizer.
+* Nei [blueprint per customer journey](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html?lang=it) trovi ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Campaign e Journey Optimizer.
 
 ## Documentazione correlata
 
