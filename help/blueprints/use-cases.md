@@ -3,9 +3,9 @@ title: Blueprint per esperienze digitali - Casi di utilizzo
 description: I blueprint per esperienze digitali sono implementazioni ripetibili che permettono di risolvere questioni di strategia e problemi di business noti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 exl-id: 7ec2b5c9-b46c-4434-b0d3-8aba863e9006
 source-git-commit: 657e94baf69ba1898a163a082fbfef36fdfd9a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Quali di questi casi di utilizzo sono importanti per la tua azienda? Scopri i bl
  <tr>
   <td>Targeting per tipi di pubblico noti su destinazioni social e pubblicitarie.</td>
   <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html?lang=en">Attivazione nota del cliente</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></td>
  </tr>
  <tr>
   <td>Personalizzazione online con attributi online e offline.</td>
@@ -43,12 +43,12 @@ Quali di questi casi di utilizzo sono importanti per la tua azienda? Scopri i bl
  <tr>
   <td>Attivazione di profili e pubblico per destinazioni di archiviazione cloud o di streaming per il tracciamento, l’archiviazione, l’analisi e l’attivazione di dati e informazioni sui clienti.</td>
   <td style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/enterprise-destinations.html?lang=en">Attivazione per destinazioni aziendali</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/enterprise-destinations.html?lang=it">Attivazione per destinazioni aziendali</a></td>
  </tr>
  <tr>
   <td>Personalizzazione e targeting attraverso i canali di interazione con il cliente basati su Experience Cloud</td>
   <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con applicazioni Experience Cloud</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con applicazioni Experience Cloud</a></td>
  </tr>
  <tr>
   <td>Condivisione dei dati di pubblico e profilo tra Experience Platform e le applicazioni Experience Cloud</td>
@@ -56,7 +56,7 @@ Quali di questi casi di utilizzo sono importanti per la tua azienda? Scopri i bl
  <tr>
   <td>Contesto del consumatore più approfondito, per le interazioni tramite operatore, come le esperienze di assistenza tecnica o commerciale. Utilizzando la ricerca del profilo in Experience Platform, gli agenti possono ricevere maggiori informazioni sul contesto del cliente, come acquisti recenti, interazioni con le campagne, tendenze, pubblico di appartenenza e altri attributi e informazioni che vengono memorizzati nel profilo del cliente in tempo reale.</td>
   <td style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/customer-activity.html?lang=en">Hub delle attività dei clienti</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/customer-activity.html?lang=it">Hub delle attività dei clienti</a></td>
  </tr>
  <tr>
   <td>Analizzare le interazioni con i clienti su desktop e dispositivi mobili per comprendere il comportamento dei clienti ed estrarre informazioni utili per ottimizzare le esperienze digitali.</td>
@@ -161,6 +161,6 @@ Quali di questi casi di utilizzo sono importanti per la tua azienda? Scopri i bl
   <td>Targeting dei profili comportamentali e offline.</td>
  </tr>
  <tr>
-  <td>Personalizzazione basata su precedenti visualizzazioni di prodotti/contenuti, affinità di prodotti/contenuti, attributi ambientali, dati del pubblico di terze parti e dati demografici, nonché informazioni approfondite offline come dati da transazioni, fedeltà e sistema di gestione delle relazioni con i clienti, e dati modellati.</td>
+  <td>Personalizzazione basata su precedenti visualizzazioni di prodotti/contenuti, affinità di prodotti/contenuti, attributi ambientali, dati del pubblico di terze parti e dati demografici, nonché informazioni approfondite offline come dati da transazioni, dal programma fedeltà e dal sistema CRM, e dati modellati.</td>
  </tr>
 </table>
