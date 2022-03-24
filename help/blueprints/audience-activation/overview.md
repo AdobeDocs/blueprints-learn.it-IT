@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 source-git-commit: d0fd2d638ad14b1cfd3b48d82093b676de465286
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Con l’approccio di priorità al canale, ogni canale funziona come un comparto 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
 | **[Attivazione del pubblico con dati anonimi](anonymous.md)** | <ul><li>Rivolgiti a un pubblico attraverso i vari canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti.</li><li>Per una maggiore personalizzazione, puoi integrarli con dati sul pubblico di terze parti.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
-| **[Attivazione nota del cliente](known.md)** | <ul><li>Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie. </li><li>Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistemi di gestione delle relazioni con i clienti o fedeltà, insieme a dati sul comportamento online.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager (opzionale)</li></ul> |
+| **[Attivazione dei clienti noti](known.md)** | <ul><li>Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie. </li><li>Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistemi CRM o programma fedeltà, insieme a dati sul comportamento online.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager (opzionale)</li></ul> |
 | **[Attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md)** | <ul><li>Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.</li><li>Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform Activation</li><li>Applicazioni Experience Cloud</li></ul> |
 
 ## Architettura di Real-time Customer Profile
