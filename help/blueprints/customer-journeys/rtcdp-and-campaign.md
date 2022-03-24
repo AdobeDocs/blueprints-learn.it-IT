@@ -1,16 +1,16 @@
 ---
-title: Modello di integrazione Real-Time CDP con Adobe Campaign
+title: Modello di integrazione per Real-Time CDP e Adobe Campaign
 description: Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo reale e lo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate.
 solution: Experience Platform, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
 source-git-commit: e158cb7c14970a9deb035fde50c9c070b0760203
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Modello di integrazione Real-Time CDP con Adobe Campaign
+# Modello di integrazione per Real-Time CDP e Adobe Campaign
 
 Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo reale e lo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate.
 
@@ -25,7 +25,7 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
 
 ## Architettura
 
-<img src="assets/rtcdp-campaign-architecture.svg" alt="Architettura di riferimento per i pattern di integrazione dei messaggi batch e Adobe Experience Platform" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/rtcdp-campaign-architecture.svg" alt="Architettura di riferimento del blueprint per il modello di integrazione di messaggistica batch e Adobe Experience Platform" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -71,7 +71,7 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Adobe Campaign
@@ -110,7 +110,7 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
    * Sfrutta i tag di Adobe e l’estensione Campaign Classic per configurare l’integrazione con Experience Platform Mobile SDK
    * È richiesta la conoscenza delle funzioni Tag e Raccolta dati di Adobe.
    * È richiesta esperienza di sviluppo mobile con notifiche push per Android e iOS per: implementazione dell’SDK; integrazione con FCM (Android) e APNS (iOS) per recuperare il token push token; configurazione dell’app per la ricezione delle notifiche push; e gestione delle interazioni push.
-* SDK per Campaign Mobile
+* Campaign Mobile SDK
    * Consulta la [Documentazione di Campaign SDK] (Campaign Mobile SDK
 Consulta la documentazione per l’implementazione qui descritta)
 
