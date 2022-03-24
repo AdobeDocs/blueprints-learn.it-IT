@@ -1,11 +1,11 @@
 ---
 title: Blueprint per hub delle attività dei clienti
-description: '"[!UICONTROL Le ricerche in Real-time Customer Profile forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore."]'
+description: '"Le ricerche in [!UICONTROL Real-time Customer Profile] forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore."'
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
 source-git-commit: 687e5d61be990b7a837e413d4643cffde4f1d584
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 ## Architettura
 
-<img src="assets/customer_activity_hub.svg" alt="Architettura di riferimento per il blueprint per hub delle attività dei clienti" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/customer_activity_hub.svg" alt="Architettura di riferimento del blueprint per hub delle attività dei clienti" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Guardrail
 
@@ -49,5 +49,5 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 * [Descrizione del prodotto Adobe Experience Platform Activation](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform0.html)
 * Documentazione di [[!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
-* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [API di ricerca profilo](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
