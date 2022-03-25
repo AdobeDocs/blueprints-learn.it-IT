@@ -1,10 +1,10 @@
 ---
 title: Blueprint per Journey Optimizer con Adobe Campaign
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign per inviare messaggi in modo nativo utilizzando il server di messaggistica in tempo reale in Campaign.
-solution: Experience Platform, Journey Optimizer, Campaign v8, Campaign Classic v7, Campaign Standard
+solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: 076446a9-dfb9-464c-a04f-6864b8cb7b48
-source-git-commit: b4706bad79833f77b529bad724d30e3d51645f38
-workflow-type: ht
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
+workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 100%
 
@@ -108,7 +108,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Journey

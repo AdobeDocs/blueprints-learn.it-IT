@@ -1,10 +1,10 @@
 ---
 title: Blueprint per Journey Optimizer - Messaggistica di terze parti
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
-solution: Experience Platform, Journey Optimizer
+solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: b4706bad79833f77b529bad724d30e3d51645f38
-workflow-type: ht
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
+workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ Sistema di messaggistica di terze parti
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Journey
