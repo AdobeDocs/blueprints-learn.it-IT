@@ -1,13 +1,13 @@
 ---
 title: Attivazione in Facebook Custom Audiences
 description: Attivazione in Facebook Custom Audiences.
-solution: Experience Platform, Real-time Customer Data Platform, Data Collection
+solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: 051b094412419363e5e2406f2e436cc528bd409e
-workflow-type: ht
-source-wordcount: '957'
-ht-degree: 100%
+source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +69,7 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
    * Esamina il conteggio dei risultati dei segmenti specificati.
    * Esamina il profilo che deve essere incluso in un segmento per verificare che l’appartenenza al segmento sia effettivamente inclusa nella sezione appropriata del profilo.
 1. Nella configurazione delle destinazioni, configura la distribuzione del pubblico alla destinazione.
-   * Per informazioni sulla configurazione della destinazione Facebook, consulta la [guida alla destinazione Facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=it).
+   * Per informazioni sulla configurazione della destinazione Facebook, consulta la [guida alla destinazione Facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html).
    * Durante la configurazione di una destinazione, seleziona il pubblico da attivare in tale destinazione.
    * Determina la data di inizio pianificata, ossia quando il flusso di dati della destinazione dovrà iniziare a distribuire il pubblico alla destinazione.
    * Ogni destinazione prevede l’invio di specifici attributi obbligatori e facoltativi.
@@ -90,4 +90,4 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
 
 ## Documentazione correlata
 
-Attivazione in Facebook Customer Audiences - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=it)
+Attivazione in Facebook Customer Audiences - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html)

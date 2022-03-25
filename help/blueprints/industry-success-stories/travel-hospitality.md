@@ -1,13 +1,13 @@
 ---
 title: Settore viaggi e hospitality - Attivazione con dati online e offline
 description: Decisioni in tempo reale con una singola vista consolidata del comportamento dei clienti su diversi canali.
-solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
+solution: Real-time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
 exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
-source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
+source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Sfruttando le tecnologie e i servizi Adobe, questa organizzazione è ora pronta 
 
 ### Descrizione
 
-<ul><li>Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie.</li><li>Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistemi di gestione delle relazioni con i clienti o fedeltà, insieme a dati sul comportamento online.</li></li></ul>
+<ul><li>Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie.</li><li>Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistemi CRM o programma fedeltà, insieme a dati sul comportamento online.</li></li></ul>
 
 ### Applicazioni Experience Cloud
 
