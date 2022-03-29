@@ -1,11 +1,11 @@
 ---
 title: Blueprint per personalizzazione Data Science per l’arricchimento del profilo
 description: Questo blueprint mostra come Data Science Workspace di Adobe Experience Platform può utilizzare i dati all’interno di Experience Platform per addestrare, distribuire e valutare modelli per ottenere dai dati informazioni basate sull’apprendimento automatico.
-solution: Experience Platform,Data Collection
+solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
-workflow-type: ht
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Il blueprint per la personalizzazione Data Science per l’arricchimento del pro
 1. Scegliere un linguaggio. Sono supportati Python e PySpark.
 1. [Creare il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/recipe-builder-template.html?lang=it) nel notebook.
 1. [Addestrare il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=it).
-1. [Valutare il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=it) per generare previsioni con i dati di destinazione.
+1. [Valutare il modello](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en) per generare previsioni con i dati di destinazione.
 1. [Attivare il set di dati dei risultati del modello per il profilo se si devono trasferire in [!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/dsw-profile-segmentation.html?lang=it).
 
 ## Documentazione correlata

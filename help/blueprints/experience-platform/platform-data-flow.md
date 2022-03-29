@@ -1,12 +1,12 @@
 ---
 title: Diagramma del flusso di dati in Adobe Experience Platform
 description: Questo diagramma dell’architettura mostra come i dati entrano e escono da Adobe Experience Platform.
-solution: Experience Platform, Data Collection
+solution: Data Collection
 kt: 7198
 thumbnail: null
 exl-id: 5016f657-dd55-4ab7-859d-c97bc5edff76
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
-workflow-type: ht
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 100%
 
