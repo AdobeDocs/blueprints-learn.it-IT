@@ -3,7 +3,7 @@ title: Blueprint per esperienze digitali
 description: I blueprint per esperienze digitali sono implementazioni ripetibili che permettono di risolvere questioni di strategia e problemi di business noti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ I blueprint per esperienze digitali sono implementazioni ripetibili che permetto
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it"><img alt="immagine miniatura per il blueprint Messaggistica attivata ed Experience Platform" src="customer-journeys/assets/ajo-architecture.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>Orchestrazione tra canali diversi</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it"><strong>Orchestrazione tra canali diversi</strong></a></div>
     <p><em>Invia messaggi e influenza le esperienze dei clienti in tempo reale utilizzando [!UICONTROL Platform] come hub centrale.</em></p>
   </td>
   <td>
@@ -41,7 +41,7 @@ I blueprint per esperienze digitali sono implementazioni ripetibili che permetto
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=it"><img alt="immagine miniatura per il blueprint Consolidamento dei dati comportamentali digitali" src="customer-journey-analytics/assets/CJA.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=en"><strong>Analisi dei percorsi cross-channel</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=it"><strong>Analisi dei percorsi cross-channel</strong></a></div>
     <p><em>Vista unica e consolidata del comportamento del cliente tra i vari canali.</em></p>
   </td>
 </tr>
