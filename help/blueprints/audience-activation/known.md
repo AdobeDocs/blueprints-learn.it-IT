@@ -6,8 +6,8 @@ kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '561'
+ht-degree: 100%
 
 ---
 
@@ -29,25 +29,25 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 * Adobe Experience Platform
 * [!UICONTROL Real-time Customer Data Platform]
-* È inoltre possibile sfruttare le destinazioni basate su persone di Audience Manager per l’attivazione basata su persone a Facebook, LinkedIn e Google Customer Match.
+* È possibile sfruttare le destinazioni Audience Manager basate su persone anche per l’attivazione basata su persone in Facebook, LinkedIn e Google Customer Match.
 
 ## Architettura
 
-### Attivazione nota del cliente tramite Real-time Customer Data Platform
+### Attivazione di clienti noti tramite Real-time Customer Data Platform
 
-<img src="assets/known_activation.svg" alt="Architettura di riferimento per la blueprint di attivazione del cliente noto" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
-### Attivazione nota del cliente tramite destinazioni basate su persone di Audience Manager
+### Attivazione di clienti noti tramite destinazioni Audience Manager basate su persone
 
-<img src="assets/AAM_PBD.svg" alt="Architettura di riferimento per la blueprint di attivazione del cliente noto" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/AAM_PBD.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrail
 
 [Fai riferimento ai guardrail come indicato nella panoramica Attivazione in base a pubblico e profili](overview.md).
 
-## Passaggi di implementazione per Real-time Customer Data Platform
+## Fasi di implementazione per Real-time Customer Data Platform
 
 1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
@@ -64,11 +64,11 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 * Consulta la sezione [Blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md) per ulteriori dettagli sulla condivisione di tipi di pubblico da Real-time Customer Data Platform ad Audience Manager, Analytics, Target, Campaign e Journey Optimizer.
 
-## Passaggi di implementazione per Audience Manager destinazioni basate su persone
+## Fasi di implementazione per destinazioni Audience Manager basate su persone
 
-* Per informazioni dettagliate sull&#39;implementazione dell&#39;Audience Manager consulta quanto segue [documentazione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it).
+* Per informazioni dettagliate sull’implementazione di Audience Manager, consulta la [documentazione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it) seguente.
 
-* Per informazioni dettagliate sull’implementazione delle destinazioni basate su persone in Audience Manager, consulta quanto segue [documentazione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/faqs/faq-people-based-destinations.html).
+* Per informazioni dettagliate sull’implementazione di destinazioni basate di persone in Audience Manager, consulta la [documentazione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/faqs/faq-people-based-destinations.html?lang=it) seguente.
 
 ## Documentazione correlata
 
