@@ -5,10 +5,10 @@ landing-page-description: Sincronizza la personalizzazione web con l’e-mail e 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 817ec1be3d4754ca3fb4fc9767ca79e516b6ab47
+source-git-commit: b050017505b8d77fcf507e4dec147b66c561779a
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 86%
+source-wordcount: '1233'
+ht-degree: 81%
 
 ---
 
@@ -29,44 +29,13 @@ ht-degree: 86%
 * Adobe Audience Manager (facoltativo): Aggiunge dati di pubblico di terze parti, grafico dei dispositivi basato su co-op
 * Adobe Analytics (opzionale): aggiunge la possibilità di creare segmenti basati su dati comportamentali cronologici e sulla segmentazione granulare dei dati di Adobe Analytics.
 
-## Scenari di casi di utilizzo
+## Pattern di integrazione
 
-<table class="tg" style="undefined;table-layout: fixed; width: 790px">
-<colgroup>
-<col style="width: 20px">
-<col style="width: 276px">
-<col style="width: 229px">
-<col style="width: 265px">
-</colgroup>
-<thead>
-  <tr>
-    <th class="tg-y6fn">#</th>
-    <th class="tg-f7v4">Scenari di casi di utilizzo</th>
-    <th class="tg-y6fn">Funzionalità</th>
-    <th class="tg-f7v4">Prerequisiti</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0lax">1</td>
-<td class="tg-73oq">Valutazione dei segmenti in tempo reale sul server Edge condiviso da Real-time Customer Data Platform a Target</td>
-    <td class="tg-0lax">- Valutare i tipi di pubblico in tempo reale sul server Edge per la personalizzazione della pagina corrente o successiva.<br>- Inoltre, i segmenti valutati in streaming o in modalità batch verranno proiettati sulla rete Edge e inclusi nella valutazione e personalizzazione dei segmenti Edge.</td>
-    <td class="tg-73oq">- Modello di implementazione 1 descritto di seguito.<br>- È necessario implementare Web/Mobile SDK.<br>- Al momento il supporto basato su Mobile SDK per la segmentazione in tempo reale non è disponibile<br>- Il Datastream deve essere configurato in Experience Edge con l’estensione Target e Experience Platform abilitata, l’ID Datastream verrà fornito nella configurazione di destinazione di Target.<br>- La destinazione di Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</td> 
-  </tr>
-  <tr>
-    <td class="tg-0lax">2</td>
-    <td class="tg-73oq">Condivisione dei tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target tramite l’approccio Edge</td>
-    <td class="tg-0lax">- I tipi di pubblico in streaming e in batch devono essere condivisi da Real-time Customer Data Platform a Target tramite la rete Edge. I tipi di pubblico valutati in tempo reale richiedono Web SDK e la valutazione del pubblico in tempo reale, come descritto nel modello di integrazione 1.<br>- Questa integrazione viene generalmente utilizzata per condividere i tipi di pubblico in streaming e batch utilizzando gli SDK tradizionali, invece della migrazione a Edge Collection e Web SDK, per i tipi di pubblico in tempo reale, in streaming e in batch come descritto nel modello di integrazione 1.</td>
-    <td class="tg-73oq">- Modello di implementazione 1 o 2 descritto di seguito.<br>- Web/Mobile SDK non è necessario per la condivisione di tipi di pubblico in streaming e in batch con Target, ma è necessario per la valutazione dei segmenti Edge in tempo reale come descritto nel modello di integrazione 1. <br>- Se si utilizza AT.js, è supportata solo l’integrazione dei profili rispetto allo spazio dei nomi dell’identità ECID. <br>- Per le ricerche tramite identità da spazi dei nomi personalizzati nella rete Edge, è necessario implementare Web SDK e ogni identità deve essere impostata nella mappa delle identità.<br>- Lo stream di dati deve essere configurato in Experience Edge; l’ID dello stream di dati verrà fornito nella configurazione di destinazione di Target.<br>- La destinazione di Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">3</td>
-    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">Condivisione dei tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target e Audience Manager tramite il servizio Audience Sharing</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal">- Condividere i tipi di pubblico in modalità batch e streaming da Real-time Customer Data Platform a Target e Audience Manager tramite il servizio Audience Sharing.<br>- Questo modello di integrazione può essere sfruttato quando è necessario arricchire ulteriormente i dati con dati di terze parti e tipi di pubblico in Audience Manager. In caso contrario, si consigliano i modelli di integrazione 1 e 2. I tipi di pubblico valutati in tempo reale richiedono Web SDK e la valutazione del pubblico in tempo reale, come descritto nel modello di integrazione 1.</span></td>
-    <td class="tg-73oq">- Modello di implementazione 1 o 2 descritto di seguito.<br>- Per questa integrazione non è necessario implementare Web/Mobile SDK.<br>- È necessario il provisioning della proiezione del pubblico tramite il servizio Audience Sharing.<br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.<br>- L’identità deve essere risolta in ECID affinché possa essere condivisa con la rete Edge e utilizzata da Target.</td>
-  </tr>
-</tbody>
-</table>
+| # | Pattern di integrazione | Funzionalità | Prerequisiti |
+|---|---|---|---|
+| 1 | Valutazione dei segmenti in tempo reale sul server Edge condiviso da Real-time Customer Data Platform a Target | <ul><li>Valutare i tipi di pubblico in tempo reale sul server Edge per la personalizzazione della pagina corrente o successiva.</li><li>Inoltre, i segmenti valutati in streaming o in modalità batch verranno proiettati sulla rete Edge e inclusi nella valutazione e personalizzazione dei segmenti Edge.</li></ul> | <ul><li>È necessario implementare Web/Mobile SDK.</li><li>Il Datastream deve essere configurato in Experience Edge con l’estensione Target e Experience Platform abilitata</li><li>La destinazione Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform.</li><li>L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</li></ul> |
+| 2 | Condivisione dei tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target tramite l’approccio Edge | <ul><li>I tipi di pubblico in streaming e in batch devono essere condivisi da Real-time Customer Data Platform a Target tramite la rete Edge. I tipi di pubblico valutati in tempo reale richiedono l&#39;implementazione di WebSDK e Edge Network.</li></ul> | <ul><li>L’SDK per web/Mobile non è necessario per la condivisione di tipi di pubblico in streaming e in batch su Target, anche se è necessario per abilitare la valutazione dei segmenti edge in tempo reale.</li><li>Se si utilizza AT.js, è supportata solo l’integrazione dei profili rispetto allo spazio dei nomi dell’identità ECID.</li><li>Per le ricerche tramite identità da spazi dei nomi personalizzati nella rete Edge, è necessario implementare Web SDK e ogni identità deve essere impostata nella mappa delle identità.</li><li>La destinazione Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform.</li><li>L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</li></ul> |
+| 3 | Condivisione dei tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target e Audience Manager tramite il servizio Audience Sharing | <ul><li>Questo modello di integrazione può essere sfruttato quando è necessario un arricchimento aggiuntivo da dati di terze parti e tipi di pubblico in Audience Manager.</li></ul> | <ul><li>L’SDK per web/Mobile non è necessario per la condivisione di tipi di pubblico in streaming e in batch su Target, anche se è necessario per abilitare la valutazione dei segmenti edge in tempo reale.</li><li>Se si utilizza AT.js, è supportata solo l’integrazione dei profili rispetto allo spazio dei nomi dell’identità ECID.</li><li>Per le ricerche tramite identità da spazi dei nomi personalizzati nella rete Edge, è necessario implementare Web SDK e ogni identità deve essere impostata nella mappa delle identità.</li><li>È necessario il provisioning della proiezione del pubblico tramite il servizio di condivisione del pubblico.</li><li>La destinazione Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform.</li><li>L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform.</li></ul> |
 
 ## Condivisione in tempo reale, in streaming e in batch del pubblico su Adobe Target
 
