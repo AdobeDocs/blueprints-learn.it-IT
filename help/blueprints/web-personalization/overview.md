@@ -5,10 +5,10 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
+source-git-commit: 4fef6460b305dc01671eeb9a90e58483f42d35e2
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ La personalizzazione web e mobile consente di utilizzare la segmentazione in bas
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
 | **[Personalizzazione web/mobile basata sul comportamento](behavioral.md)** | <ul><li>Personalizzare in base al comportamento online e ai dati del pubblico</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *(opzionale)*</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
-| **[Personalizzazione web e mobile con dati online e offline](online-offline.md)** | <ul><li>I profili cliente completi e la segmentazione avanzata offrono esperienze personalizzate migliori.</li><li>Personalizza con attributi ed eventi offline (dati da transazioni, prenotazioni, sistema di gestione delle relazioni con i clienti e fedeltà).</li><li>Sincronizza la personalizzazione su web, e-mail e altri canali noti.</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
+| **[Personalization Web/Mobile con dati cliente noti](known-personalization.md)** | <ul><li>I profili cliente completi e la segmentazione avanzata offrono esperienze personalizzate migliori.</li><li>Personalizza con attributi ed eventi offline (dati da transazioni, prenotazioni, sistema di gestione delle relazioni con i clienti e fedeltà).</li><li>Sincronizza la personalizzazione su web, e-mail e altri canali noti.</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
 
 <br>
 
@@ -31,7 +31,7 @@ La personalizzazione web e mobile consente di utilizzare la segmentazione in bas
 
 <br>
 
-### Diagramma dei guardrail per Personalizzazione con dati online/offline
+### Diagramma noto del servizio Personalization Guardrail del cliente
 
 <img src="assets/personalization_guardrails.png" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 

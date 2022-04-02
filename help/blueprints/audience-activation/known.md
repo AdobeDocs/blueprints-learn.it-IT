@@ -4,9 +4,9 @@ description: Attivazione del pubblico con dati online/offline.
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
+source-git-commit: 4fef6460b305dc01671eeb9a90e58483f42d35e2
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '558'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,6 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 ## Applicazioni
 
-* Adobe Experience Platform
 * [!UICONTROL Real-time Customer Data Platform]
 * È possibile sfruttare le destinazioni Audience Manager basate su persone anche per l’attivazione basata su persone in Facebook, LinkedIn e Google Customer Match.
 

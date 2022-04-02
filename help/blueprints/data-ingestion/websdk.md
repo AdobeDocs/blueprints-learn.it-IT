@@ -5,9 +5,9 @@ solution: Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: 4fef6460b305dc01671eeb9a90e58483f42d35e2
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '112'
 ht-degree: 100%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 100%
 Questo schema dell’architettura illustra i percorsi di integrazione e raccolta dati tramite Experience Platform Web SDK.
 
 <img src="assets/web_sdk_flow.png" alt="Architettura di riferimento per l’implementazione tramite Experience Platform Web/Mobile SDK" style="width:80%; border:1px solid #4a4a4a" />
+
+Diagramma della sequenza
+
+<img src="assets/web_sdk_sequence.png" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Documentazione di riferimento
 
