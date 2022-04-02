@@ -5,9 +5,9 @@ landing-page-description: Scopri come eseguire la personalizzazione in base al c
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
+source-git-commit: 99de2ae48ef0b6177193ffbbb9cef71e7bc83e59
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '612'
 ht-degree: 96%
 
 ---
@@ -38,17 +38,8 @@ Personalizzare in base al comportamento online e ai dati del pubblico.
 
 Il blueprint per la personalizzazione web/mobile può essere implementato con i metodi descritti di seguito.
 
-1. Mediante [!UICONTROL Platform Web SDK] o [!UICONTROL Platform Mobile SDK] e [!UICONTROL rete Edge].
-1. Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AppMeasurement.js)
-
-### 1. Mediante Platform Web/Mobile SDK e rete Edge
-
-[Consulta il blueprint per Experience Platform Web/Mobile SDK](../data-ingestion/websdk.md)
-
-### 2. Mediante SDK per specifiche applicazioni
-
-[Fai riferimento alla blueprint SDK specifica per l’applicazione](../data-ingestion/appsdk.md)
-
+1. Mediante [!UICONTROL Platform Web SDK] o [!UICONTROL Platform Mobile SDK] e [!UICONTROL rete Edge]. [Consulta il blueprint per Experience Platform Web/Mobile SDK](../data-ingestion/websdk.md)
+1. Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AppMeasurement.js). [Fai riferimento alla blueprint SDK specifica per l’applicazione](../data-ingestion/appsdk.md)
 
 ## Fasi di implementazione
 
