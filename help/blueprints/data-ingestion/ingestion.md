@@ -5,7 +5,7 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: c08dbf26ad559d48dfc8af5e19ec30e5bbfced65
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
@@ -20,13 +20,13 @@ La preparazione dei dati include la mappatura dei dati di origine sullo schema E
 
 ## Architettura
 
-<img src="../experience-platform/assets/aep_data_flow.png" alt="Architettura di riferimento del blueprint per preparazione e acquisizione dei dati" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep_data_flow.svg" alt="Architettura di riferimento del blueprint per preparazione e acquisizione dei dati" style="width:80%; border:1px solid #4a4a4a" />
 
 ## Guardrail per l’acquisizione dei dati
 
 Il diagramma seguente illustra i guardrail per prestazioni e la latenza media per l’acquisizione dei dati in Adobe Experience Platform.
 
-<img src="../experience-platform/assets/aep_data_flow_guardrails.png" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="90%" />
+<img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="90%" />
 
 ## Metodi di acquisizione dei dati
 
