@@ -4,7 +4,7 @@ description: Questo modello mostra l’architettura e l’acquisizione tramite g
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
-source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
+source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 49%
@@ -15,7 +15,7 @@ ht-degree: 49%
 
 Il diagramma di architettura seguente illustra i percorsi di integrazione e la raccolta dati che utilizzano SDK specifici per le applicazioni per l’implementazione.
 
-<img src="assets/app_sdk_flow.png" alt="Architettura di riferimento per l’implementazione tramite SDK specifici per applicazioni" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/app_sdk_flow.png" alt="Architettura di riferimento per l’implementazione tramite SDK specifici per applicazioni" style="width:90%; border:1px solid #4a4a4a" />
 
 ## Documentazione di riferimento
 

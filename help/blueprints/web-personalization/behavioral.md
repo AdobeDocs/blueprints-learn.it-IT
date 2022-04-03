@@ -5,7 +5,7 @@ landing-page-description: Scopri come eseguire la personalizzazione in base al c
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 99de2ae48ef0b6177193ffbbb9cef71e7bc83e59
+source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 96%
@@ -31,7 +31,7 @@ Personalizzare in base al comportamento online e ai dati del pubblico.
 
 ## Architettura
 
-<img src="assets/behavioral_personalization.svg" alt="Architettura di riferimento per il blueprint per la personalizzazione web basata sul comportamento" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.svg" alt="Architettura di riferimento per il blueprint per la personalizzazione web basata sul comportamento" style="width:90%; border:1px solid #4a4a4a" />
 
 
 ## Modelli di implementazione

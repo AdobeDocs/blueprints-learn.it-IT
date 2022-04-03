@@ -5,7 +5,7 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 4fef6460b305dc01671eeb9a90e58483f42d35e2
+source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 94%
@@ -33,7 +33,7 @@ La personalizzazione web e mobile consente di utilizzare la segmentazione in bas
 
 ### Diagramma noto del servizio Personalization Guardrail del cliente
 
-<img src="assets/personalization_guardrails.png" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/personalization_guardrails.png" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:90%; border:1px solid #4a4a4a" />
 
 ## Articoli di blog correlati
 
