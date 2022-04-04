@@ -2,20 +2,20 @@
 title: Blueprint per attivazione del pubblico con dati anonimi
 description: Scopri come rivolgerti a un pubblico specifico su canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti. Questa funzionalità consente di creare customer experience personalizzate e coerenti in tempo reale su tutti i dispositivi.
 landing-page-description: Scopri come rivolgerti a un pubblico specifico su canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti.
-solution: Audience Manager, Experience Platform
+solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 16c05fcb36fb3f11b0d86ad30710e399cecc05c0
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Blueprint per attivazione del pubblico con dati anonimi
 
-Per “attivazione del pubblico con dati anonimi” si intende la capacità di eseguire targeting e personalizzazione per un pubblico su siti web, app mobili e canali pubblicitari basato su dati anonimi relativi a dispositivo e comportamento.
+L’attivazione anonima del pubblico è la capacità di indirizzare e personalizzare il pubblico attraverso canali web, mobili e pubblicitari basati su dispositivi e dati comportamentali anonimi.
 
 ## Casi di utilizzo
 
