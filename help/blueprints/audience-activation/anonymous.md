@@ -8,8 +8,8 @@ thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
 source-git-commit: 16c05fcb36fb3f11b0d86ad30710e399cecc05c0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '380'
+ht-degree: 93%
 
 ---
 
@@ -39,13 +39,13 @@ Microsoft Bing, Google DV360 e TradeDesk sono le principali destinazioni pubblic
 
 <br>
 
-## Passaggi di implementazione per Audience Manager
+## Fasi di implementazione per Audience Manager
 
 * Per informazioni dettagliate sull’implementazione di Audience Manager, consulta la [documentazione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it) seguente.
 
 ## Fasi di implementazione per Real-time Customer Data Platform
 
-* Per le fasi di implementazione di Real-time Customer Data Platform consulta quanto segue [documentazione](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
+* Per informazioni sulle fasi di implementazione per Real-time Customer Data Platform, consulta la [documentazione](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html) seguente.
 
 ## Documentazione correlata
 
