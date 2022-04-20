@@ -5,9 +5,9 @@ landing-page-description: Sincronizza la personalizzazione web con l’e-mail e 
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
+source-git-commit: 4d0313e079a6f0f48f9c958f598f0fd02b90fd5f
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1229'
 ht-degree: 81%
 
 ---
@@ -55,7 +55,7 @@ Architettura d’insieme
 
 Personalization cliente noto è supportato tramite diversi approcci di implementazione.
 
-### Modello di implementazione 1 - Edge Network con SDK per web/Mobile (approccio consigliato)
+### Modello di implementazione 1 - Edge Network con SDK per web/dispositivi mobili (approccio consigliato)
 
 Utilizzo della rete Edge con Web/Mobile SDK. La segmentazione edge in tempo reale richiede l’approccio di implementazione dell’SDK per web/Mobile o dell’API Edge.
 
@@ -74,7 +74,7 @@ Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AT.js e AppMe
 1. Implementare [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it). Experience Platform Web SDK è necessario per la segmentazione Edge in tempo reale, ma non per la condivisione di tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target. Al momento la segmentazione in tempo reale tramite Mobile SDK e l’API non è supportata.
 1. [Configurare la rete Edge con uno stream di dati Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)
 1. [Abilitare Adobe Target come destinazione in Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it)
-1. (Facoltativo) [Implementare Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it) (facoltativo)
+1. (Facoltativo) [Implementare Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it).
 1. (Facoltativo) [Richiedi il provisioning per la condivisione del pubblico tra Experience Platform e Adobe Target (pubblico condiviso)](https://www.adobe.com/go/audiences) per condividere tipi di pubblico da Experience Platform a Target.
 
 ## Guardrail
