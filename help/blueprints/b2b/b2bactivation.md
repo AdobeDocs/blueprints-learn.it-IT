@@ -5,7 +5,7 @@ solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
 source-git-commit: 2db815520027e3fed71eb1eb5138009fd2ed93a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '821'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ Se l’implementazione utilizzerà Marketo Engage come origine, e Marketo Engage
 
 ## Documentazione correlata
 
-* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
+* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=it)
 * [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it)
