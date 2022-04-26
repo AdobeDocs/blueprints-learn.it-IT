@@ -2,9 +2,10 @@
 title: Offer Decisioning
 description: Offri offerte personalizzate ai consumatori su tutti i canali, compresi chioschi ed esperienze assistite dagli agenti.
 solution: Experience Platform, Journey Optimizer
-source-git-commit: 5309a5ce986ebf238884df2aac38eb175f3dda11
+exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
+source-git-commit: 3e75ce52939c84ce9ae1faf72f7f1508d74c1ecc
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '702'
 ht-degree: 39%
 
 ---
@@ -71,12 +72,14 @@ Adobe Experience Platform
 ## Modelli di implementazione
 
 * Utilizza l’SDK web o mobile per la distribuzione su siti web e applicazioni mobili per implementare l’Offer decisioning in cui è stato implementato l’SDK.
+   * [Blueprint SDK per web/mobile](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html?lang=it)
    * [WebSDK](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/web-sdk.html)
    * [MobileSDK](https://aep-sdks.gitbook.io/docs/)
 
 Oppure
 
-* Per un’implementazione basata su server API, utilizza l’API server di rete Edge per l’implementazione diretta da server a server di Offer Decisioning. [Collegamento](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/deliver-offers.html)
+* Per un’implementazione basata su server API, utilizza l’API server di rete Edge per l’implementazione diretta da server a server di Offer Decisioning.
+   * [API server di rete Edge](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/deliver-offers.html)
 
 <br>
 
