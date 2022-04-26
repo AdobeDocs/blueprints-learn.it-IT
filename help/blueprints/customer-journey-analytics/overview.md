@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
 source-git-commit: 798dec7767938b85d0b8c41438a0782ef179bf68
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ Ecco alcuni dei casi d’uso principali.
 | **[Analisi del percorso cross-channel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=it)**  | <ul><li>Crea una vista unica e consolidata del comportamento dei clienti nei diversi canali, grazie all’integrazione dei dati provenienti dalle varie proprietà web, mobili e offline.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (opzionale)</li></ul>|
 | **[Analisi del percorso per ridurre le chiamate](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html?lang=it)** | <ul><li>Individua i comportamenti più indicativi nel determinare le chiamate a un operatore, unendo i dati del call center ai dati sulle interazioni web, mobili e di altro tipo.</li><li>Questi approfondimenti possono quindi essere utilizzati per ottimizzare l’esperienza del cliente con migliori strumenti e contenuti self-service, e quindi ridurre la necessità di parlare con un operatore.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
-## Architettura per blueprint Customer Journey Analytics
+## Architettura per i blueprint per Customer Journey Analytics
 
-![Diagramma dell&#39;architettura](assets/CJA.svg)
+![Diagramma dell’architettura](assets/CJA.svg)
 
 ## Diagramma dei guardrail relativi ai blueprint per Customer Journey Analytics
 
