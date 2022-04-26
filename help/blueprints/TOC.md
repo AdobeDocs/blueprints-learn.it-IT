@@ -6,9 +6,9 @@ product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
 source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '175'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 97%
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
    + [Raccolta dei dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
    + [Experience Platform Web SDK](/help/blueprints/data-ingestion/websdk.md)
-   + [SDK per applicazioni](/help/blueprints/data-ingestion/appsdk.md)
+   + [SDK delle applicazioni](/help/blueprints/data-ingestion/appsdk.md)
 + Analisi dei dati, intelligence e AI/ML {#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)
@@ -67,4 +67,4 @@ ht-degree: 97%
 + Personalizzazione web e mobile {#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione basata sul comportamento](/help/blueprints/web-personalization/behavioral.md)
-   + [Personalization cliente noto](/help/blueprints/web-personalization/known-personalization.md)
+   + [Personalizzazione per clienti noti](/help/blueprints/web-personalization/known-personalization.md)
