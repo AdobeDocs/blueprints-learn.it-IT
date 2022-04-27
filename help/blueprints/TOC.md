@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 8ad119551e25c1f6acb66fec544c8a67b26c0927
+source-git-commit: c840330d6c81831b868e81d3452d0c416bf55938
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -61,8 +61,9 @@ ht-degree: 94%
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
    + [Raccolta dei dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
-   + [Experience Platform Web SDK](/help/blueprints/data-ingestion/websdk.md)
-   + [SDK delle applicazioni](/help/blueprints/data-ingestion/appsdk.md)
+   + Distribuzione{#deployment}
+      + [Experience Platform Web SDK e Edge Network](/help/blueprints/data-ingestion/websdk.md)
+      + [SDK delle applicazioni](/help/blueprints/data-ingestion/appsdk.md)
 + Analisi dei dati, intelligence e AI/ML {#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
    + [Analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)
