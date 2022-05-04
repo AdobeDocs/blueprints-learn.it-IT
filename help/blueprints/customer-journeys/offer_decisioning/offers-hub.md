@@ -3,7 +3,7 @@ title: offer decisioning sull'hub
 description: Offri offerte personalizzate ai consumatori su tutti i canali, compresi chioschi, esperienze assistite dagli agenti, e-mail e altre consegne in uscita.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: fd8762711a6c3b04d0dd991e4dced2fb6be48c13
+source-git-commit: 494d70fca12a42befb7b726562d98cec17a21d22
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 32%
@@ -57,7 +57,7 @@ Adobe Experience Platform
 
 ## Guardrail
 
-* Per le protezioni di Journey Optimizer consulta quanto segue [Journey Optimizer Guardrail](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)
+* Per le protezioni di Journey Optimizer, consulta quanto segue [Journey Optimizer Guardrail](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
 * Ad Offer decisioning, le protezioni fanno riferimento ai seguenti elementi: [offer decisioning Descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
 
 
