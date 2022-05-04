@@ -3,7 +3,7 @@ title: offer decisioning sul bordo
 description: Offri offerte personalizzate ai consumatori su tutti i canali, incluse le esperienze web e mobili in tempo reale.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: fd8762711a6c3b04d0dd991e4dced2fb6be48c13
+source-git-commit: bfc8133f0a48cb35dd62e74e92eeb041e93be5c7
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 35%
@@ -56,7 +56,7 @@ Adobe Experience Platform
 
 ## Guardrail
 
-* Per le protezioni di Journey Optimizer consulta quanto segue [Journey Optimizer Guardrail](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)
+* Per le protezioni di Journey Optimizer, consulta quanto segue [Journey Optimizer Guardrail](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
 * Ad Offer decisioning, le protezioni fanno riferimento ai seguenti elementi: [offer decisioning Descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
 
 ### Guardrail per l’acquisizione dei dati
