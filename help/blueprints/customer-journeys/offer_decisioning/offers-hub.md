@@ -3,16 +3,20 @@ title: offer decisioning sull'hub
 description: Offri offerte personalizzate ai consumatori su tutti i canali, compresi chioschi, esperienze assistite dagli agenti, e-mail e altre consegne in uscita.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 494d70fca12a42befb7b726562d98cec17a21d22
+source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 32%
+source-wordcount: '904'
+ht-degree: 28%
 
 ---
 
 # Journey Optimizer - Offer decisioning sull&#39;hub
 
+Per ulteriori informazioni su Gestione delle decisioni, consulta la documentazione del prodotto [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) e l&#39;Offer decisioning [QUI](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-overview.html)
+
 Adobe Decision Management è un servizio fornito come parte di Adobe Journey Optimizer. Questo modello delinea i casi d’uso e le capacità tecniche dell’applicazione e fornisce un’analisi approfondita dei vari componenti architettonici e considerazioni che costituiscono un Offer decisioning.
+
+Journey Optimizer viene utilizzato per fornire ai clienti la migliore offerta ed esperienza possibile in tutti i punti di contatto al momento giusto. Ad Offer decisioning, semplifica la personalizzazione con una libreria centrale di offerte di marketing e un motore decisionale che applica regole e vincoli ai profili avanzati e in tempo reale creati da Adobe Experience Platform per aiutarti a inviare ai clienti l’offerta giusta al momento giusto.
 
 La gestione delle decisioni può essere implementata in due modi. La prima è via Adobe Experience Platform hub, un&#39;architettura centrale del data center. Nell’approccio &quot;hub&quot; le offerte vengono eseguite, personalizzate e distribuite con latenza >500 ms. Pertanto, l’architettura dell’hub è più adatta per le esperienze dei clienti che non richiedono latenza inferiore al secondo, ad esempio le decisioni di offerta che vengono fornite per i chioschi o le esperienze assistite dagli agenti, come nei call center o nelle interazioni personali. Anche le offerte inserite nelle e-mail e nelle campagne in uscita sono basate sull’approccio hub.
 
@@ -20,11 +24,9 @@ Il secondo approccio è tramite Experience Edge Network, un’infrastruttura geo
 
 Questo progetto riguarderà le specifiche della gestione delle decisioni sull&#39;hub.
 
-Per ulteriori informazioni su Gestione delle decisioni sul server Edge, consulta [Gestione delle decisioni a margine](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-edge.html?lang=en) blueprint.
+Per ulteriori informazioni su Gestione delle decisioni sul server Edge, consulta [Gestione delle decisioni a margine](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-edge.html) blueprint.
 
-Per ulteriori informazioni su Gestione delle decisioni, consulta la documentazione del prodotto [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
-
-## Casi di utilizzo
+## Casi d&#39;uso per la gestione delle decisioni sull&#39;hub
 
 * Offerte personalizzate su chioschi ed esperienze in-store.
 * Offerte personalizzate tramite l’esperienza assistita dell’agente, ad esempio ai call center o alle interazioni di vendita.
