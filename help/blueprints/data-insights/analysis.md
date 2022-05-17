@@ -5,10 +5,10 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: a972ea56-d1c8-45da-9044-ed31222a2441
-source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: 011f5b247ccd606348b4cbb4210218f28eddbd4c
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 82%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 Il blueprint per analisi e intelligence dei dati comprende la capacità di Adobe Experience Platform di eseguire query esplorative e analisi dei dati presenti nel data lake.
 
-Experience Platform [!UICONTROL Query Service] consente di eseguire query SQL sui dati. [!UICONTROL Data Science Workspace] consente di eseguire esplorazione dei dati, data science e carichi di lavoro di apprendimento automatico.
+Experience Platform [!UICONTROL Query Service] consente di eseguire query SQL sui dati.
 
-Inoltre, Experience Platform consente connessioni con client SQL, interfacce e strumenti di Business Intelligence (BI) di terze parti per connettersi, accedere e interrogare direttamente i dati all’interno di Experience Platform, utilizzando il protocollo [!DNL PostgreSQL].
+Experience Platform consente le connessioni con client SQL di terze parti, interfacce e strumenti di Business Intelligence (BI) per connettersi direttamente ai dati, accedere ai dati ed eseguire query all&#39;interno di Experience Platform, utilizzando [!DNL PostgreSQL] protocollo.
 
-Alcuni guardrail riguardano il timeout delle query e la quantità di dati inclusi nel risultato della query, come indicato nei dettagli del blueprint.
+Alcune protezioni si applicano al timeout della query e alla quantità di dati inclusi nel risultato della query, come indicato nella sezione guardrail di seguito.
 
 ## Casi di utilizzo
 
@@ -30,7 +30,7 @@ Alcuni guardrail riguardano il timeout delle query e la quantità di dati inclus
 
 ## Applicazioni
 
-* Adobe Experience Platform
+* Adobe Experience Platform  
 
 ## Architettura
 

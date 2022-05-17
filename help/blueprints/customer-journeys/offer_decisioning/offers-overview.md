@@ -2,9 +2,10 @@
 title: Panoramica dell’Offer decisioning
 description: Offri offerte personalizzate tra i vari percorsi di clienti.
 solution: Experience Platform, Journey Optimizer
-source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
+exl-id: f6271802-faab-4ffc-92d6-4c4d7d423ed4
+source-git-commit: 8842b8637a30151577a93653c16b4d37e2cf7c27
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '634'
 ht-degree: 2%
 
 ---
@@ -24,7 +25,7 @@ La capacità di gestione delle decisioni è costituita da due componenti princip
 
 <img src="../assets/offers_overview.png" alt="Offer Decisioning" style="width:100%; border:1px solid #4a4a4a" />
 
-La gestione delle decisioni può essere implementata in due modi.
+La gestione delle decisioni può essere implementata in due modi, sul bordo o tramite l&#39;hub. Ognuno di questi metodi dispone di un set specifico di interfacce e protocolli per il funzionamento del servizio, come descritto nei rispettivi progetti di seguito indicati. Ulteriori dettagli possono essere ottenuti anche nella documentazione sulla gestione delle decisioni [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
 
 ## Gestione delle decisioni sull&#39;hub
 
