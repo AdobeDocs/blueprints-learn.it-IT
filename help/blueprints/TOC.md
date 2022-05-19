@@ -7,8 +7,8 @@ mini-toc-levels: 3
 role: Architect, Developer, User
 source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,10 +47,10 @@ ht-degree: 91%
    + [Panoramica](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer {#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
-      + Offer Decisioning{#offer-decisioning}
+      + Offer Decisioning {#offer-decisioning}
          + [Panoramica](/help/blueprints/customer-journeys/offer_decisioning/offers-overview.md)
-         + [offer decisioning sul bordo](/help/blueprints/customer-journeys/offer_decisioning/offers-edge.md)
-         + [offer decisioning sull&#39;hub](/help/blueprints/customer-journeys/offer_decisioning/offers-hub.md)
+         + [Offer Decisioning sulla rete Edge](/help/blueprints/customer-journeys/offer_decisioning/offers-edge.md)
+         + [Offer Decisioning tramite hub](/help/blueprints/customer-journeys/offer_decisioning/offers-hub.md)
       + [Journey Optimizer con Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
       + [Messaggistica di terze parti](/help/blueprints/customer-journeys/3rd-party-messaging.md)
    + Campaign v8 {#campaign-v8}
@@ -62,8 +62,8 @@ ht-degree: 91%
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
    + [Raccolta dei dati aziendali lato server](/help/blueprints/data-ingestion/server-side-collection.md)
-   + Distribuzione{#deployment}
-      + [Experience Platform Web SDK e Edge Network](/help/blueprints/data-ingestion/websdk.md)
+   + Implementazione {#deployment}
+      + [Experience Platform Web SDK e rete Edge](/help/blueprints/data-ingestion/websdk.md)
       + [SDK delle applicazioni](/help/blueprints/data-ingestion/appsdk.md)
 + Analisi dei dati, intelligence e AI/ML {#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
