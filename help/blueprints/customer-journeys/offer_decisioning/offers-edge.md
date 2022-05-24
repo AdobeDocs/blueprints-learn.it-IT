@@ -3,10 +3,10 @@ title: Offer Decisioning sulla rete Edge
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, incluse le esperienze web e mobili in tempo reale.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
+source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 93%
+source-wordcount: '847'
+ht-degree: 85%
 
 ---
 
@@ -57,6 +57,10 @@ Adobe Experience Platform
 
 * Per i guardrail relativi a Journey Optimizer, consulta i seguenti [Guardrail per Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html?lang=it).
 * Per i guardrail relativi a Offer decisioning, consulta la seguente [Descrizione del prodotto Offer Decisioning](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html).
+* Richieste al secondo = 5000.
+* Latenza di risposta &lt; 250 ms.
+* Accesso al profilo in tempo reale edge. Nel profilo saranno disponibili solo i tipi di pubblico e gli attributi di profilo edge proiettati.
+* Se nelle esperienze della prima volta è richiesta la personalizzazione, l’hub sarà ideale in quanto è disponibile il profilo completo. Il profilo Edge deve sincronizzarsi dall’hub per la prima esperienza Edge. Pertanto, la prima esperienza dal bordo non includerà i dati del profilo precedentemente caricati sull&#39;hub.
 
 ### Guardrail per l’acquisizione dei dati
 
