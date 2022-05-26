@@ -4,16 +4,16 @@ description: Trasmettere alle destinazioni i dati raccolti tramite gli SDK di Ex
 solution: Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+source-git-commit: e6ef8a1e7b90778c0163227e32d2691dfaf9c9d2
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 86%
 
 ---
 
-# Blueprint per la raccolta di dati aziendali lato server
+# Blueprint inoltro eventi
 
-Il blueprint per la raccolta di dati aziendali lato server mostra come i dati raccolti con Adobe Experience Platform Web/Mobile SDK possono essere inoltrati dalla rete Edge di Experience Platform alla destinazione desiderata. È possibile inoltrare tutti i dati grezzi raccolti dagli SDK o dati specifici in base a eventi e regole, come configurato nelle proprietà dei tag (precedentemente Launch).
+La blueprint Evento Forwarding mostra come i dati raccolti con Adobe Experience Platform Web e Mobile SDK possono essere inoltrati da Experience Platform Edge Network a una destinazione desiderata. È possibile inoltrare tutti i dati grezzi raccolti dagli SDK o dati specifici in base a eventi e regole, come configurato nelle proprietà dei tag (precedentemente Launch).
 
 ## Casi di utilizzo
 
@@ -22,7 +22,7 @@ Il blueprint per la raccolta di dati aziendali lato server mostra come i dati ra
 
 ## Applicazioni
 
-* Raccolta di Adobe Experience Platform
+* Raccolta dati di Adobe Experience Platform
 
 ## Architettura
 
