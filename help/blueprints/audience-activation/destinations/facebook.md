@@ -4,8 +4,8 @@ description: Attivazione in Facebook Custom Audiences.
 solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
-workflow-type: ht
+source-git-commit: 6fa38772f77ffd565580db55f8f2889b0e703949
+workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
 
 ## Architettura
 
-<img src="../assets/facebook.png" alt="Architettura di riferimento per l’attivazione in Facebook Custom Audiences" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../assets/facebook.svg" alt="Architettura di riferimento per l’attivazione in Facebook Custom Audiences" style="width:90%; border:1px solid #4a4a4a" />
 
 ## Fasi di implementazione
 
@@ -69,7 +69,7 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
    * Esamina il conteggio dei risultati dei segmenti specificati.
    * Esamina il profilo che deve essere incluso in un segmento per verificare che l’appartenenza al segmento sia effettivamente inclusa nella sezione appropriata del profilo.
 1. Nella configurazione delle destinazioni, configura la distribuzione del pubblico alla destinazione.
-   * Per informazioni sulla configurazione della destinazione Facebook, consulta la [guida alla destinazione Facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=it).
+   * Per informazioni sulla configurazione della destinazione Facebook, consulta la [guida alla destinazione Facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html).
    * Durante la configurazione di una destinazione, seleziona il pubblico da attivare in tale destinazione.
    * Determina la data di inizio pianificata, ossia quando il flusso di dati della destinazione dovrà iniziare a distribuire il pubblico alla destinazione.
    * Ogni destinazione prevede l’invio di specifici attributi obbligatori e facoltativi.
@@ -90,4 +90,4 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
 
 ## Documentazione correlata
 
-Attivazione in Facebook Customer Audiences - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=it)
+Attivazione in Facebook Customer Audiences - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html)
