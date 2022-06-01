@@ -3,10 +3,10 @@ title: Blueprint per Journey Optimizer con Adobe Campaign
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign per inviare messaggi in modo nativo utilizzando il server di messaggistica in tempo reale in Campaign.
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: 076446a9-dfb9-464c-a04f-6864b8cb7b48
-source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
-workflow-type: ht
+source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
+workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
    * segmenti in streaming (&lt;5 minuti di qualificazione)
 * Segmenti batch: necessario comprendere il volume giornaliero di utenti qualificati e accertarsi che il sistema di destinazione sia in grado di gestire il throughput burst per percorso e per tutti i percorsi.
 * Segmenti in streaming: il burst iniziale delle qualifiche dei profili deve poter essere gestito insieme al volume giornaliero di qualificazione dello streaming, per ogni percorso e per tutti i percorsi.
-* Offer Decisioning non è supportato.
+* Gestione delle decisioni non supportata
 * Gli eventi di business non sono supportati.
 * Integrazioni in uscita verso sistemi di terze parti
    * Singoli indirizzi IP statici non sono supportati, in quanto la nostra infrastruttura è multi-tenant (inserire tutti gli indirizzi IP dei datacenter nell’elenco degli IP consentiti).
@@ -76,7 +76,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 * AC (v7) supporta solo i percorsi avviati da eventi.
    * I percorsi non possono essere avviati da segmenti o appartenenza a segmenti.
    * Non sono supportati i percorsi basati su eventi di tipo Leggi pubblico e Business, a causa del volume che può essere inviato alle istanze di esecuzione.
-* AC (v7) e AC (v8) non supportano Offer Decisioning nei messaggi.
+* AC (v7) o AC (v8) non supporta la gestione delle decisioni nei messaggi
 * Non viene applicata alcuna limitazione delle chiamate API in uscita verso Campaign.
 * I registri di messaggistica transazionale non vengono sincronizzati nativamente in AEP. È necessario un intervento di consulenza. Si consiglia di esportare i registri al massimo ogni 4 ore.
 
@@ -108,7 +108,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Journey

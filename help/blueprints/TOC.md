@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: f39c916d4b13d17eb3705c7adf01353929ff7956
+source-git-commit: ac995cdb942fd14d87281c4b499239732a1e4019
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 96%
+ht-degree: 89%
 
 ---
 
@@ -47,10 +47,10 @@ ht-degree: 96%
    + [Panoramica](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer {#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
-      + Offer Decisioning {#offer-decisioning}
-         + [Panoramica](/help/blueprints/customer-journeys/offer_decisioning/offers-overview.md)
-         + [Offer Decisioning sulla rete Edge](/help/blueprints/customer-journeys/offer_decisioning/offers-edge.md)
-         + [Offer Decisioning tramite hub](/help/blueprints/customer-journeys/offer_decisioning/offers-hub.md)
+      + Gestione delle decisioni{#decision-management}
+         + [Panoramica](/help/blueprints/customer-journeys/decision_management/decision-management-overview.md)
+         + [Gestione delle decisioni a margine](/help/blueprints/customer-journeys/decision_management/decision-management-edge.md)
+         + [Gestione delle decisioni sull&#39;hub](/help/blueprints/customer-journeys/decision_management/decision-management-hub.md)
       + [Journey Optimizer con Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
       + [Messaggistica di terze parti](/help/blueprints/customer-journeys/3rd-party-messaging.md)
    + Campaign v8 {#campaign-v8}
@@ -74,4 +74,4 @@ ht-degree: 96%
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
    + [Personalizzazione basata sul comportamento](/help/blueprints/web-personalization/behavioral.md)
    + [Personalizzazione per clienti noti](/help/blueprints/web-personalization/known-personalization.md)
-   + [Offer Decisioning](/help/blueprints/web-personalization/offers-edge.md)
+   + [Gestione delle decisioni](/help/blueprints/web-personalization/decision-management-edge.md)
