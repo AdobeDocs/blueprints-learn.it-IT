@@ -5,8 +5,8 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 64c3ae4c706ef24808818af99e65c2f30f4f5c13
-workflow-type: ht
+source-git-commit: 02a2f679921e63d99101ec8c20c2d8419b1ff6fb
+workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 100%
 
@@ -20,11 +20,11 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 
 <img src="assets/aep+apps_vertical.svg" alt="Experience Platform e applicazioni" style="border:1px solid #4a4a4a; width:90%;" />
 
->[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
-
 ## Diagramma dettagliato dell’architettura di Adobe Experience Platform e relative applicazioni
 
 <img src="assets/aep+apps_horizontal.svg" alt="Experience Platform e applicazioni" style="border:1px solid #4a4a4a; width:90%;" />
+
+>[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
 ## Integrazioni di applicazioni Adobe Experience Platform ed Experience Cloud
 
@@ -100,13 +100,13 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
       <td>
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=it">Attivazione del pubblico con dati anonimi</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=en">Attivazione del pubblico con dati anonimi</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Attivazione del pubblico con dati online/offline</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a>
           </li>
         </ul>
       </td>
@@ -146,7 +146,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=it">Messaggistica batch</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=en">Messaggistica batch</a>
           </li>
         </ul>
       </td>
@@ -178,7 +178,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Attivazione del pubblico con dati online/offline</a>
           </li>
         </ul>
       </td>
@@ -244,10 +244,10 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Attivazione del pubblico con dati online/offline</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a>
           </li>
         </ul>
       </td>
@@ -268,10 +268,10 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Attivazione del pubblico con dati online/offline</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a>
           </li>
         </ul>
       </td>
