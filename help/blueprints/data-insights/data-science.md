@@ -6,18 +6,18 @@ kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
 source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 48%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Blueprint per personalizzazione Data Science per l’arricchimento del profilo
 
-La blueprint di Custom Data Science for Profile Enrichment illustra come i dati in Adobe Experience Platform possono essere utilizzati per addestrare, implementare e valutare modelli per fornire informazioni sull&#39;apprendimento automatico in Experience Platform e Real-time Customer Data Platform dagli strumenti di data science e machine learning. Le informazioni modellate possono essere assimilate in Experience Platform per arricchire il profilo del cliente in tempo reale. Esempi di informazioni basate sull’apprendimento automatico includono valutazione del ciclo di vita, affinità per prodotto e categoria, propensione alla conversione o all’abbandono.
+Il blueprint per la personalizzazione basata su Data Science per l’arricchimento del profilo illustra come è possibile utilizzare i dati in Adobe Experience Platform per addestrare, implementare e valutare modelli al fine di fornire informazioni basate sull’apprendimento automatico in Experience Platform e Real-time Customer Data Platform, mediante strumenti di data science e machine learning. Le informazioni modellate possono essere acquisite in Experience Platform per arricchire il profilo cliente in tempo reale. Esempi di informazioni basate sull’apprendimento automatico includono valutazione del ciclo di vita, affinità per prodotto e categoria, propensione alla conversione o all’abbandono.
 
 ## Casi di utilizzo
 
-* Estrai informazioni approfondite e scopri i pattern dai dati dei clienti, dai modelli di formazione e valutazione a questi dati.
+* Estrarre informazioni approfondite e individuare eventuali pattern dai dati dei clienti, quindi addestrare e valutare i modelli utilizzando questi dati.
 * Arricchire [!UICONTROL Real-time Customer Profile] con elementi di conoscenza e attributi basati su modelli, per una personalizzazione più granulare e una migliore ottimizzazione del percorso
 * Addestrare e valutare i modelli per determinare informazioni sui clienti, come valore del ciclo di vita del cliente, propensione alla conversione o all’abbandono, affinità per prodotti e contenuti e valutazione del coinvolgimento
 
@@ -53,7 +53,7 @@ Per i risultati del modello da acquisire nel Profilo cliente in tempo reale, acc
 ## Documentazione correlata
 
 * [Descrizione del prodotto Adobe Experience Platform Intelligence](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Servizio query Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
+* [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it)
 
 ## Articoli di blog correlati
 
