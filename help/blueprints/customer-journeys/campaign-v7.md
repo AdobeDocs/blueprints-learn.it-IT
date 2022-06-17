@@ -4,9 +4,9 @@ description: Adobe Campaign v7 è lo strumento per la gestione delle campagne, c
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
 source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,8 +35,8 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 | Scenario | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
-| [Journey Optimizer con Adobe Campaign](ajo-and-campaign.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare esperienze 1:1 utilizzando il profilo del cliente in tempo reale, e come sfruttare il sistema di messaggistica transazionale nativo di Adobe Campaign per inviare il messaggio. | Sfrutta il profilo cliente in tempo reale e la potenza di Journey Optimizer per orchestrare le esperienze attuali, e utilizza le funzionalità di messaggistica nativa in tempo reale di Adobe Campaign per le comunicazioni della fase finale.<br><br>Considerazioni:<br><ul><li>È possibile inviare fino a 50.000 messaggi all’ora tramite il server di messaggi in tempo reale.<li>Journey Optimizer non applica alcuna limitazione; assicurati che gli aspetti tecnici siano approvati da un Pre-Sales Enterprise Architect.</li><li>La gestione delle decisioni non è supportata nei payload del server di messaggistica in tempo reale Campaign v7</li></ul> |
-| [Real-Time CDP con Adobe Campaign](rtcdp-and-campaign.md) | Mostra come utilizzare Real-Time CDP di Adobe Experience Platform e il suo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate. | <ul><li>Condivisione di tipi di pubblico da Real-Time CDP ad Adobe Campaign tramite flussi di lavoro per lo scambio di file di archiviazione cloud e acquisizione Adobe Campaign </li><li>Condividi facilmente i dati di consegna e interazione dalle conversazioni dei clienti in Real-time CDP da Adobe Campaign, per migliorare sia il profilo cliente in tempo reale che il reporting cross-channel sulle campagne di messaggistica.</li></ul> |
+| [Journey Optimizer con Adobe Campaign](ajo-and-campaign.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare esperienze 1:1 utilizzando il profilo del cliente in tempo reale, e come sfruttare il sistema di messaggistica transazionale nativo di Adobe Campaign per inviare il messaggio. | Sfrutta il profilo cliente in tempo reale e la potenza di Journey Optimizer per orchestrare le esperienze attuali, e utilizza le funzionalità di messaggistica nativa in tempo reale di Adobe Campaign per le comunicazioni della fase finale.<br><br>Considerazioni:<br><ul><li>È possibile inviare fino a 50.000 messaggi all’ora tramite il server di messaggi in tempo reale.<li>Journey Optimizer non applica alcuna limitazione; assicurati che gli aspetti tecnici siano approvati da un Pre-Sales Enterprise Architect.</li><li>La funzionalità Gestione delle decisioni non è supportata nei payload verso il server di messaggistica in tempo reale di Campaign v7.</li></ul> |
+| [Real-Time CDP con Adobe Campaign](rtcdp-and-campaign.md) | Mostra come utilizzare Real-Time CDP di Adobe Experience Platform e il suo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate. | <ul><li>Condivisione di tipi di pubblico da Real-Time CDP ad Adobe Campaign tramite flussi di lavoro per lo scambio di file di archiviazione cloud e acquisizione Adobe Campaign. </li><li>Condividi facilmente i dati di consegna e interazione dalle conversazioni dei clienti in Real-time CDP da Adobe Campaign, per migliorare sia il profilo cliente in tempo reale che il reporting cross-channel sulle campagne di messaggistica.</li></ul> |
 
 <br>
 
@@ -84,11 +84,11 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 ### Determinare la dimensione del server per messaggistica in batch
 
-* È possibile gestire fino a 2,5 milioni di messaggi all’ora
+* È possibile gestire fino a 2,5 milioni di messaggi all’ora.
 
 ### Determinare la dimensione del server di messaggistica in tempo reale
 
-* È possibile inviare fino a 50.000 messaggi all’ora
+* È possibile inviare fino a 50.000 messaggi all’ora.
 * Per impostazione predefinita, sono previsti due server per la messaggistica in tempo reale. È possibile aumentarli fino a otto server per la messaggistica in tempo reale.
 
 ### Configurazione SMS
@@ -106,10 +106,10 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
    * Experience Platform Mobile SDK (consigliato)
    * Campaign Mobile SDK
 * Approccio con Experience Platform Mobile SDK:
-   * Sfrutta i tag di Adobe e l’estensione Campaign Classic per configurare l’integrazione con Experience Platform Mobile SDK
+   * Sfrutta i tag di Adobe e l’estensione Campaign Classic per configurare l’integrazione con Experience Platform Mobile SDK.
    * È richiesta la conoscenza delle funzioni Tag e Raccolta dati di Adobe.
    * È richiesta esperienza di sviluppo mobile con notifiche push per Android e iOS per: implementazione dell’SDK; integrazione con FCM (Android) e APNS (iOS) per recuperare il token push token; configurazione dell’app per la ricezione delle notifiche push; e gestione delle interazioni push.
-* SDK per Campaign Mobile
+* Campaign Mobile SDK
    * Per accedervi, contatta l’Assistenza clienti di Adobe.
    * Per informazioni su come installare e configurare l’SDK, consulta la [documentazione di Campaign SDK](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=it).
 
@@ -120,7 +120,7 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 ## Fasi di implementazione
 
-Consulta la [Guida introduttiva](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=it) per l’implementazione di Adobe Campaign v7
+Consulta la [Guida introduttiva](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=it) per l’implementazione di Adobe Campaign v7.
 
 
 ## Documentazione correlata
