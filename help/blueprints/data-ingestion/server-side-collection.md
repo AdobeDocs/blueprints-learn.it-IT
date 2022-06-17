@@ -1,19 +1,19 @@
 ---
-title: Blueprint inoltro eventi
-description: Trasmettere alle destinazioni i dati raccolti tramite gli SDK di Experience Platform
+title: Blueprint per l’inoltro di eventi
+description: Trasmetti alle destinazioni i dati raccolti tramite gli SDK di Experience Platform.
 solution: Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
 source-git-commit: 7181c1dc3f823a9ea6f0e95f036eb4623b1b6c3b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '228'
+ht-degree: 100%
 
 ---
 
-# Blueprint inoltro eventi
+# Blueprint per l’inoltro di eventi
 
-La blueprint Evento Forwarding mostra come i dati raccolti con Adobe Experience Platform Web e Mobile SDK possono essere inoltrati da Experience Platform Edge Network a una destinazione desiderata. È possibile inoltrare tutti i dati grezzi raccolti dagli SDK o dati specifici in base a eventi e regole, come configurato nelle proprietà dei tag (precedentemente Launch).
+Il blueprint per l’inoltro di eventi illustra come i dati raccolti con Adobe Experience Platform Web SDK o Mobile SDK possono essere inoltrati dalla rete Edge di Experience Platform alla destinazione desiderata. È possibile inoltrare tutti i dati grezzi raccolti dagli SDK o dati specifici in base a eventi e regole, come configurato nelle proprietà dei tag (precedentemente Launch).
 
 ## Casi di utilizzo
 
