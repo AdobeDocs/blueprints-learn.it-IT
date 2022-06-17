@@ -1,70 +1,71 @@
 ---
-title: Panoramica sulla gestione delle decisioni
-description: Offri offerte personalizzate tra i vari percorsi di clienti.
+title: Panoramica di Gestione delle decisioni
+description: Presenta offerte personalizzate lungo i vari percorsi dei clienti.
 solution: Experience Platform, Journey Optimizer
-source-git-commit: 5b2f7531cc05178127fb08d3fdafcbce70192ecd
-workflow-type: tm+mt
+exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
+source-git-commit: 332bad7655efbd1d7706dbe2ba452af6b259986c
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
-# Journey Optimizer - Panoramica sulla gestione delle decisioni
+# Journey Optimizer - Panoramica di Gestione delle decisioni
 
-Per ulteriori informazioni sul servizio Decision Management, consulta la documentazione del prodotto, disponibile [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
+Per ulteriori informazioni sul servizio Gestione delle decisioni, consulta la documentazione del prodotto, disponibile [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 
-Adobe Decision Management è un servizio fornito come parte di Adobe Journey Optimizer. Il presente progetto delinea i casi d&#39;uso e le capacità tecniche dell&#39;applicazione e fornisce un&#39;analisi approfondita dei vari elementi architettonici e delle considerazioni che compongono la Gestione delle decisioni.
+La funzionalità Gestione delle decisioni è un servizio Adobe fornito come parte di Adobe Journey Optimizer. Questo blueprint riassume i casi di utilizzo e le capacità tecniche dell’applicazione e descrive nel dettaglio i vari componenti dell’architettura di Gestione delle decisioni e le relative considerazioni.
 
-Journey Optimizer viene utilizzato per fornire ai clienti la migliore offerta ed esperienza possibile in tutti i punti di contatto al momento giusto. La gestione delle decisioni semplifica la personalizzazione grazie a una libreria centrale di offerte di marketing e a un motore decisionale che applica regole e vincoli ai profili avanzati e in tempo reale creati da Adobe Experience Platform per aiutarti a inviare ai tuoi clienti l’offerta giusta al momento giusto.
+Journey Optimizer viene utilizzato per fornire ai clienti le migliori offerte ed esperienze possibili, in tutti i punti di contatto e al momento opportuno. Gestione delle decisioni semplifica la personalizzazione grazie a una libreria centrale di offerte marketing e un motore di decisioni che applica regole e vincoli ai profili avanzati e in tempo reale creati da Adobe Experience Platform, per aiutarti a inviare a ogni cliente l’offerta giusta al momento giusto.
 
-La capacità di gestione delle decisioni è costituita da due componenti principali:
+La funzionalità Gestione delle decisioni è composta da due componenti principali:
 
-* Libreria offerte centralizzata, l’interfaccia in cui puoi creare e gestire i diversi elementi che compongono le offerte, e definirne regole e vincoli.
-* Il motore decisionale dell’offerta che sfrutta i dati Adobe Experience Platform e i profili cliente in tempo reale, insieme alla Libreria offerte, per selezionare il momento giusto, i clienti e i canali a cui verranno consegnate le offerte.
+* La libreria di offerte centralizzata, ossia l’interfaccia che permette di creare e gestire i diversi elementi che compongono le offerte e di definirne regole e vincoli.
+* Il motore che elabora le decisioni delle offerte, che utilizza i dati e i profili cliente in tempo reale di Adobe Experience Platform nonché la libreria di offerte per determinare il momento giusto, i clienti e i canali a cui verranno presentate le offerte.
 
 <img src="../assets/offers_overview.png" alt="Gestione delle decisioni" style="width:100%; border:1px solid #4a4a4a" />
 
-La gestione delle decisioni può essere implementata in due modi, sul bordo o tramite l&#39;hub. Ognuno di questi metodi dispone di un set specifico di interfacce e protocolli per il funzionamento del servizio, come descritto nei rispettivi progetti di seguito indicati. Ulteriori dettagli possono essere ottenuti anche nella documentazione sulla gestione delle decisioni [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
+Il servizio Gestione delle decisioni può essere implementato in due modi: tramite rete Edge o tramite hub. Ciascuno di questi metodi dispone di uno specifico set di interfacce e protocolli per il funzionamento del servizio, come descritto nei rispettivi blueprint indicati di seguito. Per ulteriori informazioni, consulta la documentazione del servizio Gestione delle decisioni, disponibile [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html?lang=it).
 
-## Gestione delle decisioni sull&#39;hub
+## Gestione delle decisioni tramite hub
 
-Il primo approccio prevede l’utilizzo dell’hub Adobe Experience Platform, un’architettura con un datacenter centrale. Con questo approccio mediante “hub”, le offerte vengono eseguite, personalizzate e distribuite con una latenza >500 ms. Pertanto, l’architettura con hub è più adatta per esperienze del cliente che non richiedono latenze inferiori al secondo, ad esempio per decisioni di offerta destinate a chioschi o esperienze assistite da agenti, come call center o interazioni con persone. Anche le offerte inserite in e-mail, messaggi SMS o notifiche push e altre campagne in uscita sono basate sull’approccio hub. Per ulteriori informazioni su Decision Management tramite hub, consulta il blueprint [Decision Management tramite hub](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-hub.html?lang=en).
+Il primo approccio prevede l’utilizzo dell’hub Adobe Experience Platform, un’architettura con un datacenter centrale. Con questo approccio mediante “hub”, le offerte vengono eseguite, personalizzate e distribuite con una latenza >500 ms. Pertanto, l’architettura con hub è più adatta per esperienze del cliente che non richiedono latenze inferiori al secondo, ad esempio per decisioni di offerta destinate a chioschi o esperienze assistite da agenti, come call center o interazioni con persone. L’approccio tramite hub consente anche di gestire le offerte inserite in e-mail, SMS o notifiche push e altre campagne in uscita. Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il blueprint [Gestione delle decisioni tramite hub](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-hub.html?lang=it).
 
-* L’idoneità all’offerta può funzionare in base al profilo cliente in tempo reale completo, inclusi tutti gli attributi e gli eventi di esperienza
+* L’idoneità alle offerte può funzionare in base al profilo cliente in tempo reale completo, inclusi tutti gli attributi e gli eventi delle esperienze.
 
-### Casi d&#39;uso per la gestione delle decisioni sull&#39;hub
+### Casi di utilizzo per Gestione delle decisioni tramite hub
 
 * Offerte personalizzate per chioschi ed esperienze in-store.
 * Offerte personalizzate tramite esperienze assistite da agenti, come call center o interazioni di vendita.
 * Offerte incluse in e-mail, SMS o altre interazioni in uscita.
 * Esecuzione di percorsi cross-channel: offerte coerenti su web, dispositivi mobili, e-mail e altri canali di interazione tramite Adobe Journey Optimizer.
 
-### Gestione delle decisioni sulle considerazioni tecniche fondamentali
+### Considerazioni tecniche per Gestione delle decisioni tramite hub
 
 * Richieste al secondo = 2000.
-* Latenza di risposta &lt; 500 ms.
-* Accesso a un profilo cliente in tempo reale completo, compresi appartenenze al pubblico, attributi ed eventi di esperienza.
+* Latenza di risposta &lt; 500 ms.
+* Accesso al profilo cliente in tempo reale completo, compresi appartenenze a un pubblico, attributi ed eventi di esperienza.
 
-## Gestione delle decisioni a margine
+## Gestione delle decisioni tramite rete Edge
 
-Il secondo approccio prevede l’utilizzo della rete Experience Edge, un’infrastruttura geograficamente distribuita a livello globale per la distribuzione rapida di esperienze con una latenza inferiore al secondo o di millisecondi. Per ridurre al minimo la latenza, l’esperienza del consumatore finale viene eseguita dall’infrastruttura Edge geograficamente più vicina. Il servizio Decision Management sulla rete Edge è progettato per offrire ai consumatori esperienze in tempo reale, ad esempio con richieste di personalizzazione in entrata per web e dispositivi mobili. Per ulteriori informazioni su Decision Management tramite rete Edge, consulta il blueprint [Decision Management sulla rete Edge](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-edge.html?lang=en).
+Il secondo approccio prevede l’utilizzo della rete Experience Edge, un’infrastruttura geograficamente distribuita a livello globale per la distribuzione rapida di esperienze con una latenza inferiore al secondo o di millisecondi. Per ridurre al minimo la latenza, l’esperienza del consumatore finale viene eseguita dall’infrastruttura Edge geograficamente più vicina. Il servizio Gestione delle decisioni sulla rete Edge è progettato per offrire ai consumatori esperienze in tempo reale, ad esempio con richieste di personalizzazione in entrata per web e dispositivi mobili. Per ulteriori informazioni su Gestione delle decisioni tramite rete Edge, consulta il blueprint [Gestione delle decisioni sulla rete Edge](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-edge.html?lang=it).
 
-### Casi d&#39;uso per la gestione delle decisioni a margine
+### Casi di utilizzo per Gestione delle decisioni tramite rete Edge
 
-* Personalizzazione online tramite esperienze in entrata web o mobile.
+* Personalizzazione online tramite esperienze web o mobile in entrata.
 * Esecuzione di percorsi cross-channel: offerte coerenti su web, dispositivi mobili, e-mail e altri canali di interazione tramite Adobe Journey Optimizer.
 
-### Gestione delle decisioni sulle considerazioni tecniche di margine
+### Gestione delle decisioni tramite rete Edge considerazioni tecniche
 
 * Richieste al secondo = 5000.
-* Latenza di risposta &lt; 250 ms.
-* Accesso al profilo in tempo reale edge. Nel profilo saranno disponibili solo i tipi di pubblico e gli attributi di profilo edge proiettati.
-* Se nelle esperienze della prima volta è richiesta la personalizzazione, l’hub sarà ideale in quanto è disponibile il profilo completo. Il profilo Edge deve sincronizzarsi dall’hub per la prima esperienza Edge. Pertanto, la prima esperienza dal bordo non includerà i dati del profilo precedentemente caricati sull&#39;hub.
+* Latenza di risposta &lt; 250 ms.
+* Accesso al profilo Edge in tempo reale. Nel profilo saranno disponibili solo i tipi di pubblico e gli attributi di profilo Edge proiettati.
+* Se vuoi applicare la personalizzazione alla prima esperienza, è preferibile utilizzare l’approccio tramite hub, con profilo completo. Per la prima esperienza Edge, infatti, il profilo Edge deve essere sincronizzato dall’hub. Pertanto, la prima esperienza tramite rete Edge non includerà i dati del profilo precedentemente caricati sull’hub.
 
 ## Documentazione correlata
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=it)
-* [Decision Management per Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+* [Gestione delle decisioni per Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 * [Descrizione del prodotto Adobe Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Adobe descrizione del prodotto per la gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Descrizione del prodotto Adobe Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)
