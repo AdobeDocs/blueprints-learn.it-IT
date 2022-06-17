@@ -6,9 +6,9 @@ product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
 source-git-commit: ac995cdb942fd14d87281c4b499239732a1e4019
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '194'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,10 +47,10 @@ ht-degree: 94%
    + [Panoramica](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer {#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
-      + Gestione delle decisioni{#decision-management}
+      + Gestione delle decisioni {#decision-management}
          + [Panoramica](/help/blueprints/customer-journeys/decision_management/decision-management-overview.md)
-         + [Decision Management tramite rete Edge](/help/blueprints/customer-journeys/decision_management/decision-management-edge.md)
-         + [Decision Management tramite hub](/help/blueprints/customer-journeys/decision_management/decision-management-hub.md)
+         + [Gestione delle decisioni tramite rete Edge](/help/blueprints/customer-journeys/decision_management/decision-management-edge.md)
+         + [Gestione delle decisioni tramite hub](/help/blueprints/customer-journeys/decision_management/decision-management-hub.md)
       + [Journey Optimizer con Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
       + [Messaggistica di terze parti](/help/blueprints/customer-journeys/3rd-party-messaging.md)
    + Campaign v8 {#campaign-v8}
@@ -62,7 +62,7 @@ ht-degree: 94%
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
    + [Inoltro eventi](/help/blueprints/data-ingestion/server-side-collection.md)
-   + [Raccolta di dati multi-sandbox](/help/blueprints/data-ingestion/multi-sandbox-data-collection.md)
+   + [Raccolta dati per più sandbox](/help/blueprints/data-ingestion/multi-sandbox-data-collection.md)
    + Implementazione {#deployment}
       + [Experience Platform Web SDK e rete Edge](/help/blueprints/data-ingestion/websdk.md)
       + [SDK delle applicazioni](/help/blueprints/data-ingestion/appsdk.md)
