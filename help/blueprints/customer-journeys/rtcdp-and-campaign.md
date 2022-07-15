@@ -4,7 +4,7 @@ description: Mostra come utilizzare Adobe Experience Platform, il profilo client
 solution: Real-time Customer Data Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
 source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Adobe Campaign
@@ -107,10 +107,10 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
    * Experience Platform Mobile SDK
    * Campaign Mobile SDK
 * Approccio con Experience Platform Mobile SDK:
-   * Sfrutta i tag di Adobe e l’estensione Campaign Classic per configurare l’integrazione con Experience Platform Mobile SDK
+   * Sfrutta i tag di Adobe e l’estensione Campaign Classic per configurare l’integrazione con Experience Platform Mobile SDK.
    * È richiesta la conoscenza delle funzioni Tag e Raccolta dati di Adobe.
    * È richiesta esperienza di sviluppo mobile con notifiche push per Android e iOS per: implementazione dell’SDK; integrazione con FCM (Android) e APNS (iOS) per recuperare il token push token; configurazione dell’app per la ricezione delle notifiche push; e gestione delle interazioni push.
-* Campaign Mobile SDK
+* SDK per Campaign Mobile
    * Consulta la [Documentazione di Campaign SDK] (Campaign Mobile SDK
 Consulta la documentazione per l’implementazione qui descritta)
 
