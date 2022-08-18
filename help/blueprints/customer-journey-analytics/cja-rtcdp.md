@@ -4,7 +4,7 @@ description: Unificare e analizzare dati e comportamenti dei clienti da tutto il
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
-source-git-commit: 0d188a41b6c90bc838eaf4b1d0d1f31b3596e7ca
+source-git-commit: 8a252e0f061bddb14ce1a21b49137a22fdf700da
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 32%
@@ -15,6 +15,10 @@ ht-degree: 32%
 
 Crea e pubblica i tipi di pubblico identificati nel Customer Journey Analytics (CJA) in Profilo cliente in tempo reale in Adobe Experience Platform per il targeting dei clienti e la personalizzazione. Ideale per la creazione di tipi di pubblico utilizzando dati storici o tipi di pubblico più perfezionati con filtri granulari e campi calcolati nel Customer Journey Analytics.
 
+## Guida alla pubblicazione dei tipi di pubblico di Customer Journey Analytics
+
+Consulta la seguente documentazione per informazioni sull’implementazione e la configurazione della pubblicazione dei tipi di pubblico da Customer Journey Analytics a Real-time Customer Data Platform. [Documentazione](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
+
 ## Architettura per i blueprint per Customer Journey Analytics
 
 ![Diagramma dell’architettura](assets/CJA_RTCDP.svg)
@@ -22,10 +26,6 @@ Crea e pubblica i tipi di pubblico identificati nel Customer Journey Analytics (
 ## Diagramma dei guardrail relativi ai blueprint per Customer Journey Analytics
 
 ![Diagramma dei guardrail](assets/cja_guardrails.svg)
-
-## Guida alla pubblicazione dei tipi di pubblico di Customer Journey Analytics
-
-Consulta la seguente documentazione per informazioni sull’implementazione e la configurazione della pubblicazione dei tipi di pubblico da Customer Journey Analytics a Real-time Customer Data Platform. [Documentazione](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
 
 ## Articoli di blog correlati
 
