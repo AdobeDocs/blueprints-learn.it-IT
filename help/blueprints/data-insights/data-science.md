@@ -1,13 +1,13 @@
 ---
 title: Blueprint per personalizzazione Data Science per l’arricchimento del profilo
-description: Questo modello mostra come le informazioni basate su scienza dei dati possono essere assimilate in Experience Platform per arricchire il Profilo del cliente in tempo reale.
+description: Questo blueprint mostra come le informazioni basate su Data Science possono essere acquisite in Experience Platform per arricchire il profilo del cliente in tempo reale.
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
 source-git-commit: 6d44401fba8cc75402d4303825e32e7948753449
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,14 +38,14 @@ Per i risultati del modello da acquisire nel profilo cliente in tempo reale, ass
 
 ## Considerazioni sull’implementazione
 
-* Nella maggior parte dei casi i risultati del modello devono essere acquisiti come attributi di profilo, e non come eventi di esperienza. I risultati del modello possono essere stringhe di attributi semplici. Se devi acquisire più risultati del modello, è preferibile utilizzare un campo di tipo mappa o array.
+* Nella maggior parte dei casi i risultati del modello devono essere acquisiti come attributi di profilo, e non come eventi di esperienza. I risultati del modello possono essere semplici stringhe di attributi. Se devi acquisire più risultati del modello, è preferibile utilizzare un campo di tipo mappa o array.
 * Il set di dati dello snapshot di profilo giornaliero (esportazione giornaliera dei dati degli attributi del profilo unificato) può essere utilizzato per addestrare i modelli sui dati degli attributi di profilo. La documentazione sui set di dati dello snapshot del profilo è disponibile [qui](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html?lang=it#profile-attribute-datasets).
 * Per estrarre i dati da Experience Platform, è possibile utilizzare i seguenti metodi.
    * Data Access SDK
       * I dati sono in formato non elaborato.
       * I dati di eventi esperienza di profilo restano nello stato non elaborato e non unificato.
    * Destinazioni RTCDP
-      * È possibile esaminare gli attributi del profilo e le appartenenze al segmento.
+      * I dati in uscita possono includere solo attributi di profilo e appartenenze ai segmenti.
 
 ## Documentazione correlata
 
