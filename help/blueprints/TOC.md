@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: a5a8de74c2ce176e1ca36fa536ad1c088fccdc27
-workflow-type: ht
-source-wordcount: '203'
-ht-degree: 100%
+source-git-commit: c0994c3f09d854c635049054328abcd2d552c28e
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 95%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 100%
    + [Flusso di dati in Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
 + Attivazione in base a pubblico e profili {#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
-   + [Attivazione del pubblico con dati anonimi](/help/blueprints/audience-activation/anonymous.md)
-   + Attivazione dei clienti noti {#known-customer-audience-activation}
+   + [Attivazione del pubblico con dati anonimi (AAM)](/help/blueprints/audience-activation/anonymous.md)
+   + Attivazione cliente nota (RTCDP) {#known-customer-audience-activation}
       + [Panoramica](/help/blueprints/audience-activation/known.md)
       + Attivazione per canali social e pubblicitari {#audience-activation}
          + [Attivazione in Facebook Custom Audiences](/help/blueprints/audience-activation/destinations/facebook.md)
@@ -74,6 +74,6 @@ ht-degree: 100%
    + [Personalizzazione Data Science per l’arricchimento del profilo](/help/blueprints/data-insights/data-science.md)
 + Personalizzazione web e mobile {#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
-   + [Personalizzazione basata sul comportamento](/help/blueprints/web-personalization/behavioral.md)
-   + [Personalizzazione per clienti noti](/help/blueprints/web-personalization/known-personalization.md)
+   + [Personalizzazione basata sul comportamento - Target](/help/blueprints/web-personalization/behavioral.md)
+   + [Personalizzazione nota dei clienti - Target e RTCDP](/help/blueprints/web-personalization/known-personalization.md)
    + [Gestione delle decisioni](/help/blueprints/web-personalization/decision-management-edge.md)
