@@ -1,23 +1,24 @@
 ---
 title: Customer Journey Analytics con Real-time Customer Data Platform
-description: Unificare e analizzare dati e comportamenti dei clienti da tutto il percorso di clienti del Customer Journey Analytics, pubblicare pubblico da CJA a RTCDP
+description: Unifica e analizza dati e comportamenti dei clienti da tutto il percorso del cliente in Customer Journey Analytics, e pubblica i tipi di pubblico da CJA a RTCDP
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
-source-git-commit: 8a252e0f061bddb14ce1a21b49137a22fdf700da
-workflow-type: tm+mt
+exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
+source-git-commit: 3d2fbd7b6e94b6f56a72e0956709557c21b4c419
+workflow-type: ht
 source-wordcount: '175'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 # Customer Journey Analytics con Real-time Customer Data Platform
 
-Crea e pubblica i tipi di pubblico identificati nel Customer Journey Analytics (CJA) in Profilo cliente in tempo reale in Adobe Experience Platform per il targeting dei clienti e la personalizzazione. Ideale per la creazione di tipi di pubblico utilizzando dati storici o tipi di pubblico più perfezionati con filtri granulari e campi calcolati nel Customer Journey Analytics.
+Crea e pubblica i tipi di pubblico identificati da Customer Journey Analytics (CJA) nel profilo cliente in tempo reale in Adobe Experience Platform, per eseguire attività di targeting dei clienti e personalizzazione. Questa soluzione è ideale per creare tipi di pubblico sulla base di dati storici, nonché tipi di pubblico più mirati con filtri granulari e campi calcolati in Customer Journey Analytics.
 
-## Guida alla pubblicazione dei tipi di pubblico di Customer Journey Analytics
+## Guida alla pubblicazione dei tipi di pubblico in Customer Journey Analytics
 
-Consulta la seguente documentazione per informazioni sull’implementazione e la configurazione della pubblicazione dei tipi di pubblico da Customer Journey Analytics a Real-time Customer Data Platform. [Documentazione](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
+Consulta la seguente documentazione per informazioni su come implementare e configurare la pubblicazione dei tipi di pubblico da Customer Journey Analytics a Real-time Customer Data Platform. [Documentazione](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it)
 
 ## Architettura per i blueprint per Customer Journey Analytics
 
