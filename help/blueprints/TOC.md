@@ -1,14 +1,14 @@
 ---
 user-guide-title: Blueprint per esperienze digitali
-breadcrumb-title: 'Blueprint '
+breadcrumb-title: Blueprint
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: c0994c3f09d854c635049054328abcd2d552c28e
+source-git-commit: 4aced09f12b47c0af25af7aaa97085a607d749b3
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 95%
+source-wordcount: '206'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 + [Panoramica](/help/blueprints/overview.md)
 + [Vedi tutti i casi di utilizzo](/help/blueprints/use-cases.md)
-+ Vedi tutte le storie di successo nei diversi settori {#industry-success-stories}
++ Blueprint del settore verticale{#vertical-blueprints}
    + [Panoramica](/help/blueprints/industry-success-stories/overview.md)
    + [Abbigliamento](/help/blueprints/industry-success-stories/apparel.md)
    + [Retail](/help/blueprints/industry-success-stories/retail.md)
