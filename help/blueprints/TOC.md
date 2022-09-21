@@ -5,7 +5,7 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 9fac27843985da725ffac9c6b01518b595fdb22b
+source-git-commit: fc247d3a933d6df33e43f3a1f55f9dfb1eba35a6
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 90%
@@ -40,8 +40,8 @@ ht-degree: 90%
          + [Attivazione per Google Customer Match](/help/blueprints/audience-activation/destinations/gcm.md)
       + [Attivazione per destinazioni basate su file e streaming verso soluzioni aziendali](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)
+      + [Corrispondenza segmento](/help/blueprints/audience-activation/segment-match.md)
    + [Attivazione con applicazioni Experience Cloud](/help/blueprints/audience-activation/platform-and-applications.md)
-   + [Corrispondenza segmento](/help/blueprints/audience-activation/segment-match.md)
 + Attivazione e marketing B2B {#b2b-activation}
    + [Panoramica](/help/blueprints/b2b/overview.md)
    + [Attivazione B2B](/help/blueprints/b2b/b2bactivation.md)
