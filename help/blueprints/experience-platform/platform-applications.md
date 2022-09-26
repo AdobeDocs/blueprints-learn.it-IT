@@ -6,9 +6,9 @@ kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
 source-git-commit: 4c66e906b9faf4bd9b1ee75fcf263b8a35d3b782
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -94,9 +94,9 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td>
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=en">Attivazione del pubblico con dati anonimi</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Attivazione del pubblico con dati online/offline</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=it">Attivazione del pubblico con dati anonimi</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
 </tr>
@@ -109,7 +109,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li>I dati di interazione e campagna raccolti da Campaign possono essere acquisiti ad Experience Platform come origine di dati da utilizzare ulteriormente nella creazione di un pubblico tramite Real-time Customer Data Platform e analisi tramite il servizio Query di Customer Journey Analytics e Experience Platform.</li>
+<li>I dati di interazione e campagna raccolti da Campaign possono essere acquisiti in Experience Platform come origine dati per essere poi utilizzati nella creazione del pubblico tramite Real-time Customer Data Platform e nell’analisi tramite Customer Journey Analytics ed Experience Platform Query Service.</li>
 </ul>
 </td>
 <td colspan="1">
@@ -127,12 +127,12 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li>I dati di interazione e campagna raccolti da Campaign possono essere acquisiti ad Experience Platform come origine di dati da utilizzare ulteriormente nella creazione di un pubblico tramite Real-time Customer Data Platform e analisi tramite il servizio Query di Customer Journey Analytics e Experience Platform.</li>
+<li>I dati di interazione e campagna raccolti da Campaign possono essere acquisiti in Experience Platform come origine dati per essere poi utilizzati nella creazione del pubblico tramite Real-time Customer Data Platform e nell’analisi tramite Customer Journey Analytics ed Experience Platform Query Service.</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=en">Messaggistica batch</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=it">Messaggistica batch</a></li>
 </ul>
 </td>
 </tr>
@@ -145,7 +145,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li>Crea tipi di pubblico in Customer Percorso Analytics e condividi i risultati del pubblico in Real-time Customer Data Platform. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en">Pubblicazione del pubblico di CJA</a></li>
+<li>Crea il pubblico in Customer Journey Analytics e condividi i risultati del pubblico in Real-time Customer Data Platform. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it">Pubblicazione del pubblico da CJA</a></li>
 </ul>
 </td>
 <td colspan="1">
@@ -168,7 +168,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Attivazione del pubblico con dati online/offline</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a></li>
 </ul>
 </td>
 </tr>
@@ -181,7 +181,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li>I dati di interazione e campagna prodotti da Journey Optimizer vengono raccolti in Experience Platform per un ulteriore utilizzo nella creazione di tipi di pubblico tramite Real-time Customer Data Platform, analisi tramite Customer Journey Analytics e Experience Platform Query Service.</li>
+<li>I dati di interazione e campagna prodotti da Journey Optimizer possono essere acquisiti in Experience Platform per essere poi utilizzati nella creazione del pubblico tramite Real-time Customer Data Platform e nell’analisi tramite Customer Journey Analytics ed Experience Platform Query Service.</li>
 </ul>
 </td>
 <td colspan="1">
@@ -199,7 +199,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li>I dati nativi del Magento possono essere inviati ad Experience Platform tramite un connettore di origine del Magento. </li>
+<li>I dati nativi di Magento possono essere inviati ad Experience Platform tramite un connettore di origine di Magento. </li>
 </ul>
 </td>
 <td colspan="1">Nessuna integrazione corrente</td>
@@ -213,7 +213,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li>Gli account Marketo, i contatti e i dati sulle opportunità, insieme ai dati di interazione e campagna prodotti da Marketo, vengono acquisiti in Experience Platform per un ulteriore utilizzo nella creazione di audience tramite B2B-CDP e analisi tramite Customer Journey Analytics e Experience Platform Query Service. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it">Connettore per Marketo Engage</a></li>
+<li>Gli account Marketo e i relativi contatti e dati sulle opportunità, insieme ai dati di interazione e campagna prodotti da Marketo, vengono acquisiti in Experience Platform e possono poi essere usati per creare il pubblico tramite B2B-CDP e nell’analisi tramite Customer Journey Analytics ed Experience Platform Query Service. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it">Connettore per Marketo Engage</a></li>
 </ul>
 </td>
 <td colspan="1">
@@ -232,13 +232,13 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 <td colspan="1">
 <ul>
 <li>Le metriche Pubblico e Profilo vengono inviate al data lake di Experience Platform per abilitare i dashboard di reportistica con informazioni approfondite sui profili.</li>
-<li>I dati Pubblico e Profilo nel lago di dati possono essere utilizzati per ulteriori informazioni tramite Query Service e Customer Journey Analytics.</li>
+<li>I dati Pubblico e Profilo nel data lake possono essere utilizzati per ulteriori approfondimenti tramite Query Service e Customer Journey Analytics.</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Attivazione del pubblico con dati online/offline</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
 </tr>
@@ -246,18 +246,18 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 <td colspan="1">Target</td>
 <td colspan="1">
 <ul>
-<li>I tipi di pubblico e gli attributi di profilo definiti in Real-time Customer Data Platform possono essere condivisi con Target e utilizzati nelle esperienze di personalizzazione e targeting consegnate da Target.</li>
+<li>Gli attributi di pubblico e profili definiti in Real-time Customer Data Platform possono essere condivisi con Target e utilizzati nelle esperienze di personalizzazione e targeting fornite da Target.</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>I dati raccolti per le esperienze e le interazioni Target possono essere raccolti ad Experience Platform tramite l’SDK web/mobile di Experience Platform. Questi dati possono essere utilizzati nella creazione di tipi di pubblico tramite Real-time Customer Data Platform e per l’analisi tramite Customer Journey Analytics e Experience Platform Query Service.</li>
+<li>I dati raccolti per le esperienze e le interazioni Target possono essere raccolti in Experience Platform tramite Experience Platform Web/Mobile SDK. Questi dati possono essere utilizzati nella creazione del pubblico tramite Real-time Customer Data Platform e per l’analisi tramite Customer Journey Analytics ed Experience Platform Query Service.</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">Attivazione del pubblico con dati online/offline</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=it">Attivazione del pubblico con dati online/offline</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
 </tr>
