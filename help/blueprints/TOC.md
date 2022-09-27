@@ -5,9 +5,9 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: fc247d3a933d6df33e43f3a1f55f9dfb1eba35a6
+source-git-commit: 84eb7427077a068c3fe3b2cfc4856e115427f4ca
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '206'
 ht-degree: 94%
 
 ---
@@ -16,13 +16,12 @@ ht-degree: 94%
 # Blueprint per esperienze digitali {#architecture}
 
 + [Panoramica](/help/blueprints/overview.md)
-+ [Vedi tutti i casi di utilizzo](/help/blueprints/use-cases.md)
 + Blueprint del settore verticale{#vertical-blueprints}
-   + [Panoramica](/help/blueprints/industry-success-stories/overview.md)
-   + [Abbigliamento](/help/blueprints/industry-success-stories/apparel.md)
-   + [Retail](/help/blueprints/industry-success-stories/retail.md)
-   + [Telecomunicazioni](/help/blueprints/industry-success-stories/telecommunications.md)
-   + [Viaggi e hospitality](/help/blueprints/industry-success-stories/travel-hospitality.md)
+   + [Panoramica](/help/blueprints/vertical-blueprints/overview.md)
+   + [Abbigliamento](/help/blueprints/vertical-blueprints/apparel.md)
+   + [Retail](/help/blueprints/vertical-blueprints/retail.md)
+   + [Telecomunicazioni](/help/blueprints/vertical-blueprints/telecommunications.md)
+   + [Viaggi e hospitality](/help/blueprints/vertical-blueprints/travel-hospitality.md)
 + Panoramica dell’architettura {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
