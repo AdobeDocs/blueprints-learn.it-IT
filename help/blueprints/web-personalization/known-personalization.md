@@ -5,10 +5,10 @@ landing-page-description: Sincronizza la personalizzazione web con la personaliz
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: e16ceb50b58fd317232694194ec8c63d0884821d
+source-git-commit: ad83e4e71f82d12b8aa2f3ef98a9614deb666a4c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1378'
+ht-degree: 99%
 
 ---
 
@@ -41,11 +41,11 @@ ht-degree: 0%
 
 Architettura
 
-<img src="assets/RTCDP+Target.png" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/RTCDP+Target.svg" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:90%; border:1px solid #4a4a4a" />
 
 Dettagli della sequenza
 
-<img src="assets/RTCDP+Target_flow.png" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/RTCDP+Target_flow.svg" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:90%; border:1px solid #4a4a4a" />
 
 Architettura d’insieme
 
