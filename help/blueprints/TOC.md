@@ -5,7 +5,7 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 6901596cbb661ffa8cf57c6ae958db1978bf1520
+source-git-commit: 4ada1c55ea67a2d723050a2c72b4ab02c9394660
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -19,6 +19,7 @@ ht-degree: 0%
 + Blueprint per settori verticali {#vertical-blueprints}
    + [Panoramica](/help/blueprints/vertical-blueprints/overview.md)
    + [Abbigliamento](/help/blueprints/vertical-blueprints/apparel.md)
+   + [Medicale](/help/blueprints/vertical-blueprints/healthcare-vertical.md)
    + [Retail](/help/blueprints/vertical-blueprints/retail.md)
    + [Telecomunicazioni](/help/blueprints/vertical-blueprints/telecommunications.md)
    + [Viaggi e hospitality](/help/blueprints/vertical-blueprints/travel-hospitality.md)
@@ -26,9 +27,10 @@ ht-degree: 0%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
    + [Flusso di dati in Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
-   + Modelli di distribuzione{#deployment}
+   + Implementazione {#deployment}
       + [Experience Platform Web SDK e rete Edge](/help/blueprints/data-ingestion/websdk.md)
       + [SDK delle applicazioni](/help/blueprints/data-ingestion/appsdk.md)
+      + [Guardrail](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Attivazione in base a pubblico e profili {#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
    + [Attivazione del pubblico con dati anonimi (AAM)](/help/blueprints/audience-activation/anonymous.md)
