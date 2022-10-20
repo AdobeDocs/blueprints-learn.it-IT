@@ -136,7 +136,7 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
 1. Adobe Journey Optimizer
 1. Rete Edge di Adobe Experience Platform
-1. Identità  per rete Edge
+1. Identità per rete Edge
 1. Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
 1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
