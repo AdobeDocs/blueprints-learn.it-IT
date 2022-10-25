@@ -3,9 +3,9 @@ title: 'Blueprint per esperienze digitali: storie di successo'
 description: Le storie di successo dei blueprint per esperienze digitali dimostrano il valore derivante dall’utilizzo delle applicazioni Adobe Experience Cloud, basate su Adobe Experience Platform, in diversi settori.
 exl-id: 9e73bae3-ba34-4819-a54e-710965fe74d9
 source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -18,34 +18,34 @@ Scopri in che modo i clienti progettano grandi esperienze e conseguono ottimi ri
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><img alt="immagine miniatura per il settore Abbigliamento con i blueprint Audience Activation, Customer Journey Analytics e Customer journey" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html?lang=it"><img alt="immagine miniatura per il settore Abbigliamento con i blueprint per l’attivazione del pubblico, Customer Journey Analytics e Customer journey" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
     </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html"><img alt="immagine miniatura per il settore Retail con i blueprint Attivazione con dati online e offline e Journey Optimizer" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html?lang=it"><img alt="immagine miniatura per il settore Retail con i blueprint Attivazione con dati online e offline e Journey Optimizer" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
 
 </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html"><img alt="immagine miniatura per il blueprint Journey Optimizer" src="../customer-journeys/assets/ajo-architecture.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html?lang=it"><img alt="immagine miniatura per il blueprint Journey Optimizer" src="../customer-journeys/assets/ajo-architecture.svg" /></a>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html"><img alt="immagine miniatura per il blueprint Attivazione con dati online e offline" src="../audience-activation/assets/known_activation.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html?lang=it"><img alt="immagine miniatura per il blueprint Attivazione con dati online e offline" src="../audience-activation/assets/known_activation.svg" /></a>
   </td>
 </tr>
 <tr>
   <td>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><strong>Settore abbigliamento</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html?lang=it"><strong>Settore abbigliamento</strong></a></div>
     <p><em>Marketing in tempo reale, attivazione cross-channel e Cross-Channel Analytics.</em></p>
   </td>
   <td>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html"><strong>Settore retail</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html?lang=it"><strong>Settore retail</strong></a></div>
     <p><em>Esperienze clienti in tempo reale su diversi canali: digital media, e-mail, push e web.</em></p>
   </td>
   <td>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html"><strong>Settore telecomunicazioni</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html?lang=it"><strong>Settore telecomunicazioni</strong></a></div>
     <p><em>Offerte personalizzate in tempo reale e con onboarding efficiente dei clienti per assicurarne la fidelizzazione a lungo termine.</em></p>
   </td>
   <td>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html"><strong>Settore viaggi e hospitality</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html?lang=it"><strong>Settore viaggi e hospitality</strong></a></div>
     <p><em>Decisioni in tempo reale con una vista consolidata del comportamento dei clienti su diversi canali.</em></p>
   </td>
 </tr>
