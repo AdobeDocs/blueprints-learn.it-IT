@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 4ada1c55ea67a2d723050a2c72b4ab02c9394660
+source-git-commit: e7a640580038c547cf983956ed155099aa14b159
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 99%
+source-wordcount: '248'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 99%
 + Blueprint per settori verticali {#vertical-blueprints}
    + [Panoramica](/help/blueprints/vertical-blueprints/overview.md)
    + [Abbigliamento](/help/blueprints/vertical-blueprints/apparel.md)
-   + [Medicale](/help/blueprints/vertical-blueprints/healthcare-vertical.md)
    + [Retail](/help/blueprints/vertical-blueprints/retail.md)
    + [Telecomunicazioni](/help/blueprints/vertical-blueprints/telecommunications.md)
    + [Viaggi e hospitality](/help/blueprints/vertical-blueprints/travel-hospitality.md)
