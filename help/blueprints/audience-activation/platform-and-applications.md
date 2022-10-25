@@ -5,9 +5,9 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
 source-git-commit: 094591020413933932356cb8c393bf569bcfca50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a p
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Target
 
-* Consulta la sezione [Personalizzazione nota dei clienti - Blueprint Target e RTCDP](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html) per ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Target.
+* Nel [blueprint Personalizzazione per clienti noti - Target e RTCDP](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=it) trovi ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Target.
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Campaign e Journey Optimizer
 
