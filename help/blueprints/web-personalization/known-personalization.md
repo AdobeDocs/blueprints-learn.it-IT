@@ -1,14 +1,14 @@
 ---
-title: Panoramica della personalizzazione web e mobile  - Adobe Target e RTCDP
+title: Panoramica della personalizzazione web e mobile   - Adobe Target e RTCDP
 description: Sincronizza la personalizzazione web con la personalizzazione e-mail e di altri canali per utenti noti e anonimi.
 landing-page-description: Sincronizza la personalizzazione web con la personalizzazione e-mail e di altri canali per utenti noti e anonimi.
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 source-git-commit: ad83e4e71f82d12b8aa2f3ef98a9614deb666a4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 * [!UICONTROL Real-time Customer Data Platform]
 * Adobe Target
-* Adobe Audience Manager (facoltativo): Aggiunge dati di pubblico di terze parti
+* Adobe Audience Manager (opzionale): consente di aggiungere dati di pubblico di terze parti
 * Adobe Analytics o Customer Journey Analytics (opzionale): consente di creare segmenti in base ai dati storici dei clienti e ai dati comportamentali con segmentazione granulare
 
 ## Pattern di integrazione
@@ -58,7 +58,7 @@ La personalizzazione per clienti noti è supportata tramite diversi approcci di 
 ### Modello di implementazione 1 - Rete Edge con Web/Mobile SDK o Edge Network API (approccio consigliato)
 
 * Utilizzo della rete Edge con Web/Mobile SDK. La segmentazione Edge in tempo reale richiede l’implementazione di Web/Mobile SDK o dell’API Edge.
-* [Consulta il blueprint per Experience Platform Web/Mobile SDK](../data-ingestion/websdk.md)    per l’implementazione basata su SDK.
+* [Consulta il blueprint per Experience Platform Web/Mobile SDK](../data-ingestion/websdk.md)     per l’implementazione basata su SDK.
 * Per poter essere utilizzata in Mobile SDK, l’[estensione Adobe Journey Optimizer - Decisioning](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) deve essere installata in Mobile SDK.
 * [Consulta Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it) per l’implementazione basata su API di Adobe Target con profilo Edge.
 
@@ -95,14 +95,14 @@ Prerequisiti per l’identità
 
 ### Documentazione di SDK
 
-* [Documentazione di Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Documentazione di Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it)
 * [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
 * [Documentazione del servizio Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=it)
 
 ### Documentazione sulle connessioni
 
-* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
-* [Configurazione dello stream di dati Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
+* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it)
+* [Configurazione dello stream di dati Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)
 * [Condivisione dei segmenti Experience Platform con Audience Manager e altre soluzioni Experience Cloud](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=it)
 
 ### Documentazione sulla segmentazione
@@ -111,7 +111,7 @@ Prerequisiti per l’identità
 * [Segmentazione in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html?lang=it)
 * [Segmentazione in streaming](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
 * [Condivisione dei segmenti di Adobe Analytics tramite Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=it)
-* [Configurazione dei criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#create-a-merge-policy)
+* [Configurazione dei criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=it#create-a-merge-policy)
 
 ### Tutorial
 
