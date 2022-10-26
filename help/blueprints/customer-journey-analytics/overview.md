@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 654ec6c8176a446a2a5fb7ffb0aa8a854a31c46b
+source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 98%
+source-wordcount: '413'
+ht-degree: 95%
 
 ---
 
@@ -43,7 +43,9 @@ Ecco alcuni dei casi d’uso principali.
 
 ## Diagramma dei guardrail relativi ai blueprint per Customer Journey Analytics
 
-![Diagramma dei guardrail](assets/cja_guardrails.svg)
+* Per le protezioni dettagliate e le latenze da fine a fine, fare riferimento al [documento delle protezioni di distribuzione](../experience-platform/deployment/guardrails.md)
+
+![Diagramma dei guardrail](../experience-platform/assets/CJA_guardrails.svg)
 
 ## Articoli di blog correlati
 

@@ -5,10 +5,10 @@ solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
+source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 100%
+source-wordcount: '869'
+ht-degree: 97%
 
 ---
 
@@ -46,8 +46,7 @@ L’illustrazione seguente descrive i vari metodi di segmentazione e pattern di 
 
 ## Guardrail per i blueprint Attivazione in base a pubblico e profili
 
-* [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
-
+* Per le protezioni dettagliate e le latenze da fine a fine, fare riferimento al [documento delle protezioni di distribuzione](../experience-platform/deployment/guardrails.md) e [Guardrail di profilo e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
 ### Attivazione di attributi e identità
 

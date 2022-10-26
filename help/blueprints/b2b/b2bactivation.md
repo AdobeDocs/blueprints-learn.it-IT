@@ -4,10 +4,10 @@ description: Offri a un pubblico basato su account esperienze personalizzate sec
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: 2db815520027e3fed71eb1eb5138009fd2ed93a1
-workflow-type: ht
-source-wordcount: '821'
-ht-degree: 100%
+source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,10 @@ Associa a un singolo cliente le informazioni relative all’account, alle opport
 
 ## Guardrail
 
-I guardrail e le fasi di implementazione relative a Marketo Engage sono applicabili solo quando si usa Marketo Engage come origine e/o destinazione.
+* I guardrail e le fasi di implementazione relative a Marketo Engage sono applicabili solo quando si usa Marketo Engage come origine e/o destinazione.
+
+* Per ulteriori dettagli e protezioni per le latenze end to end, fare riferimento alla sezione [documento delle protezioni di distribuzione](../experience-platform/deployment/guardrails.md)
+
 
 ### Supporto di più istanze e organizzazioni IMS:
 
@@ -56,7 +59,7 @@ Di seguito sono descritti i pattern supportati per la mappatura delle istanze di
 
 #### Guardrail per segmentazione e profili Experience Platform:
 
-* Vedi i guardrail relativi a profili e segmentazione per Experience Platform: [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+* Vedi le protezioni di profilo e segmentazione per Experience Platform - [Guardrail di profilo e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * I segmenti B2B che includono account, lead e opportunità utilizzano relazioni con più entità e pertanto la valutazione dei segmenti viene eseguita in batch. La segmentazione in streaming è supportata per i segmenti limitati a persone ed eventi.
 
 #### Connettore tra Experience Platform e origine Marketo Engage:
@@ -75,7 +78,7 @@ Di seguito sono descritti i pattern supportati per la mappatura delle istanze di
 
 #### Guardrail per destinazione
 
-* Per informazioni specifiche sulle destinazioni, consulta la relativa documentazione. [Linee guida sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it)
+* Per informazioni specifiche sulle destinazioni, consulta la relativa documentazione. [Guardrail per destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=en)
 
 
 ## Fasi di implementazione
@@ -95,7 +98,7 @@ Se l’implementazione utilizzerà Marketo Engage come origine, e Marketo Engage
 
 ## Documentazione correlata
 
-* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
+* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=it)
 * [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it)
