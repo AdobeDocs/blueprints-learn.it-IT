@@ -3,7 +3,7 @@ title: Journey Optimizer - Blueprint per messaggistica attivata e Adobe Experien
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 8a53151558f4df9d2909d43d13bdbd800adbc79f
+source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
@@ -97,7 +97,7 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 
 ### Guardrail per l’attivazione
 
-<img src="../experience-platform/assets/activation-latency.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -136,7 +136,7 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
 1. Adobe Journey Optimizer
 1. Rete Edge di Adobe Experience Platform
-1. Identità per rete Edge
+1. Identità  per rete Edge
 1. Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
 1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
