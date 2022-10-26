@@ -3,10 +3,10 @@ title: Experience Platform e protezioni delle applicazioni
 description: I guardrail definiscono le aspettative di prestazioni e l'impatto per i componenti e i servizi all'interno di Adobe Experience Platform e applicazioni
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: e75f8b39b52794b61c4efd33df1f658a6615a7b8
+source-git-commit: e22c01fb768eed22d71748fd1e5bd8d3bc25068c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '297'
+ht-degree: 30%
 
 ---
 
