@@ -3,10 +3,10 @@ title: Experience Platform e protezioni delle applicazioni
 description: I guardrail definiscono le aspettative di prestazioni e l'impatto per i componenti e i servizi all'interno di Adobe Experience Platform e applicazioni
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: f618f3be083e15ebd0a00fcb242bd2ca07798272
+source-git-commit: a6b0e80c58ae3968b58a607765a45ed846428c71
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 25%
+source-wordcount: '294'
+ht-degree: 24%
 
 ---
 
@@ -34,7 +34,7 @@ I guardrail sono soglie consigliate che forniscono indicazioni sull’utilizzo d
 
 <br>
 
-## Latenza fine
+## Diagrammi di latenza end-to-end
 
 ### Acquisizione dei dati
 
@@ -45,6 +45,12 @@ I guardrail sono soglie consigliate che forniscono indicazioni sull’utilizzo d
 ### Segmentazione
 
 <img src="../assets/segmentation_guardrails.svg" alt="Experience Platform guardrail di segmentazione" style="border:1px solid #4a4a4a" width="85%" />
+
+<br>
+
+### Real-time Customer Data Platform e Adobe Target
+
+<img src="../assets/RTCDP_Target_guardrails.svg" alt="RTCDP e Target" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
