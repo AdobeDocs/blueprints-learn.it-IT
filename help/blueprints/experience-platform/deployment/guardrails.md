@@ -1,40 +1,40 @@
 ---
-title: Experience Platform e protezioni delle applicazioni
-description: I guardrail definiscono le aspettative di prestazioni e l'impatto per i componenti e i servizi all'interno di Adobe Experience Platform e applicazioni
+title: Guarderail per Experience Platform e applicazioni
+description: I guardrail definiscono le aspettative a livello di prestazioni e l’impatto per i componenti e i servizi in Adobe Experience Platform e nelle relative applicazioni
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: 24699f79ed4966a72f78138ad9dd9f3763674b4e
+exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
+source-git-commit: 779b55ab12a27796a00db4b1adb6add7d3ccd0a8
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 25%
+ht-degree: 85%
 
 ---
 
-
 # Guardrail
 
-I guardrail sono soglie consigliate che forniscono indicazioni sull’utilizzo dei dati e del sistema, ottimizzando le prestazioni ed evitando errori o risultati imprevisti in Adobe Experience Platform e nelle applicazioni. I guardrail sono destinati a riflettere i vincoli di sistema e le aspettative di prestazioni per facilitare l&#39;architettura del cliente e l&#39;ottimizzazione delle prestazioni dei casi d&#39;uso. I guardrail non sono destinati ad essere accordi a livello di servizio. Per informazioni sugli accordi a livello di servizio specifici per i prodotti, fare riferimento alla documentazione relativa alle descrizioni del prodotto, disponibile qui di seguito.
+I guardrail forniscono le soglie consigliate da utilizzare come guida in termini di utilizzo del sistema e dei dati e ottimizzazione delle prestazioni, per evitare errori o risultati imprevisti in Adobe Experience Platform e nelle relative applicazioni. I guardrail sono destinati a riflettere i vincoli di sistema e le aspettative di prestazioni per facilitare l&#39;architettura del cliente e l&#39;ottimizzazione delle prestazioni dei casi d&#39;uso. I guardrail non devono essere intesi come accordi di livello di servizio (SLA). Per informazioni sugli SLA di specifici prodotti, consulta la documentazione di descrizione dei prodotti, accessibile dai collegamenti riportati di seguito.
 
 
-## Guardrail per Adobe Experience Platform e applicazioni
+## Guardrail per Adobe Experience Platform e relative applicazioni
 
-[Guardrail per l’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en)
+[Guardrail per l’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
 
-[Guardrail API di rete Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=en)
+[Guardrail per Edge Network API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=it)
 
-[Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
+[Guardrail per profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
-[Guardrail di identità](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
+[Guardrail per il servizio Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=it)
 
-[Guardrail di servizio query](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
+[Guardrail per il servizio Query](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
 
 [Guardrail di attivazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
 
-[Journey Optimizer Guardrail](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en)
+[Guardrail per Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=it)
 
 <br>
 
-## Diagrammi di latenza end-to-end
+## Latenza end-to-end Diagrammi
 
 ### Acquisizione dei dati
 
@@ -68,22 +68,22 @@ I guardrail sono soglie consigliate che forniscono indicazioni sull’utilizzo d
 
 ## Descrizioni dei prodotti
 
-[Experience Platform Collection Enterprise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
+[Experience Platform Collection Enterprise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
 
 [Real-time Customer Data Platform](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform.html)
 
-[Piattaforma dati cliente B2B](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-b2b.html)
+[B2B Customer Data Platform](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-b2b.html)
 
 [Experience Platform Activation](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform0.html)
 
-[Experience Platform Intelligence](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+[Experience Platform Intelligence](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 
-[Intelligent Services](https://helpx.adobe.com/legal/product-descriptions/intelligent-services.html)
+[Intelligent Services](https://helpx.adobe.com/it/legal/product-descriptions/intelligent-services.html)
 
 [Customer Journey Analytics](https://helpx.adobe.com/it/legal/product-descriptions/customer-journey-analytics.html)
 
-[Journey Optimizer](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
+[Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
 
-[Journey Orchestration](https://helpx.adobe.com/legal/product-descriptions/journey-orchestration.html)
+[Journey Orchestration](https://helpx.adobe.com/it/legal/product-descriptions/journey-orchestration.html)
 
-[Offer Decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)
+[Offer Decisioning](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)
