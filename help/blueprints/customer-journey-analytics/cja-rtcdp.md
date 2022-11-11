@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
-source-git-commit: d47efe9bb7d19a745e0d75d21a09cb87912bd60b
+source-git-commit: 985f7320db7c77b8541ec4ef76b1eb7ad0caae56
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 92%
+source-wordcount: '392'
+ht-degree: 44%
 
 ---
 
@@ -29,6 +29,18 @@ Consulta la seguente documentazione per informazioni su come implementare e conf
 * Per le protezioni dettagliate e le latenze da fine a fine, fare riferimento al [documento delle protezioni di distribuzione](../experience-platform/deployment/guardrails.md)
 
 ![Diagramma dei guardrail](../experience-platform/assets/CJA_guardrails.svg)
+
+## Domande frequenti
+
+* Se in RTCDP non esiste un profilo corrispondente inviato da CJA, verrà creato un nuovo profilo o i tipi di pubblico vengono registrati solo da CJA per i profili già presenti? Sì, verrà creato un nuovo profilo. Di conseguenza, se l’implementazione RTCDP è solo per i clienti noti, le regole del pubblico CJA dovrebbero essere scritte per filtrare solo i profili con identità note. In questo modo il conteggio del profilo RTCDP non aumenterà dai profili anonimi, se non lo desideri.
+
+* CJA invia i dati del pubblico come eventi della pipeline o un file flat che va anche al data lake? I tipi di pubblico CJA vengono inviati in streaming al servizio di profilo RTCDP, ma i dati vengono anche memorizzati in data lake come set di dati.
+
+* Quali identità invia CJA? CJA invia tutte le identità configurate come &quot;ID persona&quot; durante la configurazione di CJA.
+
+* Che cosa è impostato come identità principale? Indipendentemente dall’identità selezionata dall’utente quando configura CJA come ID &quot;persona&quot; principale.
+
+* Anche il servizio Identity elabora i messaggi CJA? Ad esempio, CJA può aggiungere identità a un grafico dell’identità del profilo tramite la condivisione del pubblico? No, il servizio Identity non elabora i messaggi CJA.
 
 ## Articoli di blog correlati
 

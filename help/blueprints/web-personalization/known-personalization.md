@@ -5,10 +5,10 @@ landing-page-description: Sincronizza la personalizzazione web con la personaliz
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: 87679928d2bfcfe74c85bb054341c662999e52a5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 95%
+source-wordcount: '1625'
+ht-degree: 79%
 
 ---
 
@@ -82,13 +82,17 @@ Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AT.js e AppMe
 
 [Fai riferimento ai guardrail nella panoramica dei blueprint per personalizzazione web/mobile.](overview.md)
 
+* I profili Edge vengono creati solo quando un utente è attivo sul server Edge, il che significa che il suo profilo presenta eventi di streaming da inviare al server Edge tramite l’SDK per web/mobile o l’API di Edge Server. In genere corrisponde all’utente attivo su un sito web o su un’app mobile.
+* Per impostazione predefinita, i profili Edge hanno una durata di 14 giorni. Se l’utente non ha raccolto eventi edge attivi, il profilo scade sul bordo dopo 14 giorni di inattività. Il profilo rimarrà valido nell’hub e verrà sincronizzato con il server Edge una volta che l’utente sarà nuovamente attivo sul server Edge.
+* Quando viene creato un nuovo profilo sul bordo, viene effettuata una chiamata di sincronizzazione asincrona all’hub per recuperare eventuali tipi di pubblico e attributi configurati per la proiezione Edge tramite una destinazione. Poiché si tratta di un processo asincrono, la sincronizzazione del profilo hub con il server Edge può richiedere da 1 a diversi minuti. Di conseguenza, non è possibile garantire che il contesto del profilo dall’hub abbia nuovi profili per le esperienze della prima pagina. Questo vale anche per i nuovi dati raccolti nell’hub. Questi dati vengono proiettati sul server Edge in modo asincrono e quindi il tempo di arrivo dei dati al server Edge appropriato viene separato dall’attività edge. Solo i profili attivi sul bordo persistono gli attributi e i tipi di pubblico proiettati dall’hub.
+
 ## Considerazioni sull’implementazione
 
 Prerequisiti per l’identità
 
 * Quando si utilizza il modello di implementazione 1 descritto in precedenza con la rete Edge e Web SDK, è possibile utilizzare qualsiasi identità primaria. Per la personalizzazione al primo accesso, l’identità primaria definita dalla richiesta di personalizzazione deve corrispondere all’identità primaria del profilo da Real-time Customer Data Platform. L’unione delle identità tra dispositivi anonimi e clienti noti viene elaborata sull’hub e successivamente proiettata sulla rete Edge.
 * Tieni presente che i dati caricati nell’hub prima che un consumatore visiti o acceda a un sito web non saranno immediatamente disponibili per la personalizzazione. Per poter sincronizzare i dati dell’hub è necessario che esista già un profilo Edge attivo. Una volta creato, il profilo Edge si sincronizza con il profilo hub in modo asincrono, e quindi la personalizzazione avverrà nella pagina successiva.
-* La condivisione di tipi di pubblico da Adobe Experience Platform ad Adobe Target richiede l’uso di ECID come identità se si utilizza il servizio di condivisione del pubblico, come descritto nei pattern di integrazione 2 e 3 di cui sopra.
+* La condivisione di tipi di pubblico da Adobe Experience Platform ad Adobe Target richiede l’utilizzo di ECID come identità quando si utilizza il servizio di condivisione del pubblico come descritto nei pattern di integrazione 2 e 3 di cui sopra.
 * Inoltre, è possibile utilizzare identità alternative per condividere i tipi di pubblico di Experience Platform con Adobe Target tramite Audience Manager. Experience Platform attiva i tipi di pubblico in Audience Manager tramite i seguenti spazi dei nomi supportati: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Tieni presente che Audience Manager e Target risolvono le appartenenze al pubblico tramite l’identità ECID. Pertanto, per la condivisione del pubblico finale con Adobe Target, ECID deve ancora essere incluso nel grafo delle identità per il consumatore.
 
 ## Documentazione correlata
