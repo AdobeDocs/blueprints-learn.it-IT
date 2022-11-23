@@ -5,9 +5,9 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
 source-git-commit: 6f10178e2d8d8877ec254e6ca83d1711fa4a82b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 68%
 
 Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud. Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.
 
-L&#39;attivazione con le applicazioni Experience Cloud è allineata con la [Blueprint di attivazione del cliente noto](known.md).
+L’attivazione con applicazioni Experience Cloud è allineata al [blueprint per l’attivazione dei clienti noti](known.md).
 
 ## Casi di utilizzo
 
 * Personalizzazione e targeting attraverso i canali di interazione con il cliente basati su Experience Cloud
 * Condivisione dei dati di pubblico e profilo tra Experience Platform e le applicazioni Experience Cloud
-* Crea informazioni approfondite dai dati multicanale, inclusi i dati comportamentali online e i modelli di scienza dei dati, per arricchire il profilo del cliente in tempo reale in Experience Platform, che può quindi essere condiviso con le applicazioni Experience Cloud.
+* Creazione di informazioni approfondite da dati multicanale, inclusi i dati sul comportamento online e i modelli di data science, per arricchire il profilo cliente in tempo reale in Experience Platform, che può quindi essere condiviso con le applicazioni Experience Cloud.
 
 ## Applicazioni
 
@@ -48,7 +48,7 @@ Nella sezione sull’[architettura di Experience Platform e relative applicazion
 
 ## Guardrail
 
-Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a pubblico e profili](overview.md) e [guardrail di distribuzione](../experience-platform/deployment/guardrails.md) pagina.
+Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a pubblico e profili](overview.md)  e ai [guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
 ## Considerazioni sull’implementazione
 
@@ -59,9 +59,9 @@ Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a p
 * Per ulteriori informazioni, consulta la documentazione seguente. [Condivisione dei segmenti Experience Platform con Audience Manager e altre soluzioni Experience Cloud](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=it).
 
 * L’appartenenza a un pubblico viene condivisa direttamente da RTCDP a Audience Manager non appena la valutazione del segmento, in batch o in streaming, viene completata e inserita nel profilo cliente in tempo reale.
-* Se il profilo qualificato contiene informazioni di indirizzamento regionali per i dispositivi del profilo, l’appartenenza al pubblico da RTCDP viene qualificata in modalità streaming nella relativa rete Edge di Audience Manager. Se le informazioni di indirizzamento regionali sono state applicate a un profilo con una marca temporale negli ultimi 14 giorni, verranno valutate in streaming in Audience Manager Edge. Se i profili di RTCDP non contengono informazioni di indirizzamento regionali o se le informazioni di indirizzamento regionale hanno una durata superiore a 14 giorni, le iscrizioni di pubblico RTCDP vengono inviate alla posizione di hub Audience Manager per la valutazione e l’attivazione basate su batch.
-* Con le informazioni di routing regionali questi profili sono idonei per l’attivazione di Edge e verranno attivati entro pochi minuti dalla qualifica del segmento da RTCDP, i profili che non sono qualificati per l’attivazione di Edge si qualificano nell’hub di Audience Manager e possono avere un intervallo di tempo di 12-24 ore per l’elaborazione.
-* Le informazioni di indirizzamento regionali sulla cui rete Edge è memorizzato il profilo di Audience Manager possono essere raccolte in Experience Platform da Audience Manager, Visitor ID Service, Analytics, Launch o direttamente dal Web SDK come set di dati distinto per la classe dei record di profilo, utilizzando il gruppo di campi XDM “data capture region information”. Per ulteriori informazioni, consulta il documento per ottenere informazioni regionali . [Collegamento](https://experienceleague.adobe.com/docs/id-service/using/reference/regions.html?lang=en).
+* Se il profilo qualificato contiene informazioni di indirizzamento regionali per i dispositivi del profilo, l’appartenenza al pubblico da RTCDP viene qualificata in modalità streaming nella relativa rete Edge di Audience Manager. Se le informazioni di indirizzamento regionali sono state applicate a un profilo con una marca temporale negli ultimi 14 giorni, verranno valutate in streaming nella rete Edge di Audience Manager. Se i profili RTCDP non contengono informazioni di indirizzamento regionali o se queste risalgono a oltre 14 giorni prima, le appartenenze al pubblico da RTCDP vengono inviate alla posizione dell’hub di Audience Manager per la valutazione e l’attivazione basate su batch.
+* In presenza di informazioni di indirizzamento regionali, i profili sono idonei per l’attivazione Edge e vengono attivati entro pochi minuti dalla qualifica del segmento in RTCDP. I profili non qualificati per l’attivazione Edge vengono gestiti nell’hub di Audience Manager e l’elaborazione può richiedere 12-24 ore.
+* Le informazioni di indirizzamento regionali sulla cui rete Edge è memorizzato il profilo di Audience Manager possono essere raccolte in Experience Platform da Audience Manager, Visitor ID Service, Analytics, Launch o direttamente dal Web SDK come set di dati distinto per la classe dei record di profilo, utilizzando il gruppo di campi XDM “data capture region information”. Per ulteriori informazioni, consulta il [documento su come ottenere informazioni regionali](https://experienceleague.adobe.com/docs/id-service/using/reference/regions.html?lang=it).
 * Per le situazioni di attivazione in cui i tipi di pubblico sono condivisi da Experience Platform a Audience Manager, le seguenti identità vengono condivise automaticamente: ECID, IDFA, GAID, indirizzi e-mail con hashing (EMAIL_LC_SHA256), AdCloud ID. Al momento, gli spazi dei nomi personalizzati non vengono condivisi.
 * Il pubblico di Experience Platform può essere condiviso tramite le destinazioni di Audience Manager se le identità di destinazione richieste sono incluse nel [!UICONTROL profilo cliente in tempo reale], oppure nel caso in cui le identità nel [!UICONTROL profilo cliente in tempo reale] possono essere correlate alle identità di destinazione richieste collegate in Audience Manager.
 
@@ -71,15 +71,15 @@ Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a p
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Campaign e Journey Optimizer
 
-* Nei [blueprint per customer journey](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=en) trovi ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Campaign e Journey Optimizer.
+* Nei [blueprint per customer journey](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=it) trovi ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Campaign e Journey Optimizer.
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Marketo Engage
 
-* Consulta la sezione [Blueprint di attivazione B2B](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=en) per ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Marketo Engage.
+* Per ulteriori informazioni sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Marketo Engage, consulta il [blueprint per l’attivazione B2B](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=it).
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Customer Journey Analytics
 
-* Consulta la sezione [Tipi di pubblico RTCDP condivisi con il Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en) per ulteriori dettagli sulla condivisione di tipi di pubblico Real-time Customer Data Platform in Customer Journey Analytics.
+* Per ulteriori informazioni sulla condivisione del pubblico da Real-time Customer Data Platform a Customer Journey Analytics, consulta [Tipi di pubblico RTCDP condivisi con il Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=it).
 
 ## Documentazione correlata
 
