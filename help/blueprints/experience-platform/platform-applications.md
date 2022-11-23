@@ -6,9 +6,9 @@ kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
 source-git-commit: 122e317b34c7704dc80da11d08b9a8ff955dfa8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 <td>Analytics</td>
 <td>
 <ul>
-<li>I dati raccolti tramite l’SDK Web/Mobile possono essere inoltrati ad Adobe Analytics.</li>
+<li>I dati raccolti tramite Web/Mobile SDK possono essere inoltrati ad Adobe Analytics.</li>
 </ul>
 </td>
 <td>
@@ -89,13 +89,13 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td>
 <ul>
-<li>I dati raccolti e valutati insieme all’iscrizione al pubblico da Audience Manager possono essere condivisi con l’archivio dati e profili di Experience Platform. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it">Connettore origine per Audience Manager</a></li>
+<li>I dati raccolti e valutati per l’appartenenza al pubblico da Audience Manager possono essere condivisi con l’archivio dei profili e il data lake di Experience Platform. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it">Connettore origine per Audience Manager</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=en">Attivazione del pubblico con dati anonimi</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html">Attivazione dei clienti noti</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=it">Attivazione del pubblico con dati anonimi</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
@@ -141,7 +141,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 <td colspan="1">
 <ul>
 <li>I dati raccolti e acquisiti nel data lake Experience Platform sono disponibili per l’elaborazione in Customer Journey Analytics. </li>
-<li>I dati di profilo e pubblico da Real-time Customer Data Platform possono essere acquisiti in CJA. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en">Integrazione tra RTCDP e CJA</a>.
+<li>I dati di profilo e pubblico da Real-time Customer Data Platform possono essere acquisiti in CJA. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=it">Integrazione tra RTCDP e CJA</a>.
 </li>
 </ul>
 </ul>
@@ -202,7 +202,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li>I dati nativi di Adobe Commerce possono essere inviati ad Experience Platform tramite un connettore sorgente Adobe Commerce. </li>
+<li>I dati nativi di Adobe Commerce possono essere inviati ad Experience Platform tramite un connettore di origine di Adobe Commerce. </li>
 </ul>
 </td>
 <td colspan="1">Nessuna integrazione corrente</td>
@@ -221,7 +221,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=en">Blueprint di attivazione B2B</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=it">Blueprint per l’attivazione B2B</a></li>
 </ul>
 </td>
 </tr>
@@ -240,8 +240,8 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">Attivazione dei clienti noti</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
 </tr>
@@ -259,8 +259,8 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">Attivazione dei clienti noti</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
 </tr>
