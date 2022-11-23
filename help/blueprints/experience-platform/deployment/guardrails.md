@@ -5,15 +5,15 @@ solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer 
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
 source-git-commit: 779b55ab12a27796a00db4b1adb6add7d3ccd0a8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Guardrail
 
-I guardrail forniscono le soglie consigliate da utilizzare come guida in termini di utilizzo del sistema e dei dati e ottimizzazione delle prestazioni, per evitare errori o risultati imprevisti in Adobe Experience Platform e nelle relative applicazioni. I guardrail sono destinati a riflettere i vincoli di sistema e le aspettative di prestazioni per facilitare l&#39;architettura del cliente e l&#39;ottimizzazione delle prestazioni dei casi d&#39;uso. I guardrail non devono essere intesi come accordi di livello di servizio (SLA). Per informazioni sugli SLA di specifici prodotti, consulta la documentazione di descrizione dei prodotti, accessibile dai collegamenti riportati di seguito.
+I guardrail forniscono le soglie consigliate da utilizzare come guida in termini di utilizzo del sistema e dei dati e ottimizzazione delle prestazioni, per evitare errori o risultati imprevisti in Adobe Experience Platform e nelle relative applicazioni. I guardrail rispecchiano i vincoli di sistema e le prestazioni previste per agevolare l’ottimizzazione dell’architettura e delle prestazioni dei casi d’uso del cliente. I guardrail non devono essere intesi come accordi di livello di servizio (SLA). Per informazioni sugli SLA di specifici prodotti, consulta la documentazione di descrizione dei prodotti, accessibile dai collegamenti riportati di seguito.
 
 
 ## Guardrail per Adobe Experience Platform e relative applicazioni
@@ -28,13 +28,13 @@ I guardrail forniscono le soglie consigliate da utilizzare come guida in termini
 
 [Guardrail per il servizio Query](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
 
-[Guardrail di attivazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
+[Guardrail per l’attivazione delle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=it)
 
 [Guardrail per Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=it)
 
 <br>
 
-## Latenza end-to-end Diagrammi
+## Latenza end-to-end  Diagrammi
 
 ### Acquisizione dei dati
 
@@ -44,19 +44,19 @@ I guardrail forniscono le soglie consigliate da utilizzare come guida in termini
 
 ### Segmentazione
 
-<img src="../assets/segmentation_guardrails.svg" alt="Experience Platform guardrail di segmentazione" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../assets/segmentation_guardrails.svg" alt="Guardrail per la segmentazione in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Real-time Customer Data Platform e Adobe Target
 
-<img src="../assets/RTCDP_Target_guardrails.svg" alt="Guardrail RTCDP e Target" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../assets/RTCDP_Target_guardrails.svg" alt="Guardrail per RTCDP e Target" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Customer Journey Analytics
 
-<img src="../assets/CJA_guardrails.svg" alt="Guardrail CJA" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../assets/CJA_guardrails.svg" alt="Guardrail per CJA" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
