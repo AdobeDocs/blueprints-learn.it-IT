@@ -5,9 +5,9 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '568'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 ## Guardrail
 
-[Fai riferimento ai guardrail come indicato nella panoramica Attivazione in base a pubblico e profili](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/overview.html?lang=en#guardrails-for-audience-and-profile-activation-blueprints).
+[Fai riferimento ai guardrail come indicato nella panoramica Attivazione in base a pubblico e profili](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/overview.html?lang=it#guardrails-for-audience-and-profile-activation-blueprints).
 
 ## Fasi di implementazione per Real-time Customer Data Platform
 
-1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
+1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
 1. [Configurare correttamente le identità e i relativi spazi dei nomi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it) nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it).
@@ -80,4 +80,4 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 * Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
-* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
+* [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it)
