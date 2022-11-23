@@ -2,14 +2,15 @@
 title: Blueprint per Journey Optimizer con Adobe Campaign v8
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign per inviare messaggi in modo nativo utilizzando il server di messaggistica in tempo reale in Campaign.
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: a74ef566bf468c5508263f4070beaf6d0cd73a0e
-workflow-type: tm+mt
+exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
+source-git-commit: 779b55ab12a27796a00db4b1adb6add7d3ccd0a8
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Journey Optimizer con Adobe Campaign  v8
+# Journey Optimizer con Adobe Campaign   v8
 
 Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign per inviare messaggi in modo nativo utilizzando il server di messaggistica in tempo reale in Campaign.
 
@@ -82,7 +83,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 
 #### Schema/set di dati
 
-1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) in Experience Platform, in base ai dati forniti dal cliente
+1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
 1. Creare schemi basati su classi di eventi Experience per broadLog, trackingLog e le tabelle di Adobe Campaign degli indirizzi a cui non possono essere consegnati i messaggi (facoltativo).
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
 1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
@@ -91,7 +92,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 #### Profilo/Identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Journey
@@ -110,7 +111,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 
 * I modelli di messaggistica devono essere configurati con un contesto di personalizzazione appropriato.
 * Per Campaign Standard - I flussi di lavoro di esportazione devono essere configurati per l’esportazione dei registri di messaggistica transazionali da restituire a Experience Platform. Si consiglia di eseguirli al massimo ogni 4 ore.
-* Per Campaign v8.4 è possibile sfruttare il connettore di origini di Adobe Campaign Managed Services in Experience Platform per sincronizzare gli eventi di consegna e tracciamento da Campaign a Experience Platform. Per ulteriori informazioni, consulta la documentazione del connettore di origini. [Collegamento](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
+* Per Campaign v8.4 è possibile sfruttare il connettore di origini di Adobe Campaign Managed Services in Experience Platform per sincronizzare gli eventi di consegna e tracciamento da Campaign a Experience Platform. Per ulteriori informazioni, consulta la documentazione del connettore di origini. [Collegamento](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it)
 
 ### Configurazione push mobile (opzionale)
 
@@ -118,7 +119,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
    * Adobe Journey Optimizer | Adobe Campaign Classic | Adobe Campaign Standard
    * Rete Edge di Adobe Experience Platform
-   * Identità  per rete Edge
+   * Identità    per rete Edge
    * Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
 1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
