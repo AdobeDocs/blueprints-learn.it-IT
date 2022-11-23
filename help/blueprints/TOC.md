@@ -7,8 +7,8 @@ mini-toc-levels: 3
 role: Architect, Developer, User
 source-git-commit: d952442d066ea99f5b089f85798129dd0e40daec
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 0%
       + [Guardrail](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Attivazione in base a pubblico e profili {#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
-   + [Attivazione del pubblico con dati anonimi   (AAM)](/help/blueprints/audience-activation/anonymous.md)
+   + [Attivazione del pubblico con dati anonimi    (AAM)](/help/blueprints/audience-activation/anonymous.md)
    + Attivazione dei clienti noti (RTCDP) {#known-customer-audience-activation}
       + [Panoramica](/help/blueprints/audience-activation/known.md)
       + Attivazione per canali social e pubblicitari {#audience-activation}
@@ -68,12 +68,12 @@ ht-degree: 0%
       + [Journey Optimizer con Adobe Campaign v8](/help/blueprints/customer-journeys/ajo-and-campaign-v8.md)
    + Campaign v7 {#campaign-v7}
       + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
-      + [Real-Time CDP con Adobe Campaign   v7](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
+      + [Real-Time CDP con Adobe Campaign    v7](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
       + [Journey Optimizer con Adobe Campaign v7](/help/blueprints/customer-journeys/ajo-and-campaign-v7.md)
-+ Raccolta, accesso ed esportazione di dati{#data-ingestion}
++ Raccolta dati, accesso ed esportazione {#data-ingestion}
    + [Panoramica](/help/blueprints/data-ingestion/overview.md)
    + [Preparazione e acquisizione dei dati](/help/blueprints/data-ingestion/ingestion.md)
-   + [Accesso ed esportazione dei dati](/help/blueprints/data-ingestion/egress.md)
+   + [Accesso ai dati ed esportazione](/help/blueprints/data-ingestion/egress.md)
    + [Inoltro eventi](/help/blueprints/data-ingestion/server-side-collection.md)
 + Analisi dei dati, intelligence e AI/ML {#data-exploration}
    + [Panoramica](/help/blueprints/data-insights/overview.md)
@@ -81,6 +81,6 @@ ht-degree: 0%
    + [Personalizzazione Data Science per l’arricchimento del profilo](/help/blueprints/data-insights/data-science.md)
 + Personalizzazione web e mobile {#web-personalization}
    + [Panoramica](/help/blueprints/web-personalization/overview.md)
-   + [Personalizzazione basata sul comportamento   - Target](/help/blueprints/web-personalization/behavioral.md)
+   + [Personalizzazione basata sul comportamento    - Target](/help/blueprints/web-personalization/behavioral.md)
    + [Personalizzazione per clienti noti - Target e RTCDP](/help/blueprints/web-personalization/known-personalization.md)
    + [Gestione delle decisioni](/help/blueprints/web-personalization/decision-management-edge.md)

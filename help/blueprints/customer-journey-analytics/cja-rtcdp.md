@@ -7,8 +7,8 @@ thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
 source-git-commit: 985f7320db7c77b8541ec4ef76b1eb7ad0caae56
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 44%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Consulta la seguente documentazione per informazioni su come implementare e conf
 
 ## Diagramma dei guardrail relativi ai blueprint per Customer Journey Analytics
 
-* Per le protezioni dettagliate e le latenze da fine a fine, fare riferimento al [documento delle protezioni di distribuzione](../experience-platform/deployment/guardrails.md)
+* Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
 ![Diagramma dei guardrail](../experience-platform/assets/CJA_guardrails.svg)
 
