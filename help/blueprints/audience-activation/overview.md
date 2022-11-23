@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '869'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ L’illustrazione seguente descrive i vari metodi di segmentazione e pattern di 
 
 ## Guardrail per i blueprint Attivazione in base a pubblico e profili
 
-* Per le protezioni dettagliate e le latenze da fine a fine, fare riferimento al [documento delle protezioni di distribuzione](../experience-platform/deployment/guardrails.md) e [Guardrail di profilo e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+* Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md) e i [guardrail per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
 ### Attivazione di attributi e identità
 
