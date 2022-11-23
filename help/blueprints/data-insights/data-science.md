@@ -5,9 +5,9 @@ solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
 source-git-commit: 6f10178e2d8d8877ec254e6ca83d1711fa4a82b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ Il blueprint per la personalizzazione basata su Data Science per l’arricchimen
 
 ## Guardrail
 
-* Per protezioni dettagliate e latenze end to end sull’acquisizione dei risultati della scienza dei dati in Experience Platform e il Profilo del cliente in tempo reale fa riferimento alle protezioni per l’inserimento dei dati e al diagramma di latenza a cui si fa riferimento nel [documento delle protezioni di distribuzione](../experience-platform/deployment/guardrails.md).
+* Per informazioni dettagliate sui guardrail e sulle latenze end-to-end per l’acquisizione dei risultati data science in Experience Platform e nel profilo cliente in tempo reale, vedi i guardrail per l’acquisizione dei dati e il diagramma della latenza riportati nel [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
 ## Fasi di implementazione
 
-1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
+1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
 1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
 
