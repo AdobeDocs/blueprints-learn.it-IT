@@ -5,9 +5,9 @@ product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Tags
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
 source-git-commit: c0fe0e94e30351f593e32ea0e6809dd832f976ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1513'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,9 +49,9 @@ Per ulteriori informazioni, consulta [API di accesso per il profilo cliente in t
 
 #### Considerazioni
 
-* Soggetto ai [guardrail](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it) per profilo cliente in tempo reale. 
+* Soggetto ai [guardrail](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it) per profilo cliente in tempo reale.
 * Progettato per la ricerca in singoli profili alla volta. Non utilizzato per l’accesso a profili in blocco né per il download dell’intera popolazione del profilo da utilizzare a scopo di analisi o data science.
-* Il tempo di risposta della ricerca nel profilo è conforme ai guardrail per i profili. Requisiti di latenza in tempo reale bassa : ad esempio per gli stessi requisiti di personalizzazione delle pagine, utilizza il profilo Edge da a [Connessione Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it) o [Connessione personalizzazione personalizzata](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=it) per l’accesso in tempo reale ai profili per nel browser e nella personalizzazione delle app.
+* Il tempo di risposta della ricerca nel profilo è conforme ai guardrail per i profili. Requisiti di latenza in tempo reale bassa: ad esempio per la personalizzazione sulla stessa pagina, i requisiti prevedono l’utilizzo del profilo Edge dalla [Connessione Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it) o la [Connessione per personalizzazione customizzata](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=it) per l’accesso in tempo reale ai profili per la personalizzazione nel browser e nell’app.
 
 ### API di accesso ai dati {#data-access-api}
 
@@ -68,7 +68,7 @@ Utilizzando l’API di accesso ai dati, i clienti possono accedere direttamente 
 * Poiché l’accesso ai dati avviene in modo asincrono in batch, questo metodo è soggetto a una latenza intrinseca rispetto agli approcci che consentono di ottenere i dati in uscita mediante streaming, come l’utilizzo di tag, inoltro eventi o destinazioni RTCDP.
 * I file di dati elaborati in Experience Platform vengono memorizzati come raccolte di file in batch, compressi e memorizzati in formato parquet. Pertanto, quando si accede ai file per scaricarli in un ambiente diverso, l’accesso avviene sistematicamente per batch e file, e non per un intero set di dati; eventuali operazioni sui dati devono quindi tenere conto del fatto che i file sono compressi in formato parquet.
 
-### Servizio query {#query-service}
+### Query Service {#query-service}
 
 Utilizzando Experience Platform Query Service, i clienti possono eseguire query sui set di dati direttamente in Experience Platform e rendere persistenti i risultati della query. È possibile utilizzare un client SQL per eseguire le query e rendere persistenti le risposte alla query nella destinazione di archiviazione desiderata supportata dal client SQL. È possibile utilizzare l’interfaccia utente di Query Service per memorizzare i risultati SQL in un set di dati target in Experience Platform; in alternativa, i risultati possono essere salvati nel computer locale.
 
@@ -130,7 +130,7 @@ Per ulteriori informazioni, consulta [Destinazioni di Real-time Customer Data Pl
 
 #### Casi di utilizzo
 
-* Attiva le informazioni sull’attributo del profilo, inclusa l’iscrizione al pubblico, in archivi di dati aziendali interni, strumenti di analisi, sistemi e-mail o sistemi di supporto.
+* Attivazione di informazioni sugli attributi del profilo (inclusa l’appartenenza al pubblico) in archivi dati aziendale, strumenti di analisi o sistemi per e-mail o assistenza.
 * Attivazione dell’appartenenza al pubblico del profilo presso un fornitore pubblicitario esterno a scopo di targeting e personalizzazione del contenuto per il profilo.
 
 #### Considerazioni
@@ -151,7 +151,7 @@ Per ulteriori informazioni, consulta [Azioni personalizzate Journey Optimizer](h
 
 #### Considerazioni
 
-* Sono applicabili i guardrail sulle velocità supportate da [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=it) e gli arricchimenti supportati dal [Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en).
+* Sono applicabili i guardrail sulle velocità supportate da [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=it) e gli arricchimenti supportati dal [Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it).
 * È possibile eseguire azioni personalizzate in streaming una alla volta, per ogni evento o profilo in un percorso. Non è possibile eseguire operazioni in blocco o ottenere dati in uscita in blocco sotto forma di file o richieste aggregate tra diversi percorsi del cliente.
 * Accesso in streaming agli attributi del profilo cliente in tempo reale e agli eventi dell’esperienza che possono essere inclusi nel payload di attivazione.
 * È possibile filtrare i dati evento e applicare semplici trasformazioni di mappatura prima di inviare gli eventi alle destinazioni esterne.
