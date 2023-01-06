@@ -1,8 +1,8 @@
 ---
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
-workflow-type: ht
-source-wordcount: '430'
-ht-degree: 100%
+source-git-commit: b8709e01d7771ac9002fbc286c2d9709ef3d0ca2
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 95%
 
 ---
 # Contribuire articoli
@@ -15,13 +15,13 @@ Questo progetto ha adottato il [codice di condotta open source di Adobe](code-of
 
 ## Informazioni sui contributi ai contenuti Adobe
 
-Consulta la [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/it/contributor/contributor-guide/introduction.html).
+Consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Il modo in cui puoi contribuire dipende da chi sei e dal tipo di modifiche che desideri apportare:
 
 ### Modifiche minori
 
-Se intendi contribuire a un articolo a titolo di cortesia con aggiornamenti minori, leggi l’articolo e fai clic sul collegamento **Edit** (Modifica) nell’articolo stesso, per accedere all’originale in GitHub. Quindi, utilizza l’interfaccia utente di GitHub per apportare le modifiche. Per ulteriori informazioni, consulta la [guida generale per contribuire alla documentazione Adobe](https://docs.adobe.com/content/help/it/contributor/contributor-guide/introduction.html).
+Se intendi contribuire a un articolo a titolo di cortesia con aggiornamenti minori, leggi l’articolo e fai clic sul collegamento **Edit** (Modifica) nell’articolo stesso, per accedere all’originale in GitHub. Quindi, utilizza l’interfaccia utente di GitHub per apportare le modifiche. Per ulteriori informazioni, consulta la [guida generale per contribuire alla documentazione Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Eventuali piccole correzioni o chiarimenti per la documentazione ed esempi di codice inviati in questo archivio sono soggetti alle condizioni d’uso di Adobe.
 
@@ -43,7 +43,7 @@ Se sei un autore tecnico, un manager di programma o uno sviluppatore del team de
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per modifiche di base o creare una copia dell’archivio per contributi di maggiore entità.
 
-Per dettagli consulta la [Guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/content/help/it/contributor/contributor-guide/introduction.html).
+Per dettagli consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Come utilizzare il linguaggio Markdown per formattare l’argomento
 
