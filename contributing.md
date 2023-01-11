@@ -1,8 +1,8 @@
 ---
 source-git-commit: b8709e01d7771ac9002fbc286c2d9709ef3d0ca2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # Come contribuire
@@ -18,15 +18,15 @@ presuppone il rispetto di questo codice. Ti invitiamo a segnalare eventuali comp
 
 ## Documentazione della guida per i collaboratori
 
-Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
 
 ## Hai domande?
 
 Segnala un problema. Gli attuali committer di questo progetto si adoperano per raggiungere il consenso sulla direzione del progetto e per elaborare soluzioni all’interno dei thread di discussione (se opportuno).
 
-## Contratto di licenza per i contributori
+## Contratto di licenza per i collaboratori
 
-Tutti i contributi di terzi a questo progetto devono essere accompagnati da un contratto di licenza per i contributori opportunamente firmato. In questo modo autorizzerai Adobe a ridistribuire i tuoi contributi nell’ambito del progetto. [Firma il Contratto di licenza per i contributori](http://opensource.adobe.com/cla.html). Il Contratto di licenza per i contributori Adobe deve essere inviato una sola volta. Se lo hai già inviato, puoi iniziare subito!
+Tutti i contributi di terzi a questo progetto devono essere accompagnati da un contratto di licenza per collaboratori debitamente firmato. Questo autorizza Adobe a ridistribuire i tuoi contributi nell’ambito del progetto. [Firma il Contratto di licenza per i collaboratori](http://opensource.adobe.com/cla.html). Il Contratto di licenza per i collaboratori Adobe deve essere inviato una sola volta. Se lo hai già inviato, puoi iniziare subito!
 
 ## Revisioni del codice
 
@@ -37,9 +37,9 @@ Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
 submitting a pull request!
 -->
 
-## Da contributore a committer
+## Da collaboratore a committer
 
-Siamo lieti di ricevere contributi dalla nostra community. Se non vuoi limitarti a essere un contributore e sei interessato a diventare un committer, con autorizzazioni per l’accesso in scrittura completo e la possibilità di avere un ruolo più determinante nel progetto, devi essere invitato al progetto. I committer esistenti utilizzano un processo di nomina interno soggetto a un meccanismo di silenzio-assenso prima dell’invio degli inviti. Se pensi di essere idoneo e sei interessato a un maggiore coinvolgimento, rivolgiti agli attuali committer.
+Siamo lieti di ricevere contributi dalla nostra community. Se desideri spingerti oltre il ruolo di collaboratore e diventare un committer con pieno accesso in scrittura e voce in capitolo nel progetto, devi essere invitato nel progetto. I committer esistenti utilizzano un processo di nomina interno soggetto a un meccanismo di silenzio-assenso prima dell’invio degli inviti. Se pensi di essere idoneo e sei interessato a un maggiore coinvolgimento, rivolgiti agli attuali committer.
 
 ## Problemi di sicurezza
 
