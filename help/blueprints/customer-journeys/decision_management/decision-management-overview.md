@@ -1,18 +1,18 @@
 ---
-title: Panoramica di Gestione delle decisioni
+title: Progetti di gestione delle decisioni
 description: Presenta offerte personalizzate lungo i vari percorsi dei clienti.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
-workflow-type: ht
-source-wordcount: '759'
-ht-degree: 100%
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '757'
+ht-degree: 93%
 
 ---
 
-# Journey Optimizer - Panoramica di Gestione delle decisioni
+# Journey Optimizer - blueprint di gestione delle decisioni
 
-Per ulteriori informazioni sul servizio Gestione delle decisioni, consulta la documentazione del prodotto, disponibile [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
+Per ulteriori informazioni sulla gestione delle decisioni, consulta [documentazione del prodotto](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 
 La funzionalità Gestione delle decisioni è un servizio Adobe fornito come parte di Adobe Journey Optimizer. Questo blueprint riassume i casi di utilizzo e le capacità tecniche dell’applicazione e descrive nel dettaglio i vari componenti dell’architettura di Gestione delle decisioni e le relative considerazioni.
 
@@ -25,7 +25,7 @@ La funzionalità Gestione delle decisioni è composta da due componenti principa
 
 <img src="../assets/offers_overview.png" alt="Gestione delle decisioni" style="width:100%; border:1px solid #4a4a4a" />
 
-Il servizio Gestione delle decisioni può essere implementato in due modi: tramite rete Edge o tramite hub. Ciascuno di questi metodi dispone di uno specifico set di interfacce e protocolli per il funzionamento del servizio, come descritto nei rispettivi blueprint indicati di seguito. Per ulteriori informazioni, consulta la documentazione del servizio Gestione delle decisioni, disponibile [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html?lang=it).
+Il servizio Gestione delle decisioni può essere implementato in due modi: tramite rete Edge o tramite hub. Ciascuno di questi metodi dispone di uno specifico set di interfacce e protocolli per il funzionamento del servizio, come descritto nei rispettivi blueprint indicati di seguito. Ulteriori dettagli sono disponibili nella [Documentazione di Gestione delle decisioni](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html?lang=it).
 
 ## Gestione delle decisioni tramite hub
 
@@ -33,7 +33,7 @@ Il primo approccio prevede l’utilizzo dell’hub Adobe Experience Platform, un
 
 * L’idoneità alle offerte può funzionare in base al profilo cliente in tempo reale completo, inclusi tutti gli attributi e gli eventi delle esperienze.
 
-### Casi di utilizzo per Gestione delle decisioni tramite hub
+### Casi di utilizzo per la gestione delle decisioni sull&#39;hub
 
 * Offerte personalizzate per chioschi ed esperienze in-store.
 * Offerte personalizzate tramite esperienze assistite da agenti, come call center o interazioni di vendita.
@@ -50,7 +50,7 @@ Il primo approccio prevede l’utilizzo dell’hub Adobe Experience Platform, un
 
 Il secondo approccio prevede l’utilizzo della rete Experience Edge, un’infrastruttura geograficamente distribuita a livello globale per la distribuzione rapida di esperienze con una latenza inferiore al secondo o di millisecondi. Per ridurre al minimo la latenza, l’esperienza del consumatore finale viene eseguita dall’infrastruttura Edge geograficamente più vicina. Il servizio Gestione delle decisioni sulla rete Edge è progettato per offrire ai consumatori esperienze in tempo reale, ad esempio con richieste di personalizzazione in entrata per web e dispositivi mobili. Per ulteriori informazioni su Gestione delle decisioni tramite rete Edge, consulta il blueprint [Gestione delle decisioni sulla rete Edge](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=it).
 
-### Casi di utilizzo per Gestione delle decisioni tramite rete Edge
+### Casi di utilizzo per la gestione delle decisioni sul bordo
 
 * Personalizzazione online tramite esperienze web o mobile in entrata.
 * Esecuzione di percorsi cross-channel: offerte coerenti su web, dispositivi mobili, e-mail e altri canali di interazione tramite Adobe Journey Optimizer.

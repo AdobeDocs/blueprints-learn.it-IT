@@ -4,10 +4,10 @@ description: Attivazione per Google Customer Match.
 solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: 32bdc04d-b101-4b17-af27-329e5c71d888
-source-git-commit: 6fa38772f77ffd565580db55f8f2889b0e703949
-workflow-type: ht
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Acquisisci i dati dei clienti da più origini per creare una singola vista del profilo del cliente; segmenta i profili per creare tipi di pubblico per le attività di marketing e personalizzazione; condividi questi tipi di pubblico in social ad network come Google Customer Match per il targeting e la personalizzazione delle campagne. Google Customer Match consente di utilizzare dati online e offline per raggiungere e coinvolgere nuovamente i clienti sulle piattaforme di proprietà e gestione Google, come Search, Shopping, Gmail e YouTube.
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Targeting per tipi di pubblico noti su destinazioni social e pubblicitarie.
 * Personalizzazione online con attributi online e offline.
@@ -29,7 +29,7 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
 
 <img src="../assets/gcm.svg" alt="Architettura di riferimento per l’attivazione di Google Customer Match" style="width:90%; border:1px solid #4a4a4a" />
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 1. Configurare gli spazi dei nomi di identità da utilizzare nelle origini dati per i profili.
    * Utilizzare gli spazi dei nomi predefiniti come e-mail, e-mail con hash SHA256, se disponibili.

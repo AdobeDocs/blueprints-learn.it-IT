@@ -1,17 +1,18 @@
 ---
-title: Servizio Segment Match
+title: Servizio Segment Match blueprint
 description: Scopri il servizio [!UICONTROL Segment Match] per Adobe Experience Platform (AEP). [!UICONTROL Segment Match] è un servizio di collaborazione sui dati che consente di scambiare dati sui segmenti basati su identificatori comuni del settore nel rispetto della privacy e in modo sicuro e gestito.
 solution: Experience Platform
-source-git-commit: a5bf86b8606d40a0686c667f83516e3b495350b8
-workflow-type: ht
-source-wordcount: '1764'
-ht-degree: 100%
+exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '1766'
+ht-degree: 99%
 
 ---
 
-# Servizio Segment Match
+# Servizio Segment Match blueprint
 
-Il servizio Segment Match consente ai brand partner di condividere i tipi di pubblico nei rispettivi ambienti Experience Platform. Per i brand è importante rivolgersi ai clienti in base ai dati raccolti dalle loro relazioni dirette con i consumatori. Grazie a migliori sistemi per la gestione della governance, delle autorizzazioni e delle preferenze, gli esperti di marketing possono ottimizzare ulteriormente il pubblico autenticato di prime parti con partner chiave.
+La corrispondenza dei segmenti consente ai marchi partner di condividere i tipi di pubblico nei rispettivi ambienti di Experience Platform. Per i brand è importante rivolgersi ai clienti in base ai dati raccolti dalle loro relazioni dirette con i consumatori. Grazie a migliori sistemi per la gestione della governance, delle autorizzazioni e delle preferenze, gli esperti di marketing possono ottimizzare ulteriormente il pubblico autenticato di prime parti con partner chiave.
 
 [!UICONTROL Segment Match] è un servizio di collaborazione sui dati che consente ai clienti di Experience Platform (AEP) (o _partner_) di scambiarsi dati sui segmenti basati su identificatori comuni del settore nel rispetto della privacy e in modo sicuro e gestito.
 

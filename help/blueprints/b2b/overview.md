@@ -1,17 +1,17 @@
 ---
-title: Analisi e attivazione B2B
+title: Analisi e attivazione B2B blueprint
 description: Offri a un pubblico basato su account esperienze personalizzate in base al profilo con Real-time Customer Data Platform.
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: bd0a93ef2efa702b4d4f3eb20d126ee22fb113af
-workflow-type: ht
-source-wordcount: '229'
-ht-degree: 100%
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 97%
 
 ---
 
-# Analisi e attivazione B2B
+# Blueprint B2B di Analytics e di attivazione
 
 L’attivazione di profili e pubblico B2B è fondamentale per il successo nel mondo del data-driven marketing. Tuttavia, molti brand continuano a concentrarsi sull’attivazione in base al canale, che spesso risulta in incoerenza a livello di portata e personalizzazione.
 

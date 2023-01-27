@@ -1,32 +1,32 @@
 ---
-title: Attivazione in base a pubblico e profili
+title: Blueprint di Audience e Profile Activation
 description: Offri ai clienti esperienze personalizzate basate su profili e attivate dal pubblico con Real-time Customer Data Platform.
 solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 100%
+source-wordcount: '872'
+ht-degree: 94%
 
 ---
 
 
-# Attivazione in base a pubblico e profili
+# Attivazione in base a pubblico e profili blueprint
 
-L’attivazione in base a pubblico e profili è la chiave del successo nel mondo del data-driven marketing. Tuttavia, molti brand continuano a concentrarsi sull’attivazione in base al canale, che spesso risulta in incoerenza a livello di portata e personalizzazione.
+L’attivazione del pubblico e del profilo è la chiave del successo in un mondo di marketing basato sui dati. Tuttavia, molti brand continuano a concentrarsi sull’attivazione in base al canale, che spesso risulta in incoerenza a livello di portata e personalizzazione.
 
 Con l’approccio di priorità al canale, ogni canale funziona come un comparto stagno in cui le attività di personalizzazione si rivolgono solo ai clienti che interagiscono con il brand su quel determinato canale. È una modalità che non riflette la realtà: i clienti infatti interagiscono con i brand tramite diversi punti di contatto. L’attivazione in base a pubblico e profili consente di collegare le interazioni del cliente attraverso più canali, per ottenere dati di pubblico e profili centralizzati che possono essere attivati su tutti i canali.
 
-| Blueprint | Descrizione | Applicazioni Experience Cloud |
+| Blueprint | Descrizione | Applicazioni di Experience Cloud |
 |---|---|---|
 | **[Attivazione del pubblico con dati anonimi](anonymous.md)** | <ul><li>Rivolgiti a un pubblico attraverso i vari canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti.</li><li>Per una maggiore personalizzazione, puoi integrarli con dati sul pubblico di terze parti.</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
 | **[Attivazione dei clienti noti](known.md)** | <ul><li>Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie. </li><li>Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistemi CRM o programma fedeltà, insieme a dati sul comportamento online.</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager (opzionale)</li></ul> |
-| **[Attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md)** | <ul><li>Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.</li><li>Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform Activation</li><li>Applicazioni Experience Cloud</li></ul> |
+| **[Attivazione di tipi di pubblico e profili con applicazioni Experience Cloud](platform-and-applications.md)** | <ul><li>Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.</li><li>Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform Activation</li><li>Applicazioni Experience Cloud</li></ul> |
 | **[Servizio Segment Match](segment-match.md)** | <ul><li>Grazie a migliori sistemi per la gestione della governance, delle autorizzazioni e delle preferenze, gli esperti di marketing possono ottimizzare ulteriormente il pubblico autenticato di prime parti con partner chiave.</li></ul> | <ul><li>Adobe Experience Platform </li></ul> |
 
-## Architettura di Real-time Customer Profile
+## Architettura del profilo cliente in tempo reale
 
 L’illustrazione seguente illustra i componenti core di Real-time Customer Profile di Experience Platform.
 
@@ -38,13 +38,13 @@ I record a cui è associata una sola identità non vengono elaborati dal servizi
 
 L’unione di frammenti di profilo si verifica quando il grafico delle identità fornisce le relazioni tra i vari frammenti di profilo sorgente che sono stati correlati. Il criterio di unione determina quali frammenti di origine e quale grafico di identità utilizzare al momento dell’unione dei frammenti. Ogni volta che si accede al profilo, viene eseguita l’unione dei frammenti di profilo affinché la visualizzazione combinata del profilo sia sempre aggiornata. Le regole di governance e policy garantiscono che solo i segmenti e gli attributi autorizzati possano essere attivati nelle destinazioni specificate.
 
-## Panoramica sulla segmentazione e sulle destinazioni
+## Panoramica sulla segmentazione e sulla destinazione
 
 L’illustrazione seguente descrive i vari metodi di segmentazione e pattern di attivazione di profili e pubblico.
 
 <img src="assets/segmentation_destination_overview.png" alt="Architettura di riferimento per Real-time Customer Profile" style="border:1px solid #4a4a4a" width="90%"/>
 
-## Guardrail per i blueprint Attivazione in base a pubblico e profili
+## Guardrail per i progetti di attivazione del pubblico e del profilo
 
 * Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md) e i [guardrail per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
@@ -66,7 +66,7 @@ L’illustrazione seguente descrive i vari metodi di segmentazione e pattern di 
 * L’attivazione di eventi di esperienza non elaborati non è supportata. Per l’attivazione in base agli eventi di esperienza, è necessario creare segmenti con le regole necessarie per includere o escludere la logica dell’evento di esperienza. Si crea così un segmento definito rispetto agli eventi di esperienza e l’appartenenza a tale può essere attivata come proxy per l’attivazione di eventi di esperienza non elaborati. Considera anche l’utilizzo di [!UICONTROL Launch Server Side] per attivare eventi di esperienza non elaborati raccolti tramite SDK.
 
 
-## Articoli di blog correlati
+## Post di blog correlati
 
 * [[!DNL Blueprints for Audience Activation in Adobe Experience Platform]](https://medium.com/adobetech/a-blueprint-for-audience-activation-in-adobe-experience-platform-b2b30fae90fd)
 * [[!DNL Adobe Experience Platform Web SDK for Audience Management]](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)

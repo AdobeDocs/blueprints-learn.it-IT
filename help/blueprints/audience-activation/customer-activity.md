@@ -1,19 +1,19 @@
 ---
-title: Blueprint per hub delle attività dei clienti
-description: '"Le ricerche in [!UICONTROL Real-time Customer Profile] forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore."'
+title: Blueprint di Customer Activity Hub
+description: "Le ricerche in [!UICONTROL Real-time Customer Profile] forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore."
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
-workflow-type: ht
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
-# Blueprint per hub delle attività dei clienti
+# Blueprint di Customer Activity Hub
 
-Il blueprint per hub delle attività dei clienti mostra come le applicazioni esterne possono accedere a [!UICONTROL Real-time Customer Profile] di Adobe Experience Platform.
+La blueprint di Customer Activity Hub mostra come le applicazioni esterne possono accedere a Adobe Experience Platform [!UICONTROL Profilo cliente in tempo reale].
 
 Le applicazioni esterne possono accedere ai profili mediante una richiesta GET tramite API. Gli attributi, gli eventi, le appartenenze ai segmenti e le funzioni basate sul modello memorizzati nel profilo possono quindi essere utilizzati anche in tali applicazioni esterne non Adobe.
 
@@ -23,7 +23,7 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 >
 >La latenza corrente supportata dall’API di ricerca profilo è di circa 500 millisecondi, che rende questo approccio inadatto per l’integrazione del profilo con motori di decisione in tempo reale, ad esempio per la personalizzazione web o mobile della pagina corrente.
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Contesto del consumatore più approfondito, per le interazioni tramite operatore, come le esperienze di assistenza tecnica o commerciale. Utilizzando la ricerca del profilo in Experience Platform, gli agenti possono ricevere maggiori informazioni di contesto sul cliente, come acquisti recenti, interazioni con le campagne, tendenze, pubblico di appartenenza e altri attributi e informazioni che vengono memorizzati nel profilo del cliente in tempo reale.
 
@@ -35,7 +35,7 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 * [Guardrail per i dati di [!UICONTROL Real-time Customer Profile]](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.

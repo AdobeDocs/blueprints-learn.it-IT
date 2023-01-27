@@ -1,16 +1,16 @@
 ---
-title: Blueprint per Journey Optimizer - Messaggistica di terze parti
+title: Journey Optimizer - Blueprint di messaggistica di terze parti
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
-workflow-type: ht
-source-wordcount: '829'
-ht-degree: 100%
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '823'
+ht-degree: 92%
 
 ---
 
-# Messaggistica di terze parti
+# Blueprint di messaggistica di terze parti
 
 Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
 
@@ -52,7 +52,7 @@ Ulteriori guardrail Journey Optimizer:
 * Segmenti batch: necessario comprendere il volume giornaliero di utenti qualificati e accertarsi che il sistema di destinazione sia in grado di gestire il throughput burst per percorso e per tutti i percorsi.
 * Segmenti in streaming: il burst iniziale delle qualifiche dei profili deve poter essere gestito insieme al volume giornaliero di qualificazione dello streaming, per ogni percorso e per tutti i percorsi.
 * La funzionalità Gestione delle decisioni non è supportata
-* Integrazioni in uscita verso sistemi di terze parti
+* Integrazioni in uscita con sistemi di terze parti
    * Singoli indirizzi IP statici non sono supportati, in quanto la nostra infrastruttura è multi-tenant (inserire tutti gli indirizzi IP dei datacenter nell’elenco degli IP consentiti).
    * Per le azioni personalizzate sono supportati solo i metodi POST e PUT.
    * Autenticazioni supportate: token | password | OAuth2
@@ -69,23 +69,23 @@ Sistema di messaggistica di terze parti
    * Tipi di autenticazione: token | password | OAuth2 supportati tramite Journey Optimizer
    * Durata cache autenticazione: per quanto tempo resta valido il token? 
 * Se è supportata solo l’acquisizione batch, è necessario l’invio in streaming a un motore di archiviazione cloud come Amazon Kinesis o Azure Event Grid 1st.
-   * I dati possono essere inviati in batch a questi motori di archiviazione cloud e incanalati nel sistema di terze parti.
-   * Eventuale middleware necessario deve essere fornito dal cliente o da terze parti.
+   * I dati possono essere batch di questi motori di archiviazione cloud e incanalati in terze parti
+   * Qualsiasi middleware richiesto è responsabilità del cliente o di terze parti di fornire
 
 <br>
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 ### Adobe Experience Platform
 
 #### Schema/set di dati
 
-1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) in Experience Platform, in base ai dati forniti dal cliente
+1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
 1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
-1. [Creare i criteri](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) necessari per applicare la governance alle destinazioni
+1. [Creare le policy](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) che necessarie per applicare la governance alle destinazioni
 
-#### Profilo/Identità
+#### Profilo/identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
@@ -93,7 +93,7 @@ Sistema di messaggistica di terze parti
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Journey
 
-#### Origini/Destinazioni
+#### Origini/destinazioni
 
 1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origini.
 
@@ -103,13 +103,13 @@ Sistema di messaggistica di terze parti
 1. Configurare le origini dati esterne.
 1. Configurare le azioni personalizzate per l’applicazione di terze parti.
 
-### Configurazione push mobile (opzionale per l’eventuale raccolta di token da terze parti)
+### Configurazione push per dispositivi mobili (facoltativo se 3rd party può raccogliere token)
 
 1. Implementare Experience Platform Mobile SDK per raccogliere i token push e le informazioni di accesso da associare ai profili cliente noti.
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
    * Adobe Journey Optimizer
    * Rete Edge di Adobe Experience Platform
-   * Identità  per rete Edge
+   * Identità    per rete Edge
    * Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
 1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).

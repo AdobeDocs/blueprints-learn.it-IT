@@ -3,20 +3,20 @@ title: Journey Optimizer - Blueprint per messaggistica attivata e Adobe Experien
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1044'
+ht-degree: 97%
 
 ---
 
-# Journey Optimizer
+# Journey Optimizer blueprint
 
 Adobe Journey Optimizer è un sistema appositamente progettato che consente ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli là dove si trovano. Le funzionalità di gestione dei dati sono state trasferite in Adobe Experience Platform, consentendo ai team di marketing di concentrarsi sul loro punto di forza: la creazione di percorsi cliente d’eccellenza e conversazioni personalizzate.  Questo blueprint delinea le funzionalità tecniche dell’applicazione e descrive i vari componenti dell’architettura di Adobe Journey Optimizer.
 
 <br>
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Messaggi attivati
 * Conferme di benvenuto e registrazione
@@ -33,7 +33,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 
 <br>
 
-## Scenari del blueprint
+## Scenari di blueprint
 
 | Scenario | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
@@ -41,7 +41,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 
 <br>
 
-## Pattern di integrazione
+## Modelli di integrazione
 
 | Integrazione | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
@@ -83,25 +83,25 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
    * E-mail
    * Push (FCM/APNS)
    * Azioni personalizzate (tramite API Rest)
-* Integrazioni in uscita verso sistemi di terze parti
+* Integrazioni in uscita con sistemi di terze parti
    * Singoli indirizzi IP statici non sono supportati, in quanto la nostra infrastruttura è multi-tenant (inserire tutti gli indirizzi IP dei datacenter nell’elenco degli IP consentiti).
    * Per le azioni personalizzate sono supportati solo i metodi POST e PUT.
    * Autenticazione tramite nome utente/password o token di autorizzazione
 * Non è possibile creare pacchetti e spostare singoli componenti di Adobe Experience Platform o Journey Optimizer tra diverse sandbox. È necessario reimplementarli nei nuovi ambienti.
 
-### Guardrail per l’acquisizione dei dati
+### Garanzie per l’inserimento dei dati
 
 <img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
-### Guardrail per l’attivazione
+### Guardrail di attivazione
 
 <img src="../experience-platform/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 ### Adobe Experience Platform
 
@@ -110,9 +110,9 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
 1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
-1. [Creare i criteri](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) necessari per applicare la governance alle destinazioni
+1. [Creare le policy](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) che necessarie per applicare la governance alle destinazioni
 
-#### Profilo/Identità
+#### Profilo/identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
@@ -120,7 +120,7 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Journey
 
-#### Origini/Destinazioni
+#### Origini/destinazioni
 
 1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origini.
 

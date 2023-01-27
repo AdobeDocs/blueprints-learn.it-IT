@@ -1,16 +1,16 @@
 ---
-title: Modello di integrazione per Real-Time CDP con Adobe Campaign v7 e Campaign Standard
+title: Real-Time CDP con modello di integrazione Adobe Campaign v7 e Campaign Standard
 description: Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo reale e lo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate.
 solution: Real-time Customer Data Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
-source-git-commit: 163dd644b690c1f5554a3929e1f83c121e132df5
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '804'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
-# Modello di integrazione per Real-Time CDP e Adobe Campaign
+# Modello di integrazione Real-Time CDP con Adobe Campaign
 
 Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo reale e lo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate.
 
@@ -25,7 +25,7 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
 
 ## Architettura
 
-<img src="assets/rtcdp-campaign-architecture.svg" alt="Architettura di riferimento del blueprint per il modello di integrazione di messaggistica batch e Adobe Experience Platform" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/rtcdp-campaign-architecture.svg" alt="Architettura di riferimento per il pattern di integrazione di Messaggistica in batch e Adobe Experience Platform" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -50,17 +50,17 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
 * L’attivazione è limitata a ogni 24 ore
 * Sono disponibili per l’attivazione solo gli attributi dello schema di unione (nessun supporto per array/mappe/eventi esperienza)
 * Si raccomanda di non superare i 20 attributi per segmento
-* Un file per segmento di tutti i profili con stato di appartenenza “realized” OPPURE, se la partecipazione al segmento viene aggiunta al file come attributo, sia i profili “realized” che “exited”
+* Un file per segmento di tutti i profili con appartenenza al segmento &quot;realizzata&quot; O se l’appartenenza al segmento viene aggiunta come attributo nel file dei profili &quot;realizzata&quot; e &quot;uscita&quot;
 * Sono supportate le esportazioni incrementali o di segmenti completi.
 * La crittografia dei file non è supportata.
 
 <br>
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 ### Adobe Experience Platform
 
-#### Schema/Set di dati
+#### Schema/set di dati
 
 1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
 1. Creare schemi di Adobe Campaign per broadLog, trackingLog, indirizzi non consegnabili e preferenze profilo (opzionale)
@@ -68,7 +68,7 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
 1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
 1. [Creare le policy](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) che necessarie per applicare la governance alle destinazioni
 
-#### Profilo/Identità
+#### Profilo/identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
@@ -76,7 +76,7 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Adobe Campaign
 
-#### Origini/Destinazioni
+#### Origini/destinazioni
 
 1. [Origini e destinazioni di Experience Platform e Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=it)
 1. [Origini e destinazioni di Experience Platform e Campaign v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=it)

@@ -1,18 +1,18 @@
 ---
-title: Customer Journey Analytics con Real-time Customer Data Platform
+title: Customer Journey Analytics con Real-time Customer Data Platform blueprint
 description: Unifica e analizza dati e comportamenti dei clienti da tutto il percorso del cliente in Customer Journey Analytics, e pubblica i tipi di pubblico da CJA a RTCDP
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
-source-git-commit: 985f7320db7c77b8541ec4ef76b1eb7ad0caae56
-workflow-type: ht
-source-wordcount: '392'
-ht-degree: 100%
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 93%
 
 ---
 
-# Customer Journey Analytics con Real-time Customer Data Platform
+# Customer Journey Analytics con Real-time Customer Data Platform blueprint
 
 Crea e pubblica i tipi di pubblico identificati da Customer Journey Analytics (CJA) nel profilo cliente in tempo reale in Adobe Experience Platform, per eseguire attività di targeting dei clienti e personalizzazione. Questa soluzione è ideale per creare tipi di pubblico sulla base di dati storici, nonché tipi di pubblico più mirati con filtri granulari e campi calcolati in Customer Journey Analytics.
 
@@ -20,11 +20,11 @@ Crea e pubblica i tipi di pubblico identificati da Customer Journey Analytics (C
 
 Consulta la seguente documentazione per informazioni su come implementare e configurare la pubblicazione dei tipi di pubblico da Customer Journey Analytics a Real-time Customer Data Platform. [Documentazione](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it)
 
-## Architettura per i blueprint per Customer Journey Analytics
+## Architettura per Customer Journey Analytics blueprint
 
 ![Diagramma dell’architettura](assets/CJA_RTCDP.svg)
 
-## Diagramma dei guardrail relativi ai blueprint per Customer Journey Analytics
+## Diagramma del Guardrail per i progetti di Customer Journey Analytics
 
 * Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
@@ -42,11 +42,11 @@ Consulta la seguente documentazione per informazioni su come implementare e conf
 
 * I messaggi di CJA vengono elaborati anche dal servizio Identity? Ad esempio, CJA è in grado di aggiungere identità a un grafo di identità profilo tramite la condivisione del pubblico? No, il servizio Identity non elabora i messaggi di CJA.
 
-## Articoli di blog correlati
+## Post di blog correlati
 
 * [[!DNL Blueprint for Multi-Channel Orchestration in Adobe Experience Platform]](https://medium.com/adobetech/blueprint-for-multi-channel-orchestration-in-adobe-experience-platform-c68317e94184)
 * [[!DNL Leveraging External Data Platforms in Adobe Experience Platform Journey Orchestration]](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
 * [[!DNL Event-Based Triggering on Adobe Experience Platform Orchestration Service using Apache Airflow]](https://medium.com/adobetech/event-based-triggering-on-adobe-experience-platform-orchestration-service-using-apache-airflow-8607b28251f1)
 * [[!DNL Adobe Campaign Classic Integration with Journey Orchestration]](https://medium.com/adobetech/adobe-campaign-classic-integration-with-journey-orchestration-ae577653281)
-* [[!DNL Demonstrating the Power of Adobe’s New Journey Orchestration Service to Build Personalized Omnichannel Experiences in Real-Time]](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
+* [[!DNL Demonstrating the Power of Adobe's New Journey Orchestration Service to Build Personalized Omnichannel Experiences in Real-Time]](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
 * [[!DNL Journey Orchestration in an Omnichannel World]](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)

@@ -1,18 +1,18 @@
 ---
-title: Blueprint per analisi e intelligence dei dati
+title: Blueprint di analisi e intelligenza dei dati
 description: Questo blueprint dimostra la capacità di Adobe Experience Platform di eseguire query esplorative e analisi dei dati presenti nel data lake.
 solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: a972ea56-d1c8-45da-9044-ed31222a2441
-source-git-commit: 6d44401fba8cc75402d4303825e32e7948753449
-workflow-type: ht
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
-# Blueprint per analisi e intelligence dei dati
+# Blueprint di analisi e intelligenza dei dati
 
 Il blueprint per analisi e intelligence dei dati comprende la capacità di Adobe Experience Platform di eseguire query esplorative e analisi dei dati presenti nel data lake.
 
@@ -20,7 +20,7 @@ Experience Platform [!UICONTROL Query Service] consente di eseguire query SQL su
 
 Experience Platform consente connessioni con client SQL, interfacce e strumenti di Business Intelligence (BI) di terze parti per connettersi, accedere e interrogare direttamente i dati all’interno di Experience Platform, utilizzando il protocollo [!DNL PostgreSQL].
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Query interattiva e aggregazione dei dati
 * Accesso per righe e colonne ai dati acquisiti per l’esplorazione e la convalida
@@ -41,9 +41,9 @@ Per ulteriori casi d’uso comuni per Query Service, consulta [Casi d’uso per 
 Per informazioni su best practice e guardrail, consulta la documentazione di Query Service.
 [Guida a Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
-1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
+1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
 1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
 1. Confermare che i dati siano disponibili per [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=it).

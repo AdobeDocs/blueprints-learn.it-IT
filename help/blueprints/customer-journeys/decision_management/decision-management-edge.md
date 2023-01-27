@@ -1,16 +1,16 @@
 ---
-title: Gestione delle decisioni tramite rete Edge
+title: Gestione delle decisioni sul blueprint Edge
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, incluse le esperienze web e mobili in tempo reale.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '856'
+ht-degree: 95%
 
 ---
 
-# Journey Optimizer - Gestione delle decisioni tramite rete Edge
+# Journey Optimizer - Gestione delle decisioni sul blueprint Edge
 
 Per ulteriori informazioni sul servizio Gestione delle decisioni, consulta la documentazione del prodotto (disponibile [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)) e la panoramica di Gestione delle decisioni (disponibile [QUI](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=it)).
 
@@ -24,7 +24,7 @@ Questo blueprint tratta le specifiche di Gestione delle decisioni sulla rete Edg
 
 Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il blueprint [Gestione delle decisioni tramite hub](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=it).
 
-## Casi di utilizzo per Gestione delle decisioni tramite rete Edge
+## Casi di utilizzo per la gestione delle decisioni sul bordo
 
 * Personalizzazione online tramite esperienze web o mobile in entrata.
 * Esecuzione di percorsi cross-channel: offerte coerenti su web, dispositivi mobili, e-mail e altri canali di interazione tramite Adobe Journey Optimizer.
@@ -37,7 +37,7 @@ Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il 
 
 <br>
 
-## Pattern di integrazione
+## Modelli di integrazione
 
 | Integrazione | Descrizione |
 | :-- | :--- |
@@ -62,13 +62,13 @@ Adobe Experience Platform
 * Accesso al profilo Edge in tempo reale. Nel profilo saranno disponibili solo i tipi di pubblico e gli attributi di profilo Edge proiettati.
 * Se vuoi applicare la personalizzazione alla prima esperienza, è preferibile utilizzare l’approccio tramite hub, con profilo completo. Per la prima esperienza Edge, infatti, il profilo Edge deve essere sincronizzato dall’hub. Pertanto, la prima esperienza tramite rete Edge non includerà i dati del profilo precedentemente caricati sull’hub.
 
-### Guardrail per l’acquisizione dei dati
+### Garanzie per l’inserimento dei dati
 
 <img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
-### Guardrail per l’attivazione
+### Guardrail di attivazione
 
 <img src="../../experience-platform/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" />
 
@@ -88,26 +88,26 @@ Oppure
 
 <br>
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 ### Adobe Experience Platform
 
 #### Schema/set di dati
 
-1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) in Experience Platform, in base ai dati forniti dal cliente
+1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
 1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
-1. [Creare i criteri](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) necessari per applicare la governance alle destinazioni
+1. [Creare le policy](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) che necessarie per applicare la governance alle destinazioni
 
-#### Profilo/Identità
+#### Profilo/identità
 
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
+1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
 1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
 1. Creare segmenti da utilizzare in Journey
 
-#### Origini/Destinazioni
+#### Origini/destinazioni
 
 1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origini.
 
@@ -115,6 +115,6 @@ Oppure
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=it)
-* [Gestione delle decisioni per Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+* [Gestione delle decisioni per Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 * [Descrizione del prodotto Adobe Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Descrizione del prodotto Adobe Gestione delle decisioni](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Descrizione del prodotto Adobe Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)

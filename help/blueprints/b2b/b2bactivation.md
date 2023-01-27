@@ -1,21 +1,21 @@
 ---
-title: Attivazione B2B
+title: Blueprint per pubblico e attivazione del profilo B2B
 description: Offri a un pubblico basato su account esperienze personalizzate secondo i profili con Real-time Customer Data Platform.
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
-workflow-type: ht
-source-wordcount: '837'
-ht-degree: 100%
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '842'
+ht-degree: 98%
 
 ---
 
-# Attivazione di profili e pubblico B2B
+# Attivazione di profili e pubblico B2B blueprint
 
 Associa a un singolo cliente le informazioni relative all’account, alle opportunità e ai lead, per creare profili B2B con cui migliorare la personalizzazione e il targeting su tutti i canali.
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Crea un pubblico basato su persone e utilizzalo per il targeting e la personalizzazione su canali diversi, grazie a dati B2B quali account, opportunità e lead.
 * Attiva uno specifico pubblico in qualsiasi destinazione di Experience Platform per attività di targeting e personalizzazione.
@@ -24,7 +24,7 @@ Associa a un singolo cliente le informazioni relative all’account, alle opport
 
 * Real-time Customer Data Platform B2B Edition
 
-## Pattern di integrazione
+## Modelli di integrazione
 
 * Origini dati B2B (Marketo, Salesforce, ecc.) -> Real-time Customer Data Platform B2B Edition -> Destinazioni
 È possibile utilizzare diverse origini dati B2B per associare i dati da account, lead, opportunità e persone a Real-time Customer Data Platform B2B Edition.
@@ -81,7 +81,7 @@ Di seguito sono descritti i pattern supportati per la mappatura delle istanze di
 * Per informazioni specifiche sulle destinazioni, consulta la relativa documentazione. [Guardrail per destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=it)
 
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 Per informazioni su come implementare e configurare Real-time Customer Data Platform B2B Edition, consulta la relativa documentazione. [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
 

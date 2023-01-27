@@ -1,32 +1,32 @@
 ---
-title: Diagramma dell’architettura di Adobe Experience Platform e relative applicazioni
+title: Diagrammi dell'architettura di Adobe Experience Platform e applicazioni
 description: Questo diagramma di architettura mostra come Adobe Experience Platform si correla ad altre applicazioni e servizi applicativi Adobe Experience Cloud.
 solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 122e317b34c7704dc80da11d08b9a8ff955dfa8c
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '989'
+ht-degree: 96%
 
 ---
 
-# Adobe Experience Platform e relative applicazioni
+# Diagrammi dell&#39;architettura di Adobe Experience Platform e applicazioni
 
-## Diagramma dell’architettura di Adobe Experience Platform e relative applicazioni
+## Diagramma dell&#39;architettura di Adobe Experience Platform e delle applicazioni
 
 Questo diagramma di architettura mostra come Adobe Experience Platform si correla alle applicazioni e ai servizi applicativi Adobe Experience Cloud.
 
 <img src="assets/aep+apps_vertical.svg" alt="Experience Platform e applicazioni" style="border:1px solid #4a4a4a; width:90%;" />
 
-## Diagramma dettagliato dell’architettura di Adobe Experience Platform e relative applicazioni
+## Diagramma dettagliato dell&#39;architettura di Adobe Experience Platform e delle applicazioni
 
 <img src="assets/aep-app-architecture.svg" alt="Experience Platform e applicazioni" style="border:1px solid #4a4a4a; width:90%;" />
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
-## Integrazioni di applicazioni Adobe Experience Platform ed Experience Cloud
+## Integrazioni di applicazioni Adobe Experience Platform e Experience Cloud
 
 <table class="relative-table wrapped" style="width: 100%;">
 <colgroup>
@@ -94,8 +94,8 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td>
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=en">Attivazione del pubblico con dati anonimi</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html">Attivazione dei clienti noti</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=it">Attivazione del pubblico con dati anonimi</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
@@ -240,8 +240,8 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">Attivazione dei clienti noti</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
 </tr>
@@ -259,8 +259,8 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">Attivazione dei clienti noti</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">Attivazione con Experience Platform e applicazioni correlate</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
 </ul>
 </td>
 </tr>

@@ -1,18 +1,18 @@
 ---
-title: 'Customer journey '
+title: Blueprint del Percorso cliente
 description: Offri esperienze individuali e just-in-time ai clienti su più schermi.
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard, Experience Platform
 kt: null
 thumbnail: null
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
-workflow-type: ht
-source-wordcount: '258'
-ht-degree: 100%
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '260'
+ht-degree: 97%
 
 ---
 
-# Customer journey
+# Blueprint del Percorso cliente
 
 Il customer journey (o percorso del cliente) permette ai brand di interagire e comunicare in modo proattivo con i propri clienti attraverso canali quali e-mail, SMS e avvisi per dispositivi mobili. Gli strumenti di orchestrazione possono anche essere integrati con altri canali di interazione, ad esempio con i canali in entrata, per la personalizzazione su web e dispositivi mobili condividendo lo stato del pubblico con i motori di decisione degli altri canali. Vari fattori determinano quali applicazioni e opzioni di implementazione utilizzare per i customer journey, ma possono essere riassunti in due approcci diversi: reagire al momento del coinvolgimento di un cliente (attivato) OPPURE reagire al coinvolgimento di un gruppo di clienti (pianificato).
 

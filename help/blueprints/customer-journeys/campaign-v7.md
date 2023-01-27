@@ -1,22 +1,22 @@
 ---
-title: Blueprint per Campaign v7
+title: Blueprint di Campaign v7
 description: Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i canali di marketing tradizionali come e-mail e direct mail. Fornisce solide funzionalità di ETL e gestione dei dati per agevolare la creazione e cura di una campagna perfetta. Il suo motore di orchestrazione consente programmi di marketing multi-touch avanzati, con attenzione particolare ai percorsi basati su batch. Inoltre, viene fornito con un server di messaggistica in tempo reale che consente ai team di marketing di inviare messaggi predefiniti basati su un payload completo da qualsiasi sistema IT per situazioni quali reimpostazione delle password, conferme degli ordini, ricevute elettroniche e altre ancora.
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
-source-git-commit: a74ef566bf468c5508263f4070beaf6d0cd73a0e
-workflow-type: ht
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# Blueprint per Campaign v7
+# Blueprint di Campaign v7
 
 Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i canali di marketing tradizionali come e-mail e direct mail. Fornisce solide funzionalità di ETL e gestione dei dati per agevolare la creazione e cura di una campagna perfetta. Il suo motore di orchestrazione consente programmi di marketing multi-touch avanzati, con attenzione particolare ai percorsi basati su batch. Inoltre, viene fornito con un server di messaggistica in tempo reale che consente ai team di marketing di inviare messaggi predefiniti basati su un payload completo da qualsiasi sistema IT per situazioni quali reimpostazione delle password, conferme degli ordini, ricevute elettroniche e altre ancora.
 
 <br>
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Programmi di messaggistica basati su batch
 * Campagne di onboarding e di re-marketing
@@ -31,7 +31,7 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 <br>
 
-## Pattern di integrazione
+## Modelli di integrazione
 
 | Scenario | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
@@ -42,13 +42,13 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 ## Prerequisiti
 
-### Server applicazioni e server per messaggistica in tempo reale
+### Server applicazioni e server di messaggistica in tempo reale
 
 * Adobe Campaign Client Console, per interagire con e utilizzare il software Campaign v8. Si tratta di un client basato su Windows che utilizza protocolli Internet standard (SOAP, HTTP, ecc.). Assicurati che nella tua organizzazione siano state abilitate le autorizzazioni necessarie per distribuire, installare ed eseguire software.
 
 * Elenco di indirizzi IP consentiti
    * Individua gli intervalli IP che tutti gli utenti utilizzeranno durante l’accesso alla console client.
-   * Individua i sistemi aziendali che dovranno poter dialogare con il server di messaggistica in tempo reale, e assicurati che vi sia stato assegnato un indirizzo o intervallo di indirizzi IP statico che possa essere incluso nell’elenco degli indirizzi consentiti.
+   * Identifica i sistemi aziendali autorizzati a parlare con il server di messaggistica in tempo reale e assicurati che dispongano di un IP o di un intervallo assegnati statisticamente che è possibile elenco consentiti
    * Può essere configurato e controllato tramite il Pannello di controllo Campaign.
 * Gestione delle chiavi sFTP
    * Assicurati di avere le chiavi pubbliche SSH da utilizzare con l’sFTP per Campaign. Può essere configurato e controllato tramite il Pannello di controllo Campaign.
@@ -59,7 +59,7 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 * Il sottodominio può essere completamente delegato ad Adobe (consigliato) oppure è possibile utilizzare CNAME verso server DNS specifici per Adobe (personalizzati).
 * Per garantire il corretto recapito dei messaggi, è necessario un record Google TXT per ciascun sottodominio.
 
-### Push per dispositivi mobili
+### push mobile
 
 * Uno sviluppatore per dispositivi mobili dovrà implementare, configurare e generare l’app mobile.
 * Adobe fornisce solo un SDK per la raccolta delle informazioni necessarie da FCM (Android) e APNS (iOS) per inviare i payload dei messaggi ai propri server. È invece responsabilità del cliente decidere come programmare, implementare e gestire l’app mobile, e come eseguirne il debug.
@@ -73,7 +73,7 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 ## Guardrail
 
-### Determinare la dimensione del server delle applicazioni
+### Ridimensionamento del server applicazioni
 
 * L’archiviazione può essere aumentata per supportare fino a 100 milioni di profili.
 * Configura e controlla l’accesso degli utenti tramite Adobe Admin Console (consigliato) o localmente nell’applicazione stessa.
@@ -82,11 +82,11 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
    * Non è supportato l’utilizzo delle API per leggere i dati ai fini di un’applicazione personalizzata.
 * Le chiamate API sono limitate a 15 al secondo o 150.000 al giorno su scala.
 
-### Determinare la dimensione del server per messaggistica in batch
+### Ridimensionamento del server di messaggistica in batch
 
 * È possibile gestire fino a 2,5 milioni di messaggi all’ora.
 
-### Determinare la dimensione del server di messaggistica in tempo reale
+### Ridimensionamento del server di messaggistica in tempo reale
 
 * È possibile inviare fino a 50.000 messaggi all’ora.
 * Per impostazione predefinita, sono previsti due server per la messaggistica in tempo reale. È possibile aumentarli fino a otto server per la messaggistica in tempo reale.
@@ -118,7 +118,7 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 <br>
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 Consulta la [Guida introduttiva](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=it) per l’implementazione di Adobe Campaign v7.
 

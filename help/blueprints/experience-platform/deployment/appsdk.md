@@ -1,18 +1,18 @@
 ---
-title: Implementazione tramite gli SDK di specifiche applicazioni
+title: Diagramma dell'architettura di distribuzione SDK specifica per l'applicazione
 description: Questo blueprint mostra l’architettura e l’acquisizione tramite gli SDK di specifiche applicazioni
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 05bf0a34-e5c7-498c-8d5d-1d549c00e070
-source-git-commit: e07ff74f901932c42ddaf6cb36b557535b9a2c43
-workflow-type: ht
-source-wordcount: '89'
-ht-degree: 100%
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 86%
 
 ---
 
-# Implementazione tramite gli SDK di specifiche applicazioni
+# Diagramma dell&#39;architettura di distribuzione SDK specifica per l&#39;applicazione
 
 Questo schema dell’architettura illustra i percorsi di integrazione e raccolta dati con l’implementazione eseguita mediante gli SDK di specifiche applicazioni.
 

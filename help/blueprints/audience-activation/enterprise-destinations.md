@@ -1,21 +1,21 @@
 ---
-title: Blueprint per attivazione in base a pubblico e profili con destinazioni basate su file e streaming verso soluzioni aziendali
+title: Blueprint di Audience e Profile Activation to File and Enterprise Streaming Destinations
 description: Attivazione in base a pubblico e profili con destinazioni verso soluzioni aziendali
 solution: Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
-workflow-type: ht
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Blueprint per attivazione in base a pubblico e profili con destinazioni basate su file e streaming verso soluzioni aziendali
+# Blueprint di Audience e Profile Activation to File and Enterprise Streaming Destinations
 
 Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!UICONTROL Real-time Customer Data Platform] con archivi dati e applicazioni aziendali. Gli eventi di profilo e pubblico possono essere utilizzati per avviare un’azione di vendita o supporto al cliente, ad esempio per dare seguito all’abbandono di un processo di iscrizione o di registrazione a un webinar, oppure per aggiornare le applicazioni aziendali con gli attributi e le informazioni più recenti del cliente da [!UICONTROL Real-time Customer Data Platform].
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Attivazione di profili e pubblico per destinazioni di archiviazione cloud o di streaming per il tracciamento, l’archiviazione, l’analisi e l’attivazione di dati e informazioni sui clienti.
 
@@ -32,9 +32,9 @@ Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!
 
 [Fai riferimento ai guardrail come indicato nella panoramica Attivazione in base a pubblico e profili.](overview.md)
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
-1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) per i dati da acquisire.
+1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
 1. [Configurare correttamente le identità e i relativi spazi dei nomi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it) nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it).
@@ -52,7 +52,7 @@ Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!
 * [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
 
-## Video e tutorial correlati
+## Video ed esercitazioni correlati
 
 * Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)

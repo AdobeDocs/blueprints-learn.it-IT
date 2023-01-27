@@ -1,17 +1,17 @@
 ---
-title: Blueprint per raccolta dati per l’inoltro di eventi a più sandbox
+title: Blueprint di raccolta dati di inoltro di più eventi sandbox
 description: Trasmetti in streaming i dati raccolti dagli SDK di Experience Platform a più sandbox mediante l’inoltro di eventi.
 solution: Data Collection
 kt: 7202
 exl-id: c24a47fe-b3da-4170-9416-74d2b6a18f32
-source-git-commit: 793a92218999185f8a993be528c4830fa07f4865
-workflow-type: ht
-source-wordcount: '608'
-ht-degree: 100%
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 73%
 
 ---
 
-# Blueprint per raccolta dati per l’inoltro di eventi a più sandbox
+# Blueprint di raccolta dati di inoltro di più eventi sandbox
 
 Il blueprint per raccolta dati per l’inoltro di eventi a più sandbox illustra come i dati raccolti tramite Adobe Experience Platform Web SDK e Mobile SDK possono essere configurati in modo da raccogliere un singolo evento e inoltrarlo a più sandbox AEP. Questo blueprint è un caso d’uso specifico che utilizza la funzione di inoltro eventi dei tag di Adobe.
 
@@ -23,41 +23,40 @@ Per la sandbox di destinazione è necessario configurare un endpoint di streamin
 
 
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Reporting globale dei dati: è utile quando si utilizzano più sandbox per isolare gli ambienti operativi e si desidera consolidare la raccolta dati in un unico sandbox per generare rapporti su tutte le sandbox. L’inoltro eventi a una sandbox di reporting consente a ogni ambiente operativo sandbox di inviare i dati raccolti in tempo reale a una sandbox di reporting.
 * Gestione della raccolta di dati da sandbox diverse in base a diverse regole di dati per ciascun ambiente operativo sandbox. Tali ambienti operativi richiedono il filtraggio di dati sensibili, ad esempio per il settore sanitario e servizi finanziari.
 
 ## Applicazioni
 
-* Raccolta di Adobe Experience Platform
+* Raccolta dati di Adobe Experience Platform
 
 ## Architettura
 
 <img src="assets/multi-Sandbox-Data-Collection.svg" alt="Architettura di riferimento per l’inoltro di eventi a più sandbox" style="width:90%; border:1px solid #4a4a4a" />
 
-1. Gli autori dei tag definiscono sia una proprietà Tag che una proprietà di inoltro eventi. In questo caso, gli autori definiscono gli elementi dati, le regole e le azioni che gestiscono la raccolta dei dati. Tieni presente che il codice della proprietà Tag viene eseguito sul client e distribuito da un host CDN. Il codice della proprietà di inoltro eventi viene eseguito sul server Adobe Edge.
+1. Gli autori di tag definiscono sia una proprietà tag che una proprietà Event Forwarding . In questo caso, gli autori definiscono gli elementi dati, le regole e le azioni che gestiscono la raccolta dei dati. Tieni presente che il codice della proprietà del tag viene eseguito sul client e distribuito da un host CDN. Il codice della proprietà di inoltro eventi viene eseguito sul server Adobe Edge.
 
-1. I dati raccolti sul client vengono inviati al server Edge. I clienti hanno anche la possibilità di inviare prima i dati al proprio server come metodo di raccolta lato server.
-Web SDK può fornire una funzionalità di raccolta da server a server. Tuttavia, ciò richiede l’implementazione di un diverso modello di programmazione. Consulta la documentazione **Panoramica delle API server della rete Edge**, di seguito.
+1. I dati raccolti sul client vengono inviati a Edge Network. I clienti hanno anche la possibilità di inviare prima i dati al proprio server come metodo di raccolta lato server.  L’SDK per web può fornire una funzionalità di raccolta da server a server. Tuttavia, ciò richiede l’implementazione di un diverso modello di programmazione. Consulta la documentazione **Panoramica delle API server della rete Edge**, di seguito.
 
-1. Platform Edge Server riceve i payload di raccolta dati e orchestra il flusso di dati verso i sistemi richiesti, come Target e Analytics.
+1. Platform Edge Network riceve i payload di raccolta dati e orchestra il flusso di dati verso i sistemi richiesti, come Target e Analytics.
 
-1. Gli elementi dati della proprietà di inoltro eventi vengono utilizzati per accedere ai dati evento in arrivo nel payload. Le regole possono anche essere utilizzate per manipolare i dati evento in base alle esigenze, prima dell’inoltro. Ad esempio, per formattare i dati nell’XDM richiesto per l’acquisizione dei dati in streaming.
+1. Gli elementi dati della proprietà di inoltro eventi vengono utilizzati per accedere ai dati dell’evento in arrivo nel payload. Le regole possono anche essere utilizzate per manipolare i dati evento in base alle esigenze, prima dell’inoltro. Ad esempio, per formattare i dati nell’XDM richiesto per l’acquisizione dei dati in streaming.
 
-1. La funzione di inoltro eventi fornisce l’estensione HTTPS che consente di inoltrare i dati evento a un endpoint HTTPS.
+1. L’inoltro eventi fornisce l’estensione HTTPS che consente di inoltrare i dati dell’evento a un punto finale HTTPS.
 
-1. La sandbox 2 è configurata con un endpoint di streaming che riceve l’evento inoltrato.
+1. La sandbox 2 è configurata con un punto finale in streaming che riceve l’evento inoltrato.
 
 ## Documentazione correlata
 
 * [Documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)
 * [Video sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=it)
 * [Lezione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html?lang=it) nel tutorial su Web SDK
-* [Panoramica di Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it)
+* [Panoramica dell’SDK per web di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it)
 * [Panoramica delle API server della rete Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
 
-## Articoli di blog correlati
+## Post di blog correlati
 
 * [[!DNL Boosting Website Performance with Adobe Experience Platform Web SDK and Edge Network]](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
 * [[!DNL Solving Implementation Pain Points with Adobe Experience Platform Web SDK and Edge Network]](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)

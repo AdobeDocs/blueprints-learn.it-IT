@@ -1,21 +1,21 @@
 ---
-title: Blueprint per personalizzazione Data Science per l’arricchimento del profilo
+title: Progettazione dati personalizzata per la blueprint di arricchimento dei profili
 description: Questo blueprint mostra come le informazioni basate su Data Science possono essere acquisite in Experience Platform per arricchire il profilo del cliente in tempo reale.
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 6f10178e2d8d8877ec254e6ca83d1711fa4a82b0
-workflow-type: ht
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
-# Blueprint per personalizzazione Data Science per l’arricchimento del profilo
+# Progettazione dati personalizzata per la blueprint di arricchimento dei profili
 
 Il blueprint per la personalizzazione basata su Data Science per l’arricchimento del profilo illustra come è possibile utilizzare i dati per addestrare, implementare e valutare modelli al fine di fornire informazioni basate sull’apprendimento automatico in Experience Platform e Real-time Customer Data Platform, mediante strumenti di data science e machine learning. Le informazioni modellate possono essere acquisite in Experience Platform per arricchire il profilo cliente in tempo reale. Esempi di informazioni basate sull’apprendimento automatico includono valutazione del ciclo di vita, affinità per prodotto e categoria, propensione alla conversione o all’abbandono.
 
-## Casi di utilizzo
+## Casi d’uso
 
 * Estrarre informazioni approfondite e individuare eventuali pattern dai dati dei clienti, quindi addestrare e valutare i modelli utilizzando questi dati.
 * Arricchire [!UICONTROL Real-time Customer Profile] con elementi di conoscenza e attributi basati su modelli, per una personalizzazione più granulare e una migliore ottimizzazione del percorso
@@ -29,7 +29,7 @@ Il blueprint per la personalizzazione basata su Data Science per l’arricchimen
 
 * Per informazioni dettagliate sui guardrail e sulle latenze end-to-end per l’acquisizione dei risultati data science in Experience Platform e nel profilo cliente in tempo reale, vedi i guardrail per l’acquisizione dei dati e il diagramma della latenza riportati nel [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
-## Fasi di implementazione
+## Passaggi di implementazione
 
 1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
@@ -56,7 +56,7 @@ Per i risultati del modello da acquisire nel profilo cliente in tempo reale, ass
 * [Descrizione del prodotto Adobe Experience Platform Intelligence](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 * [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it)
 
-## Articoli di blog correlati
+## Post di blog correlati
 
 * [[!DNL Content and Commerce AI: Personalizing Your Interactions with Customers Through Content Intelligence]](https://medium.com/adobetech/content-and-commerce-ai-personalizing-your-interactions-with-customers-through-content-intelligence-dc182601deab)
 * [[!DNL An Introductory Look at Exploratory Data Analysis on Adobe Experience Platform]](https://medium.com/adobetech/an-introductory-look-at-exploratory-data-analysis-on-adobe-experience-platform-1bfce7501d9a)
