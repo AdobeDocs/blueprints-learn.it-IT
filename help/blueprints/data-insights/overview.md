@@ -5,14 +5,14 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 95%
+source-wordcount: '175'
+ht-degree: 89%
 
 ---
 
-# Analisi dei dati, intelligence e AI/ML blueprint
+# Blueprint di analisi dei dati, intelligenza e AI/ML
 
 Il blueprint per analisi dei dati, intelligence e AI/ML comprende la capacità di Adobe Experience Platform di eseguire query esplorative e analisi dei dati presenti nel data lake.
 

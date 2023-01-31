@@ -6,10 +6,10 @@ solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 85%
+ht-degree: 63%
 
 ---
 
@@ -29,9 +29,9 @@ Per “attivazione del pubblico con dati anonimi” si intende la capacità di e
 * Audience Manager
 * Real-time Customer Data Platform
 
-Per l’attivazione del pubblico con dati anonimi sul proprio sito e per destinazioni pubblicitarie, è possibile utilizzare sia Audience Manager che Real-time Customer Data Platform. Real-time Customer Data Platform supporta solo un sottoinsieme di destinazioni pubblicitarie con identificatori di dispositivo anonimi, elencate nella [documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=it).
+Sia Audience Manager che Real-time Customer Data Platform possono essere utilizzati per alimentare l&#39;Audience Activation anonimo per le destinazioni onsite e pubblicitarie. Real-time Customer Data Platform supporta solo un sottoinsieme di destinazioni pubblicitarie con identificatori di dispositivo anonimi catalogati in [documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=it).
 
-Microsoft Bing, Google DV360 e TradeDesk sono le principali destinazioni pubblicitarie supportate da Real-time Customer Data Platform per il targeting basato su dati dispositivo anonimi. Oltre a questi, Real-time Customer Data Platform supporta numerose destinazioni basate su clienti note catalogate in [documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=it) e come descritto nella [Blueprint noto di Attivazione cliente](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it).
+Microsoft Bing, Google DV360 e TradeDesk sono le principali destinazioni pubblicitarie Real-time Customer Data Platform supportate per il targeting basato su dispositivi anonimi. Oltre a questi, Real-time Customer Data Platform supporta numerose destinazioni basate su clienti note catalogate in [documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=it) e come descritto nella [Blueprint noto di Attivazione cliente](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it).
 
 ## Architettura
 
@@ -45,7 +45,7 @@ Microsoft Bing, Google DV360 e TradeDesk sono le principali destinazioni pubblic
 
 ## Passaggi per l’implementazione per Real-time Customer Data Platform
 
-* Per informazioni sulle fasi di implementazione per Real-time Customer Data Platform, consulta la [documentazione](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it) seguente.
+* Per le fasi di implementazione di Real-time Customer Data Platform consulta quanto segue [documentazione](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it).
 
 ## Documentazione correlata
 

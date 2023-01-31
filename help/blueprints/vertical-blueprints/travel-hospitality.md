@@ -1,13 +1,13 @@
 ---
 title: Settore viaggi e hospitality - Attivazione con dati online e offline
 description: Decisioni in tempo reale con una singola vista consolidata del comportamento dei clienti su diversi canali.
-solution: Real-time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
+solution: Real-Time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
 exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Sfruttando le tecnologie e i servizi Adobe, questa organizzazione è ora pronta 
 ## approccio Adobe
 
 * Integrazione di Adobe Experience Platform nell’attuale stack di tecnologie per le interazioni dei clienti tra soluzioni diverse.
-* Attivazione di Real-time Customer Data Platform e Customer Journey Analytics per analisi continue e profili cliente personalizzati.
+* Real-time Customer Data Platform e Customer Journey Analytics attivati per fornire analisi continue e profili cliente personalizzati.
 * Sviluppo di una visione olistica della customer journey per ottimizzare l’efficacia dell’attribuzione marketing e dell’allocazione di risorse.
 * Risposta al COVID-19 con una duplice strategia di preparazione aziendale e continuo coinvolgimento dei clienti.
 

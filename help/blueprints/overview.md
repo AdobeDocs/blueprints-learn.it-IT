@@ -3,14 +3,14 @@ title: Blueprint di esperienza digitale
 description: I modelli di esperienza digitale sono implementazioni ripetibili per affrontare la strategia e risolvere i problemi aziendali esistenti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: f60a787630d68388fc4887f3df1756528fca446d
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 73%
 
 ---
 
-# Blueprint di esperienza digitale
+# Blueprint di Digital Experience
 
 I modelli di esperienza digitale sono implementazioni ripetibili che ti consentono di affrontare la strategia e risolvere rapidamente i problemi aziendali esistenti. Ogni blueprint offre una serie di elementi che descrivono il problema di business generale, le architetture, le fasi di implementazione e le considerazioni tecniche, e fornisce i collegamenti alla relativa documentazione.
 

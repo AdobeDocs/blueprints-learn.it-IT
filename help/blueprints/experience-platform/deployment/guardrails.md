@@ -1,13 +1,13 @@
 ---
 title: Guarderail per Experience Platform e applicazioni
 description: I guardrail definiscono le aspettative a livello di prestazioni e l’impatto per i componenti e i servizi in Adobe Experience Platform e nelle relative applicazioni
-solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
+solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 I guardrail forniscono le soglie consigliate da utilizzare come guida in termini di utilizzo del sistema e dei dati e ottimizzazione delle prestazioni, per evitare errori o risultati imprevisti in Adobe Experience Platform e nelle relative applicazioni. I guardrail rispecchiano i vincoli di sistema e le prestazioni previste per agevolare l’ottimizzazione dell’architettura e delle prestazioni dei casi d’uso del cliente. I guardrail non devono essere intesi come accordi di livello di servizio (SLA). Per informazioni sugli SLA di specifici prodotti, consulta la documentazione di descrizione dei prodotti, accessibile dai collegamenti riportati di seguito.
 
 
-## Guardrail per Adobe Experience Platform e applicazioni
+## Guardrail per Adobe Experience Platform e relative applicazioni
 
 [Garanzie per l’inserimento dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
 

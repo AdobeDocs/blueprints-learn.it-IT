@@ -2,12 +2,12 @@
 title: Blueprint di accesso ed esportazione dei dati
 description: Questo blueprint fornisce una panoramica di tutti i metodi con cui è possibile accedere ai dati ed esportarli da Adobe Experience Platform e dalle relative applicazioni.
 product: adobe experience platform
-solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Tags
+solution: Experience Platform, Journey Optimizer, Real-Time Customer Data Platform, Tags
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '1513'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -27,12 +27,12 @@ Approcci per l’esportazione dei dati:
 
 * [Tag lato client](#client-side-tags-extensions)
 * [Inoltro eventi](#event-forwarding)
-* [Destinazione di Real-time Customer Data Platform](#RTCDP-destinations)
+* [Destinazioni Real-time Customer Data Platform](#RTCDP-destinations)
 * [Azioni personalizzate di Journey Optimizer](#jo-custom-actions)
 
 ## Architettura della panoramica di Data Access ed Export
 
-<img src="../experience-platform/assets/aep_data_flow.svg" alt="Architettura di riferimento del blueprint per preparazione e acquisizione dei dati" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep_data_flow.svg" alt="Architettura di riferimento del blueprint per preparazione e acquisizione dei dati" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" />
 
 ## Approcci per l’accesso ai dati
 
@@ -126,7 +126,7 @@ Per ulteriori informazioni, consulta [Inoltro eventi](https://experienceleague.a
 
 I dati degli attributi del profilo e di appartenenza al pubblico possono essere attivati nelle destinazioni aziendali e pubblicitarie. Pertanto i dati in uscita devono essere acquisiti nel Profilo cliente in tempo reale di Experience Platform.
 
-Per ulteriori informazioni, consulta [Destinazioni di Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it).
+Fai riferimento a [Destinazioni Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it) documentazione per ulteriori informazioni.
 
 #### Casi d’uso
 

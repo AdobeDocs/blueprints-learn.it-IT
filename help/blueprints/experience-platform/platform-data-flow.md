@@ -5,7 +5,7 @@ solution: Data Collection
 kt: 7198
 thumbnail: null
 exl-id: 5016f657-dd55-4ab7-859d-c97bc5edff76
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 81%
@@ -18,10 +18,10 @@ ht-degree: 81%
 
 Questo diagramma illustra i vari percorsi per l’acquisizione e l’uscita dei dati da Adobe Experience Platform.
 
-<img src="assets/aep_data_flow.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="90%" />
+<img src="assets/aep_data_flow.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" />
 
 ## Garanzie per l’inserimento dei dati
 
 Il diagramma seguente illustra i guardrail per prestazioni e la latenza media per l’acquisizione dei dati in Adobe Experience Platform.
 
-<img src="assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="90%" />
+<img src="assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" />

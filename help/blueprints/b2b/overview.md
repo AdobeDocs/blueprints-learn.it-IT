@@ -1,13 +1,13 @@
 ---
 title: Analisi e attivazione B2B blueprint
-description: Offri a un pubblico basato su account esperienze personalizzate in base al profilo con Real-time Customer Data Platform.
-solution: Real-time Customer Data Platform
+description: Offri tipi di pubblico basati su account e esperienze cliente incentrate sul profilo con Real-time Customer Data Platform.
+solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 97%
+ht-degree: 87%
 
 ---
 

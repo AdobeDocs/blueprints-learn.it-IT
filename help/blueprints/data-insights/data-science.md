@@ -4,16 +4,16 @@ description: Questo blueprint mostra come le informazioni basate su Data Science
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 95%
+ht-degree: 87%
 
 ---
 
 # Progettazione dati personalizzata per la blueprint di arricchimento dei profili
 
-Il blueprint per la personalizzazione basata su Data Science per l’arricchimento del profilo illustra come è possibile utilizzare i dati per addestrare, implementare e valutare modelli al fine di fornire informazioni basate sull’apprendimento automatico in Experience Platform e Real-time Customer Data Platform, mediante strumenti di data science e machine learning. Le informazioni modellate possono essere acquisite in Experience Platform per arricchire il profilo cliente in tempo reale. Esempi di informazioni basate sull’apprendimento automatico includono valutazione del ciclo di vita, affinità per prodotto e categoria, propensione alla conversione o all’abbandono.
+Il progetto Custom Data Science for Profile Enrichment Blueprint illustra come i dati possono essere utilizzati per addestrare, implementare e valutare modelli per fornire informazioni sull&#39;apprendimento automatico in Experience Platform e Real-time Customer Data Platform dagli strumenti di data science e machine learning. Le informazioni modellate possono essere acquisite in Experience Platform per arricchire il profilo cliente in tempo reale. Esempi di informazioni basate sull’apprendimento automatico includono valutazione del ciclo di vita, affinità per prodotto e categoria, propensione alla conversione o all’abbandono.
 
 ## Casi d’uso
 
