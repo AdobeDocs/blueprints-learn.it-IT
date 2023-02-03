@@ -1,16 +1,16 @@
 ---
-title: Gestione delle decisioni sulla blueprint Hub
+title: Blueprint per la gestione delle decisioni tramite hub
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, compresi chioschi, esperienze assistite da agenti, e-mail e altre consegne in uscita.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
 source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '906'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Gestione delle decisioni sulla blueprint Hub
+# Blueprint per la gestione delle decisioni tramite hub
 
 Per ulteriori informazioni sul servizio Gestione delle decisioni, consulta la documentazione del prodotto (disponibile [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)) e la panoramica di Gestione delle decisioni (disponibile [QUI](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=it)).
 
@@ -26,7 +26,7 @@ Questo blueprint tratta le specifiche di Gestione delle decisioni tramite hub.
 
 Per ulteriori informazioni su Gestione delle decisioni tramite rete Edge, consulta il blueprint [Gestione delle decisioni sulla rete Edge](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=it).
 
-## Casi di utilizzo per la gestione delle decisioni sull&#39;hub
+## Casi di utilizzo per Gestione delle decisioni tramite hub
 
 * Offerte personalizzate per chioschi ed esperienze in-store.
 * Offerte personalizzate tramite esperienze assistite da agenti, come call center o interazioni di vendita.
@@ -61,13 +61,13 @@ Adobe Experience Platform
 * Accesso al profilo cliente in tempo reale completo, compresi appartenenze a un pubblico, attributi ed eventi di esperienza.
 
 
-### Garanzie per l’inserimento dei dati
+### Guardrail per l’acquisizione dei dati
 
 <img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
-### Guardrail di attivazione
+### Guardrail per l’attivazione
 
 <img src="../../experience-platform/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" />
 
@@ -81,7 +81,7 @@ Adobe Experience Platform
 * Per esperienze in tempo reale basate sulla rete Edge, utilizza Web SDK o Mobile SDK oppure Edge Decisioning API, come descritto nel [blueprint per Gestione delle decisioni tramite rete Edge](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=it).
 <br>
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 ### Adobe Experience Platform
 
@@ -97,7 +97,7 @@ Adobe Experience Platform
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
-1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
+1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per viste diverse del [!UICONTROL profilo cliente in tempo reale] (opzionale)
 1. Creare segmenti da utilizzare in Journey
 
 #### Origini/destinazioni
