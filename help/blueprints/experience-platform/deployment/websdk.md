@@ -1,29 +1,29 @@
 ---
-title: SDK web/mobile, diagramma dell’architettura di distribuzione della rete Edge
+title: Diagramma dell’architettura per l’implementazione con Web/Mobile SDK, rete Edge
 description: Questo blueprint illustra l’architettura e l’acquisizione di dati tramite Experience Platform Web/Mobile SDK e rete Edge
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
 source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '254'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
-# Diagramma dell’architettura Experience Platform Web SDK e Edge Network
+# Diagramma dell’architettura per Experience Platform Web SDK e rete Edge
 
 Per una panoramica e i dettagli di Web SDK e Mobile SDK e per Edge Network Server API, consulta le sezioni seguenti.
 
-* [Panoramica dell’SDK per web](https://experienceleague.adobe.com/docs/web-sdk.html?lang=it)
-* [Panoramica dell’SDK per dispositivi mobili](https://developer.adobe.com/client-sdks/documentation/)
+* [Panoramica di Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=it)
+* [Panoramica di Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
 * [Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
 
-Per una descrizione dettagliata delle funzionalità dell&#39;applicazione supportate nell&#39;SDK per web, consulta la documentazione seguente.
+Per una descrizione dettagliata delle funzionalità delle applicazioni supportate in Web SDK, consulta la documentazione seguente.
 
-* [Supporto delle funzionalità dell&#39;applicazione SDK per web](https://github.com/orgs/adobe/projects/18/views/1)
+* [Supporto delle funzionalità delle applicazioni in Web SDK](https://github.com/orgs/adobe/projects/18/views/1)
 
 Per informazioni dettagliate sulla migrazione dagli SDK di specifiche applicazioni a Web/Mobile SDK, consulta la seguente documentazione.
 
@@ -32,7 +32,7 @@ Per informazioni dettagliate sulla migrazione dagli SDK di specifiche applicazio
 * [Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=it)
 * [Analytics for Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html?lang=it)
 
-## Implementazione dell&#39;API Experience Platform Web/Mobile SDK o Edge Network Server
+## Implementazione con Experience Platform Web/Mobile SDK o con Edge Network Server API
 
 Questo schema dell’architettura illustra l’implementazione e la raccolta dati tramite Experience Platform Web SDK.
 
