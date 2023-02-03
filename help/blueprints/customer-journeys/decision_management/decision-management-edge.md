@@ -1,16 +1,16 @@
 ---
-title: Gestione delle decisioni sul blueprint Edge
+title: Blueprint per la gestione delle decisioni tramite rete Edge
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, incluse le esperienze web e mobili in tempo reale.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
 source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Journey Optimizer - Gestione delle decisioni sul blueprint Edge
+# Journey Optimizer - Blueprint per la gestione delle decisioni tramite rete Edge
 
 Per ulteriori informazioni sul servizio Gestione delle decisioni, consulta la documentazione del prodotto (disponibile [QUI](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)) e la panoramica di Gestione delle decisioni (disponibile [QUI](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=it)).
 
@@ -24,7 +24,7 @@ Questo blueprint tratta le specifiche di Gestione delle decisioni sulla rete Edg
 
 Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il blueprint [Gestione delle decisioni tramite hub](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=it).
 
-## Casi di utilizzo per la gestione delle decisioni sul bordo
+## Casi di utilizzo per Gestione delle decisioni tramite rete Edge
 
 * Personalizzazione online tramite esperienze web o mobile in entrata.
 * Esecuzione di percorsi cross-channel: offerte coerenti su web, dispositivi mobili, e-mail e altri canali di interazione tramite Adobe Journey Optimizer.
@@ -62,13 +62,13 @@ Adobe Experience Platform
 * Accesso al profilo Edge in tempo reale. Nel profilo saranno disponibili solo i tipi di pubblico e gli attributi di profilo Edge proiettati.
 * Se vuoi applicare la personalizzazione alla prima esperienza, è preferibile utilizzare l’approccio tramite hub, con profilo completo. Per la prima esperienza Edge, infatti, il profilo Edge deve essere sincronizzato dall’hub. Pertanto, la prima esperienza tramite rete Edge non includerà i dati del profilo precedentemente caricati sull’hub.
 
-### Garanzie per l’inserimento dei dati
+### Guardrail per l’acquisizione dei dati
 
 <img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
-### Guardrail di attivazione
+### Guardrail per l’attivazione
 
 <img src="../../experience-platform/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" />
 
@@ -88,7 +88,7 @@ Oppure
 
 <br>
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 ### Adobe Experience Platform
 
@@ -104,7 +104,7 @@ Oppure
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
-1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
+1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per viste diverse del [!UICONTROL profilo cliente in tempo reale] (opzionale)
 1. Creare segmenti da utilizzare in Journey
 
 #### Origini/destinazioni
