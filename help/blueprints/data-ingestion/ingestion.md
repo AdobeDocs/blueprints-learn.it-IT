@@ -1,18 +1,18 @@
 ---
-title: Piano di preparazione dei dati e acquisizione
+title: Blueprint per la preparazione e l’ acquisizione dei dati
 description: Questo blueprint mostra tutti i metodi con cui i dati possono essere acquisiti e preparati in Adobe Experience Platform.
 solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Piano di preparazione dei dati e acquisizione
+# Blueprint per la preparazione e l’ acquisizione dei dati
 
 Il blueprint per la preparazione e acquisizione dei dati comprende tutti i metodi con cui i dati possono essere preparati e inseriti in Adobe Experience Platform.
 
@@ -22,7 +22,7 @@ La preparazione dei dati include la mappatura dei dati di origine sullo schema E
 
 <img src="../experience-platform/assets/aep_data_flow.svg" alt="Architettura di riferimento del blueprint per preparazione e acquisizione dei dati" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" />
 
-## Garanzie per l’inserimento dei dati
+## Guardrail per l’acquisizione dei dati
 
 Il diagramma seguente illustra i guardrail per prestazioni e la latenza media per l’acquisizione dei dati in Adobe Experience Platform.
 
@@ -49,7 +49,7 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 | [!UICONTROL Query Service]: preparazione dei dati | Unire, separare, fondere, trasformare, interrogare e filtrare i dati in un nuovo set di dati <br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it#sql) sull’utilizzo di Create Table as Select (CTAS) |
 | Funzioni mappatore XDM e preparazione dati (streaming e batch) | Mappare gli attributi di origine in formato CSV o JSON su attributi XDM durante l’acquisizione in Experience Platform<br>Elaborare le funzioni sui dati man mano che vengono acquisiti; ovvero, formattazione dei dati, suddivisione, concatenazione e così via<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=it) |
 
-## Post di blog correlati
+## Articoli di blog correlati
 
 * [[!DNL Leveraging External Data Platforms in Adobe Experience Platform Journey Orchestration]](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17?source=your_stories_page-------------------------------------)
 * [[!DNL High Throughput Ingestion with Iceberg]](https://medium.com/adobetech/high-throughput-ingestion-with-iceberg-ccf7877a413f?source=your_stories_page-------------------------------------)
