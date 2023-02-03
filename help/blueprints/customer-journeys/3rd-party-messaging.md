@@ -1,16 +1,16 @@
 ---
-title: Journey Optimizer - Blueprint di messaggistica di terze parti
+title: Journey Optimizer - Blueprint per messaggistica di terze parti
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
 source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '823'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Blueprint di messaggistica di terze parti
+# Blueprint per messaggistica di terze parti
 
 Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
 
@@ -69,12 +69,12 @@ Sistema di messaggistica di terze parti
    * Tipi di autenticazione: token | password | OAuth2 supportati tramite Journey Optimizer
    * Durata cache autenticazione: per quanto tempo resta valido il token? 
 * Se è supportata solo l’acquisizione batch, è necessario l’invio in streaming a un motore di archiviazione cloud come Amazon Kinesis o Azure Event Grid 1st.
-   * I dati possono essere batch di questi motori di archiviazione cloud e incanalati in terze parti
-   * Qualsiasi middleware richiesto è responsabilità del cliente o di terze parti di fornire
+   * I dati possono essere inviati in batch a questi motori di archiviazione cloud e incanalati nel sistema di terze parti.
+   * Eventuale middleware necessario deve essere fornito dal cliente o da terze parti.
 
 <br>
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 ### Adobe Experience Platform
 
@@ -90,7 +90,7 @@ Sistema di messaggistica di terze parti
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
-1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
+1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per viste diverse del [!UICONTROL profilo cliente in tempo reale] (opzionale)
 1. Creare segmenti da utilizzare in Journey
 
 #### Origini/destinazioni
@@ -103,13 +103,13 @@ Sistema di messaggistica di terze parti
 1. Configurare le origini dati esterne.
 1. Configurare le azioni personalizzate per l’applicazione di terze parti.
 
-### Configurazione push per dispositivi mobili (facoltativo se 3rd party può raccogliere token)
+### Configurazione push mobile (opzionale per l’eventuale raccolta di token da terze parti)
 
 1. Implementare Experience Platform Mobile SDK per raccogliere i token push e le informazioni di accesso da associare ai profili cliente noti.
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
    * Adobe Journey Optimizer
    * Rete Edge di Adobe Experience Platform
-   * Identità    per rete Edge
+   * Identità  per rete Edge
    * Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
 1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
