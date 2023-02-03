@@ -8,7 +8,7 @@ exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 83%
+ht-degree: 89%
 
 ---
 
@@ -20,11 +20,11 @@ Crea e pubblica i tipi di pubblico identificati da Customer Journey Analytics (C
 
 Consulta la seguente documentazione per informazioni sull’implementazione e la configurazione della pubblicazione dei tipi di pubblico da Customer Journey Analytics a Real-time Customer Data Platform. [Documentazione](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it)
 
-## Architettura per Customer Journey Analytics blueprint
+## Architettura per i blueprint per Customer Journey Analytics
 
 ![Diagramma dell’architettura](assets/CJA_RTCDP.svg)
 
-## Diagramma del Guardrail per i progetti di Customer Journey Analytics
+## Diagramma dei guardrail per i blueprint per Customer Journey Analytics
 
 * Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
@@ -42,7 +42,7 @@ Consulta la seguente documentazione per informazioni sull’implementazione e la
 
 * I messaggi di CJA vengono elaborati anche dal servizio Identity? Ad esempio, CJA è in grado di aggiungere identità a un grafo di identità profilo tramite la condivisione del pubblico? No, il servizio Identity non elabora i messaggi di CJA.
 
-## Post di blog correlati
+## Articoli di blog correlati
 
 * [[!DNL Blueprint for Multi-Channel Orchestration in Adobe Experience Platform]](https://medium.com/adobetech/blueprint-for-multi-channel-orchestration-in-adobe-experience-platform-c68317e94184)
 * [[!DNL Leveraging External Data Platforms in Adobe Experience Platform Journey Orchestration]](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)

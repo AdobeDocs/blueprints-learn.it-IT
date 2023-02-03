@@ -1,5 +1,5 @@
 ---
-title: Blueprint di personalizzazione web comportamentale
+title: Blueprint per personalizzazione web basata sul comportamento
 description: Scopri come personalizzare i contenuti in base al comportamento online e ai dati sul pubblico.
 landing-page-description: Scopri come eseguire la personalizzazione in base al comportamento online e ai dati del pubblico.
 solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
@@ -8,15 +8,15 @@ exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
-# Blueprint comportamentale per web/personalizzazione mobile
+# Blueprint per personalizzazione web/mobile basata sul comportamento
 
-Personalizzare in base al comportamento online e ai dati del pubblico.
+Esegui la personalizzazione in base al comportamento online e ai dati del pubblico.
 
-## Casi d’uso
+## Casi di utilizzo
 
 * Ottimizzazione della pagina di destinazione
 * Targeting comportamentale
@@ -41,11 +41,11 @@ Il blueprint per la personalizzazione web/mobile può essere implementato con i 
 1. Mediante [!UICONTROL Platform Web SDK] o [!UICONTROL Platform Mobile SDK] e [!UICONTROL rete Edge]. [Consulta il blueprint per Experience Platform Web/Mobile SDK](../experience-platform/deployment/websdk.md)
 1. Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AppMeasurement.js). [Consulta il blueprint per l’SDK delle specifiche applicazioni](../experience-platform/deployment/appsdk.md)
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 1. [Implementare Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=it) per le applicazioni web o mobili.
 
-### Passaggi per l’implementazione: Audience Manager o Adobe Analytics
+### Fasi di implementazione - Audience Manager o Adobe Analytics
 
 1. [Implementare Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it)
 1. [Implementare Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=it)
@@ -82,7 +82,7 @@ Il blueprint per la personalizzazione web/mobile può essere implementato con i 
 * [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
 * [Documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=it)
 
-## Post di blog correlati
+## Articoli di blog correlati
 
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)

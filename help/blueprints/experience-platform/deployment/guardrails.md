@@ -7,7 +7,7 @@ exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ I guardrail forniscono le soglie consigliate da utilizzare come guida in termini
 
 ## Guardrail per Adobe Experience Platform e relative applicazioni
 
-[Garanzie per l’inserimento dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
+[Guardrail per l’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
 
 [Guardrail per Edge Network API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=it)
 
@@ -36,7 +36,7 @@ I guardrail forniscono le soglie consigliate da utilizzare come guida in termini
 
 ## Diagrammi di latenza end-to-end
 
-### Acquisizione dati
+### Acquisizione dei dati
 
 <img src="../assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
 

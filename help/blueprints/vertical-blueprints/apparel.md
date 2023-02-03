@@ -7,11 +7,11 @@ exl-id: f1a3e785-c804-43bd-90de-da4359bdd810
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
-# La sfida dell&#39;industria dell&#39;abbigliamento
+# Le sfide nel settore abbigliamento
 
 Questa azienda di abbigliamento è leader mondiale in termini di design, sviluppo, produzione, marketing e vendita di calzature, abbigliamento, attrezzature, accessori e servizi.
 
@@ -21,14 +21,14 @@ Il suo team tecnologico utilizza Adobe Experience Platform e altre soluzioni Ado
 * Marketing in tempo reale basato su trigger
 * Personalizzazione, capacità di misurare l’efficacia delle campagne, e capacità di attribuzione e analisi clienti a 360 gradii
 
-## approccio Adobe
+## L’approccio Adobe
 
 * Creare una solida base Platform per offrire valore e favorire l’adozione a livello aziendale.
 * Collaborare con i team tecnici per garantire che l’implementazione della tecnologia generi il valore previsto.
 * Creare una visione a 360 gradi dei clienti per eseguire direttamente le attività di segmentazione, attivazione e raccolta di dati sulle campagne.
 * Automatizzare i trigger e orchestrare le customer journey personalizzate.
 
-## Valore aziendale consegnato
+## Valore aziendale conseguito
 
 | Obiettivi | Tattiche | Nuovo valore |
 |---|---|---|
@@ -40,10 +40,10 @@ Il suo team tecnologico utilizza Adobe Experience Platform e altre soluzioni Ado
 
 <ul><li>Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.</li><li>Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.</li></ul>
 
-### Applicazioni di Experience Cloud
+### Applicazioni Experience Cloud
 
 <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform Activation</li><li>Applicazioni Experience Cloud</li></ul>
 
-### Architettura Blueprint
+### Architettura del blueprint
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it"><img alt="immagine miniatura per il settore Abbigliamento con i blueprint Audience Activation, Customer Journey Analytics e Customer journey" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it"><img alt="immagine miniatura per il settore Abbigliamento con i blueprint per l’attivazione del pubblico, Customer Journey Analytics e Customer journey" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en"/></a>

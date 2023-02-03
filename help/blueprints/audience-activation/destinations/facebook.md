@@ -7,7 +7,7 @@ exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '957'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 Acquisisci i dati dei clienti da più origini per creare una singola vista del profilo del cliente; segmenta i profili per creare tipi di pubblico per le attività di marketing e personalizzazione; condividi questi tipi di pubblico in social ad network come Facebook per il targeting e la personalizzazione delle campagne.
 
-## Casi d’uso
+## Casi di utilizzo
 
 * Targeting per tipi di pubblico noti su destinazioni social e pubblicitarie.
 * Personalizzazione online con attributi online e offline.
@@ -28,7 +28,7 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
 
 <img src="../assets/facebook.svg" alt="Architettura di riferimento per l’attivazione in Facebook Custom Audiences" style="width:90%; border:1px solid #4a4a4a" />
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 1. Configurare gli spazi dei nomi di identità da utilizzare nelle origini dati per i profili.
    * Utilizzare gli spazi dei nomi predefiniti come e-mail, e-mail con hash SHA256, se disponibili.

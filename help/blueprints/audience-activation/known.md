@@ -1,5 +1,5 @@
 ---
-title: Attivazione dei clienti noti blueprint
+title: Blueprint per l’attivazione di clienti noti
 description: Attivazione del pubblico con dati online/offline.
 solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
@@ -7,19 +7,19 @@ exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 71%
+ht-degree: 83%
 
 ---
 
-# Blueprint noto di Attivazione cliente
+# Blueprint per l’attivazione di clienti noti
 
 Per il targeting e la personalizzazione online, utilizza attributi ed eventi offline come dati da ordini, transazioni, sistemi CRM o programma fedeltà, insieme a dati sul comportamento online.
 
 L’espansione degli identificatori con controlli di governance integrati offre maggiori opportunità di comunicare con clienti noti. Attiva specifici tipi di pubblico in base a destinazioni note basate sul profilo, come provider di posta elettronica, social network e destinazioni pubblicitarie.
 
-Ulteriori dettagli sono forniti nella sezione [Attivazione di tipi di pubblico e profili con blueprint delle applicazioni Experience Cloud](platform-and-applications.md) specifiche per le integrazioni tra le applicazioni Experience Platform e Experience Cloud.
+Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le applicazioni Experience Cloud sono disponibili nel [blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md).
 
-## Casi d’uso
+## Casi di utilizzo
 
 * Targeting per tipi di pubblico noti su destinazioni social e pubblicitarie.
 * Personalizzazione online con attributi online e offline.
@@ -34,12 +34,12 @@ Ulteriori dettagli sono forniti nella sezione [Attivazione di tipi di pubblico e
 
 ### Attivazione nota dei clienti tramite Real-time Customer Data Platform
 
-<img src="assets/known_activation.svg" alt="Architettura di riferimento per il blueprint di attivazione del cliente noto" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:90%; border:1px solid #4a4a4a" />
 <br>
 
-### Attivazione nota dei clienti tramite destinazioni basate su persone di Audience Manager
+### Attivazione di clienti noti tramite destinazioni Audience Manager basate su persone
 
-<img src="assets/AAM_PBD.svg" alt="Architettura di riferimento per il blueprint di attivazione del cliente noto" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/AAM_PBD.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:90%; border:1px solid #4a4a4a" />
 <br>
 
 ## Guardrail
@@ -59,11 +59,11 @@ Ulteriori dettagli sono forniti nella sezione [Attivazione di tipi di pubblico e
 
 ## Considerazioni sull’implementazione
 
-* Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per [!UICONTROL Real-time Customer Profile].
+* Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per il [!UICONTROL profilo cliente in tempo reale].
 
 * Consulta la sezione [Attivazione di tipi di pubblico e profili con blueprint delle applicazioni Experience Cloud](platform-and-applications.md) per ulteriori dettagli sulla condivisione di tipi di pubblico da Real-time Customer Data Platform ad Audience Manager, Analytics, Target, Campaign e Journey Optimizer.
 
-## Passaggi di implementazione per Audience Manager delle destinazioni basate su persone
+## Fasi di implementazione per le destinazioni basate su persone di Audience Manager
 
 * Per informazioni dettagliate sull’implementazione di Audience Manager, consulta la [documentazione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it) seguente.
 
@@ -76,7 +76,7 @@ Ulteriori dettagli sono forniti nella sezione [Attivazione di tipi di pubblico e
 * [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
 * [Documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=it)
 
-## Video ed esercitazioni correlati
+## Video e tutorial correlati
 
 * [[!UICONTROL Real-time Customer Data Platform] panoramica](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)

@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics blueprint
+title: Blueprint per  Customer Journey Analytics
 description: Unificare e analizzare i dati e i comportamenti dei clienti da tutto il percorso del cliente
 solution: Customer Journey Analytics
 kt: null
@@ -8,17 +8,17 @@ exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
-# Customer Journey Analytics blueprint
+# Blueprint per  Customer Journey Analytics 
 
 Customer Journey Analytics mostra come i brand possono unificare i dati e il comportamento dei clienti da vari canali di interazione e origini per creare una visione basata sul percorso di tutte le interazioni. È possibile eseguire report e analisi nel servizio applicativo Customer Journey Analytics, al fine di valutare e acquisire informazioni dettagliate sulle interazioni e sui pattern di comportamento dei clienti.
 
 Un elenco completo dei casi d’uso per Customer Journey Analytics è disponibile nella documentazione di Customer Journey Analytics.
 
-## Casi di utilizzo del Customer Journey Analytics
+## Casi d’uso per Customer Journey Analytics
 
 [I casi d’uso più comuni includono:](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=it)
 
@@ -40,13 +40,13 @@ Ecco alcuni dei casi d’uso principali.
 | **[Analisi del percorso cross-channel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=it)**  | <ul><li>Crea una vista unica e consolidata del comportamento dei clienti nei diversi canali, grazie all’integrazione dei dati provenienti dalle varie proprietà web, mobili e offline.</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (opzionale)</li></ul>| | **[Pubblicare tipi di pubblico in Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it)** | <ul><li>Crea e pubblica i tipi di pubblico identificati da Customer Journey Analytics (CJA) nel profilo cliente in tempo reale in Adobe Experience Platform, per eseguire attività di targeting dei clienti e personalizzazione. Questa soluzione è ideale per creare tipi di pubblico sulla base di dati storici, nonché tipi di pubblico più mirati con filtri granulari e campi calcolati in Customer Journey Analytics.</li></ul> | <ul><li>Real-time Customer Data Platform</li><li>Customer Journey Analytics</li> |
 | **[Analisi del percorso per ridurre le chiamate](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html?lang=it)** | <ul><li>Individua i comportamenti più indicativi nel determinare le chiamate a un operatore, unendo i dati del call center ai dati sulle interazioni web, mobili e di altro tipo.</li><li>Questi approfondimenti possono quindi essere utilizzati per ottimizzare l’esperienza del cliente con migliori strumenti e contenuti self-service, e quindi ridurre la necessità di parlare con un operatore.  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
-## Diagramma del Guardrail per i progetti di Customer Journey Analytics
+## Diagramma dei guardrail per i blueprint per Customer Journey Analytics
 
 * Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
 ![Diagramma dei guardrail](../experience-platform/assets/CJA_guardrails.svg)
 
-## Post di blog correlati
+## Articoli di blog correlati
 
 * [[!DNL Blueprint for Multi-Channel Orchestration in Adobe Experience Platform]](https://medium.com/adobetech/blueprint-for-multi-channel-orchestration-in-adobe-experience-platform-c68317e94184){target="_blank"}
 * [[!DNL Leveraging External Data Platforms in Adobe Experience Platform Journey Orchestration]](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17){target="_blank"}

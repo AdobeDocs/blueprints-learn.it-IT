@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione web e mobile blueprint
+title: Blueprint per  la personalizzazione web e mobile
 description: Offri contenuti web e mobili personalizzati con [!UICONTROL profilo cliente in tempo reale].
 solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
@@ -8,11 +8,11 @@ exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
-# Personalizzazione web e mobile blueprint
+# Blueprint per  la Personalizzazione web e mobile 
 
 La personalizzazione web e mobile consente di utilizzare la segmentazione in base al profilo e al pubblico in più applicazioni per personalizzare e ottimizzare le esperienze dei clienti. I comportamenti dei clienti, i dati demografici, il livello di fidelizzazione e le transazioni precedenti possono essere sfruttati per personalizzare layout, inviti all’azione e contenuti.
 
@@ -35,7 +35,7 @@ La personalizzazione web e mobile consente di utilizzare la segmentazione in bas
 
 <img src="assets/personalization_guardrails.svg" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" />
 
-## Post di blog correlati
+## Articoli di blog correlati
 
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
