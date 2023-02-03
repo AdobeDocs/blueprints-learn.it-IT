@@ -3,9 +3,9 @@ title: Storie di successo dei clienti
 description: Storie di successo dei clienti - Ottimizzare la supply chain per campagne marketing con Marketo e Workfront
 exl-id: fabe67b4-8ad6-49fc-a38f-cd4b5319d09a
 source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,6 +21,6 @@ I clienti di Adobe in settori diversi riconoscono il valore di allineare la pian
 
 * BNY Mellon (sessione Summit): [BNY Mellon migliora l’esecuzione delle campagne con le tecnologie People, Process e Adobe - S127](https://business.adobe.com/events/experience-makers-live/2022/sessions/how-bny-mellon-improved-campaign-execution-with-pe-s127.html){target="_blank"}
 
-* Commvault (caso di successo): [Commvault utilizza Adobe Marketo Engage per creare un centro marketing di eccellenza e realizzare più di 1.800 campagne all’anno](https://business.adobe.com/customer-success-stories/commvault-case-study){target="_blank"}
+* Commvault (caso di studio): [Commvault utilizza Adobe Marketo Engage per creare un centro marketing di eccellenza e realizzare più di 1.800 campagne all’anno](https://business.adobe.com/customer-success-stories/commvault-case-study){target="_blank"}
 
 * Poly (blog): [Poly ha cambiato marcia per raggiungere nuove audience con Adobe Experience Cloud](https://business.adobe.com/blog/basics/how-poly-shifted-gears-reach-new-audiences-adobe-experience-cloud){target="_blank"}
