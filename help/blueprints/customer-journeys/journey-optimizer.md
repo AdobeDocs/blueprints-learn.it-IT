@@ -4,19 +4,19 @@ description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1044'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Journey Optimizer blueprint
+# Blueprint per  Journey Optimizer 
 
-Adobe Journey Optimizer è un sistema appositamente progettato che consente ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli là dove si trovano. Le funzionalità di gestione dei dati sono state trasferite in Adobe Experience Platform, consentendo ai team di marketing di concentrarsi sul loro punto di forza: la creazione di percorsi cliente d’eccellenza e conversazioni personalizzate.  Questo blueprint delinea le funzionalità tecniche dell’applicazione e descrive i vari componenti dell’architettura di Adobe Journey Optimizer.
+Adobe Journey Optimizer è un sistema appositamente progettato che consente ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli là dove si trovano. Le funzionalità di gestione dei dati sono state trasferite in Adobe Experience Platform, consentendo ai team di marketing di concentrarsi sul loro punto di forza: la creazione di percorsi cliente d’eccellenza e conversazioni personalizzate. Questo blueprint delinea le funzionalità tecniche dell’applicazione e descrive i vari componenti dell’architettura di Adobe Journey Optimizer.
 
 <br>
 
-## Casi d’uso
+## Casi di utilizzo
 
 * Messaggi attivati
 * Conferme di benvenuto e registrazione
@@ -33,7 +33,7 @@ Adobe Journey Optimizer è un sistema appositamente progettato che consente ai t
 
 <br>
 
-## Scenari di blueprint
+## Scenari del blueprint
 
 | Scenario | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
@@ -89,19 +89,19 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
    * Autenticazione tramite nome utente/password o token di autorizzazione
 * Non è possibile creare pacchetti e spostare singoli componenti di Adobe Experience Platform o Journey Optimizer tra diverse sandbox. È necessario reimplementarli nei nuovi ambienti.
 
-### Garanzie per l’inserimento dei dati
+### Guardrail per l’acquisizione dei dati
 
 <img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
-### Guardrail di attivazione
+### Guardrail per l’attivazione
 
 <img src="../experience-platform/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 ### Adobe Experience Platform
 
@@ -117,7 +117,7 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
-1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per le diverse viste di [!UICONTROL Real-time Customer Profile] (opzionale)
+1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per viste diverse del [!UICONTROL profilo cliente in tempo reale] (opzionale)
 1. Creare segmenti da utilizzare in Journey
 
 #### Origini/destinazioni
@@ -136,7 +136,7 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
 1. Adobe Journey Optimizer
 1. Rete Edge di Adobe Experience Platform
-1. Identità    per rete Edge
+1. Identità  per rete Edge
 1. Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
 1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
