@@ -1,22 +1,22 @@
 ---
 title: Attivazione per Google Customer Match
 description: Attivazione per Google Customer Match.
-solution: Real-Time Customer Data Platform, Data Collection
+solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: 32bdc04d-b101-4b17-af27-329e5c71d888
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
 
 # Attivazione per Google Customer Match
 
-Acquisisci i dati dei clienti da più origini per creare una singola vista del profilo del cliente; segmenta i profili per creare tipi di pubblico per le attività di marketing e personalizzazione; condividi questi tipi di pubblico in social ad network come Google Customer Match per il targeting e la personalizzazione delle campagne. Google Customer Match consente di utilizzare dati online e offline per raggiungere e coinvolgere nuovamente i clienti sulle piattaforme di proprietà e gestione Google, come Search, Shopping, Gmail e YouTube.
+Acquisisci i dati dei clienti da più origini per creare una singola vista del profilo del cliente; segmenta i profili per creare tipi di pubblico per le attività di marketing e personalizzazione; condividi questi tipi di pubblico in social ad network come Google Customer Match per il targeting e la personalizzazione delle campagne. Customer Match di Google consente di utilizzare i dati online e offline per raggiungere e coinvolgere nuovamente i clienti su proprietà possedute e gestite da Google, ad esempio: Ricerca, acquisti, Gmail e YouTube.
 
-## Casi d’uso
+## Casi di utilizzo
 
 * Targeting per tipi di pubblico noti su destinazioni social e pubblicitarie.
 * Personalizzazione online con attributi online e offline.
@@ -27,9 +27,9 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
 
 ## Architettura
 
-<img src="../assets/gcm.svg" alt="Architettura di riferimento per l’attivazione di Google Customer Match" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../assets/gcm.svg" alt="Architettura di riferimento per l’attivazione di Google Customer Match" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 1. Configurare gli spazi dei nomi di identità da utilizzare nelle origini dati per i profili.
    * Utilizzare gli spazi dei nomi predefiniti come e-mail, e-mail con hash SHA256, se disponibili.

@@ -1,23 +1,23 @@
 ---
-title: Attivazione di tipi di pubblico e profili con la blueprint delle applicazioni Experience Cloud
+title: Blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud
 description: Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud.
-solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 75%
+ht-degree: 81%
 
 ---
 
-# Attivazione di tipi di pubblico e profili con la blueprint delle applicazioni Experience Cloud
+# Blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud
 
 Gestisci profili e pubblico in Experience Platform e condividili con le applicazioni Experience Cloud. Crea e condividi segmenti e approfondimenti sui clienti in Experience Platform, e condividili con le applicazioni Experience Cloud.
 
-L&#39;attivazione con le applicazioni Experience Cloud è allineata con la [Blueprint noto di Attivazione cliente](known.md).
+L’attivazione con applicazioni Experience Cloud è allineata al [blueprint per l’attivazione dei clienti noti](known.md).
 
-## Casi d’uso
+## Casi di utilizzo
 
 * Personalizzazione e targeting attraverso i canali di interazione con il cliente basati su Experience Cloud
 * Condivisione dei dati di pubblico e profilo tra Experience Platform e le applicazioni Experience Cloud
@@ -25,7 +25,7 @@ L&#39;attivazione con le applicazioni Experience Cloud è allineata con la [Blue
 
 ## Applicazioni
 
-* Adobe Experience Platform
+* Adobe Experience Platform 
 * [!UICONTROL Real-time Customer Data Platform]
 * Experience Platform Activation
 * Applicazioni Experience Cloud
@@ -41,18 +41,18 @@ L&#39;attivazione con le applicazioni Experience Cloud è allineata con la [Blue
 
 Nella sezione sull’[architettura di Experience Platform e relative applicazioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=it) trovi ulteriori diagrammi relativi alle integrazioni di Experience Platform con le applicazioni Experience Cloud.
 
-### Attivazione di tipi di pubblico e profili con applicazioni Experience Cloud
+### Attivazione in base a pubblico e profili con le applicazioni Experience Cloud
 
-<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="Architettura di riferimento per Audience e Profile Activation con applicazioni Experience Cloud" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="Architettura di riferimento per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
 <br>
 
 ## Guardrail
 
-Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a pubblico e profili](overview.md)  e ai [guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
+Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a pubblico e profili](overview.md)   e ai [guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
 ## Considerazioni sull’implementazione
 
-* Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per [!UICONTROL Real-time Customer Profile].
+* Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per il [!UICONTROL profilo cliente in tempo reale].
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Audience Manager
 
@@ -88,7 +88,7 @@ Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a p
 * [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
 * [Documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=it)
 
-## Video ed esercitazioni correlati
+## Video e tutorial correlati
 
 * [[!UICONTROL Real-time Customer Data Platform] panoramica](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)

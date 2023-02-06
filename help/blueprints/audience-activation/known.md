@@ -1,10 +1,10 @@
 ---
 title: Blueprint per l’attivazione di clienti noti
 description: Attivazione del pubblico con dati online/offline.
-solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 83%
@@ -34,12 +34,12 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 ### Attivazione nota dei clienti tramite Real-time Customer Data Platform
 
-<img src="assets/known_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
 <br>
 
 ### Attivazione di clienti noti tramite destinazioni Audience Manager basate su persone
 
-<img src="assets/AAM_PBD.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/AAM_PBD.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
 <br>
 
 ## Guardrail
