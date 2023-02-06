@@ -3,7 +3,7 @@ title: Blueprint di esperienza digitale
 description: I modelli di esperienza digitale sono implementazioni ripetibili per affrontare la strategia e risolvere i problemi aziendali esistenti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 79%
@@ -38,17 +38,17 @@ I modelli di esperienza digitale sono implementazioni ripetibili che ti consento
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it"><img alt="immagine miniatura per il blueprint Messaggistica attivata ed Experience Platform" src="customer-journeys/assets/ajo-architecture.svg" class="modal-image" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it"><img alt="immagine miniatura per il blueprint Messaggistica attivata ed Experience Platform" src="customer-journeys/assets/ajo-architecture.svg" /></a>
     <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it"><strong>Orchestrazione tra canali diversi</strong></a></div>
     <p><em>Invia messaggi e influenza le esperienze dei clienti in tempo reale utilizzando [!UICONTROL Platform] come hub centrale.</em></p>
   </td>
   <td>
-    <a href="/help/blueprints/audience-activation/known.md"><img alt="immagine miniatura per il blueprint per l’attivazione di clienti noti" src="audience-activation/assets/known_activation.svg" class="modal-image" /></a>
+    <a href="/help/blueprints/audience-activation/known.md"><img alt="immagine miniatura per il blueprint per l’attivazione di clienti noti" src="audience-activation/assets/known_activation.svg" /></a>
     <div><a href="/help/blueprints/audience-activation/known.md"><strong>Attivazione dei clienti noti</strong></a></div>
     <p><em>Offri pubblicità cross-channel attivata in base al pubblico.</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=it"><img alt="immagine miniatura per il blueprint Consolidamento dei dati comportamentali digitali" src="customer-journey-analytics/assets/CJA.svg" class="modal-image" /></a>
+    <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=it"><img alt="immagine miniatura per il blueprint Consolidamento dei dati comportamentali digitali" src="customer-journey-analytics/assets/CJA.svg" /></a>
     <div><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=it"><strong>Analisi dei percorsi cross-channel</strong></a></div>
     <p><em>Vista unica e consolidata del comportamento del cliente tra i vari canali.</em></p>
   </td>

@@ -3,10 +3,10 @@ title: Blueprint per  il servizio Segment Match
 description: Scopri il servizio [!UICONTROL Segment Match] per Adobe Experience Platform (AEP). [!UICONTROL Segment Match] è un servizio di collaborazione sui dati che consente di scambiare dati sui segmenti basati su identificatori comuni del settore nel rispetto della privacy e in modo sicuro e gestito.
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: ht
-source-wordcount: '1766'
-ht-degree: 100%
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
+workflow-type: tm+mt
+source-wordcount: '1774'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Il servizio [!UICONTROL Segment Match] aiuta i diversi team di marketing di gran
 
 ## Architettura
 
-![Architettura del servizio Segment Match](assets/architecture-segment-match.png)
+![Architettura del servizio Segment Match](assets/architecture-segment-match.png){zoomable=&quot;yes&quot;}
 
 Il servizio [!UICONTROL Segment Match] non è un data marketplace per l’acquisto di dati. Si tratta piuttosto di una funzione di AEP che opera con dati di prime parti da specifici partner in cui la collaborazione è agevolata da controlli sulla privacy e sul consenso. Il servizio [!UICONTROL Segment Match] permette di concentrarsi sul miglioramento delle relazioni con i clienti e sulla crescita del brand. È utile nei casi in cui esiste già una relazione tra determinati brand o partner. L’esperienza offerta dal servizio [!UICONTROL Segment Match] è facile da gestire, scalabile e consente agli amministratori di condividere i segmenti in modo controllabile e basato sul consenso.
 
@@ -77,7 +77,7 @@ Il servizio [!UICONTROL Segment Match] presenta i seguenti prerequisiti:
 
 Il flusso del servizio [!UICONTROL Segment Match] per la gestione dei partner è protetto dal controllo degli accessi basato sul ruolo (RBAC). Solo le persone che dispongono di specifiche autorizzazioni possono avviare, accettare o gestire i partner. Tali operazioni possono essere eseguite nella sezione Acquisizione dati del profilo di prodotto. Sono necessarie le seguenti autorizzazioni:
 
-![Connessione per condivisione del pubblico](assets/data-ingestion.png)
+![Connessione per condivisione del pubblico](assets/data-ingestion.png){zoomable=&quot;yes&quot;}
 
 | Autorizzazione | Descrizione |
 |---|---|
@@ -140,13 +140,13 @@ In questo flusso di lavoro di condivisione dei segmenti, il partner di provenien
 
 Il flusso complessivo del processo è il seguente:
 
-![Condivisione dei segmenti](assets/segment-sharing.png)
+![Condivisione dei segmenti](assets/segment-sharing.png){zoomable=&quot;yes&quot;}
 
 Le stime di sovrapposizione offrono informazioni chiave, discovery dei partner e dati per alimentare gli accordi di collaborazione sui dati. Per ottenere queste metriche di stima della sovrapposizione, tra le sandbox non vengono mai spostati dati di clienti o di segmenti. Le identità applicabili selezionate dal cliente e pre-hash in una data sandbox vengono aggiunte a una struttura di dati probabilistici che consente ad Adobe di eseguire operazioni di unione e intersezione. Queste operazioni consentono al servizio [!UICONTROL Segment Match] di ottenere l’intersezione stimata di due strutture di dati composte da identità da due diverse sandbox, senza confrontarne i valori effettivi.
 
 Il processo di sovrapposizione delle identità dipende dal set di dati di **esportazione giornaliera completa di profili** dalla sandbox del partner di provenienza a quella del partner ricevente, al fine di identificare i profili di identità comuni appartenenti ai segmenti condivisi. Il flusso dettagliato del processo di sovrapposizione è illustrato di seguito:
 
-![Processo di sovrapposizione delle identità](assets/overlap-process.png)
+![Processo di sovrapposizione delle identità](assets/overlap-process.png){zoomable=&quot;yes&quot;}
 
 Completata la condivisione dei segmenti da parte del partner di provenienza, al partner ricevente viene inviata una notifica sul feed di segmenti condivisi. Il feed di segmenti deve essere abilitato affinché un profilo del partner ricevente possa avviare il flusso di dati di appartenenza ai segmenti. Soltanto i dati di appartenenza a un segmento vengono acquisiti nei frammenti di profilo sovrapposti dell’organizzazione IMS ricevente; dal partner di provenienza al partner ricevente non viene trasmessa alcun altro dato di identità.
 

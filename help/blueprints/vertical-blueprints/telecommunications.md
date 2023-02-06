@@ -4,10 +4,10 @@ description: Fornisci ai clienti offerte personalizzate in tempo reale e con onb
 solution: Journey Optimizer
 kt: 9486
 exl-id: fa4a6569-3972-4b97-91f1-7ca8ffd3c5b3
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 97%
+source-wordcount: '333'
+ht-degree: 91%
 
 ---
 
@@ -41,4 +41,4 @@ Per poter avviare le attività di follow-up in modo più tempestivo per gli uten
 
 ### Architettura del blueprint
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it"><img alt="immagine miniatura di una società di telecomunicazioni che invia offerte personalizzate in tempo reale, con onboarding efficiente dei clienti per assicurarne la fidelizzazione a lungo termine." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/journey-optimizer.png?lang=en"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it"><img alt="L&#39;immagine per un&#39;azienda di telecomunicazioni offre offerte personalizzate in tempo reale, con un onboarding efficiente per la fedeltà a lungo termine." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/journey-optimizer.png?lang=en"/></a>

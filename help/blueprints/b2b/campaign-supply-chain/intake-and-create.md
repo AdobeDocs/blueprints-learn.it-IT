@@ -2,10 +2,10 @@
 title: Blueprint per l’acquisizione e la creazione
 description: Acquisizione e creazione - Ottimizzare la supply chain per campagne marketing con Marketo e Workfront
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 99%
+source-wordcount: '1331'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ Per saperne di più sulla creazione di un centro di eccellenza, consulta le best
 
 Con Marketo Engage, è possibile utilizzare i token per popolare i contenuti nelle risorse delle campagne. Ad esempio, dopo aver clonato un modello di e-mail dal centro di eccellenza, Workfront Fusion può trasmettere i dettagli dalla richiesta della campagna da Workfront ai token “my” nel programma di Marketo Engage. I valori dei token possono quindi essere ereditati direttamente nell’e-mail per creare il messaggio e-mail stesso.
 
-![](assets/intake-and-create-2.png)
+![Utilizzare i token per compilare il diagramma di contenuto](assets/intake-and-create-2.png){zoomable=&quot;yes&quot;}
 
 ### Popolare immagini da AEM Assets {#populate-images-from-aem-assets}
 
@@ -149,7 +149,7 @@ Ecco alcune informazioni di base da includere nella libreria di ricerca dei mode
 
 Ecco un esempio di come è possibile assemblare la logica del flusso di lavoro in Fusion utilizzando i moduli preconfigurati di [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=it){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=it){target="_blank"} che consentono di distribuire più rapidamente l’automazione.
 
-![](assets/intake-and-create-3.png)
+![Flusso di automazione di assorbimento e creazione](assets/intake-and-create-3.png)Utilizzare i token per compilare il contenuto
 
 ## Risorse {#resources}
 
