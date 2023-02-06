@@ -1,22 +1,22 @@
 ---
-title: blueprint, Campaign e Platform di Campaign v8
+title: Blueprint per Campaign v8, Campaign e Platform
 description: Adobe Campaign v8 è lo strumento di nuova generazione per la gestione delle campagne, creato per i canali di marketing tradizionali come e-mail e direct mail. Fornisce solide funzionalità di ETL e gestione dei dati per agevolare la creazione e cura di una campagna perfetta. Il suo motore di orchestrazione consente programmi di marketing multi-touch avanzati, con attenzione particolare ai percorsi basati su batch. Inoltre, viene fornito con un server di messaggistica in tempo reale scalabile che consente ai team di marketing di inviare messaggi predefiniti basati su un payload completo da qualsiasi sistema IT, per situazioni quali reimpostazione delle password, conferme degli ordini, ricevute elettroniche e altre ancora.
 solution: Campaign,Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
-# Blueprint Campaign v8
+# Blueprint per Campaign v8
 
 Adobe Campaign v8 è lo strumento di nuova generazione per la gestione delle campagne, creato per i canali di marketing tradizionali come e-mail e direct mail. Fornisce solide funzionalità di ETL e gestione dei dati per agevolare la creazione e cura di una campagna perfetta. Il suo motore di orchestrazione consente programmi di marketing multi-touch avanzati, con attenzione particolare ai percorsi basati su batch. Inoltre, viene fornito con un server di messaggistica in tempo reale scalabile che consente ai team di marketing di inviare messaggi predefiniti basati su un payload completo da qualsiasi sistema IT, per situazioni quali reimpostazione delle password, conferme degli ordini, ricevute elettroniche e altre ancora.
 
 <br>
 
-## Casi d’uso
+## Casi di utilizzo
 
 * Programmi di messaggistica in batch molto complessi
 * Campagne di onboarding e di re-marketing
@@ -29,7 +29,7 @@ Adobe Campaign v8 è lo strumento di nuova generazione per la gestione delle cam
 
 ## Architettura
 
-<img src="assets/campaign-v8-architecture.svg" alt="Architettura di riferimento per il blueprint per Campaign v8" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/campaign-v8-architecture.svg" alt="Architettura di riferimento per il blueprint per Campaign v8" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -45,7 +45,7 @@ Adobe Campaign v8 è lo strumento di nuova generazione per la gestione delle cam
 ## Prerequisiti
 
 
-### Server applicazioni e server di messaggistica in tempo reale
+### Server applicazioni e server per messaggistica in tempo reale
 
 * Adobe Campaign Client Console, per interagire con e utilizzare il software Campaign v8. Si tratta di un client basato su Windows che utilizza protocolli Internet standard (SOAP, HTTP, ecc.). Assicurati che nella tua organizzazione siano state abilitate le autorizzazioni necessarie per distribuire, installare ed eseguire software.
 
@@ -62,7 +62,7 @@ Adobe Campaign v8 è lo strumento di nuova generazione per la gestione delle cam
 * Il sottodominio può essere completamente delegato ad Adobe (consigliato) oppure è possibile utilizzare CNAME verso server DNS specifici per Adobe (personalizzati).
 * Per garantire il corretto recapito dei messaggi, è necessario un record Google TXT per ciascun sottodominio.
 
-### push mobile
+### Push per dispositivi mobili
 
 * Uno sviluppatore per dispositivi mobili dovrà implementare, configurare e generare l’app mobile.
 * Adobe fornisce solo un SDK per la raccolta delle informazioni necessarie da FCM (Android) e APNS (iOS) per inviare i payload dei messaggi ai propri server. È invece responsabilità del cliente decidere come programmare, implementare e gestire l’app mobile, e come eseguirne il debug.
@@ -76,7 +76,7 @@ Adobe Campaign v8 è lo strumento di nuova generazione per la gestione delle cam
 
 ## Guardrail
 
-### Ridimensionamento del server applicazioni
+### Determinare la dimensione del server delle applicazioni
 
 * Lo spazio di archiviazione può essere definito per supportare fino a 200 milioni di profili, con possibilità di arrivare a 1 miliardo.
 * Configurare e controllare l’accesso degli utenti tramite Adobe Admin Console
@@ -86,11 +86,11 @@ Adobe Campaign v8 è lo strumento di nuova generazione per la gestione delle cam
    * I dati caricati tramite API vengono memorizzati nel database delle applicazioni e quindi replicati ogni ora nel database Cloud.
 * Le chiamate API sono limitate a 15 al secondo o 150.000 al giorno su scala.
 
-### Ridimensionamento del server di messaggistica in batch
+### Determinare la dimensione del server per messaggistica in batch
 
 * È possibile gestire fino a 20 milioni di messaggi all’ora.
 
-### Ridimensionamento del server di messaggistica in tempo reale
+### Determinare la dimensione del server di messaggistica in tempo reale
 
 * È possibile inviare fino a 1 milione di messaggi all’ora.
 * Per impostazione predefinita, sono previsti due server per la messaggistica in tempo reale. È possibile aumentarli fino a otto server per la messaggistica in tempo reale.
@@ -114,7 +114,7 @@ Adobe Campaign v8 è lo strumento di nuova generazione per la gestione delle cam
 
 <br>
 
-## Passaggi di implementazione
+## Fasi di implementazione
 
 Consulta la guida introduttiva per l’[implementazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=it).
 

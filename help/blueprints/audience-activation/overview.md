@@ -5,7 +5,7 @@ solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 94%
@@ -30,7 +30,7 @@ Con l’approccio di priorità al canale, ogni canale funziona come un comparto 
 
 L’illustrazione seguente illustra i componenti core del profilo cliente in tempo reale di Experience Platform.
 
-<img src="assets/profile_architecture.jpg" alt="Architettura di riferimento per il profilo cliente in tempo reale" style="border:1px solid #4a4a4a" width="90%" zoomable="yes"/>
+<img src="assets/profile_architecture.jpg" alt="Architettura di riferimento per il profilo cliente in tempo reale" style="border:1px solid #4a4a4a" width="90%"  class="modal-image"/>
 
 Prima di tutto, le origini dati vengono acquisite in Experience Platform. Se l’origine dati è configurata per l’elaborazione del profilo, viene inserita nel profilo cliente in tempo reale. Viene creato un singolo frammento o documento di profilo per ogni origine dati e ogni record di ID principale configurato per origine dati. Inoltre, quando i dati vengono acquisiti nel profilo, vengono elaborati anche dal servizio di identità. Ogni record dalle origini dati per il quale esistono più identità contrassegnate nello schema e i cui valori sono compilati nel record, verrà elaborato come relazione di identità all’interno del servizio di identità.
 
@@ -42,7 +42,7 @@ L’unione di frammenti di profilo si verifica quando il grafico delle identità
 
 L’illustrazione seguente descrive i vari metodi di segmentazione e pattern di attivazione di profili e pubblico.
 
-<img src="assets/segmentation_destination_overview.png" alt="Architettura di riferimento per il profilo cliente in tempo reale" style="border:1px solid #4a4a4a" width="90%" zoomable="yes"/>
+<img src="assets/segmentation_destination_overview.png" alt="Architettura di riferimento per il profilo cliente in tempo reale" style="border:1px solid #4a4a4a" width="90%"  class="modal-image"/>
 
 ## Guardrail per i blueprint Attivazione in base a pubblico e profili
 

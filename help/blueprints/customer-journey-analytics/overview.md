@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 95%
+source-wordcount: '406'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Un elenco completo dei casi d’uso per Customer Journey Analytics è disponibil
 
 ## Architettura per Customer Journey Analytics
 
-![Diagramma dell’architettura](assets/CJA.svg)
+![Diagramma dell’architettura](assets/CJA.svg){zoomable=&quot;yes&quot;}
 
 Ecco alcuni dei casi d’uso principali.
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
@@ -44,7 +44,7 @@ Ecco alcuni dei casi d’uso principali.
 
 * Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
-![Diagramma dei guardrail](../experience-platform/assets/CJA_guardrails.svg)
+![Diagramma dei guardrail](../experience-platform/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
 
 ## Articoli di blog correlati
 

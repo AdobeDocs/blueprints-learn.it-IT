@@ -3,7 +3,7 @@ title: Blueprint per Campaign v7
 description: Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i canali di marketing tradizionali come e-mail e direct mail. Fornisce solide funzionalità di ETL e gestione dei dati per agevolare la creazione e cura di una campagna perfetta. Il suo motore di orchestrazione consente programmi di marketing multi-touch avanzati, con attenzione particolare ai percorsi basati su batch. Inoltre, viene fornito con un server di messaggistica in tempo reale che consente ai team di marketing di inviare messaggi predefiniti basati su un payload completo da qualsiasi sistema IT per situazioni quali reimpostazione delle password, conferme degli ordini, ricevute elettroniche e altre ancora.
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 97%
@@ -27,7 +27,7 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 ## Architettura
 
-<img src="assets/campaign-v7-architecture.svg" alt="Architettura di riferimento per il blueprint per Campaign v7" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/campaign-v7-architecture.svg" alt="Architettura di riferimento per il blueprint per Campaign v7" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 

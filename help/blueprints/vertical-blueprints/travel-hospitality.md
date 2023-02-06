@@ -4,7 +4,7 @@ description: Decisioni in tempo reale con una singola vista consolidata del comp
 solution: Real-time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
 exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
-source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 92%
@@ -42,4 +42,4 @@ Sfruttando le tecnologie e i servizi Adobe, questa organizzazione è ora pronta 
 
 ### Architettura del blueprint
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it"><img alt="immagine miniatura per un’azienda nel settore viaggi e hospitality che prende decisioni in tempo reale con una singola vista consolidata del comportamento dei clienti su diversi canali." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/known_activation.svg"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it"><img alt="immagine miniatura per un’azienda nel settore viaggi e hospitality che prende decisioni in tempo reale con una singola vista consolidata del comportamento dei clienti su diversi canali." src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/known_activation.svg" class="modal-image" /></a>

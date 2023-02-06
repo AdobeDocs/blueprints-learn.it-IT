@@ -4,8 +4,8 @@ description: Trasmetti in streaming i dati raccolti dagli SDK di Experience Plat
 solution: Data Collection
 kt: 7202
 exl-id: c24a47fe-b3da-4170-9416-74d2b6a18f32
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: ht
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Per la sandbox di destinazione è necessario configurare un endpoint di streamin
 
 ## Architettura
 
-<img src="assets/multi-Sandbox-Data-Collection.svg" alt="Architettura di riferimento per l’inoltro di eventi a più sandbox" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/multi-Sandbox-Data-Collection.svg" alt="Architettura di riferimento per l’inoltro di eventi a più sandbox" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 1. Gli autori dei tag definiscono sia una proprietà Tag che una proprietà di inoltro eventi. In questo caso, gli autori definiscono gli elementi dati, le regole e le azioni che gestiscono la raccolta dei dati. Tieni presente che il codice della proprietà Tag viene eseguito sul client e distribuito da un host CDN. Il codice della proprietà di inoltro eventi viene eseguito sul server Adobe Edge.
 

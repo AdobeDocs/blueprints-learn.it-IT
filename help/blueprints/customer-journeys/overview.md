@@ -5,8 +5,8 @@ solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaig
 kt: null
 thumbnail: null
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: ht
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 
@@ -22,6 +22,6 @@ Oggi chi desidera una soluzione Customer Journey può scegliere tra due opzioni 
 
 | Blueprint | Descrizione | Architettura |
 |---|---|---|
-| **[Journey Optimizer](journey-optimizer.md)** | Basato direttamente sul profilo cliente in tempo reale di Experience Platform, consente ai team di marketing di reagire in tempo reale ai cambiamenti nel comportamento dei clienti e di incontrarli là dove si trovano, su qualsiasi canale e in qualsiasi momento. | <img src="assets/ajo-architecture.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:75%; border:1px solid #4a4a4a" /> |
-| **[Adobe Campaign v8](campaign-v8.md)** | Strumento di nuova generazione per la gestione delle campagne, ottimizzato per i complessi processi di campagne e gestione dei dati. Consente di combinare, individuare e creare comunicazioni per campagne marketing avanzate. | <img src="assets/campaign-v8-architecture.svg" alt="Architettura di riferimento per il blueprint per Campaign v8" style="width:75%; border:1px solid #4a4a4a" /> |
-| **[Adobe Campaign v7](campaign-v7.md)** | Strumento per la gestione delle campagne di marketing tradizionali, basate su batch e per diversi canali quali e-mail, SMS e direct mail. Consente ai clienti di orchestrare e gestire le varie comunicazioni con i clienti in un unico luogo. | <img src="assets/campaign-v7-architecture.svg" alt="Architettura di riferimento per il blueprint per Campaign v7" style="width:75%; border:1px solid #4a4a4a" /> |
+| **[Journey Optimizer](journey-optimizer.md)** | Basato direttamente sul profilo cliente in tempo reale di Experience Platform, consente ai team di marketing di reagire in tempo reale ai cambiamenti nel comportamento dei clienti e di incontrarli là dove si trovano, su qualsiasi canale e in qualsiasi momento. | <img src="assets/ajo-architecture.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
+| **[Adobe Campaign v8](campaign-v8.md)** | Strumento di nuova generazione per la gestione delle campagne, ottimizzato per i complessi processi di campagne e gestione dei dati. Consente di combinare, individuare e creare comunicazioni per campagne marketing avanzate. | <img src="assets/campaign-v8-architecture.svg" alt="Architettura di riferimento per il blueprint per Campaign v8" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
+| **[Adobe Campaign v7](campaign-v7.md)** | Strumento per la gestione delle campagne di marketing tradizionali, basate su batch e per diversi canali quali e-mail, SMS e direct mail. Consente ai clienti di orchestrare e gestire le varie comunicazioni con i clienti in un unico luogo. | <img src="assets/campaign-v7-architecture.svg" alt="Architettura di riferimento per il blueprint per Campaign v7" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
