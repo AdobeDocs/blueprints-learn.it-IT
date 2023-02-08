@@ -5,10 +5,10 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ La personalizzazione web e mobile consente di utilizzare la segmentazione in bas
 
 | Blueprint | Descrizione | Applicazioni Experience Cloud |
 |---|---|---|
-| **[Personalizzazione web/mobile basata sul comportamento](behavioral.md)** | <ul><li>Personalizzare in base al comportamento online e ai dati del pubblico.</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *(facoltativo)*</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
+| **[Personalizzazione web/mobile basata sul comportamento](behavioral.md)** | <ul><li>Personalizzare in base al comportamento online e ai dati del pubblico.</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *(opzionale)*</li><li>Adobe Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
 | **[Personalizzazione web e mobile con dati sui clienti noti](known-personalization.md)** | <ul><li>I profili cliente completi e la segmentazione avanzata offrono esperienze personalizzate migliori.</li><li>Personalizza con attributi ed eventi offline (dati da transazioni, prenotazioni, sistema di gestione delle relazioni con i clienti e fedeltà).</li><li>Sincronizza la personalizzazione su web, e-mail e altri canali noti.</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Analytics o Customer Journey Analytics *(opzionale)*</li><li>Adobe Audience Manager *(opzionale)*</li></ul> |
 
 <br>

@@ -4,10 +4,10 @@ description: Attivazione del pubblico con dati online/offline.
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 ## Architettura
 
-### Attivazione nota dei clienti tramite Real-time Customer Data Platform
+### Attivazione di clienti noti tramite Real-time Customer Data Platform
 
 <img src="assets/known_activation.svg" alt="Architettura di riferimento per il blueprint Attivazione di clienti noti" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
 <br>
@@ -46,14 +46,14 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 [Fai riferimento ai guardrail come indicato nella panoramica Attivazione in base a pubblico e profili](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/overview.html?lang=it#guardrails-for-audience-and-profile-activation-blueprints).
 
-## Passaggi per l’implementazione per Real-time Customer Data Platform
+## Fasi di implementazione per Real-time Customer Data Platform
 
 1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
 1. [Configurare correttamente le identità e i relativi spazi dei nomi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it) nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it).
 1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
-1. [Provisioning [!UICONTROL Real-time Customer Data Platform] condivisione dei segmenti](https://www.adobe.com/go/audiences) tra Experience Platform e Audience Manager per i tipi di pubblico definiti in Experience Platform da condividere con Audience Manager.
+1. [Abilitare la condivisione dei segmenti [!UICONTROL Real-time Customer Data Platform]](https://www.adobe.com/go/audiences) tra Experience Platform e Audience Manager per i tipi di pubblico definiti in Experience Platform da condividere con Audience Manager.
 1. [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it) in Experience Platform. Il sistema determina automaticamente se un segmento deve essere valutato in batch o in streaming.
 1. [Configurare le destinazioni](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html?lang=it) per condividere gli attributi del profilo e delle appartenenze al pubblico con le destinazioni desiderate.
 
@@ -61,7 +61,7 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 * Per condividere i dati del profilo con le destinazioni, è necessario includere il valore di identità specifico utilizzato dalla destinazione nel payload. Tutte le identità necessarie per una destinazione target devono essere inserite in Platform e configurate come identità per il [!UICONTROL profilo cliente in tempo reale].
 
-* Consulta la sezione [Attivazione di tipi di pubblico e profili con blueprint delle applicazioni Experience Cloud](platform-and-applications.md) per ulteriori dettagli sulla condivisione di tipi di pubblico da Real-time Customer Data Platform ad Audience Manager, Analytics, Target, Campaign e Journey Optimizer.
+* Consulta la sezione [Blueprint per l’attivazione in base a pubblico e profili con le applicazioni Experience Cloud](platform-and-applications.md) per ulteriori dettagli sulla condivisione di tipi di pubblico da Real-time Customer Data Platform ad Audience Manager, Analytics, Target, Campaign e Journey Optimizer.
 
 ## Fasi di implementazione per le destinazioni basate su persone di Audience Manager
 
@@ -71,13 +71,13 @@ Ulteriori dettagli relativi alle integrazioni tra Experience Platform e le appli
 
 ## Documentazione correlata
 
-* [[!UICONTROL Real-time Customer Data Platform] Descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform.html)
+* Descrizione del prodotto [[!UICONTROL Real-time Customer Data Platform]](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform.html)
 * [Linee guida per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [Documentazione sulla segmentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=it)
 * [Documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=it)
 
 ## Video e tutorial correlati
 
-* [[!UICONTROL Real-time Customer Data Platform] panoramica](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
+* Panoramica di [[!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=it)
 * [Demo di [!UICONTROL Real-time Customer Data Platform]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=it)
 * [Creare segmenti](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=it)

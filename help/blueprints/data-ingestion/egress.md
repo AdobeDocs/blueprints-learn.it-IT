@@ -4,10 +4,10 @@ description: Questo blueprint fornisce una panoramica di tutti i metodi con cui 
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Tags
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '1513'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Approcci per l’esportazione dei dati:
 
 * [Tag lato client](#client-side-tags-extensions)
 * [Inoltro eventi](#event-forwarding)
-* [Destinazioni Real-time Customer Data Platform](#RTCDP-destinations)
+* [Destinazioni di Real-time Customer Data Platform](#RTCDP-destinations)
 * [Azioni personalizzate di Journey Optimizer](#jo-custom-actions)
 
 ## Architettura d’insieme per l’accesso ai dati e l’esportazione
@@ -122,11 +122,11 @@ Per ulteriori informazioni, consulta [Inoltro eventi](https://experienceleague.a
 * Al momento l’arricchimento dal profilo Edge o da altre origini di dati non è supportato.
 * Sono supportate alcune possibilità di filtraggio dei dati e semplici trasformazioni di mappatura.
 
-### Destinazioni Real-time Customer Data Platform {#RTCDP-destinations}
+### Destinazioni di Real-time Customer Data Platform {#RTCDP-destinations}
 
 I dati degli attributi del profilo e di appartenenza al pubblico possono essere attivati nelle destinazioni aziendali e pubblicitarie. Pertanto i dati in uscita devono essere acquisiti nel Profilo cliente in tempo reale di Experience Platform.
 
-Fai riferimento a [Destinazioni Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it) documentazione per ulteriori informazioni.
+Per ulteriori informazioni, consulta [Destinazioni di Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it).
 
 #### Casi di utilizzo
 

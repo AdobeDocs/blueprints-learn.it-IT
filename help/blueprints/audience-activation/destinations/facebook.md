@@ -4,10 +4,10 @@ description: Attivazione in Facebook Custom Audiences.
 solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '957'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Acquisisci i dati dei clienti da più origini per creare una singola vista del p
    * Controlla se sono stati ignorati dei profili a causa di identità di profilo o attributi obbligatori mancanti.
    * Controlla se si sono verificati altri errori che devono essere risolti.
 1. Verifica che il pubblico sia stato attivato nella destinazione con il numero previsto di appartenenze al pubblico.
-   * Accedi al portale Facebook Custom Audience per verificare che il pubblico da Real-time Customer Data Platform sia stato consegnato e che il tasso di corrispondenza dei profili nel pubblico in Facebook corrisponda ragionevolmente al numero di profili nel pubblico da Real-time Customer Data Platform.
+   * Accedi al portale Facebook Custom Audience per verificare che il pubblico da Real-time Customer Data Platform sia stato consegnato e che il tasso di corrispondenza dei profili nel pubblico in Facebook sia in linea con il numero di profili nel pubblico da Real-time Customer Data Platform.
 
 ## Guardrail
 

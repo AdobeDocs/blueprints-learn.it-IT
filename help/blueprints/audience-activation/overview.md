@@ -1,19 +1,19 @@
 ---
 title: Blueprint per l’attivazione in base a pubblico e profili
-description: Distribuisci esperienze cliente attivate dal pubblico e incentrate sul profilo con Real-time Customer Data Platform ​.
+description: Offri ai clienti esperienze personalizzate basate su profili e attivate dal pubblico con Real-time Customer Data Platform.
 solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Blueprint per l’attivazione in base a pubblico e profili
+# Blueprint per  l’attivazione in base a pubblico e profili 
 
 L’attivazione di profili e pubblico è fondamentale per il successo nel mondo del data-driven marketing. Tuttavia, molti brand continuano a concentrarsi sull’attivazione in base al canale, che spesso risulta in incoerenza a livello di portata e personalizzazione.
 
@@ -50,7 +50,7 @@ L’illustrazione seguente descrive i vari metodi di segmentazione e pattern di 
 
 ### Attivazione di attributi e identità
 
-* [!UICONTROL Real-time Customer Data Platform] può attivare le appartenenze al pubblico, nonché le modifiche agli attributi e alle identità che si verificano per i profili che sono membri di segmenti selezionati per l’attivazione. Se l’obiettivo è quello di attivare attributi o identità, devi definire un segmento globale che includa tutti i profili a cui vengono inviati gli aggiornamenti di attributi e identità. A questo punto, puoi selezionare il segmento e gli attributi desiderati da attivare come parte della configurazione della destinazione.
+* [!UICONTROL Real-time Customer Data Platform] può attivare l’appartenenza a un pubblico e le modifiche di attributi e identità che si verificano per i profili che rientrano nei segmenti selezionati per l’attivazione. Se l’obiettivo è quello di attivare attributi o identità, devi definire un segmento globale che includa tutti i profili a cui vengono inviati gli aggiornamenti di attributi e identità. A questo punto, puoi selezionare il segmento e gli attributi desiderati da attivare come parte della configurazione della destinazione.
 * Tieni presente che le destinazioni batch non supportano l’attivazione di eventi di modifica dei soli attributi. È possibile inviare dati completi o incrementali di appartenenza a un pubblico insieme agli attributi selezionati per l’attivazione.
 
 ### Attivazione di segmenti batch nelle destinazioni streaming

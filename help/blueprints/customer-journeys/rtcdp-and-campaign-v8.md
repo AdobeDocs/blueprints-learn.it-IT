@@ -3,10 +3,10 @@ title: Modello di integrazione per Real-Time CDP con Adobe Campaign v8
 description: Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo reale e lo strumento di segmentazione centralizzata con Adobe Campaign v8, per fornire conversazioni personalizzate.
 solution: Real-time Customer Data Platform, Campaign
 exl-id: d0291088-02ed-4e7e-b538-018ea40e38c6
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Mostra come utilizzare Adobe Experience Platform, il profilo cliente in tempo re
 
 ## Fasi di implementazione
 
-Consulta la seguente documentazione sulla configurazione del connettore sorgente Campaign v8 su Adobe Experience Platform e del connettore di destinazione Real-time Customer Data Platform su Campaign v8.
+Consulta la seguente documentazione su come configurare il connettore di origini di Campaign v8 per Adobe Experience Platform, e il connettore di destinazioni di Real-time Customer Data Platform per Campaign v8.
 [Connettori per Campaign e AEP](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-aep.html?lang=it)
 
 ## Guardrail
@@ -53,7 +53,7 @@ Consulta la seguente documentazione sulla configurazione del connettore sorgente
 * Adobe Campaign è la singola origine per tutti i profili attivi: i profili devono quindi esistere in Adobe Campaign e non dovrebbero essere creati nuovi profili in base ai segmenti di Experience Platform.
 
 
-### Experience Platform di condivisione dei segmenti Real-time Customer Data Platform
+### Condivisione dei segmenti Experience Platform Real-time Customer Data Platform
 
 * Consulta la documentazione sul connettore di destinazioni RTCDP per Campaign - [Connessione di RTCDP per Campaign](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html?lang=it)
 * Si consiglia un limite di 50 segmenti

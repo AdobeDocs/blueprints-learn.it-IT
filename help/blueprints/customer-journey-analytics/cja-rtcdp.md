@@ -1,24 +1,24 @@
 ---
-title: Customer Journey Analytics con blueprint Real-time Customer Data Platform
+title: Blueprint per Customer Journey Analytics con Real-time Customer Data Platform  l’acquisizione e la creazione
 description: Unifica e analizza dati e comportamenti dei clienti da tutto il percorso del cliente in Customer Journey Analytics, e pubblica i tipi di pubblico da CJA a RTCDP
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
-# Customer Journey Analytics con blueprint Real-time Customer Data Platform
+# Blueprint per Customer Journey Analytics con Real-time Customer Data Platform  l’acquisizione e la creazione 
 
 Crea e pubblica i tipi di pubblico identificati da Customer Journey Analytics (CJA) nel profilo cliente in tempo reale in Adobe Experience Platform, per eseguire attività di targeting dei clienti e personalizzazione. Questa soluzione è ideale per creare tipi di pubblico sulla base di dati storici, nonché tipi di pubblico più mirati con filtri granulari e campi calcolati in Customer Journey Analytics.
 
 ## Guida alla pubblicazione dei tipi di pubblico in Customer Journey Analytics
 
-Consulta la seguente documentazione per informazioni sull’implementazione e la configurazione della pubblicazione dei tipi di pubblico da Customer Journey Analytics a Real-time Customer Data Platform. [Documentazione](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it)
+Consulta la seguente documentazione per informazioni su come implementare e configurare la pubblicazione dei tipi di pubblico da Customer Journey Analytics a Real-time Customer Data Platform. [Documentazione](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it)
 
 ## Architettura per i blueprint per Customer Journey Analytics
 

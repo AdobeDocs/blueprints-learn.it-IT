@@ -5,14 +5,14 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Raccolta e preparazione dei dati blueprint
+# Blueprint per raccolta e preparazione dei dati  analisi dei dati, intelligence e AI/ML 
 
 Il blueprint per la raccolta e preparazione dei dati comprende tutti i metodi con cui i dati possono essere preparati e acquisiti in Adobe Experience Platform. Comprende inoltre la possibilità di raccogliere dati sulla rete Edge di Adobe Experience Platform, con successivo inoltro lato server verso destinazioni aziendali.
 
