@@ -5,9 +5,9 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 374f3afa12611b21121e9bfe2fd906342ba1ea4f
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -35,9 +35,7 @@ ht-degree: 100%
    + [Attivazione del pubblico con dati anonimi   (AAM)](/help/blueprints/audience-activation/anonymous.md)
    + Attivazione dei clienti noti (RTCDP) {#known-customer-audience-activation}
       + [Panoramica](/help/blueprints/audience-activation/known.md)
-      + Attivazione per canali social e pubblicitari {#audience-activation}
-         + [Attivazione in Facebook Custom Audiences](/help/blueprints/audience-activation/destinations/facebook.md)
-         + [Attivazione per Google Customer Match](/help/blueprints/audience-activation/destinations/gcm.md)
+      + [Attivazione per canali social e pubblicitari ](/help/blueprints/audience-activation/advertising-activation.md)
       + [Attivazione per destinazioni basate su file e streaming verso soluzioni aziendali](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)
       + [Servizio Segment Match](/help/blueprints/audience-activation/segment-match.md)
