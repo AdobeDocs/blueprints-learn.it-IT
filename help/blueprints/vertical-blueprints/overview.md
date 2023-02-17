@@ -3,7 +3,7 @@ title: 'Blueprint per esperienze digitali: storie di successo'
 description: Le storie di successo dei blueprint per esperienze digitali dimostrano il valore derivante dall’utilizzo delle applicazioni Adobe Experience Cloud, basate su Adobe Experience Platform, in diversi settori.
 exl-id: 9e73bae3-ba34-4819-a54e-710965fe74d9
 source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
 ht-degree: 100%
 
