@@ -1,18 +1,18 @@
 ---
-title: Blueprint di esperienza digitale
-description: I modelli di esperienza digitale sono implementazioni ripetibili per affrontare la strategia e risolvere i problemi aziendali esistenti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
+title: Blueprint per esperienze digitali
+description: I blueprint per esperienze digitali sono implementazioni ripetibili che permettono di risolvere questioni di strategia e problemi di business noti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Blueprint di Digital Experience
+# Blueprint per esperienze digitali
 
-I modelli di esperienza digitale sono implementazioni ripetibili che ti consentono di affrontare la strategia e risolvere rapidamente i problemi aziendali esistenti. Ogni blueprint offre una serie di elementi che descrivono il problema di business generale, le architetture, le fasi di implementazione e le considerazioni tecniche, e fornisce i collegamenti alla relativa documentazione.
+I blueprint per esperienze digitali sono implementazioni ripetibili che permettono di risolvere rapidamente questioni di strategia e problemi di business noti. Ogni blueprint offre una serie di elementi che descrivono il problema di business generale, le architetture, le fasi di implementazione e le considerazioni tecniche, e fornisce i collegamenti alla relativa documentazione.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -23,7 +23,7 @@ I modelli di esperienza digitale sono implementazioni ripetibili che ti consento
 
 ## Novità
 
-* **[blueprint di Audience e Profile Activation to Enterprise Destinations](/help/blueprints/audience-activation/enterprise-destinations.md)**
+* **[Blueprint per attivazione in base a pubblico e profili nelle destinazioni aziendali](/help/blueprints/audience-activation/enterprise-destinations.md)**
 
    *Mantieni i profili cliente aggiornati su tutti i sistemi, per renderli accessibili ai team di vendita e supporto.*
 * **[Blueprint per hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)**
@@ -31,7 +31,7 @@ I modelli di esperienza digitale sono implementazioni ripetibili che ti consento
    *Fornire un contesto per il supporto e le vendite assistiti dagli agenti.*
 * **[Blueprint per analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)**
 
-   *Eseguire query esplorative e analisi dei dati nel data lake.*
+   *Esegui query esplorative e analisi dei dati nel data lake.*
 
 ## Blueprint in primo piano
 
@@ -55,7 +55,7 @@ I modelli di esperienza digitale sono implementazioni ripetibili che ti consento
 </tr>
 </table>
 
-## Post sul blog
+## Articoli di blog
 
 * [[!DNL Introducing Adobe Experience Platform's New Digital Experience Blueprints]](https://medium.com/adobetech/introducing-adobe-experience-platforms-new-digital-experience-blueprints-93a6b5f5da7c)
 * [[!DNL Blueprint for Audience Activation in Adobe Experience Platform]](https://medium.com/adobetech/a-blueprint-for-audience-activation-in-adobe-experience-platform-b2b30fae90fd)

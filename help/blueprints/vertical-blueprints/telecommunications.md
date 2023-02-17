@@ -6,8 +6,8 @@ kt: 9486
 exl-id: fa4a6569-3972-4b97-91f1-7ca8ffd3c5b3
 source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Per poter avviare le attività di follow-up in modo più tempestivo per gli uten
 |---|---|---|
 | **Migliorare il tasso di conversione delle campagne **<br></br>** Incrementare le entrate annuali dagli account**</ul> | <ul><li>Creare un nuovo segmento in tempo quasi reale per gli utenti interessati all’aggiunta di una nuova linea ma non ancora convertiti.</li><li>Attivare un secondo punto di contatto per il follow-up dei clienti interessati ma non ancora convertiti. </li><li>Utilizzare una strategia di test per misurare le prestazioni del percorso e ottimizzarle per la conversione tramite e-mail.</li></ul> | <ul><li><strong>Esperienze rilevanti e di alta qualità:</strong> con l’orchestrazione dei percorsi, i clienti ricevono messaggi più pertinenti e quindi si riduce il tasso di abbandono delle mailing list.</li><li><strong>Journey Orchestration adattabile:</strong> è possibile creare percorsi personalizzati e tempestivi per incrementare le conversioni e i ricavi totali.</li></ul> |
 
-## Blueprint principale: Pubblico e attivazione con applicazioni Experience Cloud
+## Blueprint principale: Audience e attivazione con applicazioni Experience Cloud
 
 ### Descrizione
 

@@ -7,12 +7,12 @@ thumbnail: null
 exl-id: 05bf0a34-e5c7-498c-8d5d-1d549c00e070
 source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Diagramma dell&#39;architettura di distribuzione SDK specifica per l&#39;applicazione
+# Diagramma dell’architettura per l’implementazione tramite SDK per specifiche applicazioni
 
 Questo schema dell’architettura illustra i percorsi di integrazione e raccolta dati con l’implementazione eseguita mediante gli SDK di specifiche applicazioni.
 
