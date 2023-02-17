@@ -4,9 +4,9 @@ description: Adobe Campaign v7 è lo strumento per la gestione delle campagne, c
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
 source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1195'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Campaign v7 è lo strumento per la gestione delle campagne, creato per i c
 
 | Scenario | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
-| [Real-Time CDP con Adobe Campaign](rtcdp-and-campaign.md) | Mostra come utilizzare Real-Time CDP di Adobe Experience Platform e il suo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate. | <ul><li>Condivisione di profili e tipi di pubblico da Real-Time CDP ad Adobe Campaign tramite flussi di lavoro per lo scambio di file di archiviazione cloud e acquisizione Adobe Campaign. </li><li>Condividi facilmente i dati di consegna e interazione dalle conversazioni dei clienti in Real-Time CDP da Adobe Campaign per migliorare sia il Profilo del cliente in tempo reale che il reporting cross-channel sulle campagne di messaggistica</li></ul> |
+| [Real-Time CDP con Adobe Campaign](rtcdp-and-campaign.md) | Mostra come utilizzare Real-Time CDP di Adobe Experience Platform e il suo strumento di segmentazione centralizzata con Adobe Campaign, per fornire conversazioni personalizzate. | <ul><li>Condivisione di profili e tipi di pubblico da Real-Time CDP ad Adobe Campaign tramite flussi di lavoro per lo scambio di file di archiviazione cloud e acquisizione Adobe Campaign. </li><li>Condividi facilmente i dati di consegna e interazione dalle conversazioni dei clienti in Real-Time CDP da Adobe Campaign, per migliorare sia il profilo cliente in tempo reale che il reporting cross-channel sulle campagne di messaggistica.</li></ul> |
 | [Journey Optimizer con Adobe Campaign](ajo-and-campaign.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare esperienze 1:1 utilizzando il profilo del cliente in tempo reale, e come sfruttare il sistema di messaggistica transazionale nativo di Adobe Campaign per inviare il messaggio. | Sfrutta il profilo cliente in tempo reale e la potenza di Journey Optimizer per orchestrare le esperienze attuali, e utilizza le funzionalità di messaggistica nativa in tempo reale di Adobe Campaign per le comunicazioni della fase finale.<br><br>Considerazioni:<br><ul><li>È possibile inviare fino a 50.000 messaggi all’ora tramite il server di messaggi in tempo reale.<li>Journey Optimizer non applica alcuna limitazione; assicurati che gli aspetti tecnici siano approvati da un Pre-Sales Enterprise Architect.</li><li>La funzionalità Gestione delle decisioni non è supportata nei payload verso il server di messaggistica in tempo reale di Campaign v7.</li></ul> |
 
 <br>
