@@ -6,9 +6,9 @@ kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
 source-git-commit: 16ca42fdb944e658bfc1fb3e960e81cd67be049c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -234,7 +234,7 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 </td>
 <td colspan="1">
 <ul>
-<li>Le metriche Pubblico e Profilo vengono inviate al data lake di Experience Platform per abilitare i dashboard di reportistica con informazioni approfondite sui profili.</li>
+<li>Le metriche Pubblico e Profilo vengono inviate al data lake di Experience Platform per abilitare le dashboard di reportistica con informazioni approfondite sui profili.</li>
 <li>I dati Pubblico e Profilo nel data lake possono essere utilizzati per ulteriori approfondimenti tramite Query Service e Customer Journey Analytics.</li>
 </ul>
 </td>
