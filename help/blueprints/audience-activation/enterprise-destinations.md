@@ -5,8 +5,8 @@ solution: Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
 source-git-commit: 0d1bb41eb6b70be7c3c8a3196c9974a0d7807404
-workflow-type: tm+mt
-source-wordcount: '415'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!
 
 ## Applicazioni
 
-* Adobe Experience Platform  Activation
+* Adobe Experience Platform   Activation
 
 ## Architettura
 
