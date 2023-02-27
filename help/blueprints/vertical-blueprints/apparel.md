@@ -4,10 +4,10 @@ description: Sono stati utilizzati più blueprint per abilitare il marketing in 
 solution: Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
 kt: 9487
 exl-id: f1a3e785-c804-43bd-90de-da4359bdd810
-source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
+source-git-commit: 5bf1f0c01e1c7d2ebb2ae7228cc04c149a789664
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Il suo team tecnologico utilizza Adobe Experience Platform e altre soluzioni Ado
 |---|---|---|
 | **Esperienze cross-channel collegate **<br></br>** Coinvolgimento e fidelizzazione **<br></br>** Democratizzazione dei dati e insights**</ul> | <ul><li>Integrazione di diversi set di dati aziendali per creare decine di milioni di profili e centinaia di segmenti, diverse destinazioni e dashboard di reporting</li><li>Attivazione su più destinazioni tramite Real-time Customer Data Platform</li><li>Funzionalità di analisi a livello di cliente tramite l’analisi della customer journey</li><li>Trigger automatizzati basati su eventi per le interazioni dei clienti, tramite Adobe Journey Optimizer</li></ul> | <ul><li><strong>Profilo cliente: </strong>vista a 360 gradi dei clienti per la segmentazione</li><li><strong>Attivazioni delle destinazioni: </strong>attivazione su paid media, e-mail e piattaforme social</li><li><strong>Analisi cliente e attribuzione: </strong>analisi di attribuzione cross-channel disponibile ad hoc e facilmente distribuita<li><strong>Journey Orchestration: </strong> creazione e attuazione di campagne attivate e pianificate utilizzando il contesto in tempo reale</li></ul> |
 
-## Blueprint principale: Pubblico e attivazione con applicazioni Experience Cloud
+## Blueprint principale: Audience e attivazione con applicazioni Experience Cloud
 
 ### Descrizione
 
@@ -46,4 +46,4 @@ Il suo team tecnologico utilizza Adobe Experience Platform e altre soluzioni Ado
 
 ### Architettura del blueprint
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it"><img alt="immagine per un&#39;azienda di Abbigliamento utilizzando l&#39;attivazione del pubblico, l&#39;analisi del percorso cliente e le blueprint dei percorsi cliente" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en" class="modal-image"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it"><img alt="immagine per un&#39;azienda di Abbigliamento utilizzando l&#39;attivazione del pubblico, l&#39;analisi del percorso cliente e le blueprint dei percorsi cliente" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps.svg?lang=en" class="modal-image"/></a>
