@@ -6,13 +6,13 @@ kt: null
 thumbnail: null
 exl-id: 5ae084bf-a98d-418a-8038-e6f849ff7c1d
 source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Blueprint per  Customer Journey Analytics con Journey Optimizer 
+# Blueprint per  Customer Journey Analytics con Journey Optimizer
 
 I dati di Journey Optimizer sono condivisi con il data lake di Experience Platform e disponibili per le funzioni di acquisizione, analisi e reporting di Customer Journey Analytics. I dati sulla distribuzione, sul livello di interazione e sull&#39;efficacia dei percorsi possono essere analizzati e raccolti direttamente in Customer Journey Analytics.
 
