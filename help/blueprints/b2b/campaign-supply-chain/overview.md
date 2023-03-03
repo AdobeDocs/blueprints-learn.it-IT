@@ -3,9 +3,9 @@ title: Blueprint per supply chain per campagne marketing con Marketo e Workfront
 description: Panoramica - Blueprint per l’ottimizzazione della supply chain per campagne marketing con Marketo e Workfront
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
 source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1778'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Con Workfront Fusion, i team delle operazioni di marketing possono eliminare mol
 
 Il diagramma seguente illustra un flusso di lavoro per il processo di sviluppo di una campagna e-mail richiesta. Puoi anche vedere il ruolo che può avere Workfront Fusion tra Workfront e Marketo Engage, per promuovere l’automazione dei flussi di lavoro e dei processi nell’intero ciclo di sviluppo della campagna.
 
-![Pianificazione delle campagne all’esecuzione - casi di utilizzo dell’automazione](assets/overview-1.png){zoomable=&quot;yes&quot;}
+![Dalla pianificazione all’esecuzione delle campagne - Casi di utilizzo per l’automazione](assets/overview-1.png){zoomable=&quot;yes&quot;}
 
 Prendi nota delle diverse fasi del processo di sviluppo di una campagna.
 
@@ -60,7 +60,7 @@ Adobe Workfront consente alle organizzazioni di gestire il lavoro in modo da ren
 
 Per comprendere il rapporto tra Workfront e Marketo Engage, è importante capire come mappare il processo aziendale su questi oggetti.
 
-![Informazioni sulla rappresentazione delle iniziative di marketing in Workfront](assets/overview-2.png){zoomable=&quot;yes&quot;}
+![Rappresentazione delle iniziative di marketing in Workfront](assets/overview-2.png){zoomable=&quot;yes&quot;}
 
 ### Definizione della gerarchia dei portfolio {#portfolio-hierarchy-defined}
 
@@ -115,7 +115,7 @@ La Zeplin Company sta rilasciando una versione aggiornata di un accessorio per t
 
 La gerarchia seguente mostra come la strategia, le tattiche, le attività e le risorse vengono mappate in Workfront per questa campagna di marketing.
 
-![Esempio di gestione del lavoro di un&#39;iniziativa di marketing](assets/overview-3.png){zoomable=&quot;yes&quot;}
+![Esempio di gestione del lavoro per un’iniziativa di marketing](assets/overview-3.png){zoomable=&quot;yes&quot;}
 
 ## Mappatura da Workfront a Marketo {#mapping-workfront-to-marketo}
 
@@ -129,7 +129,7 @@ Utilizzando Workfront Fusion come livello di integrazione, puoi mappare i proget
 
 Di seguito è riportato un esempio di come un programma può includere più progetti, e come tali progetti Workfront possono essere mappati su programmi in Marketo Engage.
 
-![Mappatura di progetti Workfront a programmi Marketi Engage](assets/overview-4.png){zoomable=&quot;yes&quot;}
+![Mappatura dei progetti Workfront sui programmi Marketo Engage](assets/overview-4.png){zoomable=&quot;yes&quot;}
 
 Per un’iniziativa di marketing su grande scala, potrebbe essere necessario inserire più progetti Workfront in un programma Workfront. Per una richiesta una tantum, invece, ad esempio per un webinar o un’e-mail, sarà sufficiente creare un singolo progetto Workfront. Qualunque siano le tue esigenze, Workfront, Workfront Fusion e Marketo Engage offrono al tuo team tutta la flessibilità necessaria per integrare il processo di sviluppo delle campagne senza soluzione di continuità, dalla pianificazione all’esecuzione.
 
