@@ -1,19 +1,19 @@
 ---
-title: Attivazione a destinazioni social e pubblicitarie da Real-time Customer Data Platform
-description: Attivazione a destinazioni social e pubblicitarie da Real-time Customer Data Platform
+title: Attivazione per destinazioni social e pubblicitarie da Real-time Customer Data Platform
+description: Attivazione per destinazioni social e pubblicitarie da Real-time Customer Data Platform
 solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
 source-git-commit: 374f3afa12611b21121e9bfe2fd906342ba1ea4f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1184'
+ht-degree: 100%
 
 ---
 
-# Attivazione a destinazioni social e pubblicitarie da Real-time Customer Data Platform
+# Attivazione per destinazioni social e pubblicitarie da Real-time Customer Data Platform
 
-Acquisisci i dati dei clienti da più sorgenti per creare una singola vista del profilo del cliente, segmenta questi profili a tipi di pubblico generati per il marketing e la personalizzazione, condividi questi tipi di pubblico in Ad Networks, come Facebook e Google, per eseguire il targeting e la personalizzazione delle campagne rispetto a tali tipi di pubblico.
+Acquisisci i dati dei clienti da più origini per creare una singola vista del profilo del cliente; segmenta i profili per creare tipi di pubblico per le attività di marketing e personalizzazione; condividi questi tipi di pubblico in ad network come Facebook e Google per il targeting e la personalizzazione delle campagne.
 
 ## Casi di utilizzo
 
@@ -73,7 +73,7 @@ Acquisisci i dati dei clienti da più sorgenti per creare una singola vista del 
    * Esamina il profilo che deve essere incluso in un segmento per verificare che l’appartenenza al segmento sia effettivamente inclusa nella sezione appropriata del profilo.
 1. Nella configurazione delle destinazioni, configura la distribuzione del pubblico alla destinazione.
    * Per informazioni sulla configurazione della destinazione Facebook, consulta la [guida alla destinazione Facebook](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=it).
-   * Consulta la sezione [Guida alla destinazione di Google Customer Match](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=it) per ulteriori dettagli sulla configurazione della destinazione Google.
+   * Per informazioni sulla configurazione della destinazione Google, consulta la [guida alla destinazione Google Customer Match](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=it).
    * Durante la configurazione di una destinazione, seleziona il pubblico da attivare in tale destinazione.
    * Determina la data di inizio pianificata, ossia quando il flusso di dati della destinazione dovrà iniziare a distribuire il pubblico alla destinazione.
    * Ogni destinazione prevede l’invio di specifici attributi obbligatori e facoltativi.
@@ -84,7 +84,7 @@ Acquisisci i dati dei clienti da più sorgenti per creare una singola vista del 
       * Per Google Customer Match, le appartenenze a un pubblico vengono consegnate in modalità streaming a un endpoint Customer Match di Google in formato JSON.
       * Le appartenenze a un pubblico verranno consegnate in modalità streaming dopo la valutazione della segmentazione in streaming o batch in Experience Platform.
 1. Assicurati che il flusso di destinazione abbia consegnato il pubblico alla destinazione come previsto.
-   * Controlla l’interfaccia di monitoraggio per confermare che il pubblico sia stato consegnato con il numero di profili previsti. La dimensione del pubblico deve riflettere il numero previsto di profili attivati, tenendo presente che una destinazione specifica come Facebook e Google richiederà alcuni campi, ad esempio un’identità hash e-mail, e se non presente nel profilo membro del pubblico, non verrà attivata nella destinazione.
+   * Controlla l’interfaccia di monitoraggio per confermare che il pubblico sia stato consegnato con il numero di profili previsti. La dimensione del pubblico deve rispecchiare il numero previsto di profili attivati. Considera che specifiche destinazioni, come Facebook e Google, richiedono alcuni campi obbligatori (ad esempio, un’identità hash e-mail); se questi non sono presenti in un profilo appartenente al pubblico, tale profilo non verrà attivato nella destinazione.
    * Controlla se sono stati ignorati dei profili a causa di identità di profilo o attributi obbligatori mancanti.
    * Controlla se si sono verificati altri errori che devono essere risolti.
 1. Verifica che il pubblico sia stato attivato nella destinazione con il numero previsto di appartenenze al pubblico.
@@ -97,6 +97,6 @@ Acquisisci i dati dei clienti da più sorgenti per creare una singola vista del 
 
 ## Documentazione correlata
 
-Attivazione in Facebook Customer Audiences - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=it)
+Attivazione per Facebook Customer Audiences - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=it)
 
-Attivazione in Google Customer Match - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=it)
+Attivazione per Google Customer Match - [Configurazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=it)
