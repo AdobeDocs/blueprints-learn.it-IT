@@ -1,18 +1,18 @@
 ---
-title: Blueprint per la preparazione e l’ acquisizione dei dati
+title: Blueprint per la preparazione e l’acquisizione dei dati
 description: Questo blueprint mostra tutti i metodi con cui i dati possono essere acquisiti e preparati in Adobe Experience Platform.
 solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
 source-git-commit: f22ff4ac15b21592226f6645ab28f30473996776
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1095'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Blueprint per la preparazione e l’ acquisizione dei dati
+# Blueprint per la preparazione e l’acquisizione dei dati
 
 Il blueprint per la preparazione e acquisizione dei dati comprende tutti i metodi con cui i dati possono essere preparati e inseriti in Adobe Experience Platform.
 
@@ -42,7 +42,7 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 <p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Metodo</span></span></span></p>
 </td>
 <td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:20px; vertical-align:top; width:401px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Casi d’uso comuni</span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Casi d’uso più comuni</span></span></span></p>
 </td>
 <td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:20px; vertical-align:top; width:218px">
 <p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Protocolli</span></span></span></p>
@@ -57,7 +57,7 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Raccolta di dati da siti web e app mobili.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Raccolta dati da siti web e app mobili.</span></span></span></li>
 <li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Metodo preferito per la raccolta lato client.</span></span></span></li>
 </ul>
 </td>
@@ -66,17 +66,17 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
 <ul>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Implementa più applicazioni di Adobe sfruttando un unico SDK.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Implementa più applicazioni Adobe con un unico SDK.</span></span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=en" style="color:#0563c1; text-decoration:underline">Connettore API HTTP</a></span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=it" style="color:#0563c1; text-decoration:underline">Connettore API HTTP</a></span></span></span></p>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Raccolta da fonti, transazioni, eventi e segnali pertinenti dei clienti</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Raccolta da origini di streaming, transazioni, eventi pertinenti dei clienti e segnali</span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
@@ -84,17 +84,17 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
 <ul>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">I dati vengono inviati direttamente all’hub in modo che non venga effettuata alcuna segmentazione Edge in tempo reale o nessun inoltro di eventi.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">I dati vengono trasmessi in streaming direttamente all’hub, senza inoltro eventi o segmentazione Edge in tempo reale.</span></span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=en" style="color:#0563c1; text-decoration:underline">API di rete Edge</a></span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=it" style="color:#0563c1; text-decoration:underline">Edge Network API</a></span></span></span></p>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Raccolta da fonti di streaming, transazioni, eventi e segnali pertinenti dei clienti dalla rete Edge distribuita a livello globale</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Raccolta da origini di streaming, transazioni, eventi pertinenti dei clienti e segnali dalla rete Edge distribuita a livello globale</span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
@@ -102,7 +102,7 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
 <ul>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">I dati vengono trasmessi in streaming tramite la rete Edge. Supporto per la segmentazione in tempo reale sul bordo. </span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">I dati vengono trasmessi in streaming tramite la rete Edge. Supporto della segmentazione in tempo reale nella rete Edge. </span></span></span></li>
 </ul>
 </td>
 </tr>
@@ -112,25 +112,25 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Implementazione preventiva di Adobe Analytics, Marketo, Campaign, Target, AAM</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Precedente implementazione di Adobe Analytics, Marketo, Campaign, Target, AAM</span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">API e connettori push, sorgente</span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Push, connettori di origini e API</span></span></span></p>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
 <ul>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">L’approccio consigliato è la migrazione all’SDK per web e dispositivi mobili rispetto agli SDK per applicazioni tradizionali.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">L’approccio consigliato prevede la migrazione dagli SDK tradizionali delle singole applicazioni a Web/Mobile SDK.</span></span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=it" style="color:#0563c1; text-decoration:underline">Connettori sorgente in streaming</a></span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=it" style="color:#0563c1; text-decoration:underline">Connettori per origini in streaming</a></span></span></span></p>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Acquisizione di un flusso di eventi aziendali, generalmente utilizzato per la condivisione di dati aziendali su più applicazioni a valle. </span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Acquisizione di uno stream di eventi aziendali, solitamente utilizzato per la condivisione di dati aziendali con più applicazioni a valle. </span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
@@ -138,21 +138,21 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
 <ul>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Deve essere trasmesso in streaming in formato XDM.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">È necessaria la trasmissione in streaming in formato XDM.</span></span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">SDK per sorgenti di streaming</span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">SDK per origini di streaming</span></span></span></p>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Simile al connettore API HTTP, consente la scheda di configurazione self-service di un flusso di dati esterno.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Simile al connettore API HTTP, consente una scheda di configurazione self-service per un flusso di dati esterno.</span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Push, API HTTP, JSON</span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Push, HTTP API, JSON</span></span></span></p>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
 <ul>
@@ -175,7 +175,7 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 <p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Metodo</span></span></span></p>
 </td>
 <td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:34px; vertical-align:top; width:397px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Casi d’uso comuni</span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Casi d’uso più comuni</span></span></span></p>
 </td>
 <td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:34px; vertical-align:top; width:215px">
 <p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Protocolli</span></span></span></p>
@@ -186,11 +186,11 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </tr>
 <tr>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:217px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=en" style="color:#0563c1; text-decoration:underline">API di acquisizione in batch</a></span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=it" style="color:#0563c1; text-decoration:underline">API per acquisizione batch</a></span></span></span></p>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:397px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Acquisizione da una dimensione gestita dall'azienda. Pulizia e trasformazione dei dati prima dell’assimilazione.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Acquisizione da una coda gestita dall’azienda. Pulizia e trasformazione dei dati prima dell’acquisizione.</span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:215px">
@@ -204,12 +204,12 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </tr>
 <tr>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:217px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob-s3.html?lang=en" style="color:#0563c1; text-decoration:underline">Connettori sorgente batch</a></span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob-s3.html?lang=it" style="color:#0563c1; text-decoration:underline">Connettori per origini batch</a></span></span></span></p>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:397px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Approccio comune per l’acquisizione di file da posizioni di archiviazione cloud.</span></span></span></li>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Connettori alle applicazioni di gestione delle relazioni con i clienti e di marketing comuni.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Approccio comune per l’acquisizione di file da archiviazione cloud.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Connettori alle più comuni applicazioni CRM e marketing.</span></span></span></li>
 <li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Ideale per l’acquisizione di grandi quantità di dati storici.</span></span></span></li>
 </ul>
 </td>
@@ -218,18 +218,18 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
 <ul>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Non sempre, acquisizione immediata. </span></span></span></li>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Controlli di frequenza ricorrenti per l’acquisizione di file delta minimi ogni 15 minuti.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Non sempre attivi, acquisizione immediata. </span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Controlli a frequenza ricorrente per l’acquisizione di file delta almeno ogni 15 minuti.</span></span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:217px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone.html?lang=en" style="color:#0563c1; text-decoration:underline">Zona di destinazione dei dati</a></span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone.html?lang=it" style="color:#0563c1; text-decoration:underline">Zona di destinazione dati</a></span></span></span></p>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:397px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Percorso di archiviazione file di cui è stato effettuato il provisioning per l’Adobe in cui i file vengono inviati per l’acquisizione.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Percorso di archiviazione file con provisioning Adobe a cui inviare in push i file da acquisire.</span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:215px">
@@ -241,20 +241,20 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 </tr>
 <tr>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:217px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/sdk/overview.html?lang=en" style="color:#0563c1; text-decoration:underline">SDK per sorgenti batch</a></span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/sdk/overview.html?lang=it" style="color:#0563c1; text-decoration:underline">SDK per origini batch</a></span></span></span></p>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:397px">
 <ul style="list-style-type:square">
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Consente la scheda di configurazione self-service di un’origine dati esterna.</span></span></span></li>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Ideale per connettori partner o per un’esperienza di flusso di lavoro personalizzata per l’impostazione di un connettore Enterprise.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Consente una scheda di configurazione self-service per un’origine dati esterna.</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Ideale per connettori partner o per un’esperienza di flusso di lavoro personalizzata per l’impostazione di un connettore aziendale.</span></span></span></li>
 </ul>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:215px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Pull, API REST, file CSV o JSON</span></span></span></p>
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Pull, REST API, CSV o JSON</span></span></span></p>
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
 <ul>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Frequenza minima 15 min</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Frequenza minima di 15 min</span></span></span></li>
 <li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Esempi: MailChimp, One Trust, Zendesk</span></span></span></li>
 </ul>
 
@@ -270,7 +270,7 @@ Il diagramma seguente illustra i guardrail per prestazioni e la latenza media pe
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Web/Mobile SDK | Latenza:<ul><li>In tempo reale: stessa raccolta di pagine della rete Edge</li><li>Acquisizione in streaming nel profilo ~1 minuto</li><li>Acquisizione in streaming nel data lake (micro batch ~15 minuti)</ul>Documentazione: <ul><li>[Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=it)</li><li>[Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it)</li><li>[Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)</li><li>[Tutorial sull’implementazione di Adobe Experience Cloud nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it)</li></ul> |
 | Origini di streaming | [Origini di streaming](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it#connectors)<br>Latenza:<ul><li>In tempo reale: stessa raccolta di pagine della rete Edge</li><li>Acquisizione in streaming nel profilo ~1 minuto</li><li>Acquisizione in streaming nel data lake (micro batch ~15 minuti)</li></ul> |
-| API di streaming | [Edge Network Server API (preferita)](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=it) - Supporta i servizi Edge, inclusa la segmentazione Edge e le <br>[API del servizio core per la raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/streaming/http.html?lang=it) - Non supporta i servizi Edge, esegue l&#39;indirizzamento direttamente all’hub.<br>Latenza:<ul><li>In tempo reale: stessa raccolta di pagine della rete Edge</li><li>Acquisizione in streaming nel profilo ~1 minuto</li><li>Acquisizione in streaming nel data lake (micro batch ~15 minuti)</li><li>7 GB/ora</li></ul>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=it#what-can-you-do-with-streaming-ingestion%3F) |
+| API di streaming | [Edge Network Server API (preferita)](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=it) - Supporta i servizi Edge, inclusa la segmentazione Edge e le <br>[API del servizio core per la raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/streaming/http.html?lang=it) - Non supporta i servizi Edge, esegue l’indirizzamento direttamente all’hub.<br>Latenza:<ul><li>In tempo reale: stessa raccolta di pagine della rete Edge</li><li>Acquisizione in streaming nel profilo ~1 minuto</li><li>Acquisizione in streaming nel data lake (micro batch ~15 minuti)</li><li>7 GB/ora</li></ul>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=it#what-can-you-do-with-streaming-ingestion%3F) |
 | Strumenti ETL | Utilizza gli strumenti ETL per modificare e trasformare i dati aziendali prima dell’acquisizione in Experience Platform.<br><br>Latenza:<ul><li>La tempistica dipende dalla pianificazione degli strumenti ETL esterni, quindi si applicano i guardrail di acquisizione standard in base al metodo utilizzato.</li></ul> |
 | Origini batch | Recupero programmato da origini<br>Latenza: ~ 200 GB/ora<br><br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it#connectors)<br>[Tutorial video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html?lang=it) |
 | API batch | Latenza:<ul><li>Acquisizione batch nel profilo in base alle dimensioni e ai carichi di traffico ~45 minuti</li><li>Acquisizione batch nel data lake in base alle dimensioni e dal traffico</li></ul>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=it#batch) |
