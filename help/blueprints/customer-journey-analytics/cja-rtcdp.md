@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Blueprint per Customer Journey Analytics con Real-time Customer Data Platform   
+# Blueprint per Customer Journey Analytics con Real-time Customer Data Platform    
 
 Crea e pubblica i tipi di pubblico identificati da Customer Journey Analytics (CJA) nel profilo cliente in tempo reale in Adobe Experience Platform, per eseguire attività di targeting dei clienti e personalizzazione. Questa soluzione è ideale per creare tipi di pubblico sulla base di dati storici, nonché tipi di pubblico più mirati con filtri granulari e campi calcolati in Customer Journey Analytics.
 
@@ -28,7 +28,7 @@ Consulta la seguente documentazione per informazioni su come implementare e conf
 
 * Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
 
-![Diagramma dei guardrail](../experience-platform/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
+![Diagramma del guardrail](../experience-platform/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
 
 ## Domande frequenti
 
