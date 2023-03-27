@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Blueprint per  l’acquisizione e la creazione  {#intake-and-create}
+# Blueprint per   l’acquisizione e la creazione  {#intake-and-create}
 
 La mole di richieste marketing che un team di marketing deve gestire per lanciare nuove campagne può generare un susseguirsi di attività ripetitive, con conseguente sfinimento del team e stagnazione dell’innovazione.
 
