@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Blueprint per Journey Optimizer con Adobe Campaign  v8
+# Blueprint per Journey Optimizer con Adobe Campaign   v8
 
 Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign per inviare messaggi in modo nativo utilizzando il server di messaggistica in tempo reale in Campaign.
 
@@ -119,7 +119,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
    * Adobe Journey Optimizer | Adobe Campaign Classic | Adobe Campaign Standard
    * Rete Edge di Adobe Experience Platform
-   * Identità   per rete Edge
+   * Identità    per rete Edge
    * Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
 1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
