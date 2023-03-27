@@ -1,18 +1,18 @@
 ---
-title: Blueprint per  Customer Journey Analytics
+title: Blueprint per   Customer Journey Analytics
 description: Unificare e analizzare i dati e i comportamenti dei clienti da tutto il percorso del cliente
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
 source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Blueprint per  Customer Journey Analytics
+# Blueprint per   Customer Journey Analytics
 
 Customer Journey Analytics mostra come i brand possono unificare i dati e il comportamento dei clienti da vari canali di interazione e origini per creare una visione basata sul percorso di tutte le interazioni. È possibile eseguire report e analisi nel servizio applicativo Customer Journey Analytics, al fine di valutare e acquisire informazioni dettagliate sulle interazioni e sui pattern di comportamento dei clienti.
 
