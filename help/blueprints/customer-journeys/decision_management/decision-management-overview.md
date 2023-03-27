@@ -55,7 +55,7 @@ Il secondo approccio prevede l’utilizzo della rete Experience Edge, un’infra
 * Personalizzazione online tramite esperienze web o mobile in entrata.
 * Esecuzione di percorsi cross-channel: offerte coerenti su web, dispositivi mobili, e-mail e altri canali di interazione tramite Adobe Journey Optimizer.
 
-### Gestione delle decisioni tramite rete Edge   considerazioni tecniche
+### Considerazioni tecniche per Gestione delle decisioni tramite rete Edge
 
 * Richieste al secondo = 5000.
 * Latenza di risposta &lt; 250 ms.
