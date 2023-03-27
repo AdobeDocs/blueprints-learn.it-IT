@@ -1,5 +1,5 @@
 ---
-title: Panoramica della personalizzazione web e mobile   - Adobe Target e RTCDP
+title: Panoramica della personalizzazione web e mobile  - Adobe Target e RTCDP
 description: Sincronizza la personalizzazione web con la personalizzazione e-mail e di altri canali per utenti noti e anonimi.
 landing-page-description: Sincronizza la personalizzazione web con la personalizzazione e-mail e di altri canali per utenti noti e anonimi.
 short-description: Synchronize web personalization with email and other known and anonymous channel personalization.
@@ -8,14 +8,14 @@ kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 source-git-commit: 3a6a98eded28baee2cbb44de2262bbd580fa0c94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1630'
 ht-degree: 100%
 
 ---
 
 
-# Blueprint per   la personalizzazione web e mobile con dati sui clienti noti 
+# Blueprint per  la personalizzazione web e mobile con dati sui clienti noti 
 
 ## Casi di utilizzo
 
@@ -60,7 +60,7 @@ La personalizzazione per clienti noti è supportata tramite diversi approcci di 
 ### Modello di implementazione 1 - Rete Edge con Web/Mobile SDK o Edge Network API (approccio consigliato)
 
 * Utilizzo della rete Edge con Web/Mobile SDK. La segmentazione Edge in tempo reale richiede l’implementazione di Web/Mobile SDK o dell’API Edge.
-* [Consulta il blueprint per Experience Platform Web/Mobile SDK](../experience-platform/deployment/websdk.md)   per l’implementazione basata su SDK.
+* [Consulta il blueprint per Experience Platform Web/Mobile SDK](../experience-platform/deployment/websdk.md)    per l’implementazione basata su SDK.
 * Per poter essere utilizzata in Mobile SDK, l’[estensione Adobe Journey Optimizer - Decisioning](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) deve essere installata in Mobile SDK.
 * [Consulta Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it) per l’implementazione basata su API di Adobe Target con profilo Edge.
 
