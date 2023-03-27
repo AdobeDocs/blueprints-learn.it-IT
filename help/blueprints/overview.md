@@ -4,9 +4,9 @@ description: I blueprint per esperienze digitali sono implementazioni ripetibili
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '254'
+ht-degree: 100%
 
 ---
 
