@@ -4,7 +4,7 @@ description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 100%
 
@@ -136,7 +136,7 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
 1. Adobe Journey Optimizer
 1. Rete Edge di Adobe Experience Platform
-1. Identità  per rete Edge
+1. Identità    per rete Edge
 1. Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
 1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
