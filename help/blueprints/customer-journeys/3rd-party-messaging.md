@@ -3,10 +3,10 @@ title: Journey Optimizer - Blueprint per messaggistica di terze parti
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate.
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: ht
+source-git-commit: 342b039e62ff3a8fc8a42cf292f4fc28781c21de
+workflow-type: tm+mt
 source-wordcount: '823'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -109,10 +109,15 @@ Sistema di messaggistica di terze parti
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
    * Adobe Journey Optimizer
    * Rete Edge di Adobe Experience Platform
-   * Identità  per rete Edge
+   * Identità    per rete Edge
    * Mobile Core
 1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
-1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
+1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://developer.adobe.com/client-sdks/documentation/mobile-foundation-extensions/).
+
+<!--
+This step with a broken link was replaced by above step.
+1. For more information follow the [Adobe Journey Optimizer Mobile Guide](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
+-->
 
 <br>
 
