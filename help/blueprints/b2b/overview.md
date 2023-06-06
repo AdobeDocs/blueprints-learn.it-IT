@@ -4,10 +4,10 @@ description: Offri a un pubblico basato su account esperienze personalizzate in 
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 93%
 
 ---
 
@@ -21,5 +21,5 @@ Con l’approccio di priorità al canale, ogni canale funziona come un comparto 
 |---|---|---|
 | **[Analisi B2B](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=it)** | <ul><li>Includere informazioni sull’account B2B nell’analisi della customer journey</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
 | **[Attivazione del pubblico B2B](b2bactivation.md)** | <ul><li>Rivolgiti a un pubblico B2B su tutti i canali; web, e-mail e pubblicitari</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B Edition</li></ul> |
-| **[Catena di fornitura delle campagne - Panoramica](/help/blueprints/b2b/campaign-supply-chain/overview.md)** | <ul><li>Ottimizza la pianificazione, lo sviluppo e l’esecuzione delle campagne di marketing B2B</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
-| **[Catena di fornitura delle campagne - Inizio e creazione](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md)** | <ul><li>Automatizza tutti i passaggi dalla ricezione della richiesta per una campagna di marketing B2B fino all’esecuzione del suo sviluppo</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
+| **[Blueprint per l’integrazione di Marketi Engage e Workfront: panoramica](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)** | <ul><li>Ottimizza la pianificazione, lo sviluppo e l’esecuzione delle campagne di marketing B2B</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
+| **[Blueprint per l’integrazione di Marketi Engage e Workfront: Acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)** | <ul><li>Automatizza tutti i passaggi dalla ricezione della richiesta per una campagna di marketing B2B fino all’esecuzione del suo sviluppo</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
