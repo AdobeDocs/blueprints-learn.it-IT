@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 079c2e6deeeea0ede0f71a8bdda7e9b9f4d9084c
+source-git-commit: 85e3c9060ebbffcab73ee9621f610df1c8ff5bcb
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 100%
+source-wordcount: '255'
+ht-degree: 97%
 
 ---
 
@@ -43,10 +43,10 @@ ht-degree: 100%
 + Attivazione e marketing B2B {#b2b-activation}
    + [Panoramica](/help/blueprints/b2b/overview.md)
    + [Attivazione B2B](/help/blueprints/b2b/b2bactivation.md)
-   + Supply chain per campagne marketing con Marketo e Workfront {#optimize-campaign-supply-chain-with-marketo-and-workfront}
-      + [Panoramica](/help/blueprints/b2b/campaign-supply-chain/overview.md)
-      + [Acquisizione e creazione](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md)
-      + [Storie di successo dei clienti](/help/blueprints/b2b/campaign-supply-chain/customer-success-stories.md)
+   + Blueprint per l’integrazione di Marketi Engage e Workfront{#marketo-engage-and-workfront-integration-blueprint}
+      + [Panoramica](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
+      + [Acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
+      + [Storie di successo dei clienti](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
    + [Condivisione di tipi di pubblico CJA in RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
