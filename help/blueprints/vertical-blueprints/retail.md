@@ -32,29 +32,29 @@ Questa azienda con esperienze integrate voleva personalizzare l’intera custome
 | Categoria | Obiettivo | Caso d’uso | Descrizione |
 |:----|:----|:----|:----|
 | Customer journey | Acquisizione | Serie di benvenuto | Benvenuto ai nuovi abbonati con l&#39;introduzione al business, prodotti e servizi |
-|  |  | 1° programma di acquisto |  |
-|  | Miglioramento delle vendite | Carrello abbandonato/Sfoglia | Recupero di potenziali acquirenti e aumento delle vendite |
-|  |  | Analisi del prodotto/cross-selling | Effettua il cross-selling di più oggetti con recensioni di prodotto. |
-|  |  | Promozioni sui prodotti |  |
-|  |  | Tempo di riordino | Promemoria ricorrente per prodotti/servizi ciclici |
-|  | Fedeltà al marchio | Torna indietro | Recupera i clienti che sono stati inattivi. |
-|  |  | Promemoria di compleanno | Promuovi una relazione più personale con i tuoi clienti partecipando alla loro festa di compleanno! |
+| | | 1° programma di acquisto | |
+| | Miglioramento delle vendite | Carrello abbandonato/Sfoglia | Recupero di potenziali acquirenti e aumento delle vendite |
+| | | Analisi del prodotto/cross-selling | Effettua il cross-selling di più oggetti con recensioni di prodotto. |
+| | | Promozioni sui prodotti |  |
+| | | Tempo di riordino | Promemoria ricorrente per prodotti/servizi ciclici |
+| | Fedeltà al marchio | Torna indietro | Recupera i clienti che sono stati inattivi. |
+| | | Promemoria di compleanno | Promuovi una relazione più personale con i tuoi clienti partecipando alla loro festa di compleanno! |
 | Merchandising | Gestisci inventario | Torna a magazzino | Migliorare l&#39;inventario mostrando ai clienti i prodotti che desiderano sono di nuovo disponibili |
-|  |  | Categoria migliore successiva | Identificare le categorie/vendite migliori per gli utenti |
-|  |  | Articoli più venduti |  |
-|  |  | Promemoria per riduzione prezzo | Mostra agli utenti che gli articoli che gli piacciono hanno un prezzo ridotto |
-|  |  | Prodotti simili |  |
+| | | Categoria migliore successiva | Identificare le categorie/vendite migliori per gli utenti |
+| | | Articoli più venduti | |
+| | | Promemoria per riduzione prezzo | Mostra agli utenti che gli articoli che gli piacciono hanno un prezzo ridotto |
+| | | Prodotti simili |  |
 | Personalizzazione | Aumenta conversione | Coupon/Offerte | Mostra offerte/coupon migliori ai clienti |
-|  |  | Ricerca di prodotti personalizzata | Migliorare l’esperienza di ricerca |
-|  |  | Recommendations del prodotto | Migliorare l’esperienza di navigazione dei prodotti |
-|  |  | Esperienza Omni-Channel | Raggiungi i clienti su tutti i canali |
+| | | Ricerca di prodotti personalizzata | Migliorare l’esperienza di ricerca |
+| | | Recommendations del prodotto | Migliorare l’esperienza di navigazione dei prodotti |
+| | | Esperienza Omni-Channel | Raggiungi i clienti su tutti i canali |
 | Misura | Comprendere i Percorsi dei clienti | Campagna cross-channel | Misurare le campagne cross-channel |
-|  |  | Prestazioni segmento | Comprendere le prestazioni e il contributo dei segmenti |
-|  |  | Rapporti di fallout | Visualizzare le conversioni in ogni fase |
-|  |  | Analisi per coorte | Misurare il coinvolgimento tra gruppi di segmenti |
-|  |  | Report Click-to-Brick | Scopri come le conversioni dei clienti portano all’esperienza in-store |
-|  |  | Attribuzione | Visualizza quale punto di contatto/esperienza ha la maggiore influenza sulla conversione dell’acquisto |
-|  |  | Predictive Insights | Scopri di più sulle tendenze dei clienti |
+| | | Prestazioni segmento | Comprendere le prestazioni e il contributo dei segmenti |
+| | | Rapporti di fallout | Visualizzare le conversioni in ogni fase |
+| | | Analisi per coorte | Misurare il coinvolgimento tra gruppi di segmenti |
+| | | Report Click-to-Brick | Scopri come le conversioni dei clienti portano all’esperienza in-store |
+| | | Attribuzione | Visualizza quale punto di contatto/esperienza ha la maggiore influenza sulla conversione dell’acquisto |
+| | | Predictive Insights | Scopri di più sulle tendenze dei clienti |
 
 ## Architettura
 
@@ -67,10 +67,10 @@ Questa azienda con esperienze integrate voleva personalizzare l’intera custome
 | Caso d’uso/integrazione  | Collegamento |
 |:----|:----|
 | CJA + AEP | [Panoramica dei blueprint del Customer Journey Analytics](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=it) |
-|  | [Customer Journey Analytics - Casi d’uso](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=it) |
+| | [Customer Journey Analytics - Casi d’uso](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=it) |
 | AJO + AEP | [Adobe Journey Optimizer - Casi d’uso](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
-|  | [Gestione delle decisioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=it) |
+| | [Gestione delle decisioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=it) |
 | RTCDP + AEP | [Attivazione del pubblico con dati online/offline](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it) |
-|  | [Experience Platform + Attivazione applicazione](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it) |
-| MARKETO + AEP | [Attivazione e marketing B2B ](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) |  |
-| Target + AEP | [Caso di utilizzo di Adobe Target: personalizzazione comportamentale web/mobile](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=it) | [Personalizzazione web e mobile con dati sui clienti noti](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) |  |
+| | [Experience Platform + Attivazione applicazione](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it) |
+| MARKETO + AEP | [Attivazione e marketing B2B ](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) | |
+| Target + AEP | [Caso di utilizzo di Adobe Target: personalizzazione comportamentale web/mobile](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=it) | [Personalizzazione web e mobile con dati sui clienti noti](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) | |
