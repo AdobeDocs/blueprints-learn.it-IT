@@ -5,9 +5,9 @@ solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer 
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
 source-git-commit: b3eddbfe943f45e1acbbb108652824df45c6c0e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '340'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ I guardrail forniscono le soglie consigliate da utilizzare come guida in termini
 
 [Guardrail per il servizio Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=it)
 
-[Guardrail di condivisione del pubblico di Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
+[Guardrail di condivisione del pubblico di Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it-IT#latency)
 
-[Guardrail di acquisizione dati di Customer Journey Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
+[Guardrail di acquisizione dati di Customer Journey Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it-IT#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
 
 [Guardrail per il servizio Query](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
 
