@@ -7,7 +7,7 @@ exl-id: a675bc81-e76c-491a-8718-359867d63351
 source-git-commit: f03981dd3fe6ed9e60d2e60ca4eb91e129052a73
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
@@ -24,53 +24,53 @@ Questa azienda con esperienze integrate voleva personalizzare l’intera custome
 
 | Obiettivi | Tattiche | Nuovo valore |
 |---|---|---|
-| **Orchestrare customer journey in tempo reale **<br></br>** Favorire acquisti ripetuti da nuovi clienti **<br></br>** Migliorare le efficienze nel marketing e ridurre i costi dei media**</ul> | <ul><li>Strategia solida per dati e identità con cui generare profili completi in tempo reale.</li><li>Streaming dei dati dei clienti e delle transazioni in tempo reale, compreso un carico storico di 90 giorni</li><li>Segmentazione in streaming per Advertising Networks e Adobe Target per aumentare la spesa multimediale e le attività di personalizzazione.</li><li>Percorsi cliente in tempo reale tramite Adobe Campaign che includono una strategia per misurare le prestazioni</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> esperienze cliente in tempo reale su media, e-mail, push e web</li><li><strong>Origini dati:</strong> dati in streaming relativi all’archivio profili, al sistema degli ordini, al catalogo dei prodotti e ai punti vendita del retailer.</li><li><strong>Attivazione file multimediali in tempo reale:</strong>Segmenti in streaming su Reti pubblicitarie per l’attribuzione e la soppressione degli annunci</li><li><strong>Personalizzazione web in tempo reale:</strong>Segmenti in streaming attivati in Adobe Target per l’attivazione nell’esperienza web del rivenditore.</li><li><strong>Journey Orchestration su scala:</strong>Messaggistica attivata in tempo reale arricchita dai dati dei clienti disponibili e attivata in tempo reale nei canali e-mail e push</li></ul> |
+| **Orchestrare customer journey in tempo reale **<br></br>** Favorire acquisti ripetuti da nuovi clienti **<br></br>** Migliorare le efficienze nel marketing e ridurre i costi dei media**</ul> | <ul><li>Strategia solida per dati e identità con cui generare profili completi in tempo reale.</li><li>Streaming dei dati cliente e transazionali in tempo reale, con 90 giorni di dati storici</li><li>Segmentazione in streaming per reti pubblicitarie e Adobe Target per potenziare la spesa sui media e le attività di personalizzazione.</li><li>Customer journey in tempo reale tramite Adobe Campaign, con una strategia per la misurazione delle prestazioni</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> esperienze cliente in tempo reale su media, e-mail, push e web</li><li><strong>Origini dati:</strong> dati in streaming relativi all’archivio profili, al sistema degli ordini, al catalogo dei prodotti e ai punti vendita del retailer.</li><li><strong>Attivazione di contenuti in tempo reale:</strong> invio in streaming di segmenti a reti pubblicitarie per attribuzione e soppressione di annunci</li><li><strong>Personalizzazione web in tempo reale:</strong> invio di segmenti in streaming attivati ad Adobe Target per attivare l’esperienza web del retailer.</li><li><strong>Journey Orchestration su grande scala:</strong> attivazione di messaggistica in tempo reale arricchita con tutti i dati cliente disponibili, e attivata in tempo reale nei canali e-mail e push</li></ul> |
 
 
-## Casi d&#39;uso
+## Casi di utilizzo
 
-| Categoria | Obiettivo | Caso d’uso | Descrizione |
+| Categoria | Obiettivo | Caso di utilizzo | Descrizione |
 |:----|:----|:----|:----|
-| Customer journey | Acquisizione | Serie di benvenuto | Benvenuto ai nuovi abbonati con l&#39;introduzione al business, prodotti e servizi |
-| | | 1° programma di acquisto | |
-| | Miglioramento delle vendite | Carrello abbandonato/Sfoglia | Recupero di potenziali acquirenti e aumento delle vendite |
-| | | Analisi del prodotto/cross-selling | Effettua il cross-selling di più oggetti con recensioni di prodotto. |
+| Customer journey | Acquisizione | Serie di benvenuto | Dare il benvenuto a chi si iscrive, con una presentazione dell’azienda e dei suoi prodotti o servizi |
+| | | Programma per 1° acquisto | |
+| | Migliorare le vendite | Navigazione o carrello abbandonato | Recuperare potenziali acquirenti e incentivare le vendite |
+| | | Recensioni prodotto/Cross-selling | Incrementare il cross-selling mediante recensioni di prodotto. |
 | | | Promozioni sui prodotti |  |
-| | | Tempo di riordino | Promemoria ricorrente per prodotti/servizi ciclici |
-| | Fedeltà al marchio | Torna indietro | Recupera i clienti che sono stati inattivi. |
-| | | Promemoria di compleanno | Promuovi una relazione più personale con i tuoi clienti partecipando alla loro festa di compleanno! |
-| Merchandising | Gestisci inventario | Torna a magazzino | Migliorare l&#39;inventario mostrando ai clienti i prodotti che desiderano sono di nuovo disponibili |
-| | | Categoria migliore successiva | Identificare le categorie/vendite migliori per gli utenti |
+| | | È ora di ordinare di nuovo | Promemoria ricorrente per prodotti/servizi ciclici |
+| | Fedeltà al marchio | Riconquistare | Recuperare l’acquirente dopo un periodo di inattività. |
+| | | Promemoria di compleanno | Promuovere relazioni più personali augurando a ogni cliente un buon compleanno |
+| Merchandising | Gestire l’inventario | Di nuovo a magazzino | Migliorare l’inventario informando l’acquirente che i prodotti di suo interesse sono di nuovo disponibili |
+| | | Categoria migliore | Identificare le categorie migliori o i prodotti più venduti per gli utenti |
 | | | Articoli più venduti | |
-| | | Promemoria per riduzione prezzo | Mostra agli utenti che gli articoli che gli piacciono hanno un prezzo ridotto |
+| | | Promemoria per riduzione prezzo | Informare l’utente quando articoli di suo interesse sono disponibili a un prezzo ridotto |
 | | | Prodotti simili |  |
-| Personalizzazione | Aumenta conversione | Coupon/Offerte | Mostra offerte/coupon migliori ai clienti |
+| Personalizzazione | Aumentare la conversione | Coupon/Offerte | Presentare alla clientela coupon/offerte migliori |
 | | | Ricerca di prodotti personalizzata | Migliorare l’esperienza di ricerca |
-| | | Recommendations del prodotto | Migliorare l’esperienza di navigazione dei prodotti |
-| | | Esperienza Omni-Channel | Raggiungi i clienti su tutti i canali |
-| Misura | Comprendere i Percorsi dei clienti | Campagna cross-channel | Misurare le campagne cross-channel |
-| | | Prestazioni segmento | Comprendere le prestazioni e il contributo dei segmenti |
+| | | Prodotti consigliati | Migliorare l’esperienza di navigazione nei prodotti |
+| | | Esperienza omnicanale | Raggiungere la clientela su tutti i canali |
+| Misurare | Comprendere i percorsi dei clienti | Campagna cross-channel | Misurare le campagne cross-channel |
+| | | Prestazioni dei segmenti | Comprendere le prestazioni e il contributo dei segmenti |
 | | | Rapporti di fallout | Visualizzare le conversioni in ogni fase |
-| | | Analisi per coorte | Misurare il coinvolgimento tra gruppi di segmenti |
-| | | Report Click-to-Brick | Scopri come le conversioni dei clienti portano all’esperienza in-store |
-| | | Attribuzione | Visualizza quale punto di contatto/esperienza ha la maggiore influenza sulla conversione dell’acquisto |
-| | | Predictive Insights | Scopri di più sulle tendenze dei clienti |
+| | | Analisi per coorte | Misurare il coinvolgimento tra diversi gruppi di segmenti |
+| | | Rapporti “dal clic al negozio” | Scoprire l’effetto delle conversioni sull’esperienza in-store |
+| | | Attribuzione | Individuare il punto di contatto o l’esperienza di maggiore influenza sulla conversione all’acquisto |
+| | | Insight predittivi | Scoprire di più sulle propensioni dei clienti |
 
 ## Architettura
 
-<img src="../vertical-blueprints/assets/retail-architecture.png" alt="Architettura di riferimento per la vendita al dettaglio" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="../vertical-blueprints/assets/retail-architecture.png" alt="Architettura di riferimento per il settore retail" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 
 ## Blueprint correlati
 
 
-| Caso d’uso/integrazione  | Collegamento |
+| Casi di utilizzo/integrazione  | Collegamento |
 |:----|:----|
-| CJA + AEP | [Panoramica dei blueprint del Customer Journey Analytics](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=it) |
-| | [Customer Journey Analytics - Casi d’uso](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=it) |
-| AJO + AEP | [Adobe Journey Optimizer - Casi d’uso](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
+| CJA + AEP | [Panoramica dei blueprint su Customer Journey Analytics](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=it) |
+| | [Customer Journey Analytics - Casi di utilizzo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=it) |
+| AJO + AEP | [Adobe Journey Optimizer - Casi di utilizzo](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=it) |
 | | [Gestione delle decisioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=it) |
 | RTCDP + AEP | [Attivazione del pubblico con dati online/offline](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it) |
-| | [Experience Platform + Attivazione applicazione](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it) |
-| MARKETO + AEP | [Attivazione e marketing B2B ](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) | |
-| Target + AEP | [Caso di utilizzo di Adobe Target: personalizzazione comportamentale web/mobile](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=it) | [Personalizzazione web e mobile con dati sui clienti noti](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) | |
+| | [Attivazione Experience Platform + applicazioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it) |
+| Marketo + AEP | [Attivazione e marketing B2B](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=it) | |
+| Target + AEP | [Caso di utilizzo di Adobe Target - Personalizzazione web e mobile basata sul comportamento](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=it) | [Personalizzazione web e mobile con dati sui clienti noti](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=it) | |

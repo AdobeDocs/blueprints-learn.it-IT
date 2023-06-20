@@ -7,7 +7,7 @@ exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
 source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Associa a un singolo cliente le informazioni relative all’account, alle opport
 
 * I guardrail e le fasi di implementazione relative a Marketo Engage sono applicabili solo quando si usa Marketo Engage come origine e/o destinazione.
 
-* Per ulteriori dettagli e guardrail per le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
+* Per ulteriori dettagli e guardrail per le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md)
 
 
 ### Supporto di più istanze e organizzazioni IMS:
@@ -54,8 +54,8 @@ Di seguito sono descritti i pattern supportati per la mappatura delle istanze di
 
 #### Marketo come destinazione per Experience Platform:
 
-* È supportato Experience Platform per più istanze di Marketo Engage.
-* Sono supportate più istanze di Experience Platform per una istanza di Marketo Engage.
+* È supportato Experience Platform per più istanze di Marketo Engage
+* Sono supportate più istanze di Experience Platform per una istanza di Marketo Engage
 
 #### Guardrail per segmentazione e profili Experience Platform:
 
@@ -100,6 +100,6 @@ Se l’implementazione utilizzerà Marketo Engage come origine, e Marketo Engage
 
 * [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
-* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html)
+* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=it)
 * [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it)
-* [Connettore tra Adobe Experience Platform e destinazione Marketo](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html)
+* [Connettore tra Adobe Experience Platform e destinazione Marketo](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html?lang=it)

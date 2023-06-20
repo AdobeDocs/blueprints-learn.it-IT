@@ -1,29 +1,29 @@
 ---
-title: Raccolta di dati per l’inoltro di eventi con più sandbox
-description: Scopri come configurare i dati raccolti con Experience Platform Web e Mobile SDK per raccogliere un singolo evento e inoltrarli a più sandbox di Experience Platform.
+title: Raccolta di dati per l’inoltro di eventi a più sandbox
+description: Scopri come i dati raccolti tramite Experience Platform Web SDK e Mobile SDK possono essere configurati in modo da raccogliere un singolo evento e inoltrarlo a più sandbox Experience Platform.
 solution: Data Collection
 kt: 7202
-source-git-commit: e9a9abeaa722bb2f9a232f4e861b1b5eae86edd1
+exl-id: 3d9d312a-50b6-435f-b277-076e0c442a5f
+source-git-commit: cb36f47232261d6ddc6659949272c9832baec0da
 workflow-type: tm+mt
 source-wordcount: '819'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
+# Raccolta di dati per l’inoltro di eventi a più sandbox
 
-# Raccolta di dati per l’inoltro di eventi con più sandbox
+Questo blueprint illustra come i dati raccolti tramite Experience Platform Web SDK e Mobile SDK possono essere configurati in modo da raccogliere un singolo evento e inoltrarlo a più sandbox AEP. Questo blueprint è specifico per la raccolta dati per più sandbox mediante le funzioni di [!UICONTROL inoltro eventi].
 
-Questo blueprint mostra come configurare i dati raccolti con Experience Platform Web e Mobile SDK per raccogliere un singolo evento e inoltrarlo a più sandbox di AEP. Questo blueprint è specifico per la raccolta dati multi-sandbox che utilizza [!UICONTROL Inoltro eventi] per raggiungere questo obiettivo.
+Oltre a replicare l’evento, le funzioni di [!UICONTROL inoltro eventi] consentono di aggiungere, filtrare o manipolare i dati raccolti originali che soddisfano i requisiti per altre sandbox.
 
-Oltre a replicare l’evento con [!UICONTROL Inoltro eventi] funzioni, puoi aggiungere, filtrare o manipolare i dati raccolti originali che soddisfano i requisiti di altre sandbox.
+La funzione di [!UICONTROL inoltro eventi] utilizza una proprietà distinta che contiene gli [!UICONTROL elementi dati], le [!UICONTROL regole] e le [!UICONTROL estensioni] necessari per i requisiti dei dati. Con un evento in entrata, la proprietà di [!UICONTROL inoltro eventi] può raccogliere i dati e gestirli in base alle esigenze prima dell’inoltro stesso.
 
-[!UICONTROL Inoltro eventi] utilizza una proprietà separata che contiene [!UICONTROL Elementi dati], [!UICONTROL Regole], e [!UICONTROL Estensioni] necessari per soddisfare i requisiti dei dati. Con un evento in arrivo, [!UICONTROL Inoltro eventi] può raccogliere i dati e gestirli in base alle esigenze prima dell’inoltro.
-
-La sandbox di destinazione richiede un endpoint di streaming HTTP configurato, utilizzato dall’Adobe [!UICONTROL Connettore cloud] estensione.
+Nella sandbox di destinazione deve essere configurato un endpoint di streaming HTTP, che viene utilizzato dall’estensione Adobe [!UICONTROL Cloud Connector].
 
 ## Casi di utilizzo
 
-* Reporting globale dei dati: quando si utilizzano più sandbox per isolare gli ambienti operativi e la necessità di consolidare la raccolta dati in un’unica sandbox per il reporting tra sandbox diverse. Instradamento di un evento Experience Edge tramite [!UICONTROL Inoltro eventi] in una sandbox di reporting consente a ogni ambiente operativo sandbox di inviare dati raccolti in tempo reale a una sandbox di reporting.
+* Reporting globale dei dati: è utile quando si utilizzano più sandbox per isolare gli ambienti operativi e si desidera consolidare la raccolta dati in un’unica sandbox per generare rapporti su tutte le sandbox. L’instradamento di un evento Experience Edge tramite l’[!UICONTROL inoltro eventi] a una sandbox di reporting consente all’ambiente operativo di ogni sandbox di inviare i dati raccolti in tempo reale a una sandbox di reporting.
 
 * Gestione della raccolta di dati da sandbox diverse in base a diverse regole di dati per l’ambiente operativo di ciascuna sandbox.
 
@@ -31,35 +31,35 @@ La sandbox di destinazione richiede un endpoint di streaming HTTP configurato, u
 
 * [!DNL Experience Platform] Raccolta dati
 * [!UICONTROL Inoltro eventi]
-* AEP [!UICONTROL Estensione]
+* [!UICONTROL Estensione] AEP
 * [!UICONTROL Estensione Cloud Connector]
 
 ## Considerazioni
 
-Con [!UICONTROL Inoltro eventi] per quanto riguarda l’approccio all’invio di dati a più sandbox, è necessario tenere conto di alcune considerazioni con l’architettura della soluzione.
+Quando si ricorre all’[!UICONTROL inoltro eventi] come approccio per inviare dati a più sandbox, è necessario tenere conto di alcune considerazioni in merito all’architettura della soluzione.
 
 ### Nessun dato HIPAA
 
-[!UICONTROL L’inoltro eventi non è considerato compatibile con HIPAA e non deve essere utilizzato in alcun caso d’uso HIPAA in cui vengano raccolti dati HIPAA. ] Tuttavia, l&#39;infrastruttura utilizzata per [!UICONTROL Inoltro eventi] è considerato pronto per HIPAA ed è esclusivamente a discrezione del cliente. Mentre il [!UICONTROL Inoltro eventi] La proprietà Tag risiede in [!UICONTROL Inoltro eventi] sistema, l&#39;intero payload di dati raccolto viene inviato [!UICONTROL Inoltro eventi] sistema di elaborazione. È questo processo che rende [!UICONTROL Inoltro eventi] riguardanti i casi d’uso dell’HIPAA. Con l&#39;intero payload inviato al [!UICONTROL Inoltro eventi] sistema, includerebbe tutti i valori HIPAA. Anche se il [!UICONTROL Inoltro eventi] Le regole filtrano tali dati prima di inviarli alla destinazione, in modo che i dati HIPAA vengano comunque spediti a un&#39;infrastruttura non compatibile con HIPAA. Tuttavia, i dati del payload non vengono mai memorizzati: si tratta semplicemente di un passaggio.
+L’[!UICONTROL inoltro eventi] non è considerato compatibile con HIPAA e non deve essere utilizzato in alcun caso d’uso HIPAA in cui vengano raccolti dati HIPAA. Tuttavia, l’infrastruttura utilizzata per l’[!UICONTROL inoltro eventi] è considerata compatibile con HIPAA ed è a esclusiva discrezione del cliente. La proprietà Tag per l’[!UICONTROL inoltro eventi] si trova nel sistema di [!UICONTROL inoltro eventi]; tuttavia, l’intero payload dei dati raccolti viene inviato al sistema di [!UICONTROL inoltro eventi] per l’elaborazione. È a causa di questo processo che l’[!UICONTROL inoltro eventi] non è indicato per i casi d’uso HIPAA. Quando l’intero payload viene inviato al sistema di [!UICONTROL inoltro eventi], potrebbe includere anche eventuali valori HIPAA. Anche se le regole di [!UICONTROL inoltro eventi] filtrano i dati prima di inviarli alla loro destinazione, tali dati HIPAA vengono comunque inviati a un’infrastruttura non compatibile con HIPAA. Tuttavia, i dati del payload non vengono mai memorizzati: si tratta semplicemente di un passaggio.
 
-### Flussi di dati e punti finali di streaming diversi
+### Diversi stream di dati ed endpoint di streaming
 
-Quando i dati scorrono attraverso gli stream di dati dalla [!UICONTROL Rete Edge di Platform], quando si utilizza [!UICONTROL Inoltro eventi] per un’altra sandbox di AEP, è necessario non utilizzare mai lo stesso flusso di dati o lo stesso punto finale di streaming dello stream di dati che crea la raccolta originale. Questo può avere un effetto dannoso sull’istanza AEP e può potenzialmente attivare una situazione DoS.
+Durante il flusso di dati attraverso gli stream di dati dalla [!UICONTROL rete Edge di Platform], quando si utilizza l’[!UICONTROL inoltro eventi] verso un’altra sandbox AEP, è ASSOLUTAMENTE necessario non utilizzare MAI lo stesso stream di dati o endpoint di streaming dello stream di dati da cui viene eseguita la raccolta originale. Questo può avere un effetto dannoso sull’istanza AEP e può potenzialmente attivare una situazione DoS.
 
-### Volume di traffico stimato
+### Stima dei volumi di traffico
 
-I volumi di traffico devono essere verificati per ogni caso d’uso. Questo è importante in quanto volumi elevati potrebbero causare una situazione di limitazione e i clienti vengono avvisati se ciò si verifica.
+I volumi di traffico devono essere verificati per ogni caso d’uso. Volumi elevati, infatti, potrebbero causare una situazione di limitazione; se questo si verifica, il cliente riceve una notifica.
 
 ## Architettura
 
-![Multi-sandbox [!UICONTROL Inoltro eventi]](assets/multi-sandbox-data-collection.png)
+![ [!UICONTROL Inoltro eventi per più sandbox]](assets/multi-sandbox-data-collection.png)
 
-1. Raccolta e invio di dati evento a [!UICONTROL Rete Edge di Platform] è necessario per utilizzare [!UICONTROL Inoltro eventi]. I clienti possono utilizzare tag Adobe per il lato client o [!UICONTROL API del server di rete Edge di Platform] per la raccolta dati server-to-server. Il [!UICONTROL API di Platform Edge Network] può fornire una funzionalità di raccolta da server a server. Ciò, tuttavia, richiede un diverso modello di programmazione per essere implementato. Consulta [Panoramica di Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it).
+1. Per utilizzare l’[!UICONTROL inoltro eventi] è necessario raccogliere e inviare dati evento alla [!UICONTROL rete Edge di Platform]. È possibile utilizzare i tag Adobe lato client o [!UICONTROL Platform Edge Network Server API] per la raccolta dati server-to-server. [!UICONTROL Platform Edge Network API] può fornire una funzionalità di raccolta da server a server. Tuttavia, ciò richiede l’implementazione di un diverso modello di programmazione. Consulta [Panoramica di Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it).
 
-1. I payload raccolti vengono inviati dall’implementazione dei tag al [!UICONTROL Rete Edge di Platform] al [!UICONTROL Inoltro eventi] servizio ed elaborato in proprio [!UICONTROL Elementi dati], [!UICONTROL Regole] e [!UICONTROL Azioni]. Scopri di più su [[!UICONTROL tag e inoltro eventi]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it#differences-from-tags).
+1. I payload raccolti vengono inviati dall’implementazione dei tag alla [!UICONTROL rete Edge di Platform] al servizio di [!UICONTROL inoltro eventi] e vengono elaborati in base a specifici [!UICONTROL elementi dati], [!UICONTROL regole] e [!UICONTROL azioni]. Scopri di più su [tag e [!UICONTROL inoltro eventi]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it#differences-from-tags).
 
-1. Un [!UICONTROL Inoltro eventi] è necessaria anche per ricevere i dati evento raccolti da [!UICONTROL Rete Edge di Platform]. Se i dati dell’evento sono stati inviati alla rete Edge di Platform da un’implementazione di Tag implementata o da una raccolta da server a server. Gli autori definiscono gli elementi dati, le regole e le azioni da utilizzare per arricchire i dati evento prima di inoltrarli alla seconda sandbox. Valuta l’utilizzo del codice personalizzato [!DNL JavaScript] elemento dati per strutturare i dati per l’acquisizione sandbox. In combinazione con le funzionalità di preparazione dati di Platform, puoi gestire la struttura dei dati in diverse opzioni.
+1. Inoltre, per ricevere i dati degli eventi raccolti dalla [!UICONTROL rete Edge di Platform], è necessaria una proprietà di [!UICONTROL inoltro eventi]. Questa indica se i dati evento sono stati inviati alla rete Edge di Platform da un’implementazione di tag o da una raccolta da server a server. Gli autori definiscono gli elementi dati, le regole e le azioni da utilizzare per arricchire i dati evento prima di inoltrarli alla seconda sandbox. Per strutturare i dati da acquisire nella sandbox, puoi utilizzare un elemento dati [!DNL JavaScript] con codice personalizzato. Questo, insieme alle funzionalità di Platform per la preparazione dei dati, ti offrirà diverse opzioni per gestire la struttura dei dati.
 
-1. Attualmente, l’utilizzo dell’Adobe [!UICONTROL Estensione Cloud Connector] è richiesto all&#39;interno di [!UICONTROL Inoltro eventi] Proprietà. Una volta che le regole elaborano o arricchiscono i dati dell’evento, il Cloud Connector viene utilizzato all’interno di una chiamata di recupero configurata per un POST che invia il payload alla seconda sandbox
+1. Attualmente, è necessario utilizzare l’[!UICONTROL estensione Adobe Cloud Connector] all’interno della proprietà di [!UICONTROL inoltro eventi]. Una volta che le regole elaborano o arricchiscono i dati evento, Cloud Connector viene utilizzato in una chiamata fetch configurata per un POST che invia il payload alla seconda sandbox
 
-1. Per la seconda sandbox è necessario un endpoint di streaming per l’acquisizione dei dati. Puoi anche prendere in considerazione le funzionalità di preparazione dati in AEP per facilitare l’acquisizione e la mappatura di [!UICONTROL Inoltro eventi] payload a XDM. Consulta la documentazione di AEP su come [creare una connessione streaming API HTTP tramite l’interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=it)
+1. Per la seconda sandbox è necessario un endpoint di streaming per l’acquisizione dei dati. Per l’acquisizione e la mappatura dei payload di [!UICONTROL inoltro eventi] in XDM, puoi anche servirti delle funzionalità di preparazione dati disponibili in AEP. Consulta la documentazione di AEP su come [creare una connessione streaming API HTTP tramite l’interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=it)

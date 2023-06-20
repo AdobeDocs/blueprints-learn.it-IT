@@ -1,17 +1,17 @@
 ---
-title: Panoramica del blueprint per l’integrazione di Marketi Engage e Workfront
-description: Panoramica - Panoramica del blueprint per l’integrazione di Marketi Engage e Workfront
+title: Panoramica del blueprint per l’integrazione di Marketo Engage e Workfront
+description: Panoramica - Panoramica del blueprint per l’integrazione di Marketo Engage e Workfront
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
 source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
 workflow-type: tm+mt
 source-wordcount: '1769'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Panoramica del blueprint per l’integrazione di Marketi Engage e Workfront {#overview}
+# Panoramica del blueprint per l’integrazione di Marketo Engage e Workfront {#overview}
 
-## Tempi di commercializzazione più rapidi con Marketi Engage e Workfront {#achieve-faster-time-to-market-with-marketo-engage-and-workfront}
+## Velocizza il time-to-market con Marketo Engage e Workfront {#achieve-faster-time-to-market-with-marketo-engage-and-workfront}
 
 Con l’arrivo di ogni nuovo canale e nuovi modi di personalizzare le comunicazioni, il carico di lavoro per gli addetti al marketing continua a crescere. I team di marketing hanno bisogno di nuove modalità di automazione che consentano loro di evolversi e rispondere alle esigenze di marketing in continuo mutamento in tutto il mondo.
 
@@ -153,7 +153,7 @@ Dopo questa introduzione a come Workfront e Marketo Engage possono essere utiliz
 
 ### Gestione dei nomi delle campagne Marketo Engage e dei relativi URL {#managing-marketo-engage-campaign-names}
 
-La standardizzazione delle convenzioni di denominazione per campagne e URL è una base fondamentale per una gestione accurata del programma nel Marketo Engage e contribuisce a promuovere un processo più coerente nel ciclo di vita dello sviluppo della campagna. Se cerchi degli strumenti che ti aiutino a definire tali convenzioni, dai un’occhiata ad alcuni strumenti open source gratuiti da [Adobe Success Services](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"} che consentono di adottare un approccio coerente alla creazione e alla gestione delle campagne Marketo Engage e dei relativi URL.
+L’utilizzo di convenzioni di standardizzazione per i nomi delle campagne e gli URL agevola la gestione accurata dei programmi in Marketo Engage e contribuisce a creare processi più coerenti nell’intero ciclo di vita di sviluppo delle campagne. Se cerchi degli strumenti che ti aiutino a definire tali convenzioni, dai un’occhiata ad alcuni strumenti open source gratuiti da [Adobe Success Services](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"} che consentono di adottare un approccio coerente alla creazione e alla gestione delle campagne Marketo Engage e dei relativi URL.
 
 ### Risorse {#resources}
 
