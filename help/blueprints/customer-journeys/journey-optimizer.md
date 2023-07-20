@@ -3,7 +3,7 @@ title: Journey Optimizer - Blueprint per messaggistica attivata e Adobe Experien
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 100%
@@ -91,13 +91,13 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
 
 ### Guardrail per l’acquisizione dei dati
 
-<img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
+<img src="../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
 
 <br>
 
 ### Guardrail per l’attivazione
 
-<img src="../experience-platform/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
