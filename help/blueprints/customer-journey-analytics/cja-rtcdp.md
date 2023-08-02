@@ -1,18 +1,18 @@
 ---
-title: Blueprint per Customer Journey Analytics con Real-time Customer Data Platform   Customer Journey Analytics con Journey Optimizer
+title: Blueprint per Customer Journey Analytics con Real-time Customer Data Platform
 description: Unifica e analizza dati e comportamenti dei clienti da tutto il percorso del cliente in Customer Journey Analytics, e pubblica i tipi di pubblico da CJA a RTCDP
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
 source-git-commit: 70e7bfb3a6d7bad858bd72b6329602bdfb822505
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
 ht-degree: 100%
 
 ---
 
-# Blueprint per Customer Journey Analytics con Real-time Customer Data Platform    Customer Journey Analytics con Journey Optimizer
+# Blueprint per Customer Journey Analytics con Real-time Customer Data Platform    
 
 Crea e pubblica i tipi di pubblico identificati da Customer Journey Analytics (CJA) nel profilo cliente in tempo reale in Adobe Experience Platform, per eseguire attività di targeting dei clienti e personalizzazione. Questa soluzione è ideale per creare tipi di pubblico sulla base di dati storici, nonché tipi di pubblico più mirati con filtri granulari e campi calcolati in Customer Journey Analytics.
 
