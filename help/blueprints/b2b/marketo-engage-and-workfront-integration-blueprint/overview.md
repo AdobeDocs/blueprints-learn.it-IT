@@ -2,10 +2,10 @@
 title: Panoramica del blueprint per l’integrazione di Marketo Engage e Workfront
 description: Panoramica - Panoramica del blueprint per l’integrazione di Marketo Engage e Workfront
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
+source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 100%
+source-wordcount: '1767'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Prendi nota delle diverse fasi del processo di sviluppo di una campagna.
 
 1. Acquisizione e creazione: la campagna viene richiesta e le risorse della campagna vengono assemblate in modo programmatico.
 
-1. Bozza e approvazione: una volta assemblata la campagna, le parti interessate devono rivedere e approvare le risorse che verranno utilizzate nella campagna, come messaggi e-mail e pagine di destinazione.
+1. Revisione e approvazione: una volta assemblata la campagna, è possibile per le parti interessate rivedere e approvare le risorse della campagna, ad esempio e-mail e pagine di destinazione.
 
 1. Rapporto e audit: condividi i risultati delle campagne in Workfront per offrire maggiore visibilità a tutte le parti interessate, nei vari reparti.
 
@@ -149,7 +149,7 @@ Dopo questa introduzione a come Workfront e Marketo Engage possono essere utiliz
 
 * [Acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md){target="_blank"} - Automazione dello sviluppo delle campagne con Marketo Engage e Workfront
 
-* Bozze e approvazione (disponibile a breve)
+* [Rivedi e approva](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md){target="_blank"}
 
 ### Gestione dei nomi delle campagne Marketo Engage e dei relativi URL {#managing-marketo-engage-campaign-names}
 
