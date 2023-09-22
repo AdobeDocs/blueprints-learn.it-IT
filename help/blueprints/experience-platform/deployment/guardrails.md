@@ -4,19 +4,23 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 89dcbc4d71a9edff3095a6707cecc823281a9385
+source-git-commit: df10f49b618804982dd5b72ab4061de619beb72f
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 100%
+source-wordcount: '373'
+ht-degree: 72%
 
 ---
 
 # Guardrail
 
-I guardrail forniscono le soglie consigliate da utilizzare come guida in termini di utilizzo del sistema e dei dati e ottimizzazione delle prestazioni, per evitare errori o risultati imprevisti in Adobe Experience Platform e nelle relative applicazioni. I guardrail rispecchiano i vincoli di sistema e le prestazioni previste per agevolare l’ottimizzazione dell’architettura e delle prestazioni dei casi d’uso del cliente. I guardrail non devono essere intesi come accordi di livello di servizio (SLA). Per informazioni sugli SLA di specifici prodotti, consulta la documentazione di descrizione dei prodotti, accessibile dai collegamenti riportati di seguito.
+I guardrail sono soglie consigliate che forniscono indicazioni per l’utilizzo dei dati e del sistema in Adobe Experience Platform e nelle applicazioni. I guardrail riflettono i vincoli di sistema e le aspettative di prestazioni per ottimizzare l’architettura del cliente e le prestazioni del caso d’uso, e aiutano a evitare errori o risultati imprevisti. I guardrail non sono destinati ad essere accordi sui livelli di servizio.
+
+Per informazioni sugli accordi sui livelli di servizio specifici per applicazioni e funzionalità, fare riferimento a &quot;Descrizioni delle applicazioni e delle funzionalità&quot; nella parte inferiore di questa pagina.
 
 
 ## Documentazione di riferimento sui guardrail per Adobe Experience Platform e relative applicazioni
+
+Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni, i servizi e le applicazioni di Adobe Experience Platform:
 
 [Guardrail per l’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
 
@@ -70,7 +74,9 @@ I guardrail forniscono le soglie consigliate da utilizzare come guida in termini
 
 <br>
 
-## Descrizioni dei prodotti
+## Descrizioni di applicazioni e funzionalità
+
+Per informazioni sugli accordi sui livelli di servizio specifici per le funzioni, fare riferimento alle descrizioni riportate di seguito.
 
 [Experience Platform Collection Enterprise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
 
