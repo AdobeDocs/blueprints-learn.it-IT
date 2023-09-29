@@ -24,14 +24,11 @@ I blueprint per esperienze digitali sono implementazioni ripetibili che permetto
 ## Novità
 
 * **[Blueprint per attivazione in base a pubblico e profili nelle destinazioni aziendali](/help/blueprints/audience-activation/enterprise-destinations.md)**
-
-   *Mantieni i profili cliente aggiornati su tutti i sistemi, per renderli accessibili ai team di vendita e supporto.*
+  *Mantieni i profili cliente aggiornati su tutti i sistemi, per renderli accessibili ai team di vendita e supporto.*
 * **[Blueprint per hub delle attività dei clienti](/help/blueprints/audience-activation/customer-activity.md)**
-
-   *Fornire un contesto per il supporto e le vendite assistiti dagli agenti.*
+  *Fornire un contesto per il supporto e le vendite assistiti dagli agenti.*
 * **[Blueprint per analisi e intelligence dei dati](/help/blueprints/data-insights/analysis.md)**
-
-   *Esegui query esplorative e analisi dei dati nel data lake.*
+  *Esegui query esplorative e analisi dei dati nel data lake.*
 
 ## Blueprint in primo piano
 
