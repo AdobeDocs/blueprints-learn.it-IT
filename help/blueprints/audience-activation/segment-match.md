@@ -3,10 +3,10 @@ title: Blueprint per  il servizio Segment Match
 description: Scopri il servizio [!UICONTROL Segment Match] per Adobe Experience Platform (AEP). [!UICONTROL Segment Match] è un servizio di collaborazione sui dati che consente di scambiare dati sui segmenti basati su identificatori comuni del settore nel rispetto della privacy e in modo sicuro e gestito.
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
-workflow-type: ht
-source-wordcount: '1774'
-ht-degree: 100%
+source-git-commit: 9648235f5b626a8cbf2d8c9a619cf0f3ef1641ca
+workflow-type: tm+mt
+source-wordcount: '2180'
+ht-degree: 81%
 
 ---
 
@@ -100,25 +100,25 @@ Le impostazioni di consenso per il servizio [!UICONTROL Segment Match] possono e
 
 * A livello di organizzazione, durante l’onboarding, utilizzando l’impostazione di rinuncia o consenso per i controlli del consenso.
 
-   Questa impostazione determina se è possibile condividere i dati utente. Per default è inizialmente impostata su Rinuncia: indica quindi che i dati utente possono essere condivisi purché il cliente di AEP abbia già ricevuto il necessario consenso alla condivisione dei dati. Per modificare questa impostazione su Consenti, contatta il tuo Adobe Account Manager, per definire un controllo aggiuntivo affinché i clienti di AEP possano tracciare esplicitamente il consenso.
+  Questa impostazione determina se è possibile condividere i dati utente. Per default è inizialmente impostata su Rinuncia: indica quindi che i dati utente possono essere condivisi purché il cliente di AEP abbia già ricevuto il necessario consenso alla condivisione dei dati. Per modificare questa impostazione su Consenti, contatta il tuo Adobe Account Manager, per definire un controllo aggiuntivo affinché i clienti di AEP possano tracciare esplicitamente il consenso.
 
 * Impostazione dell’attributo di condivisione specifico per le identità (idSpecific) utilizzando il [gruppo di campi Consents e Preferences](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=it).
 
-   Questo gruppo di campi fornisce un singolo campo di tipo oggetto, “consents”, per acquisire i dati sul consenso e sulle preferenze. Per impostazione predefinita, il servizio [!UICONTROL Segment Match] include tutte le identità per le quali non è stata esplicitamente espressa la rinuncia, ad esempio:
+  Questo gruppo di campi fornisce un singolo campo di tipo oggetto, “consents”, per acquisire i dati sul consenso e sulle preferenze. Per impostazione predefinita, il servizio [!UICONTROL Segment Match] include tutte le identità per le quali non è stata esplicitamente espressa la rinuncia, ad esempio:
 
-   ```
-   "share": {
-   `                `"val": "n"
-   `     `}
-   ```
+  ```
+  "share": {
+  `                `"val": "n"
+  `     `}
+  ```
 
-   Per modificare questa impostazione, contatta il tuo Adobe Account Manager per includere solo le identità con consenso esplicito, ad esempio:
+  Per modificare questa impostazione, contatta il tuo Adobe Account Manager per includere solo le identità con consenso esplicito, ad esempio:
 
-   ```
-   "share": {
-   `                `"val": "y"
-   `     `}
-   ```
+  ```
+  "share": {
+  `                `"val": "y"
+  `     `}
+  ```
 
 ### Avvisi
 
@@ -163,6 +163,48 @@ Durante il processo di sovrapposizione delle identità giornaliera, se esiste un
 #### Revoca dei segmenti
 
 La revoca o eliminazione del segmento da parte del partner di provenienza avviene mediante un processo on-demand in cui l’elenco di tutti i profili con gli ID dei segmenti revocati viene ottenuto dal ricevente. Gli ID dei segmenti vengono rimossi dall’appartenenza ai segmenti di tali identità e riacquisiti presso il partner ricevente. Questa azione sovrascrive il frammento di appartenenza a segmenti esistente, il che a sua volta elimina l’appartenenza per il segmento interessato.
+
+## Utilizzare Segment Match (Corrispondenza segmenti) nelle offerte programmatiche
+
+Con le crescenti restrizioni sui cookie e gli identificatori di dispositivi di terze parti, la pubblicità programmatica sta cercando nuovi modi per creare e indirizzare i tipi di pubblico. È stato proposto un numero crescente di soluzioni &quot;ID universali&quot;, ma il settore è ancora in piena trasformazione e non esiste un metodo concordato e scalabile per raggiungere lo stesso livello di targeting, bilanciando al contempo le problematiche applicabili in materia di privacy.
+
+Puoi utilizzare Segment Match di Adobe Experience Platform nella collaborazione incentrata sulla privacy e migliorare le offerte private programmatiche tra inserzionisti e editori. Con Segment Match puoi:
+
+* Dividi **Traffico di annunci** e **Pubblico** flussi di lavoro.
+* Consenti ai brand dei partner di condividere i metadati del pubblico per identità condivise e consenzienti utilizzando identificatori durevoli come e-mail con hash e numero di telefono con hash all’interno di un processo imposto dal consenso.
+
+### Casi di utilizzo
+
+* Eseguire il targeting di tipi di pubblico di prime parti tramite offerte private programmatiche.
+* Soppressione del pubblico di prime parti tramite offerte private programmatiche.
+* Eseguire il targeting di tipi di pubblico simili da tipi di pubblico di prime parti generati tramite offerte private programmatiche.
+
+>[!BEGINSHADEBOX]
+
+**Prendi in considerazione il seguente flusso di lavoro di esempio tra un brand (Luma) e una rete multimediale (ACME):**
+
+1. Un brand (Luma) conduce una corrispondenza di pubblico con una rete multimediale (ACME) tramite Segment Match.
+2. ACME invia i tipi di pubblico al server di annunci o al provider di servizi condivisi a livello di programmazione tramite le destinazioni Adobe Real-Time CDP.
+3. ACME imposta un’operazione di inventario privato (ID) con i criteri di targeting applicabili, incluso il pubblico stabilito nel passaggio precedente. L’ID dell’operazione sull’inventario privato viene quindi inviato all’DSP di Luma.
+4. Luma imposta un’offerta di inventario privato e una campagna di traffico/creatività pubblicitaria.
+5. La campagna quindi offre tramite un’operazione programmatica di inventario privato.
+6. Successivamente, il server di annunci o il provider di servizi condivisi distribuisce impression pubblicitarie che soddisfano i criteri di targeting stabiliti. (Ulteriori criteri di targeting, come il limite di frequenza, sono disponibili tramite ad server e/o DSP, a seconda che nell’accordo sia stata stabilita un’offerta garantita o un’offerta preferita).
+7. Il traffico è determinato dalle proprietà del marchio Luma.
+8. ACME condivide quindi gli approfondimenti o i tipi di pubblico post-campagna tramite Segment Match per il re-targeting.
+
+>[!ENDSHADEBOX]
+
+![Diagramma del flusso di lavoro tra brand ed editore.](./assets/segment-match-blueprints.png)
+
+>[!IMPORTANT]
+>
+> Anche se la soluzione descritta sopra fornisce un modo semplice per eseguire il targeting dei dati di prime parti tramite accordi privati programmatici, prima di eseguire potrebbero essere necessarie alcune considerazioni, tra cui, a titolo esemplificativo e non esaustivo, i seguenti esempi:
+>
+>* Consenso: raccolta del consenso applicabile da parte del brand, dell’editore o della rete di media al dettaglio, per sfruttare i dati in questo modo.
+>
+>* Criteri e contratti di licenza: aderenza a tutte le politiche applicabili (comprese le politiche sulla privacy, i contratti dei fornitori di terze parti) da parte del brand, dell’editore o della rete di media retail, per sfruttare e attivare i dati in questo modo.
+
+
 
 ## Ulteriori informazioni
 
