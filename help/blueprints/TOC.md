@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
+source-git-commit: f98f1b6ca56ed1249e9c18ea04935808f4498ed5
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 100%
+source-wordcount: '263'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,9 @@ ht-degree: 100%
       + [Panoramica](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [Acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [Revisione e approvazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
-      + [Storie di successo dei clienti](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
+      + [Storie di successo dei clienti ](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
++ Contenuti e commerce{#content-commerce}
+   + [ADOBE COMMERCE e RTCDP](/help/blueprints/content-commerce/commerce/commerce-rtcdp.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
    + [Condivisione di tipi di pubblico CJA in RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
