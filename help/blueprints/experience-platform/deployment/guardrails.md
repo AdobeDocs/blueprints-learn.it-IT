@@ -4,10 +4,10 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 4379f372241248ea6c70c766f13a182783fcac0c
+source-git-commit: 76ad3dceda37c5f991a43df5828a926f6dfc42a5
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 64%
+source-wordcount: '625'
+ht-degree: 41%
 
 ---
 
@@ -38,39 +38,37 @@ Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni
 * [Guardrail per il servizio Query](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
 * [Guardrail per l’attivazione delle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=it)
 
+## Diagrammi di latenza end-to-end {#end-to-end-latency}
 
+### Acquisizione dei dati {#data-ingestion}
 
-## Diagrammi di latenza end-to-end
+Il diagramma seguente mostra i valori previsti della latenza di acquisizione dei dati tramite [acquisizione in streaming](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html) e [acquisizione batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=it) quando si importano dati in Real-Time CDP. Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
 
-### Acquisizione dei dati
+![Panoramica visiva di alto livello sull’acquisizione dei dati.](/help/blueprints/experience-platform/deployment/assets/aep_data_flow_guardrails.svg "Acquisizione dei dati: panoramica visiva di alto livello e valori di latenza"){width="1000" zoomable="yes"}
 
-<img src="assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
+### Segmentazione {#segmentation}
 
-<br>
+Il diagramma seguente mostra i valori di latenza previsti quando si lavora con tipi di pubblico in [Servizio di segmentazione di Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=it). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
 
-### Segmentazione
+![Panoramica visiva di alto livello sulla segmentazione.](/help/blueprints/experience-platform/deployment/assets/segmentation_guardrails.svg "Segmentazione dei valori di panoramica visiva e latenza di alto livello"){width="1000" zoomable="yes"}
 
-<img src="assets/segmentation_guardrails.svg" alt="Guardrail per la segmentazione in Experience Platform" style="border:1px solid #4a4a4a" width="85%" />
+### Real-time Customer Data Platform e Adobe Target {#adobe-target-latency}
 
-<br>
+Il diagramma seguente mostra i valori di latenza previsti per l’esportazione dei tipi di pubblico da Real-Time CDP a [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
 
-### Real-time Customer Data Platform e Adobe Target
+![Esportare in Adobe Target: panoramica visiva di alto livello.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Target_guardrails.svg "Esportazione di tipi di pubblico in Adobe Target: panoramica visiva di alto livello e valori di latenza"){width="1000" zoomable="yes"}
 
-<img src="assets/RTCDP_Target_guardrails.svg" alt="Guardrail per RTCDP e Target" style="border:1px solid #4a4a4a" width="85%" />
+### Blueprint per   {#customer-journey-analytics}
 
-<br>
+Il diagramma seguente mostra i valori di latenza previsti quando si lavora con [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
 
-### Customer Journey Analytics
+![Utilizzo di una panoramica visiva di alto livello del Customer Journey Analytics.](/help/blueprints/experience-platform/deployment/assets/CJA_guardrails.svg "Utilizzo dei valori Customer Journey Analytics di panoramica visiva di alto livello e latenza"){width="1000" zoomable="yes"}
 
-<img src="assets/CJA_guardrails.svg" alt="Guardrail per CJA" style="border:1px solid #4a4a4a" width="85%" />
+### Blueprint per   {#journey-optimizer}
 
-<br>
+Il diagramma seguente mostra i valori di latenza previsti quando si lavora con [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=en). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
 
-### Journey Optimizer
-
-<img src="assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" />
-
-<br>
+![Utilizzo della panoramica visiva di alto livello di Adobe Journey Optimizer.](/help/blueprints/experience-platform/deployment/assets/AJO_guardrails.svg "Utilizzo dei valori di latenza e panoramica visiva di alto livello di Adobe Journey Optimizer"){width="1000" zoomable="yes"}
 
 ## Descrizioni di applicazioni e funzionalità {#application-feature-descriptions}
 
