@@ -1,16 +1,16 @@
 ---
-title: Blueprint per  il servizio Segment Match
+title: Blueprint per Segment Match
 description: Scopri il servizio [!UICONTROL Segment Match] per Adobe Experience Platform (AEP). [!UICONTROL Segment Match] è un servizio di collaborazione sui dati che consente di scambiare dati sui segmenti basati su identificatori comuni del settore nel rispetto della privacy e in modo sicuro e gestito.
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
 source-git-commit: 9648235f5b626a8cbf2d8c9a619cf0f3ef1641ca
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 81%
+source-wordcount: '2126'
+ht-degree: 79%
 
 ---
 
-# Blueprint per   il servizio Segment Match
+# Blueprint per Segment Match
 
 Il servizio Segment Match consente ai brand partner di condividere i tipi di pubblico nei rispettivi ambienti Experience Platform. Per i brand è importante rivolgersi ai clienti in base ai dati raccolti dalle loro relazioni dirette con i consumatori. Grazie a migliori sistemi per la gestione della governance, delle autorizzazioni e delle preferenze, gli esperti di marketing possono ottimizzare ulteriormente il pubblico autenticato di prime parti con partner chiave.
 
@@ -44,7 +44,7 @@ Il servizio [!UICONTROL Segment Match] aiuta i diversi team di marketing di gran
 
 ## Architettura
 
-![Architettura del servizio Segment Match](assets/architecture-segment-match.png){zoomable=&quot;yes&quot;}
+![Architettura Segment Match](assets/architecture-segment-match.png){zoomable=&quot;yes&quot;}
 
 Il servizio [!UICONTROL Segment Match] non è un data marketplace per l’acquisto di dati. Si tratta piuttosto di una funzione di AEP che opera con dati di prime parti da specifici partner in cui la collaborazione è agevolata da controlli sulla privacy e sul consenso. Il servizio [!UICONTROL Segment Match] permette di concentrarsi sul miglioramento delle relazioni con i clienti e sulla crescita del brand. È utile nei casi in cui esiste già una relazione tra determinati brand o partner. L’esperienza offerta dal servizio [!UICONTROL Segment Match] è facile da gestire, scalabile e consente agli amministratori di condividere i segmenti in modo controllabile e basato sul consenso.
 
@@ -77,7 +77,7 @@ Il servizio [!UICONTROL Segment Match] presenta i seguenti prerequisiti:
 
 Il flusso del servizio [!UICONTROL Segment Match] per la gestione dei partner è protetto dal controllo degli accessi basato sul ruolo (RBAC). Solo le persone che dispongono di specifiche autorizzazioni possono avviare, accettare o gestire i partner. Tali operazioni possono essere eseguite nella sezione Acquisizione dati del profilo di prodotto. Sono necessarie le seguenti autorizzazioni:
 
-![Connessione per condivisione del pubblico](assets/data-ingestion.png){zoomable=&quot;yes&quot;}
+![Connessione condivisione pubblico](assets/data-ingestion.png){zoomable=&quot;yes&quot;}
 
 | Autorizzazione | Descrizione |
 |---|---|
@@ -146,7 +146,7 @@ Le stime di sovrapposizione offrono informazioni chiave, discovery dei partner e
 
 Il processo di sovrapposizione delle identità dipende dal set di dati di **esportazione giornaliera completa di profili** dalla sandbox del partner di provenienza a quella del partner ricevente, al fine di identificare i profili di identità comuni appartenenti ai segmenti condivisi. Il flusso dettagliato del processo di sovrapposizione è illustrato di seguito:
 
-![Processo di sovrapposizione delle identità](assets/overlap-process.png){zoomable=&quot;yes&quot;}
+![Processo di sovrapposizione identità](assets/overlap-process.png){zoomable=&quot;yes&quot;}
 
 Completata la condivisione dei segmenti da parte del partner di provenienza, al partner ricevente viene inviata una notifica sul feed di segmenti condivisi. Il feed di segmenti deve essere abilitato affinché un profilo del partner ricevente possa avviare il flusso di dati di appartenenza ai segmenti. Soltanto i dati di appartenenza a un segmento vengono acquisiti nei frammenti di profilo sovrapposti dell’organizzazione IMS ricevente; dal partner di provenienza al partner ricevente non viene trasmessa alcun altro dato di identità.
 
