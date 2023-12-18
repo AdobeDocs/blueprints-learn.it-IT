@@ -4,18 +4,20 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 4cc0eafda6e2670ac5b72b0a0ca59b84e1c0dba1
+source-git-commit: 5a4827244b7d8414b1f1a0bf9b3cd8308bde8c60
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 24%
+source-wordcount: '630'
+ht-degree: 18%
 
 ---
 
 # Guardrail
 
-I guardrail sono soglie consigliate che forniscono indicazioni per i dati, le latenze osservate e l’utilizzo del sistema in Adobe Experience Platform e nelle applicazioni. I guardrail riflettono i vincoli di sistema e le aspettative di prestazioni per ottimizzare l’architettura del cliente e le prestazioni del caso d’uso, e aiutano a evitare errori o risultati imprevisti. I guardrail non sono destinati ad essere accordi sui livelli di servizio.
+I guardrail sono soglie consigliate che forniscono indicazioni per i dati, le latenze osservate e l’utilizzo del sistema in Adobe Experience Platform e nelle applicazioni. I guardrail riflettono i vincoli di sistema e le aspettative di prestazioni per ottimizzare l’architettura del cliente e le prestazioni del caso d’uso, e aiutano a evitare errori o risultati imprevisti. I guardrail non sono destinati a essere accordi sui livelli di servizio; gli accordi sui livelli di servizio sono documentati nelle Descrizioni dei prodotti collegate di seguito e negli accordi di licenza con il cliente. I guardrail hanno lo scopo di fornire indicazioni nell’architettura di soluzioni per casi d’uso specifici dei clienti, al fine di garantire stabilità ed esecuzione.
 
 Per informazioni sugli accordi sui livelli di servizio specifici per applicazioni e funzionalità, consultare [Descrizioni di applicazioni e funzionalità](#application-feature-descriptions) nella parte inferiore della pagina.
+
+Tieni presente che, per qualsiasi caso di utilizzo di un cliente con rigidi requisiti di latenza o volume, Adobe consiglia di rivedere il caso di utilizzo in dettaglio con il team dell’account e il partner di implementazione di Adobe. In alcuni casi è consigliabile testare e osservare una determinata implementazione del caso d’uso prima dell’avvio della produzione del caso d’uso per osservare e comprendere il comportamento previsto - in quanto ogni implementazione del cliente ha diversi fattori in gioco, tra cui la natura e la frequenza dell’acquisizione dei dati, le specifiche delle regole dei segmenti in fase di creazione e le varie sfide di attivazione e i payload - ogni implementazione del caso d’uso avrà prestazioni osservate variabili. Di conseguenza, è meglio stabilire e testare le prestazioni previste fin dall’inizio per garantire un’architettura e un’implementazione adeguate in base ai requisiti di latenza e prestazioni del caso d’uso.
 
 
 ## Documentazione di riferimento sui guardrail per Adobe Experience Platform e relative applicazioni
