@@ -3,10 +3,10 @@ title: Blueprint per la gestione delle decisioni tramite hub
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, compresi chioschi, esperienze assistite da agenti, e-mail e altre consegne in uscita.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
-workflow-type: ht
-source-wordcount: '906'
-ht-degree: 100%
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+workflow-type: tm+mt
+source-wordcount: '738'
+ht-degree: 98%
 
 ---
 
@@ -56,22 +56,8 @@ Adobe Experience Platform
 
 * Per i guardrail relativi a Journey Optimizer, consulta i seguenti [Guardrail per Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html?lang=it).
 * Per i guardrail relativi a Gestione delle decisioni, fai riferimento alla [Descrizione del prodotto Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html).
-* Richieste al secondo = 2000.
-* Latenza di risposta &lt; 500 ms.
-* Accesso al profilo cliente in tempo reale completo, compresi appartenenze a un pubblico, attributi ed eventi di esperienza.
 
-
-### Guardrail per l’acquisizione dei dati
-
-<img src="../../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
-
-<br>
-
-### Guardrail per l’attivazione
-
-<img src="../../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Modelli di implementazione
 

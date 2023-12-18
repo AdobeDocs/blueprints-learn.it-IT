@@ -3,10 +3,10 @@ title: Blueprint per la gestione delle decisioni tramite rete Edge
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, incluse le esperienze web e mobili in tempo reale.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 98%
 
 ---
 
@@ -56,23 +56,11 @@ Adobe Experience Platform
 ## Guardrail
 
 * Per i guardrail relativi a Journey Optimizer, consulta i seguenti [Guardrail per Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html?lang=it).
+
 * Per i guardrail relativi a Gestione delle decisioni, fai riferimento alla [Descrizione del prodotto Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html).
-* Richieste al secondo = 5000.
-* Latenza di risposta &lt; 250 ms.
-* Accesso al profilo Edge in tempo reale. Nel profilo saranno disponibili solo i tipi di pubblico e gli attributi di profilo Edge proiettati.
-* Se vuoi applicare la personalizzazione alla prima esperienza, è preferibile utilizzare l’approccio tramite hub, con profilo completo. Per la prima esperienza Edge, infatti, il profilo Edge deve essere sincronizzato dall’hub. Pertanto, la prima esperienza tramite rete Edge non includerà i dati del profilo precedentemente caricati sull’hub.
 
-### Guardrail per l’acquisizione dei dati
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
-<img src="../../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
-
-<br>
-
-### Guardrail per l’attivazione
-
-<img src="../../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
 
 ## Modelli di implementazione
 

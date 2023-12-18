@@ -3,9 +3,9 @@ title: Journey Optimizer - Blueprint per messaggistica attivata e Adobe Experien
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 3102ab35e48fe51010185ea5a0352c77f068d0d4
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '563'
 ht-degree: 97%
 
 ---
@@ -74,22 +74,7 @@ Push per dispositivi mobili
 
 [Link al prodotto per i guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
 
-[Linee guida sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
-
-Tenere presenti le seguenti considerazioni aggiuntive:
-
-* Segmenti batch: necessario comprendere il volume giornaliero di utenti qualificati e accertarsi che il sistema di destinazione sia in grado di gestire il throughput burst per percorso e per tutti i percorsi.
-* Segmenti in streaming: il burst iniziale delle qualifiche dei profili deve poter essere gestito insieme al volume giornaliero di qualificazione dello streaming, per ogni percorso e per tutti i percorsi.
-* La funzionalità Gestione delle decisioni è supportata in modalità nativa solo nei messaggi (nessuna azione personalizzata).
-* Tipi di messaggi supportati:
-   * E-mail
-   * Push (FCM/APNS)
-   * Azioni personalizzate (tramite API Rest)
-* Integrazioni in uscita con sistemi di terze parti
-   * Singoli indirizzi IP statici non sono supportati, in quanto la nostra infrastruttura è multi-tenant (inserire tutti gli indirizzi IP dei datacenter nell’elenco degli IP consentiti).
-   * Per le azioni personalizzate sono supportati solo i metodi POST e PUT.
-   * Autenticazione tramite nome utente/password o token di autorizzazione
-* Non è possibile creare pacchetti e spostare singoli componenti di Adobe Experience Platform o Journey Optimizer tra diverse sandbox. È necessario reimplementarli nei nuovi ambienti.
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Documentazione correlata
 
