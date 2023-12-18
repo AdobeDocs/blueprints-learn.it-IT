@@ -3,14 +3,14 @@ title: Journey Optimizer - Blueprint per messaggistica attivata e Adobe Experien
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
+source-git-commit: 3102ab35e48fe51010185ea5a0352c77f068d0d4
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
-# Blueprint per   Journey Optimizer 
+# Journey Optimizer blueprint
 
 Adobe Journey Optimizer è un sistema appositamente progettato che consente ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli là dove si trovano. Le funzionalità di gestione dei dati sono state trasferite in Adobe Experience Platform, consentendo ai team di marketing di concentrarsi sul loro punto di forza: la creazione di percorsi cliente d’eccellenza e conversazioni personalizzate. Questo blueprint delinea le funzionalità tecniche dell’applicazione e descrive i vari componenti dell’architettura di Adobe Journey Optimizer.
 
@@ -72,9 +72,11 @@ Push per dispositivi mobili
 
 ## Guardrail
 
-[Link al prodotto per i guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=it)
+[Link al prodotto per i guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
 
-Tieni presenti questi aspetti, non inclusi nel link qui sopra:
+[Linee guida sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+
+Tenere presenti le seguenti considerazioni aggiuntive:
 
 * Segmenti batch: necessario comprendere il volume giornaliero di utenti qualificati e accertarsi che il sistema di destinazione sia in grado di gestire il throughput burst per percorso e per tutti i percorsi.
 * Segmenti in streaming: il burst iniziale delle qualifiche dei profili deve poter essere gestito insieme al volume giornaliero di qualificazione dello streaming, per ogni percorso e per tutti i percorsi.
@@ -88,59 +90,6 @@ Tieni presenti questi aspetti, non inclusi nel link qui sopra:
    * Per le azioni personalizzate sono supportati solo i metodi POST e PUT.
    * Autenticazione tramite nome utente/password o token di autorizzazione
 * Non è possibile creare pacchetti e spostare singoli componenti di Adobe Experience Platform o Journey Optimizer tra diverse sandbox. È necessario reimplementarli nei nuovi ambienti.
-
-### Guardrail per l’acquisizione dei dati
-
-<img src="../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
-
-<br>
-
-### Guardrail per l’attivazione
-
-<img src="../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
-
-## Fasi di implementazione
-
-### Adobe Experience Platform
-
-#### Schema/set di dati
-
-1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
-1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
-1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
-1. [Creare le policy](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=it) che necessarie per applicare la governance alle destinazioni
-
-#### Profilo/identità
-
-1. [Creare namespace specifici per il cliente](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Aggiungere le identità agli schemi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it)
-1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it)
-1. [Impostare i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per viste diverse del [!UICONTROL profilo cliente in tempo reale] (opzionale)
-1. Creare segmenti da utilizzare in Journey
-
-#### Origini/destinazioni
-
-1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origini.
-
-### Journey Optimizer
-
-1. Configurare l’origine dati di Experience Platform e determinare quali campi devono essere memorizzati nella cache come parte dei dati del profilo. I dati in streaming utilizzati per avviare un percorso cliente devono prima essere configurati in Journey Optimizer, per ottenere un ID di orchestrazione. Questo ID di orchestrazione viene quindi fornito allo sviluppatore che potrà utilizzarlo con l’acquisizione.
-1. Configurare le origini dati esterne.
-1. Configurare le azioni personalizzate.
-
-### Configurazione push per dispositivi mobili
-
-1. Implementare Experience Platform Mobile SDK per raccogliere i token push e le informazioni di accesso da associare ai profili cliente noti.
-1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
-1. Adobe Journey Optimizer
-1. Rete Edge di Adobe Experience Platform
-1. Identità    per rete Edge
-1. Mobile Core
-1. Assicurati di disporre di un flusso di dati dedicato per le implementazioni di app mobili rispetto alle implementazioni web.
-1. Per ulteriori informazioni, consulta la [guida di Adobe Journey Optimizer Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
-
 
 ## Documentazione correlata
 
