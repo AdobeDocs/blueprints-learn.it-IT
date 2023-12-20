@@ -3,10 +3,10 @@ title: Blueprint per la gestione delle decisioni tramite hub
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, compresi chioschi, esperienze assistite da agenti, e-mail e altre consegne in uscita.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: 2960cc95b9b83a3efea7fa247e1adabf310f3ee1
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 98%
+source-wordcount: '832'
+ht-degree: 87%
 
 ---
 
@@ -28,11 +28,16 @@ Per ulteriori informazioni su Gestione delle decisioni tramite rete Edge, consul
 
 ## Casi di utilizzo per Gestione delle decisioni tramite hub
 
+* Casi di utilizzo dello streaming in cui la latenza del contesto del profilo non è rigida: 15 minuti o superiore.
 * Offerte personalizzate per chioschi ed esperienze in-store.
 * Offerte personalizzate tramite esperienze assistite da agenti, come call center o interazioni di vendita.
 * Offerte incluse in e-mail, SMS, notifiche push per dispositivi mobili o altre interazioni in uscita.
 * Fornire offerte a sistemi ESP esterni e di messaggistica per la consegna.
 * Esecuzione di percorsi cross-channel: offerte coerenti su web, dispositivi mobili, e-mail e altri canali di interazione tramite Adobe Journey Optimizer.
+
+>[!IMPORTANT]
+>
+>Per casi di utilizzo di offerte e percorsi che richiedono l’accesso al profilo per ulteriori informazioni e contesto. È importante considerare la latenza associata all’acquisizione dei dati da profilare sull’hub, in modo che siano disponibili al momento della decisione. Per gli scenari in cui il contesto è in streaming o in fase di acquisizione nel profilo e l’offerta o il percorso deve disporre di tale contesto entro pochi secondi o minuti dalla decisione di offerta, questi scenari vengono gestiti al meglio con la funzione Gestione delle decisioni di Edge.
 
 <br>
 
