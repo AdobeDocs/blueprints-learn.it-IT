@@ -4,10 +4,10 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 5a4827244b7d8414b1f1a0bf9b3cd8308bde8c60
+source-git-commit: 2ff576ccb4ac3f9e2bdb690b6e9242d674214c33
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 18%
+source-wordcount: '688'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ I guardrail sono soglie consigliate che forniscono indicazioni per i dati, le la
 
 Per informazioni sugli accordi sui livelli di servizio specifici per applicazioni e funzionalità, consultare [Descrizioni di applicazioni e funzionalità](#application-feature-descriptions) nella parte inferiore della pagina.
 
-Tieni presente che, per qualsiasi caso di utilizzo di un cliente con rigidi requisiti di latenza o volume, Adobe consiglia di rivedere il caso di utilizzo in dettaglio con il team dell’account e il partner di implementazione di Adobe. In alcuni casi è consigliabile testare e osservare una determinata implementazione del caso d’uso prima dell’avvio della produzione del caso d’uso per osservare e comprendere il comportamento previsto - in quanto ogni implementazione del cliente ha diversi fattori in gioco, tra cui la natura e la frequenza dell’acquisizione dei dati, le specifiche delle regole dei segmenti in fase di creazione e le varie sfide di attivazione e i payload - ogni implementazione del caso d’uso avrà prestazioni osservate variabili. Di conseguenza, è meglio stabilire e testare le prestazioni previste fin dall’inizio per garantire un’architettura e un’implementazione adeguate in base ai requisiti di latenza e prestazioni del caso d’uso.
+Tieni presente che, per qualsiasi caso di utilizzo di un cliente con rigidi requisiti di latenza o volume, Adobe consiglia di rivedere il caso di utilizzo in dettaglio con il team dell’account e il partner di implementazione di Adobe. In alcuni casi è consigliabile testare e osservare una determinata implementazione del caso d’uso prima dell’avvio della produzione del caso d’uso per osservare e comprendere il comportamento previsto - in quanto ogni implementazione del cliente ha diversi fattori in gioco, tra cui la natura e la frequenza dell’acquisizione dei dati, le specifiche delle regole dei segmenti che vengono create e i vari canali di attivazione e payload - ogni implementazione del caso d’uso avrà prestazioni osservate variabili. Di conseguenza, è meglio stabilire e testare le prestazioni previste fin dall’inizio per garantire un’architettura e un’implementazione adeguate in base ai requisiti di latenza e prestazioni del caso d’uso.
 
 
 ## Documentazione di riferimento sui guardrail per Adobe Experience Platform e relative applicazioni
@@ -42,6 +42,12 @@ Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni
 
 ## Diagrammi di latenza end-to-end {#end-to-end-latency}
 
+### Latenze osservate primarie da rete Edge e hub Experienci Platform {#edge-hub-latencies}
+
+Il diagramma seguente illustra le latenze osservate primarie a livello di spigolo e hub di cui tenere conto durante l’architettura del caso d’uso nell’Experience Platform e nelle applicazioni.
+
+![Latenze osservate primarie della rete Edge e dell&#39;hub di Experience Platform.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Latenze osservate primarie di Experienci Platform Edge Network e hub"){width="1000" zoomable="yes"}
+
 ### Acquisizione dei dati {#data-ingestion}
 
 Il diagramma seguente mostra i valori previsti della latenza di acquisizione dei dati tramite [acquisizione in streaming](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html) e [acquisizione batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=it) quando si importano dati in Real-Time CDP. Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
@@ -54,11 +60,11 @@ Il diagramma seguente mostra i valori di latenza previsti quando si lavora con t
 
 ![Panoramica visiva di alto livello sulla segmentazione.](/help/blueprints/experience-platform/deployment/assets/segmentation_guardrails.svg "Segmentazione dei valori di panoramica visiva e latenza di alto livello"){width="1000" zoomable="yes"}
 
-### Real-time Customer Data Platform e Adobe Target {#adobe-target-latency}
+### Real-time Customer Data Platform e Edge Network {#adobe-edge-latency}
 
-Il diagramma seguente mostra i valori di latenza previsti per l’esportazione dei tipi di pubblico da Real-Time CDP a [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
+Il diagramma seguente mostra i valori di latenza previsti quando si utilizza la rete Edge, ad esempio per sfruttare i tipi di pubblico RTCDP in [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
 
-![Esportare in Adobe Target: panoramica visiva di alto livello.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Target_guardrails.svg "Esportazione di tipi di pubblico in Adobe Target: panoramica visiva di alto livello e valori di latenza"){width="1000" zoomable="yes"}
+![Panoramica visiva di alto livello su Adobe Edge Network e Experienci Platform.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Edge_guardrails.svg "Esportazione di tipi di pubblico in Adobe Target: panoramica visiva di alto livello e latenza"){width="1000" zoomable="yes"}
 
 ### Blueprint per   {#customer-journey-analytics}
 
