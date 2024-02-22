@@ -7,7 +7,7 @@ solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 404c0d42fd29cb13f933bf74ad375476868a59ad
+source-git-commit: 47ae9808a53fd59583bd26b70e58c34a15e47493
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 97%
@@ -60,7 +60,7 @@ La personalizzazione per clienti noti è supportata tramite diversi approcci di 
 ### Modello di implementazione 1 - Rete Edge con Web/Mobile SDK o Edge Network API (approccio consigliato)
 
 * Utilizzo della rete Edge con Web/Mobile SDK. La segmentazione Edge in tempo reale richiede l’implementazione di Web/Mobile SDK o dell’API Edge.
-* [Consulta l’Experience Platform Blueprint per SDK web e mobile.](../experience-platform/deployment/websdk.md) per l’implementazione basata su SDK.
+* [Consulta l’Experience Platform Blueprint per SDK web e mobile.](/experience-platform/deployment/websdk.md) per l’implementazione basata su SDK.
 * Per poter essere utilizzata in Mobile SDK, l’[estensione Adobe Journey Optimizer - Decisioning](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) deve essere installata in Mobile SDK.
 * [Consulta Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it) per l’implementazione basata su API di Adobe Target con profilo Edge.
 
@@ -68,7 +68,7 @@ La personalizzazione per clienti noti è supportata tramite diversi approcci di 
 
 Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AT.js e AppMeasurement.js). La valutazione dei segmenti Edge in tempo reale non è supportata da questo approccio di implementazione. Tuttavia, questo approccio supporta la condivisione del pubblico in streaming e in batch dall’hub di Experience Platform.
 
-[Consulta il blueprint per l’SDK delle specifiche applicazioni](../experience-platform/deployment/appsdk.md)
+[Consulta il blueprint per l’SDK delle specifiche applicazioni](/experience-platform/deployment/appsdk.md)
 
 ### Fasi di implementazione
 
