@@ -4,10 +4,10 @@ description: Gestisci profili e pubblico in Experience Platform e condividili co
 solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: 2dab717d638bdbc0a903861ec743a81f2aed986d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '799'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Nella sezione sull’[architettura di Experience Platform e relative applicazion
 
 ## Guardrail
 
-Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a pubblico e profili](overview.md)     e ai [guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
+Consulta la sezione [protezioni nella pagina Panoramica di Audience e Profile Activation](overview.md) e [guardrail di distribuzione](../experience-platform/deployment/guardrails.md) pagina.
 
 ## Considerazioni sull’implementazione
 
@@ -67,7 +67,7 @@ Fai riferimento ai [guardrail nella pagina Panoramica di attivazione in base a p
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Target
 
-* Nel [blueprint Personalizzazione per clienti noti - Target e RTCDP](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=it) trovi ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Target.
+* Nel [blueprint Personalizzazione per clienti noti - Target e RTCDP](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/known-personalization.html) trovi ulteriori dettagli sulla condivisione di profili e pubblico da Real-time Customer Data Platform a Target.
 
 ### Condivisione del pubblico da Real-time Customer Data Platform a Campaign e Journey Optimizer
 

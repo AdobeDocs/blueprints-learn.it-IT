@@ -4,10 +4,10 @@ description: 'Esperienze clienti in tempo reale su diversi canali: digital media
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
 exl-id: a675bc81-e76c-491a-8718-359867d63351
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: 2dab717d638bdbc0a903861ec743a81f2aed986d
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '553'
+ht-degree: 99%
 
 ---
 
@@ -73,4 +73,4 @@ Questa azienda con esperienze integrate voleva personalizzare l’intera custome
 | RTCDP + AEP | [Attivazione del pubblico con dati online/offline](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it) |
 | | [Attivazione Experience Platform + applicazioni](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it) |
 | Marketo + AEP | [Attivazione e marketing B2B](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=it) | |
-| Target + AEP | [Caso di utilizzo di Adobe Target - Personalizzazione web e mobile basata sul comportamento](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=it) | [Personalizzazione web e mobile con dati sui clienti noti](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=it) | |
+| Target + AEP | [Caso di utilizzo di Adobe Target - Personalizzazione web e mobile basata sul comportamento](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/behavioral.html?lang=en) | [Personalizzazione web e mobile con dati sui clienti noti](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/known-personalization.html?lang=en) | |
