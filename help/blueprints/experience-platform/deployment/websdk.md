@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
-workflow-type: ht
-source-wordcount: '254'
+source-git-commit: 3bd7a73786fee42ec14d98fc4362e7a9609f12a3
+workflow-type: tm+mt
+source-wordcount: '199'
 ht-degree: 100%
 
 ---
@@ -36,11 +36,11 @@ Per informazioni dettagliate sulla migrazione dagli SDK di specifiche applicazio
 
 Questo schema dell’architettura illustra l’implementazione e la raccolta dati tramite Experience Platform Web SDK.
 
-<img src="assets/web_sdk_flow.svg" alt="Architettura di riferimento per l’implementazione tramite Experience Platform Web/Mobile SDK" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.svg" alt="Architettura di riferimento per l’implementazione tramite Experience Platform Web/Mobile SDK" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 Diagramma di sequenza per Experience Edge, servizi Experience Platform e applicazioni
 
-<img src="assets/web_sdk_sequence.svg" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_sequence.svg" alt="Architettura di riferimento del blueprint per la personalizzazione web con dati online/offline" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 ## Documentazione di riferimento
 
