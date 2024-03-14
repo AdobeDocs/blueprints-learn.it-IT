@@ -3,9 +3,9 @@ title: Blueprint per esperienze digitali
 description: I blueprint per esperienze digitali sono implementazioni ripetibili che permettono di risolvere questioni di strategia e problemi di business noti. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
+source-git-commit: 48991029a990bbbc7d9be52d15fe19d3825341cb
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '201'
 ht-degree: 100%
 
 ---
