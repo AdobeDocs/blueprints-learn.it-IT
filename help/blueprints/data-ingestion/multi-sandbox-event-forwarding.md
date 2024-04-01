@@ -4,10 +4,10 @@ description: Scopri come i dati raccolti tramite Experience Platform Web SDK e M
 solution: Data Collection
 kt: 7202
 exl-id: ecc94fc8-9fad-4b88-a153-3d0fc00d8d58
-source-git-commit: 3d6a2416cdb9956e59be4b2918ba19f88cd2150b
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 83%
 
 ---
 
@@ -44,7 +44,7 @@ L’[!UICONTROL inoltro eventi] non è considerato compatibile con HIPAA e non d
 
 ### Diversi stream di dati ed endpoint di streaming
 
-Durante il flusso di dati attraverso gli stream di dati dalla [!UICONTROL rete Edge di Platform], quando si utilizza l’[!UICONTROL inoltro eventi] verso un’altra sandbox AEP, è ASSOLUTAMENTE necessario non utilizzare MAI lo stesso stream di dati o endpoint di streaming dello stream di dati da cui viene eseguita la raccolta originale. Questo può avere un effetto dannoso sull’istanza AEP e può potenzialmente attivare una situazione DoS.
+Quando i dati scorrono attraverso gli stream di dati dalla [!DNL Platform Edge Network], quando si utilizza [!UICONTROL Inoltro eventi] per un’altra sandbox di AEP, è necessario non utilizzare mai lo stesso flusso di dati o lo stesso punto finale di streaming dello stream di dati che crea la raccolta originale. Questo può avere un effetto dannoso sull’istanza AEP e può potenzialmente attivare una situazione DoS.
 
 ### Stima dei volumi di traffico
 
@@ -54,11 +54,11 @@ I volumi di traffico devono essere verificati per ogni caso d’uso. Volumi elev
 
 ![ [!UICONTROL Inoltro eventi per più sandbox]](assets/multi-sandbox-data-collection.png)
 
-1. Per utilizzare l’[!UICONTROL inoltro eventi] è necessario raccogliere e inviare dati evento alla [!UICONTROL rete Edge di Platform]. È possibile utilizzare i tag Adobe lato client o [!UICONTROL Platform Edge Network Server API] per la raccolta dati server-to-server. [!UICONTROL Platform Edge Network API] può fornire una funzionalità di raccolta da server a server. Tuttavia, ciò richiede l’implementazione di un diverso modello di programmazione. Consulta [Panoramica di Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it).
+1. Raccolta e invio di dati evento a [!DNL Platform Edge Network] è necessario per utilizzare [!UICONTROL Inoltro eventi]. I clienti possono utilizzare tag Adobe per il lato client o [!DNL Platform Edge Network Server API] per la raccolta dati server-to-server. Il [!DNL Platform Edge Network API] può fornire una funzionalità di raccolta da server a server. Tuttavia, ciò richiede l’implementazione di un diverso modello di programmazione. Consulta [Panoramica di Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it).
 
-1. I payload raccolti vengono inviati dall’implementazione dei tag alla [!UICONTROL rete Edge di Platform] al servizio di [!UICONTROL inoltro eventi] e vengono elaborati in base a specifici [!UICONTROL elementi dati], [!UICONTROL regole] e [!UICONTROL azioni]. Scopri di più su [tag e [!UICONTROL inoltro eventi]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it#differences-from-tags).
+1. I payload raccolti vengono inviati dall’implementazione dei tag al [!DNL Platform Edge Network] al [!UICONTROL Inoltro eventi] servizio ed elaborato in proprio [!UICONTROL Elementi dati], [!UICONTROL Regole] e [!UICONTROL Azioni]. Scopri di più su [tag e [!UICONTROL inoltro eventi]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it#differences-from-tags).
 
-1. Inoltre, per ricevere i dati degli eventi raccolti dalla [!UICONTROL rete Edge di Platform], è necessaria una proprietà di [!UICONTROL inoltro eventi]. Questa indica se i dati evento sono stati inviati alla rete Edge di Platform da un’implementazione di tag o da una raccolta da server a server. Gli autori definiscono gli elementi dati, le regole e le azioni da utilizzare per arricchire i dati evento prima di inoltrarli alla seconda sandbox. Per strutturare i dati da acquisire nella sandbox, puoi utilizzare un elemento dati [!DNL JavaScript] con codice personalizzato. Questo, insieme alle funzionalità di Platform per la preparazione dei dati, ti offrirà diverse opzioni per gestire la struttura dei dati.
+1. Un [!UICONTROL Inoltro eventi] è necessaria anche per ricevere i dati evento raccolti da [!DNL Platform Edge Network]. Indica se i dati dell&#39;evento sono stati inviati al [!DNL Platform Edge Network] da un’implementazione Tag implementata o da una raccolta server-to-server. Gli autori definiscono gli elementi dati, le regole e le azioni da utilizzare per arricchire i dati evento prima di inoltrarli alla seconda sandbox. Per strutturare i dati da acquisire nella sandbox, puoi utilizzare un elemento dati [!DNL JavaScript] con codice personalizzato. Questo, insieme alle funzionalità di Platform per la preparazione dei dati, ti offrirà diverse opzioni per gestire la struttura dei dati.
 
 1. Attualmente, è necessario utilizzare l’[!UICONTROL estensione Adobe Cloud Connector] all’interno della proprietà di [!UICONTROL inoltro eventi]. Una volta che le regole elaborano o arricchiscono i dati evento, Cloud Connector viene utilizzato in una chiamata fetch configurata per un POST che invia il payload alla seconda sandbox
 

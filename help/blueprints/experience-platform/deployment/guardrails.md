@@ -4,9 +4,9 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 2ff576ccb4ac3f9e2bdb690b6e9242d674214c33
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '680'
 ht-degree: 15%
 
 ---
@@ -34,7 +34,7 @@ Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni
 **servizi Experienci Platform**
 
 * [Guardrail per l’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
-* [Guardrail per Edge Network API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [[!DNL Edge Network] Guardrail API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
 * [Guardrail di segmentazione e profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [Guardrail per il servizio Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=it)
 * [Guardrail per il servizio Query](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
@@ -46,7 +46,7 @@ Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni
 
 Il diagramma seguente illustra le latenze osservate primarie a livello di spigolo e hub di cui tenere conto durante l’architettura del caso d’uso nell’Experience Platform e nelle applicazioni.
 
-![Latenze osservate primarie della rete Edge e dell&#39;hub di Experience Platform.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Latenze osservate primarie di Experienci Platform Edge Network e hub"){width="1000" zoomable="yes"}
+![Experience Platform [!DNL Edge Network] e le latenze osservate primarie dell’hub.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Latenze osservate primarie di Experienci Platform Edge Network e hub"){width="1000" zoomable="yes"}
 
 ### Acquisizione dei dati {#data-ingestion}
 
@@ -60,9 +60,9 @@ Il diagramma seguente mostra i valori di latenza previsti quando si lavora con t
 
 ![Panoramica visiva di alto livello sulla segmentazione.](/help/blueprints/experience-platform/deployment/assets/segmentation_guardrails.svg "Segmentazione dei valori di panoramica visiva e latenza di alto livello"){width="1000" zoomable="yes"}
 
-### Real-time Customer Data Platform e Edge Network {#adobe-edge-latency}
+### REAL-TIME CUSTOMER DATA PLATFORM E [!DNL Edge Network] {#adobe-edge-latency}
 
-Il diagramma seguente mostra i valori di latenza previsti quando si utilizza la rete Edge, ad esempio per sfruttare i tipi di pubblico RTCDP in [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
+Il diagramma seguente mostra i valori di latenza previsti quando si sfruttano le [!DNL Edge Network] : ad esempio per sfruttare i tipi di pubblico RTCDP in [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
 
 ![Panoramica visiva di alto livello su Adobe Edge Network e Experienci Platform.](/help/blueprints/experience-platform/deployment/assets/RTCDP_Edge_guardrails.svg "Esportazione di tipi di pubblico in Adobe Target: panoramica visiva di alto livello e latenza"){width="1000" zoomable="yes"}
 

@@ -1,13 +1,13 @@
 ---
-title: Settore retail - Attivazione con applicazioni Experience Cloud
-description: 'Esperienze clienti in tempo reale su diversi canali: digital media, e-mail, push e web.'
+title: Retail industry - Activation con applicazioni Experience Cloud
+description: Scopri come offrire esperienze cliente in tempo reale su media digitali, e-mail, push e canali web.
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
 exl-id: a675bc81-e76c-491a-8718-359867d63351
-source-git-commit: 2dab717d638bdbc0a903861ec743a81f2aed986d
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 99%
+source-wordcount: '556'
+ht-degree: 95%
 
 ---
 
@@ -62,7 +62,6 @@ Questa azienda con esperienze integrate voleva personalizzare l’intera custome
 
 
 ## Blueprint correlati
-
 
 | Casi di utilizzo/integrazione  | Collegamento |
 |:----|:----|

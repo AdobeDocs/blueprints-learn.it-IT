@@ -1,13 +1,13 @@
 ---
-title: Settore abbigliamento - Attivazione con applicazioni Experience Cloud
-description: Sono stati utilizzati più blueprint per abilitare il marketing in tempo reale, l’attivazione cross-channel e l’analisi cross-channel.
+title: Industria dell’abbigliamento - Attivazione con applicazioni Experienci Cloud
+description: Utilizzava più blueprint per abilitare il marketing in tempo reale, l’attivazione cross-channel e l’analisi cross-channel.
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
 kt: 9487
 exl-id: f1a3e785-c804-43bd-90de-da4359bdd810
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 100%
+source-wordcount: '331'
+ht-degree: 94%
 
 ---
 

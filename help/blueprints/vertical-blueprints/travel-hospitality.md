@@ -1,13 +1,13 @@
 ---
-title: Settore viaggi e hospitality - Attivazione con dati online e offline
-description: Decisioni in tempo reale con una singola vista consolidata del comportamento dei clienti su diversi canali.
+title: Viaggi e ospitalità - Attivazione con dati online e offline
+description: Scopri come prendere decisioni in tempo reale con un’unica vista consolidata del comportamento dei clienti su vari canali.
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
 exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '406'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ Sfruttando le tecnologie e i servizi Adobe, questa organizzazione è ora pronta 
 |---|---|---|
 | **Rendere ogni esperienza rilevante per il singolo ospite **<br></br>** Insignt attuabili e democratizzazione dei dati tramite dashboard **<br></br>** Efficienza organizzativa e operativa**</ul> | <ul><li>Creazione di profili cliente unificati per il programma fedeltà, utilizzando dati online e offline per attivazione e misurazione</li><li>Attivazione in tempo reale, veloce e scalabile, tra canali diversi</li><li>Funzionalità di analisi a livello di cliente tramite l’analisi della customer journey</li><li>Sviluppo di intelligence per migliorare l’attivazione, attingendo ai dati storici da interazioni click stream.</li><li>Utilizzo di dati online e offline per ottenere un quadro unificato del cliente con insights su tutte le customer journey e tutti i canali.</li></ul> | <ul><li><strong>Attivazione cross-channel: </strong>coinvolgimento da e-mail triplicato, aumento del pubblico indirizzabile e delle impressioni, esperienze web altamente personalizzate </li><li><strong>Intelligence: </strong>il programma fedeltà per gli ospiti alimenta una campagna di attivazione volta a ridurre il tasso di abbandono</li><li><strong>Reporting: </strong>dati online e offline consolidati mediante AI/ML in dashboard di facile lettura con informazioni sul percorso e l’attribuzione; riduzione della latenza (diversi giorni)</li><li><strong>Stack di tecnologie adattabili: </strong>decine di milioni di profili su 7 canali pronti per scenari di cross-selling, up-selling e ottimizzazione della spesa</li></ul> |
 
-## Blueprint principale: Attivazione con dati online e offline
+## Blueprint principale: attivazione con dati online e offline
 
 ### Descrizione
 

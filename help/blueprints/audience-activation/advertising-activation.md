@@ -1,19 +1,19 @@
 ---
-title: Attivazione per destinazioni social e pubblicitarie da Real-time Customer Data Platform
-description: Attivazione per destinazioni social e pubblicitarie da Real-time Customer Data Platform
+title: Attivazione per destinazioni social e pubblicitarie da RTCDP
+description: Scopri come acquisire i dati dei clienti da più origini per creare una singola vista di profilo del cliente.
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 100%
+source-wordcount: '1130'
+ht-degree: 92%
 
 ---
 
-# Attivazione per destinazioni social e pubblicitarie da Real-time Customer Data Platform
+# Attivazione per destinazioni social e pubblicitarie da RTCDP
 
-Acquisisci i dati dei clienti da più origini per creare una singola vista del profilo del cliente; segmenta i profili per creare tipi di pubblico per le attività di marketing e personalizzazione; condividi questi tipi di pubblico in ad network come Facebook e Google per il targeting e la personalizzazione delle campagne.
+Acquisisci i dati del cliente da più origini per creare una singola vista di profilo del cliente. Puoi segmentare questi profili per tipi di pubblico creati per il marketing e la personalizzazione, e condividerli con Ad Networks, come Facebook e Google, per eseguire il targeting e personalizzare le campagne relative a tali tipi di pubblico.
 
 ## Casi di utilizzo
 
