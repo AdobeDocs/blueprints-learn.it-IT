@@ -4,22 +4,22 @@ description: Scopri i metodi con cui è possibile accedere ai dati e esportarli 
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-Time Customer Data Platform, Data Collection
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: 2b555728ddf570e236c0c54a8c17f85a6942618f
+source-git-commit: 72eb4e2ff276279a2fc88ead0b17d77cc8e99b97
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1834'
 ht-degree: 91%
 
 ---
 
-# Blueprint per l’accesso ai dati e l’esportazione
+# Blueprint per l’esportazione e l’accesso ai dati
 
-La blueprint per l’accesso e l’esportazione dei dati delinea tutti i possibili metodi tramite i quali è possibile accedere ai dati o esportarli da [!DNL Experience Platform] e applicazioni.
+La blueprint per l’accesso e l’esportazione dei dati delinea tutti i metodi possibili per accedere ai dati o esportarli da [!DNL Experience Platform] e applicazioni.
 
 Il blueprint è suddiviso in due categorie per l’accesso ai dati da [!DNL Experience Platform] e applicazioni.
 
-La prima include approcci per l’acquisizione di dati da applicazioni e Experienci Platform. Questo sarebbe considerato un _push_ metodo del tipo di uscita dei dati.
+La prima include approcci per l’acquisizione di dati da [!DNL Experience Platform] e applicazioni. Questo sarebbe considerato un _push_ metodo del tipo di uscita dei dati.
 
-La seconda include approcci per accedere ai dati da applicazioni e Experienci Platform. Questo sarebbe considerato un _tirare_ tipo di metodo di accesso ai dati.
+La seconda include approcci per l’accesso ai dati da [!DNL Experience Platform] e applicazioni. Questo sarebbe considerato un _tirare_ tipo di metodo di accesso ai dati.
 
 Approcci all’accesso ai dati:
 

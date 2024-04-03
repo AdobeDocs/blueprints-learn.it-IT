@@ -1,19 +1,21 @@
 ---
-title: Blueprint per la personalizzazione Data Science per l’arricchimento del profilo
-description: Questo blueprint mostra come le informazioni basate su Data Science possono essere acquisite in Experience Platform per arricchire il profilo del cliente in tempo reale.
+title: Blueprint per personalizzazione Data Science per l’arricchimento del profilo
+description: Scopri come acquisire informazioni basate sulla scienza dei dati in [!DNL Experience Platform] per arricchire Real-time Customer Profile.
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
-workflow-type: ht
-source-wordcount: '500'
-ht-degree: 100%
+source-git-commit: 7f3bc307f74aa88a7a73f3e50cc48bd16f58b37f
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 69%
 
 ---
 
-# Blueprint per la personalizzazione Data Science per l’arricchimento del profilo
+# Blueprint per data science personalizzata per l’arricchimento dei profili
 
-Il blueprint per la personalizzazione basata su Data Science per l’arricchimento del profilo illustra come è possibile utilizzare i dati per addestrare, implementare e valutare modelli al fine di fornire informazioni basate sull’apprendimento automatico in Experience Platform e Real-time Customer Data Platform, mediante strumenti di data science e machine learning. Le informazioni modellate possono essere acquisite in Experience Platform per arricchire il profilo cliente in tempo reale. Esempi di informazioni basate sull’apprendimento automatico includono valutazione del ciclo di vita, affinità per prodotto e categoria, propensione alla conversione o all’abbandono.
+Il blueprint di data science personalizzato per l’arricchimento dei profili illustra come utilizzare i dati per addestrare, distribuire e valutare modelli per fornire informazioni di apprendimento automatico in [!DNL Experience Platform] e [!DNL Real-Time Customer Data Platform] dalla data science e dagli strumenti di apprendimento automatico.
+
+Le informazioni modellate possono essere acquisite in [!DNL Experience Platform] per arricchire il profilo cliente in tempo reale. Esempi di informazioni basate sull’apprendimento automatico includono valutazione del ciclo di vita, affinità per prodotto e categoria, propensione alla conversione o all’abbandono.
 
 ## Casi di utilizzo
 
@@ -27,13 +29,13 @@ Il blueprint per la personalizzazione basata su Data Science per l’arricchimen
 
 ## Guardrail
 
-* Per informazioni dettagliate sui guardrail e sulle latenze end-to-end per l’acquisizione dei risultati data science in Experience Platform e nel profilo cliente in tempo reale, vedi i guardrail per l’acquisizione dei dati e il diagramma della latenza riportati nel [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md).
+* Per protezioni dettagliate e latenze end-to-end durante l’acquisizione dei risultati della data science in [!DNL Experience Platform] e Real-time Customer Profile fanno riferimento ai guardrail di acquisizione dei dati e al diagramma di latenza a cui si fa riferimento nel [documento guardrail di distribuzione](../experience-platform/deployment/guardrails.md).
 
 ## Fasi di implementazione
 
 1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
-1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
+1. [Acquisire dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in [!DNL Experience Platform].
 
 Per i risultati del modello da acquisire nel profilo cliente in tempo reale, assicurati di effettuare le seguenti operazioni prima di acquisire i dati:
 
@@ -44,7 +46,7 @@ Per i risultati del modello da acquisire nel profilo cliente in tempo reale, ass
 
 * Nella maggior parte dei casi i risultati del modello devono essere acquisiti come attributi di profilo, e non come eventi di esperienza. I risultati del modello possono essere semplici stringhe di attributi. Se devi acquisire più risultati del modello, è preferibile utilizzare un campo di tipo mappa o array.
 * Il set di dati dello snapshot di profilo giornaliero (esportazione giornaliera dei dati degli attributi del profilo unificato) può essere utilizzato per addestrare i modelli sui dati degli attributi di profilo. La documentazione sui set di dati dello snapshot del profilo è disponibile [qui](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html?lang=it#profile-attribute-datasets).
-* Per estrarre i dati da Experience Platform, è possibile utilizzare i seguenti metodi.
+* Per estrarre i dati da [!DNL Experience Platform] è possibile utilizzare i seguenti metodi
    * Data Access SDK
       * I dati sono in formato non elaborato.
       * I dati di eventi esperienza di profilo restano nello stato non elaborato e non unificato.
@@ -53,12 +55,12 @@ Per i risultati del modello da acquisire nel profilo cliente in tempo reale, ass
 
 ## Documentazione correlata
 
-* [Descrizione del prodotto Adobe Experience Platform Intelligence](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it)
+* [Adobe [!DNL Experience Platform] Descrizione del prodotto Intelligence](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+* [Adobe [!DNL Experience Platform] Servizio query](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it)
 
 ## Articoli di blog correlati
 
-* [[!DNL Content and Commerce AI: Personalizing Your Interactions with Customers Through Content Intelligence]](https://medium.com/adobetech/content-and-commerce-ai-personalizing-your-interactions-with-customers-through-content-intelligence-dc182601deab)
-* [[!DNL An Introductory Look at Exploratory Data Analysis on Adobe Experience Platform]](https://medium.com/adobetech/an-introductory-look-at-exploratory-data-analysis-on-adobe-experience-platform-1bfce7501d9a)
-* [[!DNL Cutting Across Adobe Experience Products with Machine Learning to Elevated User Experience]](https://medium.com/adobetech/cutting-across-adobe-experience-products-with-machine-learning-to-elevated-user-experience-7c85000510d1)
-* [[!DNL Segmentation.AI: Automated Audience-Clustering-as-a-Service in Adobe Experience Platform]](https://medium.com/adobetech/segmentation-ai-automated-audience-clustering-as-a-service-in-adobe-experience-platform-261f4099462c)
+* [Intelligenza artificiale per contenuti e commerce: personalizzazione delle interazioni con i clienti tramite Content Intelligence](https://medium.com/adobetech/content-and-commerce-ai-personalizing-your-interactions-with-customers-through-content-intelligence-dc182601deab)
+* [Uno sguardo introduttivo all’analisi esplorativa dei dati sull’Adobe [!DNL Experience Platform]](https://medium.com/adobetech/an-introductory-look-at-exploratory-data-analysis-on-adobe-experience-platform-1bfce7501d9a)
+* [Apprendimento automatico nei prodotti Adobe Experience per ottimizzare l’esperienza utente](https://medium.com/adobetech/cutting-across-adobe-experience-products-with-machine-learning-to-elevated-user-experience-7c85000510d1)
+* [Segmentation.AI: Automated Audience-Clustering-as-a-Service in Adobe [!DNL Experience Platform]](https://medium.com/adobetech/segmentation-ai-automated-audience-clustering-as-a-service-in-adobe-experience-platform-261f4099462c)
