@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 55%
+source-wordcount: '240'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 55%
       + [Guardrail](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Attivazione in base a pubblico e profili {#audience-activation}
    + [Panoramica](/help/blueprints/audience-activation/overview.md)
-   + [Audience Activation anonimo (AAM)](/help/blueprints/audience-activation/anonymous.md)
+   + [Attivazione del pubblico con dati anonimi ](/help/blueprints/audience-activation/anonymous.md)
    + Attivazione dei clienti noti (RTCDP) {#known-customer-audience-activation}
       + [Panoramica](/help/blueprints/audience-activation/known.md)
       + [Attivazione a canali social e pubblicitari](/help/blueprints/audience-activation/advertising-activation.md)
