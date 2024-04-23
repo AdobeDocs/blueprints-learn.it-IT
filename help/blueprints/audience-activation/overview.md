@@ -5,7 +5,7 @@ solution: Real-Time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
+source-git-commit: f22376004f0e6feab1872b16ee2993ed22cc145e
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 76%
@@ -41,4 +41,4 @@ Per ulteriore documentazione relativa a profilo, segmentazione e attivazione con
 
 ## Guardrail per i blueprint Attivazione in base a pubblico e profili
 
-* Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md) e i [guardrail per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+Per informazioni dettagliate sui guardrail e le latenze end-to-end, consulta il [documento sui guardrail relativi all’implementazione](../experience-platform/deployment/guardrails.md) e i [guardrail per profili e segmentazione](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
