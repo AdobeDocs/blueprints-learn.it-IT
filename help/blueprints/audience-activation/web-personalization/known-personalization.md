@@ -7,10 +7,10 @@ solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 845655a275cdb6d4a9cd397ec7c3515cbf02d321
 workflow-type: tm+mt
-source-wordcount: '1457'
-ht-degree: 89%
+source-wordcount: '891'
+ht-degree: 79%
 
 ---
 
@@ -30,6 +30,13 @@ ht-degree: 89%
 * Adobe Target
 * Adobe Audience Manager (opzionale): consente di aggiungere dati di pubblico di terze parti
 * Adobe Analytics o Customer Journey Analytics (opzionale): consente di creare segmenti in base ai dati storici dei clienti e ai dati comportamentali con segmentazione granulare
+
+### Documentazione di riferimento
+
+* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
+* [Configurazione dello stream di dati Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)
+* [Condivisione dei segmenti Experience Platform con Audience Manager e altre soluzioni Experience Cloud](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=it)
+
 
 ## Modelli di integrazione
 
@@ -68,34 +75,14 @@ La personalizzazione per clienti noti è supportata tramite diversi approcci di 
 
 Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AT.js e AppMeasurement.js). La valutazione dei segmenti Edge in tempo reale non è supportata da questo approccio di implementazione. Tuttavia, questo approccio supporta la condivisione del pubblico in streaming e in batch dall’hub di Experience Platform.
 
-[Consulta il blueprint per l’SDK delle specifiche applicazioni](../../experience-platform/deployment/appsdk.md)
-
-### Fasi di implementazione
-
-1. [Implementare Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=it) per le applicazioni web o mobili
-1. [Implementare Experience Platform e il [!UICONTROL profilo cliente in tempo reale]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it) e assicurarsi che i tipi di pubblico creati siano attivati sul server Edge configurando il [criterio di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=it#create-a-merge-policy) applicabile affinché sia attivo sul server Edge.
-1. Implementare [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it) o [Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/) con l’installazione dell’estensione appropriata (Target o Adobe Journey Optimizer - Decisioning). Experience Platform Web SDK o l’API Edge è necessario per la segmentazione Edge in tempo reale, ma non per la condivisione dei tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target.
-1. [Configurare [!DNL Edge Network] con uno stream di dati di Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)
-1. [Abilitare Adobe Target come destinazione in Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it)
-1. (Opzionale) [Implementare Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=it).
-1. (Opzionale) [Richiedere il provisioning per la condivisione del pubblico tra Experience Platform e Adobe Target (pubblico condiviso)](https://www.adobe.com/go/audiences) per condividere i tipi di pubblico da Experience Platform a Target.
-
-## Guardrail
-
-[Fai riferimento ai guardrail nella panoramica dei blueprint per personalizzazione web/mobile.](overview.md)
-
-* I profili Edge vengono creati solo quando un utente è attivo sulla rete Edge, ossia che il suo profilo presenta eventi di streaming inviati al server Edge tramite Web/Mobile SDK o Edge Server API. In genere questo significa che l’utente è attivo su un sito web o un’app mobile.
-* Per impostazione predefinita, i profili Edge hanno una durata di 14 giorni. Se per l’utente non vengono raccolti eventi Edge attivi, il profilo scade sul server Edge dopo 14 giorni di inattività. Il profilo rimarrà valido nell’hub e verrà sincronizzato con il server Edge non appena l’utente risulterà nuovamente attivo sul server Edge.
-* Quando viene creato un nuovo profilo in Edge, viene effettuata una chiamata di sincronizzazione asincrona all’hub per recuperare eventuali tipi di pubblico e attributi configurati per la trasmissione al server Edge tramite una destinazione. Trattandosi di un processo asincrono, la sincronizzazione del profilo hub con il server Edge può richiedere da 1 a diversi minuti. Di conseguenza è possibile che, per i nuovi profili, il contesto dall’hub non sia disponibile per le esperienze della prima pagina. Questo vale anche per i nuovi dati raccolti nell’hub. Tali dati vengono trasmessi al server Edge in modo asincrono; pertanto il tempo di arrivo dei dati al server Edge appropriato sarà diverso da quello dell’attività Edge. Gli attributi e i tipi di pubblico trasmessi dall’hub sono persistenti solo per i profili Edge attivi.
+[Consulta la documentazione relativa al connettore Adobe Target.](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[Consulta la blueprint dell’SDK specifico per l’applicazione](../../experience-platform/deployment/appsdk.md)
 
 ## Considerazioni sull’implementazione
 
 Prerequisiti per l’identità
 
-* Qualsiasi identità primaria può essere utilizzata quando si utilizza il modello di implementazione 1 descritto in precedenza con [!DNL Edge Network] e Web SDK. Per la personalizzazione al primo accesso, l’identità primaria definita dalla richiesta di personalizzazione deve corrispondere all’identità primaria del profilo da Real-time Customer Data Platform. L’unione delle identità tra dispositivi anonimi e clienti noti viene elaborata sull’hub e successivamente proiettata sulla rete Edge.
-* Tieni presente che i dati caricati nell’hub prima che un consumatore visiti o acceda a un sito web non saranno immediatamente disponibili per la personalizzazione. Per poter sincronizzare i dati dell’hub è necessario che esista già un profilo Edge attivo. Una volta creato, il profilo Edge si sincronizza con il profilo hub in modo asincrono, e quindi la personalizzazione avverrà nella pagina successiva.
-* La condivisione di tipi di pubblico da Adobe Experience Platform ad Adobe Target richiede l’uso di ECID come identità se si utilizza il servizio di condivisione del pubblico, come descritto nei modelli di integrazione 2 e 3 di cui sopra.
-* Inoltre, è possibile utilizzare identità alternative per condividere i tipi di pubblico di Experience Platform con Adobe Target tramite Audience Manager. Experience Platform attiva i tipi di pubblico in Audience Manager tramite i seguenti spazi dei nomi supportati: IDFA, GAID, AdCloud, Google, ECID, EMAIL_LC_SHA256. Tieni presente che Audience Manager e Target risolvono le appartenenze al pubblico tramite l’identità ECID. Pertanto, per la condivisione del pubblico finale con Adobe Target, ECID deve ancora essere incluso nel grafo delle identità per il consumatore.
+* Qualsiasi identità primaria può essere utilizzata quando si utilizza il modello di implementazione 1 descritto in precedenza con [!DNL Edge Network] e Web SDK. La personalizzazione del primo accesso richiede che l’identità primaria del set di richieste di personalizzazione corrisponda all’identità primaria del profilo da Real-time Customer Data Platform.
 
 ## Documentazione correlata
 
@@ -104,12 +91,6 @@ Prerequisiti per l’identità
 * [Documentazione di Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it)
 * [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
 * [Documentazione del servizio Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=it)
-
-### Documentazione sulle connessioni
-
-* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it)
-* [Configurazione dello stream di dati Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)
-* [Condivisione dei segmenti Experience Platform con Audience Manager e altre soluzioni Experience Cloud](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=it)
 
 ### Documentazione sulla segmentazione
 
