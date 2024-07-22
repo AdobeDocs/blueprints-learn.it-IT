@@ -5,8 +5,8 @@ solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
 source-git-commit: 9648235f5b626a8cbf2d8c9a619cf0f3ef1641ca
 workflow-type: tm+mt
-source-wordcount: '2126'
-ht-degree: 79%
+source-wordcount: '2118'
+ht-degree: 80%
 
 ---
 
@@ -44,7 +44,7 @@ Il servizio [!UICONTROL Segment Match] aiuta i diversi team di marketing di gran
 
 ## Architettura
 
-![Architettura Segment Match](assets/architecture-segment-match.png){zoomable=&quot;yes&quot;}
+![Architettura del servizio Segment Match](assets/architecture-segment-match.png){zoomable="yes"}
 
 Il servizio [!UICONTROL Segment Match] non è un data marketplace per l’acquisto di dati. Si tratta piuttosto di una funzione di AEP che opera con dati di prime parti da specifici partner in cui la collaborazione è agevolata da controlli sulla privacy e sul consenso. Il servizio [!UICONTROL Segment Match] permette di concentrarsi sul miglioramento delle relazioni con i clienti e sulla crescita del brand. È utile nei casi in cui esiste già una relazione tra determinati brand o partner. L’esperienza offerta dal servizio [!UICONTROL Segment Match] è facile da gestire, scalabile e consente agli amministratori di condividere i segmenti in modo controllabile e basato sul consenso.
 
@@ -77,7 +77,7 @@ Il servizio [!UICONTROL Segment Match] presenta i seguenti prerequisiti:
 
 Il flusso del servizio [!UICONTROL Segment Match] per la gestione dei partner è protetto dal controllo degli accessi basato sul ruolo (RBAC). Solo le persone che dispongono di specifiche autorizzazioni possono avviare, accettare o gestire i partner. Tali operazioni possono essere eseguite nella sezione Acquisizione dati del profilo di prodotto. Sono necessarie le seguenti autorizzazioni:
 
-![Connessione condivisione pubblico](assets/data-ingestion.png){zoomable=&quot;yes&quot;}
+![Connessione per condivisione del pubblico](assets/data-ingestion.png){zoomable="yes"}
 
 | Autorizzazione | Descrizione |
 |---|---|
@@ -140,13 +140,13 @@ In questo flusso di lavoro di condivisione dei segmenti, il partner di provenien
 
 Il flusso complessivo del processo è il seguente:
 
-![Condivisione dei segmenti](assets/segment-sharing.png){zoomable=&quot;yes&quot;}
+![Condivisione dei segmenti](assets/segment-sharing.png){zoomable="yes"}
 
 Le stime di sovrapposizione offrono informazioni chiave, discovery dei partner e dati per alimentare gli accordi di collaborazione sui dati. Per ottenere queste metriche di stima della sovrapposizione, tra le sandbox non vengono mai spostati dati di clienti o di segmenti. Le identità applicabili selezionate dal cliente e pre-hash in una data sandbox vengono aggiunte a una struttura di dati probabilistici che consente ad Adobe di eseguire operazioni di unione e intersezione. Queste operazioni consentono al servizio [!UICONTROL Segment Match] di ottenere l’intersezione stimata di due strutture di dati composte da identità da due diverse sandbox, senza confrontarne i valori effettivi.
 
 Il processo di sovrapposizione delle identità dipende dal set di dati di **esportazione giornaliera completa di profili** dalla sandbox del partner di provenienza a quella del partner ricevente, al fine di identificare i profili di identità comuni appartenenti ai segmenti condivisi. Il flusso dettagliato del processo di sovrapposizione è illustrato di seguito:
 
-![Processo di sovrapposizione identità](assets/overlap-process.png){zoomable=&quot;yes&quot;}
+![Processo di sovrapposizione delle identità](assets/overlap-process.png){zoomable="yes"}
 
 Completata la condivisione dei segmenti da parte del partner di provenienza, al partner ricevente viene inviata una notifica sul feed di segmenti condivisi. Il feed di segmenti deve essere abilitato affinché un profilo del partner ricevente possa avviare il flusso di dati di appartenenza ai segmenti. Soltanto i dati di appartenenza a un segmento vengono acquisiti nei frammenti di profilo sovrapposti dell’organizzazione IMS ricevente; dal partner di provenienza al partner ricevente non viene trasmessa alcun altro dato di identità.
 
@@ -170,7 +170,7 @@ Con le crescenti restrizioni sui cookie e gli identificatori di dispositivi di t
 
 Puoi utilizzare Segment Match di Adobe Experience Platform nella collaborazione incentrata sulla privacy e migliorare le offerte private programmatiche tra inserzionisti e editori. Con Segment Match puoi:
 
-* Dividi **Traffico di annunci** e **Pubblico** flussi di lavoro.
+* Dividi i flussi di lavoro **Traffico annunci** e **Pubblico**.
 * Consenti ai brand dei partner di condividere i metadati del pubblico per identità condivise e consenzienti utilizzando identificatori durevoli come e-mail con hash e numero di telefono con hash all’interno di un processo imposto dal consenso.
 
 ### Casi di utilizzo
@@ -181,7 +181,7 @@ Puoi utilizzare Segment Match di Adobe Experience Platform nella collaborazione 
 
 >[!BEGINSHADEBOX]
 
-**Prendi in considerazione il seguente flusso di lavoro di esempio tra un brand (Luma) e una rete multimediale (ACME):**
+**Prendi in considerazione il seguente flusso di lavoro di esempio tra un marchio (Luma) e una rete multimediale (ACME):**
 
 1. Un brand (Luma) conduce una corrispondenza di pubblico con una rete multimediale (ACME) tramite Segment Match.
 2. ACME invia i tipi di pubblico al server di annunci o al provider di servizi condivisi a livello di programmazione tramite le destinazioni Adobe Real-Time CDP.
@@ -194,7 +194,7 @@ Puoi utilizzare Segment Match di Adobe Experience Platform nella collaborazione 
 
 >[!ENDSHADEBOX]
 
-![Diagramma del flusso di lavoro tra brand ed editore.](./assets/segment-match-blueprints.png)
+![Diagramma del flusso di lavoro tra brand e publisher.](./assets/segment-match-blueprints.png)
 
 >[!IMPORTANT]
 >

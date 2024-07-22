@@ -116,7 +116,7 @@ Rivedi le seguenti protezioni.
 
 ## Fasi di implementazione
 
-Consulta la [Guida introduttiva](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=it) per implementare Adobe Campaign v7.
+Consulta la [Guida introduttiva](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=it) per l&#39;implementazione di Adobe Campaign v7.
 
 
 ## Documentazione correlata

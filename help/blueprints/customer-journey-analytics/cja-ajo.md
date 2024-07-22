@@ -1,18 +1,18 @@
 ---
-title: Blueprint per   Customer Journey Analytics con Journey Optimizer
+title: Customer Journey Analytics con blueprint Journey Optimizer
 description: Con Customer Journey Analytics puoi unificare e analizzare dati e comportamenti dei clienti dall’intero percorso del cliente, inclusi i dati di consegna e interazione provenienti da Journey Optimizer.
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 5ae084bf-a98d-418a-8038-e6f849ff7c1d
 source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: ht
-source-wordcount: '144'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 89%
 
 ---
 
-# Blueprint per   Customer Journey Analytics con Journey Optimizer
+# Customer Journey Analytics con blueprint Journey Optimizer
 
 I dati di Journey Optimizer sono condivisi con il data lake di Experience Platform e disponibili per le funzioni di acquisizione, analisi e reporting di Customer Journey Analytics. I dati sulla distribuzione, sul livello di interazione e sull’efficacia dei percorsi possono essere analizzati e raccolti direttamente in Customer Journey Analytics.
 
@@ -24,4 +24,4 @@ Consulta la seguente documentazione per informazioni su come implementare e conf
 
 ## Architettura per Customer Journey Analytics con Journey Optimizer
 
-![Diagramma dell’architettura](assets/CJA_AJO.svg){zoomable=&quot;yes&quot;}
+![Diagramma dell’architettura](assets/CJA_AJO.svg){zoomable="yes"}

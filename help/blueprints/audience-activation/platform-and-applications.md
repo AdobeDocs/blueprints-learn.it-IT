@@ -48,7 +48,7 @@ Nella sezione sull’[architettura di Experience Platform e relative applicazion
 
 ## Guardrail
 
-Consulta la sezione [protezioni nella pagina Panoramica di Audience e Profile Activation](overview.md) e [guardrail di distribuzione](../experience-platform/deployment/guardrails.md) pagina.
+Consulta le [protezioni nella pagina Panoramica di Audience and Profile Activation](overview.md) e la pagina [guardrail di distribuzione](../experience-platform/deployment/guardrails.md).
 
 ## Considerazioni sull’implementazione
 

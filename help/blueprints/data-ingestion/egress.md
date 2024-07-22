@@ -13,13 +13,13 @@ ht-degree: 91%
 
 # Blueprint per l’esportazione e l’accesso ai dati
 
-La blueprint per l’accesso e l’esportazione dei dati delinea tutti i metodi possibili per accedere ai dati o esportarli da [!DNL Experience Platform] e applicazioni.
+Il blueprint di esportazione e accesso ai dati descrive tutti i metodi possibili per l&#39;accesso o l&#39;esportazione dei dati da [!DNL Experience Platform] e dalle applicazioni.
 
-Il blueprint è suddiviso in due categorie per l’accesso ai dati da [!DNL Experience Platform] e applicazioni.
+Il blueprint è suddiviso in due categorie per l&#39;accesso ai dati da [!DNL Experience Platform] e dalle applicazioni.
 
-La prima include approcci per l’acquisizione di dati da [!DNL Experience Platform] e applicazioni. Questo sarebbe considerato un _push_ metodo del tipo di uscita dei dati.
+Il primo include gli approcci per l&#39;uscita dei dati da [!DNL Experience Platform] e dalle applicazioni. Questo sarebbe considerato un metodo di tipo _push_ di uscita dati.
 
-La seconda include approcci per l’accesso ai dati da [!DNL Experience Platform] e applicazioni. Questo sarebbe considerato un _tirare_ tipo di metodo di accesso ai dati.
+Il secondo include gli approcci per l&#39;accesso ai dati da [!DNL Experience Platform] e applicazioni. Questo metodo di accesso ai dati è di tipo _pull_.
 
 Approcci all’accesso ai dati:
 
@@ -412,7 +412,7 @@ Per ulteriori informazioni, consulta [Panoramica sui tag](https://experienceleag
 
 ### Inoltro eventi {#event-forwarding}
 
-Le richieste di raccolta dei dati vengono raccolte direttamente in Adobe [!DNL Edge Network]. Dalla sezione [!DNL Edge Network] Le richieste agli endpoint RESTful esterni possono essere configurate per inoltrare tali richieste alla destinazione esterna.
+Le richieste di raccolta dati vengono raccolte direttamente in Adobe [!DNL Edge Network]. Le richieste da [!DNL Edge Network] agli endpoint RESTful esterni possono essere configurate per inoltrare queste richieste alla destinazione esterna.
 
 Per ulteriori informazioni, consulta [Inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it).
 
@@ -422,7 +422,7 @@ Per ulteriori informazioni, consulta [Inoltro eventi](https://experienceleague.a
 
 #### Considerazioni
 
-* Per utilizzare l’inoltro degli eventi, i dati devono essere inviati al [!DNL Edge Network] tramite Web SDK o Mobile SDK.
+* Per utilizzare l&#39;inoltro degli eventi, i dati devono essere inviati a [!DNL Edge Network] tramite Web SDK o Mobile SDK.
 * L’approccio basato sull’inoltro eventi riduce i tempi di caricamento e il peso delle pagine associati all’aggiunta di ulteriori tag alla pagina.
 * Al momento l’arricchimento dal profilo Edge o da altre origini di dati non è supportato.
 * Sono supportate alcune possibilità di filtraggio dei dati e semplici trasformazioni di mappatura.

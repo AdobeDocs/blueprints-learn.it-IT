@@ -14,7 +14,7 @@ ht-degree: 91%
 
 # Diagrammi di architettura di Adobe Experience Platform e applicazioni
 
-Questi diagrammi dell’architettura mostrano la correlazione di Experienci Platform (AEP) con altre applicazioni e servizi applicativi Experience Cloud.
+Questi diagrammi dell’architettura mostrano la correlazione di Experience Platform (AEP) con altre applicazioni e servizi applicativi Experience Cloud.
 
 >[!MORELIKETHIS]
 >

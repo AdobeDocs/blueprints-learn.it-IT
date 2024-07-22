@@ -16,7 +16,7 @@ ht-degree: 56%
 # Blueprint per esperienze digitali {#architecture}
 
 + [Blueprint per esperienze digitali](/help/blueprints/overview.md)
-+ Blueprint verticali{#vertical-blueprints}
++ Progetti di settore verticali{#vertical-blueprints}
    + [Panoramica](/help/blueprints/vertical-blueprints/overview.md)
    + [Abbigliamento](/help/blueprints/vertical-blueprints/apparel.md)
    + [Retail](/help/blueprints/vertical-blueprints/retail.md)
@@ -25,9 +25,9 @@ ht-degree: 56%
 + Panoramica dell’architettura {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experienci Platform e applicazioni](/help/blueprints/experience-platform/platform-applications.md)
-   + [Flusso di dati Experienci Platform](/help/blueprints/experience-platform/platform-data-flow.md)
+   + [Flusso di dati Experience Platform](/help/blueprints/experience-platform/platform-data-flow.md)
    + Implementazione {#deployment}
-      + [Experienci Platform Web SDK e [!DNL Edge Network]](/help/blueprints/experience-platform/deployment/websdk.md)
+      + [Experience Platform Web SDK &amp; [!DNL Edge Network]](/help/blueprints/experience-platform/deployment/websdk.md)
       + [SDK delle applicazioni](/help/blueprints/experience-platform/deployment/appsdk.md)
       + [Guardrail](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Attivazione in base a pubblico e profili {#audience-activation}
@@ -53,7 +53,7 @@ ht-degree: 56%
       + [Acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [Rivedi e approva](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
       + [Storie di successo dei clienti](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
-+ Contenuti e commerce{#content-commerce}
++ Contenuto e Commerce{#content-commerce}
    + [ADOBE COMMERCE e RTCDP](/help/blueprints/content-commerce/commerce/commerce-rtcdp.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)

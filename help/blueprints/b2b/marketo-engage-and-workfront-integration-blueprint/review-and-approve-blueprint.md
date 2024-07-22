@@ -4,8 +4,8 @@ description: Blueprint per la revisione e l’approvazione - Blueprint per l’i
 exl-id: a446faab-7db4-42a2-b4b9-395725c49c9f
 source-git-commit: 3d6a2416cdb9956e59be4b2918ba19f88cd2150b
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 89%
+source-wordcount: '1228'
+ht-degree: 87%
 
 ---
 
@@ -62,7 +62,7 @@ Nel modello di progetto Workfront, includi le attività di revisione delle risor
 
 Nel caso di una nuova campagna e-mail, il modello di progetto dovrà includere un’attività di revisione dell’e-mail nonché un processo di approvazione affinché l’e-mail venga approvata dalle parti interessate prima di essere inviata.
 
-![schermata attività](assets/review-and-approve-blueprint-1.png){zoomable=&quot;yes&quot;}
+![schermata attività](assets/review-and-approve-blueprint-1.png){zoomable="yes"}
 
 ### Attivare la sincronizzazione con Workfront dell’e-mail di Marketo Engage quando cambia lo stato dell’attività {#trigger-your-marketo-engage-email-to-sync-to-workfront}
 
@@ -70,7 +70,7 @@ Il processo di revisione dovrà includere la sincronizzazione delle e-mail con i
 
 Una volta impostato questo stato nel progetto Workfront, puoi configurare uno scenario Workfront Fusion che rilevi l’attività Ready for Review (Pronto per la revisione) e aggiorni lo stato a Review Marketo Email (Rivedi e-mail Marketo). Dopo questo aggiornamento, lo scenario può recuperare l’e-mail di Marketo Engage come file HTML, comprimerlo in un file .zip e salvarne una copia nei documenti del progetto Workfront da rivedere.
 
-![schermata pronto per la revisione](assets/review-and-approve-blueprint-2.png){zoomable=&quot;yes&quot;}
+![pronto per la schermata di revisione](assets/review-and-approve-blueprint-2.png){zoomable="yes"}
 
 ### Convertire l’e-mail di Marketo Engage in una bozza da visualizzare in Workfront {#convert-your-marketo-engage-email-to-reviewable-proof-in-workfront}
 
@@ -78,11 +78,11 @@ Una volta che lo stato dell’attività Ready for Review (Pronto per la revision
 
 ### Utilizza la verifica Workfront per collaborare tramite commenti e annotazioni {#use-workfront-proofing-to-collaborate}
 
-[Prove Workfront](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html){target="_blank"} Le funzionalità consentono al team marketing di acquisire una nuova risorsa, ad esempio un’immagine o un messaggio e-mail, e collaborare tramite commenti e annotazioni. Quando una bozza è pronta per essere pubblicata, i responsabili decisionali possono approvare la risorsa dallo strumento di bozza.
+Le funzionalità di [verifica di Workfront](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html){target="_blank"} consentono al team marketing di acquisire una nuova risorsa, ad esempio un&#39;immagine o un messaggio e-mail, e collaborare tramite commenti e annotazioni. Quando una bozza è pronta per essere pubblicata, i responsabili decisionali possono approvare la risorsa dallo strumento di bozza.
 
-![schermata di conversione e-mail](assets/review-and-approve-blueprint-3.png){zoomable=&quot;yes&quot;}
+![converti schermata e-mail](assets/review-and-approve-blueprint-3.png){zoomable="yes"}
 
-### Approva bozza Workfront e attiva l’approvazione delle risorse nel Marketo Engage, contrassegna l’attività come completata {#approve-workfront-proof-and-trigger-asset-approval-in-marketo-engage}
+### Approva Workfront Proof e attiva l’approvazione delle risorse nel Marketo Engage, contrassegna l’attività come completata {#approve-workfront-proof-and-trigger-asset-approval-in-marketo-engage}
 
 Workfront Fusion può rilevare quando l’e-mail è stata approvata dalle parti interessate e inviare una richiesta al Marketo Engage per approvare l’e-mail all’interno di Marketo.
 
@@ -96,12 +96,12 @@ Per semplificare lo sviluppo dei flussi di lavoro di revisione e approvazione ne
 
 Lo scenario Fusion riportato di seguito illustra la prima metà del flusso di revisione e approvazione, in cui la bozza dell’e-mail può essere acquisita da Marketo Engage e salvata in Workfront come bozza. Una volta salvata come bozza nei documenti del progetto Workfront, può essere rivista dal personale marketing preposto, che potrà aggiungere commenti e annotazioni durante il processo di revisione.
 
-![flusso di revisione e approvazione dello scenario fusione](assets/review-and-approve-blueprint-4.png){zoomable=&quot;yes&quot;}
+![flusso di revisione e approvazione dello scenario di fusione](assets/review-and-approve-blueprint-4.png){zoomable="yes"}
 
 ### Approvare un’e-mail in Workfront e attivare l’approvazione della risorsa in Marketo Engage {#approve-an-email-in-workfront-that-triggers-approval}
 
 Lo scenario Fusion riportato di seguito può essere utilizzato per rilevare quando una bozza in Workfront è stata approvata e indirizzare quindi tale approvazione a Marketo Engage affinché la bozza dell’e-mail possa essere aggiornata allo stato live, pronta per essere utilizzata in un programma di Marketo Engage.
 
-![approvazione bozza nello scenario fusion](assets/review-and-approve-blueprint-5.png){zoomable=&quot;yes&quot;}
+![approvazione bozza scenario di fusione](assets/review-and-approve-blueprint-5.png){zoomable="yes"}
 
 Insieme, questi due scenari consentono di creare un percorso bidirezionale per portare le risorse di marketing da Marketo Engage ai solidi flussi di lavoro di Workfront per la revisione e l’approvazione, e quindi trasmettere nuovamente le approvazioni da Workfront a Marketo Engage.

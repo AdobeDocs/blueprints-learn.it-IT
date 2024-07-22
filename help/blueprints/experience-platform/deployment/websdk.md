@@ -1,6 +1,6 @@
 ---
-title: Web/Mobile SDK [!DNL Edge Network] Diagramma dell’architettura di distribuzione
-description: Questo blueprint mostra l’architettura e l’acquisizione tramite Experienci Platform Web e Mobile SDK e [!DNL Edge Network]
+title: Web/Mobile SDK, [!DNL Edge Network] Diagramma dell'architettura di distribuzione
+description: Questo blueprint mostra l'architettura e l'acquisizione tramite Experience Platform Web e Mobile SDK e  [!DNL Edge Network]
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
@@ -13,9 +13,9 @@ ht-degree: 69%
 ---
 
 
-# Experienci Platform Web SDK e [!DNL Edge Network] diagramma dell’architettura
+# Experience Platform Web SDK e diagramma dell&#39;architettura [!DNL Edge Network]
 
-Per una panoramica e dettagli su Web e Mobile SDK e sulla [!DNL Edge Network] API server vedi quanto segue.
+Per una panoramica e dettagli sull&#39;SDK Web e Mobile e sull&#39;API server [!DNL Edge Network], vedere quanto segue.
 
 * [Panoramica di Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=it)
 * [Panoramica di Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
@@ -32,7 +32,7 @@ Per informazioni dettagliate sulla migrazione dagli SDK di specifiche applicazio
 * [Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=it)
 * [Analytics for Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html?lang=it)
 
-## Experienci Platform Web/Mobile SDK o [!DNL Edge Network] Distribuzione API server
+## Distribuzione Experience Platform Web/Mobile SDK o [!DNL Edge Network] Server API
 
 Questo schema dell’architettura illustra l’implementazione e la raccolta dati tramite Experience Platform Web SDK.
 

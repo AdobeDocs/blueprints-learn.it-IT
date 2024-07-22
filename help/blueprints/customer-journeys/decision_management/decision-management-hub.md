@@ -20,7 +20,7 @@ Journey Optimizer viene utilizzato per fornire ai clienti le migliori offerte ed
 
 Il servizio Gestione delle decisioni può essere implementato in due modi. Il primo approccio prevede l’utilizzo dell’hub Adobe Experience Platform, un’architettura con un datacenter centrale. Con questo approccio mediante “hub”, le offerte vengono eseguite, personalizzate e distribuite con una latenza >500 ms. Pertanto, l’architettura con hub è più adatta per esperienze del cliente che non richiedono latenze inferiori al secondo, ad esempio per decisioni di offerta destinate a chioschi o esperienze assistite da agenti, come call center o interazioni con persone. L’approccio tramite hub consente anche di gestire le offerte inserite nelle e-mail e nelle campagne in uscita.
 
-Il secondo approccio è tramite Experience [!DNL [!DNL Edge Network]], un&#39;infrastruttura geograficamente distribuita a livello globale per fornire esperienze rapide in pochi secondi e millisecondi. Per ridurre al minimo la latenza, l’esperienza del consumatore finale viene eseguita dall’infrastruttura Edge geograficamente più vicina. Il servizio Gestione delle decisioni sulla rete Edge è progettato per offrire ai consumatori esperienze in tempo reale, ad esempio con richieste di personalizzazione in entrata per web e dispositivi mobili.
+Il secondo approccio è tramite l&#39;esperienza [!DNL [!DNL Edge Network]], un&#39;infrastruttura distribuita a livello globale e con una posizione geografica per fornire esperienze veloci di secondo secondario e millisecondo. Per ridurre al minimo la latenza, l’esperienza del consumatore finale viene eseguita dall’infrastruttura Edge geograficamente più vicina. Il servizio Gestione delle decisioni sulla rete Edge è progettato per offrire ai consumatori esperienze in tempo reale, ad esempio con richieste di personalizzazione in entrata per web e dispositivi mobili.
 
 Questo blueprint tratta le specifiche di Gestione delle decisioni tramite hub.
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni su Gestione delle decisioni tramite rete Edge, consul
 
 >[!IMPORTANT]
 >
->Per casi di utilizzo di offerte e percorsi che richiedono l’accesso al profilo per ulteriori informazioni e contesto. È importante considerare la latenza associata all’acquisizione dei dati da profilare sull’hub, in modo che siano disponibili al momento della decisione. Per gli scenari in cui il contesto è in streaming o in fase di acquisizione nel profilo e l’offerta o il percorso deve disporre di tale contesto entro pochi secondi o minuti dalla decisione di offerta, questi scenari vengono gestiti al meglio con la funzione Gestione delle decisioni di Edge.
+>Per casi di utilizzo di offerte e percorsi che richiedono l’accesso al profilo per ulteriori informazioni e contesto. È importante considerare la latenza associata all’acquisizione dei dati da profilare sull’hub, in modo che siano disponibili al momento della decisione. Per gli scenari in cui il contesto è in streaming o in fase di acquisizione nel profilo e l’offerta o il percorso deve disporre di tale contesto entro pochi secondi o minuti dalla decisione di offerta, questi scenari vengono gestiti in modo ottimale con la funzione Gestione delle decisioni di Edge.
 
 <br>
 
@@ -62,7 +62,7 @@ Adobe Experience Platform
 * Per i guardrail relativi a Journey Optimizer, consulta i seguenti [Guardrail per Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html?lang=it).
 * Per i guardrail relativi a Gestione delle decisioni, fai riferimento alla [Descrizione del prodotto Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html).
 
-[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Modelli di implementazione
 

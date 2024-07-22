@@ -10,9 +10,9 @@ ht-degree: 72%
 
 ---
 
-# [!DNL Real-Time CDP] con Adobe [!DNL Campaign] pattern di integrazione v8
+# [!DNL Real-Time CDP] con pattern di integrazione Adobe [!DNL Campaign] v8
 
-Mostra come l’Adobe [!DNL Experience Platform] e il suo Real-Time Customer Profile e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe Campaign per offrire conversazioni personalizzate.
+Mostra come l&#39;Adobe [!DNL Experience Platform], il suo Real-Time Customer Profile e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe Campaign per fornire conversazioni personalizzate.
 
 ## Applicazioni
 
@@ -28,10 +28,10 @@ Mostra come l’Adobe [!DNL Experience Platform] e il suo Real-Time Customer Pro
 ## Prerequisiti
 
 * Provisioning del cliente per Experience Cloud con un’organizzazione IMS valida
-* ADOBE EXPERIENCE PLATFORM e [!DNL Campaign] è consigliabile effettuare il provisioning nella stessa organizzazione IMS per un singolo URL di accesso
-* È necessario eseguire il provisioning del cliente nell’istanza V8 di [!DNL Campaign]
+* Si consiglia di eseguire il provisioning di Adobe Experience Platform e [!DNL Campaign] nella stessa organizzazione IMS per un singolo URL di accesso
+* È necessario eseguire il provisioning del cliente per l&#39;istanza V8 di [!DNL Campaign]
 * Il cliente deve essere idoneo e deve avere accesso a RTCDP, alle origini e alle destinazioni.
-* Adobe [!DNL Campaign] il contesto del prodotto deve esistere
+* Il contesto di prodotto dell&#39;Adobe [!DNL Campaign] deve esistere
 <br>
 
 ## Fasi di implementazione

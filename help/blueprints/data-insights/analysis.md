@@ -1,6 +1,6 @@
 ---
 title: Blueprint per analisi e intelligence dei dati
-description: Utilizza Adobe [!DNL Experience Platform] (AEM) per eseguire query esplorative e analisi dei dati presenti nel data lake.
+description: Utilizzare Adobe [!DNL Experience Platform] (AEM) per eseguire query esplorative e analisi dei dati esistenti nel data lake.
 solution: Experience Platform
 kt: 7207
 thumbnail: null
@@ -14,11 +14,11 @@ ht-degree: 59%
 
 # Blueprint per analisi dei dati e intelligence
 
-L&#39;analisi dei dati e l&#39;intelligence comprendono la capacità [!DNL Experience Platform] per eseguire query esplorative e analisi dei dati presenti nel data lake.
+L&#39;analisi dei dati e l&#39;intelligence includono la possibilità, all&#39;interno di [!DNL Experience Platform], di eseguire query esplorative e analisi dei dati esistenti nel data lake.
 
-[!DNL Experience Platform]di [!UICONTROL Servizio query] consente di eseguire query SQL sui dati.
+[!UICONTROL Query Service] di [!DNL Experience Platform] consente l&#39;esecuzione di query SQL sui dati.
 
-[!DNL Experience Platform] consente connessioni con client SQL di terze parti, interfacce e strumenti di Business Intelligence (BI) per connettersi, accedere ed eseguire query dirette sui dati all&#39;interno di [!DNL Experience Platform], utilizzando [!DNL PostgreSQL] protocollo.
+[!DNL Experience Platform] consente alle connessioni con client SQL, interfacce e strumenti di Business Intelligence (BI) di terze parti di connettersi, accedere ed eseguire query sui dati all&#39;interno di [!DNL Experience Platform], utilizzando il protocollo [!DNL PostgreSQL].
 
 ## Casi di utilizzo
 

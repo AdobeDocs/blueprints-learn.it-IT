@@ -1,5 +1,5 @@
 ---
-title: Panoramica della personalizzazione web/mobile - Adobe Target e RTCDP
+title: Panoramica di Web/Mobile Personalization - Adobe Target e RTCDP
 description: Sincronizza la personalizzazione web con la personalizzazione e-mail e di altri canali per utenti noti e anonimi.
 landing-page-description: Sincronizza la personalizzazione web con la personalizzazione e-mail e di altri canali per utenti noti e anonimi.
 short-description: Sincronizza la personalizzazione web con la personalizzazione e-mail e di altri canali per utenti noti e anonimi.
@@ -15,7 +15,7 @@ ht-degree: 79%
 ---
 
 
-# Personalizzazione web/mobile con blueprint nota dei dati dei clienti
+# Personalization web/mobile con blueprint nota dei dati del cliente
 
 ## Casi di utilizzo
 
@@ -42,8 +42,8 @@ ht-degree: 79%
 
 | Modello di integrazione | Funzionalità | Prerequisiti |
 |---|---|---|
-| Valutazione dei segmenti in tempo reale sul server Edge condiviso da Real-time Customer Data Platform a Target | <ul><li>Valutare i tipi di pubblico in tempo reale sul server Edge per la personalizzazione della pagina corrente o successiva.</li><li>Inoltre, tutti i segmenti valutati in streaming o in modalità batch verranno proiettati nel [!DNL Edge Network] da includere nella valutazione e nella personalizzazione dei segmenti edge.</li></ul> | <ul><li>L&#39;SDK per web/dispositivi mobili deve essere implementato o [!DNL Edge Network] API server</li><li>Lo stream di dati deve essere configurato in Experience Edge con l’estensione Target ed Experience Platform abilitata.</li><li>La destinazione Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform.</li><li>Per l’integrazione con Target, è necessario utilizzare la stessa organizzazione IMS usata per l’istanza di Experience Platform.</li></ul> |
-| Condivisione dei tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target tramite l’approccio Edge | <ul><li>Condividere i tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target tramite [!DNL Edge Network]. I tipi di pubblico valutati in tempo reale richiedono Web SDK e [!DNL Edge Network] implementazione.</li></ul> | <ul><li>La condivisione di tipi di pubblico in streaming e in batch con Target non richiede Web/Mobile SDK o l’implementazione dell’API Edge; tuttavia sono richiesti per la valutazione dei segmenti Edge in tempo reale.</li><li>Se si utilizza AT.js, è supportata solo l’integrazione dei profili rispetto allo spazio dei nomi dell’identità ECID.</li><li>Per le ricerche tramite identità da spazi dei nomi personalizzati nella rete Edge, è necessario implementare Web SDK o l’API Edge e ogni identità deve essere impostata nella mappa delle identità.</li><li>La destinazione Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform. È supportata solo la sandbox di produzione predefinita in RTCDP.</li><li>Per l’integrazione con Target, è necessario utilizzare la stessa organizzazione IMS usata per l’istanza di Experience Platform.</li></ul> |
+| Valutazione dei segmenti in tempo reale sul server Edge condiviso da Real-time Customer Data Platform a Target | <ul><li>Valutare i tipi di pubblico in tempo reale sul server Edge per la personalizzazione della pagina corrente o successiva.</li><li>Inoltre, tutti i segmenti valutati in streaming o in modalità batch verranno proiettati in [!DNL Edge Network] per essere inclusi nella valutazione e nella personalizzazione dei segmenti edge.</li></ul> | <ul><li>L&#39;SDK Web/Mobile deve essere implementato per l&#39;API server [!DNL Edge Network]</li><li>Lo stream di dati deve essere configurato in Experience Edge con l’estensione Target ed Experience Platform abilitata.</li><li>La destinazione Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform.</li><li>Per l’integrazione con Target, è necessario utilizzare la stessa organizzazione IMS usata per l’istanza di Experience Platform.</li></ul> |
+| Condivisione dei tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target tramite l’approccio Edge | <ul><li>Condividi i tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target tramite [!DNL Edge Network]. I tipi di pubblico valutati in tempo reale richiedono l&#39;implementazione dell&#39;SDK per Web e [!DNL Edge Network].</li></ul> | <ul><li>La condivisione di tipi di pubblico in streaming e in batch con Target non richiede Web/Mobile SDK o l’implementazione dell’API Edge; tuttavia sono richiesti per la valutazione dei segmenti Edge in tempo reale.</li><li>Se si utilizza AT.js, è supportata solo l’integrazione dei profili rispetto allo spazio dei nomi dell’identità ECID.</li><li>Per le ricerche tramite identità da spazi dei nomi personalizzati nella rete Edge, è necessario implementare Web SDK o l’API Edge e ogni identità deve essere impostata nella mappa delle identità.</li><li>La destinazione Target deve essere configurata nelle destinazioni di Real-time Customer Data Platform. È supportata solo la sandbox di produzione predefinita in RTCDP.</li><li>Per l’integrazione con Target, è necessario utilizzare la stessa organizzazione IMS usata per l’istanza di Experience Platform.</li></ul> |
 | Condivisione dei tipi di pubblico in streaming e in batch da Real-time Customer Data Platform a Target e Audience Manager tramite il servizio Audience Sharing | <ul><li>Questo modello di integrazione può essere sfruttato se i dati devono essere ulteriormente arricchiti con dati di terze parti e tipi di pubblico in Audience Manager.</li></ul> | <ul><li>Web/Mobile SDK non è necessario per la condivisione di tipi di pubblico in streaming e in batch con Target, ma serve per la valutazione dei segmenti Edge in tempo reale.</li><li>Se si utilizza AT.js, è supportata solo l’integrazione dei profili rispetto allo spazio dei nomi dell’identità ECID.</li><li>Per le ricerche tramite identità da spazi dei nomi personalizzati nella rete Edge, è necessario implementare Web SDK o l’API Edge e ogni identità deve essere impostata nella mappa delle identità.</li><li>È necessario il provisioning della proiezione del pubblico tramite il servizio di condivisione del pubblico.</li><li>Per l’integrazione con Target, è necessario utilizzare la stessa organizzazione IMS usata per l’istanza di Experience Platform.</li><li>Il servizio core di condivisione del pubblico è supportato solo dai tipi di pubblico della sandbox di produzione predefinita.</li></ul> |
 
 ## Condivisione del pubblico in tempo reale, in streaming e in batch con Adobe Target
@@ -64,25 +64,25 @@ Architettura d’insieme
 
 La personalizzazione per clienti noti è supportata tramite diversi approcci di implementazione.
 
-### Schema di implementazione 1 - [!DNL Edge Network] con Web/Mobile SDK o [!DNL Edge Network] API (approccio consigliato)
+### Schema di implementazione 1 - [!DNL Edge Network] con SDK Web/Mobile o API [!DNL Edge Network] (approccio consigliato)
 
 * Utilizzo di [!DNL Edge Network] con Web/Mobile SDK. La segmentazione Edge in tempo reale richiede l’implementazione di Web/Mobile SDK o dell’API Edge.
-* [Consulta l’Experience Platform Blueprint per SDK web e mobile.](../../experience-platform/deployment/websdk.md) per l’implementazione basata su SDK.
+* [Consulta la blueprint dell&#39;SDK per dispositivi mobili e web di Experience Platform](../../experience-platform/deployment/websdk.md) per l&#39;implementazione basata su SDK.
 * Per poter essere utilizzata in Mobile SDK, l’[estensione Adobe Journey Optimizer - Decisioning](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) deve essere installata in Mobile SDK.
-* [Consulta la sezione [!DNL Edge Network] API server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it) per un’implementazione di Adobe Target con profilo Edge basata su API.
+* [Consulta la [!DNL Edge Network] API server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it) per informazioni su un&#39;implementazione di Adobe Target basata su API con profilo Edge.
 
 ### Modello di implementazione 2 - SDK per specifiche applicazioni
 
 Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AT.js e AppMeasurement.js). La valutazione dei segmenti Edge in tempo reale non è supportata da questo approccio di implementazione. Tuttavia, questo approccio supporta la condivisione del pubblico in streaming e in batch dall’hub di Experience Platform.
 
-[Consulta la documentazione relativa al connettore Adobe Target.](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
-[Consulta la blueprint dell’SDK specifico per l’applicazione](../../experience-platform/deployment/appsdk.md)
+[Consulta la documentazione del connettore Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[Consulta la blueprint SDK specifica per l&#39;applicazione](../../experience-platform/deployment/appsdk.md)
 
 ## Considerazioni sull’implementazione
 
 Prerequisiti per l’identità
 
-* Qualsiasi identità primaria può essere utilizzata quando si utilizza il modello di implementazione 1 descritto in precedenza con [!DNL Edge Network] e Web SDK. La personalizzazione del primo accesso richiede che l’identità primaria del set di richieste di personalizzazione corrisponda all’identità primaria del profilo da Real-time Customer Data Platform.
+* Qualsiasi identità primaria può essere utilizzata quando si utilizza il modello di implementazione 1 descritto sopra con [!DNL Edge Network] e Web SDK. La personalizzazione del primo accesso richiede che l’identità primaria del set di richieste di personalizzazione corrisponda all’identità primaria del profilo da Real-time Customer Data Platform.
 
 ## Documentazione correlata
 

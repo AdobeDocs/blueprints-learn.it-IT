@@ -1,6 +1,6 @@
 ---
 title: Blueprint per personalizzazione Data Science per l’arricchimento del profilo
-description: Scopri come acquisire informazioni basate sulla scienza dei dati in [!DNL Experience Platform] per arricchire Real-time Customer Profile.
+description: Scopri come acquisire in [!DNL Experience Platform] le informazioni basate sulla scienza dei dati per arricchire Real-time Customer Profile.
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
@@ -13,7 +13,7 @@ ht-degree: 69%
 
 # Blueprint per data science personalizzata per l’arricchimento dei profili
 
-Il blueprint di data science personalizzato per l’arricchimento dei profili illustra come utilizzare i dati per addestrare, distribuire e valutare modelli per fornire informazioni di apprendimento automatico in [!DNL Experience Platform] e [!DNL Real-Time Customer Data Platform] dalla data science e dagli strumenti di apprendimento automatico.
+Il blueprint di data science personalizzato per l&#39;arricchimento dei profili illustra come utilizzare i dati per addestrare, distribuire e valutare modelli per fornire informazioni di apprendimento automatico su [!DNL Experience Platform] e [!DNL Real-Time Customer Data Platform] da strumenti di data science e apprendimento automatico.
 
 Le informazioni modellate possono essere acquisite in [!DNL Experience Platform] per arricchire il profilo cliente in tempo reale. Esempi di informazioni basate sull’apprendimento automatico includono valutazione del ciclo di vita, affinità per prodotto e categoria, propensione alla conversione o all’abbandono.
 
@@ -29,7 +29,7 @@ Le informazioni modellate possono essere acquisite in [!DNL Experience Platform]
 
 ## Guardrail
 
-* Per protezioni dettagliate e latenze end-to-end durante l’acquisizione dei risultati della data science in [!DNL Experience Platform] e Real-time Customer Profile fanno riferimento ai guardrail di acquisizione dei dati e al diagramma di latenza a cui si fa riferimento nel [documento guardrail di distribuzione](../experience-platform/deployment/guardrails.md).
+* Per i guardrail dettagliati e le latenze end-to-end durante l&#39;acquisizione dei risultati della data science in [!DNL Experience Platform] e nel profilo cliente in tempo reale, fare riferimento ai guardrail di acquisizione dati e al diagramma di latenza a cui si fa riferimento nel [documento sui guardrail di distribuzione](../experience-platform/deployment/guardrails.md).
 
 ## Fasi di implementazione
 
@@ -61,6 +61,6 @@ Per i risultati del modello da acquisire nel profilo cliente in tempo reale, ass
 ## Articoli di blog correlati
 
 * [Intelligenza artificiale per contenuti e commerce: personalizzazione delle interazioni con i clienti tramite Content Intelligence](https://medium.com/adobetech/content-and-commerce-ai-personalizing-your-interactions-with-customers-through-content-intelligence-dc182601deab)
-* [Uno sguardo introduttivo all’analisi esplorativa dei dati sull’Adobe [!DNL Experience Platform]](https://medium.com/adobetech/an-introductory-look-at-exploratory-data-analysis-on-adobe-experience-platform-1bfce7501d9a)
+* [Un&#39;analisi introduttiva dei dati esplorativi sull&#39;Adobe [!DNL Experience Platform]](https://medium.com/adobetech/an-introductory-look-at-exploratory-data-analysis-on-adobe-experience-platform-1bfce7501d9a)
 * [Apprendimento automatico nei prodotti Adobe Experience per ottimizzare l’esperienza utente](https://medium.com/adobetech/cutting-across-adobe-experience-products-with-machine-learning-to-elevated-user-experience-7c85000510d1)
 * [Segmentation.AI: Automated Audience-Clustering-as-a-Service in Adobe [!DNL Experience Platform]](https://medium.com/adobetech/segmentation-ai-automated-audience-clustering-as-a-service-in-adobe-experience-platform-261f4099462c)

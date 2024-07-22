@@ -1,5 +1,5 @@
 ---
-title: Blueprint per la personalizzazione web e mobile
+title: Blueprint per Personalization web e mobile
 description: Offri contenuti web e mobili personalizzati con [!UICONTROL profilo cliente in tempo reale].
 solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
@@ -12,7 +12,7 @@ ht-degree: 95%
 
 ---
 
-# Blueprint per la personalizzazione web e mobile
+# Blueprint per Personalization web e mobile
 
 La personalizzazione web e mobile consente di utilizzare la segmentazione in base al profilo e al pubblico in più applicazioni per personalizzare e ottimizzare le esperienze dei clienti. I comportamenti dei clienti, i dati demografici, il livello di fidelizzazione e le transazioni precedenti possono essere sfruttati per personalizzare layout, inviti all’azione e contenuti.
 
