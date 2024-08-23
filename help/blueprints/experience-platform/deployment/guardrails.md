@@ -4,7 +4,7 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 164793e15315d64cf38cb14928eac10cf6ae5c35
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 15%
@@ -46,7 +46,7 @@ Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni
 
 Il diagramma seguente illustra le latenze osservate primarie a livello di spigolo e hub di cui tenere conto durante l’architettura del caso d’uso nell’Experience Platform e nelle applicazioni.
 
-![Experience Platform [!DNL Edge Network] e latenze osservate primarie hub.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Latenze osservate primarie per Edge Network Experience Platform e hub"){width="1000" zoomable="yes"}
+![Experience Platform [!DNL Edge Network] e latenze osservate primarie hub.](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency_v1.svg "Latenze osservate primarie per Edge Network Experience Platform e hub"){width="1000" zoomable="yes"}
 
 ### Acquisizione dei dati {#data-ingestion}
 
