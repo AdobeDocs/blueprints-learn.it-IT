@@ -4,21 +4,30 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 164793e15315d64cf38cb14928eac10cf6ae5c35
+source-git-commit: 7ccabe2d11467b02d7fb5a2f920ebc5af8a17983
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 15%
+source-wordcount: '603'
+ht-degree: 10%
 
 ---
 
 # Guardrail
+I guardrail riflettono i vincoli di sistema, le latenze previste e le aspettative di prestazioni per ottimizzare l’architettura del cliente e le prestazioni del caso d’uso, nonché per garantire stabilità, evitare errori o risultati imprevisti.
 
-I guardrail sono soglie consigliate che forniscono indicazioni per i dati, le latenze osservate e l’utilizzo del sistema in Adobe Experience Platform e nelle applicazioni. I guardrail riflettono i vincoli di sistema e le aspettative di prestazioni per ottimizzare l’architettura del cliente e le prestazioni del caso d’uso, e aiutano a evitare errori o risultati imprevisti. I guardrail non sono destinati a essere accordi sui livelli di servizio; gli accordi sui livelli di servizio sono documentati nelle Descrizioni dei prodotti collegate di seguito e negli accordi di licenza con il cliente. I guardrail hanno lo scopo di fornire indicazioni nell’architettura di soluzioni per casi d’uso specifici dei clienti, al fine di garantire stabilità ed esecuzione.
+## Tipi di guardrail
 
-Per informazioni sugli accordi sui livelli di servizio specifici per applicazioni e funzionalità, fare riferimento alla sezione [Descrizioni di applicazioni e funzionalità](#application-feature-descriptions) nella parte inferiore di questa pagina.
+| Tipo di guardrail | Descrizione |
+|---|---|
+| Guardrail delle prestazioni (limite morbido) | I guardrail delle prestazioni sono limiti di utilizzo che si riferiscono all’ambito dei casi d’uso e delineano le prestazioni previste in condizioni normali. Quando viene superato, è possibile che si verifichi un peggioramento delle prestazioni e della latenza. I guardrail delle prestazioni sono documentati nei documenti di Experience League nelle sezioni di guardrail per ciascuna soluzione, come descritto di seguito. |
+| Limite statico (limite rigido) | Si tratta di limiti applicati dal sistema che non possono essere superati. I limiti statici sono in genere associati contrattualmente e delineati nel contratto del cliente e nelle [descrizioni prodotto](https://helpx.adobe.com/legal/product-descriptions.html). |
 
-Tieni presente che, per qualsiasi caso di utilizzo di un cliente con rigidi requisiti di latenza o volume, Adobe consiglia di rivedere il caso di utilizzo in dettaglio con il team dell’account e il partner di implementazione di Adobe. In alcuni casi è consigliabile testare e osservare una determinata implementazione del caso d’uso prima dell’avvio della produzione del caso d’uso per osservare e comprendere il comportamento previsto - in quanto ogni implementazione del cliente ha diversi fattori in gioco, tra cui la natura e la frequenza dell’acquisizione dei dati, le specifiche delle regole dei segmenti che vengono create e i vari canali di attivazione e payload - ogni implementazione del caso d’uso avrà prestazioni osservate variabili. Di conseguenza, è meglio stabilire e testare le prestazioni previste fin dall’inizio per garantire un’architettura e un’implementazione adeguate in base ai requisiti di latenza e prestazioni del caso d’uso.
+>[!NOTE]
+>
+> I guardrail non sono destinati a essere accordi sui livelli di servizio, ma piuttosto indicazioni per configurazioni ottimali e comportamenti di sistema attesi. Eventuali guardrail che rappresentano limiti di sistema o contrattuali o accordi sul livello di servizio saranno documentati in modo specifico nei contratti con i clienti e nelle descrizioni dei prodotti. Se ti interessa conoscere i limiti personalizzati, contatta il rappresentante dell’assistenza clienti.
 
+>[!NOTE]
+>
+> Per i casi d’uso con rigide esigenze di latenza o prestazioni, Adobe consiglia di discutere i dettagli con il team del tuo account Adobe e con il partner dell’implementazione. Ogni configurazione del cliente può variare tra i pattern di acquisizione dei dati, le regole dei segmenti e i canali di attivazione. È importante testare e rivedere il caso d’uso prima di avviarlo, per capire come si comporterà.
 
 ## Documentazione di riferimento sui guardrail per Adobe Experience Platform e relative applicazioni
 
@@ -77,19 +86,3 @@ Nel diagramma seguente vengono visualizzati i valori di latenza previsti quando 
 Nel diagramma seguente vengono visualizzati i valori di latenza previsti per l&#39;utilizzo di [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=en). Fai clic sull’immagine per visualizzarne una versione ad alta risoluzione.
 
 ![Utilizzo della panoramica visiva di alto livello di Adobe Journey Optimizer.](/help/blueprints/experience-platform/deployment/assets/AJO_guardrails.svg "Utilizzo dei valori di latenza e panoramica visiva di alto livello di Adobe Journey Optimizer"){width="1000" zoomable="yes"}
-
-## Descrizioni di applicazioni e funzionalità {#application-feature-descriptions}
-
-Per informazioni sugli accordi sui livelli di servizio specifici per le funzioni, fare riferimento alle descrizioni dei prodotti riportate di seguito:
-
-* [Experience Platform Collection Enterprise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
-* [Real-time Customer Data Platform](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform.html)
-* [B2B Customer Data Platform](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-b2b.html)
-* [Experience Platform Activation](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform0.html)
-* [Experience Platform Intelligence](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Intelligent Services](https://helpx.adobe.com/it/legal/product-descriptions/intelligent-services.html)
-* [Data Distiller](https://helpx.adobe.com/it/legal/product-descriptions/data-distiller.html)
-* [Customer Journey Analytics](https://helpx.adobe.com/it/legal/product-descriptions/customer-journey-analytics.html)
-* [Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Journey Orchestration](https://helpx.adobe.com/it/legal/product-descriptions/journey-orchestration.html)
-* [Offer Decisioning](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)
