@@ -4,9 +4,9 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 7e37677280c27302e650a96786035169573d9709
+source-git-commit: 8ab82995ad7762f8ed6f706aa4c4fe59d47abb20
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '612'
 ht-degree: 10%
 
 ---
@@ -29,7 +29,7 @@ I guardrail riflettono i vincoli di sistema, le latenze previste e le aspettativ
 
 >[!NOTE]
 >
-> Per i casi d’uso con rigide esigenze di latenza o prestazioni, Adobe consiglia di discutere i dettagli con il team del tuo account Adobe e con il partner dell’implementazione. Ogni configurazione del cliente può variare tra i pattern di acquisizione dei dati, le regole dei segmenti e i canali di attivazione. È importante testare e rivedere il caso d’uso prima di avviarlo, per capire come si comporterà.
+> Per i casi d’uso con rigide esigenze di latenza o prestazioni, Adobe consiglia di discutere i dettagli con il team del tuo account Adobe e con il partner dell’implementazione. Ogni configurazione del cliente può variare tra i pattern di acquisizione dei dati, i conteggi e la ricchezza dei profili, le regole dei segmenti e i canali di attivazione. È quindi importante progettare e testare il caso d’uso per ottimizzarne le prestazioni e comprenderne appieno le caratteristiche.
 
 ## Documentazione di riferimento sui guardrail per Adobe Experience Platform e relative applicazioni
 
