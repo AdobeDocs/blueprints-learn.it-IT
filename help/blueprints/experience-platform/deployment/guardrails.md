@@ -4,7 +4,7 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 64d5e2514d54b3879b09a1dc49d37a2867e21deb
+source-git-commit: 7e37677280c27302e650a96786035169573d9709
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 10%
@@ -13,6 +13,7 @@ ht-degree: 10%
 
 
 # Guardrail
+
 I guardrail riflettono i vincoli di sistema, le latenze previste e le aspettative di prestazioni per ottimizzare l’architettura del cliente e le prestazioni del caso d’uso, nonché per garantire stabilità, evitare errori o risultati imprevisti.
 
 ## Tipi di guardrail
