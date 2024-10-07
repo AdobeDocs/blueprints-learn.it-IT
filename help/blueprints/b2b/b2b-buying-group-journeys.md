@@ -2,9 +2,9 @@
 title: Blueprint per l’acquisto di attività di marketing e gestione dei Percorsi basate su gruppi
 description: Scopri come ideare, progettare e creare un percorso idoneo che porti a un gruppo di acquisto in Adobe Journey Optimizer B2B edition.
 solution: Journey Optimizer B2B Edition
-source-git-commit: 5035c869aa5181fff66cbc20b03922f82832f126
+source-git-commit: b514d7a639d4d624875552c892ae266fdfe089f3
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2118'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ I seguenti KPI sono in linea con la misurazione del successo dei casi d’uso:
 
 ## Marketing basato su account
 
-Un caso d’uso comune e su cui si concentra questo blueprint è un’iniziativa di marketing basata su account che esplora il punto in cui il gruppo di acquisto creato viene popolato con un lead quando viene associato a un ruolo e a un interesse per la soluzione.
+Un caso d’uso comune e su cui si concentra questo blueprint, è un’iniziativa di marketing basata sull’account. Questo caso d’uso esplora il punto in cui il gruppo di acquisto creato viene popolato con un lead quando questi sono associati a un ruolo e a un interesse per la soluzione.
 
 Mentre guidi un individuo attraverso il percorso, raccogli ulteriori informazioni sul lead (Flusso di lavoro del gruppo acquisti), tramite moduli, sincronizzazione CRM e attivazione LinkedIn.
 
-Quando un lead dimostra chiaramente l&#39;interesse della soluzione, indica un evento di business definito da un obiettivo di business. A questo punto, l&#39;azienda è sicura che il lead sia realmente interessato a un prodotto e in Journey Optimizer B2B edition è associato a un gruppo di acquisto per tale soluzione in un modello di ruoli (come influenzatori, decision maker, campioni e sponsor).
+Quando un lead dimostra chiaramente l&#39;interesse della soluzione, indica un evento di business definito da un obiettivo di business. A questo punto, l&#39;azienda è sicura che il lead sia realmente interessato a un prodotto. In Journey Optimizer B2B edition, il lead è associato a un gruppo di acquisto per tale soluzione in un modello di ruoli (ad esempio influencer, decision maker, campioni e sponsor).
 
 Come illustrato nel diagramma seguente, è possibile raccogliere i dettagli nei moduli o tramite l’attivazione di LinkedIn e qualificare un intento della soluzione quando si è verificata un’interazione con un chat-bot.
 
@@ -85,7 +85,7 @@ Con qualsiasi implementazione di un’automazione di marketing basata sui dati, 
 
 Gli schemi vengono arricchiti in modo specifico con elementi di dati B2B per supportare la relazione avanzata nei profili e includere la prospettiva dell&#39;account attraverso `sourceKey` per collegare eventi e profili allo schema dell&#39;account. Gli schemi rappresentano i requisiti organizzativi e i dati raccolti e profilati. Per soddisfare queste esigenze, gli schemi B2B sono flessibili e rappresentano un’estensione degli elementi B2B richiesti.
 
-Durante la progettazione dello schema dati per l&#39;organizzazione, è consigliabile rappresentare ed etichettare le entità principali nell&#39;ERD con le entità di alto livello nel primo diagramma della [documentazione dello schema B2B RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b). Questo processo è molto utile per comprendere gli elementi dati richiesti da definire in ogni schema.
+Durante la progettazione dello schema dati per l’organizzazione, è consigliabile rappresentare ed etichettare le entità principali nell’ERD con le entità di alto livello. (Vedi il primo diagramma nella [documentazione dello schema B2B RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)). Questo processo è molto utile per comprendere gli elementi dati richiesti da definire in ogni schema.
 
 In questa fase, gli Eventi di esperienza non sono ancora in grado di influenzare i percorsi. Oltre agli schemi Experience Event, è consigliabile aggiungere all’account proprietà che rappresentano decisioni importanti in base alle attività degli utenti. Queste proprietà vengono utilizzate per gli elementi del percorso diviso nella finestra di progettazione del percorso.
 
@@ -97,7 +97,7 @@ In questa fase, gli Eventi di esperienza non sono ancora in grado di influenzare
 
 Per arricchire gli elementi dati dell’account, puoi utilizzare i dati di Marketo Engage e i relativi dati B2B per arricchire la vista dell’account RTCDP e Journey Optimizer B2B edition. Impostando il connettore Source del Marketo Engage e mappando i dati del Marketo Engage agli attributi dello schema RTCDP, si consente il flusso dei dati dal Marketo Engage a RTCDP e, se designato, al profilo.
 
-Consulta la [documentazione del connettore di Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) per informazioni dettagliate sulla configurazione del connettore e sulla mappatura del campo richiesta nello schema definito al passaggio precedente.
+Per informazioni dettagliate sulla configurazione del connettore e sul mapping dei campi richiesti allo schema, consulta la [documentazione del connettore di Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo).
 
 ### Guardrail
 
@@ -118,7 +118,7 @@ Consulta la [documentazione dei guardrail di Real-Time CDP](https://experiencele
 
 ## Implementazione
 
-I passaggi seguenti forniscono indicazioni per abilitare la funzionalità Gruppo acquisti nell’istanza Journey Optimizer B2B edition e includono un’ulteriore attivazione per supportare l’espansione della base di account con particolare attenzione all’acquisto di modelli di ruolo mancanti per il gruppo.
+I passaggi seguenti forniscono indicazioni per abilitare i gruppi di acquisto nell’istanza Journey Optimizer B2B edition, inclusa l’attivazione del pubblico per supportare l’espansione della base di account con particolare attenzione ai modelli di ruolo mancanti per i gruppi di acquisto.
 
 ### Passaggi preliminari
 
@@ -131,7 +131,7 @@ I passaggi seguenti forniscono indicazioni per abilitare la funzionalità Gruppo
    * Utilizza lo script di creazione dello schema B2B [RTCDP](https://github.com/adobe/experience-platform-postman-samples/tree/master/Postman%20Collections/CDP%20Namespaces%20and%20Schemas%20Utility) per generare lo schema iniziale
    * Aggiungi campi specifici per il caso d’uso agli schemi generati per completare lo schema in base alle esigenze dell’organizzazione.
 
-   In questa fase, è stata impostata la connessione tra Marketo Engage e RTCDP e viene definita la struttura dello schema per accettare i dati dell’account e della persona per compilare i set di dati per i segmenti dell’account. Il passaggio successivo consiste nel collegare RTCDP a Marketo Engage e Journey Optimizer B2B edition.
+   In questa fase, è presente la connessione tra Marketo Engage e RTCDP e viene definita la struttura dello schema per accettare i dati dell’account e della persona per compilare i set di dati per i segmenti dell’account. Il passaggio successivo consiste nel collegare RTCDP a Marketo Engage e Journey Optimizer B2B edition.
 
 1. Configura il connettore di Marketo Engage, inclusa la mappatura del Marketo Engage alla struttura XDM.
 
@@ -141,7 +141,7 @@ I passaggi seguenti forniscono indicazioni per abilitare la funzionalità Gruppo
 
 1. Creare tipi di pubblico per gli account in Journey Optimizer B2B edition o RTCDP.
 
-   Per abilitare i tipi di pubblico per account, abilita l’opzione Pianificazione di tutti i tipi di pubblico nella pagina Customer → Audiences → Browse (Sfoglia). (Nei casi in cui questo non funziona, devi creare un segmento Profilo cliente per poter abilitare la creazione dei tipi di pubblico dell’account)
+   Per abilitare i tipi di pubblico per account, abilita l’opzione Pianificazione di tutti i tipi di pubblico nella pagina Customer → Audiences → Browse (Sfoglia). (Nei casi in cui questo non funziona, devi creare un segmento Profilo cliente per poter abilitare la creazione dei tipi di pubblico dell’account.)
 
    Per creare un segmento, segui i passaggi descritti nella [documentazione sul pubblico dell&#39;account](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-audiences/account-audience-overview). L’utilizzo di Segment Builder con i campi di dati identificati come chiave per il pubblico del tuo account sarebbe l’attività chiave per definire il pubblico.
 

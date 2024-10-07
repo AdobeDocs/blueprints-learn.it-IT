@@ -4,7 +4,7 @@ description: Offri a un pubblico basato su account esperienze personalizzate in 
 solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: 6a13de73d7f61295092faccfc21172f5e188331d
+source-git-commit: b514d7a639d4d624875552c892ae266fdfe089f3
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 81%
@@ -21,6 +21,6 @@ Con l’approccio di priorità al canale, ogni canale funziona come un comparto 
 |---|---|---|
 | **[Analisi B2B](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=it)** | <ul><li>Includere informazioni sull’account B2B nell’analisi della customer journey</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
 | **[Attivazione del pubblico B2B](b2bactivation.md)** | <ul><li>Rivolgiti a un pubblico B2B su tutti i canali; web, e-mail e pubblicitari</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B Edition</li></ul> |
-| **[Acquisto di attività di marketing e gestione dei Percorsi basate sui gruppi](./b2b-buying-group-journeys.md)** | <ul><li>Progetta e crea un percorso di account che qualifichi i lead per un gruppo di acquisto che aumenti l’efficacia dell’attività di marketing nella qualificazione dei lead e nelle opportunità di vendita</li></ul> | <ul><li>Adobe Journey Optimizer B2B edition</li><li>Adobe Real-time Customer Data Platform B2B Edition</li><li>Adobe Marketo Engage</li></ul> |
+| **[Acquisto di attività di marketing e gestione dei Percorsi basate sui gruppi](/help/blueprints/b2b/b2b-buying-group-journeys.md)** | <ul><li>Progetta e crea un percorso di account che qualifichi i lead per un gruppo di acquisto che aumenti l’efficacia dell’attività di marketing nella qualificazione dei lead e nelle opportunità di vendita</li></ul> | <ul><li>Adobe Journey Optimizer B2B edition</li><li>Adobe Real-time Customer Data Platform B2B Edition</li><li>Adobe Marketo Engage</li></ul> |
 | **[Blueprint per l’integrazione di Marketo Engage e Workfront - Panoramica](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)** | <ul><li>Ottimizza la pianificazione, lo sviluppo e l’esecuzione delle campagne di marketing B2B</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
 | **[Blueprint per l’integrazione di Marketo Engage e Workfront - Acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)** | <ul><li>Automatizza tutti i passaggi dalla ricezione della richiesta per una campagna di marketing B2B fino all’esecuzione del suo sviluppo</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
