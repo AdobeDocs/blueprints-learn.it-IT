@@ -3,16 +3,18 @@ title: Blueprint per la gestione delle decisioni
 description: Presenta offerte personalizzate lungo i vari percorsi dei clienti.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: f6c4a0f39acdc177ac23c4314d2f50f793cbf270
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 96%
+source-wordcount: '651'
+ht-degree: 94%
 
 ---
 
 # Journey Optimizer - Blueprint per la gestione delle decisioni
 
 Per ulteriori informazioni sul servizio Gestione delle decisioni, consulta la [documentazione del prodotto](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it).
+
+Per i guardrail relativi alla gestione delle decisioni, consulta la seguente documentazione. [Guardrail Di Gestione Delle Decisioni](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails#decision-management)
 
 La funzionalità Gestione delle decisioni è un servizio Adobe fornito come parte di Adobe Journey Optimizer. Questo blueprint riassume i casi di utilizzo e le capacità tecniche dell’applicazione e descrive nel dettaglio i vari componenti dell’architettura di Gestione delle decisioni e le relative considerazioni.
 
@@ -42,8 +44,6 @@ Il primo approccio prevede l’utilizzo dell’hub Adobe Experience Platform, un
 
 ### Considerazioni tecniche per Gestione delle decisioni tramite hub
 
-* Richieste al secondo = 2000.
-* Latenza di risposta &lt; 500 ms.
 * Accesso al profilo cliente in tempo reale completo, compresi appartenenze a un pubblico, attributi ed eventi di esperienza.
 
 ## Gestione delle decisioni tramite rete Edge
@@ -57,10 +57,7 @@ Il secondo approccio è tramite l&#39;esperienza [!DNL Edge Network], un&#39;inf
 
 ### Considerazioni tecniche per Gestione delle decisioni tramite rete Edge
 
-* Richieste al secondo = 5000.
-* Latenza di risposta &lt; 250 ms.
 * Accesso al profilo Edge in tempo reale. Nel profilo saranno disponibili solo i tipi di pubblico e gli attributi di profilo Edge proiettati.
-* Se vuoi applicare la personalizzazione alla prima esperienza, è preferibile utilizzare l’approccio tramite hub, con profilo completo. Per la prima esperienza Edge, infatti, il profilo Edge deve essere sincronizzato dall’hub. Pertanto, la prima esperienza tramite rete Edge non includerà i dati del profilo precedentemente caricati sull’hub.
 
 ## Documentazione correlata
 
