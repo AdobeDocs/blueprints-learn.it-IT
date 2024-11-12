@@ -2,7 +2,8 @@
 title: Blueprint per l’acquisto di attività di marketing e gestione dei Percorsi basate su gruppi
 description: Scopri come ideare, progettare e creare un percorso idoneo che porti a un gruppo di acquisto in Adobe Journey Optimizer B2B edition.
 solution: Journey Optimizer B2B Edition
-source-git-commit: b514d7a639d4d624875552c892ae266fdfe089f3
+exl-id: 0a9da49c-f13a-4f2a-8407-277def2db591
+source-git-commit: b777ea5c301fb1fac39bc243b09a02a2f411f40e
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
@@ -26,7 +27,7 @@ I gruppi di acquisto rappresentano un gruppo di persone dell’azienda che sono 
 Grazie alle nuove funzionalità B2B di Journey Optimizer B2B edition, è ora possibile affrontare queste sfide:
 
 * Mancanza di _campagne di marketing customer-first_.
-* Conversione incoerente di un lead qualificato per il marketing (MQL) in un lead qualificato per le vendite (SQL), che richiede l&#39;allineamento delle iniziative con le vendite per sviluppare MQL
+* Conversione incoerente di Marketing Qualified Lead (MQL) in Sales Qualified Lead (SQL), che richiede l&#39;allineamento delle iniziative con le vendite per sviluppare MQL
 * Mancanza di un meccanismo di vendita per identificare e indirizzare gli account _competitivi_.
 * Rischio di concentrazione nei ricavi e nella pipeline.
 
