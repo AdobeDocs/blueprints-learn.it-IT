@@ -3,10 +3,10 @@ title: Blueprint per la gestione delle decisioni
 description: Presenta offerte personalizzate lungo i vari percorsi dei clienti.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: f6c4a0f39acdc177ac23c4314d2f50f793cbf270
+source-git-commit: e6ac3607ea3909acf921125cc5f8fd44c0b3e0f6
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 94%
+source-wordcount: '650'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ Il servizio Gestione delle decisioni può essere implementato in due modi: trami
 
 ## Gestione delle decisioni tramite hub
 
-Il primo approccio prevede l’utilizzo dell’hub Adobe Experience Platform, un’architettura con un datacenter centrale. Con questo approccio mediante “hub”, le offerte vengono eseguite, personalizzate e distribuite con una latenza >500 ms. Pertanto, l’architettura con hub è più adatta per esperienze del cliente che non richiedono latenze inferiori al secondo, ad esempio per decisioni di offerta destinate a chioschi o esperienze assistite da agenti, come call center o interazioni con persone. L’approccio tramite hub consente anche di gestire le offerte inserite in e-mail, SMS o notifiche push e altre campagne in uscita. Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il blueprint [Gestione delle decisioni tramite hub](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=it).
+Il primo approccio prevede l’utilizzo dell’hub Adobe Experience Platform, un’architettura con un datacenter centrale. L’architettura dell’hub è ideale per le esperienze dei clienti che non richiedono bassa latenza e throughput elevato, ma richiedono una visualizzazione più completa del profilo del cliente. Alcuni esempi includono decisioni di offerta fornite per i chioschi o esperienze assistite da agenti, come nei call center o nelle interazioni di persona. L’approccio tramite hub consente anche di gestire le offerte inserite in e-mail, SMS o notifiche push e altre campagne in uscita. Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il blueprint [Gestione delle decisioni tramite hub](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=it).
 
 * L’idoneità alle offerte può funzionare in base al profilo cliente in tempo reale completo, inclusi tutti gli attributi e gli eventi delle esperienze.
 
