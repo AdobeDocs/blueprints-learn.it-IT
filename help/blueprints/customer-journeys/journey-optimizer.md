@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Journey Optimizer] - Blueprint per messaggi e Adobe Experience Platform attivati"
+title: '[!DNL Journey Optimizer] - Messaggistica attivata e blueprint Adobe Experience Platform'
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
@@ -12,7 +12,7 @@ ht-degree: 53%
 
 # [!DNL Journey Optimizer] blueprint
 
-L&#39;Adobe [!DNL Journey Optimizer] è un sistema appositamente progettato per consentire ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli dove si trovano. Le funzionalità di gestione dei dati sono state spostate nell&#39;Adobe [!DNL Experience Platform], consentendo ai team di marketing di concentrarsi su ciò che fanno meglio: ovvero la creazione di conversazioni personalizzate e di percorso di clienti di altissimo livello.
+Adobe [!DNL Journey Optimizer] è un sistema appositamente progettato per consentire ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli ovunque si trovino. Le funzionalità di gestione dei dati sono state spostate nell&#39;Adobe [!DNL Experience Platform], consentendo ai team di marketing di concentrarsi su ciò che fanno meglio: ovvero la creazione di conversazioni personalizzate e di percorso di clienti di altissimo livello.
 
 Questo blueprint illustra le funzionalità tecniche dell&#39;applicazione e fornisce informazioni approfondite sui vari componenti dell&#39;architettura che compongono [!DNL Journey Optimizer].
 

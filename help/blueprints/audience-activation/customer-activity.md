@@ -1,6 +1,6 @@
 ---
 title: Blueprint per hub delle attività dei clienti
-description: “Ricerche nel [!UICONTROL profilo cliente in tempo reale] per ottenere informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore.”
+description: Le ricerche in [!UICONTROL Real-time Customer Profile] forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore.
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
