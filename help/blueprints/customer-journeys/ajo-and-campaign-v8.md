@@ -3,7 +3,7 @@ title: Blueprint per Journey Optimizer con Adobe Campaign v8
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign per inviare messaggi in modo nativo utilizzando il server di messaggistica in tempo reale in Campaign.
 solution: Journey Optimizer, Campaign, Campaign v8 Client Console
 exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 64%
@@ -39,7 +39,7 @@ Esamina i seguenti prerequisiti per ciascuna applicazione.
 
 ## Guardrail
 
-* [Limitazioni del prodotto Journey Optimizer Guardrail](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=it)
+* [Limitazioni del prodotto Journey Optimizer Guardrail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
 * [Guardrail e indicazioni sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
@@ -79,7 +79,7 @@ Segui le implementazioni per ciascuna applicazione descritta di seguito.
 
 * I modelli di messaggistica devono essere configurati con il contesto di personalizzazione appropriato.
 * Per lo standard [!DNL Campaign]: i flussi di lavoro di esportazione devono essere configurati per esportare nuovamente i registri di messaggistica transazionale nell&#39;Experience Platform. Il consiglio è di eseguire al massimo ogni quattro ore.
-* Per [!DNL Campaign] v8.4 è possibile sfruttare Adobe [!DNL Campaign] Managed Services Source Connector in Experience Platform per sincronizzare la consegna e il tracciamento degli eventi da Campaign ad Experience Platform. Per ulteriori informazioni, consulta la documentazione di [Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it).
+* Per [!DNL Campaign] v8.4 è possibile sfruttare il connettore Managed Services Source di Adobe [!DNL Campaign] in Experience Platform per sincronizzare la consegna e il tracciamento degli eventi da Campaign ad Experience Platform. Per ulteriori informazioni, consulta la documentazione di [Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it).
 
 ### Configurazione push mobile (opzionale)
 
