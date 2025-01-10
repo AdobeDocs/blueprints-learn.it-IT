@@ -5,16 +5,16 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 72eb4e2ff276279a2fc88ead0b17d77cc8e99b97
+source-git-commit: 1b35f6955a7bb10d07c6ce796e80a18b92f25d18
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 73%
+source-wordcount: '452'
+ht-degree: 83%
 
 ---
 
 # Blueprint per la preparazione e l’acquisizione dei dati
 
-Blueprint per la preparazione e l’acquisizione dei dati include tutti i metodi con cui i dati possono essere preparati e acquisiti nell’Adobe [!DNL Experience Platform].
+Blueprint per la preparazione e l&#39;acquisizione dei dati include tutti i metodi con cui i dati possono essere preparati e acquisiti in Adobe [!DNL Experience Platform].
 
 La preparazione dei dati include la mappatura dei dati di origine sullo schema Experience Data Model (XDM). Include inoltre l’esecuzione di trasformazioni sui dati, tra cui formattazione della data, suddivisione/concatenazione/conversioni di campi e unione/fusione/riconfigurazione di record. La preparazione dei dati è utile per unificare i dati dei clienti al fine di fornire analisi aggregate/filtrate, inclusa la creazione di rapporti o la preparazione dei dati per assemblaggio/data science/attivazione dei profili cliente.
 
@@ -24,7 +24,7 @@ La preparazione dei dati include la mappatura dei dati di origine sullo schema E
 
 ## Guardrail per l’acquisizione dei dati
 
-Il diagramma seguente illustra i guardrail delle prestazioni e la latenza media per l&#39;acquisizione dei dati nell&#39;Adobe [!DNL Experience Platform].
+Il diagramma seguente illustra i guardrail delle prestazioni e la latenza media per l&#39;acquisizione dei dati in Adobe [!DNL Experience Platform].
 
 <img src="../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="[!DNL Experience Platform] Flusso di dati" style="border:1px solid #4a4a4a; margin-bottom: 15px;" width="90%" class="modal-image" />
 
@@ -219,7 +219,6 @@ Il diagramma seguente illustra i guardrail delle prestazioni e la latenza media 
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
 <ul>
 <li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Non sempre attivi, acquisizione immediata. </span></span></span></li>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Controlli a frequenza ricorrente per l’acquisizione di file delta almeno ogni 15 minuti.</span></span></span></li>
 </ul>
 </td>
 </tr>
@@ -236,7 +235,6 @@ Il diagramma seguente illustra i guardrail delle prestazioni e la latenza media 
 <p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Push, CSV, JSON, Parquet</span></span></span></p>
 </td>
 <td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
-<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">- File forniti con un TTL di 7 giorni</span></span></span></p>
 </td>
 </tr>
 <tr>
@@ -254,7 +252,6 @@ Il diagramma seguente illustra i guardrail delle prestazioni e la latenza media 
 </td>
 <td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
 <ul>
-<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Frequenza minima di 15 min</span></span></span></li>
 <li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Esempi: MailChimp, One Trust, Zendesk</span></span></span></li>
 </ul>
 
@@ -263,33 +260,3 @@ Il diagramma seguente illustra i guardrail delle prestazioni e la latenza media 
 </tr>
 </tbody>
 </table>
-
-
-
-| Metodi di acquisizione | Descrizione |
-|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Web/Mobile SDK | Latenza:<ul><li>In tempo reale - stessa raccolta pagine a [!DNL Edge Network]</li><li>Acquisizione in streaming sul profilo &lt; 15 minuti al 95° percentile</li><li>Acquisizione in streaming nel data lake (micro batch ~15 minuti)</ul>Documentazione: <ul><li>[Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=it)</li><li>[Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it)</li><li>[Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)</li><li>[Tutorial sull’implementazione di Adobe Experience Cloud nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it)</li></ul> |
-| Origini di streaming | [Origini di streaming](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it#connectors)<br>Latenza:<ul><li>In tempo reale - stessa raccolta pagine a [!DNL Edge Network]</li><li>Acquisizione in streaming nel profilo ~1 minuto</li><li>Acquisizione in streaming nel data lake (micro batch ~15 minuti)</li></ul> |
-| API di streaming | [[!DNL Edge Network] API server (preferita)](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=it) - supporta i servizi Edge, inclusa la segmentazione di Edge, e <br>[API servizio core raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/streaming/http.html?lang=it) - non supporta i servizi Edge, instrada direttamente all&#39;hub.<br>Latenza:<ul><li>In tempo reale - stessa raccolta pagine a [!DNL Edge Network]</li><li>Acquisizione in streaming nel profilo ~1 minuto</li><li>Acquisizione in streaming nel data lake (micro batch ~15 minuti)</li><li>7 GB/ora</li></ul>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=it#what-can-you-do-with-streaming-ingestion%3F) |
-| Strumenti ETL | Utilizza gli strumenti ETL per modificare e trasformare i dati aziendali prima dell&#39;acquisizione in [!DNL Experience Platform].<br><br>Latenza:<ul><li>La tempistica dipende dalla pianificazione degli strumenti ETL esterni, quindi si applicano i guardrail di acquisizione standard in base al metodo utilizzato.</li></ul> |
-| Origini batch | Recupero programmato da origini<br>Latenza: ~ 200 GB/ora<br><br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it#connectors)<br>[Tutorial video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html?lang=it) |
-| API batch | Latenza:<ul><li>Acquisizione batch nel profilo in base alle dimensioni e ai carichi di traffico ~45 minuti</li><li>Acquisizione batch nel data lake in base alle dimensioni e dal traffico</li></ul>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=it#batch) |
-| Connettori per applicazioni Adobe | Acquisizione automatica dei dati provenienti da applicazioni Adobe Experience Cloud<ul><li>Adobe Analytics: [Documentazione](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it#connectors) e [Tutorial video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)</li><li>Audience Manager: [Documentazione](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it#connectors) e [Tutorial video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html?lang=it)</li></ul> |
-
-
-## Metodi di preparazione dei dati
-
-| Metodi di preparazione dei dati | Descrizione |
-|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Strumento ETL esterno ([!DNL Snaplogic], [!DNL Mulesoft], [!DNL Informatica], ecc.) | Eseguire trasformazioni complesse negli strumenti ETL e utilizzare le API [!DNL Experience Platform] [!UICONTROL Flow Service] standard o i connettori di origine per acquisire i dati risultanti. |
-| [!UICONTROL Query Service]: preparazione dei dati | Unire, separare, fondere, trasformare, interrogare e filtrare i dati in un nuovo set di dati <br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it#sql) sull’utilizzo di Create Table as Select (CTAS) |
-| Funzioni mappatore XDM e preparazione dati (streaming e batch) | Mappa gli attributi sorgente in formato CSV o JSON negli attributi XDM durante l&#39;acquisizione di [!DNL Experience Platform].<br>Elaborare le funzioni sui dati man mano che vengono acquisiti; ovvero, formattazione dei dati, suddivisione, concatenazione e così via<br>[Documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=it) |
-
-## Articoli di blog correlati
-
-* [Utilizzo di piattaforme dati esterne in Adobe [!DNL Experience Platform] [!DNL Journey Orchestration]](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17?source=your_stories_page)
-* [Acquisizione ad alta produttività con Iceberg](https://medium.com/adobetech/high-throughput-ingestion-with-iceberg-ccf7877a413f?source=your_stories_page)
-* [Trucchi al servizio query nell&#39;Adobe [!DNL Experience Platform] (Scrittura di query e archiviazione di set di dati derivati)](https://medium.com/adobetech/query-service-tricks-in-adobe-experience-platform-writing-queries-and-storing-derived-datasets-eaee0d6d683e?source=your_stories_page)
-* [Accesso al Experience Data Model di Adobe [!DNL Experience Platform] per comprendere meglio la potenza del profilo cliente in tempo reale](https://medium.com/adobetech/digging-into-adobe-experience-platforms-experience-data-model-to-more-fully-understand-the-power-3e109271e04f?source=your_stories_page)
-* [Un&#39;analisi introduttiva dei dati esplorativi sull&#39;Adobe [!DNL Experience Platform]](https://medium.com/adobetech/an-introductory-look-at-exploratory-data-analysis-on-adobe-experience-platform-1bfce7501d9a?source=your_stories_page)
-* [Modellazione dei dati XDM per Data Science su scala su Adobe [!DNL Experience Platform]](https://medium.com/adobetech/modeling-xdm-data-for-data-science-at-scale-on-adobe-experience-platform-222bb2a6dbf7?source=your_stories_page)
