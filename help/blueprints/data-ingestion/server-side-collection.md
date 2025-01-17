@@ -22,7 +22,7 @@ Il blueprint di inoltro degli eventi mostra come i dati raccolti con Adobe [!DNL
 
 ## Applicazioni
 
-* Raccolta dati Adobe [!DNL Experience Platform]
+* Raccolta dati di Adobe [!DNL Experience Platform]
 
 ## Architettura
 
@@ -39,8 +39,8 @@ Il blueprint di inoltro degli eventi mostra come i dati raccolti con Adobe [!DNL
 * [Miglioramento delle prestazioni del sito Web con Adobe [!DNL Experience Platform] Web SDK e [!DNL Edge Network]](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
 * [Risoluzione dei problemi di implementazione con Adobe [!DNL Experience Platform] Web SDK e [!DNL Edge Network]](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 * [Adobe [!DNL Experience Platform] Web SDK per Gestione dell&#39;audience](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
-* [Adobe [!DNL Experience Platform] SDK Web - Adobe Target](https://medium.com/adobetech/adobe-experience-platform-web-sdk-adobe-target-9b9f621d271)
-* [Adobe [!DNL Experience Platform] Scenari di migrazione SDK Web per Adobe Analytics](https://medium.com/adobetech/adobe-experience-platform-web-sdk-migration-scenarios-for-adobe-analytics-91c255ec82b0)
-* [Unifica il tuo Adobe [!DNL Experience Platform] Servizi con Adobe [!DNL Experience Platform] Web SDK](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+* [Adobe [!DNL Experience Platform] Web SDK - Adobe Target](https://medium.com/adobetech/adobe-experience-platform-web-sdk-adobe-target-9b9f621d271)
+* [Adobe [!DNL Experience Platform] Scenari di migrazione a Web SDK per Adobe Analytics](https://medium.com/adobetech/adobe-experience-platform-web-sdk-migration-scenarios-for-adobe-analytics-91c255ec82b0)
+* [Unifica i servizi di Adobe [!DNL Experience Platform] con Adobe [!DNL Experience Platform] Web SDK](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
 * [Accelera lo sviluppo delle applicazioni mobili con Adobe [!DNL Experience Platform] Mobile SDK e Launch](https://medium.com/adobetech/accelerate-your-mobile-application-development-with-adobe-experience-platform-mobile-sdk-and-launch-ed023536d611)
 * [Semplificazione dei flussi di lavoro dei clienti con Adobe [!DNL Experience Platform] Web SDK](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
