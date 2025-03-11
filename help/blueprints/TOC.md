@@ -5,7 +5,7 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: ec6778d0b3cd37442be2731cafba26388e4355ea
+source-git-commit: bb3d3ec11809dceb9ecf46561b608e22bff855b9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 53%
@@ -25,13 +25,13 @@ ht-degree: 53%
       + [SDK delle applicazioni](/help/blueprints/experience-platform/deployment/appsdk.md)
       + [Guardrail](/help/blueprints/experience-platform/deployment/guardrails.md)
 + Attivazione in base a pubblico e profili {#audience-activation}
-   + [Audience Manager](/help/blueprints/audience-activation/audience_manager.md)
+   + [Audience Manager](/help/blueprints/audience-activation/audience-manager.md)
    + Real-time Customer Data Platform (RTCDP) {#known-customer-audience-activation}
       + [Attivazione a canali social e pubblicitari](/help/blueprints/audience-activation/advertising-activation.md)
       + [Attivazione per destinazioni di streaming aziendali e su file](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [Hub attività cliente](/help/blueprints/audience-activation/customer-activity.md)
-      + [Target e RTCDP](/help/blueprints/audience-activation/rtcdp-target.md)
       + [Corrispondenza segmento](/help/blueprints/audience-activation/segment-match.md)
+      + [Target e RTCDP](/help/blueprints/audience-activation/rtcdp-target.md)
 + Attivazione e marketing B2B {#b2b-activation}
    + [Panoramica](/help/blueprints/b2b/overview.md)
    + [Attivazione B2B](/help/blueprints/b2b/b2bactivation.md)
