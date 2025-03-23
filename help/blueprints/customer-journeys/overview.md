@@ -1,11 +1,9 @@
 ---
 title: Blueprint per customer journey
 description: Offri esperienze individuali e just-in-time ai clienti su più schermi.
-solution: Journey Optimizer, Campaign, Campaign v8 Client Console, Campaign v8 Web User Interface, Campaign Classic v7, Campaign Standard, Experience Platform
-kt: null
-thumbnail: null
+solution: Journey Optimizer, Campaign, Experience Platform
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: a1f3aef5b508575019bd651b9706efc7d6db5306
+source-git-commit: 1d10727899aaae6b8cd339ce10d2a520c73bdaa2
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 67%
@@ -18,9 +16,9 @@ I Percorsi di clienti si occupano della capacità dei brand di interagire e comu
 
 Gli strumenti di orchestrazione possono anche essere integrati con altri canali di interazione, ad esempio con i canali in entrata, per la personalizzazione su web e dispositivi mobili condividendo lo stato del pubblico con i motori di decisione degli altri canali. Vari fattori determinano quali applicazioni e opzioni di implementazione utilizzare per i customer journey, ma possono essere riassunti in due approcci diversi: reagire al momento del coinvolgimento di un cliente (attivato) OPPURE reagire al coinvolgimento di un gruppo di clienti (pianificato).
 
-Oggi esistono due opzioni, ad Adobe, tra cui i clienti possono scegliere quando desiderano una soluzione di Percorso:
+Oggi Adobe offre ai clienti due opzioni tra cui scegliere quando desiderano una soluzione di Percorso:
 
-<ul><li>Adobe [!DNL Campaign] Cloud Service gestiti</li><li>Adobe Journey Optimizer</li></ul>
+<ul><li>Adobe [!DNL Campaign] Managed Cloud Services</li><li>Adobe Journey Optimizer</li></ul>
 
 | Blueprint | Descrizione | Architettura |
 |---|---|---|
