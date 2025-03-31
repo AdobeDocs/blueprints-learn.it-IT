@@ -1,20 +1,20 @@
 ---
-title: Diagrammi di architettura di applicazioni e Experienci Platform (AEP)
-description: Visualizzare diagrammi di architettura che mostrano la correlazione di Adobe Experience Platform (AEP) con altre applicazioni e servizi applicativi di Experience Cloud.
+title: Diagrammi dell’architettura di Experience Platform (AEP) e applicazioni
+description: Visualizzare diagrammi dell’architettura che mostrano il rapporto tra Adobe Experience Platform (AEP) e altre applicazioni e servizi applicativi di Experience Cloud.
 solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 9fe44d93dcc05711c77ce1325b6549bb6c27a860
+source-git-commit: 495a2480828e2c6b4caa41226f4fe67437b081c1
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 89%
+source-wordcount: '551'
+ht-degree: 10%
 
 ---
 
 # Diagrammi di architettura di Adobe Experience Platform e applicazioni
 
-Questi diagrammi dell’architettura mostrano la correlazione di Experience Platform (AEP) con altre applicazioni e servizi applicativi Experience Cloud.
+Questi diagrammi dell’architettura mostrano le relazioni di Experience Platform (AEP) con altre applicazioni e servizi applicativi di Experience Cloud.
 
 >[!MORELIKETHIS]
 >
@@ -39,241 +39,17 @@ Questo diagramma di architettura mostra come Adobe Experience Platform si correl
 
 ## Integrazioni di applicazioni AEP e Experience Cloud
 
-<table class="relative-table wrapped" style="width: 100%;">
-<colgroup>
-<col style="width: 16.0202%;" />
-<col style="width: 29.3423%;" />
-<col style="width: 33.5582%;" />
-<col style="width: 21.0793%;" />
-</colgroup>
-<tbody>
-<tr>
-<th>Applicazione</th>
-<th>Da Experience Platform all’applicazione</th>
-<th>Dall’applicazione a Experience Platform</th>
-<th>Blueprint correlati</th>
-</tr>
-<tr>
-<td colspan="1">Ad Cloud</td>
-<td colspan="1">
-<ul>
-<li>I tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Ad Cloud per il targeting tramite Audience Manager.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>Nessuna integrazione corrente</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=it">Attivazione del pubblico con dati anonimi</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Analytics</td>
-<td>
-<ul>
-<li>I dati raccolti tramite Web/Mobile SDK possono essere inoltrati ad Adobe Analytics.</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>I dati raccolti da Analytics possono essere inviati al data lake Experience Platform e all’archivio dei profili. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it">Connettore dati per Analytics</a></li>
-</ul>
-</td>
-<td>
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-data-flow.html?lang=it">Flussi di dati in Experience Platform</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Audience Manager</td>
-<td>
-<ul>
-<li>I tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Audience Manager per l’attivazione a destinazioni di cookie di terze parti.</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>I dati raccolti e valutati per l’appartenenza al pubblico da Audience Manager possono essere condivisi con l’archivio dei profili e il data lake di Experience Platform. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it">Connettore origine per Audience Manager</a></li>
-</ul>
-</td>
-<td>
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=it">Attivazione del pubblico con dati anonimi</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="1">Campaign Classic</td>
-<td colspan="1">
-<ul>
-<li>I tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Campaign Classic e utilizzati come pubblico per avviare campagne.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>I dati di interazione e campagna raccolti da Campaign possono essere acquisiti in Experience Platform come origine dati per essere poi utilizzati nella creazione del pubblico tramite Real-time Customer Data Platform e nell’analisi tramite Customer Journey Analytics ed Experience Platform Query Service.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html?lang=it">Customer journey</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="1">Campaign Standard</td>
-<td colspan="1">
-<ul>
-<li>I tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Campaign Standard e utilizzati come pubblico per avviare campagne.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>I dati di interazione e campagna raccolti da Campaign possono essere acquisiti in Experience Platform come origine dati per essere poi utilizzati nella creazione del pubblico tramite Real-time Customer Data Platform e nell’analisi tramite Customer Journey Analytics ed Experience Platform Query Service.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html?lang=it">Customer journey</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="1">Customer Journey Analytics</td>
-<td colspan="1">
-<ul>
-<li>I dati raccolti e acquisiti nel data lake Experience Platform sono disponibili per l’elaborazione in Customer Journey Analytics. </li>
-<li>I dati di profilo e pubblico da Real-time Customer Data Platform possono essere acquisiti in CJA. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=it">Integrazione tra RTCDP e CJA</a>.
-</li>
-</ul>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>Crea il pubblico in Customer Journey Analytics e condividi i risultati del pubblico in Real-time Customer Data Platform. <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it">Pubblicazione del pubblico da CJA</a></li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=it">Customer Journey Analytics</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="1">Experience Manager</td>
-<td colspan="1">
-<ul>
-<li>Il profilo di Experience Platform è accessibile direttamente dal lato server per il potenziamento di esperienze personalizzate distribuite tramite Experience Manager. Le attività di personalizzazione vengono generalmente distribuite tramite Experience Manager grazie all’integrazione di Target. </li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>L’integrazione, i comportamenti e le interazioni correnti eseguiti sui siti di Experience Manager non vengono raccolti direttamente tramite l’SDK per web e dispositivi mobili di Experience Platform.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="1">Journey Optimizer</td>
-<td colspan="1">
-<ul>
-<li>Gli eventi dati e i profili acquisiti in Experience Platform sono resi disponibili a Journey Optimizer per avviare e alimentare i percorsi.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>I dati di interazione e campagna prodotti da Journey Optimizer possono essere acquisiti in Experience Platform per essere poi utilizzati nella creazione del pubblico tramite Real-time Customer Data Platform e nell’analisi tramite Customer Journey Analytics ed Experience Platform Query Service.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=it">Journey Optimizer</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="1">Adobe Commerce</td>
-<td colspan="1">
-<ul>
-<li>I profili e i tipi di pubblico incorporati in Real-time Customer Data Platform possono essere resi disponibili per la personalizzazione in Adobe Commerce. </li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>I dati nativi di Adobe Commerce possono essere inviati ad Experience Platform tramite un connettore di origine di Adobe Commerce. </li>
-</ul>
-</td>
-<td colspan="1">Nessuna integrazione corrente</td>
-</tr>
-<tr>
-<td colspan="1">Marketo</td>
-<td colspan="1">
-<ul>
-<li>I tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Marketo come audience per avviare campagne e aggiornare oggetti Marketo.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>Gli account Marketo e i relativi contatti e dati sulle opportunità, insieme ai dati di interazione e campagna prodotti da Marketo, vengono acquisiti in Experience Platform e possono poi essere usati per creare il pubblico tramite B2B-CDP e nell’analisi tramite Customer Journey Analytics ed Experience Platform Query Service. <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it">Connettore per Marketo Engage</a></li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=it">Blueprint per l’attivazione B2B</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="1">Real-Time CDP</td>
-<td colspan="1">
-<ul>
-<li>I dati acquisiti e raccolti in Experience Platform vengono usati come origine dati per assemblare i profili cliente in tempo reale che alimentano Real-time Customer Data Platform.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>Le metriche Pubblico e Profilo vengono inviate al data lake di Experience Platform per abilitare le dashboard di reportistica con informazioni approfondite sui profili.</li>
-<li>I dati Pubblico e Profilo nel data lake possono essere utilizzati per ulteriori approfondimenti tramite Query Service e Customer Journey Analytics.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="1">Target</td>
-<td colspan="1">
-<ul>
-<li>Gli attributi di pubblico e profili definiti in Real-time Customer Data Platform possono essere condivisi con Target e utilizzati nelle esperienze di personalizzazione e targeting fornite da Target.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li>I dati raccolti per le esperienze e le interazioni Target possono essere raccolti in Experience Platform tramite Experience Platform Web/Mobile SDK. Questi dati possono essere utilizzati nella creazione del pubblico tramite Real-time Customer Data Platform e per l’analisi tramite Customer Journey Analytics ed Experience Platform Query Service.</li>
-</ul>
-</td>
-<td colspan="1">
-<ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=it">Attivazione dei clienti noti</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=it">Attivazione con Experience Platform e applicazioni correlate</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+| Applicazione | Da Experience Platform all’applicazione | Dall’applicazione a Experience Platform |
+|------------------------------|-----------------------------------|-----------------------------------|
+| **Ad Cloud** | : i tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Ad Cloud per il targeting tramite Audience Manager. | - Nessuna integrazione corrente |
+| **Analytics** | - I dati raccolti tramite Web/Mobile SDK possono essere inoltrati ad Adobe Analytics. | - I dati raccolti da Analytics possono essere inviati al data lake di Experience Platform e all’archivio profili. [Connettore dati di Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it) |
+| **Audience Manager** | : i tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Audience Manager per l’attivazione su destinazioni di cookie di terze parti. | : i dati raccolti e valutati insieme all’iscrizione al pubblico da Audience Manager possono essere condivisi con il data lake di Experience Platform e l’archivio profili. [Connettore origini di Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it) |
+| **Adobe Campaign** | - I tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Campaign Classic per avviare le campagne. | : i dati di interazione e campagna raccolti da Campaign possono essere acquisiti in Experience Platform per un ulteriore utilizzo in audience building, Customer Journey Analytics e Query Service. |
+| **Campaign Standard** | - I tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Campaign Standard per avviare le campagne. | - I dati di interazione e campagna raccolti da Campaign possono essere acquisiti in Experience Platform per un ulteriore utilizzo. |
+| **Customer Journey Analytics** | : i dati raccolti e acquisiti nel data lake di Experience Platform sono disponibili per l’elaborazione in Customer Journey Analytics. <br> - I dati di profilo e pubblico da Real-time Customer Data Platform possono essere acquisiti in CJA. [Integrazione tra RTCDP e CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=it) | : crea tipi di pubblico in CJA e condividi i risultati del pubblico su Real-time Customer Data Platform. [Pubblicazione del pubblico da CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it) |
+| **Experience Manager** | : è possibile accedere al profilo Experience Platform lato server per sviluppare esperienze personalizzate in Experience Manager. | - Nessuna integrazione corrente, le interazioni eseguite sui siti Experience Manager vengono raccolte tramite Experience Platform Web e Mobile SDK. |
+| **Journey Optimizer** | : i dati, gli eventi e i profili acquisiti in Experience Platform vengono resi disponibili a Journey Optimizer. | - I dati di interazione e campagna prodotti da Journey Optimizer vengono raccolti in Experience Platform per un ulteriore utilizzo. |
+| **Adobe Commerce** | : profili e tipi di pubblico incorporati in Real-time Customer Data Platform possono essere utilizzati per la personalizzazione in Adobe Commerce. | - I dati nativi di Adobe Commerce possono essere inviati ad Experience Platform tramite un connettore di origine di Adobe Commerce. |
+| **Marketo** | - I tipi di pubblico definiti in Real-time Customer Data Platform possono essere condivisi con Marketo per avviare campagne e aggiornare oggetti. | : gli account, i contatti e i dati della campagna di Marketo vengono acquisiti in Experience Platform per ulteriori analisi. [Connettore Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it) |
+| **Real-Time CDP** | - I dati acquisiti in Experience Platform sono la fonte dei profili cliente in tempo reale che alimentano Real-time Customer Data Platform. | : le metriche di pubblico e profilo vengono inviate al data lake di Experience Platform per ottenere informazioni approfondite. |
+| **Target** | - I tipi di pubblico e gli attributi del profilo da Real-time Customer Data Platform possono essere condivisi con Target per la personalizzazione. | - I dati raccolti per le esperienze Target possono essere inviati ad Experience Platform per la creazione e l’analisi del pubblico. |
