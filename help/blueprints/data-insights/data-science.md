@@ -33,9 +33,9 @@ Le informazioni modellate possono essere acquisite in [!DNL Experience Platform]
 
 ## Fasi di implementazione
 
-1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
+1. [Creare schemi](https://experienceleague.adobe.com/?lang=it&recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
-1. [Acquisire dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in [!DNL Experience Platform].
+1. [Acquisire dati](https://experienceleague.adobe.com/?lang=it&recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in [!DNL Experience Platform].
 
 Per i risultati del modello da acquisire nel profilo cliente in tempo reale, assicurati di effettuare le seguenti operazioni prima di acquisire i dati:
 

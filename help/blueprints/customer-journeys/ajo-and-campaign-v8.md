@@ -40,9 +40,9 @@ Esamina i seguenti prerequisiti per ciascuna applicazione.
 
 ## Guardrail
 
-* [Limitazioni del prodotto Journey Optimizer Guardrail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+* [Limitazioni del prodotto Journey Optimizer Guardrail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
 
-* [Guardrail e indicazioni sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+* [Guardrail e indicazioni sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=it)
 
 ## Fasi di implementazione
 
@@ -52,7 +52,7 @@ Segui le implementazioni per ciascuna applicazione descritta di seguito.
 
 #### Schema/set di dati
 
-1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
+1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?lang=it&recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
 1. (Facoltativo) Crea schemi basati su classi Experience Event per le tabelle Adobe Campaign broadLog, trackingLog e indirizzi non consegnabili.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
 1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
@@ -68,7 +68,7 @@ Segui le implementazioni per ciascuna applicazione descritta di seguito.
 
 #### Origini/destinazioni
 
-1. [Acquisisci dati in [!DNL Experience Platform]](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origine.
+1. [Acquisisci dati in [!DNL Experience Platform]](https://experienceleague.adobe.com/?lang=it&recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origine.
 
 ### Blueprint per  
 
