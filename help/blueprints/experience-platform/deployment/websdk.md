@@ -1,23 +1,23 @@
 ---
-title: Web/Mobile SDK, [!DNL Edge Network] Diagramma dell'architettura di distribuzione
+title: SDK Web/Mobile, [!DNL Edge Network] Diagramma dell'architettura di distribuzione
 description: Questo blueprint mostra l'architettura e l'acquisizione tramite Experience Platform Web e Mobile SDK e  [!DNL Edge Network]
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: adddd4105afc68379116d8d7208160689ee52c1d
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
 
 # Experience Platform Web SDK e diagramma dell&#39;architettura [!DNL Edge Network]
 
-Per una panoramica e dettagli sull&#39;SDK Web e Mobile e sull&#39;API server [!DNL Edge Network], vedere quanto segue.
+Per una panoramica e dettagli sul Web e sul SDK mobile e sull&#39;API server [!DNL Edge Network], vedere quanto segue.
 
-* [Panoramica di Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=it)
+* [Panoramica di Web SDK](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-overview/deployment/websdk)
 * [Panoramica di Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
 * [[!DNL Edge Network] API server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
 
