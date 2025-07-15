@@ -4,9 +4,9 @@ description: Offri a un pubblico basato su account esperienze personalizzate sec
 solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: 3dfdb1a237995e7f17e280e24f8865e992d9eb5f
+source-git-commit: 70816df06ec2dff5c3a4a94a8be701cb25e6f783
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '898'
 ht-degree: 52%
 
 ---
@@ -27,8 +27,8 @@ Associa a un singolo cliente le informazioni relative all’account, alle opport
 
 ## Modelli di integrazione
 
-* Origini dati B2B (Marketo, Salesforce, ecc.) -> Edizione B2B Real-time Customer Data Platform -> Destinazioni
-* È possibile utilizzare diverse origini di dati B2B per mappare i dati di account, lead, opportunità e persone all’edizione B2B di Real-time Customer Data Platform.
+* Origini dati B2B (Marketo, Salesforce, ecc.) -> Real-time Customer Data Platform B2B edition -> Destinazioni
+* È possibile utilizzare diverse origini dati B2B per mappare i dati di account, lead, opportunità e persone su B2B edition di Real-time Customer Data Platform.
 
 ## Architettura
 
@@ -65,17 +65,17 @@ Di seguito sono descritti i pattern supportati per la mappatura delle istanze di
 #### Connettore tra Experience Platform e origine Marketo Engage:
 
 * Il recupero di dati storici può richiedere fino a 7 giorni, a seconda del volume di dati.
-* Gli aggiornamenti e le modifiche continui dei dati da Marketo vengono inviati ad Experience Platform tramite API di streaming che possono essere latenti fino a circa 10 minuti al profilo e possono richiedere fino a 60 minuti al data lake a seconda del volume.
+* Gli aggiornamenti e le modifiche continui dei dati da Marketo vengono inviati ad Experience Platform tramite API di streaming che possono essere latenti fino a circa 10 minuti nel profilo e possono richiedere fino a 60 minuti nel data lake, a seconda del volume.
 
 #### Connettore tra Experience Platform e destinazione Marketo:
 
-* La condivisione dei segmenti di streaming da Real-time Customer Data Platform al Marketo Engage può richiedere fino a 15 minuti. Il backfill di profili già esistenti nel segmento prima dell’attivazione per la prima volta può richiedere fino a 24 ore.
+* La condivisione dei segmenti in streaming da Real-time Customer Data Platform a Marketo Engage può richiedere fino a 15 minuti dopo la valutazione dei segmenti. Il backfill di profili già esistenti nel segmento prima dell’attivazione per la prima volta può richiedere fino a 24 ore.
 * La segmentazione in batch viene condivisa una volta al giorno in base al programma di segmentazione di Experience Platform. I segmenti B2B che utilizzano relazioni tra più entità, ad esempio i segmenti che utilizzano dati negli oggetti account e opportunità, vengono sempre eseguiti in modalità batch.
 
 #### Guardrail per Marketo Engage:
 
 * I contatti e i lead devono essere acquisiti e definiti direttamente in Marketo Engage affinché il pubblico Real-time Customer Data Platform possa essere associato a un contatto e un lead di Marketo Engage.
-* La destinazione Marketo RTCDP può facoltativamente creare nuovi lead in Marketo per i clienti che fanno parte di un segmento ma che non esistono in Marketo.
+* La destinazione RTCDP Marketo può facoltativamente creare nuovi lead in Marketo per i clienti che si trovano in un segmento ma non esistono in Marketo.
 
 #### Guardrail per destinazione
 
@@ -93,14 +93,14 @@ Sono disponibili due modelli di implementazione: per acquisire dati e profili B2
 Considerazioni chiavi e configurazioni del blueprint.
 
 * Integrazione CRM con e senza Marketo:
-Se l’implementazione utilizza il Marketo Engage come origine e il Marketo Engage è connesso al sistema di gestione delle relazioni con i clienti, i dati del sistema di gestione delle relazioni con i clienti passeranno automaticamente attraverso la stessa connessione, eliminando la necessità di connettere il sistema di gestione delle relazioni con i clienti direttamente a Platform, a meno che non vi siano oggetti di dati di gestione delle relazioni con i clienti aggiuntivi che non siano passati tramite Marketo. Se dovranno essere acquisite altre tabelle di dati, utilizza il connettore di origine Experience Platform. Se l’implementazione non utilizzerà il Marketo Engage come origine, connetti l’origine del sistema di gestione delle relazioni con i clienti direttamente a Platform utilizzando il connettore di Experience Platform dell’origine del sistema di gestione delle relazioni con i clienti.
-* Il connettore di destinazione del Marketo Engage per Platform, che invia i tipi di pubblico al Marketo Engage per l’attivazione, condivide i membri del pubblico in base agli indirizzi e-mail e agli ECID corrispondenti. Se il contatto non esiste già, è possibile creare un nuovo lead. Durante la creazione di un nuovo lead, è possibile mappare fino a 50 attributi di profilo (non array o attributi di mappa) nel Real-time Customer Data Platform sui campi Persona in Marketo.
+Se l’implementazione utilizza Marketo Engage come origine e Marketo Engage è connesso al sistema di gestione delle relazioni con i clienti, i dati del sistema di gestione delle relazioni con i clienti passeranno automaticamente attraverso la stessa connessione, eliminando la necessità di collegare il sistema di gestione delle relazioni con i clienti direttamente a Platform, a meno che non vi siano oggetti di dati di gestione delle relazioni con i clienti aggiuntivi che non vengono passati tramite Marketo. Se dovranno essere acquisite altre tabelle di dati, utilizza il connettore di origine Experience Platform. Se l’implementazione non utilizza Marketo Engage come origine, connetti l’origine del sistema di gestione delle relazioni con i clienti direttamente a Platform utilizzando il connettore Experience Platform di origine del sistema di gestione delle relazioni con i clienti.
+* Il connettore di destinazione Marketo Engage per Platform, che invia i tipi di pubblico a Marketo Engage per l’attivazione, condivide i membri del pubblico in base agli indirizzi e-mail e agli ECID corrispondenti. Se il contatto non esiste già, è possibile creare un nuovo lead. Durante la creazione di un nuovo lead, è possibile mappare fino a 50 attributi di profilo (non array o attributi di mappa) in Real-time Customer Data Platform sui campi Persona in Marketo.
 
 ## Documentazione correlata
 
 * [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it)
-* [Guida introduttiva all&#39;edizione B2B di Real-time Customer Data Platform](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
-* [Guardrail per Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
+* [Guida introduttiva di Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
+* [Guardrail per Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=it)
 * [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it)
