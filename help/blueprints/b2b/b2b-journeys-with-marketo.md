@@ -121,7 +121,7 @@ Questa query restituisce il numero di record persona che verranno uniti come par
 >[!NOTE]
 >
 >La tabella di set di dati marketo_person_ajo_b2b viene utilizzata per fornire un esempio completo di come lavorare con il set di dati Marketo Person.
->>Puoi trovare il set di dati della sandbox nell&#39;area di lavoro [Set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
+>&#x200B;>Puoi trovare il set di dati della sandbox nell&#39;area di lavoro [Set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
 
 ```sql
 select
