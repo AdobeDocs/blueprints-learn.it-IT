@@ -18,7 +18,7 @@ Questi diagrammi dell’architettura mostrano le relazioni di Experience Platfor
 
 >[!MORELIKETHIS]
 >
->[Configurazioni di integrazione per le integrazioni di applicazioni Experience Cloud](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/overview.html?lang=en).
+>[Configurazioni di integrazione per le integrazioni di applicazioni Experience Cloud](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/overview.html?lang=it).
 
 
 ## Diagramma dell’architettura

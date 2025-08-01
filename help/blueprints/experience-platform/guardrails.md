@@ -21,7 +21,7 @@ I guardrail riflettono i vincoli di sistema, le latenze previste e le aspettativ
 | Tipo di guardrail | Descrizione |
 |---|---|
 | Guardrail delle prestazioni (limite morbido) | I guardrail delle prestazioni sono limiti di utilizzo che si riferiscono all’ambito dei casi d’uso e delineano le prestazioni previste in condizioni normali. Quando viene superato, è possibile che si verifichi un peggioramento delle prestazioni e della latenza. I guardrail delle prestazioni sono documentati nei documenti di Experience League nelle sezioni di guardrail per ciascuna soluzione come descritto di seguito. |
-| Limite statico (limite rigido) | Si tratta di limiti applicati dal sistema che non possono essere superati. I limiti statici sono in genere associati contrattualmente e delineati nel contratto del cliente e nelle [descrizioni prodotto](https://helpx.adobe.com/legal/product-descriptions.html). |
+| Limite statico (limite rigido) | Si tratta di limiti applicati dal sistema che non possono essere superati. I limiti statici sono in genere associati contrattualmente e delineati nel contratto del cliente e nelle [descrizioni prodotto](https://helpx.adobe.com/it/legal/product-descriptions.html). |
 
 >[!NOTE]
 >
@@ -37,15 +37,15 @@ Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni
 
 **Applicazioni Experience Platform**
 
-* [Panoramica sui guardrail di Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html)
-* [Guardrail di condivisione del pubblico Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
-* [guardrail di acquisizione dati di Customer Journey Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
-* [Guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html)
+* [Panoramica sui guardrail di Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html?lang=it)
+* [Guardrail di condivisione del pubblico Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it#latency)
+* [guardrail di acquisizione dati di Customer Journey Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
+* [Guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=it)
 
 **Servizi Experience Platform**
 
-* [Guardrail per l’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
-* [[!DNL Edge Network] Guardrail API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [Guardrail per l’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
+* [[!DNL Edge Network] Guardrail API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=it)
 * [Guardrail di segmentazione e profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [Guardrail per il servizio Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=it)
 * [Guardrail per il servizio Query](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
