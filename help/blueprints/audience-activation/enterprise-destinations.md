@@ -4,7 +4,7 @@ description: Attivazione in base a pubblico e profili con destinazioni verso sol
 solution: Real-Time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
-source-git-commit: 495a2480828e2c6b4caa41226f4fe67437b081c1
+source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 80%
@@ -29,8 +29,8 @@ Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!
 
 ## Documentazione correlata
 
-Ulteriori dettagli sulla configurazione dell&#39;archiviazione cloud e delle destinazioni Enterprise sono disponibili nella [documentazione sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/overview).
+Ulteriori dettagli sulla configurazione dell&#39;archiviazione cloud e delle destinazioni Enterprise sono disponibili nella [documentazione sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/overview).
 
 ## Guardrail
 
-[Consulta i guardrail come descritto nella pagina guardrail.](../experience-platform/deployment/guardrails.md)
+[Consulta i guardrail come descritto nella pagina guardrail.](../experience-platform/guardrails.md)

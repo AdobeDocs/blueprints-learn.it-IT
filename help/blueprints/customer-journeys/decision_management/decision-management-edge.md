@@ -3,7 +3,7 @@ title: Blueprint per la gestione delle decisioni tramite rete Edge
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, incluse le esperienze web e mobili in tempo reale.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: f6c4a0f39acdc177ac23c4314d2f50f793cbf270
+source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 68%
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 [!DNL Decision Management] può essere distribuito in due modi. Il primo avviene tramite l&#39;hub [!DNL Experience Platform], che è un&#39;architettura di un singolo centro dati. Con questo approccio mediante “hub”, le offerte vengono eseguite, personalizzate e distribuite con una latenza di pochi secondi. Pertanto, l’architettura con hub è più adatta per esperienze del cliente che non richiedono latenze inferiori al secondo, ad esempio per decisioni di offerta destinate a chioschi o esperienze assistite da agenti, come call center o interazioni con persone.
 
-Il secondo approccio è tramite l&#39;Experience Platform [!DNL Edge Network], che è un&#39;infrastruttura distribuita a livello globale e situata geograficamente per fornire esperienze veloci di secondo e millisecondo. L’esperienza del consumatore finale eseguita dall’infrastruttura Edge più vicina alla geolocalizzazione dei consumatori per ridurre al minimo la latenza. [!DNL Decision Management] su Edge è progettato per offrire ai clienti esperienze in tempo reale. comprese le richieste di personalizzazione in entrata per web e dispositivi mobili.
+Il secondo approccio è tramite Experience Platform [!DNL Edge Network], che è un&#39;infrastruttura distribuita a livello globale e geograficamente posizionata per fornire esperienze veloci di secondi secondari e millisecondi. L’esperienza del consumatore finale eseguita dall’infrastruttura Edge più vicina alla geolocalizzazione dei consumatori per ridurre al minimo la latenza. [!DNL Decision Management] su Edge è progettato per offrire ai clienti esperienze in tempo reale. comprese le richieste di personalizzazione in entrata per web e dispositivi mobili.
 
 Questo blueprint tratta le specifiche di Gestione delle decisioni sulla rete Edge.
 
@@ -48,7 +48,7 @@ Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il 
 
 * Per i guardrail relativi a Gestione delle decisioni, fai riferimento alla [Descrizione del prodotto Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html).
 
-[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=it)
+[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## Documentazione correlata
 

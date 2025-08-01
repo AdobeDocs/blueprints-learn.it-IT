@@ -3,7 +3,7 @@ title: Blueprint per Journey Optimizer con Adobe Campaign v7
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign per inviare messaggi in modo nativo utilizzando il server di messaggistica in tempo reale in Campaign.
 solution: Journey Optimizer, Campaign, Campaign Classic v7, Campaign Standard
 exl-id: 6d9bc65c-cca0-453f-8106-d2895d005ada
-source-git-commit: 7547cdc57e50d63f4a7949c00a77b82c86da831e
+source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 97%
@@ -43,9 +43,9 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 
 ## Guardrail
 
-[Link al prodotto per i guardrail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
+[Link al prodotto per i guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
-[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=it)
+[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## Fasi di implementazione
 
@@ -53,7 +53,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 
 #### Schema/set di dati
 
-1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?lang=it&recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) in Experience Platform, in base ai dati forniti dal cliente
+1. [Configurare singoli schemi di profilo, di esperienza e di entità multiple](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&lang=it) in Experience Platform, in base ai dati forniti dal cliente
 1. Creare schemi basati su classi di eventi Experience per broadLog, trackingLog e le tabelle di Adobe Campaign degli indirizzi a cui non possono essere consegnati i messaggi (facoltativo).
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) in Experience Platform per i dati da acquisire.
 1. [Aggiungere etichette di utilizzo dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=it) ai set di dati in Experience Platform a scopo di governance.
@@ -69,7 +69,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 
 #### Origini/destinazioni
 
-1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?lang=it&recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) utilizzando API di streaming e connettori di origini.
+1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=it) utilizzando API di streaming e connettori di origini.
 
 ### Journey Optimizer
 

@@ -3,16 +3,16 @@ title: '[!DNL Journey Optimizer] - Messaggistica attivata e blueprint Adobe Expe
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
+source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 53%
+source-wordcount: '521'
+ht-degree: 50%
 
 ---
 
 # [!DNL Journey Optimizer] blueprint
 
-Adobe [!DNL Journey Optimizer] è un sistema appositamente progettato per consentire ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli ovunque si trovino. Le funzionalità di gestione dei dati sono state spostate nell&#39;Adobe [!DNL Experience Platform], consentendo ai team di marketing di concentrarsi su ciò che fanno meglio: ovvero la creazione di conversazioni personalizzate e di percorso di clienti di altissimo livello.
+Adobe [!DNL Journey Optimizer] è un sistema appositamente progettato per consentire ai team di marketing di reagire in tempo reale ai comportamenti dei clienti e di incontrarli ovunque si trovino. Le funzionalità di gestione dei dati sono state spostate in Adobe [!DNL Experience Platform], consentendo ai team di marketing di concentrarsi su ciò che fanno meglio: ovvero la creazione di conversazioni personalizzate e di percorso di clienti di altissimo livello.
 
 Questo blueprint illustra le funzionalità tecniche dell&#39;applicazione e fornisce informazioni approfondite sui vari componenti dell&#39;architettura che compongono [!DNL Journey Optimizer].
 
@@ -33,7 +33,7 @@ Questo blueprint illustra le funzionalità tecniche dell&#39;applicazione e forn
 
 | Scenario | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
-| [Messaggistica di terze parti](3rd-party-messaging.md) | Dimostra come Adobe [!DNL Journey Optimizer] può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate | Invia ai clienti comunicazioni 1:1 personalizzate sul momento mentre interagiscono con il tuo brand o la tua azienda.<br><br>Considerazioni:<br><ul><li>Il sistema di terze parti deve supportare i bearer token per l’autenticazione.</li><li>Gli IP statici non sono supportati, a causa dell’architettura multi-tenant.</li><li>Considera i vincoli dell’architettura del sistema di terze parti in termini di chiamate API al secondo. Potrebbe essere necessario che il cliente acquisti un volume aggiuntivo dal fornitore di terze parti per supportare il volume proveniente da [!DNL Journey Optimizer]</li><li>La funzionalità Gestione delle decisioni non è supportata nei messaggi o nei payload.</li></ul> |
+| [Messaggistica di terze parti](3rd-party-messaging.md) | Mostra come Adobe [!DNL Journey Optimizer] può essere utilizzato con sistemi di messaggistica di terze parti per orchestrare e inviare comunicazioni personalizzate | Consegna 1:1 nel momento in cui le comunicazioni personalizzate ai clienti interagiscono con il tuo marchio o la tua azienda<br><br>Considerazioni:<br><ul><li>Il sistema di terze parti deve supportare i bearer token per l’autenticazione.</li><li>Gli IP statici non sono supportati, a causa dell’architettura multi-tenant.</li><li>Considera i vincoli dell’architettura del sistema di terze parti in termini di chiamate API al secondo. Potrebbe essere necessario che il cliente acquisti un volume aggiuntivo dal fornitore di terze parti per supportare il volume proveniente da [!DNL Journey Optimizer]</li><li>La funzionalità Gestione delle decisioni non è supportata nei messaggi o nei payload.</li></ul> |
 
 <br>
 
@@ -41,7 +41,7 @@ Questo blueprint illustra le funzionalità tecniche dell&#39;applicazione e forn
 
 | Integrazione | Descrizione | Funzionalità |
 | :-- | :--- | :--- |
-| [[!DNL Journey Optimizer] con Adobe Campaign](ajo-and-campaign.md) | Mostra come utilizzare Adobe [!DNL Journey Optimizer] per orchestrare esperienze 1:1 utilizzando Real-Time Customer Profile e come sfruttare il sistema nativo di messaggistica transazionale di Adobe Campaign per inviare il messaggio | Sfrutta il profilo cliente in tempo reale e la potenza di [!DNL Journey Optimizer] per orchestrare le esperienze del momento utilizzando le funzionalità native di messaggistica in tempo reale di Adobe Campaign per effettuare la comunicazione dell&#39;ultimo miglio<br><br>Considerazioni:<br><ul><li>La versione dell’applicazione Campaign deve essere v7 build >21.1 oppure v8</li><li>Velocità della messaggistica</li><ul><li>Campaign v7: fino a 50.000 all’ora</li><li>Campaign v8: fino a 1 milione all’ora</li><li>Campaign Standard: fino a 50.000 all’ora</li></ul><li>Non viene applicata alcuna limitazione; pertanto i casi d’uso devono superare una verifica tecnica da parte di un Enterprise Architect.</li><li>Non è supportato l’utilizzo di Gestione delle decisioni nei messaggi inviati da Campaign.</li></ul> |
+| [[!DNL Journey Optimizer] con Adobe Campaign](ajo-and-campaign.md) | Mostra come utilizzare Adobe [!DNL Journey Optimizer] per orchestrare 1:1 esperienze utilizzando Real-Time Customer Profile e come sfruttare il sistema nativo di messaggistica transazionale Adobe Campaign per inviare il messaggio | Sfrutta il profilo cliente in tempo reale e la potenza di [!DNL Journey Optimizer] per orchestrare le esperienze del momento utilizzando le funzionalità native di messaggistica in tempo reale di Adobe Campaign per effettuare la comunicazione dell&#39;ultimo miglio<br><br>Considerazioni:<br><ul><li>La versione dell’applicazione Campaign deve essere v7 build >21.1 oppure v8</li><li>Velocità della messaggistica</li><ul><li>Campaign v7: fino a 50.000 all’ora</li><li>Campaign v8: fino a 1 milione all’ora</li><li>Campaign Standard: fino a 50.000 all’ora</li></ul><li>Non viene applicata alcuna limitazione; pertanto i casi d’uso devono superare una verifica tecnica da parte di un Enterprise Architect.</li><li>Non è supportato l’utilizzo di Gestione delle decisioni nei messaggi inviati da Campaign.</li></ul> |
 
 <br>
 
@@ -66,9 +66,9 @@ Push mobile:
 
 ## Guardrail
 
-[[!DNL Journey Optimizer] Collegamento prodotto guardrail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
+[[!DNL Journey Optimizer] Collegamento prodotto guardrail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
-[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=it)
+[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## Documentazione correlata
 
