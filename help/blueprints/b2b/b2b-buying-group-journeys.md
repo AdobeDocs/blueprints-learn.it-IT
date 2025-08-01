@@ -68,11 +68,11 @@ La soluzione incentrata sull&#39;account richiede le applicazioni e i servizi se
 >
 >Le licenze di Journey Optimizer B2B edition devono includere i seguenti elementi:
 ><ul><li>Istanza B2B edition di Journey Optimizer connessa ad Experience Platform B2B</li><li>Istanza Marketo Engage sincronizzata con RTCDP</li></ul>
-&gt;<br/>
-&gt;Per i clienti Marketo Engage esistenti, l’approccio consigliato è quello di connettersi all’istanza esistente.
-&gt;<br/><br/>
-&gt;Sono disponibili estensioni aggiuntive per la soluzione per migliorare la ricchezza dei profili:
-&gt;<ul><li>Origini aggiuntive per RTCDP per arricchire il profilo</li><li>Destinazione RTCDP a Marketo Engage</li></ul>
+>&gt;<br/>
+>&gt;Per i clienti Marketo Engage esistenti, l’approccio consigliato è quello di connettersi all’istanza esistente.
+>&gt;<br/><br/>
+>&gt;Sono disponibili estensioni aggiuntive per la soluzione per migliorare la ricchezza dei profili:
+>&gt;<ul><li>Origini aggiuntive per RTCDP per arricchire il profilo</li><li>Destinazione RTCDP a Marketo Engage</li></ul>
 
 L&#39;implementazione di questa soluzione richiede inoltre una chiara comprensione del concetto di _account_ e _gruppo di acquisto_ e del modo in cui amplificano e accelerano la qualifica di lead di vendita. Con questa comprensione, devi anche identificare il punteggio di completezza del gruppo di acquisto desiderato.
 
