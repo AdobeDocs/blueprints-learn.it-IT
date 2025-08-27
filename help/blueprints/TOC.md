@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 0509c5a8ce92c25040262130a5f583cdd7f08e59
+source-git-commit: 003e8ebf32150cf6527ed588ff05f22ea8cfb209
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 47%
+source-wordcount: '201'
+ht-degree: 41%
 
 ---
 
@@ -52,24 +52,24 @@ ht-degree: 47%
 + Customer journey{#customer-journeys}
    + [Panoramica](/help/blueprints/customer-journeys/overview.md)
    + Blueprint per  {#journey-optimizer}
-      + [Blueprint per  ](/help/blueprints/customer-journeys/journey-optimizer.md)
-      + Gestione delle decisioni{#decision-management}
-         + [Panoramica](/help/blueprints/customer-journeys/decision_management/decision-management-overview.md)
-         + [Gestione delle decisioni tramite rete Edge](/help/blueprints/customer-journeys/decision_management/decision-management-edge.md)
-         + [Gestione delle decisioni tramite hub](/help/blueprints/customer-journeys/decision_management/decision-management-hub.md)
-      + [Journey Optimizer con Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
-      + [Messaggistica di terze parti](/help/blueprints/customer-journeys/3rd-party-messaging.md)
-   + Campaign Standard{#campaign-standard}
-      + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=it){target="_blank"}
-      + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=it){target="_blank"}
+      + [Blueprint per  ](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md)
+      + [Percorsi AJO](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
+      + [Campagne AJO](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
+      + [Messaggistica di terze parti](/help/blueprints/customer-journeys/journey-optimizer/3rd-party-messaging.md)
+   + Gestione delle decisioni{#decision-management}
+      + [Panoramica](/help/blueprints/customer-journeys/decision-management/decision-management-overview.md)
+      + [Gestione delle decisioni su Edge](/help/blueprints/customer-journeys/decision-management/decision-management-edge.md)
+      + [Gestione delle decisioni nel centro](/help/blueprints/customer-journeys/decision-management/decision-management-hub.md)
    + Campaign v8{#campaign-v8}
-      + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
-      + [Real-Time CDP con Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/rtcdp-and-campaign-v8.md)
-      + [Journey Optimizer con Adobe Campaign v8](/help/blueprints/customer-journeys/ajo-and-campaign-v8.md)
-   + Campaign v7{#campaign-v7}
-      + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
-      + [Real-Time CDP con Adobe [!DNL Campaign] v7](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
-      + [Journey Optimizer con Adobe [!DNL Campaign] v7](/help/blueprints/customer-journeys/ajo-and-campaign-v7.md)
+      + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8/campaign-v8-overview.md)
+      + [Real-Time CDP con Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)
+      + [Journey Optimizer con Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
+   + Blueprint obsoleti{#deprecated-blueprints}
+      + Campaign Standard{#campaign-standard}
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+      + Campaign v7{#campaign-v7}
+         + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + Blueprint per {#data-exploration}
    + [Analisi dei dati e intelligence](/help/blueprints/data-insights/analysis.md)
    + [Data science personalizzata per l’arricchimento dei profili](/help/blueprints/data-insights/data-science.md)
