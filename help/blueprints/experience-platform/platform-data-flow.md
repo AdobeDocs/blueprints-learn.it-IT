@@ -22,4 +22,4 @@ Questo diagramma illustra i vari percorsi per l’acquisizione e l’uscita dei 
 
 ## Flussi di ingresso e uscita dei dati
 
-Per un elenco dettagliato di tutti i pattern di acquisizione, raccolta, ingresso e uscita dei dati, consulta la [documentazione sull&#39;acquisizione dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/collection/home).
+Per un elenco dettagliato di tutti i pattern di acquisizione, raccolta, ingresso e uscita dei dati, consulta la [documentazione sull&#39;acquisizione dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home).

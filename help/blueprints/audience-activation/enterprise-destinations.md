@@ -29,7 +29,7 @@ Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!
 
 ## Documentazione correlata
 
-Ulteriori dettagli sulla configurazione dell&#39;archiviazione cloud e delle destinazioni Enterprise sono disponibili nella [documentazione sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/overview).
+Ulteriori dettagli sulla configurazione dell&#39;archiviazione cloud e delle destinazioni Enterprise sono disponibili nella [documentazione sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/overview).
 
 ## Guardrail
 

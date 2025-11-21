@@ -33,7 +33,7 @@ Questo blueprint illustra le funzionalità tecniche dell&#39;applicazione e forn
 
 - **Campagne promozionali**: avvia campagne multicanale e in più passaggi per il lancio di prodotti, offerte stagionali o eventi di vendita.
 - **Lifecycle Marketing**: automatizza campagne ricorrenti come messaggi di compleanno, promemoria di rinnovo o milestone di fedeltà.
-- **Push di funnel basati sul pubblico**: segmenta e invia i tipi di pubblico in campagne strutturate in base alla logica di business o agli attributi di gestione delle relazioni con i clienti.
+- **Push di Funnel basati sul pubblico**: segmenta e invia i tipi di pubblico in campagne strutturate in base alla logica di business o agli attributi di gestione delle relazioni con i clienti.
 - **Newsletter e distribuzione dei contenuti**: pianifica e distribuisci contenuti personalizzati a tipi di pubblico mirati tramite e-mail e dispositivi mobili.
 - **Campagne di ricoinvolgimento**: identifica gli utenti inattivi e li reintroduce nei flussi di coinvolgimento in base alle soglie di inattività.
 
@@ -94,12 +94,12 @@ Push mobile:
 
 [[!DNL Journey Optimizer] Collegamento prodotto guardrail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=it)
+[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Documentazione correlata
 
 - [[!DNL Experience Platform] documentazione](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 - [[!DNL Experience Platform] Documentazione sui tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
-- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
-- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=it)
+- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer] descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
