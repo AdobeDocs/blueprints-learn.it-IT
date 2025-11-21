@@ -44,4 +44,4 @@ Per l’attivazione del pubblico con dati anonimi sul proprio sito e per destina
 
 ## Fasi di implementazione per Real-time Customer Data Platform
 
-* Per informazioni sulle fasi di implementazione per Real-time Customer Data Platform, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home) seguente.
+* Per informazioni sulle fasi di implementazione per Real-time Customer Data Platform, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/home) seguente.
