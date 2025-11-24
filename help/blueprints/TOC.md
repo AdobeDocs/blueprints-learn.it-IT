@@ -4,8 +4,8 @@ breadcrumb-title: Blueprint
 user-guide-description: I blueprint sono implementazioni ripetibili che permettono di risolvere problemi di business noti e contengono diagrammi di architettura, considerazioni tecniche e collegamenti alla documentazione pertinente.
 product: adobe experience platform
 mini-toc-levels: 3
-role: Architect, Developer, User
-source-git-commit: 003e8ebf32150cf6527ed588ff05f22ea8cfb209
+role: Developer, User
+source-git-commit: 3a3988e93dd9e92f4f564bfedfa314e8e2b5d9ba
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 41%
@@ -52,7 +52,7 @@ ht-degree: 41%
 + Customer journey{#customer-journeys}
    + [Panoramica](/help/blueprints/customer-journeys/overview.md)
    + Blueprint per  {#journey-optimizer}
-      + [Blueprint per  &#x200B;](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md)
+      + [Blueprint per  ](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md)
       + [Percorsi AJO](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
       + [Campagne AJO](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
       + [Messaggistica di terze parti](/help/blueprints/customer-journeys/journey-optimizer/3rd-party-messaging.md)
@@ -66,8 +66,8 @@ ht-degree: 41%
       + [Journey Optimizer con Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + Blueprint obsoleti{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/it/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/it/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + Blueprint per {#data-exploration}
