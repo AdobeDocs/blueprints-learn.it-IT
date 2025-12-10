@@ -35,8 +35,8 @@ Questa guida completa illustra il processo di integrazione di Marketo Engage con
 
 | Integrazione | Descrizione |
 | :-- | :--- |
-| [Connettore Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) | Adobe Experience Platform semplifica l’acquisizione dei dati da Marketo, fornendo funzionalità per strutturare, etichettare e migliorare i dati utilizzando i suoi servizi. |
-| [Journey Optimizer B2B edition - Azioni Marketo Engage](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes/action-nodes#marketo-engage-actions) | Sincronizza Account-Based Marketing in Journey Optimizer B2B edition con le iniziative basate sui lead in Marketo Engage utilizzando azioni basate sulle persone per gestire le iscrizioni agli elenchi e richiedere campagne. |
+| [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) | Adobe Experience Platform semplifica l’acquisizione dei dati da Marketo, fornendo funzionalità per strutturare, etichettare e migliorare i dati utilizzando i suoi servizi. |
+| [Journey Optimizer B2B edition - Azioni Marketo Engage](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes/action-nodes#marketo-engage-actions) | Sincronizza Account-Based Marketing in Journey Optimizer B2B edition con le iniziative basate sui lead in Marketo Engage utilizzando azioni basate sulle persone per gestire le iscrizioni agli elenchi e richiedere campagne. |
 
 ## Architettura
 
@@ -46,9 +46,9 @@ Questa guida completa illustra il processo di integrazione di Marketo Engage con
 
 1. Installa schemi B2B e spazi dei nomi utilizzando una delle seguenti opzioni:
    * Usa [raccolta Postman](https://github.com/adobe/experience-platform-postman-samples/tree/master/Postman%20Collections/CDP%20Namespaces%20and%20Schemas%20Utility){target="_blank"}
-   * Utilizza [modelli](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/templates) nell&#39;interfaccia utente di Platform
+   * Utilizza [modelli](https://experienceleague.adobe.com/it/docs/experience-platform/sources/ui-tutorials/templates) nell&#39;interfaccia utente di Platform
 1. Crea schemi relazionali necessari per rappresentare entità aziendali, come acquisti, licenze o registrazioni di eventi per le decisioni di percorso e la personalizzazione e-mail.
-1. Completa la [configurazione XDM](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management){target="_blank"}.
+1. Completa la [configurazione XDM](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management){target="_blank"}.
    * Rivedi il set di campi XDM standard selezionati per impostazione predefinita in Journey Optimizer B2B edition, noti anche come _campi gestiti_. Rivedi il set di campi gestiti andando su Configurazione XDM in **[!UICONTROL Amministrazione]** > **[!UICONTROL Configurazioni]**.
       * Seleziona la scheda **[!UICONTROL Standard]**, quindi fai clic su **[!UICONTROL Modifica campi gestiti]** sia per XDM Individual Profile che per XDM Business Account.
       * Selezionare l&#39;opzione **[!UICONTROL Mostra solo campi selezionati]** per visualizzare l&#39;elenco corrente dei campi selezionati.
@@ -64,17 +64,17 @@ Questa guida completa illustra il processo di integrazione di Marketo Engage con
    * Configura gli eventi di esperienza da utilizzare nei percorsi.
       * Selezionare la scheda **[!UICONTROL Eventi]** e quindi fare clic su **[!UICONTROL Seleziona evento esperienza]**.
       * Seleziona l’evento esperienza e i campi da utilizzare.
-1. Configura il [connettore di origine Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo).
-   * Utilizza il dizionario dati per definire il [mapping di importazione](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/ui/mapping#import-mapping) per il connettore di origine.
+1. Configura il [connettore di origine Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo).
+   * Utilizza il dizionario dati per definire il [mapping di importazione](https://experienceleague.adobe.com/it/docs/experience-platform/data-prep/ui/mapping#import-mapping) per il connettore di origine.
    * Si consiglia di non abilitare il profilo prima di prendere in considerazione le [considerazioni sull&#39;implementazione](#implementation-considerations).
    * È inoltre consigliabile acquisire come minimo Persone, Aziende, Opportunità e Attività, poiché questi oggetti sono i più utili per creare il pubblico del tuo account.
-1. Implementa [Regole di collegamento del grafico delle identità](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) per gli utenti:
+1. Implementa [Regole di collegamento del grafico delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) per gli utenti:
    * Definire il modo in cui i record Persona vengono collegati utilizzando gli spazi dei nomi delle identità.
    * Configura gli spazi dei nomi di identità e le regole di unione delle identità in Experience Platform.
    * Convalida il collegamento utilizzando dati di persona di esempio e strumenti di anteprima.
-1. Abilita i set di dati Persona, Società, Opportunità e Attività per [profili](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
-1. Definisci il primo [pubblico account](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/audiences/account-audience-overview)
-1. Utilizza il pubblico dell&#39;account per definire un [percorso acquisti](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/accounts/buying-groups/buying-groups-overview) o un [gruppo account](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-overview).
+1. Abilita i set di dati Persona, Società, Opportunità e Attività per [profili](https://experienceleague.adobe.com/it/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
+1. Definisci il primo [pubblico account](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/audiences/account-audience-overview)
+1. Utilizza il pubblico dell&#39;account per definire un [percorso acquisti](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/accounts/buying-groups/buying-groups-overview) o un [gruppo account](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/account-journeys/journey-overview).
    * Quando un account è idoneo per il pubblico dell’account, il processo del gruppo di acquisto viene eseguito ogni giorno per creare gruppi di acquisto e assegnare ruoli alle persone associate non appena il pubblico si aggiorna.
    * Inoltre, la manutenzione di gruppo viene eseguita ogni venerdì a mezzanotte (TC). Questo processo settimanale gestisce aggiornamenti quali la rimozione di membri non più idonei o l’aggiunta di membri nuovi non acquisiti durante l’aggiornamento iniziale del pubblico.
 
@@ -87,11 +87,11 @@ Per semplificare l’implementazione e garantire la compatibilità con Adobe Jou
 * **Utilizzare i mapping predefiniti per il connettore Source di Marketo:**
    * Sfrutta le mappature di campi predefinite fornite da Adobe per semplificare l’acquisizione dei dati e ridurre il sovraccarico di configurazione.
 * **Usa mappature predefinite per AJO B2B:**
-   * Adottare le [mappature di campi standard](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/admin/xdm-field-management/field-mapping) per Journey Optimizer B2B edition per garantire la compatibilità con la logica di acquisto del gruppo e l&#39;orchestrazione del percorso.
+   * Adottare le [mappature di campi standard](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/admin/xdm-field-management/field-mapping) per Journey Optimizer B2B edition per garantire la compatibilità con la logica di acquisto del gruppo e l&#39;orchestrazione del percorso.
 * **Blocca aggiornamenti campi su tutti i campi eccetto e-mail:**
-   * In Marketo Engage, configura la gestione dei campi per [bloccare gli aggiornamenti](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) da Adobe Experience Platform per tutti i campi eccetto _e-mail_. In questo modo è possibile mantenere l&#39;integrità dei dati e al tempo stesso abilitare la risoluzione delle identità.
+   * In Marketo Engage, configura la gestione dei campi per [bloccare gli aggiornamenti](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) da Adobe Experience Platform per tutti i campi eccetto _e-mail_. In questo modo è possibile mantenere l&#39;integrità dei dati e al tempo stesso abilitare la risoluzione delle identità.
 * **Implementare le regole di collegamento delle identità utilizzando e-mail come spazio dei nomi di identità univoco**
-   * Configura [le regole di collegamento del grafo delle identità](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) in Adobe Experience Platform per utilizzare _email_ in modo esplicito come spazio dei nomi di identità univoco. Queste regole garantiscono che i profili vengano uniti in modo accurato tra le origini dati in cui è presente _email_, consentendo una solida risoluzione delle identità. Seguendo le best practice di Adobe, definisci le regole di collegamento che danno priorità alle e-mail come identificatori stabili e univoci a livello globale per mantenere un grafico di identità coerente e conforme alla privacy.
+   * Configura [le regole di collegamento del grafo delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) in Adobe Experience Platform per utilizzare _email_ in modo esplicito come spazio dei nomi di identità univoco. Queste regole garantiscono che i profili vengano uniti in modo accurato tra le origini dati in cui è presente _email_, consentendo una solida risoluzione delle identità. Seguendo le best practice di Adobe, definisci le regole di collegamento che danno priorità alle e-mail come identificatori stabili e univoci a livello globale per mantenere un grafico di identità coerente e conforme alla privacy.
 Questa configurazione fornisce un equilibrio tra facilità di distribuzione e governance dei dati, garantendo una base affidabile per l’orchestrazione dei percorsi B2B.
 
 ## Considerazioni sull’implementazione
@@ -130,7 +130,7 @@ Questa query restituisce il numero di record persona da unire come parte dell’
 >[!NOTE]
 >
 >La tabella di set di dati marketo_person_ajo_b2b viene utilizzata per fornire un esempio completo di come lavorare con il set di dati Marketo Person.
->Puoi trovare il set di dati della sandbox nell&#39;area di lavoro [Set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
+>Puoi trovare il set di dati della sandbox nell&#39;area di lavoro [Set di dati](https://experienceleague.adobe.com/it/docs/experience-platform/catalog/datasets/user-guide).
 
 ```sql
 select
@@ -160,7 +160,7 @@ from
 
 #### Indirizzi e-mail con record duplicati
 
-Questa query restituisce le e-mail con il maggior numero di record duplicati nel set di dati.  Questo elenco può essere utilizzato per controllare alcuni di questi record per comprendere meglio come il collegamento delle identità può influire su Marketo e CRM.  Per ulteriori dettagli sul funzionamento del collegamento delle identità, consulta la [panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home).
+Questa query restituisce le e-mail con il maggior numero di record duplicati nel set di dati.  Questo elenco può essere utilizzato per controllare alcuni di questi record per comprendere meglio come il collegamento delle identità può influire su Marketo e CRM.  Per ulteriori dettagli sul funzionamento del collegamento delle identità, consulta la [panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home).
 
 ```sql
 select
@@ -197,33 +197,33 @@ order by
 
 #### Rimozione dell’e-mail come identità
 
-Dopo l&#39;analisi, se si stabilisce che l&#39;e-mail non è un campo valido da utilizzare come campo di identità, è possibile modificare lo schema della persona in [rimuovi e-mail come campo di identità](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity)
+Dopo l&#39;analisi, se si stabilisce che l&#39;e-mail non è un campo valido da utilizzare come campo di identità, è possibile modificare lo schema della persona in [rimuovi e-mail come campo di identità](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/fields/identity)
 
 #### Blocca aggiornamenti da Adobe Experience Platform
 
-Se è meglio mantenere l&#39;e-mail come campo di identità per i tuoi casi d&#39;uso, puoi [bloccare gli aggiornamenti dei campi](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) provenienti da AJO B2B e consentire ad AJO B2B di essere eseguito principalmente sui dati di Marketo.
+Se è meglio mantenere l&#39;e-mail come campo di identità per i tuoi casi d&#39;uso, puoi [bloccare gli aggiornamenti dei campi](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) provenienti da AJO B2B e consentire ad AJO B2B di essere eseguito principalmente sui dati di Marketo.
 
 ## Guardrail
 
 Per una comprensione completa dei guardrail applicabili ai Percorsi B2B con Marketo Engage, consulta la seguente documentazione ufficiale:
 
-* [Adobe Journey Optimizer B2B edition - Descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
+* [Adobe Journey Optimizer B2B edition - Descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
 Include guardrail e parametri di utilizzo specifici per Journey Optimizer B2B edition.
-* [Guardrail di distribuzione Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-overview/guardrails?lang=en)
+* [Guardrail di distribuzione Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/blueprints-learn/architecture/architecture-overview/guardrails?lang=en)
 Include i guardrail generali di installazione e architettura nelle soluzioni Adobe Experience Platform.
-* [Adobe Marketo Engage - Descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-marketo-engage---product-description.html#performance-guardrails)
+* [Adobe Marketo Engage - Descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-marketo-engage---product-description.html#performance-guardrails)
 Dettagli sulle prestazioni e sui guardrail di utilizzo per Marketo Engage, incluse considerazioni sull’attivazione e la sincronizzazione CRM.
-* [Guardrail Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview?lang=en)
+* [Guardrail Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/guardrails/overview?lang=en)
 Fornisce indicazioni sui limiti di acquisizione, segmentazione e attivazione dei dati all’interno di Real-Time Customer Data Platform.
 
 ## Documentazione correlata
 
-* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
-* [Guida introduttiva di Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
-* [Guardrail per Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
-* [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform)
-* [Servizio Adobe Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-* [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)
-* [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-* [Documentazione di Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
-* [Gestione campi XDM (Journey Optimizer B2B edition)](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management)
+* [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
+* [Guida introduttiva di Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
+* [Guardrail per Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
+* [Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform)
+* [Servizio Adobe Experience Platform Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
+* [Marketo Engage](https://experienceleague.adobe.com/it/docs/marketo/using/home)
+* [Connettore tra Adobe Experience Platform e origine Marketo](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+* [Documentazione di Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview)
+* [Gestione campi XDM (Journey Optimizer B2B edition)](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management)
