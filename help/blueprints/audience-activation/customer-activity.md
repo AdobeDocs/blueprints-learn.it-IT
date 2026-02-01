@@ -1,19 +1,19 @@
 ---
-title: Blueprint per hub delle attività dei clienti
+title: Accesso al profilo in tempo reale per scenari di supporto e vendita
 description: Le ricerche in [!UICONTROL Real-time Customer Profile] forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore.
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 100%
+source-wordcount: '366'
+ht-degree: 65%
 
 ---
 
-# Blueprint per hub delle attività dei clienti
+# Accesso al profilo in tempo reale per scenari di supporto e vendita
 
-Il blueprint per hub delle attività dei clienti mostra come le applicazioni esterne possono accedere al [!UICONTROL profilo cliente in tempo reale] di Adobe Experience Platform.
+Il blueprint Real-time Profile Access for Support and Sales Scenarios mostra come le applicazioni esterne possono accedere al [!UICONTROL Profilo cliente in tempo reale] di Adobe Experience Platform.
 
 Le applicazioni esterne possono accedere ai profili mediante una richiesta GET tramite API. Gli attributi, gli eventi, le appartenenze ai segmenti e le funzioni basate sul modello memorizzati nel profilo possono quindi essere utilizzati anche in tali applicazioni esterne non Adobe.
 
@@ -21,7 +21,7 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 >[!NOTE]
 >
->La latenza corrente supportata dall’API di ricerca profilo è di circa 500 millisecondi, che rende questo approccio inadatto per l’integrazione del profilo con motori di decisione in tempo reale, ad esempio per la personalizzazione web o mobile della pagina corrente.
+>La ricerca del profilo nell’hub non è destinata a casi di utilizzo ad alta velocità effettiva e a bassa latenza, come la personalizzazione in entrata web/mobile. La ricerca del profilo nell’hub è destinata a scenari di latenza inferiore, ad esempio per il supporto assistito da agenti o per le interazioni di vendita. Per scenari a bassa latenza e a throughput elevato, come la personalizzazione web/mobile o il Offer Decisioning in tempo reale, è necessario sfruttare il profilo Edge. Il profilo Edge consente l&#39;accesso in tempo reale tramite [Connessione Personalization personalizzata](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) di Real-time Customer Data Platform.
 
 ## Casi di utilizzo
 
@@ -37,13 +37,13 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 ## Fasi di implementazione
 
-1. [Creare schemi](https://experienceleague.adobe.com/?lang=it&recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) per i dati da acquisire.
+1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&lang=it) per i dati da acquisire.
 1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
 1. [Configurare correttamente le identità e i relativi spazi dei nomi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it) nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.
 1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it).
-1. [Inserire i dati](https://experienceleague.adobe.com/?lang=it&recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it) in Experience Platform.
+1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=it) in Experience Platform.
 1. [Impostare le regole di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it)
-1. Utilizzare l’[API delle entità per cercare un attributo di profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=it) dall’entità record o dall’entità dell’evento dell’esperienza
+1. Utilizza l&#39;API [Entities per cercare un attributo di profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=it).
 
 ## Documentazione correlata
 

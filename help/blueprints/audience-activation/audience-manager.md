@@ -1,5 +1,5 @@
 ---
-title: blueprint Audience Manager
+title: 'Basato su dispositivo: targeting del pubblico anonimo con Audience Manager'
 description: Scopri come rivolgerti a un pubblico specifico su canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti. Questa funzionalità consente di creare customer experience personalizzate e coerenti in tempo reale su tutti i dispositivi.
 landing-page-description: Scopri come rivolgerti a un pubblico specifico su canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti.
 short-description: Scopri come rivolgerti a un pubblico specifico su canali web e pubblicitari sulla base di dati anonimi e comportamentali dei clienti.
@@ -7,14 +7,14 @@ solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 495a2480828e2c6b4caa41226f4fe67437b081c1
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 93%
+source-wordcount: '246'
+ht-degree: 89%
 
 ---
 
-# blueprint Audience Manager
+# Basato su dispositivo: targeting del pubblico anonimo con Audience Manager
 
 Per “attivazione del pubblico con dati anonimi” si intende la capacità di eseguire targeting e personalizzazione per un pubblico su siti web, app mobili e canali pubblicitari basato su dati anonimi relativi a dispositivo e comportamento.
 
@@ -44,4 +44,4 @@ Per l’attivazione del pubblico con dati anonimi sul proprio sito e per destina
 
 ## Fasi di implementazione per Real-time Customer Data Platform
 
-* Per informazioni sulle fasi di implementazione per Real-time Customer Data Platform, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/home) seguente.
+* Per informazioni sulle fasi di implementazione per Real-time Customer Data Platform, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home) seguente.

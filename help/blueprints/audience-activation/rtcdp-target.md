@@ -1,5 +1,5 @@
 ---
-title: Real-time Customer Data Platform e Adobe Target
+title: Customer Personalization noto con Target
 description: Integra profili e pubblico di RTCDP con Adobe Target.
 landing-page-description: Integra profili e pubblico di RTCDP con Adobe Target.
 short-description: Integra profili e pubblico di RTCDP con Adobe Target.
@@ -7,15 +7,15 @@ solution: Real-Time Customer Data Platform, Target, Experience Platform
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: b634e14af3ea60e0f4cc9e84a0ef896df293a8c7
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 32%
+source-wordcount: '943'
+ht-degree: 31%
 
 ---
 
 
-# Integrazione di Real-time Customer Data Platform con Adobe Target
+# Customer Personalization noto con Target
 
 ## Casi di utilizzo
 
@@ -31,7 +31,7 @@ ht-degree: 32%
 
 ### Documentazione di riferimento
 
-* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it)
+* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
 * [Configurazione dello stream di dati Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)
 
 ## Modelli di integrazione
@@ -71,7 +71,7 @@ La personalizzazione per clienti noti è supportata tramite diversi approcci di 
 
 Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AT.js e AppMeasurement.js). La valutazione dei segmenti Edge in tempo reale non è supportata da questo approccio di implementazione. Tuttavia, questo approccio supporta la condivisione del pubblico in streaming e in batch dall’hub di Experience Platform.
 
-[Consulta la documentazione del connettore Adobe Target](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[Consulta la documentazione del connettore Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
 [Consulta la blueprint di SDK specifica per l&#39;applicazione](../experience-platform/deployment/appsdk.md)
 
 ## Considerazioni sull’implementazione

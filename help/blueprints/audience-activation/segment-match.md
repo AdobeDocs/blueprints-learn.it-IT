@@ -1,16 +1,16 @@
 ---
-title: Blueprint per Segment Match
+title: Audience Collaboration con corrispondenza segmento
 description: Scopri il servizio [!UICONTROL Segment Match] per Adobe Experience Platform (AEP). [!UICONTROL Segment Match] è un servizio di collaborazione sui dati che consente di scambiare dati sui segmenti basati su identificatori comuni del settore nel rispetto della privacy e in modo sicuro e gestito.
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: 9648235f5b626a8cbf2d8c9a619cf0f3ef1641ca
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2123'
 ht-degree: 80%
 
 ---
 
-# Blueprint per Segment Match
+# Blueprint per Audience Collaboration con Segment Match
 
 Il servizio Segment Match consente ai brand partner di condividere i tipi di pubblico nei rispettivi ambienti Experience Platform. Per i brand è importante rivolgersi ai clienti in base ai dati raccolti dalle loro relazioni dirette con i consumatori. Grazie a migliori sistemi per la gestione della governance, delle autorizzazioni e delle preferenze, gli esperti di marketing possono ottimizzare ulteriormente il pubblico autenticato di prime parti con partner chiave.
 
@@ -185,10 +185,10 @@ Puoi utilizzare Segment Match di Adobe Experience Platform nella collaborazione 
 
 1. Un brand (Luma) conduce una corrispondenza di pubblico con una rete multimediale (ACME) tramite Segment Match.
 2. ACME invia i tipi di pubblico al server di annunci o al provider di servizi condivisi a livello di programmazione tramite le destinazioni Adobe Real-Time CDP.
-3. ACME imposta un’operazione di inventario privato (ID) con i criteri di targeting applicabili, incluso il pubblico stabilito nel passaggio precedente. L’ID dell’operazione sull’inventario privato viene quindi inviato all’DSP di Luma.
+3. ACME imposta un’operazione di inventario privato (ID) con i criteri di targeting applicabili, incluso il pubblico stabilito nel passaggio precedente. L’ID dell’offerta di inventario privato viene quindi inviato al DSP di Luma.
 4. Luma imposta un’offerta di inventario privato e una campagna di traffico/creatività pubblicitaria.
 5. La campagna quindi offre tramite un’operazione programmatica di inventario privato.
-6. Successivamente, il server di annunci o il provider di servizi condivisi distribuisce impression pubblicitarie che soddisfano i criteri di targeting stabiliti. (Ulteriori criteri di targeting, come il limite di frequenza, sono disponibili tramite ad server e/o DSP, a seconda che nell’accordo sia stata stabilita un’offerta garantita o un’offerta preferita).
+6. Successivamente, il server di annunci o il provider di servizi condivisi distribuisce impression pubblicitarie che soddisfano i criteri di targeting stabiliti. (Criteri di targeting aggiuntivi, come il limite di frequenza, sono disponibili tramite ad server e/o DSP, a seconda che nell’accordo sia stata stabilita un’offerta Garantita o un’offerta Preferita).
 7. Il traffico è determinato dalle proprietà del marchio Luma.
 8. ACME condivide quindi gli approfondimenti o i tipi di pubblico post-campagna tramite Segment Match per il re-targeting.
 
