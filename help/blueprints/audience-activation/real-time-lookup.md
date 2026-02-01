@@ -41,13 +41,13 @@ Con questa funzionalità, puoi fornire esperienze altamente personalizzate sui t
 
 Se desideri che il profilo venga aggiornato in tempo reale con i dati in streaming, questo blueprint richiede l’utilizzo di uno dei seguenti metodi di raccolta dati. È possibile accedere in tempo reale al profilo Edge senza dover raccogliere i dati direttamente sul profilo Edge; i dati possono essere raccolti nell’hub e proiettati anche sul profilo Edge. Tieni presente che verrà aggiunta la latenza per i dati raccolti nell’hub e quindi proiettati nell’Edge.
 
-* Utilizza [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html) per raccogliere dati dal tuo sito Web.
+* Utilizza [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=it) per raccogliere dati dal tuo sito Web.
 * Utilizza [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) se desideri raccogliere dati dalla tua app mobile.
 * Utilizza l&#39;[API server di Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it) se non utilizzi Web SDK o Mobile SDK o se implementi una connessione più diretta tra server.
 
 >[!IMPORTANT]
 >
->Prima di implementare la personalizzazione Edge, leggi la guida su come [attivare i dati sul pubblico nelle destinazioni di personalizzazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations). Questa guida illustra i passaggi di configurazione necessari per i casi di utilizzo della personalizzazione della stessa pagina e della pagina successiva, su più componenti di Experience Platform.
+>Prima di implementare la personalizzazione Edge, leggi la guida su come [attivare i dati sul pubblico nelle destinazioni di personalizzazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations). Questa guida illustra i passaggi di configurazione necessari per i casi di utilizzo della personalizzazione della stessa pagina e della pagina successiva, su più componenti di Experience Platform.
 
 ## Diagramma architettura
 
@@ -62,7 +62,7 @@ Se desideri che il profilo venga aggiornato in tempo reale con i dati in streami
 
 ## Modelli di implementazione
 
-La personalizzazione di Edge può essere implementata utilizzando la destinazione [Connessione Personalization personalizzata](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) in Real-time Customer Data Platform. Questa destinazione supporta più metodi di raccolta dati a seconda del caso d’uso.
+La personalizzazione di Edge può essere implementata utilizzando la destinazione [Connessione Personalization personalizzata](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/custom-personalization) in Real-time Customer Data Platform. Questa destinazione supporta più metodi di raccolta dati a seconda del caso d’uso.
 
 ### Pattern 1: personalizzazione basata sull’iscrizione del pubblico con Web SDK/Mobile SDK
 
@@ -95,14 +95,14 @@ La personalizzazione di Edge può essere implementata utilizzando la destinazion
 1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=it) in Experience Platform.
 1. [Imposta i criteri di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it) per garantire la corretta unione delle identità e dei profili.
 1. [Configura uno stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=it) nella raccolta dati di Experience Platform con la configurazione di destinazione abilitata. Lo stream di dati determina in quale flusso di dati di Raccolta dati i tipi di pubblico verranno inclusi nella risposta alla pagina.
-1. Implementare [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html) o [Mobile SDK](https://developer.adobe.com/client-sdks/home/) nelle proprietà Web e mobile per la raccolta dati.
+1. Implementare [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=it) o [Mobile SDK](https://developer.adobe.com/client-sdks/home/) nelle proprietà Web e mobile per la raccolta dati.
 1. Configura la segmentazione Edge per i tipi di pubblico che richiedono una valutazione in tempo reale. [Documentazione sulla segmentazione di Edge](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html?lang=it).
-1. Nel catalogo delle destinazioni, impostare la destinazione [Connessione Personalization personalizzata](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization):
-1. [Attiva il pubblico nella destinazione di personalizzazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations). Seleziona i tipi di pubblico da attivare nella destinazione.
+1. Nel catalogo delle destinazioni, impostare la destinazione [Connessione Personalization personalizzata](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/custom-personalization):
+1. [Attiva il pubblico nella destinazione di personalizzazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations). Seleziona i tipi di pubblico da attivare nella destinazione.
 1. (Facoltativo per la personalizzazione basata su attributi) Se oltre all&#39;appartenenza al pubblico devi personalizzare in base agli attributi del profilo, implementa [Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it) con integrazione lato server autenticata utilizzando lo stesso flusso di dati. **obbligatorio** per accedere agli attributi del profilo.
 1. Implementa la logica di personalizzazione nell’app web/mobile per utilizzare i dati del pubblico e gli attributi di profilo esportati:
    * Se si utilizzano i tag in Adobe Experience Platform, utilizzare la funzionalità [invia evento completato](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it) per accedere alla variabile `event.destinations` con i dati esportati.
-   * Se non utilizzi i tag, utilizza [risposte ai comandi](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html) per analizzare la risposta JSON da Adobe Experience Platform e recuperare gli ID del pubblico e gli attributi del profilo.
+   * Se non utilizzi i tag, utilizza [risposte ai comandi](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html?lang=it) per analizzare la risposta JSON da Adobe Experience Platform e recuperare gli ID del pubblico e gli attributi del profilo.
 
 ## Considerazioni sull’implementazione
 
@@ -134,25 +134,25 @@ La personalizzazione di Edge può essere implementata utilizzando la destinazion
 
 ### Configurazioni di destinazione
 
-* [Connessione Personalization personalizzata](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) - Guida all&#39;implementazione primaria
-* [Panoramica sulle destinazioni Personalization](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview)
-* [Attiva i tipi di pubblico nelle destinazioni di personalizzazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
-* [Cerca gli attributi del profilo sul server Edge in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
+* [Connessione Personalization personalizzata](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/custom-personalization) - Guida all&#39;implementazione primaria
+* [Panoramica sulle destinazioni Personalization](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/overview)
+* [Attiva i tipi di pubblico nelle destinazioni di personalizzazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
+* [Cerca gli attributi del profilo sul server Edge in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
 
 ### Documentazione di SDK
 
-* [Documentazione di Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)
+* [Documentazione di Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=it)
 * [Documentazione di Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
 * [Documentazione API di Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
 * [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
-* [Risposte ai comandi in Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html)
+* [Risposte ai comandi in Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html?lang=it)
 
 ### Documentazione su profilo e segmentazione
 
-* Documentazione del [[!UICONTROL profilo cliente in tempo reale]](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* Documentazione del [[!UICONTROL profilo cliente in tempo reale]](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
 * [Guardrail per il profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
 ### Tutorial
 
-* [Personalizzazione con hit successivo con Real-Time CDP e Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+* [Personalizzazione con hit successivo con Real-Time CDP e Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=it)
 * [Configurazione dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=it)

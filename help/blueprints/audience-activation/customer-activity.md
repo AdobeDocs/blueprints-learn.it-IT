@@ -21,7 +21,7 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 >[!NOTE]
 >
->La ricerca del profilo nell’hub non è destinata a casi di utilizzo ad alta velocità effettiva e a bassa latenza, come la personalizzazione in entrata web/mobile. La ricerca del profilo nell’hub è destinata a scenari di latenza inferiore, ad esempio per il supporto assistito da agenti o per le interazioni di vendita. Per scenari a bassa latenza e a throughput elevato, come la personalizzazione web/mobile o il Offer Decisioning in tempo reale, è necessario sfruttare il profilo Edge. Il profilo Edge consente l&#39;accesso in tempo reale tramite [Connessione Personalization personalizzata](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) di Real-time Customer Data Platform.
+>La ricerca del profilo nell’hub non è destinata a casi di utilizzo ad alta velocità effettiva e a bassa latenza, come la personalizzazione in entrata web/mobile. La ricerca del profilo nell’hub è destinata a scenari di latenza inferiore, ad esempio per il supporto assistito da agenti o per le interazioni di vendita. Per scenari a bassa latenza e a throughput elevato, come la personalizzazione web/mobile o il Offer Decisioning in tempo reale, è necessario sfruttare il profilo Edge. Il profilo Edge consente l&#39;accesso in tempo reale tramite [Connessione Personalization personalizzata](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/custom-personalization) di Real-time Customer Data Platform.
 
 ## Casi di utilizzo
 
