@@ -1,17 +1,17 @@
 ---
-title: Blueprint per l’attivazione di tipi di pubblico e profili nelle destinazioni Enterprise
+title: Attivazione in base a pubblico e profili con destinazioni verso soluzioni aziendali
 description: Attivazione in base a pubblico e profili con destinazioni verso soluzioni aziendali
 solution: Real-Time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
-source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
+source-git-commit: d5f3618fd811131e9d9c1fae16d7aab16aecc9e9
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 72%
+source-wordcount: '159'
+ht-degree: 82%
 
 ---
 
-# Blueprint per l’attivazione di tipi di pubblico e profili nelle destinazioni Enterprise
+# Attivazione in base a pubblico e profili con destinazioni verso soluzioni aziendali
 
 Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!UICONTROL Real-time Customer Data Platform] con archivi dati e applicazioni aziendali. Gli eventi di profilo e pubblico possono essere utilizzati per avviare un’azione di vendita o supporto al cliente, ad esempio per dare seguito all’abbandono di un processo di iscrizione o di registrazione a un webinar, oppure per aggiornare le applicazioni aziendali con gli attributi e le informazioni più recenti del cliente da [!UICONTROL Real-time Customer Data Platform].
 
@@ -29,7 +29,7 @@ Condividi eventi e modifiche di profili e pubblico in streaming o in batch da [!
 
 ## Documentazione correlata
 
-Ulteriori dettagli sulla configurazione dell&#39;archiviazione cloud e delle destinazioni Enterprise sono disponibili nella [documentazione sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/overview).
+Ulteriori dettagli sulla configurazione dell&#39;archiviazione cloud e delle destinazioni Enterprise sono disponibili nella [documentazione sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/overview).
 
 ## Guardrail
 
