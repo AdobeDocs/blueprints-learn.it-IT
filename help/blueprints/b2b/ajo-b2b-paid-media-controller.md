@@ -1,10 +1,14 @@
 ---
-source-git-commit: 9d0eebd5d84671db1c86d73e7e0de50cb926235d
+title: AJO B2B - controller per supporti a pagamento
+description: Priorità delle campagne e attivazione degli account per le destinazioni dei file multimediali a pagamento
+solution: Journey Optimizer B2B Edition
+source-git-commit: dff5608af92fa1140419d6834d8374df75de98d3
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
+
 # Panoramica
 
 I team di marketing che eseguono supporti B2B a pagamento su larga scala devono affrontare un problema ricorrente: **gli account finiscono in più campagne alla volta** (persona, consapevolezza delle categorie, soluzioni guidate, ricerca), che diluisce la messaggistica, causa affaticamento del pubblico e forza il lavoro manuale degli elenchi (caricamenti, esclusioni e soppressione) in LinkedIn Account Match (destinazione account). Senza **assegnazione delle priorità delle cascate** e **assegnazione automatica delle campagne**, non esiste un&#39;unica posizione per decidere quale account ottiene quale messaggio e le operazioni non vengono scalate.
@@ -67,8 +71,8 @@ Con qualsiasi orchestrazione basata sui dati, la progettazione dello schema è i
 
 ### Guardrail
 
-- **Journey Optimizer B2B edition** — Per informazioni sui limiti di percorso, sui limiti dei nodi e sul supporto della destinazione, vedere la [descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer-b2b.html).
-- **Real-Time CDP** — Consulta [Guardrail di RTCDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/guardrails/overview) per i limiti di segmentazione e attivazione.
+- **Journey Optimizer B2B edition** — Per informazioni sui limiti di percorso, sui limiti dei nodi e sul supporto della destinazione, vedere la [descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html).
+- **Real-Time CDP** — Consulta [Guardrail di RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) per i limiti di segmentazione e attivazione.
 
 ## Implementazione
 
@@ -121,6 +125,6 @@ Il blueprint **Paid Media Controller** mostra come **AJO B2B e AEP** collaborino
 
 ## Documentazione correlata
 
-- [Blueprint per il marketing e la gestione dei Percorsi basato su gruppi di acquisto](https://experienceleague.adobe.com/it/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys): percorsi di account e gruppi di acquisto in AJO B2B.
-- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b) — Documentazione del prodotto.
+- [Blueprint per il marketing e la gestione dei Percorsi basato su gruppi di acquisto](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys): percorsi di account e gruppi di acquisto in AJO B2B.
+- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b) — Documentazione del prodotto.
 - [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) — Pubblico dell&#39;account e attivazione.
