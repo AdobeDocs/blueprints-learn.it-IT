@@ -74,8 +74,8 @@ Con qualsiasi orchestrazione basata sui dati, la progettazione dello schema è i
 
 ### Guardrail
 
-- **Journey Optimizer B2B edition** — Per informazioni sui limiti di percorso, sui limiti dei nodi e sul supporto della destinazione, vedere la [descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html).
-- **Real-Time CDP** — Consulta [Guardrail di RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) per i limiti di segmentazione e attivazione.
+- **Journey Optimizer B2B edition** — Per informazioni sui limiti di percorso, sui limiti dei nodi e sul supporto della destinazione, vedere la [descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer-b2b.html).
+- **Real-Time CDP** — Consulta [Guardrail di RTCDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/guardrails/overview) per i limiti di segmentazione e attivazione.
 
 ## Implementazione
 
@@ -128,6 +128,6 @@ Il blueprint **Paid Media Controller** mostra come **AJO B2B e AEP** collaborino
 
 ## Documentazione correlata
 
-- [Blueprint per il marketing e la gestione dei Percorsi basato su gruppi di acquisto](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys): percorsi di account e gruppi di acquisto in AJO B2B.
-- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b) — Documentazione del prodotto.
+- [Blueprint per il marketing e la gestione dei Percorsi basato su gruppi di acquisto](https://experienceleague.adobe.com/it/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys): percorsi di account e gruppi di acquisto in AJO B2B.
+- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b) — Documentazione del prodotto.
 - [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) — Pubblico dell&#39;account e attivazione.
