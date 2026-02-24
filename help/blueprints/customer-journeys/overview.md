@@ -3,14 +3,14 @@ title: Blueprint per customer journey
 description: Offri esperienze cliente individuali, puntuali e orchestrate su diversi schermi.
 solution: Journey Optimizer, Campaign, Experience Platform
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: 8ee7fe8d38343a669f5ad57e69367fbe6a3e1024
+source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
-# Blueprint per Percorsi di clienti
+# Blueprint per customer journey
 
 I team di marketing moderni richiedono piattaforme in grado di supportare sia il coinvolgimento reattivo (risposta ai comportamenti dei singoli clienti) che l’estensione proattiva (outreach proattivo), avviando campagne che guidano il pubblico nei funnel di conversione. Questi casi d’uso si estendono su canali come e-mail, SMS, push e, in misura crescente, su canali web e in-app.
 

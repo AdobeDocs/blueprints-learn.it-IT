@@ -3,10 +3,10 @@ title: Blueprint per la gestione delle decisioni
 description: Presenta offerte personalizzate lungo i vari percorsi dei clienti.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: 0a3ebcbc6029df46bd988cb8f15ecf838f80c3c9
+source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 77%
 
 Consulta la seguente documentazione per [Gestione delle decisioni](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 
-Per i guardrail relativi alla gestione delle decisioni, consulta la seguente documentazione. [Guardrail Di Gestione Delle Decisioni](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails#decision-management.html)
+Per i guardrail relativi alla gestione delle decisioni, consulta la seguente documentazione. [Guardrail Di Gestione Delle Decisioni](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails#decision-management.html)
 
 La funzionalità Gestione delle decisioni è un servizio Adobe fornito come parte di Adobe Journey Optimizer. Questo blueprint riassume i casi di utilizzo e le capacità tecniche dell’applicazione e descrive nel dettaglio i vari componenti dell’architettura di Gestione delle decisioni e le relative considerazioni.
 
