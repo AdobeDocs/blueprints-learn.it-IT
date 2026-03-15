@@ -99,7 +99,7 @@ Per le pagine di panoramica o hub, utilizza una struttura più breve: introduzio
 
 - **Quando collegare**: collega ad Experience League per la documentazione del prodotto, i riferimenti API, i guardrail, i tutorial e i passaggi di configurazione. Non duplicare lunghe procedure; riepiloga e collega.
 - **Formato URL**: utilizzare URL completi. Preferisci `https://experienceleague.adobe.com/docs/...` o `https://experienceleague.adobe.com/en/docs/...`. Per i documenti per sviluppatori, `https://developer.adobe.com/...` è valido.
-- **Testo collegamento**: usa testo descrittivo (ad esempio &quot;[Crea schemi](url)&quot; non &quot;Fai clic qui&quot;). Per i nomi dei prodotti nel testo del collegamento, utilizzare `[!DNL Product Name]` quando appropriato.
+- **Testo collegamento**: usa testo descrittivo (ad esempio &quot;[Crea schemi] (url)&quot; non &quot;Fai clic qui&quot;). Per i nomi dei prodotti nel testo del collegamento, utilizzare `[!DNL Product Name]` quando appropriato.
 - **Sezione documentazione correlata**: fine dei blueprint con una sezione &quot;Documentazione correlata&quot; che raggruppa i collegamenti per categoria (ad esempio, configurazioni di destinazione, documentazione di SDK, profilo e segmentazione, tutorial).
 
 Per i pattern URL dettagliati, il raggruppamento di collegamenti e gli esempi, vedi [reference.md](reference.md).

@@ -9,7 +9,7 @@ ht-degree: 1%
 
 *Originato dalla Guida all&#39;authoring di Adobe ExL (scansionata febbraio 2026) + analisi dell&#39;archivio dei blueprint-learn.en*
 
----
+&#x200B;---
 
 ## Gerarchia metadati
 
@@ -18,7 +18,7 @@ I metadati vengono inseriti in cascata in questo ordine (l’articolo sostituisc
 2. TOC.md nella guida utente
 3. metadata.md nella directory principale dell’archivio (priorità più bassa)
 
----
+&#x200B;---
 
 ## Campi a livello di articolo
 
@@ -69,7 +69,7 @@ I metadati vengono inseriti in cascata in questo ordine (l’articolo sostituisc
 | `source-git-url` | URL archivio Source. | URL GitHub completo |
 | `cloud` | Sostituzione categoria cloud a livello di articolo. | Tutte iniziali maiuscole; devono corrispondere a cloud.yml |
 
----
+&#x200B;---
 
 ## Campi TOC.md
 
@@ -83,7 +83,7 @@ I metadati vengono inseriti in cascata in questo ordine (l’articolo sostituisc
 | `role` | Ruolo di pubblico predefinito per la guida. | Stessi valori dell&#39;articolo `role`; separati da virgola |
 | `index` | Indica se la guida è indicizzata. | `yes`/`no` |
 
----
+&#x200B;---
 
 ## Campi metadata.md a livello di repository
 
@@ -98,7 +98,7 @@ I metadati vengono inseriti in cascata in questo ordine (l’articolo sostituisc
 | `git-repo` | URL archivio GitHub; abilita i pulsanti &quot;Modifica questa pagina&quot; e &quot;Registra problema&quot; |
 | `index` | Impostazione di indice predefinita |
 
----
+&#x200B;---
 
 ## Valori Soluzione Validi (Distinzione Maiuscole/Minuscole)
 
@@ -123,7 +123,7 @@ Valori comuni utilizzati in questo archivio:
 
 Più valori: separati da virgola, ad esempio `Real-Time Customer Data Platform, Campaign`
 
----
+&#x200B;---
 
 ## Valori di prodotto validi (per il campo `product` - tracciamento di Analytics)
 
@@ -137,7 +137,7 @@ Per l&#39;elenco completo, vedere il prompt del sistema. Valori chiave:
 - `adobe campaign` / `campaign` / `ac`
 - `adobe target` / `target` / `at`
 
----
+&#x200B;---
 
 ## Valori Ruolo Validi
 
@@ -149,7 +149,7 @@ Per l&#39;elenco completo, vedere il prompt del sistema. Valori chiave:
 - `Leader`
 - `User`
 
----
+&#x200B;---
 
 ## Regole di convalida chiave
 
