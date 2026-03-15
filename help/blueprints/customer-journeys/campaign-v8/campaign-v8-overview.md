@@ -4,10 +4,10 @@ description: Scopri il blueprint per Campaign v8.
 solution: Campaign,Campaign v8
 version: Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: 0a3ebcbc6029df46bd988cb8f15ecf838f80c3c9
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 31%
+source-wordcount: '1045'
+ht-degree: 29%
 
 ---
 
@@ -47,7 +47,7 @@ Include inoltre un server di messaggistica scalabile in tempo reale che consente
 
 ## Diagrammi architettura
 
-Ulteriori informazioni sui [modelli di distribuzione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html?lang=it#ac-deployment){target="_blank"}.
+Ulteriori informazioni sui [modelli di distribuzione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html#ac-deployment){target="_blank"}.
 
 ### Distribuzione aziendale di Campaign (FFDA)
 
@@ -137,11 +137,11 @@ Per questo blueprint esistono i seguenti prerequisiti.
 
 ## Fasi di implementazione
 
-Consulta la guida introduttiva per l’[implementazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=it).
+Consulta la guida introduttiva per l’[implementazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html).
 
 ## Documentazione correlata
 
-- [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=it)
+- [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign-v8.html)
 - [Descrizione del prodotto Campaign v8](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-- [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/launch.html?lang=it)
-- [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
+- [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/launch.html)
+- [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html)

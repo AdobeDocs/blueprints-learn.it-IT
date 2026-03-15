@@ -3,10 +3,10 @@ title: Real-Time CDP con  [!DNL Campaign] v7 e modello di integrazione Campaign 
 description: Mostra come Adobe Experience Platform e il suo Real-Time Customer Profile e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe [!DNL Campaign] per fornire conversazioni personalizzate.
 solution: Real-Time Customer Data Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
-source-git-commit: fa1f8799e774713a48fdd437a9325731aef1b6ab
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 42%
+source-wordcount: '811'
+ht-degree: 55%
 
 ---
 
@@ -68,7 +68,7 @@ Le sezioni seguenti descrivono i passaggi di implementazione per ciascuna applic
 
 #### Origini/destinazioni
 
-1. [Experience Platform e [!DNL Campaign] Origini e designazioni standard](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=it)
+1. [Experience Platform e  [!DNL Campaign] origini e designazioni standard](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=it)
 1. [Origini e designazioni di Experience Platform e [!DNL Campaign] v7](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=it)
 1. [Inserire i dati in Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=it) utilizzando API di streaming e connettori di origini.
 1. Configurare la destinazione dell&#39;archiviazione BLOB [!DNL Azure] da utilizzare con Adobe [!DNL Campaign].
@@ -110,8 +110,8 @@ Le sezioni seguenti descrivono i passaggi di implementazione per ciascuna applic
 
 ## Documentazione correlata
 
-* [Adobe [!DNL Experience Platform] documentazione](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
+* [Documentazione di Adobe [!DNL Experience Platform] ](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [[!DNL Campaign Classic] documentazione](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=it)
 * [[!DNL Campaign Standard] documentazione](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=it)
-* [[!DNL Experience Platform] Documentazione di Launch](https://experienceleague.adobe.com/docs/launch.html?lang=it)
-* [[!DNL Experience Platform] Documentazione di Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
+* [Documentazione di [!DNL Experience Platform] Launch](https://experienceleague.adobe.com/docs/launch.html?lang=it)
+* [Documentazione di [!DNL Experience Platform] Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)

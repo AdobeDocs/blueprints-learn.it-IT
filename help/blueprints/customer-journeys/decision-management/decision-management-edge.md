@@ -3,10 +3,10 @@ title: Blueprint per la gestione delle decisioni tramite rete Edge
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, incluse le esperienze web e mobili in tempo reale.
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: b24b1200e605914c501c0f98562ca40beee1138e
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 68%
+source-wordcount: '480'
+ht-degree: 69%
 
 ---
 
@@ -48,7 +48,7 @@ Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il 
 
 * Per i guardrail relativi a Gestione delle decisioni, fai riferimento alla [Descrizione del prodotto Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html).
 
-[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=it)
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## Documentazione correlata
 
@@ -56,4 +56,4 @@ Per ulteriori informazioni su Gestione delle decisioni tramite hub, consulta il 
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=it)
 * [Gestione delle decisioni per Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 * [Descrizione del prodotto Adobe Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Descrizione del prodotto Adobe Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Descrizione del prodotto Adobe Decision Management](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)

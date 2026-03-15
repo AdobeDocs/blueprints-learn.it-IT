@@ -2,10 +2,10 @@
 title: Blueprint per l’acquisizione e la creazione
 description: Acquisizione e creazione - Blueprint per l’integrazione di Marketo Engage e Workfront
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 97%
+source-wordcount: '1372'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ La mole di richieste marketing che un team di marketing deve gestire per lanciar
 
 Definendo un processo per l’invio delle richieste relative alle campagne e automatizzando la creazione delle campagne marketing più frequenti, puoi: velocizzare le campagne, ridurre gli errori, indirizzare le richieste alla persona giusta nel team delle operazioni marketing, bilanciare e migliorare l’utilizzo delle risorse e focalizzare le operazioni marketing sulle attività più strategiche.
 
-Con Workfront e Marketo Engage, una connessione tra i due sistemi permette di ottenere i dettagli da un [modulo di richiesta Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html?lang=it){target="_blank"} per creare un programma Marketo Engage, e quindi inserire variabili chiave come: oggetto e testo dell’e-mail, immagini, data e ora, informazioni sull’evento e altro ancora.
+Con Workfront e Marketo Engage, una connessione tra sistemi consente ai dettagli di un [modulo di richiesta Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html?lang=it){target="_blank"} di creare un programma Marketo Engage, quindi di compilare variabili chiave quali: oggetto, copia e-mail, immagini, date, ore, informazioni sull&#39;evento e altro ancora.
 
 Per ottenere questo tipo di integrazione, si utilizza Workfront Fusion, un livello di automazione del lavoro che consente di automatizzare i flussi di lavoro tra Workfront e altri sistemi.
 
@@ -95,7 +95,7 @@ La creazione di un centro di eccellenza basato su modelli di programma in Market
 
 Una volta impostato un set di modelli di programma riutilizzabili, sarà possibile potenziare ulteriormente le capacità e velocizzare lo sviluppo delle campagne mediante l’automazione descritta in questo blueprint.
 
-Per saperne di più sulla creazione di un centro di eccellenza, consulta le best practice che trovi nella [Community Marketo](https://nation.marketo.com/t5/product-blogs/marketo-master-class-center-of-excellence-with-chelsea-kiko/ba-p/243221){target="_blank"}.
+Per ulteriori informazioni sulla creazione del centro di eccellenza, consulta la [community Marketo](https://nation.marketo.com/t5/product-blogs/marketo-master-class-center-of-excellence-with-chelsea-kiko/ba-p/243221){target="_blank"} per informazioni sulle best practice.
 
 ### Utilizzare i token per popolare i contenuti {#use-tokens-to-populate-content}
 

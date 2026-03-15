@@ -4,10 +4,10 @@ description: Mostra come Adobe Journey Optimizer può essere utilizzato con Adob
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign v8 Client Console
 version: Campaign v8, Campaign v8 Client Console
 exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
-source-git-commit: 6ec61ae7e1cfe3bad7beff127dc2e80873424d53
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 52%
+source-wordcount: '795'
+ht-degree: 56%
 
 ---
 
@@ -28,7 +28,7 @@ Dimostra come Adobe [!DNL Journey Optimizer] può essere utilizzato con Adobe [!
 
 Esamina i seguenti prerequisiti per ciascuna applicazione.
 
-### Adobe Experience Platform 
+### Adobe Experience Platform
 
 * Gli schemi e i set di dati devono essere configurati nel sistema prima di poter configurare le origini dati di Journey Optimizer.
 * Per gli schemi basati su classi Experience Event, aggiungi &quot;Gruppo di campi ID evento di orchestrazione&quot; quando desideri che venga attivato un evento che non sia un evento basato su regole
@@ -42,9 +42,9 @@ Esamina i seguenti prerequisiti per ciascuna applicazione.
 
 ## Guardrail
 
-* [Limitazioni del prodotto Journey Optimizer Guardrail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
+* [Limitazioni del prodotto Journey Optimizer Guardrail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
-* [Guardrail e indicazioni sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=it)
+* [Guardrail e indicazioni sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## Fasi di implementazione
 
@@ -72,7 +72,7 @@ Segui le implementazioni per ciascuna applicazione descritta di seguito.
 
 1. [Acquisisci dati in [!DNL Experience Platform]](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=it) utilizzando API di streaming e connettori di origine.
 
-### Blueprint per  
+### Blueprint per
 
 1. Configura l&#39;origine dati [!DNL Experience Platform] e determina i campi da memorizzare in cache
 1. I dati di streaming utilizzati per avviare un percorso del cliente devono prima essere configurati in Journey Optimizer per ottenere un ID di orchestrazione. Questo ID di orchestrazione viene quindi fornito allo sviluppatore che potrà utilizzarlo con l’acquisizione.

@@ -3,10 +3,10 @@ title: Blueprint per Campaign v7
 description: Scopri il blueprint di Campaign v7 per programmi di messaggistica basati su batch, campagne di onboarding e remarketing, pubblicità direct mail e messaggistica transazionale semplice.
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
-source-git-commit: 10d49e3b712fc9d4ecdf41defe6e62dde2a86b72
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 37%
+source-wordcount: '119'
+ht-degree: 36%
 
 ---
 

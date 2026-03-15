@@ -3,10 +3,10 @@ title: '[!DNL Journey Optimizer] - Blueprint Percorsi'
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
+source-git-commit: 1e1c30954a7f4b3eac0e63736ad804329d58f76b
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 15%
+source-wordcount: '718'
+ht-degree: 16%
 
 ---
 
@@ -92,14 +92,14 @@ Push mobile:
 
 ## Guardrail
 
-[[!DNL Journey Optimizer] Collegamento prodotto guardrail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
+[Collegamento prodotto guardrail [!DNL Journey Optimizer]](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[Guardrail e indicazioni sulla latenza End to End](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=it)
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Documentazione correlata
 
 - [[!DNL Experience Platform] documentazione](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
-- [[!DNL Experience Platform] Documentazione sui tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
-- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
-- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=it)
-- [[!DNL Journey Optimizer] descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
+- [Documentazione di [!DNL Experience Platform] tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
+- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+- [[!DNL Journey Optimizer] descrizione prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)

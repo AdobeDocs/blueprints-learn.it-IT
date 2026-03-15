@@ -3,10 +3,10 @@ title: Blueprint per la gestione delle decisioni tramite hub
 description: Presenta ai consumatori offerte personalizzate su tutti i canali, compresi chioschi, esperienze assistite da agenti, e-mail e altre consegne in uscita.
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 65eaffe8af093cc410b556778ae327ed16202f10
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 76%
+source-wordcount: '764'
+ht-degree: 78%
 
 ---
 
@@ -63,4 +63,4 @@ Per ulteriori informazioni su Gestione delle decisioni tramite rete Edge, consul
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=it)
 * [Gestione delle decisioni per Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 * [Descrizione del prodotto Adobe Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Descrizione del prodotto Adobe Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Descrizione del prodotto Adobe Decision Management](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)

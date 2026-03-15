@@ -3,18 +3,18 @@ title: Blueprint per la gestione delle decisioni
 description: Presenta offerte personalizzate lungo i vari percorsi dei clienti.
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
+source-git-commit: 1e1c30954a7f4b3eac0e63736ad804329d58f76b
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 78%
+source-wordcount: '731'
+ht-degree: 76%
 
 ---
 
-# Journey Optimizer - Blueprint per la gestione delle decisioni
+# Journey Optimizer - Progetti di gestione delle decisioni
 
 Consulta la seguente documentazione per [Gestione delle decisioni](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 
-Per i guardrail relativi alla gestione delle decisioni, consulta la seguente documentazione. [Guardrail Di Gestione Delle Decisioni](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails#decision-management.html)
+Per i guardrail relativi alla gestione delle decisioni, consulta la seguente documentazione. [Guardrail Di Gestione Delle Decisioni](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails#decision-management.html)
 
 La funzionalità Gestione delle decisioni è un servizio Adobe fornito come parte di Adobe Journey Optimizer. Questo blueprint riassume i casi di utilizzo e le capacità tecniche dell’applicazione e descrive nel dettaglio i vari componenti dell’architettura di Gestione delle decisioni e le relative considerazioni.
 
@@ -65,4 +65,4 @@ Il secondo approccio è tramite l&#39;esperienza [!DNL Edge Network], un&#39;inf
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=it)
 * [Gestione delle decisioni per Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it)
 * [Descrizione del prodotto Adobe Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Descrizione del prodotto Adobe Gestione delle decisioni](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Descrizione del prodotto Adobe Decision Management](https://helpx.adobe.com/it/legal/product-descriptions/offer-decisioning-app-service.html)
