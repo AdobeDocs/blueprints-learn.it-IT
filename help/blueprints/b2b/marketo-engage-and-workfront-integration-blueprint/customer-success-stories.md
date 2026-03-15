@@ -13,14 +13,14 @@ ht-degree: 50%
 
 I clienti di Adobe in settori diversi riconoscono il valore di allineare la pianificazione e l’esecuzione marketing al fine di incrementare sia l’efficienza che la visibilità in tutta l’organizzazione. Per saperne di più, visita i seguenti collegamenti.
 
-* Adobe su Adobe (caso di studio): [Adobe Marketo Engage e Adobe Workfront si combinano per creare un&#39;orchestrazione delle campagne fluida e di successo in Adobe](https://business.adobe.com/customer-success-stories/adobe-campaign-orchestration-case-study){target="_blank"}
+* Adobe su Adobe (caso di studio): [Adobe Marketo Engage e Adobe Workfront si combinano per creare un&#39;orchestrazione delle campagne fluida e di successo in Adobe](https://business.adobe.com/it/customer-success-stories/adobe-campaign-orchestration-case-study){target="_blank"}
 
 * Nokia (webinar): [In che modo Nokia sovrascrive la pianificazione e l&#39;esecuzione delle campagne con Adobe](https://engage.adobe.com/MarWF22Q4WBR-Registration.html){target="_blank"}
 
-* Lumen (breakout del summit): [Come Lumen guida l&#39;agilità per le esperienze cliente Omnichannel - S710](https://business.adobe.com/summit/2022/sessions/how-lumen-drives-agility-for-omnichannel-customer-s710.html){target="_blank"}
+* Lumen (breakout del summit): [Come Lumen guida l&#39;agilità per le esperienze cliente Omnichannel - S710](https://business.adobe.com/it/summit/2022/sessions/how-lumen-drives-agility-for-omnichannel-customer-s710.html){target="_blank"}
 
 * BNY Mellon (breakout del summit): [Come BNY Mellon ha migliorato l&#39;esecuzione della campagna con persone, processi e tecnologia Adobe - S127](https://business.adobe.com/events/experience-makers-live/2022/sessions/how-bny-mellon-improved-campaign-execution-with-pe-s127.html){target="_blank"}
 
-* Commvault (caso aziendale): [Commvault crea un centro di eccellenza per il marketing con Adobe Marketo Engage per l&#39;esecuzione di oltre 1.800 campagne all&#39;anno](https://business.adobe.com/customer-success-stories/commvault-case-study){target="_blank"}
+* Commvault (caso aziendale): [Commvault crea un centro di eccellenza per il marketing con Adobe Marketo Engage per l&#39;esecuzione di oltre 1.800 campagne all&#39;anno](https://business.adobe.com/it/customer-success-stories/commvault-case-study){target="_blank"}
 
 * Poly (blog): [Come Poly ha spostato gli ingranaggi per raggiungere nuovi tipi di pubblico con Adobe Experience Cloud](https://business.adobe.com/blog/basics/how-poly-shifted-gears-reach-new-audiences-adobe-experience-cloud){target="_blank"}

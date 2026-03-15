@@ -137,11 +137,11 @@ Per questo blueprint esistono i seguenti prerequisiti.
 
 ## Fasi di implementazione
 
-Consulta la guida introduttiva per l’[implementazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html).
+Consulta la guida introduttiva per l’[implementazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=it).
 
 ## Documentazione correlata
 
-- [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign-v8.html)
+- [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=it)
 - [Descrizione del prodotto Campaign v8](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-- [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/launch.html)
-- [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html)
+- [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/launch.html?lang=it)
+- [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)

@@ -43,9 +43,9 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con Adobe Campaign pe
 
 ## Guardrail
 
-[Collegamento prodotto guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+[Collegamento prodotto guardrail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
 
-[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=it)
 
 ## Fasi di implementazione
 
