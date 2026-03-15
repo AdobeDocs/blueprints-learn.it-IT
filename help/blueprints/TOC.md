@@ -5,10 +5,10 @@ user-guide-description: I blueprint sono implementazioni ripetibili che permetto
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: ffef3a39ae84b85167a3b8b8a3622c76fb6cb251
+source-git-commit: 1b722db275b3360fc443a67e07c7162909c32d72
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 25%
+source-wordcount: '265'
+ht-degree: 26%
 
 ---
 
@@ -39,15 +39,12 @@ ht-degree: 25%
    + [Attivazione account B2B](/help/blueprints/b2b/b2b-account-activation.md)
    + [Acquisto di soluzioni di marketing e gestione dei percorsi basate su gruppi](/help/blueprints/b2b/b2b-buying-group-journeys.md)
    + [Percorsi B2B con dati Marketo](/help/blueprints/b2b/b2b-journeys-with-marketo.md)
-   + [Customer Journey Analytics B2B](/help/blueprints/customer-journey-analytics/b2b-cja.md)
    + [Controller supporti a pagamento B2B](/help/blueprints/b2b/ajo-b2b-paid-media-controller.md)
    + Blueprint per l’integrazione di Marketo Engage e Workfront{#marketo-engage-and-workfront-integration-blueprint}
       + [Panoramica](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [Acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [Rivedi e approva](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
       + [Storie di successo dei clienti](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
-+ Contenuti e commerce{#content-commerce}
-   + [ADOBE COMMERCE e REAL-TIME CDP](/help/blueprints/content-commerce/commerce/commerce-rtcdp.md)
 + Blueprint per{#customer-journey-analytics}
    + [Panoramica](/help/blueprints/customer-journey-analytics/overview.md)
    + [Customer Journey Analytics B2B](/help/blueprints/customer-journey-analytics/b2b-cja.md)
@@ -70,8 +67,8 @@ ht-degree: 25%
       + [Journey Optimizer con Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + Blueprint obsoleti{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/it/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/it/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + Blueprint per{#data-exploration}
