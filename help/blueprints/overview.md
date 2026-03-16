@@ -3,10 +3,10 @@ title: Blueprint per l’orchestrazione della customer experience
 description: I blueprint per l’orchestrazione dell’esperienza del cliente sono implementazioni ripetibili per affrontare strategie e risolvere problemi di business consolidati. Accelerano il time-to-value e consentono di ottenere rapidamente i risultati desiderati.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 478f2a44974ba36d87300486337b669fa38989f3
+source-git-commit: cf76bfcb0a6d3f2a23f42494f3944934954cac89
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 7%
+source-wordcount: '168'
+ht-degree: 9%
 
 ---
 
@@ -51,4 +51,26 @@ I blueprint per l&#39;orchestrazione dell&#39;esperienza del cliente (in precede
 </tr>
 </table>
 
-</div>
+## Esplora per settore
+
+Trova casi d’uso personalizzati per il tuo settore, ciascuno associato a modelli di implementazione e obiettivi aziendali.
+
+<table>
+<tr>
+  <td><a href="industry-use-cases/retail/retail-overview.md"><strong>Retail</strong></a></td>
+  <td><a href="industry-use-cases/financial-services/financial-services-overview.md"><strong>Servizi finanziari</strong></a></td>
+  <td><a href="industry-use-cases/healthcare/healthcare-overview.md"><strong>Assistenza sanitaria</strong></a></td>
+</tr>
+<tr>
+  <td><a href="industry-use-cases/automotive/automotive-overview.md"><strong>Settore automobilistico</strong></a></td>
+  <td><a href="industry-use-cases/travel-hospitality/travel-hospitality-overview.md"><strong>Viaggi e ospitalità</strong></a></td>
+  <td><a href="industry-use-cases/telecommunications/telecommunications-overview.md"><strong>Telecomunicazioni</strong></a></td>
+</tr>
+<tr>
+  <td><a href="industry-use-cases/media-entertainment/media-entertainment-overview.md"><strong>Media e intrattenimento</strong></a></td>
+  <td><a href="industry-use-cases/insurance/insurance-overview.md"><strong>Assicurazioni</strong></a></td>
+  <td><a href="industry-use-cases/b2b/b2b-overview.md"><strong>B2B</strong></a></td>
+</tr>
+</table>
+
+[Visualizza tutti i casi d’uso del settore](industry-use-cases/overview.md)
