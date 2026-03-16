@@ -100,7 +100,7 @@ Attiva tipi di pubblico B2B basati sull’account tra canali web, e-mail e pubbl
 Per implementare questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
 - **[!DNL Real-Time CDP]B2B edition**: piattaforma di base per l&#39;unificazione del profilo account, la risoluzione dell&#39;identità B2B, la valutazione del pubblico dell&#39;account, la configurazione della destinazione specifica B2B e l&#39;attivazione del pubblico dell&#39;account
-- **[!DNL Adobe Experience Platform](AEP)** — Infrastruttura fondamentale per la modellazione di dati XDM B2B, l&#39;acquisizione di dati da origini di automazione del marketing e del CRM, il servizio Identity e la governance
+- **[!DNL Adobe Experience Platform] (AEP)** — Infrastruttura fondamentale per la modellazione di dati XDM B2B, l&#39;acquisizione di dati da origini di automazione del marketing e del CRM, il servizio Identity e la governance
 - **[!DNL Marketo Engage]** — Destinazione primaria di automazione del marketing B2B per i programmi di sviluppo dei lead, il punteggio e l&#39;esecuzione della campagna forniti dal pubblico dell&#39;account attivato
 
 ## Funzioni fondamentali
