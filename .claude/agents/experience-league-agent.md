@@ -37,23 +37,228 @@ Dopo la scansiona, salva immediatamente le regole e le linee guida chiave nella 
 
 Anche se la memoria dell’agente conterrà tutte le linee guida scansionate, di seguito sono elencate le categorie fondamentali che è sempre necessario verificare:
 
-### &#x200B;1. Metadati e argomento principale- I file devono includere un front matter YAML corretto con i campi obbligatori (titolo, descrizione, soluzione, ruolo, livello, ecc.)- Il titolo deve essere conciso, descrittivo e deve seguire le best practice SEO (Search Engine Optimization)- La descrizione deve contenere tra 60 e 160 caratteri
+### &#x200B;1. Metadati e argomento principale
+- I file devono includere un front matter YAML corretto con i campi obbligatori (titolo, descrizione, soluzione, ruolo, livello, ecc.)
+- Il titolo deve essere conciso, descrittivo e deve seguire le best practice SEO (Search Engine Optimization)
+- La descrizione deve contenere tra 60 e 160 caratteri
 
-### &#x200B;2. Sintassi Markdown (Adobe-Flavored)- Utilizza le estensioni Markdown specifiche di Adobe (ad esempio, `>[!NOTE]`, `>[!TIP]`, `>[!WARNING]`, `>[!CAUTION]`, `>[!IMPORTANT]`)- Tag DNL (Do Not Localize): `[!DNL ProductName]` per nomi di prodotto da non tradurre- Tag UICONTROL: `[!UICONTROL Button Label]` per riferimenti agli elementi dell&#39;interfaccia utente- Sintassi del badge per contrassegnare lo stato del contenuto- Gerarchia titoli corretta (H1 una sola volta, nidificazione sequenziale)
+### &#x200B;2. Sintassi Markdown (Adobe-Flavored)
+- Utilizza le estensioni Markdown specifiche di Adobe (ad esempio, `>[!NOTE]`, `>[!TIP]`, `>[!WARNING]`, `>[!CAUTION]`, `>[!IMPORTANT]`)
+- Tag DNL (Do Not Localize): `[!DNL ProductName]` per nomi di prodotto da non tradurre
+- Tag UICONTROL: `[!UICONTROL Button Label]` per riferimenti agli elementi dell&#39;interfaccia utente
+- Sintassi del badge per contrassegnare lo stato del contenuto
+- Gerarchia titoli corretta (H1 una sola volta, nidificazione sequenziale)
 
-### &#x200B;3. Standard di formattazione- Usa intestazioni in stile ATX (`#` sintassi, non sintassi sottolineatura)- Una H1 per documento (in genere generata automaticamente dai metadati del titolo)- Formattazione elenco ordinato e non ordinato- Allineamento e formattazione delle tabelle- Blocchi di codice con identificatori della lingua- Corretta escape di caratteri speciali
+### &#x200B;3. Standard di formattazione
+- Usa intestazioni in stile ATX (`#` sintassi, non sintassi sottolineatura)
+- Una H1 per documento (in genere generata automaticamente dai metadati del titolo)
+- Formattazione elenco ordinato e non ordinato
+- Allineamento e formattazione delle tabelle
+- Blocchi di codice con identificatori della lingua
+- Corretta escape di caratteri speciali
 
-### &#x200B;4. Collegamenti e riferimenti- Collegamenti relativi per la documentazione interna- Sintassi di riferimento incrociato corretta- I collegamenti esterni devono essere aperti in nuove schede, se necessario- Evitare collegamenti interrotti o inattivi- Usa pattern di collegamento definiti
+### &#x200B;4. Collegamenti e riferimenti
+- Collegamenti relativi per la documentazione interna
+- Sintassi di riferimento incrociato corretta
+- I collegamenti esterni devono essere aperti in nuove schede, se necessario
+- Evitare collegamenti interrotti o inattivi
+- Usa pattern di collegamento definiti
 
-### &#x200B;5. Immagini e file multimediali- Testo alternativo richiesto per tutte le immagini- Convenzioni del percorso immagine appropriate- Convenzioni di denominazione dei file di immagine (lettere minuscole, trattini)- Dimensioni e formato appropriati per l&#39;immagine
+### &#x200B;5. Immagini e file multimediali
+- Testo alternativo richiesto per tutte le immagini
+- Convenzioni del percorso immagine appropriate
+- Convenzioni di denominazione dei file di immagine (lettere minuscole, trattini)
+- Dimensioni e formato appropriati per l&#39;immagine
 
-### &#x200B;6. Qualità dei contenuti- Voce attiva preferita- Seconda persona (&quot;tu&quot;) per contenuti istruttivi- Terminologia coerente- iniziale maiuscola del nome del prodotto- Evita il gergo senza spiegazione- I passaggi devono essere numerati e actionable
+### &#x200B;6. Qualità dei contenuti
+- Voce attiva preferita
+- Seconda persona (&quot;tu&quot;) per contenuti istruttivi
+- Terminologia coerente
+- iniziale maiuscola del nome del prodotto
+- Evita il gergo senza spiegazione
+- I passaggi devono essere numerati e actionable
 
-### &#x200B;7. Convenzioni per file e cartelle- Nomi di file in minuscolo con trattini (senza spazi o trattini bassi)- Gerarchia di cartelle logiche- Conformità della struttura del file TOC
+### &#x200B;7. Convenzioni per file e cartelle
+- Nomi di file in minuscolo con trattini (senza spazi o trattini bassi)
+- Gerarchia di cartelle logiche
+- Conformità della struttura del file TOC
 
-### &#x200B;8. Valori di prodotto validi&quot;product&quot;:- &quot;adobe analytics&quot;- &quot;Adobe Analytics&quot;- &quot;analytics&quot;- &quot;Analytics&quot;- &quot;aa&quot;- &quot;adobe audience manager&quot;- &quot;Adobe Audience Manager&quot;- &quot;audience manager&quot;- &quot;Audience Manager&quot;- &quot;adobe campaign&quot;- &quot;Adobe Campaign&quot;- &quot;campaign&quot;- &quot;Campaign&quot;- &quot;ac&quot;- &quot;adobe experience manager&quot;- &quot;Adobe Experience Manager&quot;- &quot;experience manager&quot;- &quot;Experience Manager&quot;- &quot;aem&quot;- &quot;adobe experience manager cloud manager&quot;- &quot;Adobe Experience Manager Cloud Manager&quot;- &quot;experience manager cloud manager&quot;- &quot;Experience Manager Cloud Manager&quot;- cm- &quot;adobe livefyre&quot;- &quot;Adobe Livefyre&quot;- &quot;livefyre&quot;- &quot;Livefyre&quot;- &quot;alf&quot;- &quot;adobe marketing cloud&quot;- &quot;marketing cloud&quot;- &quot;experience-cloud&quot;- &quot;experience cloud&quot;- &quot;Experience Cloud&quot;- &quot;servizi principali&quot;- &quot;amc&quot;- &quot;adobe advertising cloud&quot;- &quot;Adobe Advertising cloud&quot;- &quot;advertising cloud&quot;- &quot;Advertising Cloud&quot;- &quot;adc&quot;- &quot;adobe media optimizer&quot;- &quot;Adobe media Optimizer&quot;- &quot;media optimizer&quot;- &quot;Media Optimizer&quot;- &quot;amo&quot;- &quot;adobe target&quot;- &quot;Adobe Target&quot;- &quot;target&quot;- &quot;Target&quot;- &quot;at&quot;- &quot;adobe dynamic tag management&quot;- &quot;dynamic tag management&quot;- &quot;dtm&quot;- &quot;adobe experience platform&quot;- &quot;Adobe Experience Platform&quot;- &quot;experience platform&quot;- &quot;Experience Platform&quot;- &quot;platform&quot;- &quot;Platform&quot;- &quot;adobe customer percorsi analytics&quot;- &quot;Adobe Customer Journey Analytics&quot;- &quot;analisi del percorso del cliente&quot;- &quot;Customer Journey Analytics&quot;- &quot;cja&quot;- &quot;adobe intelligent services&quot;- &quot;Adobe Intelligent Services&quot;- &quot;servizi intelligenti&quot;- &quot;Intelligent Services&quot;- &quot;is&quot;- &quot;adobe real time customer data platform&quot;- &quot;Adobe Real Time Customer Data Platform&quot;- &quot;real time cdp&quot;- &quot;Real Time CDP&quot;- &quot;rtcdp&quot;- &quot;adobe marketo&quot;- &quot;Adobe Marketo&quot;- &quot;marketo&quot;- &quot;Marketo&quot;- &quot;amk&quot;- &quot;adobe bizible&quot;- &quot;Adobe Bizible&quot;- &quot;bizzarro&quot;- &quot;Bizible&quot;- &quot;biz&quot;- &quot;adobe magento&quot;- &quot;Adobe Magento&quot;- &quot;magento&quot;- &quot;Magento&quot;- mag- &quot;adobe acrobat&quot;- &quot;Adobe Acrobat&quot;- &quot;acrobat&quot;- &quot;Acrobat&quot;- &quot;acr&quot;- &quot;adobe sign&quot;- &quot;Adobe Sign&quot;- &quot;sign&quot;- &quot;Sign&quot;- &quot;asi&quot;- &quot;adobe document cloud&quot;- &quot;Adobe Document Cloud&quot;- &quot;document cloud&quot;- &quot;Document Cloud&quot;- &quot;dcl&quot;- &quot;adobe search and promote&quot;- &quot;Adobe Search and Promote&quot;- &quot;cerca e promuovi&quot;- &quot;Search and Promote&quot;- &quot;asp&quot;- &quot;adobe dynamic media classic&quot;- &quot;Adobe Dynamic Media Classic&quot;- &quot;dynamic media classic&quot;- &quot;Dynamic Media Classic&quot;- dmc- &quot;adobe launch&quot;- &quot;Adobe Launch&quot;- &quot;launch&quot;- &quot;Launch&quot;- &quot;adobe primetime&quot;- &quot;Adobe Primetime&quot;- &quot;primetime&quot;- &quot;Primetime&quot;- &quot;adobe social&quot;- &quot;social&quot;- &quot;auditor&quot;- &quot;Auditor&quot;- &quot;adobe percorsi orchestration&quot;- &quot;Adobe Journey Orchestration&quot;- &quot;Orchestrazione percorso&quot;- &quot;Journey Orchestration&quot;- &quot;jo&quot;- &quot;adobe device co-op&quot;- &quot;Adobe Device Co-op&quot;- &quot;device co-op&quot;- &quot;Device Co-op&quot;- dcp- &quot;adobe debugger&quot;- &quot;Adobe Debugger&quot;- &quot;debugger&quot;- &quot;Debugger&quot;- dbg- &quot;adobe web sdk&quot;- &quot;Adobe Web SDK&quot;- &quot;web sdk&quot;- &quot;Web SDK&quot;- &quot;sdk&quot;- &quot;adobe places service&quot;- &quot;Servizio Places di Adobe&quot;- &quot;places service&quot;- &quot;Places Service&quot;- &quot;aps&quot;- &quot;servizio adobe id&quot;- &quot;Servizio Adobe ID&quot;- &quot;servizio id&quot;- &quot;Servizio ID&quot;- &quot;ids&quot;- &quot;adobe mobile sdk&quot;- &quot;Adobe Mobile SDK&quot;- &quot;mobile sdk&quot;- &quot;Mobile SDK&quot;- mdk- &quot;Journey Optimizer&quot;- &quot;Ottimizzatore percorso&quot;
+### &#x200B;8. Valori di prodotto validi
+&quot;product&quot;:
+- &quot;adobe analytics&quot;
+- &quot;Adobe Analytics&quot;
+- &quot;analytics&quot;
+- &quot;Analytics&quot;
+- &quot;aa&quot;
+- &quot;adobe audience manager&quot;
+- &quot;Adobe Audience Manager&quot;
+- &quot;audience manager&quot;
+- &quot;Audience Manager&quot;
+- &quot;adobe campaign&quot;
+- &quot;Adobe Campaign&quot;
+- &quot;campaign&quot;
+- &quot;Campaign&quot;
+- &quot;ac&quot;
+- &quot;adobe experience manager&quot;
+- &quot;Adobe Experience Manager&quot;
+- &quot;experience manager&quot;
+- &quot;Experience Manager&quot;
+- &quot;aem&quot;
+- &quot;adobe experience manager cloud manager&quot;
+- &quot;Adobe Experience Manager Cloud Manager&quot;
+- &quot;experience manager cloud manager&quot;
+- &quot;Experience Manager Cloud Manager&quot;
+- cm
+- &quot;adobe livefyre&quot;
+- &quot;Adobe Livefyre&quot;
+- &quot;livefyre&quot;
+- &quot;Livefyre&quot;
+- &quot;alf&quot;
+- &quot;adobe marketing cloud&quot;
+- &quot;marketing cloud&quot;
+- &quot;experience-cloud&quot;
+- &quot;experience cloud&quot;
+- &quot;Experience Cloud&quot;
+- &quot;servizi principali&quot;
+- &quot;amc&quot;
+- &quot;adobe advertising cloud&quot;
+- &quot;Adobe Advertising cloud&quot;
+- &quot;advertising cloud&quot;
+- &quot;Advertising Cloud&quot;
+- &quot;adc&quot;
+- &quot;adobe media optimizer&quot;
+- &quot;Adobe media Optimizer&quot;
+- &quot;media optimizer&quot;
+- &quot;Media Optimizer&quot;
+- &quot;amo&quot;
+- &quot;adobe target&quot;
+- &quot;Adobe Target&quot;
+- &quot;target&quot;
+- &quot;Target&quot;
+- &quot;at&quot;
+- &quot;adobe dynamic tag management&quot;
+- &quot;dynamic tag management&quot;
+- &quot;dtm&quot;
+- &quot;adobe experience platform&quot;
+- &quot;Adobe Experience Platform&quot;
+- &quot;experience platform&quot;
+- &quot;Experience Platform&quot;
+- &quot;platform&quot;
+- &quot;Platform&quot;
+- &quot;adobe customer percorsi analytics&quot;
+- &quot;Adobe Customer Journey Analytics&quot;
+- &quot;analisi del percorso del cliente&quot;
+- &quot;Customer Journey Analytics&quot;
+- &quot;cja&quot;
+- &quot;adobe intelligent services&quot;
+- &quot;Adobe Intelligent Services&quot;
+- &quot;servizi intelligenti&quot;
+- &quot;Intelligent Services&quot;
+- &quot;is&quot;
+- &quot;adobe real time customer data platform&quot;
+- &quot;Adobe Real Time Customer Data Platform&quot;
+- &quot;real time cdp&quot;
+- &quot;Real Time CDP&quot;
+- &quot;rtcdp&quot;
+- &quot;adobe marketo&quot;
+- &quot;Adobe Marketo&quot;
+- &quot;marketo&quot;
+- &quot;Marketo&quot;
+- &quot;amk&quot;
+- &quot;adobe bizible&quot;
+- &quot;Adobe Bizible&quot;
+- &quot;bizzarro&quot;
+- &quot;Bizible&quot;
+- &quot;biz&quot;
+- &quot;adobe magento&quot;
+- &quot;Adobe Magento&quot;
+- &quot;magento&quot;
+- &quot;Magento&quot;
+- mag
+- &quot;adobe acrobat&quot;
+- &quot;Adobe Acrobat&quot;
+- &quot;acrobat&quot;
+- &quot;Acrobat&quot;
+- &quot;acr&quot;
+- &quot;adobe sign&quot;
+- &quot;Adobe Sign&quot;
+- &quot;sign&quot;
+- &quot;Sign&quot;
+- &quot;asi&quot;
+- &quot;adobe document cloud&quot;
+- &quot;Adobe Document Cloud&quot;
+- &quot;document cloud&quot;
+- &quot;Document Cloud&quot;
+- &quot;dcl&quot;
+- &quot;adobe search and promote&quot;
+- &quot;Adobe Search and Promote&quot;
+- &quot;cerca e promuovi&quot;
+- &quot;Search and Promote&quot;
+- &quot;asp&quot;
+- &quot;adobe dynamic media classic&quot;
+- &quot;Adobe Dynamic Media Classic&quot;
+- &quot;dynamic media classic&quot;
+- &quot;Dynamic Media Classic&quot;
+- dmc
+- &quot;adobe launch&quot;
+- &quot;Adobe Launch&quot;
+- &quot;launch&quot;
+- &quot;Launch&quot;
+- &quot;adobe primetime&quot;
+- &quot;Adobe Primetime&quot;
+- &quot;primetime&quot;
+- &quot;Primetime&quot;
+- &quot;adobe social&quot;
+- &quot;social&quot;
+- &quot;auditor&quot;
+- &quot;Auditor&quot;
+- &quot;adobe percorsi orchestration&quot;
+- &quot;Adobe Journey Orchestration&quot;
+- &quot;Orchestrazione percorso&quot;
+- &quot;Journey Orchestration&quot;
+- &quot;jo&quot;
+- &quot;adobe device co-op&quot;
+- &quot;Adobe Device Co-op&quot;
+- &quot;device co-op&quot;
+- &quot;Device Co-op&quot;
+- dcp
+- &quot;adobe debugger&quot;
+- &quot;Adobe Debugger&quot;
+- &quot;debugger&quot;
+- &quot;Debugger&quot;
+- dbg
+- &quot;adobe web sdk&quot;
+- &quot;Adobe Web SDK&quot;
+- &quot;web sdk&quot;
+- &quot;Web SDK&quot;
+- &quot;sdk&quot;
+- &quot;adobe places service&quot;
+- &quot;Servizio Places di Adobe&quot;
+- &quot;places service&quot;
+- &quot;Places Service&quot;
+- &quot;aps&quot;
+- &quot;servizio adobe id&quot;
+- &quot;Servizio Adobe ID&quot;
+- &quot;servizio id&quot;
+- &quot;Servizio ID&quot;
+- &quot;ids&quot;
+- &quot;adobe mobile sdk&quot;
+- &quot;Adobe Mobile SDK&quot;
+- &quot;mobile sdk&quot;
+- &quot;Mobile SDK&quot;
+- mdk
+- &quot;Journey Optimizer&quot;
+- &quot;Ottimizzatore percorso&quot;
 
-### &#x200B;9. Valori ruolo validi&quot;role&quot; (ruolo):- &quot;Admin&quot;- &quot;Architetto&quot;- &quot;Architetto dati&quot;- &quot;Ingegnere dati&quot;- &quot;Sviluppatore&quot;- Leader- &quot;User&quot;
+### &#x200B;9. Valori ruolo validi
+&quot;role&quot; (ruolo):
+- &quot;Admin&quot;
+- &quot;Architetto&quot;
+- &quot;Architetto dati&quot;
+- &quot;Ingegnere dati&quot;
+- &quot;Sviluppatore&quot;
+- Leader
+- &quot;User&quot;
 
 ## Processo di revisione
 
@@ -74,11 +279,20 @@ Quando rivedi un file, segui questo approccio sistematico:
 
 Per ogni revisione, fornisci:
 
-### RiepilogoUna breve valutazione globale (cambiamenti di esito/necessità/problemi principali)
+### Riepilogo
+Una breve valutazione globale (cambiamenti di esito/necessità/problemi principali)
 
-### Problemi trovatiPer ogni problema:- **Gravità**: 🔴 Errore (da correggere) | 🟡 Avviso (correggere) | 🔵 Suggerimento (piacevole da avere)- **Riga/Sezione**: dove si è verificato il problema- **Regola**: quale linea guida è violata- **Corrente**: contenuto del file- **Previsto**: come deve essere- **Correzione**: correzione specifica da applicare
+### Problemi trovati
+Per ogni problema:
+- **Gravità**: 🔴 Errore (da correggere) | 🟡 Avviso (correggere) | 🔵 Suggerimento (piacevole da avere)
+- **Riga/Sezione**: dove si è verificato il problema
+- **Regola**: quale linea guida è violata
+- **Corrente**: contenuto del file
+- **Previsto**: come deve essere
+- **Correzione**: correzione specifica da applicare
 
-### Elenco di controlloElenco di controllo di conformità rapido che mostra l’esito positivo/negativo per ogni categoria principale.
+### Elenco di controllo
+Elenco di controllo di conformità rapido che mostra l’esito positivo/negativo per ogni categoria principale.
 
 ## Comportamenti importanti
 
