@@ -105,7 +105,7 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 | Creazione di attributi calcolati/derivati | Non applicabile | L’inoltro degli eventi funziona sui dati degli eventi non elaborati, non sugli attributi calcolati a livello di profilo. Gli attributi calcolati non sono disponibili nel contesto di inoltro degli eventi. | |
 | Data Lifecycle Management | Consigliato | Se i dati evento vengono acquisiti anche nei set di dati di AEP (tramite lo stesso flusso di dati), è necessario configurare le policy di conservazione dei dati (scadenza) per tali set di dati in modo da gestire i costi di archiviazione e la conformità alle normative. L’inoltro degli eventi di per sé non memorizza i dati, mentre il percorso di acquisizione parallelo di AEP sì. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Consigliato | Mentre le regole di inoltro degli eventi forniscono un filtro a livello di campo (che consente di escludere i dati sensibili dai payload inoltrati), l’applicazione di etichette di utilizzo dei dati agli schemi e ai set di dati sottostanti garantisce che vengano applicati i criteri di governance se gli stessi dati vengono utilizzati per l’attivazione o la personalizzazione del pubblico. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
-| Monitoraggio e osservabilità | Incluso | Il monitoraggio è essenziale per l’inoltro degli eventi. Il dashboard Monitoraggio inoltro eventi fornisce visibilità sulle percentuali di successo e di errore di inoltro, nonché sui codici di risposta della destinazione. Gli avvisi devono essere configurati per gli errori di destinazione. | [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring) |
+| Monitoraggio e osservabilità | Incluso | Il monitoraggio è essenziale per l’inoltro degli eventi. Il dashboard Monitoraggio inoltro eventi fornisce visibilità sulle percentuali di successo e di errore di inoltro, nonché sui codici di risposta della destinazione. Gli avvisi devono essere configurati per gli errori di destinazione. | [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/monitoring) |
 | Reporting e analisi | Consigliato | Se gli eventi inoltrati alimentano una piattaforma di analisi di terze parti, puoi collegare gli stessi set di dati evento di AEP a CJA per una visualizzazione cross-channel unificata. Questo consente il confronto tra analisi lato Adobe e analisi lato terze parti. | [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Funzioni dell’applicazione
@@ -521,7 +521,7 @@ Crea regole separate per ogni destinazione. Le regole basate sull’estensione u
 
 **Documentazione di Experience League:**
 
-- [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring)
+- [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/monitoring)
 - [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
 - [Panoramica degli avvisi](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
 
@@ -607,7 +607,7 @@ Le risorse seguenti forniscono ulteriori dettagli sugli argomenti trattati in qu
 
 - [Panoramica sull’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
 - [Guida introduttiva all’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
-- [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring)
+- [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/monitoring)
 - [Segreti di inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
 
 **Estensioni di inoltro eventi**
