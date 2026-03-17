@@ -3,7 +3,7 @@ title: Casi d'uso di Customer Experience Orchestration, diagrammi dell'architett
 description: Esplora gli obiettivi aziendali chiave, i modelli di casi d’uso e i casi d’uso del settore per Adobe Experience Platform e le applicazioni. I diagrammi e i progetti dell'architettura visiva forniscono riferimenti tecnici per l'integrazione del sistema, i flussi di dati e la progettazione delle soluzioni, collegando il valore aziendale all'implementazione.
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 62c69ab5ba773172b5b3b55a6c3766c58331135c
+source-git-commit: 63154ca158b773287f0d1a7f88a81ac3181c43a0
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 2%
@@ -74,7 +74,7 @@ Casi d’uso personalizzati per settori specifici, ciascuno associato a modelli 
 </tr>
 </table>
 
-[Visualizza tutti i casi d’uso del settore](industry-use-cases/overview.md)
+[Visualizza tutti i casi d’uso del settore](industry-use-cases/use-case-catalog.md)
 
 ## Architettura di diagrammi e blueprint
 
