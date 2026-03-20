@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Questo file contiene il modello markdown completo per una pagina con pattern di use case. Sostituisci tutti i valori `{{placeholder}}` con il contenuto effettivo durante la generazione di un nuovo modello.
 
----
+&#x200B;---
 
 ## Modello
 
@@ -227,7 +227,7 @@ Complete the following before beginning the implementation.
 | Scalability | {{description}} | {{description}} | {{description}} |
 ````
 
----
+&#x200B;---
 
 ## Note sull&#39;utilizzo di questo modello
 

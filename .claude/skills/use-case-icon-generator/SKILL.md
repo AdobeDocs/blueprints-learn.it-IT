@@ -117,9 +117,9 @@ Consultate la sezione inventario delle icone esistenti nella guida di stile ed e
 
 Formattare chiaramente l&#39;output con queste sezioni:
 
----
+&#x200B;---
 
-### Specifica icona: {Use Case Name}
+### Specifica icona: &lbrace;Use Case Name&rbrace;
 
 **Settore:** {Industry}
 
@@ -151,7 +151,7 @@ Formattare chiaramente l&#39;output con queste sezioni:
 6. Verifica che l’icona sia chiara e riconoscibile, con una dimensione di visualizzazione di 40 px.
 7. Utilizza lo snippet HTML per il catalogo quando aggiungi questo caso d’uso alla tabella del catalogo.
 
----
+&#x200B;---
 
 ## Linee guida
 
