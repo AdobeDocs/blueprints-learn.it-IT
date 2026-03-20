@@ -3,9 +3,9 @@ title: Catalogo dei casi d’uso
 description: Sfoglia i casi d’uso del settore in verticale per trovare il punto di partenza giusto per il tuo percorso Adobe Experience Platform, con collegamenti ai modelli di implementazione e agli obiettivi aziendali.
 doc-type: overview-page
 exl-id: 38593314-b8c9-49f6-85db-a4345ec444e7
-source-git-commit: b0fe19570fb5b649b063d0ba7d99e77ab166983d
+source-git-commit: 9d1ba8ce3fed83b1bd2b2615309ae7e3683e14f1
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2379'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ Industry Use Case → Use Case Pattern → Key Business Objective
 | | [Valutazione e prevenzione dei rischi](insurance/insurance-overview.md#risk-assessment-and-prevention) | Fornire informazioni personalizzate sulla valutazione dei rischi e suggerimenti sulla prevenzione | [!BADGE Emergente]{type=Informative} | [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
 | | [Programmi per il benessere e la prevenzione](insurance/insurance-overview.md#wellness-and-prevention-programs) | Personalizzare comunicazioni e premi del programma di benessere per i clienti del settore assicurativo | [!BADGE Emergente]{type=Informative} | [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
 | <img src="assets/use-case-icons/insurance/icon-cross-sell.png" alt="Effettuare azioni di cross-selling" width="40"> | [Consigli per prodotti di cross-selling](insurance/insurance-overview.md#cross-sell-product-recommendations) | Consigliare prodotti assicurativi aggiuntivi in base alle polizze e alla fase di vita esistenti | [!BADGE Avanzate]{type=Caution} | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
-| | [Offerte Di Prodotto Basate Su Fase Di Vita](insurance/insurance-overview.md#life-stage-based-product-offers) | Identificare i clienti che entrano in nuove fasi di vita e offrire prodotti assicurativi pertinenti | [!BADGE Avanzate]{type=Caution} | [Percorso cross-channel con decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
+| <img src="assets/use-case-icons/insurance/icon-life-stage-based-product-offers.png" alt="Fase di vita" width="40"> | [Offerte Di Prodotto Basate Su Fase Di Vita](insurance/insurance-overview.md#life-stage-based-product-offers) | Identificare i clienti che entrano in nuove fasi di vita e offrire prodotti assicurativi pertinenti | [!BADGE Avanzate]{type=Caution} | [Percorso cross-channel con decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
 | | [Opportunità di sconto e risparmio](insurance/insurance-overview.md#discount-and-savings-opportunities) | Identificare e comunicare opportunità di sconto personalizzate | [!BADGE Avanzate]{type=Caution} | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
 
 >[!TAB Media e intrattenimento]
