@@ -157,7 +157,7 @@ Dopo aver creato e aggiornato tutti i file, verifica quanto segue:
 
 5. **Completezza frontmatter**: il file di pattern include titolo, descrizione, soluzione ed exl-id nel frontmatter YAML.
 
-6. **Collegamenti Experience League** — Verifica che gli URL Experience League siano plausibili (inizia con `https://experienceleague.adobe.com/`).
+6. **Collegamenti Experience League** — Verifica che gli URL Experience League siano plausibili (inizia con `https://experienceleague.adobe.com/it`).
 
 Segnala eventuali errori di convalida all’utente e correggili prima di considerare completata l’attività.
 
