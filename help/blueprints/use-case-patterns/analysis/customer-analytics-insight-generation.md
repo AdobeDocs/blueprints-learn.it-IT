@@ -910,7 +910,7 @@ Le risorse seguenti forniscono informazioni aggiuntive per questo modello di cas
 - [Dimensioni di raggruppamento](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/components/dimensions/t-breakdown-fa)
 - [Condividi progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
 - [Programmare progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
-- [Panoramica sull’esportazione](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud)
+- [Panoramica sull’esportazione](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/export/export-cloud)
 
 ### Analisi guidata
 

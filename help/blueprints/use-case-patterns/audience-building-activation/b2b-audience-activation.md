@@ -109,11 +109,11 @@ Per questo modello di caso d’uso devono essere disponibili le seguenti funzion
 
 | Funzione fondamentale | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Amministrazione e governance | Obbligatorio | Sandbox con provisioning di [!DNL RT-CDP] B2B edition abilitato. Ruoli configurati per la gestione dei dati B2B, la creazione di tipi di pubblico e l’attivazione della destinazione. Criteri ABAC in vigore se i dati dell&#39;account contengono campi con restrizioni. | [Panoramica sulle sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/home), [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| Modellazione e preparazione dei dati | Obbligatorio | Schemi XDM B2B configurati utilizzando le classi XDM Business Account, XDM Business Opportunity, XDM Business Campaign e XDM Individual Profile. Gruppi di campi B2B applicati per attributi di conto, relazioni persona-account e dati opportunità. Set di dati creati e abilitati per il profilo per ogni entità B2B. Relazioni di schema definite tra entità account, persona, opportunità ed entità campagna. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home), [schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) |
-| Origini dati e raccolta | Obbligatorio | Connettori Source configurati per CRM ([!DNL Salesforce], [!DNL Microsoft Dynamics]) e automazione marketing ([!DNL Marketo Engage]) per acquisire dati di account, persona, opportunità e campagna. Pipeline di acquisizione in batch o in streaming attive. Mappature della preparazione dati configurate per trasformare i dati di origine in schemi XDM B2B. | [Panoramica origini](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home), [Connettore Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
-| Configurazione identità e profilo | Obbligatorio | Spazi dei nomi di identità B2B configurati per gli identificatori dell’account (ID account, ID account CRM) e gli identificatori della persona (E-mail, ID contatto CRM, ID lead Marketo). Le relazioni persona-account sono state risolte tramite la risoluzione dell’identità B2B. Criteri di unione configurati per l’unificazione del profilo account. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [B2B edition di Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b) |
-| Definizione e segmentazione del pubblico | Obbligatorio | Definizioni del pubblico a livello di account create utilizzando gli attributi dell’account, gli attributi della persona e i dati dell’attività. Pianificazioni di valutazione configurate per il pubblico dell’account. Tipi di pubblico di eliminazione definiti per escludere account non idonei. | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home), [Pubblico dell&#39;account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences) |
+| Amministrazione e governance | Obbligatorio | Sandbox con provisioning di [!DNL RT-CDP] B2B edition abilitato. Ruoli configurati per la gestione dei dati B2B, la creazione di tipi di pubblico e l’attivazione della destinazione. Criteri ABAC in vigore se i dati dell&#39;account contengono campi con restrizioni. | [Panoramica sulle sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/home), [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
+| Modellazione e preparazione dei dati | Obbligatorio | Schemi XDM B2B configurati utilizzando le classi XDM Business Account, XDM Business Opportunity, XDM Business Campaign e XDM Individual Profile. Gruppi di campi B2B applicati per attributi di conto, relazioni persona-account e dati opportunità. Set di dati creati e abilitati per il profilo per ogni entità B2B. Relazioni di schema definite tra entità account, persona, opportunità ed entità campagna. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home), [schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b) |
+| Origini dati e raccolta | Obbligatorio | Connettori Source configurati per CRM ([!DNL Salesforce], [!DNL Microsoft Dynamics]) e automazione marketing ([!DNL Marketo Engage]) per acquisire dati di account, persona, opportunità e campagna. Pipeline di acquisizione in batch o in streaming attive. Mappature della preparazione dati configurate per trasformare i dati di origine in schemi XDM B2B. | [Panoramica origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home), [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
+| Configurazione identità e profilo | Obbligatorio | Spazi dei nomi di identità B2B configurati per gli identificatori dell’account (ID account, ID account CRM) e gli identificatori della persona (E-mail, ID contatto CRM, ID lead Marketo). Le relazioni persona-account sono state risolte tramite la risoluzione dell’identità B2B. Criteri di unione configurati per l’unificazione del profilo account. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home), [B2B edition di Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b) |
+| Definizione e segmentazione del pubblico | Obbligatorio | Definizioni del pubblico a livello di account create utilizzando gli attributi dell’account, gli attributi della persona e i dati dell’attività. Pianificazioni di valutazione configurate per il pubblico dell’account. Tipi di pubblico di eliminazione definiti per escludere account non idonei. | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home), [Pubblico dell&#39;account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/types/account-audiences) |
 
 ## Funzioni di supporto
 
@@ -121,11 +121,11 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 
 | Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Creazione di attributi calcolati/derivati | Consigliato | I punteggi di coinvolgimento aggregati, il valore del ciclo di vita e le metriche delle attività a livello di account migliorano la precisione del pubblico. Gli attributi calcolati possono aggregare eventi a livello di persona (aperture di e-mail, visite web, download di contenuti) a livello di account per l’utilizzo nella segmentazione. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
-| Data Lifecycle Management | Consigliato | I criteri di conservazione dei dati B2B garantiscono la pulizia dei dati obsoleti di account e opportunità. La gestione del consenso per i contatti B2B garantisce la conformità alle normative di e-mail marketing. I criteri di scadenza del set di dati impediscono l’accumulo di dati di sincronizzazione CRM obsoleti. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
+| Creazione di attributi calcolati/derivati | Consigliato | I punteggi di coinvolgimento aggregati, il valore del ciclo di vita e le metriche delle attività a livello di account migliorano la precisione del pubblico. Gli attributi calcolati possono aggregare eventi a livello di persona (aperture di e-mail, visite web, download di contenuti) a livello di account per l’utilizzo nella segmentazione. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
+| Data Lifecycle Management | Consigliato | I criteri di conservazione dei dati B2B garantiscono la pulizia dei dati obsoleti di account e opportunità. La gestione del consenso per i contatti B2B garantisce la conformità alle normative di e-mail marketing. I criteri di scadenza del set di dati impediscono l’accumulo di dati di sincronizzazione CRM obsoleti. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Incluso | I dati dei conti B2B spesso contengono restrizioni contrattuali (cifre dei ricavi, conteggi dei dipendenti da fornitori terzi). Le etichette di utilizzo dei dati impediscono l’attivazione di attributi dell’account con restrizioni su destinazioni non autorizzate. I criteri di governance garantiscono che i campi PII dei record dei contatti vengano gestiti in modo appropriato durante l’attivazione. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home) |
-| Monitoraggio e osservabilità | Incluso | Il monitoraggio dei flussi di dati del CRM e del connettore di origine [!DNL Marketo Engage] assicura che i dati dell&#39;account rimangano correnti. Il monitoraggio dell&#39;attivazione della destinazione conferma che i tipi di pubblico sono stati recapitati correttamente alle destinazioni [!DNL LinkedIn], [!DNL Marketo] e CRM. Le regole di avviso rilevano gli errori di acquisizione che causerebbero dati dell’account non aggiornati. | [Panoramica avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview), [Monitora flussi dati di destinazione](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations) |
-| Reporting e analisi | Consigliato | [!DNL CJA] B2B edition fornisce analisi a livello di account che includono la portata del pubblico, il coinvolgimento e l&#39;influenza sulla pipeline. L’attribuzione basata sull’account consente di misurare l’impatto delle campagne di attivazione sulla progressione delle opportunità e sui ricavi. | [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Monitoraggio e osservabilità | Incluso | Il monitoraggio dei flussi di dati del CRM e del connettore di origine [!DNL Marketo Engage] assicura che i dati dell&#39;account rimangano correnti. Il monitoraggio dell&#39;attivazione della destinazione conferma che i tipi di pubblico sono stati recapitati correttamente alle destinazioni [!DNL LinkedIn], [!DNL Marketo] e CRM. Le regole di avviso rilevano gli errori di acquisizione che causerebbero dati dell’account non aggiornati. | [Panoramica avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview), [Monitora flussi dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations) |
+| Reporting e analisi | Consigliato | [!DNL CJA] B2B edition fornisce analisi a livello di account che includono la portata del pubblico, il coinvolgimento e l&#39;influenza sulla pipeline. L’attribuzione basata sull’account consente di misurare l’impatto delle campagne di attivazione sulla progressione delle opportunità e sui ricavi. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Funzioni dell’applicazione
 
@@ -203,8 +203,8 @@ La destinazione [!DNL Marketo Engage] è una destinazione di streaming, il che s
 
 **Experience League:**
 
-- [Destinazione Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [Attivare i tipi di pubblico nella destinazione Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage#activate)
+- [Destinazione Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [Attivare i tipi di pubblico nella destinazione Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/adobe/marketo-engage#activate)
 
 ### Opzione B: attivazione batch del pubblico su piattaforme pubblicitarie
 
@@ -241,8 +241,8 @@ L’attivazione batch viene eseguita secondo una pianificazione configurabile (g
 
 **Experience League:**
 
-- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
-- [Destinazione Customer Match di Google](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/advertising/google-customer-match)
+- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Destinazione Customer Match di Google](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/advertising/google-customer-match)
 - [Catalogo delle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/overview)
 
 ### Opzione C: attivazione basata su file nell&#39;archiviazione cloud
@@ -279,9 +279,9 @@ L&#39;attivazione basata su file offre il maggiore controllo sul formato di espo
 
 **Experience League:**
 
-- [Destinazione Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [Destinazione archiviazione BLOB di Azure](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
-- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/connect-activate-batch-destinations)
+- [Destinazione Amazon S3](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Destinazione archiviazione BLOB di Azure](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
+- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/api/connect-activate-batch-destinations)
 
 ### Opzione D: attivazione in streaming su sistemi CRM
 
@@ -317,7 +317,7 @@ Il connettore di streaming invia aggiornamenti incrementali quando si verificano
 **Experience League:**
 
 - [Destinazione Salesforce CRM](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Destinazione Microsoft Dynamics 365](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
+- [Destinazione Microsoft Dynamics 365](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
 
 ### Confronto delle opzioni
 
@@ -394,9 +394,9 @@ Questa fase stabilisce profili di account unificati consolidando i dati provenie
 **Documentazione di Experience League:**
 
 - [Panoramica di Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b)
-- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Connettore Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Connettore Salesforce](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/crm/salesforce)
+- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
+- [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Connettore Salesforce](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/crm/salesforce)
 
 ### Fase 2: Valutazione del pubblico dell’account
 
@@ -454,9 +454,9 @@ Questa fase definisce e valuta i tipi di pubblico a livello di account utilizzan
 
 **Documentazione di Experience League:**
 
-- [Pubblico dell’account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
+- [Pubblico dell’account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/types/account-audiences)
 - [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
-- [Composizione del pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [Composizione del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-composition)
 - [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
 
 ### Fase 3: configurazione della destinazione
@@ -527,12 +527,12 @@ Passa a Destinazioni > Catalogo > CRM > seleziona [!DNL Salesforce] o [!DNL Dyna
 
 **Documentazione di Experience League:**
 
-- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/home)
 - [Catalogo delle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/overview)
-- [Destinazione Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Destinazione Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/social/linkedin)
 - [Destinazione Salesforce CRM](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Destinazione Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Destinazione Amazon S3](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
 
 ### Fase 4: Attivazione del pubblico
 
@@ -595,10 +595,10 @@ Seleziona il pubblico dell’account da attivare. L&#39;attivazione inizia immed
 
 **Documentazione di Experience League:**
 
-- [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
 - [Guardrail di attivazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
-- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/home)
 
 ### Fase 5: Governance e monitoraggio
 
@@ -645,7 +645,7 @@ Questa fase assicura che l’attivazione del pubblico dell’account sia conform
 
 - [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home)
 - [Consenso e preferenze](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
-- [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations)
 - [Panoramica degli avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview)
 - [Guardrail di attivazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
 
@@ -657,7 +657,7 @@ Le sezioni seguenti forniscono ulteriori indicazioni per un’implementazione co
 
 Esamina i seguenti guardrail e limiti della piattaforma applicabili a questo pattern di casi d’uso.
 
-- Massimo 4.000 definizioni di segmenti per sandbox, inclusi i tipi di pubblico dell&#39;account — [Guardrail di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- Massimo 4.000 definizioni di segmenti per sandbox, inclusi i tipi di pubblico dell&#39;account — [Guardrail di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
 - I tipi di pubblico dell’account vengono valutati principalmente utilizzando la valutazione in batch; l’idoneità allo streaming è limitata a condizioni di attributi dell’account semplici
 - Massimo 100 flussi di dati per connessione di destinazione — [Guardrail di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
 - Le destinazioni batch esportano fino a 5 milioni di profili per segmento di file
@@ -666,7 +666,7 @@ Esamina i seguenti guardrail e limiti della piattaforma applicabili a questo pat
 - Massimo 10 blocchi di composizione per area di lavoro di composizione del pubblico
 - [!DNL LinkedIn] tipi di pubblico corrispondenti richiedono una dimensione minima del pubblico (in genere 300 membri) per l&#39;attivazione
 - Le destinazioni di streaming CRM sono soggette ai limiti di velocità API del provider di gestione delle relazioni con i clienti (ad esempio, [!DNL Salesforce] limiti giornalieri API in blocco)
-- [!DNL RT-CDP] la licenza B2B edition regola il numero totale di profili dell&#39;account aziendale - [Descrizione del prodotto RT-CDP](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
+- [!DNL RT-CDP] la licenza B2B edition regola il numero totale di profili dell&#39;account aziendale - [Descrizione del prodotto RT-CDP](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
 
 ### Insidie comuni
 
@@ -735,43 +735,43 @@ Le risorse seguenti forniscono ulteriore contesto e indicazioni dettagliate per 
 **[!DNL RT-CDP]B2B edition**
 
 - [Panoramica di Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b)
-- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Pubblico dell’account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
-- [Descrizione del prodotto B2B edition RT-CDP](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
+- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
+- [Pubblico dell’account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/types/account-audiences)
+- [Descrizione del prodotto B2B edition RT-CDP](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
 
 **Valutazione del pubblico e segmentazione**
 
 - [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
 - [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
-- [Composizione del pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Guardrail di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Composizione del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-composition)
+- [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Guardrail di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
 
 **Destinazioni e attivazione**
 
-- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/home)
 - [Catalogo delle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/overview)
-- [Destinazione Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Destinazione Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/social/linkedin)
 - [Destinazione Salesforce CRM](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Destinazione Microsoft Dynamics 365](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
-- [Destinazione Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Destinazione Microsoft Dynamics 365](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
+- [Destinazione Amazon S3](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
 - [Guardrail di attivazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
 
 **Origini dati e connettori**
 
-- [Panoramica sulle origini](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [Connettore Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Connettore Salesforce](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/crm/salesforce)
+- [Panoramica sulle origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home)
+- [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Connettore Salesforce](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/crm/salesforce)
 
 **Modellazione dati e identità**
 
 - [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home)
-- [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-- [Panoramica del profilo](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
-- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
+- [Panoramica del profilo](https://experienceleague.adobe.com/it/docs/experience-platform/profile/home)
+- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview)
 
 **Governance dei dati e privacy**
 
@@ -782,18 +782,18 @@ Le risorse seguenti forniscono ulteriore contesto e indicazioni dettagliate per 
 **Monitoraggio e osservabilità**
 
 - [Panoramica degli avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview)
-- [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [Monitorare i flussi di dati di origine](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/monitor)
+- [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Monitorare i flussi di dati di origine](https://experienceleague.adobe.com/it/docs/experience-platform/sources/api-tutorials/monitor)
 - [Dashboard utilizzo licenze](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 **Reporting e analisi**
 
-- [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Panoramica delle connessioni](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
-- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Panoramica delle connessioni](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-connections/overview)
+- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dataviews/data-views)
 
 **Tutorial e guide**
 
 - [Guida introduttiva a Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro)
-- [Creare uno schema per le origini B2B](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Strumenti sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/sandbox-tooling-api/overview)
+- [Creare uno schema per le origini B2B](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
+- [Strumenti sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/sandbox-tooling-api/overview)
