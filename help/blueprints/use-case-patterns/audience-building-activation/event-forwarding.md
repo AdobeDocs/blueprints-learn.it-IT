@@ -104,8 +104,8 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 | --- | --- | --- | --- |
 | Creazione di attributi calcolati/derivati | Non applicabile | L’inoltro degli eventi funziona sui dati degli eventi non elaborati, non sugli attributi calcolati a livello di profilo. Gli attributi calcolati non sono disponibili nel contesto di inoltro degli eventi. | |
 | Data Lifecycle Management | Consigliato | Se i dati evento vengono acquisiti anche nei set di dati di AEP (tramite lo stesso flusso di dati), è necessario configurare le policy di conservazione dei dati (scadenza) per tali set di dati in modo da gestire i costi di archiviazione e la conformità alle normative. L’inoltro degli eventi di per sé non memorizza i dati, mentre il percorso di acquisizione parallelo di AEP sì. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| Etichettatura e applicazione dell’utilizzo dati | Consigliato | Mentre le regole di inoltro degli eventi forniscono un filtro a livello di campo (che consente di escludere i dati sensibili dai payload inoltrati), l’applicazione di etichette di utilizzo dei dati agli schemi e ai set di dati sottostanti garantisce che vengano applicati i criteri di governance se gli stessi dati vengono utilizzati per l’attivazione o la personalizzazione del pubblico. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
-| Monitoraggio e osservabilità | Incluso | Il monitoraggio è essenziale per l’inoltro degli eventi. Il dashboard Monitoraggio inoltro eventi fornisce visibilità sulle percentuali di successo e di errore di inoltro, nonché sui codici di risposta della destinazione. Gli avvisi devono essere configurati per gli errori di destinazione. | [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring) |
+| Etichettatura e applicazione dell’utilizzo dati | Consigliato | Mentre le regole di inoltro degli eventi forniscono un filtro a livello di campo (che consente di escludere i dati sensibili dai payload inoltrati), l’applicazione di etichette di utilizzo dei dati agli schemi e ai set di dati sottostanti garantisce che vengano applicati i criteri di governance se gli stessi dati vengono utilizzati per l’attivazione o la personalizzazione del pubblico. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home) |
+| Monitoraggio e osservabilità | Incluso | Il monitoraggio è essenziale per l’inoltro degli eventi. Il dashboard Monitoraggio inoltro eventi fornisce visibilità sulle percentuali di successo e di errore di inoltro, nonché sui codici di risposta della destinazione. Gli avvisi devono essere configurati per gli errori di destinazione. | [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/monitoring) |
 | Reporting e analisi | Consigliato | Se gli eventi inoltrati alimentano una piattaforma di analisi di terze parti, puoi collegare gli stessi set di dati evento di AEP a CJA per una visualizzazione cross-channel unificata. Questo consente il confronto tra analisi lato Adobe e analisi lato terze parti. | [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Funzioni dell’applicazione
@@ -153,7 +153,7 @@ Il compromesso è che la disponibilità dell’estensione determina quali destin
 
 **Considerazioni chiave:**
 
-- La disponibilità dell&#39;estensione varia. Controllare il [catalogo estensioni raccolta dati](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview) prima di pianificare
+- La disponibilità dell&#39;estensione varia. Controllare il [catalogo estensioni raccolta dati](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/overview) prima di pianificare
 - Le estensioni sono gestite da Adobe o dai partner; gli aggiornamenti possono introdurre modifiche che causano interruzioni e che richiedono regolazioni delle regole
 - Alcune estensioni supportano solo tipi di evento specifici o richiedono mappature di campi XDM specifiche
 - Le estensioni gestiscono l’autenticazione e la gestione delle credenziali nell’interfaccia utente di configurazione
@@ -175,7 +175,7 @@ Il compromesso è che la disponibilità dell’estensione determina quali destin
 
 **Experience League:**
 
-- [Catalogo estensioni inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
+- [Catalogo estensioni inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/overview)
 - [Estensione API per conversioni Meta](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
 - [Estensione Piattaforma Google Cloud](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
 - [Estensione AWS](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/aws/overview)
@@ -218,7 +218,7 @@ Il compromesso consiste in un maggiore impegno nell’implementazione e nella ma
 
 **Experience League:**
 
-- [Estensione Adobe Cloud Connector](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [Estensione Adobe Cloud Connector](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
 - [Segreti di inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
 
 ### Opzione C: ibrido (estensioni + webhook personalizzati)
@@ -254,7 +254,7 @@ Questo approccio massimizza la copertura riducendo al minimo gli sviluppi person
 **Experience League:**
 
 - [Panoramica sull’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
-- [Guida introduttiva all’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
+- [Guida introduttiva all’inoltro degli eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/getting-started)
 
 ### Confronto delle opzioni
 
@@ -372,10 +372,10 @@ Le fasi seguenti descrivono il processo di implementazione end-to-end per l’in
 
 **Documentazione di Experience League:**
 
-- [Guida introduttiva all’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
-- [Catalogo estensioni inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
+- [Guida introduttiva all’inoltro degli eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/getting-started)
+- [Catalogo estensioni inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/overview)
 - [Segreti di inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
-- [Estensione Adobe Cloud Connector](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [Estensione Adobe Cloud Connector](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
 
 ### Fase 3: definizione della regola dell’evento
 
@@ -451,7 +451,7 @@ Crea regole separate per ogni destinazione. Le regole basate sull’estensione u
 - [Regole di inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
 - [Elementi dati nell’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements)
 - [Regole nella raccolta dati](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules)
-- [Estensione Adobe Cloud Connector](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [Estensione Adobe Cloud Connector](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
 
 ### Fase 4: pubblicazione e attivazione
 
@@ -484,7 +484,7 @@ Crea regole separate per ogni destinazione. Le regole basate sull’estensione u
 
 **Documentazione di Experience League:**
 
-- [Panoramica sulla pubblicazione](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
+- [Panoramica sulla pubblicazione](https://experienceleague.adobe.com/it/docs/experience-platform/tags/publish/overview)
 - [Librerie](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/libraries)
 - [Ambienti](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments)
 - [Build](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/builds)
@@ -521,7 +521,7 @@ Crea regole separate per ogni destinazione. Le regole basate sull’estensione u
 
 **Documentazione di Experience League:**
 
-- [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring)
+- [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/monitoring)
 - [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
 - [Panoramica degli avvisi](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
 
@@ -606,14 +606,14 @@ Le risorse seguenti forniscono ulteriori dettagli sugli argomenti trattati in qu
 **Inoltro eventi**
 
 - [Panoramica sull’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
-- [Guida introduttiva all’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
-- [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring)
+- [Guida introduttiva all’inoltro degli eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/getting-started)
+- [Monitoraggio inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/monitoring)
 - [Segreti di inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
 
 **Estensioni di inoltro eventi**
 
-- [Catalogo delle estensioni lato server](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
-- [Estensione Adobe Cloud Connector](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [Catalogo delle estensioni lato server](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/overview)
+- [Estensione Adobe Cloud Connector](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
 - [Estensione API per conversioni Meta](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
 - [Estensione Piattaforma Google Cloud](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
 - [Estensione AWS](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/aws/overview)

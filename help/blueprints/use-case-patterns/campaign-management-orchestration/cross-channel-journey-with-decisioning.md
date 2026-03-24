@@ -108,8 +108,8 @@ Per questo modello di caso d’uso devono essere disponibili le seguenti funzion
 | Amministrazione e governance | Presunto sul posto | [!DNL AJO] sandbox with journey, campaign, and decisioning permissions configured. Channel surfaces for all possible delivery channels. User roles for journey designers, decisioning managers, and content authors. | [Panoramica sulle sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/home), [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
 | Modellazione e preparazione dei dati | Obbligatorio | Profile schema must include attributes used for decisioning (for example, loyalty tier, purchase history, channel preferences, engagement scores). Offer catalog and decision item schemas must be configured. ExperienceEvent schemas must capture behavioral signals used by eligibility rules and ranking formulas. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home), [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
 | Origini dati e raccolta | Presunto sul posto | Profile attributes and behavioral signals used by decisioning must be current. Real-time event streaming is needed if the journey uses event-triggered entry or exit criteria. Web SDK, Mobile SDK, or server-side collection must be active for channels that feed decisioning context. | [Panoramica di Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home), [Panoramica delle origini](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
-| Configurazione identità e profilo | Obbligatorio | Cross-channel identity resolution is critical — the journey must resolve profiles across email, push, SMS, and web. Merge policies must produce a unified profile for decisioning. Identity namespaces for all customer identifiers (CRM ID, email, ECID, phone) must be configured. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [Panoramica dei criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
-| Definizione e segmentazione del pubblico | Obbligatorio | Definizione del pubblico di ingresso per il percorso. Segmenti aggiuntivi utilizzati per le regole di idoneità delle offerte e per la ramificazione delle condizioni all’interno del percorso. Il metodo di valutazione deve corrispondere ai requisiti di latenza (streaming per immissione in tempo reale, batch per pianificata). | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home), [Guida dell&#39;interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
+| Configurazione identità e profilo | Obbligatorio | Cross-channel identity resolution is critical — the journey must resolve profiles across email, push, SMS, and web. Merge policies must produce a unified profile for decisioning. Identity namespaces for all customer identifiers (CRM ID, email, ECID, phone) must be configured. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [Panoramica dei criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview) |
+| Definizione e segmentazione del pubblico | Obbligatorio | Definizione del pubblico di ingresso per il percorso. Segmenti aggiuntivi utilizzati per le regole di idoneità delle offerte e per la ramificazione delle condizioni all’interno del percorso. Il metodo di valutazione deve corrispondere ai requisiti di latenza (streaming per immissione in tempo reale, batch per pianificata). | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home), [Guida dell&#39;interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
 
 ## Funzioni di supporto
 
@@ -117,11 +117,11 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 
 | Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Creazione di attributi calcolati/derivati | Consigliato | Attributi calcolati come i punteggi di tendenza di Customer AI, i punteggi di coinvolgimento, i punteggi di preferenza dei canali e i calcoli del valore del ciclo di vita migliorano notevolmente la qualità del processo decisionale. Questi attributi di profilo arricchiti consentono regole di idoneità e formule di classificazione più sofisticate. | [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview), [Panoramica di IA per l&#39;analisi dei clienti](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview) |
+| Creazione di attributi calcolati/derivati | Consigliato | Attributi calcolati come i punteggi di tendenza di Customer AI, i punteggi di coinvolgimento, i punteggi di preferenza dei canali e i calcoli del valore del ciclo di vita migliorano notevolmente la qualità del processo decisionale. Questi attributi di profilo arricchiti consentono regole di idoneità e formule di classificazione più sofisticate. | [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview), [Panoramica di IA per l&#39;analisi dei clienti](https://experienceleague.adobe.com/it/docs/experience-platform/intelligent-services/customer-ai/overview) |
 | Data Lifecycle Management | Consigliato | La cronologia delle offerte e i dati degli eventi decisionali si accumulano nel tempo e dovrebbero includere criteri di conservazione. L’applicazione del consenso su più canali è fondamentale: i profili senza consenso valido per un canale devono essere esclusi dal percorso di consegna di quel canale. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home), [Consenso in Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
-| Etichettatura e applicazione dell’utilizzo dati | Consigliato | L’applicazione della governance su più canali e tipi di offerta è importante quando il processo decisionale può indirizzare i profili a canali diversi con restrizioni di utilizzo dei dati diverse. Garantisce la consegna di offerte conformi su tutti i canali. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home), [Applicazione dei criteri](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) |
+| Etichettatura e applicazione dell’utilizzo dati | Consigliato | L’applicazione della governance su più canali e tipi di offerta è importante quando il processo decisionale può indirizzare i profili a canali diversi con restrizioni di utilizzo dei dati diverse. Garantisce la consegna di offerte conformi su tutti i canali. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home), [Applicazione dei criteri](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) |
 | Monitoraggio e osservabilità | Incluso | Il monitoraggio dei percorsi e delle decisioni è essenziale per le operazioni di produzione. Gli avvisi relativi a errori di inserimento nel percorso, picchi di fallback decisionali ed errori di consegna consentono una rapida risoluzione dei problemi. | [Panoramica avvisi](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview), [Panoramica approfondimenti osservabilità](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
-| Reporting e analisi | Incluso | Le relazioni sul percorso e sulle decisioni sono trattate nella fase di rendicontazione. L’analisi CJA dell’efficacia del processo decisionale, dell’ottimizzazione del mix di canali, delle prestazioni dell’offerta e del ROI del percorso fornisce le informazioni necessarie per perfezionare le strategie di classificazione e ottimizzare il percorso nel tempo. | [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Guida all&#39;integrazione di AJO + CJA](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
+| Reporting e analisi | Incluso | Le relazioni sul percorso e sulle decisioni sono trattate nella fase di rendicontazione. L’analisi CJA dell’efficacia del processo decisionale, dell’ottimizzazione del mix di canali, delle prestazioni dell’offerta e del ROI del percorso fornisce le informazioni necessarie per perfezionare le strategie di classificazione e ottimizzare il percorso nel tempo. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview), [Guida all&#39;integrazione di AJO + CJA](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
 ## Funzioni dell’applicazione
 
@@ -357,7 +357,7 @@ Quanto rapidamente il pubblico deve qualificare i profili?
 - [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
 - [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
 - [Segmentazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Riferimento Profile Query Language](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
+- [Riferimento Profile Query Language](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/pql/overview)
 
 ### Fase 2: configurazione del canale
 
@@ -615,9 +615,9 @@ Combina i nodi della condizione di selezione del canale con i nodi dell’azione
 - [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [Criteri di uscita](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [Gestione voci percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
-- [Test del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
+- [Test del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
 - [Pubblicare il percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/publishing-the-journey)
-- [Punteggi di priorità](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
+- [Punteggi di priorità](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
 - [Panoramica sulla gestione dei conflitti e delle priorità](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
 - [Regole di frequenza](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
 
@@ -652,8 +652,8 @@ Quale livello di analisi dei rapporti è necessario?
 - [Rapporto live del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [Rapporto globale percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [Utilizzare Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
-- [Guida all’integrazione di AJO e CJA](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/home)
+- [Guida all’integrazione di AJO e CJA](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 
 ## Considerazioni sull’implementazione
 
@@ -673,7 +673,7 @@ Rivedi i seguenti guardrail, insidie comuni, best practice e decisioni di compro
 - Massimo 10 superfici di canale per tipo di canale per sandbox
 - I passaggi di attesa hanno una durata minima di 1 ora per i percorsi di lettura del pubblico
 - Il tempo percorso di rientro è di almeno 5 minuti
-- Massimo 4.000 definizioni di segmenti per sandbox: [guardrail della piattaforma](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- Massimo 4.000 definizioni di segmenti per sandbox: [guardrail della piattaforma](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
 
 ### Insidie comuni
 
@@ -762,7 +762,7 @@ Le risorse seguenti forniscono ulteriori dettagli sulle funzionalità utilizzate
 - [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [Criteri di uscita](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [Gestione voci percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
-- [Test del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
+- [Test del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
 - [Pubblicare il percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/publishing-the-journey)
 
 ### Gestione delle decisioni
@@ -773,7 +773,7 @@ Le risorse seguenti forniscono ulteriori dettagli sulle funzionalità utilizzate
 - [Creazione di offerte personalizzate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Creare offerte di fallback](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [Creare le raccolte](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
-- [Creare qualificatori di raccolta](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
+- [Creare qualificatori di raccolta](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
 - [Crea decisioni](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 - [Strategie di classificazione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/ranking/ranking-strategies)
 - [Consegnare offerte nei messaggi](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
@@ -802,45 +802,45 @@ Le risorse seguenti forniscono ulteriori dettagli sulle funzionalità utilizzate
 ### Gestione dei conflitti, delle priorità e delle frequenze
 
 - [Panoramica sulla gestione dei conflitti e delle priorità](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
-- [Punteggi di priorità](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
-- [Identificare potenziali conflitti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/conflicts)
+- [Punteggi di priorità](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
+- [Identificare potenziali conflitti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/conflicts)
 - [Limitazione di percorso e arbitrato](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/journey-capping)
 - [Regole di frequenza](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
 
 ### Tipi di pubblico e segmentazione
 
-- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
 - [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
 - [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
 - [Segmentazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Composizione del pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [Riferimento Profile Query Language](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
+- [Composizione del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-composition)
+- [Riferimento Profile Query Language](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/pql/overview)
 
 ### Reporting e analisi
 
 - [Rapporto live del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [Rapporto globale percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [Utilizzare Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Guida all’integrazione di AJO e CJA](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
-- [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Guida all’integrazione di AJO e CJA](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/home)
 
 ### Profilo e identità
 
-- [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/home)
 - [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
-- [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
-- [Panoramica di Customer AI](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview)
+- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview)
+- [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview)
+- [Panoramica di Customer AI](https://experienceleague.adobe.com/it/docs/experience-platform/intelligent-services/customer-ai/overview)
 
 ### Governance dei dati e consenso
 
-- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home)
 - [Consenso in Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted)
-- [Gestire l’elenco di soppressione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list)
+- [Gestire l’elenco di soppressione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list)
 
 ### Guardrail
 
 - [Guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
-- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
-- [Guardrail del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)
+- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
+- [Guardrail del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/guardrails)
