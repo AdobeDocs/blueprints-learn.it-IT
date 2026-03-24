@@ -1,35 +1,35 @@
 ---
-title: Casi di utilizzo del settore automobilistico
-description: Scopri come le organizzazioni del settore automobilistico utilizzano Adobe Experience Platform per personalizzare il percorso di acquisto dei veicoli, migliorare la fidelizzazione dei servizi e fidelizzare i proprietari.
+title: Automotive Use Cases
+description: Discover how automotive organizations use Adobe Experience Platform to personalize the vehicle purchase journey, improve service retention, and build owner loyalty.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: ee83c739-0907-481d-ba3f-358af4e03c67
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 0%
+source-wordcount: '1941'
+ht-degree: 4%
 
 ---
 
+# Automotive use cases
 
-# Casi d’uso per il settore automobilistico
+Automotive organizations use Adobe Experience Platform to unify customer data from dealership interactions, online vehicle research, service records, and connected car systems into a single view of each owner. This foundation enables personalized experiences throughout the entire ownership lifecycle, from initial vehicle research through purchase, service, and loyalty.
 
-Le organizzazioni automobilistiche utilizzano Adobe Experience Platform per unificare i dati dei clienti provenienti dalle interazioni dei concessionari, dalla ricerca online sui veicoli, dai record dei servizi e dai sistemi di automobili collegate in un&#39;unica vista di ciascun proprietario. Questa base consente esperienze personalizzate durante l’intero ciclo di vita della proprietà, dalla ricerca iniziale sui veicoli all’acquisto, al servizio e alla fedeltà.
+## Use case summary
 
-## Riepilogo del caso d’uso
-
-| Caso d’uso | Descrizione | Impatto aziendale | Modello di implementazione |
+| Caso d’uso | Descrizione | Impatto aziendale | Implementation Pattern |
 | --- | --- | --- | --- |
-| [Percorso di acquisto veicolo Personalization](#vehicle-purchase-journey-personalization) | Personalizza il percorso di acquisto del veicolo dalla ricerca all’acquisto con le relative raccomandazioni per il veicolo, le opzioni di finanziamento e le informazioni sui dealer. Quando i potenziali acquirenti ricevono una guida personalizzata in ogni fase, si spostano attraverso il funnel di vendita più rapidamente e con maggiore fiducia. | Aumento del 20-30% dei tassi di conversione lead-acquisto, miglioramento della pipeline di vendita | [Percorso cross-channel con decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
-| [Promemoria appuntamenti di servizio](#service-appointment-reminders) | Invia promemoria di assistenza personalizzati in base al chilometraggio del veicolo, alla cronologia del servizio e alle preferenze del cliente. Un&#39;attività proattiva mantiene i veicoli sotto controllo e garantisce il ritorno dei clienti al dealer piuttosto che cercare fornitori terzi. | Aumento del 40-50% degli appuntamenti di servizio, aumento dei ricavi | [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
-| [Campagne Di Valore Di permuta](#trade-in-value-campaigns) | Offrire in modo proattivo valutazioni del valore di permuta ai clienti che potrebbero essere pronti per l&#39;aggiornamento. Raggiungere i proprietari nel punto giusto del loro ciclo di proprietà accelera il percorso verso un nuovo acquisto di veicoli. | aumento del 25-35% del trade-in, aumento delle vendite di nuovi veicoli | [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
-| [Consigli su parti e accessori](#parts-and-accessories-recommendations) | Consigliare parti, accessori e aggiornamenti pertinenti in base al modello del veicolo, alla durata di proprietà e alle preferenze del cliente. Raccomandazioni personalizzate per il mercato post-vendita generano ricavi incrementali e aiutano i proprietari a ottenere di più dal proprio veicolo. | Aumento del 30-40% degli acquisti di parti/accessori, aumento dei ricavi nel mercato post-vendita | [Consigli comportamentali](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md) |
-| [Notifiche di richiamo veicolo](#vehicle-recall-notifications) | Inviare notifiche di richiamo personalizzate con le opzioni di pianificazione del servizio e le informazioni sulla sicurezza. Comunicazioni di richiamo tempestive e chiare proteggono la sicurezza dei clienti e dimostrano l&#39;impegno del brand per un supporto responsabile della proprietà. | Aumento del 60-70% delle percentuali di risposta al richiamo, maggiore conformità in materia di sicurezza | [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
-| [Nuove Campagne Di Lancio Modelli](#new-model-launch-campaigns) | Puoi indirizzare l’attività ai clienti che potrebbero essere interessati ai nuovi lanci di modelli in base al veicolo, alle preferenze e alla cronologia degli acquisti correnti. Il targeting mirato del pubblico massimizza l’impatto del lancio e crea uno slancio nell’ordine iniziale. | Aumento del 35-45% del coinvolgimento nelle campagne di lancio, maggiore interesse per i nuovi modelli | [Attivazione messaggi in uscita in batch](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) |
-| [Offerte di finanziamento e assicurazione](#financing-and-insurance-offers) | Presenta offerte di finanziamento e assicurazione personalizzate in base al profilo di credito, alla selezione dei veicoli e alla tempistica di acquisto. Prodotti finanziari su misura eliminano le barriere all&#39;acquisto e aiutano i clienti a sentirsi sicuri delle loro condizioni. | Aumento del 25-35% dei tassi di accettazione del finanziamento, aumento dei ricavi per vendita | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
-| [Pianificazione unità di prova](#test-drive-scheduling) | Pianificazione personalizzata delle unità di test con consigli dei dealer e disponibilità del veicolo. Rendendo più semplice per gli acquirenti interessati mettersi al volante si accelera il percorso di acquisto. | Aumento del 50-60% dei tassi di completamento delle unità di test, miglioramento della conversione delle vendite | [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
-| [Programmi fedeltà del proprietario](#owner-loyalty-programs) | Personalizza comunicazioni, premi e offerte esclusive del programma fedeltà in base alla cronologia della proprietà e al livello di fedeltà. Riconoscere i proprietari a lungo termine rafforza la connessione emotiva con il brand. | Aumento del 40-50% del coinvolgimento nel programma fedeltà, aumento degli acquisti ripetuti | [Percorso cross-channel con decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
-| [Garanzia e piani di assistenza estesi](#warranty-and-extended-service-plans) | Consigliare la garanzia e piani di assistenza estesi in tempi ottimali in base all&#39;età del veicolo, al chilometraggio e ai modelli di acquisto. Un&#39;attività di outreach ben programmata acquisisce i ricavi prima della scadenza delle garanzie di fabbrica. | Aumento del 20-30% dell&#39;adozione della garanzia estesa, maggiori ricavi dal servizio | [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
-| [Attivazione funzionalità per auto collegate](#connected-car-feature-activation) | Personalizza le raccomandazioni sulle funzioni dell’auto collegata in base alle funzionalità del veicolo e alle preferenze tecnologiche. Aiutare i proprietari a scoprire le funzionalità inutilizzate aumenta la soddisfazione e rafforza la relazione digitale. | Aumento del 35-45% dei tassi di attivazione delle funzioni, migliore esperienza del cliente | [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
-| [Coordinazione rete rivenditori](#dealer-network-coordination) | Abilita i consigli personalizzati dei dealer in base alla posizione del cliente, alle preferenze e all’inventario dei dealer. Mettere in contatto i clienti con i rivenditori giusti migliora l&#39;esperienza di acquisto e di servizio. | Aumento del 30-40% dei tassi di coinvolgimento dei dealer, migliore coordinamento delle vendite | [Web visitatore conosciuto/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) |
+| [Percorso di acquisto veicolo Personalization](#vehicle-purchase-journey-personalization) | Personalizza il percorso di acquisto del veicolo dalla ricerca all’acquisto con le relative raccomandazioni per il veicolo, le opzioni di finanziamento e le informazioni sui dealer. When potential buyers receive tailored guidance at each stage, they move through the sales funnel more quickly and with greater confidence. | Improved lead-to-purchase conversion rates and stronger sales pipeline | [Percorso cross-channel con decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
+| [Promemoria appuntamenti di servizio](#service-appointment-reminders) | Send personalized service reminders based on vehicle mileage, service history, and customer preferences. Proactive outreach keeps vehicles maintained and ensures customers return to the dealership rather than seeking third-party providers. | Improved service appointment show rates and increased service revenue | [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
+| [Campagne Di Valore Di permuta](#trade-in-value-campaigns) | Proactively offer trade-in value assessments to customers who may be ready to upgrade. Reaching owners at the right point in their ownership cycle accelerates the path to a new vehicle purchase. | Improved trade-in engagement and increased new vehicle sales | [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
+| [Consigli su parti e accessori](#parts-and-accessories-recommendations) | Consigliare parti, accessori e aggiornamenti pertinenti in base al modello del veicolo, alla durata di proprietà e alle preferenze del cliente. Personalized aftermarket recommendations drive incremental revenue while helping owners get more from their vehicle. | Improved parts and accessories purchase rates and increased aftermarket revenue | [Consigli comportamentali](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md) |
+| [Notifiche di richiamo veicolo](#vehicle-recall-notifications) | Send personalized recall notifications with service scheduling options and safety information. Timely, clear recall communications protect customer safety and demonstrate the brand&#39;s commitment to responsible ownership support. | Improved recall response rates and stronger safety compliance | [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
+| [Nuove Campagne Di Lancio Modelli](#new-model-launch-campaigns) | Puoi indirizzare l’attività ai clienti che potrebbero essere interessati ai nuovi lanci di modelli in base al veicolo, alle preferenze e alla cronologia degli acquisti correnti. Focused audience targeting maximizes launch impact and builds early order momentum. | Improved launch campaign engagement and increased new model interest | [Attivazione messaggi in uscita in batch](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) |
+| [Offerte di finanziamento e assicurazione](#financing-and-insurance-offers) | Presenta offerte di finanziamento e assicurazione personalizzate in base al profilo di credito, alla selezione dei veicoli e alla tempistica di acquisto. Prodotti finanziari su misura eliminano le barriere all&#39;acquisto e aiutano i clienti a sentirsi sicuri delle loro condizioni. | Miglioramento dei tassi di accettazione dei finanziamenti e aumento dei ricavi per vendita | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
+| [Pianificazione unità di prova](#test-drive-scheduling) | Pianificazione personalizzata delle unità di test con consigli dei dealer e disponibilità del veicolo. Rendendo più semplice per gli acquirenti interessati mettersi al volante si accelera il percorso di acquisto. | Miglioramento dei tassi di completamento dei test e maggiore conversione delle vendite | [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
+| [Programmi fedeltà del proprietario](#owner-loyalty-programs) | Coordina le comunicazioni fidelizzate tra rivenditori, OEM digitali e canali di auto connesse, applicando regole di idoneità basate su livelli per determinare quali proprietari ricevono offerte esclusive, accesso anticipato al veicolo e premi per i partner. L&#39;arbitrato dell&#39;offerta impedisce le promozioni in conflitto da parte dei canali rivenditore e OEM che raggiungono lo stesso proprietario contemporaneamente. | Migliore coinvolgimento nel programma fedeltà e maggiori acquisti ripetuti | [Percorso cross-channel con decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
+| [Garanzia e piani di assistenza estesi](#warranty-and-extended-service-plans) | Consigliare la garanzia e piani di assistenza estesi in tempi ottimali in base all&#39;età del veicolo, al chilometraggio e ai modelli di acquisto. Un&#39;attività di outreach ben programmata acquisisce i ricavi prima della scadenza delle garanzie di fabbrica. | Tassi di adozione della garanzia estesi e maggiori ricavi dal servizio migliorati | [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
+| [Attivazione funzionalità per auto collegate](#connected-car-feature-activation) | Personalizza le raccomandazioni sulle funzioni dell’auto collegata in base alle funzionalità del veicolo e alle preferenze tecnologiche. Aiutare i proprietari a scoprire le funzionalità inutilizzate aumenta la soddisfazione e rafforza la relazione digitale. | Tassi di attivazione delle funzioni migliorati e migliore esperienza del cliente | [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
+| [Coordinazione rete rivenditori](#dealer-network-coordination) | Abilita i consigli personalizzati dei dealer in base alla posizione del cliente, alle preferenze e all’inventario dei dealer. Mettere in contatto i clienti con i rivenditori giusti migliora l&#39;esperienza di acquisto e di servizio. | Miglioramento delle percentuali di coinvolgimento dei dealer e potenziamento del coordinamento delle vendite | [Web visitatore conosciuto/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) |
 
 ## Considerazioni tecniche per caso d’uso
 
@@ -42,77 +42,80 @@ Le organizzazioni automobilistiche utilizzano Adobe Experience Platform per unif
 
 ### Promemoria appuntamenti assistenza
 
-- I dati relativi al chilometraggio e alla telematica dei veicoli provenienti dai sistemi di automobili collegati o dai registri dei servizi dei concessionari devono confluire nei profili dei clienti per attivare i promemoria agli intervalli di servizio corretti.
-- I messaggi di promemoria devono includere collegamenti di pianificazione con un solo clic che precompilano le informazioni sul veicolo del cliente e articoli di assistenza consigliati per ridurre al minimo l’attrito per la prenotazione.
-- I record della cronologia dei servizi devono essere integrati per evitare di consigliare i servizi completati di recente e per personalizzare il promemoria con gli elementi di manutenzione specifici in scadenza.
-- La data e l&#39;ora del messaggio di [!DNL Journey Optimizer] devono tenere conto della capacità del servizio del dealer e delle ore di funzionamento per garantire che i clienti possano prenotare appuntamenti quando ricevono il promemoria.
+- Vehicle mileage and telematics data from connected car systems or dealer service records must flow into customer profiles to trigger reminders at the correct service intervals.
+- Reminder messages should include one-click scheduling links that pre-populate the customer&#39;s vehicle information and recommended service items to minimize booking friction.
+- Service history records must be integrated to avoid recommending services that were recently completed and to personalize the reminder with the specific maintenance items due.
+- [!DNL Journey Optimizer] message timing should account for dealer service capacity and hours of operation to ensure customers can book appointments when they receive the reminder.
 
-### Campagne di permuta
+### Trade-in value campaigns
 
-- I dati di valutazione dei veicoli forniti da fornitori terzi devono essere integrati e aggiornati regolarmente per garantire che le stime delle permute condivise con i clienti siano accurate e competitive.
-- I modelli del ciclo di vita della proprietà devono tenere conto di fattori quali le date di scadenza del leasing, le tempistiche di rimborso del prestito e la durata media della proprietà per segmento di veicolo, al fine di individuare la finestra di estensione ottimale.
-- I messaggi di Campaign devono fare riferimento in modo dinamico al veicolo corrente del cliente e suggerire opzioni di aggiornamento specifiche in linea con le sue preferenze e il suo budget.
-- [!DNL Experience Platform] segmenti devono escludere i clienti che hanno acquistato di recente un veicolo o che si trovano attualmente in una controversia relativa a un servizio attivo, per evitare un&#39;attività di outreach scaduta.
+- Vehicle valuation data from third-party providers must be integrated and refreshed regularly to ensure trade-in estimates shared with customers are accurate and competitive.
+- Ownership lifecycle models should consider factors such as lease expiration dates, loan payoff timelines, and average ownership duration by vehicle segment to identify the optimal outreach window.
+- Campaign messaging should dynamically reference the customer&#39;s current vehicle and suggest specific upgrade options that align with their preferences and budget.
+- [!DNL Experience Platform] segments should exclude customers who recently purchased a vehicle or are currently in an active service dispute to avoid poorly timed outreach.
 
-### Raccomandazioni su parti e accessori
+### Parts and accessories recommendations
 
-- I dati del catalogo dei prodotti devono includere informazioni sulla compatibilità del veicolo in modo che i consigli mostrino solo parti e accessori che si adattano all&#39;anno, alla marca e al modello del veicolo specifico del cliente.
-- I fattori stagionali e regionali dovrebbero influenzare le raccomandazioni; gli accessori invernali dovrebbero essere promossi nei climi più freddi, mentre gli aggiornamenti delle prestazioni potrebbero risuonare di più nelle regioni con comunità di appassionati attivi.
-- Il comportamento di navigazione nelle pagine di parti e accessori deve essere acquisito e associato ai profili dei clienti per perfezionare i consigli in base al loro interesse.
-- L&#39;implementazione del Web SDK [!DNL Experience Platform] deve acquisire i dati del numero di identificazione del veicolo dalle sessioni autenticate per garantire l&#39;accuratezza del filtro di compatibilità.
+- Product catalog data must include vehicle compatibility information so that recommendations only show parts and accessories that fit the customer&#39;s specific vehicle year, make, and model.
+- Seasonal and regional factors should influence recommendations; winter accessories should be promoted in colder climates, while performance upgrades may resonate more in regions with active enthusiast communities.
+- Browsing behavior on parts and accessories pages must be captured and associated with customer profiles to refine recommendations based on expressed interest.
+- [!DNL Experience Platform] Web SDK implementation should capture vehicle identification number data from authenticated sessions to ensure compatibility filtering is accurate.
 
-### Notifiche di ritiro del veicolo
+### Vehicle recall notifications
 
-- Le registrazioni del numero di identificazione del veicolo devono essere conservate accuratamente nei profili dei clienti in modo che le notifiche di richiamo raggiungano tutti i proprietari interessati e non vadano ai clienti non interessati.
-- La messaggistica di richiamo deve essere conforme ai requisiti normativi per il contenuto delle notifiche di sicurezza, i tempi e la conferma della consegna in ogni mercato applicabile.
-- La consegna multicanale (e-mail, messaggi di testo, notifiche push e posta fisica) deve essere utilizzata per massimizzare la portata, in quanto le comunicazioni critiche per la sicurezza richiedono una maggiore garanzia di consegna rispetto ai messaggi di marketing.
-- [!DNL Journey Optimizer] deve tenere traccia dello stato della risposta di richiamo a livello individuale e inoltrare le comunicazioni di follow-up ai proprietari che non hanno pianificato il servizio entro un intervallo di tempo definito.
+- Vehicle identification number records must be accurately maintained in customer profiles so that recall notifications reach every affected owner and do not go to unaffected customers.
+- Recall messaging must comply with regulatory requirements for safety notification content, timing, and delivery confirmation in each applicable market.
+- Multi-channel delivery (email, text message, push notification, and physical mail) should be used to maximize reach, as safety-critical communications require higher delivery assurance than marketing messages.
+- [!DNL Journey Optimizer] should track recall response status at the individual level and escalate follow-up communications for owners who have not scheduled service within a defined timeframe.
 
-### Nuove campagne di lancio di modelli
+### New model launch campaigns
 
-- I segmenti di pubblico per le campagne di lancio devono considerare il modello di veicolo corrente, la durata della proprietà, i segnali di interesse del modello passati e la capacità demografica di identificare le prospettive a più alta propensione.
-- Il contenuto di Launch deve essere personalizzato in modo da fare riferimento al veicolo corrente del cliente ed evidenziare miglioramenti o funzionalità specifici che rispondono alle sue probabili priorità.
-- La tempistica delle campagne deve coordinarsi con le date di embargo e i programmi di lancio regionali per garantire che i clienti ricevano informazioni al momento giusto per il proprio mercato.
-- L&#39;attivazione del pubblico [!DNL Real-Time Customer Data Platform] deve sincronizzare i segmenti di launch con le piattaforme pubblicitarie per il supporto coordinato di contenuti multimediali a pagamento, insieme all&#39;estensione del canale di proprietà.
+- Audience segments for launch campaigns should consider current vehicle model, ownership duration, past model interest signals, and demographic fit to identify the highest-propensity prospects.
+- Launch content should be personalized to reference the customer&#39;s current vehicle and highlight specific improvements or features that address their likely priorities.
+- Campaign timing must coordinate with embargo dates and regional launch schedules to ensure customers receive information at the appropriate time for their market.
+- [!DNL Real-Time Customer Data Platform] audience activation should synchronize launch segments to advertising platforms for coordinated paid media support alongside owned-channel outreach.
 
-### Offerte di finanziamento e assicurazione
+### Financing and insurance offers
 
-- Le regole di idoneità per le offerte finanziarie devono essere configurate con attenzione per rispettare le normative sui prestiti, garantendo che le offerte presentate ai clienti siano quelle per le quali possono effettivamente qualificarsi.
-- L’integrazione dei dati del profilo di credito richiede una gestione sicura e rigidi controlli di accesso, in quanto le informazioni finanziarie sono soggette a requisiti più severi in materia di privacy e regolamentazione.
-- La presentazione dell&#39;offerta deve indicare chiaramente termini, tassi e condizioni in conformità con le normative finanziarie dei consumatori in ogni mercato applicabile.
-- [!DNL Journey Optimizer] le regole decisionali dovrebbero tenere conto del prezzo del veicolo, dell&#39;acconto e delle preferenze di durata del prestito per classificare le offerte in base alla rilevanza anziché semplicemente in base al tasso.
+- Financial offer eligibility rules must be carefully configured to comply with lending regulations, ensuring that offers presented to customers are ones they can actually qualify for.
+- Credit profile data integration requires secure handling and strict access controls, as financial information is subject to heightened privacy and regulatory requirements.
+- Offer presentation must clearly disclose terms, rates, and conditions in compliance with consumer finance regulations in each applicable market.
+- [!DNL Journey Optimizer] decisioning rules should factor in vehicle price, down payment, and loan term preferences to rank offers by relevance rather than simply by rate.
 
-### Pianificazione unità di prova
+### Test drive scheduling
 
-- I sistemi di inventario dei dealer devono essere integrati per confermare che il modello di veicolo e il ritaglio specifici a cui il cliente è interessato sono disponibili per il test drive presso il dealer consigliato.
-- I consigli basati sulla posizione dei dealer devono tenere in considerazione l&#39;indirizzo del cliente, la valutazione dei dealer e la disponibilità attuale degli appuntamenti per suggerire l&#39;opzione più conveniente.
-- I messaggi di conferma e promemoria relativi al test dell&#39;unità devono includere indicazioni stradali, informazioni di contatto del dealer e cosa aspettarsi, riducendo la percentuale di non-show.
-- I dati comportamentali di [!DNL Experience Platform] dovrebbero identificare il momento ottimale per suggerire un&#39;unità di test, evitando un&#39;estensione prematura ai ricercatori in fase iniziale che non sono ancora pronti.
+- Dealer inventory systems must be integrated to confirm that the specific vehicle model and trim the customer is interested in is available for test drive at the recommended dealership.
+- Location-based dealer recommendations should factor in customer address, dealer ratings, and current appointment availability to suggest the most convenient option.
+- Test drive confirmation and reminder messages should include directions, dealer contact information, and what to expect, reducing no-show rates.
+- [!DNL Experience Platform] behavioral data should identify the optimal moment to suggest a test drive, avoiding premature outreach to early-stage researchers who are not yet ready.
 
-### Programmi fedeltà del proprietario
+### Owner loyalty programs
 
-- I calcoli del livello fedeltà devono includere più dimensioni del coinvolgimento, tra cui visite di assistenza, acquisti di componenti, referenze e partecipazione a eventi, non solo la cronologia degli acquisti dei veicoli.
-- I sistemi di erogazione dei premi presso i concessionari e i centri di assistenza devono essere integrati in modo che i benefici di fedeltà possano essere riscattati senza problemi al momento del servizio.
-- Le comunicazioni dovrebbero adattarsi in base alla fase del ciclo di vita della proprietà, offrendo ai nuovi proprietari proposte di valore diverse nel primo anno rispetto ai proprietari a lungo termine che si avvicinano a un potenziale aggiornamento.
-- La logica di percorso [!DNL Journey Optimizer] deve rilevare le modifiche dei livelli in tempo reale e attivare messaggi di congratulazioni o di ricoinvolgimento quando i clienti passano da un livello all&#39;altro.
+- Loyalty tier calculations must incorporate multiple dimensions of engagement including service visits, parts purchases, referrals, and event attendance, not just vehicle purchase history.
+- Tier-based eligibility rules must be configured in [!DNL Journey Optimizer] decisioning to govern which owners qualify for exclusive offers, early access to new vehicle reveals, and partner reward redemptions, ensuring only eligible members receive each category of benefit.
+- Offer arbitration logic must evaluate pending communications from both dealer and OEM channels before any message is sent, suppressing lower-priority or conflicting promotions to prevent the same owner from receiving contradictory offers simultaneously.
+- Cross-channel coordination must span dealer CRM systems, OEM digital properties, connected car notification channels, and service touchpoints so that loyalty interactions are consistent regardless of where the owner engages.
+- Reward fulfillment systems at dealerships and service centers must be integrated so that loyalty benefits can be redeemed seamlessly at the point of service.
+- Communications should adapt based on ownership lifecycle stage, delivering different value propositions to new owners in their first year versus long-term owners approaching a potential upgrade.
+- [!DNL Journey Optimizer] journey logic should detect tier changes in real time and trigger congratulatory or re-engagement messages when customers move between loyalty levels.
 
-### Garanzia e piani di assistenza estesi
+### Warranty and extended service plans
 
-- Le date di scadenza della garanzia e i dettagli della copertura devono essere monitorati con precisione nei profili dei clienti per attivare la sensibilizzazione al momento giusto, in genere 60-90 giorni prima della scadenza.
-- Il chilometraggio e i modelli di utilizzo dei veicoli ricavati dai dati delle autovetture collegate o dalle registrazioni dei servizi dovrebbero informare le raccomandazioni del piano, in quanto i conducenti con chilometraggio elevato beneficiano di una copertura diversa rispetto ai proprietari con chilometraggio ridotto.
-- Il contenuto del confronto dei piani deve essere chiaro e privo di gergo, in modo da aiutare i clienti a comprendere esattamente ciò che è coperto e il valore relativo ai potenziali costi di riparazione.
-- [!DNL Real-Time Customer Data Platform] segmenti devono distinguere tra i clienti con garanzie di fabbrica in scadenza, quelli con piani estesi esistenti prossimi al rinnovo e quelli senza copertura corrente.
+- Warranty expiration dates and coverage details must be accurately tracked in customer profiles to trigger outreach at the right time, typically 60-90 days before expiration.
+- Vehicle mileage and usage patterns from connected car data or service records should inform plan recommendations, as high-mileage drivers benefit from different coverage than low-mileage owners.
+- Plan comparison content should be clear and jargon-free, helping customers understand exactly what is covered and the value relative to potential out-of-pocket repair costs.
+- [!DNL Real-Time Customer Data Platform] segments should distinguish between customers with expiring factory warranties, those with existing extended plans approaching renewal, and those with no current coverage.
 
-### Attivazione funzione auto collegata
+### Connected car feature activation
 
-- I dati della piattaforma dell’autovettura collegata devono essere integrati per identificare quali elementi sono disponibili su ciascun veicolo e quali sono già stati attivati o utilizzati dal proprietario.
-- Il tracciamento dell’adozione delle funzioni deve acquisire eventi di attivazione, frequenza di utilizzo e profondità di coinvolgimento per personalizzare la sequenza e la velocità dei consigli sulle funzioni.
-- I canali di notifica nel veicolo devono essere coordinati con le notifiche e-mail e nell’app per inviare messaggi nel momento più pertinente dal punto di vista contestuale, ad esempio per suggerire funzioni di navigazione quando viene rilevato un viaggio stradale.
-- I profili di [!DNL Experience Platform] devono memorizzare i dati di configurazione della tecnologia del veicolo, inclusi i pacchetti installati e le versioni del software, per garantire che le funzionalità consigliate siano compatibili con il veicolo specifico del proprietario.
+- Connected car platform data must be integrated to identify which features are available on each vehicle and which ones the owner has already activated or used.
+- Feature adoption tracking should capture activation events, usage frequency, and engagement depth to personalize the sequence and pacing of feature recommendations.
+- In-vehicle notification channels should be coordinated with email and app notifications to deliver feature prompts at the most contextually relevant moment, such as suggesting navigation features when a road trip is detected.
+- [!DNL Experience Platform] profiles should store vehicle technology configuration data including installed packages and software versions to ensure feature recommendations are compatible with the owner&#39;s specific vehicle.
 
-### Coordinamento della rete dei dealer
+### Dealer network coordination
 
-- Le informazioni sull&#39;inventario dei dealer devono essere integrate e aggiornate frequentemente per garantire che la disponibilità dei veicoli mostrata ai clienti rifletta accuratamente ciò che si trova sul lotto di ogni dealer.
-- La logica di assegnazione cliente-dealer deve considerare la prossimità, la specializzazione del dealer, le preferenze linguistiche, e qualsiasi relazione esistente con il dealer per fornire la migliore corrispondenza.
-- Le regole di instradamento dei lead devono garantire che, quando un cliente esprime interesse per l’acquisto online, l’interrogazione raggiunga rapidamente il rivenditore appropriato con il contesto completo dell’attività di ricerca del cliente.
-- La risoluzione delle identità [!DNL Experience Platform] deve gestire gli scenari in cui un cliente interagisce con più concessionari, mantenendo un profilo unificato nel rispetto della visione di ogni concessionario sulle proprie relazioni con i clienti.
+- Dealer inventory feeds must be integrated and refreshed frequently to ensure that vehicle availability shown to customers accurately reflects what is on each dealer&#39;s lot.
+- Customer-to-dealer assignment logic should consider proximity, dealer specialization, language preferences, and any existing dealer relationship to provide the best match.
+- Lead routing rules must ensure that when a customer expresses purchase interest online, the inquiry reaches the appropriate dealer quickly with full context about the customer&#39;s research activity.
+- [!DNL Experience Platform] identity resolution must handle scenarios where a customer interacts with multiple dealerships, maintaining a unified profile while respecting each dealer&#39;s view of their own customer relationships.

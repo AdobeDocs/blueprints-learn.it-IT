@@ -2,13 +2,13 @@
 title: Casi d'uso delle telecomunicazioni
 description: Scopri come le aziende di telecomunicazioni utilizzano Adobe Experience Platform per ridurre l’abbandono, promuovere gli aggiornamenti dei dispositivi e migliorare il coinvolgimento dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: 653632f0-81be-435c-a703-56c5bc132794
+source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 1%
+source-wordcount: '3822'
+ht-degree: 0%
 
 ---
-
 
 # Casi d&#39;uso delle telecomunicazioni
 
@@ -20,11 +20,11 @@ Identifica i clienti idonei per gli aggiornamenti dei dispositivi e presenta con
 
 ### Impatto aziendale
 
-Le organizzazioni che implementano i consigli per l’aggiornamento dei dispositivi registrano in genere un aumento del 30-40% nei tassi di conversione dell’aggiornamento, fornendo l’offerta giusta al momento giusto attraverso il canale preferito dal cliente.
+Le organizzazioni che implementano i consigli per l’aggiornamento dei dispositivi possono vedere tassi di conversione degli aggiornamenti migliorati, distribuendo l’offerta giusta al momento giusto attraverso il canale preferito dal cliente.
 
 ### Come implementare
 
-Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per orchestrare percorsi di aggiornamento che valutino l&#39;idoneità di ogni abbonato, le preferenze del dispositivo e l&#39;affinità dei canali, in modo da fornire offerte di aggiornamento personalizzate per e-mail, notifiche dell&#39;app ed esperienze in-store.
+Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per orchestrare percorsi di aggiornamento che valutino l&#39;idoneità di ogni abbonato, le preferenze del dispositivo e l&#39;affinità dei canali, in modo da fornire offerte di aggiornamento personalizzate per e-mail, notifiche dell&#39;app ed esperienze in-store. Questo è il modello corretto quando la selezione delle offerte deve tenere conto delle finestre di idoneità dei dispositivi, delle preferenze dei canali e dei vincoli di inventario, vincoli che richiedono una logica decisionale regolamentata anziché semplici consigli comportamentali.
 
 ### Considerazioni tecniche
 
@@ -40,11 +40,11 @@ Analizza i pattern di utilizzo dei clienti e consiglia modifiche ottimali del pi
 
 ### Impatto aziendale
 
-Le campagne di ottimizzazione dei piani in genere determinano un aumento del 25-35% dei tassi di modifica dei piani, migliorando la soddisfazione dei clienti e aumentando al contempo il reddito medio per utente quando gli abbonati passano a piani che corrispondono meglio al loro consumo.
+Le campagne di ottimizzazione dei piani consentono di migliorare i tassi di modifica dei piani, migliorando la soddisfazione dei clienti e aumentando al tempo stesso il reddito medio per utente quando gli abbonati passano a piani che corrispondono meglio ai loro consumi.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per creare una campagna multi-touch che identifichi le incongruenze tra utilizzo e pianificazione, istruisca gli abbonati sulle opzioni migliori e li guidi attraverso il processo di modifica del piano con follow-up tempestivi.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per creare una campagna multi-touch che identifichi le incongruenze tra utilizzo e pianificazione, istruisca gli abbonati sulle opzioni migliori e li guidi attraverso il processo di modifica del piano con follow-up tempestivi. Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi sequenziale e multiplo nell’arco di giorni con diramazioni condizionali in base al coinvolgimento dell’abbonato e all’adozione del piano: un singolo messaggio attivato non può soddisfare il percorso educativo e la logica di dipendenza tra i passaggi di istruzione e conversione.
 
 ### Considerazioni tecniche
 
@@ -60,11 +60,11 @@ Identifica i clienti di alto valore a rischio di abbandono e coinvolgili con off
 
 ### Impatto aziendale
 
-I programmi di prevenzione dell’abbandono rivolti agli abbonati di alto valore raggiungono in genere una riduzione del 20-30% dell’abbandono, proteggendo ricavi ricorrenti significativi e riducendo i costi di acquisizione dei clienti sostitutivi.
+I programmi di prevenzione dell’abbandono rivolti agli abbonati di alto valore consentono di ottenere riduzioni significative dell’abbandono, proteggendo ricavi ricorrenti significativi e riducendo i costi di acquisizione dei clienti sostitutivi.
 
 ### Come implementare
 
-Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per monitorare i segnali di rischio di abbandono in tempo reale, determinare l&#39;offerta di conservazione migliore per ogni abbonato e orchestrare attività di sensibilizzazione personalizzate tra i canali digitali e il call center.
+Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per monitorare i segnali di rischio di abbandono in tempo reale, determinare l&#39;offerta di conservazione migliore per ogni abbonato e orchestrare attività di sensibilizzazione personalizzate tra i canali digitali e il call center. Questo è il modello corretto quando il percorso deve coordinare la distribuzione tra canali digitali e assistiti da agenti per evitare offerte di conservazione duplicate e quando la selezione delle offerte richiede il punteggio dei rischi e vincoli di business. L’orchestrazione in più passaggi non fornisce da sola il livello decisionale in tempo reale o il coordinamento degli agenti necessario.
 
 ### Considerazioni tecniche
 
@@ -80,11 +80,11 @@ Automatizza un percorso di onboarding personalizzato per i nuovi clienti con inf
 
 ### Impatto aziendale
 
-I percorsi di onboarding ben progettati aumentano in genere le percentuali di attivazione delle funzioni del 50-60%, portando a punteggi di soddisfazione più elevati e a un calo dell’abbandono scolastico tra i nuovi abbonati.
+I percorsi di onboarding ben progettati aumentano le percentuali di attivazione delle funzioni, portando a punteggi di soddisfazione più elevati e a una riduzione dell’abbandono scolastico tra i nuovi abbonati.
 
 ### Come implementare
 
-Utilizza il pattern [Multi-Step Orchestrated Percorsi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per creare un&#39;esperienza di onboarding in sequenza che si adatta in base al tipo di piano, al dispositivo e al coinvolgimento di ogni abbonato con i passaggi di onboarding precedenti.
+Utilizza il pattern [Multi-Step Orchestrated Percorsi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per creare un&#39;esperienza di onboarding in sequenza che si adatta in base al tipo di piano, al dispositivo e al coinvolgimento di ogni abbonato con i passaggi di onboarding precedenti. Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi multipli in sequenza nell’arco di giorni con diramazioni condizionali basate sull’individuazione delle funzioni e sul coinvolgimento. Un singolo messaggio attivato non può soddisfare la logica di dipendenza adattiva tra i passaggi di onboarding in base al piano dell’abbonato e al tipo di dispositivo.
 
 ### Considerazioni tecniche
 
@@ -100,11 +100,11 @@ Invia avvisi personalizzati quando i clienti si avvicinano ai limiti di dati e c
 
 ### Impatto aziendale
 
-Gli avvisi proattivi sull’utilizzo dei dati determinano in genere un aumento del 40-50% degli acquisti di componenti aggiuntivi dati, riducendo al contempo i reclami per shock sulle fatture e migliorando la soddisfazione complessiva dei clienti.
+Gli avvisi proattivi sull’utilizzo dei dati favoriscono acquisti aggiuntivi di dati migliorati, riducendo al contempo i reclami per shock sulle fatture e migliorando la soddisfazione complessiva dei clienti.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per inviare avvisi in tempo reale quando vengono superate le soglie di utilizzo, con consigli personalizzati basati sui modelli di consumo cronologici e sui dettagli del piano del sottoscrittore.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per inviare avvisi in tempo reale quando vengono superate le soglie di utilizzo, con consigli personalizzati basati sui modelli di consumo cronologici e sui dettagli del piano del sottoscrittore. Questo è lo schema corretto quando il trigger è un evento di sistema (superamento della soglia di utilizzo) piuttosto che il comportamento del cliente e la comunicazione richiesta è immediata e reattiva anziché una sequenza di acquisizione sostenuta.
 
 ### Considerazioni tecniche
 
@@ -120,11 +120,11 @@ Avvisa in modo proattivo i clienti in caso di interruzioni del servizio, manuten
 
 ### Impatto aziendale
 
-Le notifiche proattive di interruzione delle attività raggiungono in genere un tasso di riconoscimento delle notifiche del 60-70% e riducono notevolmente il volume del call center durante le interruzioni del servizio, riducendo i costi di supporto e migliorando la percezione dei clienti.
+Le notifiche proattive di interruzione delle attività consentono di ottenere tassi elevati di conferma delle notifiche e di ridurre notevolmente il volume del call center durante le interruzioni del servizio, riducendo i costi di supporto e migliorando la percezione dei clienti.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per rilevare gli eventi di rete e avvisare immediatamente gli abbonati interessati tramite i loro canali preferiti con dettagli rilevanti, tempi di risoluzione stimati e, se garantito, una compensazione appropriata.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per rilevare gli eventi di rete e avvisare immediatamente gli abbonati interessati tramite i loro canali preferiti con dettagli rilevanti, tempi di risoluzione stimati e, se garantito, una compensazione appropriata. Questo è lo schema corretto quando l&#39;attivatore è un evento di sistema (interruzione di rete) piuttosto che il comportamento del cliente e la comunicazione richiesta è immediata e reattiva piuttosto che una sequenza di acquisizione sostenuta.
 
 ### Considerazioni tecniche
 
@@ -140,11 +140,11 @@ Personalizzare comunicazioni e offerte per gli amministratori di family plan in 
 
 ### Impatto aziendale
 
-Le comunicazioni personalizzate per la gestione dei piani familiari in genere aumentano il coinvolgimento del piano familiare del 30-40%, portando a una maggiore conservazione della linea e a un maggiore valore del ciclo di vita per ogni account.
+Le comunicazioni personalizzate per la gestione dei piani familiari consentono di migliorare il coinvolgimento del piano familiare, garantendo una maggiore conservazione delle linee e un maggiore valore per ogni account.
 
 ### Come implementare
 
-Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per analizzare l&#39;utilizzo tra tutti i membri della famiglia, identificare opportunità quali l&#39;aggiunta di righe o la regolazione di singoli limiti e fornire consigli personalizzati all&#39;amministratore del piano.
+Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per analizzare l&#39;utilizzo tra tutti i membri della famiglia, identificare opportunità quali l&#39;aggiunta di righe o la regolazione di singoli limiti e fornire consigli personalizzati all&#39;amministratore del piano. Questo è il modello corretto quando la selezione delle offerte deve tenere conto delle autorizzazioni della gerarchia di famiglia, dell’aggregazione dell’utilizzo di più membri e dei vincoli di privacy, vincoli che richiedono una logica decisionale regolamentata anziché i soli consigli dei singoli abbonati.
 
 ### Considerazioni tecniche
 
@@ -160,11 +160,11 @@ Clienti idonei agli aggiornamenti di rete 5G con offerte e vantaggi personalizza
 
 ### Impatto aziendale
 
-Le campagne mirate di aggiornamento del 5G in genere determinano un aumento del 25-35% dei tassi di adozione del 5G tra gli abbonati idonei, sostenendo i rendimenti degli investimenti nella rete e la differenziazione competitiva.
+Le campagne mirate di aggiornamento del 5G aumentano i tassi di adozione del 5G tra gli abbonati idonei, sostenendo i rendimenti degli investimenti nella rete e la differenziazione competitiva.
 
 ### Come implementare
 
-Utilizza il pattern [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) per segmentare gli abbonati in base alla disponibilità della copertura 5G, alla compatibilità del dispositivo e all&#39;idoneità del piano, quindi distribuisci campagne di aggiornamento personalizzate che evidenziano i vantaggi più rilevanti per il profilo di utilizzo di ogni abbonato.
+Utilizza il pattern [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) per segmentare gli abbonati in base alla disponibilità della copertura 5G, alla compatibilità del dispositivo e all&#39;idoneità del piano, quindi distribuisci campagne di aggiornamento personalizzate che evidenziano i vantaggi più rilevanti per il profilo di utilizzo di ogni abbonato. Questo è il modello corretto quando il pubblico è predefinito e di grandi dimensioni, la tempistica di consegna è pianificata anziché in base agli eventi e non è necessario alcun diramamento o processo decisionale in tempo reale: la campagna può essere pianificata completamente in anticipo in base alle timeline di rollout della copertura.
 
 ### Considerazioni tecniche
 
@@ -180,11 +180,11 @@ Invia promemoria personalizzati per il pagamento delle fatture tramite i canali 
 
 ### Impatto aziendale
 
-I promemoria personalizzati per il pagamento delle fatture in genere migliorano le percentuali di pagamento puntuale del 20-30%, riducendo le spese di riscossione e riducendo al minimo le sospensioni del servizio che causano insoddisfazione dei clienti.
+I promemoria personalizzati per il pagamento delle fatture migliorano le percentuali di pagamento puntuale, riducendo le spese di riscossione e riducendo al minimo le sospensioni del servizio che causano insoddisfazione dei clienti.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per inviare promemoria in tempi ottimali prima della data di scadenza, personalizzati con il saldo dell&#39;abbonato, il metodo di pagamento preferito e un collegamento diretto per completare il pagamento.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per inviare promemoria in tempi ottimali prima della data di scadenza, personalizzati con il saldo dell&#39;abbonato, il metodo di pagamento preferito e un collegamento diretto per completare il pagamento. Questo è il modello corretto quando l’attivatore è un evento di sistema basato sul tempo (data di scadenza della fatturazione) anziché il comportamento del cliente e la comunicazione richiesta è immediata e transazionale, anziché una sequenza di coinvolgimento in più fasi.
 
 ### Considerazioni tecniche
 
@@ -200,11 +200,11 @@ Consiglia servizi aggiuntivi rilevanti come assicurazione sui dispositivi, archi
 
 ### Impatto aziendale
 
-I consigli personalizzati sul servizio aggiuntivo determinano in genere un aumento del 15-25% nei tassi di adozione dei componenti aggiuntivi, aumentando i ricavi dalla base di abbonati esistente senza il costo di acquisizione di nuovi clienti.
+I consigli personalizzati sul servizio aggiuntivo consentono di migliorare i tassi di adozione dei componenti aggiuntivi, aumentando i ricavi dalla base di abbonati esistente senza dover sostenere i costi di acquisizione dei nuovi clienti.
 
 ### Come implementare
 
-Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) per valutare il profilo di ogni abbonato, i servizi correnti e i segnali comportamentali per determinare l&#39;offerta del componente aggiuntivo più rilevante e presentarla attraverso il canale e il momento ottimali.
+Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) per valutare il profilo di ogni abbonato, i servizi correnti e i segnali comportamentali per determinare l&#39;offerta del componente aggiuntivo più rilevante e presentarla attraverso il canale e il momento ottimali. Questo è il modello corretto quando la selezione dell’offerta deve tenere conto della proprietà del servizio corrente e delle regole aziendali che disciplinano l’idoneità del servizio complementare: regole che richiedono una logica decisionale regolamentata anziché una classificazione di affinità comportamentale da sola.
 
 ### Considerazioni tecniche
 
@@ -220,11 +220,11 @@ Personalizzare le informazioni sulle prestazioni di rete e i consigli in base al
 
 ### Impatto aziendale
 
-Le esperienze di prestazioni di rete personalizzate in genere aumentano il coinvolgimento dell’app del 35-45%, in quanto gli abbonati tornano a controllare la copertura, risolvere i problemi e scoprire suggerimenti di ottimizzazione su misura per la loro situazione.
+Le esperienze di prestazioni di rete personalizzate migliorano il coinvolgimento dell’app, poiché gli abbonati tornano a controllare la copertura, risolvere i problemi e scoprire suggerimenti di ottimizzazione su misura per la loro situazione.
 
 ### Come implementare
 
-Utilizza il modello [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) per fornire dashboard personalizzati sulle prestazioni della rete, informazioni sulla copertura e consigli per l&#39;ottimizzazione nell&#39;esperienza dell&#39;app e dell&#39;account Web dell&#39;utente iscritto.
+Utilizza il modello [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) per fornire dashboard personalizzati sulle prestazioni della rete, informazioni sulla copertura e consigli per l&#39;ottimizzazione nell&#39;esperienza dell&#39;app e dell&#39;account Web dell&#39;utente iscritto. Questo è il modello corretto quando la personalizzazione è guidata dagli attributi di profilo e dai dati sulla posizione anziché da un modello di affinità comportamentale.
 
 ### Considerazioni tecniche
 
@@ -236,15 +236,15 @@ Utilizza il modello [Known-Visitor Web/App Personalization](/help/blueprints/use
 
 ## Coinvolgimento programma fedeltà
 
-Personalizza comunicazioni, premi e offerte del programma fedeltà in base al livello, al saldo dei punti e alla cronologia dei rimborsi del cliente. Un’esperienza di fidelizzazione ben personalizzata rafforza la connessione emotiva con il brand e crea costi di passaggio significativi oltre i termini del contratto.
+Personalizza le comunicazioni, i premi e le offerte del programma fedeltà in base al livello del cliente, al saldo dei punti e alla cronologia dei rimborsi, arbitrando in tempo reale tra i canali di app, web, SMS e punti vendita al dettaglio per evitare che offerte duplicate o in conflitto raggiungano lo stesso abbonato. I vincoli di idoneità basati su livelli determinano a quali premi, rimborsi dei partner e promozioni può accedere ogni abbonato e tali regole devono essere applicate a livello decisionale anziché incorporate nella logica della singola campagna. Il programma fedeltà deve inoltre coordinarsi con le campagne attive di fidelizzazione e aggiornamento, in modo che le offerte di prevenzione dell’abbandono e i premi fedeltà siano complementari rispetto alla consegna doppia agli abbonati che si trovano simultaneamente in più percorsi.
 
 ### Impatto aziendale
 
-Il coinvolgimento personalizzato nel programma di fidelizzazione aumenta in genere la partecipazione al programma e il rimborso dei premi del 30-40%, aumentando i tassi di fidelizzazione tra gli abbonati iscritti.
+Il coinvolgimento personalizzato nel programma fedeltà migliora la partecipazione al programma e il rimborso dei premi, aumentando i tassi di fidelizzazione tra gli abbonati iscritti.
 
 ### Come implementare
 
-Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per orchestrare comunicazioni personalizzate sulla fidelizzazione che evidenzino i premi rilevanti, avvisino gli abbonati dell&#39;avanzamento del livello e presentino opportunità di rimborso allineate alle loro preferenze e ai loro comportamenti.
+Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per orchestrare comunicazioni personalizzate sulla fidelizzazione che evidenzino i premi rilevanti, avvisino gli abbonati dell&#39;avanzamento del livello e presentino opportunità di rimborso allineate alle loro preferenze e ai loro comportamenti. Questo è il modello corretto quando il percorso deve coordinare la distribuzione tra i canali per evitare offerte fedeltà duplicate e quando la selezione delle offerte richiede lo stato del livello e la cronologia dei rimborsi. L’orchestrazione in più passaggi non fornisce da sola il livello decisionale in tempo reale necessario.
 
 ### Considerazioni tecniche
 
@@ -252,3 +252,62 @@ Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/u
 - Collega i cataloghi di premi dei partner per presentare un&#39;ampia gamma di opzioni di rimborso su misura per gli interessi dimostrati di ogni abbonato e i rimborsi passati.
 - Coordina i messaggi di fidelizzazione con altri percorsi di campagne per garantire la complementarità tra le offerte di fidelizzazione e i premi fedeltà, piuttosto che creare conflitti tra di loro.
 - La progressione del livello di supporto si sposta calcolando la vicinanza di un abbonato al livello successivo e presentando i passaggi utilizzabili per raggiungerlo.
+
+
+## IA Plan Advisor
+
+Gli abbonati alle telecomunicazioni devono affrontare una sfida persistente: capire in che modo il loro piano attuale si confronta con le opzioni disponibili e se un piano diverso si adatta meglio al loro uso effettivo. Le pagine di confronto dei piani statici richiedono agli abbonati di interpretare autonomamente i dati che potrebbero non comprendere completamente, determinando selezioni di piani non ottimali, effetti negativi e abbandono evitabile. Un consulente di piano di intelligenza artificiale coinvolge gli abbonati in una conversazione naturale, rivede i loro modelli di utilizzo dal loro profilo in tempo reale, pone domande qualificanti sulle esigenze del dispositivo e dei nuclei familiari e li guida al piano, o alla combinazione di piani e componenti aggiuntivi, che meglio si adatta alla loro situazione.
+
+### Impatto aziendale
+
+La guida del piano conversazionale riduce l’abbandono basato sul piano, aumenta l’allegato dell’aggiornamento per gli abbonati che non dispongono del piano corrente e abbassa il volume del centro di contatto per le richieste di fatturazione e modifica del piano.
+
+### Come implementare
+
+Utilizza il pattern [Esperienza conversazionale di Brand Concierge](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md). Questo approccio distribuisce Product Advisor Agent rispetto al catalogo dei piani e dei componenti aggiuntivi, utilizzando AEP Agent Orchestrator e i dati del profilo cliente in tempo reale, tra cui la cronologia d’uso e i dettagli del piano corrente, per guidare gli abbonati attraverso la selezione personalizzata del piano tramite una finestra di dialogo naturale. Questo è il modello corretto quando l’obiettivo è il rilevamento interattivo e conversazionale a più turni che aiuta gli abbonati a valutare e selezionare attivamente il piano corretto, distinto dalla messaggistica attivata dagli eventi, che notifica agli abbonati in modo reattivo le soglie di utilizzo o le modifiche al piano, e dalle esperienze web personalizzate, che visualizzano i confronti tra piani in modo passivo senza coinvolgere gli abbonati in un dialogo qualificato. Richiede la configurazione di AEP Agent Orchestrator e della governance del brand.
+
+### Considerazioni tecniche
+
+- La ricerca del profilo cliente in tempo reale deve far emergere i dettagli del piano corrente, i pattern di utilizzo di dati e voci, la compatibilità del dispositivo e lo stato del contratto, in modo che l’advisor possa fornire indicazioni precise specifiche per l’account anziché descrizioni generiche del piano che richiedono l’autoapplicazione dell’abbonato alla sua situazione.
+- Il catalogo dei componenti aggiuntivi e del piano deve essere aggiornato tramite l&#39;integrazione con il sistema di gestione dei prodotti, in quanto la raccomandazione di un piano o di un prezzo promozionale non più disponibile o l&#39;omissione di un&#39;opzione appena avviata compromette direttamente la fiducia degli abbonati e può creare problemi di aspettativa del servizio.
+- I guardrail per la governance del brand devono definire il modo in cui l’agente gestisce i confronti tra vettori concorrenti, le affermazioni sui prezzi promozionali e le discussioni sugli impegni contrattuali, garantendo che le risposte dell’agente siano in linea con gli standard normativi e del brand senza creare impegni fuorvianti che l’abbonato potrebbe successivamente contestare.
+- I segnali conversazionali, tra cui le dimensioni dichiarate della famiglia, il conteggio dei dispositivi, l’interesse per l’utilizzo internazionale e l’intento di modifica del piano espresso durante la finestra di dialogo, devono essere acquisiti come ExperienceEvents XDM e inviati in streaming ad AEP, arricchendo i profili degli abbonati per informare la prevenzione dell’abbandono, l’aggiornamento e le campagne di cross-selling a valle.
+
+
+## Propensione all’abbandono e analisi dell’esperienza di rete
+
+Correlare le metriche dell’esperienza di rete (calo delle chiamate, deterioramento della velocità effettiva dei dati, esposizione alle interruzioni) con le percentuali di contatto del servizio clienti e i risultati di abbandono degli abbonati per identificare dove i problemi di qualità della rete si traducono in un rischio di perdita misurabile. I fornitori di servizi di telecomunicazione che analizzano le prestazioni della rete e il comportamento dei clienti in sistemi distinti non possono determinare quali guasti della qualità del servizio determinano effettivamente un abbandono rispetto a quali vengono assorbiti senza conseguenze.
+
+### Impatto aziendale
+
+La connessione dei dati sull’esperienza di rete ai risultati di comportamento e abbandono dei clienti consente ai team di gestione della rete, dei prodotti e di conservazione di assegnare priorità agli investimenti di correzione in base all’impatto di attrito dimostrato, anziché alla sola gravità tecnica.
+
+### Come implementare
+
+Utilizza il pattern [Customer Analytics &amp; Insight Generation](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md). Questo approccio collega i dati degli eventi di rete, i record di interazione del servizio clienti, i segnali comportamentali digitali e gli eventi del ciclo di vita dell’abbonato a Customer Journey Analytics, dove l’analisi correlata identifica le soglie di esperienza di rete e i modelli di contatto associati statisticamente all’abbandono e al mancato rinnovo del contratto. Questo è il modello corretto quando l’obiettivo è la generazione di insight e l’analisi della root cause, ossia capire quali eventi di qualità del servizio determinano l’attrito, anziché attivare un’offerta di fidelizzazione o attivare un pubblico a rischio di abbandono in una CDP.
+
+### Considerazioni tecniche
+
+- Gli eventi di esperienza di rete devono essere uniti ai record degli abbonati utilizzando identificatori di dispositivo o account coerenti con l’ID persona configurato nella connessione CJA, poiché i sistemi di telemetria di rete in genere utilizzano identificatori di apparecchiatura anziché identificatori dei clienti in modo nativo.
+- I dati di contatto del servizio clienti, inclusi i codici dei motivi del contatto, il canale utilizzato e lo stato di risoluzione, devono essere acquisiti come eventi con marca temporale che consente agli analisti di creare percorsi sequenziali da incidente di rete a contatto del servizio, attraverso abbandono nelle visualizzazioni Flusso o Abbandono di CJA.
+- I dati relativi al contratto e al piano del sottoscrittore, tra cui le date di fine del contratto, il livello del piano e il mandato, devono essere disponibili come dimensioni di ricerca nella visualizzazione dati di CJA in modo che l’analisi dell’abbandono possa essere segmentata in base alla prossimità del contratto e al livello del valore, anziché trattare la base del sottoscrittore come omogenea.
+- I volumi di dati di telemetria di rete possono essere molto grandi; le strategie di campionamento dei set di dati o la preaggregazione in AEP devono essere prese in considerazione per mantenere le prestazioni delle query di connessione CJA entro intervalli accettabili per l’utilizzo self-service da parte degli analisti.
+
+## Prevenzione dell&#39;abbandono e Win-back
+
+Utilizza modelli predittivi e segnali comportamentali per identificare i clienti a rischio e attivare campagne di fidelizzazione personalizzate con offerte personalizzate prima che abbandonino il mondo. I fornitori di telecomunicazioni devono far fronte a una pressione di abbandono persistente, e raggiungere gli abbonati a rischio con l&#39;offerta giusta prima di contattare la coda di cancellazione è significativamente più efficace in termini di costi rispetto alle campagne di riconquista dopo il fatto.
+
+### Impatto aziendale
+
+I fornitori di servizi di telecomunicazione con programmi proattivi di prevenzione dell&#39;abbandono vedono riduzioni significative dell&#39;abbandono volontario per i segmenti mirati, con il maggiore impatto tra i clienti di valore medio, dove le offerte mirate di conservazione sono più convenienti rispetto agli sconti generali.
+
+### Come implementare
+
+Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per creare un percorso di fidelizzazione che identifichi gli abbonati a rischio in base ai punteggi di propensione all&#39;abbandono, selezioni l&#39;offerta di fidelizzazione appropriata utilizzando la logica decisionale e la distribuisca nei canali preferiti dell&#39;abbonato con passaggi di follow-up se la prima estensione viene ignorata. Questo è il modello corretto quando sono necessari sia la selezione delle offerte che l’orchestrazione del percorso: un singolo messaggio attivato non può soddisfare la logica di classificazione delle offerte e il follow-up a più contatti necessari per una conservazione efficace.
+
+### Considerazioni tecniche
+
+- I modelli di propensione all’abbandono devono essere addestrati sui dati storici dell’abbandono che includono l’esperienza di rete, gli eventi di fatturazione, le chiamate di servizio e l’età dei dispositivi; i modelli addestrati sui soli dati di coinvolgimento spesso non hanno prestazioni adeguate rispetto ai driver di abbandono specifici per le telecomunicazioni.
+- Le offerte di fidelizzazione devono essere vincolate da soglie di costo-mantenimento per segmento di valore del cliente; il motore decisionale deve impedire che le offerte di fidelizzazione ad alto costo vengano applicate agli abbonati di basso valore.
+- L’elaborazione del segnale di abbandono in tempo reale deve rilevare eventi di richiesta di contratto e visite alla pagina di cancellazione del servizio per attivare risposte di conservazione urgenti prima che l’abbonato si intensifichi.
+- L’integrazione del servizio clienti è fondamentale: gli abbonati che chiamano la coda di conservazione devono essere riconosciuti come partecipanti al percorso, in modo che gli agenti possano disporre del contesto dell’offerta di conservazione pronto prima che inizi la chiamata.

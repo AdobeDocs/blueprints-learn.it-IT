@@ -2,13 +2,13 @@
 title: Casi d’uso B2B
 description: Scopri come le organizzazioni B2B utilizzano Adobe Experience Platform per accelerare la pipeline, migliorare la qualità dei lead e stimolare l’espansione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: 6073bdc4-e148-455e-aa4e-3d5226d4b5a2
+source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 1%
+source-wordcount: '3479'
+ht-degree: 0%
 
 ---
-
 
 # Casi d’uso B2B
 
@@ -24,11 +24,11 @@ Personalizza le comunicazioni di marketing e i contenuti per gli account di dest
 
 ### Impatto aziendale
 
-Le organizzazioni che implementano la personalizzazione di marketing basata sull’account registrano in genere un aumento del 30-40% del tasso di coinvolgimento dell’account, che determina una pipeline più solida e una progressione più rapida delle offerte.
+Le organizzazioni che implementano la personalizzazione di marketing basata sull’account possono vedere un coinvolgimento dell’account migliorato, che favorisce una pipeline più solida e una progressione più rapida delle offerte.
 
 ### Come implementare
 
-Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) per creare tipi di pubblico a livello di account e attivare contenuti personalizzati su tutti i canali. Questo modello è progettato appositamente per le strategie basate su account, e supporta sia il targeting a livello di account che di persona.
+Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) per creare tipi di pubblico a livello di account e attivare contenuti personalizzati su tutti i canali. Questo modello è progettato appositamente per le strategie basate su account, e supporta sia il targeting a livello di account che di persona. Questo è il modello corretto quando il targeting deve funzionare a livello di account anziché a livello individuale: l’attivazione del pubblico RT-CDP standard non supporta il modello di dati basato sull’account richiesto per le strategie ABM.
 
 ### Considerazioni tecniche
 
@@ -44,11 +44,11 @@ Punteggio automatico dei lead in base ai dati e al comportamento del profilo, qu
 
 ### Impatto aziendale
 
-Le aziende che implementano il lead scoring comportamentale e l’apprendimento automatico in genere ottengono un aumento del 25-35% nella conversione lead-opportunità, accelerando la velocità della pipeline e migliorando la produttività delle vendite.
+Le aziende che implementano il lead scoring comportamentale e l’apprendimento automatizzato vedono una migliore conversione lead-to-opportunità, un’accelerazione della velocità della pipeline e un miglioramento della produttività di vendita.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato a più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per progettare percorsi di crescita diramati che rispondono alle modifiche del punteggio del lead e ai trigger comportamentali. Questo modello supporta la logica condizionale necessaria per instradare i lead tra le tracce di sviluppo e i flussi di lavoro di handoff delle vendite.
+Utilizza il pattern [Percorso orchestrato a più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per progettare percorsi di crescita diramati che rispondono alle modifiche del punteggio del lead e ai trigger comportamentali. Questo modello supporta la logica condizionale necessaria per instradare i lead tra le tracce di sviluppo e i flussi di lavoro di handoff delle vendite. Questo è il modello corretto quando il caso d’uso richiede un flusso sequenziale di più messaggi nell’arco di giorni con diramazioni condizionali basate su modifiche del punteggio del lead ed eventi comportamentali. Un singolo messaggio attivato non può soddisfare la logica di dipendenza tra le fasi di punteggio e le decisioni di instradamento.
 
 ### Considerazioni tecniche
 
@@ -64,11 +64,11 @@ Personalizza il contenuto del sito web, le risorse e le offerte in base al setto
 
 ### Impatto aziendale
 
-Le organizzazioni B2B che personalizzano le esperienze web per potenziali clienti noti registrano in genere un aumento del 20-30% del coinvolgimento nei contenuti, con conseguenti pipeline più qualificate e cicli di vendita più brevi.
+Le organizzazioni B2B che personalizzano le esperienze web per potenziali clienti noti vedono un miglioramento nel coinvolgimento dei contenuti, che porta a una pipeline più qualificata e a cicli di vendita più brevi.
 
 ### Come implementare
 
-Utilizza il pattern [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) per fornire esperienze di contenuto personalizzate basate su profili prospect unificati. Questo modello sfrutta i dati del profilo in tempo reale per fornire le risorse più rilevanti, case study e inviti all’azione per ogni visitatore.
+Utilizza il pattern [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) per fornire esperienze di contenuto personalizzate basate su profili prospect unificati. Questo modello sfrutta i dati del profilo in tempo reale per fornire le risorse più rilevanti, case study e inviti all’azione per ogni visitatore. Questo è il modello corretto quando la personalizzazione è guidata dagli attributi di profilo e dall’appartenenza a un segmento anziché da un modello di affinità comportamentale, consentendo agli attributi a livello di account e di singolo utente di gestire l’esperienza.
 
 ### Considerazioni tecniche
 
@@ -84,11 +84,11 @@ Automatizza le conferme, i promemoria e il follow-up post-evento personalizzati 
 
 ### Impatto aziendale
 
-I flussi di lavoro automatizzati e personalizzati per la comunicazione degli eventi determinano in genere un aumento del 40-50% della partecipazione agli eventi, ottimizzando il ritorno sull’investimento nell’evento e rafforzando le relazioni potenziali.
+I flussi di lavoro automatizzati e personalizzati per la comunicazione degli eventi favoriscono una maggiore partecipazione agli eventi, ottimizzando il ritorno sull&#39;investimento e rafforzando le relazioni potenziali.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per orchestrare l&#39;intero ciclo di vita dell&#39;evento, dalla registrazione fino alla fase di sviluppo post-evento. Questo modello supporta trigger basati sul tempo, diramazioni condizionali per tipo di evento e sequenze di follow-up multicanale.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per orchestrare l&#39;intero ciclo di vita dell&#39;evento, dalla registrazione fino alla fase di sviluppo post-evento. Questo modello supporta trigger basati sul tempo, diramazioni condizionali per tipo di evento e sequenze di follow-up multicanale. Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi sequenziale e multiplo nell’arco di giorni con diramazioni condizionali in base alla registrazione dell’evento e alla partecipazione: i messaggi basati sul tempo non sono in grado, da soli, di gestire la logica di diramazione complessa tra percorsi registrati, seguiti e non mostrati.
 
 ### Considerazioni tecniche
 
@@ -104,11 +104,11 @@ Coinvolgi gli utenti di prova con consigli di prodotti personalizzati, risorse d
 
 ### Impatto aziendale
 
-Le organizzazioni che distribuiscono campagne di conversione di valutazione personalizzate registrano in genere un aumento del 25-35% nella conversione da prova a pagamento, con un impatto diretto sui nuovi ricavi aziendali e una riduzione dei costi di acquisizione dei clienti.
+Le organizzazioni che distribuiscono campagne di conversione di valutazione personalizzate vedono un miglioramento della conversione da prova a pagamento, con un impatto diretto sui nuovi ricavi aziendali e una riduzione dei costi di acquisizione dei clienti.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per creare percorsi di conversione basati sul tempo e sul comportamento per gli utenti di prova. Questo modello supporta percorsi condizionali basati su milestone di utilizzo del prodotto, consentendo spostamenti mirati nei momenti giusti.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per creare percorsi di conversione basati sul tempo e sul comportamento per gli utenti di prova. Questo modello supporta percorsi condizionali basati su milestone di utilizzo del prodotto, consentendo spostamenti mirati nei momenti giusti. Questo è il modello corretto quando il caso di utilizzo richiede un flusso di messaggi multipli in sequenza attivato da milestone di utilizzo con diramazione condizionale: i messaggi attivati dagli eventi non possono gestire la logica di temporizzazione predittiva e di dipendenza necessaria per lo sviluppo basato su milestone.
 
 ### Considerazioni tecniche
 
@@ -124,11 +124,11 @@ Personalizza i percorsi di onboarding dei clienti con formazione, risorse e supp
 
 ### Impatto aziendale
 
-Le organizzazioni con programmi di onboarding personalizzati in genere ottengono un aumento del 50-60% nell’adozione delle funzioni entro i primi 90 giorni, contribuendo direttamente a un aumento dei ricavi derivanti da fidelizzazione ed espansione.
+Le organizzazioni con programmi di onboarding personalizzati riscontrano un miglioramento nell’adozione delle funzioni nei primi 90 giorni, che contribuisce direttamente a un aumento dei ricavi derivanti da fidelizzazione ed espansione.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per orchestrare sequenze di onboarding personalizzate per prodotto, livello di piano e segmento cliente. Questo modello supporta la progressione basata su milestone, garantendo ai clienti la corretta guida in ogni fase del processo di onboarding.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per orchestrare sequenze di onboarding personalizzate per prodotto, livello di piano e segmento cliente. Questo modello supporta la progressione basata su milestone, garantendo ai clienti la corretta guida in ogni fase del processo di onboarding. Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi multipli in sequenza con avanzamento condizionale basato sui milestone di utilizzo del prodotto: la messaggistica attivata da eventi non può soddisfare la logica di staging complessa necessaria per la progressione guidata dell’onboarding.
 
 ### Considerazioni tecniche
 
@@ -144,11 +144,11 @@ Coinvolgi in modo proattivo i clienti che si avvicinano al rinnovo del contratto
 
 ### Impatto aziendale
 
-Le aziende che implementano campagne di rinnovo proattive e personalizzate registrano in genere un aumento del 30-40% del tasso di rinnovo, proteggendo i ricavi ricorrenti e riducendo i costi di riacquisizione dei clienti.
+Le aziende che implementano campagne di rinnovo proattive e personalizzate ottengono tassi di rinnovo migliori, proteggendo i ricavi ricorrenti e riducendo i costi di riacquisizione dei clienti.
 
 ### Come implementare
 
-Utilizza il modello [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per fornire l&#39;offerta di rinnovo giusta attraverso il canale giusto al momento giusto. Questo modello combina l’orchestrazione del percorso con Offer Decisioning, abilitando incentivi di rinnovo dinamici in base al valore e all’utilizzo dell’account.
+Utilizza il modello [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per fornire l&#39;offerta di rinnovo giusta attraverso il canale giusto al momento giusto. Questo modello combina l’orchestrazione del percorso con Offer Decisioning, abilitando incentivi di rinnovo dinamici in base al valore e all’utilizzo dell’account. Questo è il modello giusto quando il percorso deve coordinare la consegna tra i canali e la selezione dell’offerta richiede il valore dell’account e vincoli di utilizzo: l’orchestrazione del percorso da sola non fornisce il livello decisionale in tempo reale necessario per abbinare dinamicamente gli incentivi di rinnovo.
 
 ### Considerazioni tecniche
 
@@ -164,11 +164,11 @@ Identifica i clienti pronti per gli aggiornamenti dei prodotti o per licenze agg
 
 ### Impatto aziendale
 
-Le organizzazioni che identificano e agiscono sistematicamente sui segnali di espansione generano in genere un aumento del 20-30% dei ricavi di espansione, migliorando la conservazione dei ricavi netti e il valore del ciclo di vita del cliente.
+Le organizzazioni che identificano e agiscono sistematicamente sui segnali di espansione generano maggiori ricavi di espansione, migliorando la conservazione dei ricavi netti e il valore del ciclo di vita del cliente.
 
 ### Come implementare
 
-Percorsi Utilizza il pattern [Cross-Channel con Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per distribuire offerte personalizzate di upselling ed espansione in base all&#39;utilizzo in tempo reale e ai segnali dell&#39;account. Questo modello utilizza il processo decisionale per far corrispondere ogni account con l’offerta di espansione più rilevante tra i canali.
+Utilizza il pattern [Cross-Channel con Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per distribuire offerte personalizzate di upselling ed espansione in base all&#39;utilizzo in tempo reale e ai segnali dell&#39;account. Questo modello utilizza il processo decisionale per far corrispondere ogni account con l’offerta di espansione più rilevante tra i canali. Questo è il modello corretto quando il percorso deve coordinare la consegna tra i canali e la selezione delle offerte richiede regole di idoneità che regolino le offerte di espansione che corrispondono a account specifici: l’orchestrazione del percorso non fornisce da sola il livello decisionale necessario per la corrispondenza delle offerte basate su vincoli.
 
 ### Considerazioni tecniche
 
@@ -184,11 +184,11 @@ Puoi indirizzare l’attività ai potenziali clienti utilizzando prodotti della 
 
 ### Impatto aziendale
 
-Le organizzazioni B2B che eseguono campagne mirate di sostituzione competitiva raggiungono in genere un aumento del 15-25% del tasso di vincita competitivo, acquisendo quote di mercato e sostituendo i fornitori tradizionali.
+Le organizzazioni B2B che eseguono campagne di sostituzione mirate e competitive vedono migliorare i tassi di vincita della concorrenza, acquisendo quote di mercato e sostituendo i fornitori storici.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per orchestrare campagne competitive con più contatti personalizzate per il profilo specifico del concorrente e del potenziale cliente. Questo modello supporta la ramificazione condizionale in base al concorrente identificato, consentendo la messaggistica che affronta i punti critici specifici di ogni scenario competitivo.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per orchestrare campagne competitive con più contatti personalizzate per il profilo specifico del concorrente e del potenziale cliente. Questo modello supporta la ramificazione condizionale in base al concorrente identificato, consentendo la messaggistica che affronta i punti critici specifici di ogni scenario competitivo. Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi sequenziale e multiplo con ramificazioni condizionali basate sul concorrente specifico e sul profilo potenziale: i messaggi attivati da eventi non possono gestire la complessità della logica di ramificazione specifica del concorrente in più punti di contatto.
 
 ### Considerazioni tecniche
 
@@ -204,11 +204,11 @@ Personalizza gli inviti al webinar e la pianificazione delle demo in base agli i
 
 ### Impatto aziendale
 
-I programmi di webinar personalizzati e inviti demo in genere raggiungono un aumento del 35-45% nel tasso di partecipazione al webinar, guidando una pipeline più qualificata dalle opportunità di coinvolgimento live.
+I webinar personalizzati e i programmi di invito demo visualizzano tassi di partecipazione migliorati, che derivano una pipeline più qualificata dalle opportunità di coinvolgimento live.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per inviare inviti personalizzati quando i potenziali clienti dimostrano segnali di interesse allineati con i prossimi webinar o argomenti dimostrativi. Questo modello risponde in tempo reale ai trigger comportamentali, garantendo l’arrivo degli inviti quando l’interesse è più elevato.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per inviare inviti personalizzati quando i potenziali clienti dimostrano segnali di interesse allineati con i prossimi webinar o argomenti dimostrativi. Questo modello risponde in tempo reale ai trigger comportamentali, garantendo l’arrivo degli inviti quando l’interesse è più elevato. Questo è lo schema corretto quando l’attivatore è un’azione personalizzata del cliente allineata con la rilevanza del webinar e la risposta richiesta è un singolo invito sensibile al tempo, anziché una sequenza in più fasi o un programma di sviluppo in corso.
 
 ### Considerazioni tecniche
 
@@ -224,11 +224,11 @@ Consegna case study personalizzati, calcolatrici del ROI e storie di successo in
 
 ### Impatto aziendale
 
-Le organizzazioni che personalizzano i contenuti proof-point notano in genere un aumento del 25-35% nel coinvolgimento nei casi di studio, contribuendo a una maggiore fiducia nelle opportunità di vendita e a tassi di chiusura più rapidi.
+Le organizzazioni che personalizzano i contenuti dei punti di bozza vedono un coinvolgimento migliore nello studio dei casi, che contribuisce a rafforzare la fiducia nelle opportunità di vendita e a velocizzare i tassi di chiusura.
 
 ### Come implementare
 
-Utilizza il pattern [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) per far emergere dinamicamente i casi aziendali più rilevanti e le prove di ROI in base al profilo di ogni potenziale cliente. Questo modello associa gli attributi del visitatore a una libreria di contenuti, garantendo che ogni potenziale cliente veda i punti di bozza del proprio settore e gruppo di pari.
+Utilizza il pattern [Known-Visitor Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) per far emergere dinamicamente i casi aziendali più rilevanti e le prove di ROI in base al profilo di ogni potenziale cliente. Questo modello associa gli attributi del visitatore a una libreria di contenuti, garantendo che ogni potenziale cliente veda i punti di bozza del proprio settore e gruppo di pari. Questo è il modello giusto quando la personalizzazione è guidata dagli attributi di profilo e dall’appartenenza a un segmento anziché da un modello di affinità comportamentale, consentendo ad attributi di dimensioni di settore e azienda di associare i potenziali clienti a punti di bozza rilevanti.
 
 ### Considerazioni tecniche
 
@@ -244,11 +244,11 @@ Identifica e coinvolgi i clienti soddisfatti per opportunità di advocacy come r
 
 ### Impatto aziendale
 
-I programmi strutturati di sostegno ai clienti in genere guidano un aumento del 20-30% nella partecipazione alle attività di advocacy, generando un flusso costante di riferimenti, casi di studio e testimonianze che supportano la nuova acquisizione aziendale.
+I programmi strutturati di sostegno ai clienti favoriscono una maggiore partecipazione alle attività di advocacy, generando un flusso costante di riferimenti, casi di studio e testimonianze a supporto di nuove acquisizioni aziendali.
 
 ### Come implementare
 
-Utilizza il pattern [Multi-Step Orchestrated Percorsi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per creare flussi di lavoro di identificazione e coinvolgimento di advocacy che rispondano ai segnali di soddisfazione e di utilizzo. Questo modello supporta le domande di advocacy progressiva, a partire da una partecipazione leggera (ad es., una revisione) e avanzando verso impegni più profondi (ad es., una chiamata di riferimento o un caso di studio).
+Utilizza il pattern [Multi-Step Orchestrated Percorsi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per creare flussi di lavoro di identificazione e coinvolgimento di advocacy che rispondano ai segnali di soddisfazione e di utilizzo. Questo modello supporta le domande di advocacy progressiva, a partire da una partecipazione leggera (ad es., una revisione) e avanzando verso impegni più profondi (ad es., una chiamata di riferimento o un caso di studio). Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi sequenziale e multiplo con avanzamento condizionale basato su segnali di soddisfazione e di utilizzo: un singolo messaggio attivato non può soddisfare la logica di coinvolgimento progressivo necessaria per inoltrare le richieste di supporto nel tempo.
 
 ### Considerazioni tecniche
 
@@ -256,3 +256,62 @@ Utilizza il pattern [Multi-Step Orchestrated Percorsi](/help/blueprints/use-case
 - Definisci i criteri di idoneità per il sostegno che combinano le soglie di soddisfazione, i milestone di utilizzo e la permanenza dell’account per evitare una sensibilizzazione prematura.
 - Sincronizza lo stato di advocacy e la cronologia di partecipazione a [!DNL Salesforce] o [!DNL Microsoft Dynamics] in modo che i team di vendita possano fare riferimento ai sostenitori dei clienti durante la ricerca di potenziali clienti.
 - Coordinati con [!DNL Marketo Engage] per eliminare le attività di sensibilizzazione durante le escalation di supporto attivo o le negoziazioni di rinnovo.
+
+## Audience Activation basato su account B2B
+
+Crea tipi di pubblico a livello di account che combinino dati firmografici, segnali di gruppo di acquisto e coinvolgimento a livello di persona, quindi attivali su LinkedIn, piattaforme lato domanda e destinazioni di gestione delle relazioni con i clienti. L’attivazione del pubblico basata sull’account consente alle organizzazioni B2B di indirizzare intere organizzazioni di acquisto con pubblicità digitale coordinata anziché con contatti individuali, allineando la spesa per media a pagamento alle priorità della pipeline di account.
+
+### Impatto aziendale
+
+Le organizzazioni B2B con attivazione del pubblico basata sull’account vedono una maggiore influenza della pipeline dai programmi a pagamento, con un impatto particolarmente elevato quando i segmenti di pubblico sono allineati con le priorità del territorio di vendita e aggiornati frequentemente con il variare dei punteggi di coinvolgimento dell’account.
+
+### Come implementare
+
+Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) per creare segmenti a livello di account utilizzando relazioni account-persona e attivarli in destinazioni di supporti a pagamento con supporto B2B. Questo è lo schema corretto quando la costruzione del pubblico deve operare a livello di account, combinando segnali provenienti da più contatti all&#39;interno di un&#39;organizzazione di acquisto, piuttosto che a livello di singola persona.
+
+### Considerazioni tecniche
+
+- La configurazione del grafo di identità B2B deve collegare accuratamente gli individui noti ai loro record account; le lacune nelle associazioni account-persona determineranno un’aggregazione incompleta dei segnali dei gruppi di acquisto.
+- I segmenti di pubblico dell’account devono essere aggiornati secondo una pianificazione in linea con le date di volo della campagna e la frequenza di revisione della pipeline: i segmenti che si allontanano dallo stato corrente della pipeline riducono l’efficienza della spesa multimediale.
+- LinkedIn Matched Audiences e piattaforme B2B simili corrispondono su indirizzi e-mail professionali, che possono differire dagli indirizzi e-mail personali memorizzati in CRM; entrambi i tipi di e-mail devono essere inclusi nei payload del pubblico.
+- I tipi di pubblico di attivazione dovrebbero escludere gli account nelle fasi di offerta attiva in cui la pubblicità a pagamento potrebbe creare una sovrapposizione imbarazzante con la sensibilizzazione alle vendite dirette.
+
+
+## Journey Orchestration del gruppo di acquisto
+
+Orchestrare percorsi a livello di account che coltivano i membri del gruppo di acquisto in base ai ruoli, ai punteggi di coinvolgimento e allo stato di qualifica dell&#39;account, con trasferimento automatico alle vendite. Coordinare la logica di percorso a livello di gruppo acquirente anziché a livello individuale garantisce che ogni parte interessata riceva messaggi appropriati al suo ruolo e alla sua fase decisionale, mantenendo al contempo la coerenza all’interno dell’account.
+
+### Impatto aziendale
+
+Le organizzazioni B2B che utilizzano l’orchestrazione dei percorsi di acquisto vedono migliorare i tassi di creazione delle opportunità dalla pipeline originata dal marketing e accelerare la progressione attraverso le prime fasi dell’offerta, in particolare quando il passaggio alle vendite viene attivato automaticamente in base a soglie di coinvolgimento misurabili.
+
+### Come implementare
+
+Utilizza il pattern [Acquisto di marketing basato su gruppo](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md) per creare percorsi qualificati per l&#39;account in grado di segmentare i membri dei gruppi di acquisto per ruolo, valutare i segnali di coinvolgimento a livello di gruppo e orchestrare campagne multi-touch coordinate con ramificazioni condizionali in base allo stato dell&#39;account. Questo è il modello corretto quando la logica di percorso deve operare a livello di gruppo di account anziché a livello di singola persona: l’orchestrazione di percorso standard a livello di persona non può gestire i requisiti di qualificazione del gruppo e di coordinamento interpersonale della gestione dei gruppi di acquisto B2B.
+
+### Considerazioni tecniche
+
+- Le definizioni di iscrizione al gruppo di acquisto devono essere mantenute nel modello di dati B2B, collegando i contatti noti ai loro account e assegnando loro ruoli come campione, acquirente economico o valutatore tecnico.
+- Il punteggio di coinvolgimento dell’account deve aggregare i segnali provenienti da più persone all’interno del gruppo di acquisto; il coinvolgimento di un singolo contatto non è sufficiente per determinare la fattibilità a livello di account.
+- La soppressione del percorso deve essere sincronizzata con le fasi dell’opportunità CRM per evitare che i messaggi di automazione del marketing entrino in conflitto con le conversazioni di vendita attive.
+- Le notifiche di avviso e di trasferimento delle vendite devono essere integrate con la piattaforma CRM e Sales Engagement in modo che i rappresentanti ricevano un contesto tempestivo e actionable quando gli account raggiungono la soglia di trasferimento.
+
+
+## Personalization Account-Based Marketing (ABM)
+
+Personalizza le comunicazioni di marketing e i contenuti per gli account di destinazione in base al profilo dell’account, alla cronologia del coinvolgimento e ai segnali di acquisto. La personalizzazione ABM va oltre il targeting dell’account, personalizzando il contenuto dei messaggi e le esperienze web in base al settore specifico, alle dimensioni e alle problematiche di business note di ogni account, creando una rilevanza che i messaggi generici delle campagne non possono raggiungere.
+
+### Impatto aziendale
+
+Le organizzazioni B2B con personalizzazione a livello di account segnalano tassi di coinvolgimento migliorati per le campagne in uscita e una conversione più elevata da web a pipeline per gli account mirati, con risultati particolarmente positivi quando la personalizzazione si estende alle pagine di destinazione e alle esperienze web visitate tramite media a pagamento.
+
+### Come implementare
+
+Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) per attivare i profili a livello di account per la personalizzazione tra canali web e in uscita. Questo è il modello corretto quando il requisito principale è il targeting a livello di account per la personalizzazione anziché l’orchestrazione del percorso a livello di contatto: i dati del profilo di account guidano le decisioni di personalizzazione anziché i singoli segnali comportamentali.
+
+### Considerazioni tecniche
+
+- I dati firmografici dell’account (settore, dimensioni dell’azienda, area geografica, stack tecnologico) devono essere aggiornati e modellati in modo coerente per promuovere una personalizzazione dei contenuti significativa oltre il targeting generico a livello di settore.
+- La personalizzazione web per i visitatori B2B noti richiede la risoluzione IP-to-account o l’autenticazione diretta; la risoluzione basata su IP ha una precisione inferiore e non deve essere utilizzata per le decisioni di account di alto valore.
+- È necessario sviluppare il contenuto per ogni segmento di account con targeting di personalizzazione; se si attiva la personalizzazione senza un numero sufficiente di varianti di contenuto, alcuni account riceveranno esperienze immutate.
+- Le decisioni di Personalization a livello di account devono essere allineate con la fase CRM corrente e l’attività di vendita per evitare di fornire contenuti di sensibilizzazione top-of-funnel agli account già in offerte attive.

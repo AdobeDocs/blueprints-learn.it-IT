@@ -2,13 +2,13 @@
 title: Casi di utilizzo assicurazioni
 description: Scopri in che modo le compagnie di assicurazione utilizzano Adobe Experience Platform per personalizzare la gestione delle policy, migliorare le esperienze di richiesta di risarcimento e promuovere la fidelizzazione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: a082598f-555b-49a4-b201-a55bee793959
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '3272'
 ht-degree: 0%
 
 ---
-
 
 # Casi di utilizzo assicurazioni
 
@@ -20,11 +20,11 @@ Invia promemoria e offerte personalizzati per il rinnovo dei criteri in base all
 
 ### Impatto aziendale
 
-Le organizzazioni che implementano campagne di rinnovo personalizzate delle policy registrano in genere un miglioramento del 25-35% nei tassi di rinnovo, riducendo direttamente l’abbandono dei clienti e proteggendo i ricavi premium ricorrenti.
+Le organizzazioni che implementano campagne di rinnovo personalizzate delle policy possono vedere tassi di rinnovo migliorati, riducendo direttamente l’abbandono dei clienti e proteggendo i ricavi premium ricorrenti.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Le date di rinnovo delle polizze sono eventi naturali che innescano un’attività di sensibilizzazione tempestiva e personalizzata nel momento in cui gli assicurati prendono la decisione di rinnovo.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). Questo approccio costruisce una sequenza di rinnovo temporizzata che procede dal preavviso iniziale fino all&#39;inoltro di solleciti e, se necessario, un messaggio finale di urgenza, adattando la cadenza e l&#39;offerta in base al fatto che l&#39;assicurato abbia agito con contatti precedenti. Questo è il modello corretto quando la tempistica è determinata da una data di contratto anziché da un evento cliente discreto e l’intento aziendale richiede un flusso sequenziale di più messaggi su 30 o più giorni con diramazione condizionale basata sul coinvolgimento: la messaggistica attivata da un evento gestisce le risposte reattive a eventi discreti, ma non può soddisfare la logica di programmazione basata sul calendario o le dipendenze di escalation necessarie per una campagna di rinnovo.
 
 ### Considerazioni tecniche
 
@@ -40,17 +40,17 @@ Consigliare prodotti assicurativi aggiuntivi come la copertura di vita, casa o a
 
 ### Impatto aziendale
 
-I consigli di cross-selling personalizzati in genere determinano un miglioramento del 20-30% nei tassi di conversione di cross-selling, aumentando le policy per famiglia e il valore complessivo della vita del cliente.
+I consigli di cross-selling personalizzati contribuiscono a migliorare i tassi di conversione delle cross-selling, aumentando le policy per famiglia e il valore complessivo della durata di vita del cliente.
 
 ### Come implementare
 
-Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Real-time Decisioning valuta i segnali esistenti di copertura, stadio di vita e comportamento di ogni cliente per selezionare i prodotti consigliati più rilevanti dal catalogo disponibile.
+Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Real-time Decisioning valuta i segnali esistenti di copertura, stadio di vita e comportamento di ogni cliente per selezionare i prodotti consigliati più rilevanti dal catalogo disponibile. Questo è il modello corretto quando la selezione del prodotto deve tenere conto delle regole di idoneità, delle linee guida per la sottoscrizione e dei requisiti di idoneità normativi, vincoli che richiedono una logica decisionale regolamentata anziché una classificazione di affinità comportamentale.
 
 ### Considerazioni tecniche
 
 - Integra i dati delle policy da tutte le linee di prodotto in un profilo cliente unificato in modo che il motore decisionale abbia una visione completa della copertura esistente durante la selezione dei consigli.
 - Configurare le regole di idoneità all&#39;interno del modello decisionale per escludere i prodotti già in possesso di un cliente o in conflitto con le linee guida per la sottoscrizione per il proprio profilo di rischio.
-- Applicare le regole di conformità alle normative per garantire che le raccomandazioni sui prodotti siano conformi ai requisiti di marketing e idoneità delle assicurazioni specifici dello stato.
+- Coinvolgi i team legali e di conformità per verificare che le regole di idoneità per i consigli sui prodotti siano in linea con i requisiti di marketing e idoneità applicabili per le assicurazioni statali prima del lancio.
 - Coordina l’output delle decisioni con il portale degli agenti in modo che i prodotti consigliati siano visibili agli agenti assegnati che potrebbero avere conversazioni dirette con il cliente.
 
 
@@ -60,11 +60,11 @@ Personalizzare le comunicazioni di processo, gli aggiornamenti dello stato e le 
 
 ### Impatto aziendale
 
-Le comunicazioni personalizzate delle richieste di rimborso consentono di ottenere in genere un miglioramento del 40-50% nei punteggi di soddisfazione delle richieste di rimborso, riducendo i reclami e aumentando la probabilità di rinnovo delle politiche dopo una richiesta di rimborso.
+Le comunicazioni personalizzate per le richieste di rimborso consentono di ottenere punteggi migliori per la soddisfazione delle richieste, riducendo le richieste e aumentando la probabilità di rinnovo delle politiche dopo una richiesta di rimborso.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). Il processo di richiesta di rimborso è un&#39;esperienza in più fasi, con fasi distinte (archiviazione, indagine, adeguamento e liquidazione) che richiedono comunicazioni su misura e un calendario adattativo.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). Il processo di richiesta di rimborso è un&#39;esperienza in più fasi, con fasi distinte (archiviazione, indagine, adeguamento e liquidazione) che richiedono comunicazioni su misura e un calendario adattativo. Si tratta del modello corretto quando il caso d’uso richiede un flusso di messaggi multipli in sequenza nell’arco di giorni con diramazioni condizionali basate su eventi di stato delle attestazioni: un singolo messaggio attivato non può soddisfare la logica di dipendenza tra fasi di attestazioni sequenziali.
 
 ### Considerazioni tecniche
 
@@ -80,11 +80,11 @@ Fornisci informazioni personalizzate sulla valutazione del rischio e suggeriment
 
 ### Impatto aziendale
 
-L’impegno personalizzato per la prevenzione dei rischi comporta in genere un miglioramento del 30-40% nel coinvolgimento nella prevenzione, contribuendo a ridurre la frequenza delle richieste di risarcimento e a migliorare la soddisfazione dei clienti.
+L’impegno personalizzato nella prevenzione dei rischi stimola un maggiore impegno nella prevenzione, contribuendo a ridurre la frequenza delle richieste di risarcimento e a migliorare la soddisfazione dei clienti.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). L’educazione alla prevenzione dei rischi è più efficace in quanto è un percorso multi-touch sostenuto che fornisce indicazioni pertinenti nel tempo e si adatta in base al coinvolgimento dei clienti e ai fattori di rischio stagionali.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). L’educazione alla prevenzione dei rischi è più efficace in quanto è un percorso multi-touch sostenuto che fornisce indicazioni pertinenti nel tempo e si adatta in base al coinvolgimento dei clienti e ai fattori di rischio stagionali. Questo è il modello giusto quando il percorso deve fornire contenuti per periodi prolungati con correzioni stagionali dei tempi e diramazioni basate sul coinvolgimento: i messaggi attivati dagli eventi non possono gestire la programmazione predittiva o la frequenza in più passaggi necessaria per un&#39;istruzione sostenuta.
 
 ### Considerazioni tecniche
 
@@ -100,16 +100,16 @@ Invia notifiche personalizzate su modifiche dei criteri, aggiornamenti della cop
 
 ### Impatto aziendale
 
-Le notifiche personalizzate di modifica delle policy consentono in genere un miglioramento del 50-60% nei tassi di conferma delle notifiche, riducendo le richieste di assistenza al cliente e migliorando la comprensione complessiva da parte dell’assicurato.
+Le notifiche personalizzate di modifica delle policy consentono di migliorare i tassi di conferma delle notifiche, riducendo le richieste di assistenza ai clienti e migliorando la comprensione complessiva da parte dell’assicurato.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Gli eventi di modifica delle policy dal sistema di amministrazione fungono da trigger naturali per le notifiche immediate e rilevanti attraverso il canale preferito di ciascun cliente.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Gli eventi di modifica delle policy dal sistema di amministrazione fungono da trigger naturali per le notifiche immediate e rilevanti attraverso il canale preferito di ciascun cliente. Questo è il modello corretto quando l’evento che scatena l’evento è un evento di sistema (cambiamento di politica) anziché il comportamento del cliente e la comunicazione richiesta è immediata e reattiva anziché una sequenza di acquisizione sostenuta.
 
 ### Considerazioni tecniche
 
 - Integrazione con il sistema di amministrazione delle policy per acquisire in tempo reale gli eventi di approvazione, modifica e modifica del rinnovo, garantendo che le notifiche riflettano lo stato delle policy più recente.
-- Applicare le regole di conformità alle normative per garantire che le notifiche soddisfino i requisiti di comunicazione imposti dallo stato per le modifiche delle politiche, inclusi il linguaggio richiesto e i tempi di consegna.
+- Prima di attivare le comunicazioni automatizzate, rivolgiti al team legale per verificare che le notifiche di modifica dei criteri soddisfino i requisiti relativi a tempistica, lingua e canale di consegna stabiliti dallo stato.
 - Configurare la logica di priorità dei canali in base all&#39;urgenza e al tipo di modifica; ad esempio, le riduzioni di copertura potrebbero richiedere canali più immediati rispetto agli aggiornamenti informativi.
 - Mantenere un audit trail della consegna per tutte le notifiche di modifica delle policy per supportare la documentazione di conformità alle normative e la risoluzione delle controversie.
 
@@ -120,11 +120,11 @@ Rivolgiti ai clienti che hanno iniziato ma non hanno completato un preventivo di
 
 ### Impatto aziendale
 
-Le campagne di recupero dell’abbandono delle quotazioni determinano in genere un miglioramento del 20-30% nei tassi di completamento delle quotazioni, convertendo più potenziali clienti in assicurati e riducendo i costi di acquisizione dei clienti.
+Le campagne di recupero dell’abbandono delle quotazioni favoriscono il miglioramento dei tassi di completamento delle quotazioni, convertendo un maggior numero di potenziali clienti in assicurati e riducendo i costi di acquisizione dei clienti.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). L’abbandono delle quotazioni è un evento comportamentale che attiva un follow-up tempestivo mentre l’interesse e l’intento del potenziale cliente sono ancora freschi.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). L’abbandono delle quotazioni è un evento comportamentale che attiva un follow-up tempestivo mentre l’interesse e l’intento del potenziale cliente sono ancora freschi. Questo è il modello giusto quando il trigger è un comportamento discreto del cliente (abbandono) e la risposta richiesta è un ricoinvolgimento sensibile al tempo, piuttosto che una sequenza di sviluppo in più fasi o decisioni di offerta complesse.
 
 ### Considerazioni tecniche
 
@@ -140,11 +140,11 @@ Identificare i clienti che entrano in una nuova fase di vita, ad esempio matrimo
 
 ### Impatto aziendale
 
-Le offerte di prodotti basati su fasi di vita raggiungono in genere un miglioramento del 35-45% nei tassi di adozione dei prodotti in fasi di vita, approfondendo le relazioni con i clienti durante i momenti decisionali chiave.
+Le offerte di prodotti basate su fasi di vita consentono di migliorare i tassi di adozione dei prodotti, consolidando le relazioni con i clienti durante i momenti decisionali chiave.
 
 ### Come implementare
 
-Utilizza il Percorso [cross-channel con modello Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Le transizioni Life Stage traggono vantaggio dall&#39;orchestrazione cross-channel combinata con il decisioning in tempo reale per selezionare il prodotto più rilevante e distribuirlo nel canale preferito dal cliente nel momento ottimale.
+Utilizza il Percorso [cross-channel con modello Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Le transizioni Life Stage traggono vantaggio dall&#39;orchestrazione cross-channel combinata con il decisioning in tempo reale per selezionare il prodotto più rilevante e distribuirlo nel canale preferito dal cliente nel momento ottimale. Questo è il modello corretto quando il percorso deve coordinare la consegna su più canali per garantire offerte coerenti sfruttando al contempo le decisioni per selezionare il prodotto più appropriato per la fase vita rilevata: l’orchestrazione in più passaggi da sola non può fornire l’idoneità in tempo reale e la valutazione dell’idoneità necessarie per i consigli sui prodotti assicurativi.
 
 ### Considerazioni tecniche
 
@@ -160,11 +160,11 @@ Identifica e comunica opportunità di sconto personalizzate, come bundling, driv
 
 ### Impatto aziendale
 
-Le comunicazioni personalizzate relative a sconti e risparmi determinano in genere un miglioramento del 25-35% nei tassi di utilizzo degli sconti, migliorando la soddisfazione dei clienti e riducendo l&#39;abbandono basato sui prezzi.
+Le comunicazioni personalizzate relative a sconti e risparmi consentono di ottimizzare i tassi di utilizzo degli sconti, migliorando la soddisfazione dei clienti e riducendo l&#39;abbandono basato sui prezzi.
 
 ### Come implementare
 
-Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Real-time Decisioning valuta l’idoneità di ogni cliente agli sconti disponibili e seleziona l’opportunità di risparmio più incisiva da presentare al momento giusto.
+Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Real-time Decisioning valuta l’idoneità di ogni cliente agli sconti disponibili e seleziona l’opportunità di risparmio più incisiva da presentare al momento giusto. Questo è il modello corretto quando la selezione degli sconti deve tenere conto delle limitazioni di stacking, delle restrizioni normative e di calcoli attuariali accurati, vincoli che richiedono una logica decisionale regolamentata anziché semplici controlli di idoneità.
 
 ### Considerazioni tecniche
 
@@ -180,11 +180,11 @@ Utilizza il rilevamento intelligente delle frodi per identificare i pattern dell
 
 ### Impatto aziendale
 
-I programmi intelligenti di prevenzione delle frodi nelle richieste di rimborso consentono in genere di migliorare del 15-25% i tassi di rilevamento delle frodi, riducendo i pagamenti fraudolenti e i costi complessivi delle richieste di rimborso.
+I programmi intelligenti di prevenzione delle frodi in materia di richieste di risarcimento migliorano i tassi di rilevamento delle frodi, riducendo i pagamenti fraudolenti e i costi complessivi delle richieste di risarcimento.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Gli eventi di valutazione del rischio di frode attivano le comunicazioni di investigazione appropriate e gli adeguamenti del processo in tempo reale, garantendo che le richieste di rimborso segnalate ricevano attenzione immediata.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Gli eventi di valutazione del rischio di frode attivano le comunicazioni di investigazione appropriate e gli adeguamenti del processo in tempo reale, garantendo che le richieste di rimborso segnalate ricevano attenzione immediata. Si tratta del modello corretto quando un evento derivato dal sistema (punteggio di rischio di frode) è il trigger e l’azione richiesta è l’adeguamento immediato del processo interno con un’attenta comunicazione con il cliente, anziché uno scenario di percorso o di decisione in più fasi.
 
 ### Considerazioni tecniche
 
@@ -200,18 +200,18 @@ Personalizza le comunicazioni del programma di benessere, i promemoria di partec
 
 ### Impatto aziendale
 
-Le comunicazioni personalizzate dei programmi di prevenzione e benessere in genere portano a un miglioramento del 30-40% nei tassi di partecipazione al programma, contribuendo a migliori risultati in termini di salute e a una riduzione della frequenza delle richieste di rimborso.
+Le comunicazioni personalizzate relative al programma di salute e prevenzione consentono di migliorare i tassi di partecipazione al programma, contribuendo a migliorare i risultati sanitari e a ridurre la frequenza delle richieste di rimborso.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). I programmi di benessere sono esperienze di coinvolgimento sostenuto con milestone, sfide e premi che richiedono un&#39;orchestrazione adattiva basata sull&#39;attività e sul progresso di ciascun partecipante.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). I programmi di benessere sono esperienze di coinvolgimento sostenuto con milestone, sfide e premi che richiedono un&#39;orchestrazione adattiva basata sull&#39;attività e sul progresso di ciascun partecipante. Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi a lungo termine e multiplo con diramazioni basate sul coinvolgimento e regolazioni temporali adattive: i messaggi attivati dagli eventi non possono gestire la logica milestone complessa o la necessità di regolare la frequenza delle comunicazioni in base al tracciamento sostenuto delle attività.
 
 ### Considerazioni tecniche
 
 - Integrare con i feed di dati di applicazioni per dispositivi indossabili e di salute utilizzando l&#39;acquisizione in streaming di [!DNL Adobe Experience Platform], applicando etichette chiare per la governance dei dati per distinguere i dati relativi alla salute dai dati relativi a richieste di rimborso o sottoscrizioni.
 - Implementa meccanismi di consenso separati per la raccolta dei dati sulla salute per garantire che i partecipanti comprendano come vengono utilizzati i loro dati sulle attività sanitarie e possano rinunciare senza influenzare i loro criteri.
 - Progettare la logica di percorso che regola l&#39;intensità del programma e la frequenza di comunicazione in base al livello di coinvolgimento di ciascun partecipante per prevenire l&#39;affaticamento e incoraggiare la partecipazione prolungata.
-- Garantire che l&#39;incentivo al benessere e il monitoraggio dei premi siano conformi alle normative assicurative applicabili in materia di incentivi per gli assicurati e programmi di sconti sui premi.
+- Coinvolgi i team legali e di conformità per rivedere le strutture di incentivi per il benessere e i programmi di sconti premium per la conformità alle normative di assicurazione statali applicabili prima del lancio.
 
 
 ## Coordinamento agente e broker
@@ -220,11 +220,11 @@ Consente la comunicazione e il coordinamento personalizzati tra i clienti e gli 
 
 ### Impatto aziendale
 
-Comunicazioni efficaci di coordinamento degli agenti e dei broker si traducono in genere in un miglioramento del 35-45% nel coinvolgimento degli agenti, che porta a relazioni più solide con i clienti e a una maggiore fidelizzazione guidata da interazioni di consulenza affidabili.
+Comunicazioni efficaci di coordinamento degli agenti e dei broker si traducono in un maggiore coinvolgimento degli agenti, che porta a relazioni più solide con i clienti e a una maggiore conservazione, guidata da interazioni di consulenza affidabili.
 
 ### Come implementare
 
-Utilizza il pattern [Attivazione messaggi in uscita in batch](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md). Il coordinamento degli agenti si realizza in modo ottimale tramite attivazioni batch pianificate che forniscono agli agenti elenchi con priorità di assistenza ai clienti, punti di contatto e azioni consigliate a cadenza regolare.
+Utilizza il pattern [Attivazione messaggi in uscita in batch](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md). Il coordinamento degli agenti si realizza in modo ottimale tramite attivazioni batch pianificate che forniscono agli agenti elenchi con priorità di assistenza ai clienti, punti di contatto e azioni consigliate a cadenza regolare. Questo è lo schema corretto quando il pubblico è ampio e predefinito, la tempistica di consegna è pianificata su base ricorrente anziché basata su eventi e non è necessario alcun diramamento in tempo reale o processo decisionale.
 
 ### Considerazioni tecniche
 
@@ -240,11 +240,11 @@ Comunica in modo proattivo con i clienti delle aree colpite durante calamità na
 
 ### Impatto aziendale
 
-Le comunicazioni proattive di risposta agli eventi catastrofici consentono in genere di ottenere un miglioramento del 60-70% nella percentuale di comunicazioni dei clienti durante gli eventi, accelerando in modo significativo la presentazione delle richieste e rafforzando la fiducia e la fedeltà dei clienti a lungo termine.
+Le comunicazioni proattive di risposta agli eventi catastrofici consentono di migliorare i tassi di comunicazione dei clienti durante gli eventi, accelerando la presentazione delle richieste e rafforzando la fiducia e la fedeltà dei clienti a lungo termine.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Le dichiarazioni di eventi catastrofici fungono da trigger ad alta priorità per un’estensione immediata e personalizzata a tutti i contraenti nell’area geografica interessata.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Le dichiarazioni di eventi catastrofici fungono da trigger ad alta priorità per un’estensione immediata e personalizzata a tutti i contraenti nell’area geografica interessata. Questo è lo schema giusto quando si innesca un evento esterno ad alta priorità e la risposta richiesta è immediata, ampia e geografica, con informazioni critiche in termini di tempo, piuttosto che modelli di comportamento dei singoli clienti o sequenze complesse.
 
 ### Considerazioni tecniche
 
@@ -252,3 +252,23 @@ Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case
 - Crea segmenti di pubblico geografico utilizzando i dati degli indirizzi dei contraenti e le informazioni sulla posizione delle proprietà per identificare con precisione i clienti nell’area interessata senza comunicare in modo eccessivo ai clienti non interessati.
 - Configura il routing dei messaggi ad alta priorità che ignora le regole standard di limitazione della frequenza e soppressione per garantire che le informazioni critiche relative alla sicurezza e alle richieste di rimborso raggiungano immediatamente i clienti.
 - Modelli di messaggio e configurazioni di percorso precompilati per i tipi di eventi catastrofici più comuni, in modo che le comunicazioni possano essere attivate entro poche ore dalla dichiarazione di un evento, anziché richiedere la creazione di contenuti durante la crisi.
+
+
+## Personalization contenuto portale titolari di polizze
+
+Personalizza il portale self-service autenticato e l’esperienza dell’app mobile per gli assicurati presentando le informazioni di copertura, gli strumenti e le risorse più rilevanti in base al loro comportamento di navigazione, al portfolio di policy e alle interazioni di servizio recenti. Un portale che si adatta al contesto attuale di ogni assicurato riduce l&#39;attrito e rende più facile per i clienti trovare ciò di cui hanno bisogno quando ne hanno bisogno.
+
+### Impatto aziendale
+
+La personalizzazione dell’esperienza del portale degli assicurati determina miglioramenti misurabili nel completamento delle attività self-service e nel coinvolgimento digitale, riducendo il volume dei centri di contatto in entrata e rafforzando la soddisfazione dei clienti con il canale digitale.
+
+### Come implementare
+
+Utilizza il pattern [Consigli comportamentali](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Segnali comportamentali provenienti da sessioni di portale autenticate, quali l&#39;utilizzo del calcolatore di copertura, le visualizzazioni dei documenti relativi alle policy, i controlli dello stato delle richieste di rimborso e il coinvolgimento nell&#39;argomento delle domande frequenti, consentono di formare un modello di consigli che riunisce in modo dinamico i contenuti e gli strumenti più rilevanti per il contesto corrente di ciascun assicurato. Questo è il modello corretto quando la personalizzazione è guidata da segnali comportamentali impliciti all’interno di una sessione autenticata e l’obiettivo è la classificazione di rilevanza di un catalogo di contenuti o risorse, anziché Offer Decisioning, che richiede l’idoneità regolamentata e l’approvazione attuariale prima di presentare un’offerta di prodotto, o Cross-Channel with Decisioning, che è più appropriato quando si coordina un’offerta di prodotto su più canali.
+
+### Considerazioni tecniche
+
+- Applica le etichette di governance dei dati ai segnali comportamentali raccolti nel portale per gli assicurati per distinguere l’analisi del coinvolgimento dai dati assicurativi regolamentati e impedisce che qualsiasi segnale derivato dalla cronologia delle richieste di risarcimento confluisca in modelli di personalizzazione senza un’esplicita revisione attuariale e di conformità.
+- Integrare il modello comportamentale con il sistema di gestione delle polizze per garantire che i contenuti e le raccomandazioni sugli strumenti riflettano il portafoglio attivo delle polizze di ciascun assicurato, presentando strumenti di copertura automatica per gli assicurati automatici e risorse sulla proprietà per i proprietari di case, senza esporre i dati grezzi delle polizze al modello di raccomandazione oltre la classificazione della linea di prodotto.
+- Implementa controlli di conformità specifici per lo stato per garantire che la personalizzazione dei comportamenti non costituisca una raccomandazione assicurativa o una richiesta di marketing ai sensi delle normative statali applicabili, in particolare quando i segnali comportamentali potrebbero implicare il rilevamento del gap di copertura.
+- Coordina i segnali di personalizzazione del portale con il portale degli agenti in modo che gli agenti al servizio degli assicurati che hanno mostrato un comportamento di ricerca self-service forte ricevano una visione consolidata dell’impegno digitale del cliente insieme alla cronologia del servizio.
