@@ -101,8 +101,8 @@ Consulta la sezione [Opzioni di implementazione](#implementation-options) per in
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Customer Journey Analytics](CJA)** — Connessioni, visualizzazioni dati, analisi dell&#39;area di lavoro, analisi guidata, metriche calcolate, dashboard, pubblicazione di tipi di pubblico e analisi dei contenuti
-- **[!DNL Adobe Experience Platform](AEP)** — Data lake, set di dati, schemi XDM, dati di profilo ed eventi che alimentano le connessioni CJA
+- **[!DNL Customer Journey Analytics] (CJA)** — Connessioni, visualizzazioni dati, analisi dell&#39;area di lavoro, analisi guidata, metriche calcolate, dashboard, pubblicazione di tipi di pubblico e analisi dei contenuti
+- **[!DNL Adobe Experience Platform] (AEP)** — Data lake, set di dati, schemi XDM, dati di profilo ed eventi che alimentano le connessioni CJA
 
 ## Funzioni fondamentali
 

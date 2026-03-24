@@ -94,8 +94,8 @@ Sviluppa percorsi a livello di account che qualifichino i lead in gruppi di acqu
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni Adobe.
 
-- **[!DNL Journey Optimizer B2B Edition]([!DNL AJO B2B])** — Orchesta i percorsi a livello di account, gestisce i gruppi di acquisto con modelli di ruolo e interessi nelle soluzioni, valuta il coinvolgimento a livello di persona e gruppo di acquisto, crea contenuti e-mail B2B, invia messaggi SMS, configura avvisi di vendita e fornisce dashboard di analisi B2B.
-- **[!DNL Real-Time CDP B2B Edition]([!DNL RT-CDP B2B])** - Unifica i profili account dai dati B2B tra sorgenti, risolve le relazioni tra persone e account, valuta i tipi di pubblico a livello di account, configura destinazioni specifiche per B2B ([!DNL Marketo Engage], [!DNL LinkedIn], CRM) e applica la governance dei dati nei dati B2B.
+- **[!DNL Journey Optimizer B2B Edition] ([!DNL AJO B2B])** — Orchesta i percorsi a livello di account, gestisce i gruppi di acquisto con modelli di ruolo e interessi nelle soluzioni, valuta il coinvolgimento a livello di persona e gruppo di acquisto, crea contenuti e-mail B2B, invia messaggi SMS, configura avvisi di vendita e fornisce dashboard di analisi B2B.
+- **[!DNL Real-Time CDP B2B Edition] ([!DNL RT-CDP B2B])** - Unifica i profili account dai dati B2B tra sorgenti, risolve le relazioni tra persone e account, valuta i tipi di pubblico a livello di account, configura destinazioni specifiche per B2B ([!DNL Marketo Engage], [!DNL LinkedIn], CRM) e applica la governance dei dati nei dati B2B.
 
 ## Funzioni fondamentali
 

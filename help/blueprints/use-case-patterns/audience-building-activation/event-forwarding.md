@@ -80,9 +80,9 @@ Questa sezione descrive il pattern e la catena di funzioni utilizzati per implem
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Experience Platform](Edge Network)** — Riceve e instrada dati evento in tempo reale da Web SDK, Mobile SDK o Server API tramite flussi di dati configurati
-- **[!DNL Adobe Experience Platform](Inoltro eventi)** - Fornisce il motore delle regole lato server per la valutazione, il filtraggio, la trasformazione e l&#39;inoltro dei dati evento a destinazioni esterne
-- **[!DNL Adobe Experience Platform](Tag / Raccolta dati)** - Gestisce il ciclo di vita, le estensioni, le regole e il flusso di lavoro di pubblicazione della proprietà di inoltro degli eventi
+- **[!DNL Adobe Experience Platform] (Edge Network)** — Riceve e instrada dati evento in tempo reale da Web SDK, Mobile SDK o Server API tramite flussi di dati configurati
+- **[!DNL Adobe Experience Platform] (Inoltro eventi)** - Fornisce il motore delle regole lato server per la valutazione, il filtraggio, la trasformazione e l&#39;inoltro dei dati evento a destinazioni esterne
+- **[!DNL Adobe Experience Platform] (Tag / Raccolta dati)** - Gestisce il ciclo di vita, le estensioni, le regole e il flusso di lavoro di pubblicazione della proprietà di inoltro degli eventi
 
 ## Funzioni fondamentali
 

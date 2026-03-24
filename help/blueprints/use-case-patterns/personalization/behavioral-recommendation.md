@@ -87,9 +87,9 @@ See the Pattern Composition section under Implementation Considerations for guid
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer](AJO) Decisioning** -- Selection strategies, ranking models, item catalogs, and decision policies that evaluate behavioral signals and return the most relevant items for each visitor
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** -- Behavioral profile data accumulation, audience evaluation for recommendation scoping, and computed attributes for behavioral affinity scoring
-- **[!DNL Adobe Experience Platform](AEP)** -- Behavioral event ingestion via [!DNL Web SDK] and [!DNL Mobile SDK], [!DNL Edge Network] processing, XDM schema management for event and catalog data
+- **[!DNL Adobe Journey Optimizer] (AJO) Decisioning** -- Selection strategies, ranking models, item catalogs, and decision policies that evaluate behavioral signals and return the most relevant items for each visitor
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** -- Behavioral profile data accumulation, audience evaluation for recommendation scoping, and computed attributes for behavioral affinity scoring
+- **[!DNL Adobe Experience Platform] (AEP)** -- Behavioral event ingestion via [!DNL Web SDK] and [!DNL Mobile SDK], [!DNL Edge Network] processing, XDM schema management for event and catalog data
 
 ## Funzioni fondamentali
 

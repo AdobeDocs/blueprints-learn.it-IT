@@ -90,9 +90,9 @@ Distribuisci contenuti, offerte o promozioni personalizzati a un visitatore iden
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer](AJO)**: configurazione del canale web, configurazione del canale in-app, configurazione del canale della scheda di contenuto, decisioning (selezione e classificazione dell&#39;offerta), authoring dei messaggi (creazione di contenuti personalizzati), esecuzione della campagna, sperimentazione dei contenuti e reporting
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — Valutazione del pubblico (edge, streaming e batch), ricerca dei profili in tempo reale tramite Edge Network, arricchimento dei profili con attributi calcolati e punteggi di propensione
-- **[!DNL Adobe Experience Platform](AEP)** — Archivio profili, servizio Identity, Web SDK, Mobile SDK, configurazione dello stream di dati, consegna rete Edge
+- **[!DNL Adobe Journey Optimizer] (AJO)**: configurazione del canale web, configurazione del canale in-app, configurazione del canale della scheda di contenuto, decisioning (selezione e classificazione dell&#39;offerta), authoring dei messaggi (creazione di contenuti personalizzati), esecuzione della campagna, sperimentazione dei contenuti e reporting
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Valutazione del pubblico (edge, streaming e batch), ricerca dei profili in tempo reale tramite Edge Network, arricchimento dei profili con attributi calcolati e punteggi di propensione
+- **[!DNL Adobe Experience Platform] (AEP)** — Archivio profili, servizio Identity, Web SDK, Mobile SDK, configurazione dello stream di dati, consegna rete Edge
 
 ## Funzioni fondamentali
 
