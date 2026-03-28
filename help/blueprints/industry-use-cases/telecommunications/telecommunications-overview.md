@@ -3,9 +3,9 @@ title: Casi d'uso delle telecomunicazioni
 description: Scopri come le aziende di telecomunicazioni utilizzano Adobe Experience Platform per ridurre l’abbandono, promuovere gli aggiornamenti dei dispositivi e migliorare il coinvolgimento dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 653632f0-81be-435c-a703-56c5bc132794
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
@@ -232,26 +232,6 @@ Utilizza il modello [Known-Visitor Web/App Personalization](/help/blueprints/use
 - Connetti i dati di diagnostica del dispositivo per offrire consigli personalizzati sulla risoluzione dei problemi in base al modello di dispositivo e alla versione del software specifici dell’abbonato.
 - Utilizza i servizi edge di [!DNL Adobe Experience Platform] per fornire personalizzazione a bassa latenza nell&#39;esperienza dell&#39;app senza influire sulle prestazioni.
 - Implementa i cicli di feedback in modo che gli abbonati possano segnalare i problemi di copertura, arricchendo i dati di rete e dimostrando al contempo la reattività alla loro esperienza.
-
-
-## Coinvolgimento programma fedeltà
-
-Personalizza le comunicazioni, i premi e le offerte del programma fedeltà in base al livello del cliente, al saldo dei punti e alla cronologia dei rimborsi, arbitrando in tempo reale tra i canali di app, web, SMS e punti vendita al dettaglio per evitare che offerte duplicate o in conflitto raggiungano lo stesso abbonato. I vincoli di idoneità basati su livelli determinano a quali premi, rimborsi dei partner e promozioni può accedere ogni abbonato e tali regole devono essere applicate a livello decisionale anziché incorporate nella logica della singola campagna. Il programma fedeltà deve inoltre coordinarsi con le campagne attive di fidelizzazione e aggiornamento, in modo che le offerte di prevenzione dell’abbandono e i premi fedeltà siano complementari rispetto alla consegna doppia agli abbonati che si trovano simultaneamente in più percorsi.
-
-### Impatto aziendale
-
-Il coinvolgimento personalizzato nel programma fedeltà migliora la partecipazione al programma e il rimborso dei premi, aumentando i tassi di fidelizzazione tra gli abbonati iscritti.
-
-### Come implementare
-
-Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per orchestrare comunicazioni personalizzate sulla fidelizzazione che evidenzino i premi rilevanti, avvisino gli abbonati dell&#39;avanzamento del livello e presentino opportunità di rimborso allineate alle loro preferenze e ai loro comportamenti. Questo è il modello corretto quando il percorso deve coordinare la distribuzione tra i canali per evitare offerte fedeltà duplicate e quando la selezione delle offerte richiede lo stato del livello e la cronologia dei rimborsi. L’orchestrazione in più passaggi non fornisce da sola il livello decisionale in tempo reale necessario.
-
-### Considerazioni tecniche
-
-- Integra la piattaforma fedeltà per accedere ai saldi dei punti in tempo reale, allo stato dei livelli e alla cronologia dei rimborsi per una personalizzazione accurata.
-- Collega i cataloghi di premi dei partner per presentare un&#39;ampia gamma di opzioni di rimborso su misura per gli interessi dimostrati di ogni abbonato e i rimborsi passati.
-- Coordina i messaggi di fidelizzazione con altri percorsi di campagne per garantire la complementarità tra le offerte di fidelizzazione e i premi fedeltà, piuttosto che creare conflitti tra di loro.
-- La progressione del livello di supporto si sposta calcolando la vicinanza di un abbonato al livello successivo e presentando i passaggi utilizzabili per raggiungerlo.
 
 
 ## IA Plan Advisor

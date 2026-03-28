@@ -3,9 +3,9 @@ title: Casi di utilizzo assicurazioni
 description: Scopri in che modo le compagnie di assicurazione utilizzano Adobe Experience Platform per personalizzare la gestione delle policy, migliorare le esperienze di richiesta di risarcimento e promuovere la fidelizzazione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: a082598f-555b-49a4-b201-a55bee793959
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
@@ -132,26 +132,6 @@ Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case
 - Configurare regole temporali che bilanciano l’urgenza con la rispettabilità — follow-up iniziale entro poche ore, con un numero limitato di promemoria successivi nei giorni successivi.
 - Applica le regole di consenso e privacy per garantire che il follow-up venga inviato solo ai potenziali clienti che hanno acconsentito alle comunicazioni di marketing, in particolare per i clienti che non hanno ancora stabilito una relazione basata su policy.
 - Includi collegamenti profondi che restituiscono il prospect direttamente all&#39;offerta salvata anziché richiedere il riavvio del processo dall&#39;inizio.
-
-
-## Offerte di prodotti basate su Life Stage
-
-Identificare i clienti che entrano in una nuova fase di vita, ad esempio matrimonio, acquisto di una casa, famiglia in crescita o pensione, e offrire prodotti assicurativi pertinenti che soddisfino le loro esigenze di protezione in continua evoluzione. Il targeting nella fase di vita aiuta gli assicurati a creare la copertura giusta al momento giusto.
-
-### Impatto aziendale
-
-Le offerte di prodotti basate su fasi di vita consentono di migliorare i tassi di adozione dei prodotti, consolidando le relazioni con i clienti durante i momenti decisionali chiave.
-
-### Come implementare
-
-Utilizza il Percorso [cross-channel con modello Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md). Le transizioni Life Stage traggono vantaggio dall&#39;orchestrazione cross-channel combinata con il decisioning in tempo reale per selezionare il prodotto più rilevante e distribuirlo nel canale preferito dal cliente nel momento ottimale. Questo è il modello corretto quando il percorso deve coordinare la consegna su più canali per garantire offerte coerenti sfruttando al contempo le decisioni per selezionare il prodotto più appropriato per la fase vita rilevata: l’orchestrazione in più passaggi da sola non può fornire l’idoneità in tempo reale e la valutazione dell’idoneità necessarie per i consigli sui prodotti assicurativi.
-
-### Considerazioni tecniche
-
-- Crea modelli di rilevamento della fase di vita utilizzando segnali comportamentali quali cambiamenti di indirizzo, aggiornamenti dei beneficiari e modelli di ricerca online, combinati con eventi di cambiamento delle policy.
-- Configura il motore delle decisioni con regole di idoneità e idoneità del prodotto che corrispondano a ogni fase del ciclo di vita alle raccomandazioni di copertura appropriate.
-- Coordinare le offerte della fase di vita con l’agente o il broker assegnato in modo che siano preparati a supportare il cliente con una conversazione consultiva quando l’offerta viene consegnata.
-- Applica le etichette di governance dei dati a qualsiasi origine dati di terze parti utilizzata per l’inferenza nella fase di vita per garantire la conformità alle normative sulla privacy dei dati e alle pratiche di marketing corrette.
 
 
 ## Opportunità di sconto e risparmio

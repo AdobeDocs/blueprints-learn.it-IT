@@ -3,9 +3,9 @@ title: Casi di utilizzo di viaggi e ospitalità
 description: Scopri come le organizzazioni di viaggi e ospitalità utilizzano Adobe Experience Platform per personalizzare le esperienze di prenotazione, recuperare le prenotazioni abbandonate e fidelizzare gli ospiti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: fbdcc015-96a4-4015-93e2-3fc7db375c13
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '4015'
 ht-degree: 0%
 
 ---
@@ -272,3 +272,40 @@ Utilizza il pattern [Esperienza conversazionale di Brand Concierge](/help/bluepr
 - La ricerca del profilo cliente in tempo reale deve evidenziare il livello di fedeltà, la cronologia del soggiorno e le preferenze dichiarate, in modo che l’agente possa riconoscere proattivamente lo stato dell’ospite e personalizzare le raccomandazioni senza richiedere all’ospite di spiegare nuovamente le sue preferenze a ogni visita.
 - La governance del brand deve definire il modo in cui l’agente gestisce le richieste di corrispondenza tariffaria, i riferimenti dei concorrenti e le situazioni in cui le date preferite dell’ospite o il tipo di camera non sono disponibili, garantendo che l’agente risponda agevolmente all’interno della voce del brand anziché presentare un vicolo cieco.
 - I segnali di intento conversazionale, tra cui l’interesse della destinazione, la composizione del gruppo di viaggio e le preferenze accessorie espresse durante la finestra di dialogo, devono rifluire in AEP come dati ExperienceEvent, arricchendo i profili degli ospiti per informare le campagne e-mail a valle, fedeltà e ricoinvolgimento.
+
+## Campagne di compleanno per gli ospiti
+
+Per il compleanno, rivolgiti agli ospiti con un messaggio di compleanno personalizzato e un’offerta esclusiva. Le campagne di compleanno rafforzano le relazioni con gli ospiti riconoscendo un traguardo personale e incoraggiando una prenotazione o una visita celebrativa.
+
+### Impatto aziendale
+
+I messaggi di compleanno creano un punto di contatto emotivo che differenzia il brand e stimola le prenotazioni incrementali, in quanto gli ospiti hanno più probabilità di pianificare un’esperienza di fuga o di pranzo intorno al loro compleanno quando vengono presentati con un’offerta coinvolgente e personalizzata.
+
+### Come implementare
+
+Utilizza il pattern [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per inviare un messaggio e un&#39;offerta di compleanno personalizzati quando arriva la data di compleanno dell&#39;ospite. Questo è il pattern corretto quando un singolo messaggio basato su eventi viene inviato in base a un trigger di data dell’attributo del profilo.
+
+### Considerazioni tecniche
+
+- La data di compleanno deve essere acquisita nel profilo ospite e convalidata per evitare di inviare messaggi in date errate.
+- Le offerte devono avere una finestra di validità definita (ad esempio il mese di compleanno) per dare agli ospiti un tempo ragionevole per pianificare e prenotare un soggiorno o un’esperienza.
+- Gli ospiti senza un compleanno sul file devono essere esclusi dalla campagna anziché inviare un messaggio generico.
+- La personalizzazione dell’offerta deve considerare le preferenze di prenotazione passate (destinazione, tipo di proprietà, categoria di camera) per presentare suggerimenti pertinenti.
+
+## Campagne di promozione delle destinazioni
+
+Puoi indirizzare gli ospiti a effettuare una prenotazione durante una promozione in corso sulla destinazione del viaggio. Le promozioni sulle destinazioni favoriscono le prenotazioni collegando i viaggiatori con offerte tempestive per le destinazioni promosse in linea con i loro interessi.
+
+### Impatto aziendale
+
+Le promozioni mirate sulla destinazione migliorano la conversione delle prenotazioni raggiungendo i viaggiatori che hanno più probabilità di essere interessati in base alla storia dei viaggi passati e alle preferenze dichiarate, riducendo gli sprechi promozionali e migliorando il ROI delle campagne.
+
+### Come implementare
+
+Utilizza il pattern [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) per inviare messaggi promozionali a segmenti di pubblico qualificati durante le finestre della campagna di destinazione attive. Questo è il modello corretto quando un batch pianificato di messaggi promozionali personalizzati deve raggiungere un pubblico definito durante una campagna con limiti di tempo.
+
+### Considerazioni tecniche
+
+- Le date di inizio e fine della promozione devono essere gestite in modo da garantire che i messaggi vengano inviati solo durante la finestra di promozione attiva.
+- La segmentazione del pubblico dovrebbe sfruttare la cronologia delle prenotazioni passate, il comportamento di navigazione e l’affinità di destinazione per indirizzare gli ospiti che hanno più probabilità di interagire con la destinazione promossa.
+- Gli ospiti che hanno già prenotato per la destinazione promossa e le date del viaggio devono essere esclusi dai messaggi di acquisizione.

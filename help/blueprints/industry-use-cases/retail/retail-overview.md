@@ -3,9 +3,9 @@ title: Casi d’uso per la vendita al dettaglio
 description: Scopri come le organizzazioni di vendita al dettaglio utilizzano Adobe Experience Platform per personalizzare le esperienze di acquisto, recuperare i carrelli abbandonati e promuovere la fidelizzazione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 89a5b6b5-bb71-4154-bb3b-f6dbbbef13eb
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
 workflow-type: tm+mt
-source-wordcount: '6166'
+source-wordcount: '7216'
 ht-degree: 0%
 
 ---
@@ -44,83 +44,83 @@ Programmi di recupero del carrello efficaci migliorano i tassi di recupero del c
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Questo approccio risponde a un evento di abbandono del carrello in tempo reale, inviando un promemoria tempestivo mentre l’intento di acquisto è ancora elevato. This is the right pattern when a discrete customer action is the trigger and the required response is a single, time-sensitive message — rather than a multi-step sequence or dynamic offer selection.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Questo approccio risponde a un evento di abbandono del carrello in tempo reale, inviando un promemoria tempestivo mentre l’intento di acquisto è ancora elevato. Si tratta del modello corretto quando l’attivazione è rappresentata da un’azione discreta del cliente e la risposta richiesta è un messaggio singolo e sensibile al tempo, anziché una sequenza in più fasi o una selezione dinamica dell’offerta.
 
 ### Considerazioni tecniche
 
-- Cart abandon detection requires defining a threshold for inactivity (commonly 30-60 minutes) before triggering the first reminder, avoiding messages to customers who are still actively shopping.
-- Email content must dynamically pull current product images, prices, and availability from the catalog at send time, since items may sell out or change price between abandonment and delivery.
-- Frequency capping rules should prevent customers from receiving multiple abandon cart emails in a short period, especially if they abandon carts frequently.
-- Consent and suppression lists must be checked before sending, and customers who completed their purchase through another channel should be excluded in real time.
+- Il rilevamento dell’abbandono del carrello richiede la definizione di una soglia di inattività (solitamente 30-60 minuti) prima di attivare il primo promemoria, evitando di inviare messaggi ai clienti che stanno ancora effettuando acquisti attivi.
+- Il contenuto delle e-mail deve richiamare dinamicamente le immagini, i prezzi e la disponibilità correnti del prodotto dal catalogo al momento dell’invio, in quanto gli articoli possono essere venduti o cambiare il prezzo tra l’abbandono e la consegna.
+- Le regole di quota limite devono impedire ai clienti di ricevere più e-mail dal carrello in un breve periodo, soprattutto se abbandonano frequentemente i carrelli.
+- Gli elenchi di consenso e soppressione devono essere controllati prima dell’invio e i clienti che hanno completato l’acquisto tramite un altro canale devono essere esclusi in tempo reale.
 
 
-## Inventory-Based Urgency Campaigns
+## Campagne urgenti basate sull’inventario
 
-Attiva avvisi e campagne in tempo reale quando l’inventario dei prodotti è basso, creando urgenza e incoraggiando l’acquisto immediato. Shoppers who see that only a few items remain are motivated to act quickly rather than delay their decision.
+Attiva avvisi e campagne in tempo reale quando l’inventario dei prodotti è basso, creando urgenza e incoraggiando l’acquisto immediato. Gli acquirenti che vedono che rimangono solo pochi oggetti sono motivati ad agire rapidamente piuttosto che ritardare la loro decisione.
 
 ### Impatto aziendale
 
-Low-inventory urgency campaigns drive improved conversion for featured products while also helping reduce overstock by accelerating sell-through of slow-moving items.
+Le campagne a bassa urgenza di inventario favoriscono una conversione migliore dei prodotti in primo piano, contribuendo al contempo a ridurre le scorte in eccesso accelerando la vendita di articoli con movimenti lenti.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). This approach responds to inventory threshold events, automatically activating urgency messaging when stock levels drop below defined limits. This is the right pattern when the trigger is a system event rather than a customer behavior, and the required communication is immediate and reactive rather than a sustained nurture sequence.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Questo approccio risponde agli eventi di soglia di inventario, attivando automaticamente i messaggi di urgenza quando i livelli di scorte scendono al di sotto dei limiti definiti. Questo è lo schema corretto quando l’evento che scatena l’evento è un evento di sistema piuttosto che un comportamento del cliente e la comunicazione richiesta è immediata e reattiva piuttosto che una sequenza di acquisizione sostenuta.
 
 ### Considerazioni tecniche
 
-- Inventory feeds must integrate with the customer data platform in near real time so that urgency messaging reflects actual stock levels rather than stale data.
-- Threshold levels should be configured per product category, since a &quot;low stock&quot; threshold for a high-volume commodity differs significantly from one for a luxury item.
-- Messaging must be truthful and comply with consumer protection regulations; displaying false scarcity can damage brand trust and may violate advertising standards in certain markets.
-- On-site messaging and email channels should be coordinated so that a customer who already purchased does not continue to receive urgency notifications for the same product.
+- I feed di inventario devono integrarsi con la piattaforma di dati del cliente quasi in tempo reale, in modo che i messaggi di urgenza riflettano i livelli di stock effettivi anziché i dati obsoleti.
+- I livelli di soglia dovrebbero essere configurati per categoria di prodotto, poiché una soglia di &quot;scorte basse&quot; per un prodotto di grande volume differisce notevolmente da una soglia per un prodotto di lusso.
+- I messaggi devono essere veritieri e conformi alle normative per la protezione dei consumatori; mostrare una falsa scarsità può danneggiare la fiducia del marchio e può violare gli standard pubblicitari in alcuni mercati.
+- La messaggistica in loco e i canali e-mail devono essere coordinati in modo che un cliente che ha già acquistato non continui a ricevere notifiche di urgenza per lo stesso prodotto.
 
 
-## Cross-Sell and Upsell Recommendations
+## Consigli di cross-selling e upselling
 
-Puoi visualizzare i prodotti di cross-selling e upselling pertinenti al momento del pagamento, tramite e-mail e nelle pagine dei prodotti in base ai modelli di acquisto e alle relazioni tra i prodotti. Suggesting complementary or premium alternatives at the right moment increases basket size without requiring customers to search for related items themselves.
+Puoi visualizzare i prodotti di cross-selling e upselling pertinenti al momento del pagamento, tramite e-mail e nelle pagine dei prodotti in base ai modelli di acquisto e alle relazioni tra i prodotti. Suggerire alternative complementari o premium al momento giusto aumenta le dimensioni del carrello senza richiedere ai clienti di cercare gli articoli correlati.
 
 ### Impatto aziendale
 
-Well-executed cross-sell and upsell strategies increase average order value and lift revenue per transaction, contributing to stronger overall basket economics.
+Strategie di cross-selling e upselling ben eseguite aumentano il valore medio degli ordini e incrementano i ricavi per transazione, contribuendo a una maggiore economia generale del paniere.
 
 ### Come implementare
 
-Use the [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) pattern. This approach uses centralized decision logic to evaluate all available offers and select the best cross-sell or upsell option for each customer and context. This is the right pattern when offer selection must account for margin, inventory availability, and product relationship rules — business constraints that require governed decisioning logic rather than behavioral affinity ranking alone.
+Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Questo approccio utilizza una logica decisionale centralizzata per valutare tutte le offerte disponibili e selezionare la migliore opzione di cross-selling o upselling per ogni cliente e contesto. Questo è il modello corretto quando la selezione dell’offerta deve tenere conto delle regole di margine, disponibilità di inventario e relazione di prodotto, vincoli di business che richiedono una logica decisionale regolamentata anziché una classificazione di affinità comportamentale.
 
 ### Considerazioni tecniche
 
-- Product relationship data, including &quot;frequently bought together&quot; associations and upgrade paths, must be maintained and regularly refreshed to reflect current purchasing patterns.
-- Offer ranking logic should account for margin, relevance, and inventory levels so that the most profitable and available options surface first.
-- Cross-sell recommendations at checkout must load quickly and not disrupt the purchase flow; slow or intrusive suggestions can actually reduce conversion.
-- [!DNL Journey Optimizer] decision rules should include fallback offers so that every eligible customer receives a recommendation, even when the top-ranked option is unavailable.
+- I dati sulle relazioni tra i prodotti, comprese le associazioni &quot;frequentemente acquistati insieme&quot; e i percorsi di aggiornamento, devono essere conservati e aggiornati regolarmente per riflettere gli attuali modelli di acquisto.
+- La logica di classificazione delle offerte deve tenere conto dei livelli di margine, rilevanza e inventario, in modo che le opzioni più redditizie e disponibili emergano per prime.
+- I consigli di cross-selling al momento del pagamento devono essere caricati rapidamente e non interrompere il flusso di acquisto; suggerimenti lenti o intrusivi possono effettivamente ridurre la conversione.
+- Le regole di decisione di [!DNL Journey Optimizer] devono includere le offerte di fallback in modo che ogni cliente idoneo riceva un consiglio, anche quando l&#39;opzione con il punteggio più alto non è disponibile.
 
 
-## New Customer Welcome Series
+## Nuova serie di benvenuto per i clienti
 
-Automate a multi-email welcome series for new customers with personalized product recommendations, brand storytelling, and special offers. The first few interactions after a customer joins shape their long-term relationship with the brand, making this series one of the highest-impact programs a retailer can run.
+Automatizza una serie di benvenuto con più e-mail per i nuovi clienti con consigli di prodotto personalizzati, narrazione del brand e offerte speciali. Le prime interazioni dopo l’adesione di un cliente modellano la loro relazione a lungo termine con il marchio, rendendo questa serie uno dei programmi di maggiore impatto che un retailer può eseguire.
 
 ### Impatto aziendale
 
-A well-designed welcome series drives strong engagement among new customers and meaningfully improves lifetime value by building brand affinity early.
+Una serie di benvenuto ben progettata guida un forte coinvolgimento tra i nuovi clienti e migliora in modo significativo il valore del ciclo di vita creando in anticipo l’affinità con il marchio.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). This multi-touch nurture journey guides new customers through a sequence of brand introduction, product discovery, and incentive messages, adapting based on their engagement. This is the right pattern when the use case requires a sequenced, multi-message flow over days with conditional branching based on engagement events — a single triggered message cannot accommodate the dependency logic between steps.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). Questo percorso di sviluppo multi-touch guida i nuovi clienti attraverso una sequenza di messaggi di introduzione al brand, di individuazione dei prodotti e di incentivazione, adattandosi in base al loro coinvolgimento. Questo è il modello corretto quando il caso d’uso richiede un flusso sequenziale di più messaggi nell’arco di giorni con diramazioni condizionali basate su eventi di coinvolgimento: un singolo messaggio attivato non può soddisfare la logica di dipendenza tra i passaggi.
 
 ### Considerazioni tecniche
 
-- The journey entry trigger must reliably capture new customer creation events from all registration sources, including web, mobile app, in-store point-of-sale, and third-party marketplaces.
-- Wait steps between emails should be configured based on engagement data; customers who open and click may receive the next message sooner, while less engaged customers benefit from more spacing.
-- Product recommendations within welcome emails should reflect what the customer browsed or purchased during their first visit, not generic best-sellers.
-- Customers who make a purchase during the welcome series should branch into a post-purchase flow rather than continuing to receive acquisition-focused messaging.
+- Il trigger di ingresso al percorso deve acquisire in modo affidabile gli eventi di creazione di nuovi clienti da tutte le origini di registrazione, inclusi web, app mobili, punti vendita in-store e mercati di terze parti.
+- I passaggi di attesa tra le e-mail devono essere configurati in base ai dati di coinvolgimento; i clienti che aprono e fanno clic potrebbero ricevere il messaggio successivo prima, mentre i clienti meno coinvolti beneficiano di una maggiore spaziatura.
+- I consigli sui prodotti nelle e-mail di benvenuto devono riflettere ciò che il cliente ha navigato o acquistato durante la sua prima visita, non i best-seller generici.
+- I clienti che effettuano un acquisto durante la serie di benvenuto devono passare a un flusso successivo all’acquisto, anziché continuare a ricevere messaggi incentrati sull’acquisizione.
 
 
-## Price Drop Alerts
+## Avvisi di riduzione prezzo
 
-Notify customers via email or push notification when products in their wishlist or previously viewed items drop in price. Shoppers who showed interest but did not purchase are highly responsive to price reductions, making this one of the most efficient ways to convert consideration into sales.
+Avvisa i clienti tramite e-mail o notifica push quando i prodotti nella lista dei desideri o gli articoli visualizzati in precedenza scendono di prezzo. Gli acquirenti che hanno mostrato interesse ma non hanno acquistato sono molto reattivi alle riduzioni di prezzo, rendendo questo uno dei modi più efficienti per convertire il corrispettivo in vendite.
 
 ### Impatto aziendale
 
-Price drop alerts generate improved conversion rates among recipients and measurably increase customer satisfaction by helping shoppers feel they are getting the best value.
+Gli avvisi di ribasso dei prezzi generano tassi di conversione più elevati tra i destinatari e aumentano in misura misurabile la soddisfazione dei clienti, aiutandoli a percepire il valore migliore.
 
 ### Come implementare
 
@@ -164,39 +164,39 @@ Le pagine personalizzate delle categorie migliorano il coinvolgimento delle pagi
 
 ### Come implementare
 
-Utilizza il pattern [Consigli comportamentali](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). This approach uses selection strategies and ranking models to reorder products on category pages based on each visitor&#39;s profile and real-time behavior. This is the right pattern when the task is ranking a large, open product set using behavioral affinity signals — offer decisioning is not appropriate here because there are no eligibility rules or business constraints limiting which products appear.
+Utilizza il pattern [Consigli comportamentali](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Questo approccio utilizza strategie di selezione e modelli di classificazione per riordinare i prodotti sulle pagine delle categorie in base al profilo e al comportamento in tempo reale di ogni visitatore. Questo è il modello corretto quando l’attività classifica un set di prodotti grande e aperto utilizzando segnali di affinità comportamentale; in questo caso, offer decisioning non è appropriato perché non esistono regole di idoneità o vincoli aziendali che limitano quali prodotti vengono visualizzati.
 
 ### Considerazioni tecniche
 
-- Product ranking must execute quickly enough to avoid perceived page load delays; server-side personalization or edge-based decisioning is often required for category pages with hundreds of products.
-- The personalization logic should blend individual preferences with merchandising rules, ensuring that promoted products, new arrivals, and seasonal items still receive appropriate visibility.
-- A/B testing infrastructure should be in place to measure the revenue impact of personalized sorting versus default merchandising rules on an ongoing basis.
-- [!DNL Experience Platform] Web SDK implementation must capture category page interactions (scroll depth, product clicks, filter usage) to continuously refine the ranking models.
+- La classificazione del prodotto deve essere eseguita abbastanza rapidamente da evitare ritardi percepiti nel caricamento delle pagine; spesso per le pagine di categorie con centinaia di prodotti è necessario ricorrere alla personalizzazione lato server o al decisioning basato su Edge.
+- La logica di personalizzazione deve combinare le preferenze individuali con le regole di merchandising, garantendo che i prodotti promossi, i nuovi arrivati e gli articoli stagionali ricevano ancora la visibilità appropriata.
+- Dovrebbe essere presente un’infrastruttura di test A/B per misurare su base continuativa l’impatto sui ricavi dell’ordinamento personalizzato rispetto alle regole di merchandising predefinite.
+- L&#39;implementazione di [!DNL Experience Platform] Web SDK deve acquisire le interazioni delle pagine delle categorie (profondità di scorrimento, clic sul prodotto, utilizzo del filtro) per perfezionare continuamente i modelli di classificazione.
 
 
-## Post-Purchase Follow-Up Campaigns
+## Campagne di follow-up post-acquisto
 
-Send post-purchase emails with product care tips, related product suggestions, review requests, and loyalty program information. The period immediately after a purchase is when customers are most engaged with the brand, making it an ideal window to deepen the relationship and encourage future activity.
+Invia e-mail post-acquisto con suggerimenti per l’assistenza sui prodotti, suggerimenti sui prodotti correlati, richieste di revisione e informazioni sul programma fedeltà. Il periodo immediatamente successivo all’acquisto coincide con il momento in cui i clienti sono più coinvolti con il brand, rendendolo una finestra ideale per approfondire la relazione e incoraggiare attività future.
 
 ### Impatto aziendale
 
-Effective post-purchase campaigns increase review submission rates and drive improved repeat purchase rates, turning one-time buyers into loyal customers.
+Le campagne post-acquisto efficaci aumentano i tassi di invio delle recensioni e aumentano i tassi di acquisto ripetuto, trasformando gli acquirenti una tantum in clienti fedeli.
 
 ### Come implementare
 
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). This multi-step post-purchase flow uses branching logic to tailor follow-up messages based on product type, customer segment, and engagement with earlier emails in the series. This is the right pattern because the follow-up spans multiple days, depends on fulfillment status events, and branches based on product category and return events — a single triggered message cannot support the conditional logic required across the full post-purchase timeline.
+Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). Questo flusso post-acquisto in più passaggi utilizza una logica di diramazione per personalizzare i messaggi di follow-up in base al tipo di prodotto, al segmento di cliente e al coinvolgimento con le e-mail precedenti della serie. Questo è il modello corretto perché il follow-up si estende su più giorni, dipende dagli eventi di stato di evasione e dai rami in base alla categoria del prodotto e agli eventi di ritorno. Un singolo messaggio attivato non può supportare la logica condizionale richiesta nell’intera sequenza temporale successiva all’acquisto.
 
 ### Considerazioni tecniche
 
-- The journey must account for order fulfillment status; care tips and review requests should only send after the product has been delivered, not immediately after purchase.
-- Product-specific content (care instructions, usage guides, accessory suggestions) requires a content mapping system that associates each product category with relevant follow-up materials.
-- Review request timing should be optimized based on the product category; electronics may need a longer usage period before a meaningful review, while apparel can be reviewed shortly after delivery.
-- Customers who initiate a return or exchange should be automatically removed from the standard post-purchase flow and redirected to a service recovery path.
+- Il percorso deve tenere conto dello stato di evasione dell’ordine; i suggerimenti per l’assistenza e le richieste di revisione devono essere inviati solo dopo la consegna del prodotto, non immediatamente dopo l’acquisto.
+- Il contenuto specifico del prodotto (istruzioni per la cura, guide per l’uso, suggerimenti per gli accessori) richiede un sistema di mappatura del contenuto che associ ogni categoria di prodotto ai relativi materiali di follow-up.
+- I tempi delle richieste di revisione devono essere ottimizzati in base alla categoria del prodotto; l’elettronica può richiedere un periodo di utilizzo più lungo prima di una revisione significativa, mentre l’abbigliamento può essere rivisto poco dopo la consegna.
+- I clienti che avviano un reso o uno scambio devono essere automaticamente rimossi dal flusso standard post-acquisto e reindirizzati a un percorso di ripristino del servizio.
 
 
-## VIP Customer Exclusive Offers
+## Offerte esclusive per i clienti VIP
 
-Identify high-value customers and provide exclusive offers, early access to sales, and personalized shopping experiences that reward their loyalty. Retaining top-tier customers is far more cost-effective than acquiring new ones, and exclusive treatment strengthens the emotional connection that keeps them spending.
+Identifica i clienti di alto valore e fornisci offerte esclusive, accesso anticipato alle vendite ed esperienze di acquisto personalizzate che premiano la loro fedeltà. Mantenere i clienti top-tier è molto più conveniente che acquistarne di nuovi, e il trattamento esclusivo rafforza la connessione emotiva che li mantiene in spesa.
 
 ### Impatto aziendale
 
@@ -491,3 +491,111 @@ Utilizza il pattern [Esperienza conversazionale di Brand Concierge](/help/bluepr
 - Le protezioni per la sicurezza del marchio devono essere configurate in modo da impedire che l&#39;agente discuta di prodotti della concorrenza, prenda impegni di prezzo in conflitto con le promozioni o risponda a domande non correlate.
 - La logica di handoff per gli agenti live richiede l’integrazione con la piattaforma di servizio e deve essere attivata quando l’agente di intelligenza artificiale non è in grado di risolvere la query del cliente dopo un numero definito di turni.
 - L’integrazione dei dati del profilo consente all’agente di personalizzare le risposte in base alla cronologia degli acquisti e allo stato di fedeltà, ma è necessaria la risoluzione dell’identità prima dell’inizio della sessione di conversazione.
+
+## Promemoria per il check-in con App Download CTA
+
+Ricordate agli ospiti di effettuare il check-in e incoraggiateli a scaricare l&#39;app per accedere facilmente alle informazioni. I promemoria di check-in tempestivi, insieme alle richieste di download dell’app, stimolano il coinvolgimento dei dispositivi mobili e consentono esperienze in-site più ricche.
+
+### Impatto aziendale
+
+I rivenditori che combinano i promemoria di check-in con le chiamate all’azione per il download dell’app possono vedere tassi di adozione delle app più elevati e un maggiore coinvolgimento in negozio, in quanto i clienti che utilizzano l’app mobile tendono ad interagire più frequentemente con promozioni e contenuti in eventi.
+
+### Come implementare
+
+Utilizza il pattern [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per attivare un promemoria di archiviazione con il download dell&#39;app CTA in base ai dati di partecipazione agli eventi o prenotazione. Questo è il modello corretto quando un singolo messaggio tempestivo deve essere inviato in risposta a un evento noto o a un trigger di pianificazione.
+
+### Considerazioni tecniche
+
+- I promemoria di check-in devono essere temporizzati in modo appropriato rispetto alla data dell’evento o della visita, in modo da massimizzare il coinvolgimento senza essere percepiti come troppo presto o troppo tardi.
+- I collegamenti profondi per il download dell’app devono essere indirizzati all’app store corretto in base alla piattaforma del dispositivo del cliente (iOS o Android).
+- I clienti che hanno già installato l’app devono ricevere un’altra variante di messaggio che salta il download di CTA e si concentra sulla funzionalità di archiviazione.
+
+## Campagne di compleanno per i fan
+
+Scegli i fan per il loro compleanno con un messaggio di compleanno personalizzato e un’offerta esclusiva. Le campagne di compleanno creano connessioni emotive con i fan e stimolano gli acquisti incrementali attraverso un’attività di sensibilizzazione tempestiva e personalizzata.
+
+### Impatto aziendale
+
+Le campagne di compleanno offrono costantemente tassi di apertura e conversione superiori alla media perché arrivano in un momento di importanza personale, creando buona volontà e incoraggiando i fan a trattarsi con un acquisto speciale.
+
+### Come implementare
+
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per inviare un messaggio personalizzato di compleanno quando arriva la data di compleanno del cliente. Questo è il pattern corretto quando un singolo messaggio basato su eventi viene inviato in base a un trigger di data dell’attributo del profilo.
+
+### Considerazioni tecniche
+
+- La data di compleanno deve essere acquisita nel profilo cliente e convalidata per evitare di inviare messaggi in date errate.
+- Le offerte devono avere un intervallo di validità definito (ad esempio la settimana di compleanno) per creare un’urgenza e al tempo stesso dare ai clienti un tempo ragionevole per il riscatto.
+- I fan senza un compleanno sul file devono essere esclusi dalla campagna anziché inviare un messaggio generico.
+
+## Campagne di compleanno per gli acquirenti
+
+Puoi indirizzare agli acquirenti il giorno del loro compleanno con un messaggio di compleanno personalizzato e un’offerta esclusiva. Le campagne di compleanno creano brand loyalty riconoscendo i clienti personalmente e incoraggiando un acquisto celebrativo.
+
+### Impatto aziendale
+
+Le offerte di compleanno personalizzate spingono a tassi di rimborso più elevati rispetto alle promozioni generiche perché si allineano con un momento in cui gli acquirenti sono già inclini a fare acquisti discrezionali per se stessi.
+
+### Come implementare
+
+Utilizza il pattern [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per attivare un messaggio e un&#39;offerta di compleanno in base all&#39;attributo di profilo della data di nascita dell&#39;acquirente. Questo è il modello corretto quando un singolo messaggio personalizzato deve essere consegnato in una data di calendario specifica associata al profilo del cliente.
+
+### Considerazioni tecniche
+
+- La data di compleanno deve essere memorizzata come attributo di profilo e deve essere raccolta durante la registrazione o l&#39;iscrizione fedeltà.
+- Nella personalizzazione delle offerte, è necessario tenere conto della cronologia e delle preferenze di acquisto del cliente per presentare suggerimenti di prodotto pertinenti insieme allo sconto di compleanno.
+- La logica di soppressione duplicata è necessaria per i clienti che appaiono in più sistemi per evitare di inviare più messaggi di compleanno.
+
+## Campagne di promozione Game Day
+
+Scegli i fan per acquistare i biglietti per un gioco imminente con promozioni e offerte personalizzate. Le promozioni dei giorni di gioco stimolano la vendita dei biglietti raggiungendo il pubblico giusto con messaggi tempestivi e specifici per eventi.
+
+### Impatto aziendale
+
+Le promozioni mirate per le giornate di gioco migliorano le tariffe di vendita dei biglietti raggiungendo i tifosi con offerte pertinenti in base alle preferenze del loro team, alla frequenza passata e alla vicinanza alla sede.
+
+### Come implementare
+
+Utilizza il pattern [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) per inviare messaggi promozionali ai tipi di pubblico di fan segmentati prima dei prossimi giochi. Questo è il modello corretto quando un batch di messaggi personalizzati deve essere inviato a un segmento di pubblico predefinito su base pianificata.
+
+### Considerazioni tecniche
+
+- I dati di pianificazione dei giochi devono essere integrati per attivare le promozioni al lead time giusto prima di ogni evento.
+- La segmentazione del pubblico deve tenere conto dell’affinità tra team, della prossimità geografica e dei pattern di frequenza passati per massimizzare la rilevanza.
+- I clienti che hanno già acquistato i biglietti per il gioco in promozione devono essere esclusi dai messaggi di acquisizione e possono ricevere offerte di upselling per aggiornamenti o componenti aggiuntivi.
+
+## Campagne di promozione dei prodotti
+
+Puoi indirizzare l’acquisto ai clienti, per promuovere i prodotti durante la campagna. Le campagne promozionali incrementano i ricavi collegando i clienti giusti con offerte tempestive allineate alle promozioni attive.
+
+### Impatto aziendale
+
+Le campagne mirate di promozione dei prodotti superano le promozioni di ampia portata, poiché si concentrano sui clienti che hanno maggiori probabilità di essere convertiti, riducendo gli sprechi promozionali e migliorando il ritorno sulle spese di marketing.
+
+### Come implementare
+
+Utilizza il pattern [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) per inviare messaggi promozionali a segmenti di pubblico qualificati durante le finestre attive della campagna. Questo è il modello corretto quando un batch pianificato di messaggi promozionali personalizzati deve raggiungere un pubblico definito durante una campagna con limiti di tempo.
+
+### Considerazioni tecniche
+
+- Le date di inizio e fine della promozione devono essere gestite in modo da garantire che i messaggi vengano inviati solo durante la finestra di promozione attiva.
+- La segmentazione del pubblico dovrebbe sfruttare la cronologia degli acquisti, il comportamento di navigazione e l’affinità di prodotto per rivolgersi agli acquirenti che hanno più probabilità di utilizzare i prodotti promossi.
+- Per evitare spossatezza promozionale, è necessario applicare un limite di frequenza, soprattutto quando vengono eseguite più campagne contemporaneamente.
+
+## Abbandono carrello
+
+Coinvolgi nuovamente i clienti che abbandonano il carrello con promemoria personalizzati e incentivi per completare l’acquisto. Il recupero dell’abbandono del carrello è uno dei casi di utilizzo con il ROI più elevato nel marketing al dettaglio.
+
+### Impatto aziendale
+
+Le campagne di recupero dopo l’abbandono del carrello recuperano una percentuale significativa dei ricavi altrimenti persi coinvolgendo nuovamente gli acquirenti al momento del più alto intento di acquisto con promemoria e incentivi personalizzati.
+
+### Come implementare
+
+Utilizza il pattern [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per attivare un messaggio di ripristino quando viene rilevato un evento di abbandono del carrello. Questo è il modello corretto quando un singolo messaggio in tempo reale deve essere inviato in risposta a un evento comportamentale, ad esempio se si lasciano gli elementi nel carrello senza completare l’estrazione.
+
+### Considerazioni tecniche
+
+- Il rilevamento dell’abbandono del carrello richiede una soglia di inattività definita (in genere 30-60 minuti) per distinguere il vero abbandono dai clienti che stanno ancora navigando.
+- I contenuti del carrello devono essere trasmessi nel payload dell’evento per abilitare i promemoria di prodotto personalizzati nel messaggio di recupero.
+- I clienti che completano il loro acquisto tra l’evento di abbandono e l’invio del messaggio devono essere eliminati per evitare messaggi irrilevanti.
