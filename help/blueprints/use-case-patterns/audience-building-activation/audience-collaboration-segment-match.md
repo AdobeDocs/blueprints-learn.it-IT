@@ -98,10 +98,10 @@ Per questo modello di caso d’uso devono essere disponibili le seguenti funzion
 | Funzione fondamentale | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Amministrazione e governance | Obbligatorio | Sia l’organizzazione del mittente che quella del destinatario devono disporre di sandbox con ruoli e autorizzazioni appropriati. Gli utenti che gestiscono [!DNL Segment Match] devono disporre delle autorizzazioni per visualizzare e condividere segmenti, configurare connessioni e gestire feed dei partner. I criteri ABAC devono essere configurati per controllare quali utenti possono avviare e accettare condivisioni di segmenti. | [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
-| Modellazione e preparazione dei dati | Presunto sul posto | Devono esistere schemi XDM per profili ed eventi con i gruppi di campi richiesti. I set di dati profilo ed evento devono essere creati e abilitati per [!DNL Real-Time Customer Profile]. Il modello dati deve supportare gli spazi dei nomi di identità utilizzati per la corrispondenza dei segmenti (in genere e-mail con hash o telefono con hash). | [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) |
-| Origini dati e raccolta | Presunto sul posto | I dati del cliente devono fluire attivamente in [!DNL Experience Platform] tramite origini dati configurate (SDK, connettori di origine, acquisizione batch). I profili devono essere compilati con i tipi di identità utilizzati per [!DNL Segment Match] (ad esempio, e-mail con hash). | [Panoramica origini](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
+| Modellazione e preparazione dei dati | Presunto sul posto | Devono esistere schemi XDM per profili ed eventi con i gruppi di campi richiesti. I set di dati profilo ed evento devono essere creati e abilitati per [!DNL Real-Time Customer Profile]. Il modello dati deve supportare gli spazi dei nomi di identità utilizzati per la corrispondenza dei segmenti (in genere e-mail con hash o telefono con hash). | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home) |
+| Origini dati e raccolta | Presunto sul posto | I dati del cliente devono fluire attivamente in [!DNL Experience Platform] tramite origini dati configurate (SDK, connettori di origine, acquisizione batch). I profili devono essere compilati con i tipi di identità utilizzati per [!DNL Segment Match] (ad esempio, e-mail con hash). | [Panoramica origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home) |
 | Configurazione identità e profilo | Obbligatorio | Gli spazi dei nomi delle identità devono essere configurati per gli identificatori utilizzati nella corrispondenza dei segmenti. Sia il mittente che il destinatario devono utilizzare spazi dei nomi di identità compatibili. I criteri di unione devono essere configurati in modo da unificare correttamente i profili. È opportuno stabilire regole di collegamento delle identità per garantire una risoluzione accurata del profilo. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) |
-| Definizione e segmentazione del pubblico | Obbligatorio | I tipi di pubblico di Source devono essere definiti e valutati prima di poter essere condivisi tramite [!DNL Segment Match]. I tipi di pubblico devono essere generati utilizzando [!DNL Segment Builder] o [!DNL Audience Composition] con la valutazione batch completata. Solo i tipi di pubblico valutati in batch sono idonei per la condivisione [!DNL Segment Match]. | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home) |
+| Definizione e segmentazione del pubblico | Obbligatorio | I tipi di pubblico di Source devono essere definiti e valutati prima di poter essere condivisi tramite [!DNL Segment Match]. I tipi di pubblico devono essere generati utilizzando [!DNL Segment Builder] o [!DNL Audience Composition] con la valutazione batch completata. Solo i tipi di pubblico valutati in batch sono idonei per la condivisione [!DNL Segment Match]. | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home) |
 
 ## Funzioni di supporto
 
@@ -110,10 +110,10 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 | Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Creazione di attributi calcolati/derivati | Consigliato | Attributi calcolati come il valore di acquisto del ciclo di vita, il punteggio di coinvolgimento o l’affinità di prodotto possono creare segmenti più precisi da condividere. Segmenti di input di qualità superiore portano a una collaborazione più preziosa tra il pubblico. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
-| Data Lifecycle Management | Consigliato | Le policy di conservazione dei dati e del consenso garantiscono che i segmenti condivisi siano conformi alle normative sulla privacy. I criteri di scadenza dei set di dati consentono di gestire il ciclo di vita dei dati sul pubblico ricevuti. L’applicazione del consenso impedisce la condivisione di profili che hanno rinunciato. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
+| Data Lifecycle Management | Consigliato | Le policy di conservazione dei dati e del consenso garantiscono che i segmenti condivisi siano conformi alle normative sulla privacy. I criteri di scadenza dei set di dati consentono di gestire il ciclo di vita dei dati sul pubblico ricevuti. L’applicazione del consenso impedisce la condivisione di profili che hanno rinunciato. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Incluso | I criteri di governance dei dati devono essere valutati prima di condividere i segmenti per garantire la conformità. Le etichette sui campi di identità e gli attributi del profilo determinano cosa può essere condiviso. L’applicazione della governance impedisce l’inclusione di dati non autorizzati nelle condivisioni di segmenti. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home) |
 | Monitoraggio e osservabilità | Consigliato | Il monitoraggio del processo di condivisione [!DNL Segment Match], dei processi di stima della sovrapposizione e dei flussi di dati di attivazione consente di rilevare gli errori in anticipo. Gli avvisi possono essere configurati per errori di condivisione o percentuali di corrispondenza inaspettatamente basse. | [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home) |
-| Reporting e analisi | Consigliato | La misurazione delle prestazioni delle campagne che utilizzano tipi di pubblico corrispondenti convalida il valore della collaborazione. [!DNL Customer Journey Analytics] l’analisi può confrontare le prestazioni della campagna pubblico corrispondenti con quelle dei gruppi di controllo. | [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Reporting e analisi | Consigliato | La misurazione delle prestazioni delle campagne che utilizzano tipi di pubblico corrispondenti convalida il valore della collaborazione. [!DNL Customer Journey Analytics] l’analisi può confrontare le prestazioni della campagna pubblico corrispondenti con quelle dei gruppi di controllo. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Funzioni dell’applicazione
 
@@ -570,7 +570,7 @@ Rivedi le seguenti considerazioni prima e durante l’implementazione per evitar
 
 - [!DNL Segment Match] utilizza identificatori con hash per la corrispondenza. Nessun PII supera i limiti dell&#39;organizzazione. Vedi [Panoramica sulla corrispondenza dei segmenti](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-match/overview).
 - Solo i tipi di pubblico valutati in batch possono essere condivisi tramite [!DNL Segment Match]. I segmenti in streaming e quelli valutati edge devono essere convertiti in valutazione batch prima della condivisione.
-- Un massimo di 4.000 definizioni di segmenti per sandbox si applica sia ai segmenti sorgente che a quelli ricevuti. Consulta [Guardrail di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails).
+- Un massimo di 4.000 definizioni di segmenti per sandbox si applica sia ai segmenti sorgente che a quelli ricevuti. Consulta [Guardrail di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails).
 - La precisione della stima di sovrapposizione dipende dal volume di identificatori corrispondenti. I tipi di pubblico di piccole dimensioni possono mostrare stime meno precise.
 - I guardrail di attivazione si applicano ai tipi di pubblico corrispondenti come a qualsiasi altro pubblico, fino a un massimo di 100 flussi di dati per destinazione. Consulta [Guardrail di attivazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails).
 - I tipi di pubblico composti vengono valutati in base a una pianificazione batch e sono limitati a 10 aree di lavoro per composizione per sandbox. Consulta [Guardrail di composizione del pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails).
@@ -635,18 +635,18 @@ Le risorse seguenti forniscono ulteriori dettagli sulle funzionalità utilizzate
 
 ### Segmentazione e tipi di pubblico
 
-- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
 - [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
 - [Panoramica sulla composizione del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-composition)
 - [Riferimento Profile Query Language](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/pql/overview)
-- [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Segmentazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Segmentazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
 
 ### Identità e profilo
 
 - [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
 - [Panoramica sugli spazi dei nomi delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/namespaces)
-- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview)
 - [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/home)
 
 ### Governance dei dati e consenso
@@ -665,7 +665,7 @@ Le risorse seguenti forniscono ulteriori dettagli sulle funzionalità utilizzate
 
 ### Modellazione dati e schema
 
-- [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home)
 - [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition)
 
 ### Amministrazione e controllo degli accessi
@@ -680,11 +680,11 @@ Le risorse seguenti forniscono ulteriori dettagli sulle funzionalità utilizzate
 
 ### Guardrail
 
-- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
 - [Guardrail di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
 - [Guardrail di attivazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
 
 ### Tutorial
 
 - [Creare uno schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/union-schema)
-- [Abilitare un set di dati per il profilo](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile)
+- [Abilitare un set di dati per il profilo](https://experienceleague.adobe.com/it/docs/experience-platform/catalog/datasets/enable-for-profile)

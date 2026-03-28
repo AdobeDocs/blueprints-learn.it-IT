@@ -111,7 +111,7 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 | Creazione di attributi calcolati/derivati | Consigliato | Attributi calcolati come il valore del ciclo di vita, il punteggio di coinvolgimento o il punteggio di propensione migliorano la precisione del pubblico e forniscono attributi di arricchimento da mappare sulle destinazioni. Particolarmente utile quando le destinazioni traggono vantaggio dalla segmentazione del pubblico basata su valori o su punteggi. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
 | Data Lifecycle Management | Consigliato | Le policy di scadenza dei set di dati e dei profili garantiscono l’aggiornamento e la conformità dei dati. La configurazione dello schema di consenso assicura che siano attivati solo i profili consentiti. Critico per la conformità normativa durante l&#39;esportazione dei dati in sistemi esterni. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Consigliato | Le etichette e i criteri di governance impediscono l’attivazione di dati limitati a destinazioni non autorizzate (ad esempio, PII per piattaforme di annunci, segmenti sensibili per partner di dati). Particolarmente importante per l’attivazione del pubblico su sistemi esterni di terze parti. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home), [Panoramica sulle etichette di utilizzo dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/labels/overview) |
-| Monitoraggio e osservabilità | Incluso | Il monitoraggio dell&#39;attivazione fa parte della catena di funzioni (fase 5). Include il monitoraggio dell’esecuzione dei flussi di dati, gli avvisi sullo stato della consegna, il tracciamento della popolazione del pubblico e la visibilità dell’utilizzo delle licenze. | [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations), [Panoramica avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview) |
+| Monitoraggio e osservabilità | Incluso | Il monitoraggio dell&#39;attivazione fa parte della catena di funzioni (fase 5). Include il monitoraggio dell’esecuzione dei flussi di dati, gli avvisi sullo stato della consegna, il tracciamento della popolazione del pubblico e la visibilità dell’utilizzo delle licenze. | [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations), [Panoramica avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview) |
 | Reporting e analisi | Consigliato | L’analisi CJA dell’efficacia dell’attivazione del pubblico consente di misurare le prestazioni per i tipi di pubblico attivati (ad esempio, incremento della conversione da soppressione, ROAS da tipi di pubblico simili). | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Funzioni dell’applicazione
@@ -358,7 +358,7 @@ Il metodo di valutazione dovrebbe tener conto della destinazione più impegnativ
 - [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
 - [Segmentazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
 - [Panoramica sulla composizione del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-composition)
-- [Metodi di valutazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home#evaluation-methods)
+- [Metodi di valutazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home#evaluation-methods)
 
 
 ### Fase 2: configurazione della destinazione
@@ -496,7 +496,7 @@ Ripeti il flusso di lavoro di attivazione per ogni destinazione. Lo stesso pubbl
 - [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
 - [Attivare i tipi di pubblico per le destinazioni di esportazione dei profili in batch](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
 - [Attivare i tipi di pubblico on-demand per le destinazioni batch](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/api/ad-hoc-activation-api)
-- [Monitorare i flussi di dati per le destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Monitorare i flussi di dati per le destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations)
 
 
 ### Fase 4: convalida della governance
@@ -565,7 +565,7 @@ Ripeti il flusso di lavoro di attivazione per ogni destinazione. Lo stesso pubbl
 
 **Documentazione di Experience League:**
 
-- [Monitorare i flussi di dati per le destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Monitorare i flussi di dati per le destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations)
 - [Panoramica degli avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview)
 - [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home)
 - [Dashboard utilizzo licenze](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
@@ -676,7 +676,7 @@ Rivedi le seguenti considerazioni prima e durante l’implementazione.
 
 - [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
 - [Panoramica sugli spazi dei nomi delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/namespaces)
-- [Regole di collegamento del grafo identità](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic)
+- [Regole di collegamento del grafo identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-linking-logic)
 - [Panoramica del profilo](https://experienceleague.adobe.com/it/docs/experience-platform/profile/home)
 - [Panoramica sui criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview)
 
@@ -689,13 +689,13 @@ Rivedi le seguenti considerazioni prima e durante l’implementazione.
 
 - [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home)
 - [Panoramica sulle etichette di utilizzo dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/labels/overview)
-- [Criteri di governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/overview)
+- [Criteri di governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/policies/overview)
 - [Applicazione dei criteri](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/enforcement/overview)
 - [Consenso e preferenze](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
 **Monitoraggio e osservabilità**
 
-- [Monitorare i flussi di dati per le destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Monitorare i flussi di dati per le destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations)
 - [Panoramica degli avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview)
 - [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home)
 - [Dashboard utilizzo licenze](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
@@ -703,13 +703,13 @@ Rivedi le seguenti considerazioni prima e durante l’implementazione.
 **Attributi calcolati**
 
 - [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview)
-- [Guida dell’interfaccia utente attributi calcolati](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
+- [Guida dell’interfaccia utente attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/ui)
 
 **Raccolta dati e origini**
 
 - [Panoramica sulle origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home)
 - [Panoramica di Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home)
-- [Configurare gli stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [Configurare gli stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/configure)
 
 **Amministrazione**
 
@@ -722,4 +722,4 @@ Rivedi le seguenti considerazioni prima e durante l’implementazione.
 - [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
 - [Guardrail del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/guardrails)
 - [Guardrail di attivazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
-- [Guardrail di acquisizione](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
+- [Guardrail di acquisizione](https://experienceleague.adobe.com/it/docs/experience-platform/ingestion/guardrails)
