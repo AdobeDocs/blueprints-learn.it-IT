@@ -3,7 +3,7 @@ title: '[!DNL Journey Optimizer] - Blueprint Percorsi'
 description: Esegui messaggi ed esperienze attivate utilizzando Adobe Experience Platform come hub centrale per lo streaming di dati, profili dei clienti e segmentazione.
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 1e1c30954a7f4b3eac0e63736ad804329d58f76b
+source-git-commit: 8ad1be5524ffd98f3728e4e65bc1b9d69efab2c2
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 16%
@@ -26,7 +26,7 @@ Questo blueprint illustra le funzionalità tecniche dell&#39;applicazione e forn
 - **Abandonment Recovery:** attiva messaggi personalizzati quando un utente abbandona un carrello, un modulo o una sessione tramite e-mail, push o in-app.
 - **Iscrizione nuovo utente:** coinvolgi i nuovi utenti subito dopo la registrazione con le preferenze del nuovo account, le promozioni o i vantaggi pertinenti
 - **Messaggistica transazionale:** invia conferme, avvisi o aggiornamenti in tempo reale (ad esempio, ordine spedito, reimpostazione password) utilizzando i trigger di evento.
-- **Targeting contestuale:** Comunica con gli utenti nel momento in base ai segnali e alla posizione per guidare e indirizzare la loro esperienza
+- **Targeting contestuale:** Comunica con gli utenti in tempo reale in base ai segnali e alla posizione per guidare e indirizzare la loro esperienza
 - **Vendita contestuale/cross-selling:** Distribuisci offerte personalizzate basate su attributi di profilo in tempo reale e interazioni recenti.
 
 >[!TAB Orchestrazione campagna (pianificata, avviata dal marchio)]
@@ -94,12 +94,12 @@ Push mobile:
 
 [Collegamento prodotto guardrail [!DNL Journey Optimizer]](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=it)
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## Documentazione correlata
 
 - [[!DNL Experience Platform] documentazione](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 - [Documentazione di [!DNL Experience Platform] tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
-- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
-- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=it)
+- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer] descrizione prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)
