@@ -487,7 +487,7 @@ Crea regole separate per ogni destinazione. Le regole basate sull’estensione u
 - [Panoramica sulla pubblicazione](https://experienceleague.adobe.com/it/docs/experience-platform/tags/publish/overview)
 - [Librerie](https://experienceleague.adobe.com/it/docs/experience-platform/tags/publish/libraries)
 - [Ambienti](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments)
-- [Build](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/builds)
+- [Build](https://experienceleague.adobe.com/it/docs/experience-platform/tags/publish/builds)
 
 ### Fase 5: Monitoraggio e convalida
 
