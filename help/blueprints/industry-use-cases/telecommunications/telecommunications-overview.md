@@ -1,11 +1,11 @@
 ---
 title: Casi d'uso delle telecomunicazioni
-description: Scopri come le aziende di telecomunicazioni utilizzano Adobe Experience Platform per ridurre l’abbandono, promuovere gli aggiornamenti dei dispositivi e migliorare il coinvolgimento dei clienti.
+description: Scopri come le aziende di telecomunicazioni utilizzano Adobe Experience Platform per ridurre l’abbandono, promuovere dispositivi e pianificare aggiornamenti, nonché migliorare il coinvolgimento dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 653632f0-81be-435c-a703-56c5bc132794
-source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
+source-git-commit: 4b4d85f80abaa6219e7ea210864a07a141564921
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3527'
 ht-degree: 0%
 
 ---
@@ -154,22 +154,22 @@ Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/u
 - Assicurati che siano presenti i controlli sulla privacy in modo che i dettagli sull’utilizzo dei singoli membri vengano condivisi in modo appropriato con l’amministratore del piano in base alle autorizzazioni dell’account.
 
 
-## Campagne di aggiornamento 5G
+## Aggiorna campagne
 
-Clienti idonei agli aggiornamenti di rete 5G con offerte e vantaggi personalizzati in base alla posizione e ai modelli di utilizzo. Con l&#39;espansione della copertura 5G, raggiungere gli abbonati in aree coperte di recente con messaggi pertinenti accelera l&#39;adozione e aumenta l&#39;utilizzo della rete.
+Puoi indirizzare l’attività ai clienti idonei agli aggiornamenti con offerte e vantaggi personalizzati in base alla loro posizione e ai pattern di utilizzo. Con l’espansione della nuova copertura, raggiungere gli abbonati in aree coperte di recente con messaggi pertinenti accelera l’adozione e aumenta l’utilizzo della rete.
 
 ### Impatto aziendale
 
-Le campagne mirate di aggiornamento del 5G aumentano i tassi di adozione del 5G tra gli abbonati idonei, sostenendo i rendimenti degli investimenti nella rete e la differenziazione competitiva.
+Le campagne di aggiornamento mirate favoriscono tassi di adozione più elevati tra gli abbonati idonei, sostenendo i rendimenti degli investimenti nella rete e la differenziazione competitiva.
 
 ### Come implementare
 
-Utilizza il pattern [Batch Outbound Message Activation](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) per segmentare gli abbonati in base alla disponibilità della copertura 5G, alla compatibilità del dispositivo e all&#39;idoneità del piano, quindi distribuisci campagne di aggiornamento personalizzate che evidenziano i vantaggi più rilevanti per il profilo di utilizzo di ogni abbonato. Questo è il modello corretto quando il pubblico è predefinito e di grandi dimensioni, la tempistica di consegna è pianificata anziché in base agli eventi e non è necessario alcun diramamento o processo decisionale in tempo reale: la campagna può essere pianificata completamente in anticipo in base alle timeline di rollout della copertura.
+Utilizza il pattern [Attivazione messaggi in uscita in batch](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) per segmentare gli abbonati in base alla disponibilità della copertura, alla compatibilità del dispositivo e all&#39;idoneità del piano, quindi distribuisci campagne di aggiornamento personalizzate che evidenziano i vantaggi più rilevanti per il profilo di utilizzo di ciascun abbonato. Questo è il modello corretto quando il pubblico è predefinito e di grandi dimensioni, la tempistica di consegna è pianificata anziché in base agli eventi e non è necessario alcun diramamento o processo decisionale in tempo reale: la campagna può essere pianificata completamente in anticipo in base alle timeline di rollout della copertura.
 
 ### Considerazioni tecniche
 
-- Integrare le mappe di copertura della rete per identificare con precisione gli abbonati nelle aree con servizio 5G attivo ed evitare di promuovere aggiornamenti in cui la copertura non è ancora disponibile.
-- Collegare i dati di compatibilità dei dispositivi per determinare quali abbonati necessitano di un nuovo dispositivo rispetto a quelli che dispongono già di hardware con capacità 5G.
+- Integrare le mappe di copertura di rete per identificare con precisione gli abbonati nelle aree con servizio attivo ed evitare di promuovere aggiornamenti in cui la copertura non è ancora disponibile.
+- Connettere i dati di compatibilità dei dispositivi per determinare quali abbonati necessitano di un nuovo dispositivo rispetto a quelli che dispongono già di hardware idoneo.
 - Coordina con i sistemi di inventario al dettaglio per garantire che i dispositivi e i piani promossi siano disponibili nel negozio preferito dell’abbonato o online.
 - La messaggistica dei segmenti in base al profilo di utilizzo consente agli utenti di dati pesanti di ottenere vantaggi incentrati sulle prestazioni, mentre gli utenti occasionali ricevono copertura e messaggistica di affidabilità.
 
