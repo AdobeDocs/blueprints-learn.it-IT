@@ -3,9 +3,9 @@ title: Casi di utilizzo assicurazioni
 description: Scopri in che modo le compagnie di assicurazione utilizzano Adobe Experience Platform per personalizzare la gestione delle policy, migliorare le esperienze di richiesta di risarcimento e promuovere la fidelizzazione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: a082598f-555b-49a4-b201-a55bee793959
-source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
+source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
 workflow-type: tm+mt
-source-wordcount: '3016'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
@@ -152,46 +152,6 @@ Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/perso
 - Configura regole di decisione che tengano conto delle limitazioni dello stacking degli sconti e garantiscano che gli importi di risparmio comunicati siano accurati sotto il profilo attuariale e approvati dal team di determinazione prezzi.
 - Per le comunicazioni relative agli sconti, applicare le normative specifiche dello stato, poiché alcuni stati prevedono limitazioni sul modo in cui gli sconti assicurativi possono essere commercializzati e applicati.
 - Tieni traccia dei risultati di adozione degli sconti per perfezionare continuamente il modello decisionale e assegnare la priorità ai messaggi di risparmio che risuonano di più con i diversi segmenti di clienti.
-
-
-## Denuncia e prevenzione delle frodi
-
-Utilizza il rilevamento intelligente delle frodi per identificare i pattern delle richieste di rimborso sospette e personalizzare le comunicazioni investigative mantenendo al contempo la fiducia dei clienti. Un&#39;efficace prevenzione delle frodi protegge gli assicurati onesti, mantenendo equi i premi e assicurando che le richieste legittime siano trattate rapidamente.
-
-### Impatto aziendale
-
-I programmi intelligenti di prevenzione delle frodi in materia di richieste di risarcimento migliorano i tassi di rilevamento delle frodi, riducendo i pagamenti fraudolenti e i costi complessivi delle richieste di risarcimento.
-
-### Come implementare
-
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Gli eventi di valutazione del rischio di frode attivano le comunicazioni di investigazione appropriate e gli adeguamenti del processo in tempo reale, garantendo che le richieste di rimborso segnalate ricevano attenzione immediata. Si tratta del modello corretto quando un evento derivato dal sistema (punteggio di rischio di frode) è il trigger e l’azione richiesta è l’adeguamento immediato del processo interno con un’attenta comunicazione con il cliente, anziché uno scenario di percorso o di decisione in più fasi.
-
-### Considerazioni tecniche
-
-- È possibile integrare i punteggi relativi al rischio di frode dal sistema di analisi delle richieste di rimborso nel profilo cliente applicando etichette di governance dei dati rigorose per evitare che i dati delle indagini sulle frodi vengano visualizzati nelle comunicazioni rivolte al cliente.
-- Progetta percorsi di comunicazione che mantengano un tono professionale e rispettoso per i clienti le cui richieste sono in fase di revisione, preservando la relazione indipendentemente dall’esito dell’indagine.
-- Implementa controlli dell’accesso basati sui ruoli per garantire che gli indicatori di frode siano visibili solo ai team di investigatori autorizzati e non vengano mai visualizzati nelle visualizzazioni standard degli agenti o del servizio clienti.
-- Coordinarsi con il servizio di risoluzione identità [!DNL Adobe Experience Platform] per rilevare pattern tra profili correlati, ad esempio indirizzi condivisi o numeri di telefono collegati a più richieste sospette.
-
-
-## Programmi di benessere e prevenzione
-
-Personalizza le comunicazioni del programma di benessere, i promemoria di partecipazione e le notifiche di ricompensa per i clienti di assicurazioni sulla salute e sulla vita in base ai loro obiettivi e al loro livello di coinvolgimento. Programmi di benessere attivi migliorano i risultati per la salute degli assicurati e costruiscono una base di clienti più forte e più impegnata.
-
-### Impatto aziendale
-
-Le comunicazioni personalizzate relative al programma di salute e prevenzione consentono di migliorare i tassi di partecipazione al programma, contribuendo a migliorare i risultati sanitari e a ridurre la frequenza delle richieste di rimborso.
-
-### Come implementare
-
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). I programmi di benessere sono esperienze di coinvolgimento sostenuto con milestone, sfide e premi che richiedono un&#39;orchestrazione adattiva basata sull&#39;attività e sul progresso di ciascun partecipante. Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi a lungo termine e multiplo con diramazioni basate sul coinvolgimento e regolazioni temporali adattive: i messaggi attivati dagli eventi non possono gestire la logica milestone complessa o la necessità di regolare la frequenza delle comunicazioni in base al tracciamento sostenuto delle attività.
-
-### Considerazioni tecniche
-
-- Integrare con i feed di dati di applicazioni per dispositivi indossabili e di salute utilizzando l&#39;acquisizione in streaming di [!DNL Adobe Experience Platform], applicando etichette chiare per la governance dei dati per distinguere i dati relativi alla salute dai dati relativi a richieste di rimborso o sottoscrizioni.
-- Implementa meccanismi di consenso separati per la raccolta dei dati sulla salute per garantire che i partecipanti comprendano come vengono utilizzati i loro dati sulle attività sanitarie e possano rinunciare senza influenzare i loro criteri.
-- Progettare la logica di percorso che regola l&#39;intensità del programma e la frequenza di comunicazione in base al livello di coinvolgimento di ciascun partecipante per prevenire l&#39;affaticamento e incoraggiare la partecipazione prolungata.
-- Coinvolgi i team legali e di conformità per rivedere le strutture di incentivi per il benessere e i programmi di sconti premium per la conformità alle normative di assicurazione statali applicabili prima del lancio.
 
 
 ## Coordinamento agente e broker

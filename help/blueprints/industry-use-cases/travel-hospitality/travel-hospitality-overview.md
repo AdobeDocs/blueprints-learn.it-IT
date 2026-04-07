@@ -3,9 +3,9 @@ title: Casi di utilizzo di viaggi e ospitalità
 description: Scopri come le organizzazioni di viaggi e ospitalità utilizzano Adobe Experience Platform per personalizzare le esperienze di prenotazione, recuperare le prenotazioni abbandonate e fidelizzare gli ospiti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: fbdcc015-96a4-4015-93e2-3fc7db375c13
-source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
+source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '3744'
 ht-degree: 0%
 
 ---
@@ -32,26 +32,6 @@ Utilizza il pattern [Visitatore anonimo Web Personalization](/help/blueprints/us
 - Le regole di Personalization devono tenere conto delle tendenze di viaggio stagionali per regione, ad esempio per far emergere destinazioni con tempo caldo per i visitatori in climi freddi durante i mesi invernali.
 - Le strategie di contenuto di fallback sono essenziali per i visitatori la cui posizione non può essere determinata o che arrivano tramite servizi di anonimizzazione.
 - L’integrazione con il feed di disponibilità del sistema di prenotazione assicura che le proprietà e gli itinerari in primo piano siano effettivamente prenotabili, evitando frustrazioni nel promuovere opzioni tutto esaurito.
-
-
-## Percorso di recupero per abbandono carrello
-
-Rileva automaticamente quando un cliente abbandona il carrello di prenotazione e attiva un percorso e-mail in più passaggi con offerte personalizzate per incoraggiarne il completamento. Le prenotazioni abbandonate rappresentano una delle maggiori perdite di ricavi in viaggi e ospitalità, e un follow-up tempestivo mentre l’intento di viaggio è ancora fresco recupera una quota significativa di tali prenotazioni.
-
-### Impatto aziendale
-
-I programmi efficaci di recupero delle prenotazioni consentono di ottenere tassi significativi di recupero del carrello e possono generare ricavi incrementali significativi in base al volume di prenotazione e al valore medio del viaggio.
-
-### Come implementare
-
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Questo approccio risponde a un evento di abbandono del carrello in tempo reale, inviando un promemoria tempestivo mentre l’intento di viaggio del cliente è ancora elevato. Questo è il modello corretto quando l’attivatore è un evento di comportamento del cliente in tempo reale e la risposta richiesta è un messaggio singolo e sensibile al tempo, anziché una sequenza di sviluppo in più fasi o una selezione dinamica dell’offerta che cambia in base alla risposta del cliente.
-
-### Considerazioni tecniche
-
-- Le soglie di rilevamento dell’abbandono del carrello devono tenere conto dei cicli di considerazione più lunghi tipici degli acquisti di viaggi; un ritardo di 2-4 ore prima del primo promemoria è spesso più appropriato dei 30-60 minuti utilizzati nel settore retail.
-- Il contenuto dell’e-mail deve richiamare dinamicamente i prezzi correnti, la disponibilità della camera o della cabina e le immagini dal sistema di prenotazione al momento dell’invio, poiché l’inventario e le tariffe dei viaggi cambiano frequentemente.
-- Gli incentivi personalizzati, come aggiornamenti gratuiti o crediti di resort, devono essere gestiti tramite regole aziendali che tengano conto del margine, della stagionalità e del livello di fedeltà del cliente.
-- La logica di soppressione deve escludere i clienti che hanno completato la prenotazione tramite un altro canale, ad esempio un call center o un agente di viaggio, per evitare messaggi di follow-up irrilevanti.
 
 
 ## Targeting ad alta intenzione dei visitatori
