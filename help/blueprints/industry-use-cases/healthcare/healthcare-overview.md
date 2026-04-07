@@ -1,45 +1,45 @@
 ---
-title: Healthcare Use Cases
-description: Discover how healthcare organizations use Adobe Experience Platform to improve patient engagement, streamline care coordination, and drive better health outcomes.
+title: Casi di utilizzo del settore sanitario
+description: Scopri come le organizzazioni sanitarie utilizzano Adobe Experience Platform per migliorare il coinvolgimento dei pazienti, semplificare il coordinamento delle cure e ottenere risultati migliori.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 8da82711-a783-488d-a0ed-070b33ecbbc4
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
 workflow-type: tm+mt
-source-wordcount: '3818'
+source-wordcount: '3589'
 ht-degree: 0%
 
 ---
 
-# Healthcare Use Cases
+# Casi di utilizzo del settore sanitario
 
-Healthcare organizations use Adobe Experience Platform to build unified patient profiles and deliver personalized, timely communications across every touchpoint. By connecting clinical, behavioral, and preference data in one place, care teams can engage patients more effectively while maintaining the highest standards of privacy and compliance.
+Le organizzazioni sanitarie utilizzano Adobe Experience Platform per creare profili unificati dei pazienti e fornire comunicazioni personalizzate e tempestive in ogni punto di contatto. Collegando i dati clinici, comportamentali e sulle preferenze in un’unica posizione, i team di assistenza possono coinvolgere i pazienti in modo più efficace, mantenendo al contempo gli standard più elevati di privacy e conformità.
 
 >[!IMPORTANT]
->Healthcare use cases involve protected health information (PHI) subject to HIPAA and other applicable regulations. Before implementing any of these patterns, ensure that [!DNL Adobe Experience Platform] is provisioned as a HIPAA-eligible service and that a Business Associate Agreement (BAA) is in place with Adobe. The technical considerations in each section highlight key compliance requirements but are not exhaustive. Work with your legal, compliance, and security teams to validate your implementation against all applicable regulatory requirements.
+>I casi d’uso sanitari comprendono informazioni sanitarie protette (PHI) soggette all’HIPAA e ad altre normative applicabili. Prima di implementare uno di questi modelli, verificare che [!DNL Adobe Experience Platform] sia fornito come servizio idoneo HIPAA e che sia in vigore un Contratto di associazione commerciale (BAA) con Adobe. Le considerazioni tecniche di ciascuna sezione mettono in evidenza i requisiti chiave di conformità, ma non sono esaustive. Collabora con i team legali, di conformità e di sicurezza per convalidare la tua implementazione in base a tutti i requisiti normativi applicabili.
 
-## Appointment Reminder Automation
+## Automazione promemoria appuntamento
 
-Send personalized appointment reminders through email, text message, and push notifications based on each patient&#39;s communication preferences and appointment type. Automated reminders reduce missed appointments and keep schedules running smoothly, freeing staff to focus on patient care.
+Inviare promemoria personalizzati per gli appuntamenti tramite e-mail, SMS e notifiche push in base alle preferenze di comunicazione e al tipo di appuntamento di ciascun paziente. I promemoria automatici riducono gli appuntamenti mancati e consentono di mantenere i programmi in esecuzione senza problemi, consentendo al personale di concentrarsi sulla cura dei pazienti.
 
 ### Impatto aziendale
 
-Organizations that implement automated appointment reminders see measurable improvements in appointment show rates and a meaningful reduction in costly no-shows.
+Le organizzazioni che implementano promemoria automatizzati per gli appuntamenti vedono miglioramenti misurabili nei tassi di visualizzazione degli appuntamenti e una riduzione significativa dei costosi no-show.
 
 ### Come implementare
 
-Use the [Event-Triggered Messaging](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) pattern. Appointment creation and update events from the scheduling system serve as natural triggers for timely, relevant reminder messages. This is the right pattern when a discrete appointment event is the trigger and the required response is a single, time-sensitive notification — rather than a sustained engagement sequence, since patients need immediate confirmation without follow-up steps.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Gli eventi di creazione e aggiornamento degli appuntamenti dal sistema di pianificazione fungono da trigger naturali per messaggi di promemoria pertinenti e tempestivi. Questo è il modello corretto quando l’evento di un appuntamento discreto è l’evento scatenante e la risposta richiesta è un’unica notifica sensibile al tempo — piuttosto che una sequenza di coinvolgimento prolungato, dal momento che i pazienti hanno bisogno di una conferma immediata senza passaggi di follow-up.
 
 ### Considerazioni tecniche
 
-- Ensure all patient contact information and appointment details are transmitted and stored in compliance with HIPAA requirements, using appropriate data usage labels to restrict unauthorized access.
-- Integrate with the electronic health records scheduling system to capture appointment creation, cancellation, and rescheduling events in real time.
-- Apply consent management policies so that reminders are only sent through channels the patient has explicitly opted into.
-- Configure suppression rules to prevent duplicate or excessive reminders when appointments are rescheduled in quick succession.
+- Assicurarsi che tutte le informazioni di contatto del paziente e i dettagli degli appuntamenti siano trasmessi e memorizzati in conformità con i requisiti HIPAA, utilizzando etichette di utilizzo dei dati appropriate per limitare l’accesso non autorizzato.
+- Integrazione con il sistema di pianificazione delle cartelle cliniche elettroniche per acquisire in tempo reale gli eventi di creazione, annullamento e riprogrammazione degli appuntamenti.
+- Applica i criteri di gestione del consenso in modo che i promemoria vengano inviati solo tramite i canali in cui il paziente ha esplicitamente acconsentito.
+- Configurare le regole di soppressione per evitare promemoria duplicati o eccessivi quando gli appuntamenti vengono ripianificati in rapida successione.
 
 
-## Medication Adherence Campaigns
+## Campagne di aderenza ai medicinali
 
-Send personalized reminders and educational content to help patients stay on track with their medication schedules and treatment plans. Tailored messaging based on medication type, dosing schedule, and patient history drives better adherence and improved health outcomes.
+Inviare promemoria personalizzati e contenuti educativi per aiutare i pazienti a mantenere la rotta con i loro programmi di trattamento e terapie. Messaggi personalizzati basati sul tipo di farmaco, sulla posologia e sull’anamnesi dei pazienti favoriscono una migliore aderenza e migliori risultati in termini di salute.
 
 ### Impatto aziendale
 
@@ -95,26 +95,6 @@ Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case
 - Applica le etichette di utilizzo dei dati a qualsiasi contenuto di istruzioni per l’assistenza sanitaria per garantire che le informazioni sanitarie protette vengano condivise solo attraverso canali sicuri e autorizzati dal paziente.
 - Configurare le regole di tempo che tengono conto del tipo di visita, ad esempio i follow-up post-chirurgici possono richiedere tempi diversi rispetto ai controlli di routine.
 - Includere collegamenti sicuri al portale del paziente per il completamento del sondaggio e la pianificazione degli appuntamenti, anziché raccogliere informazioni sullo stato tramite canali non protetti.
-
-
-## Programmi di gestione delle malattie croniche
-
-Personalizzare comunicazioni sulla gestione della malattia cronica, contenuti educativi e promemoria di monitoraggio in base alla condizione specifica e al piano di trattamento di ciascun paziente. Un impegno costante e pertinente aiuta i pazienti a svolgere un ruolo attivo nella gestione della loro salute nel tempo.
-
-### Impatto aziendale
-
-I programmi personalizzati di gestione della malattia cronica vedono tassi di coinvolgimento del programma aumentati, che portano a migliori risultati nella gestione della malattia e a un utilizzo ridotto delle cure di emergenza.
-
-### Come implementare
-
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). La gestione della malattia cronica è intrinsecamente un’esperienza a più punti di contatto di lunga durata che richiede messaggi adattivi basati sul coinvolgimento del paziente e sui suoi obiettivi di salute. Questo è il modello giusto perché la gestione della malattia cronica richiede una messaggistica adattativa per un periodo prolungato con diramazioni condizionali basate su metriche cliniche e modelli di coinvolgimento. La messaggistica attivata dagli eventi non può gestire la rivalutazione dinamica in corso necessaria per adeguare gli interventi in base all’evoluzione dei dati sanitari.
-
-### Considerazioni tecniche
-
-- Progettare una logica di diramazione del percorso che si adatta in base a metriche specifiche per la condizione (ad esempio, tendenze della glicemia per la gestione del diabete o letture della pressione arteriosa per i programmi di ipertensione).
-- Implementa una rigida governance dei dati con [!DNL Adobe Experience Platform] etichette di utilizzo per classificare e proteggere i dati di integrità specifici della condizione in tutto il percorso.
-- Integrazione con dispositivi di monitoraggio dei pazienti remoti e sistemi di valutazione dei risultati riferiti dai pazienti per alimentare i dati sanitari in tempo reale nei punti decisionali del percorso.
-- Crea percorsi di escalation del team di assistenza all’interno del percorso in modo che il mancato coinvolgimento o le tendenze sanitarie attivino gli avvisi al personale clinico appropriato.
 
 
 ## Nuovo Percorso di onboarding per i pazienti

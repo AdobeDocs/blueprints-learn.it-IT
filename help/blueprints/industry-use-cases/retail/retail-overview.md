@@ -3,9 +3,9 @@ title: Casi d’uso per la vendita al dettaglio
 description: Scopri come le organizzazioni di vendita al dettaglio utilizzano Adobe Experience Platform per personalizzare le esperienze di acquisto, recuperare i carrelli abbandonati e promuovere la fidelizzazione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 89a5b6b5-bb71-4154-bb3b-f6dbbbef13eb
-source-git-commit: 3542d76106fada9019b70a8cc9fd4c74872d4995
+source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
 workflow-type: tm+mt
-source-wordcount: '7216'
+source-wordcount: '6082'
 ht-degree: 0%
 
 ---
@@ -34,26 +34,6 @@ Utilizza il pattern [Consigli comportamentali](/help/blueprints/use-case-pattern
 - È necessario monitorare attentamente le prestazioni di caricamento delle pagine, in quanto le chiamate di personalizzazione non dovrebbero aggiungere una latenza visibile all’esperienza di acquisto.
 
 
-## Ripristino e-mail carrello abbandonato
-
-Invia automaticamente promemoria e-mail personalizzati ai clienti che hanno abbandonato il carrello, inclusi gli articoli rimasti e le offerte pertinenti, per incoraggiarne il completamento. L’abbandono del carrello è una delle maggiori fonti di perdita di ricavi nel settore del commercio al dettaglio e un follow-up tempestivo può recuperare una quota significativa di tali vendite.
-
-### Impatto aziendale
-
-Programmi di recupero del carrello efficaci migliorano i tassi di recupero del carrello e possono generare ricavi incrementali significativi a seconda del volume del negozio.
-
-### Come implementare
-
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Questo approccio risponde a un evento di abbandono del carrello in tempo reale, inviando un promemoria tempestivo mentre l’intento di acquisto è ancora elevato. Si tratta del modello corretto quando l’attivazione è rappresentata da un’azione discreta del cliente e la risposta richiesta è un messaggio singolo e sensibile al tempo, anziché una sequenza in più fasi o una selezione dinamica dell’offerta.
-
-### Considerazioni tecniche
-
-- Il rilevamento dell’abbandono del carrello richiede la definizione di una soglia di inattività (solitamente 30-60 minuti) prima di attivare il primo promemoria, evitando di inviare messaggi ai clienti che stanno ancora effettuando acquisti attivi.
-- Il contenuto delle e-mail deve richiamare dinamicamente le immagini, i prezzi e la disponibilità correnti del prodotto dal catalogo al momento dell’invio, in quanto gli articoli possono essere venduti o cambiare il prezzo tra l’abbandono e la consegna.
-- Le regole di quota limite devono impedire ai clienti di ricevere più e-mail dal carrello in un breve periodo, soprattutto se abbandonano frequentemente i carrelli.
-- Gli elenchi di consenso e soppressione devono essere controllati prima dell’invio e i clienti che hanno completato l’acquisto tramite un altro canale devono essere esclusi in tempo reale.
-
-
 ## Campagne urgenti basate sull’inventario
 
 Attiva avvisi e campagne in tempo reale quando l’inventario dei prodotti è basso, creando urgenza e incoraggiando l’acquisto immediato. Gli acquirenti che vedono che rimangono solo pochi oggetti sono motivati ad agire rapidamente piuttosto che ritardare la loro decisione.
@@ -72,7 +52,6 @@ Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case
 - I livelli di soglia dovrebbero essere configurati per categoria di prodotto, poiché una soglia di &quot;scorte basse&quot; per un prodotto di grande volume differisce notevolmente da una soglia per un prodotto di lusso.
 - I messaggi devono essere veritieri e conformi alle normative per la protezione dei consumatori; mostrare una falsa scarsità può danneggiare la fiducia del marchio e può violare gli standard pubblicitari in alcuni mercati.
 - La messaggistica in loco e i canali e-mail devono essere coordinati in modo che un cliente che ha già acquistato non continui a ricevere notifiche di urgenza per lo stesso prodotto.
-
 
 ## Consigli di cross-selling e upselling
 
@@ -93,27 +72,6 @@ Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/perso
 - I consigli di cross-selling al momento del pagamento devono essere caricati rapidamente e non interrompere il flusso di acquisto; suggerimenti lenti o intrusivi possono effettivamente ridurre la conversione.
 - Le regole di decisione di [!DNL Journey Optimizer] devono includere le offerte di fallback in modo che ogni cliente idoneo riceva un consiglio, anche quando l&#39;opzione con il punteggio più alto non è disponibile.
 
-
-## Nuova serie di benvenuto per i clienti
-
-Automatizza una serie di benvenuto con più e-mail per i nuovi clienti con consigli di prodotto personalizzati, narrazione del brand e offerte speciali. Le prime interazioni dopo l’adesione di un cliente modellano la loro relazione a lungo termine con il marchio, rendendo questa serie uno dei programmi di maggiore impatto che un retailer può eseguire.
-
-### Impatto aziendale
-
-Una serie di benvenuto ben progettata guida un forte coinvolgimento tra i nuovi clienti e migliora in modo significativo il valore del ciclo di vita creando in anticipo l’affinità con il marchio.
-
-### Come implementare
-
-Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md). Questo percorso di sviluppo multi-touch guida i nuovi clienti attraverso una sequenza di messaggi di introduzione al brand, di individuazione dei prodotti e di incentivazione, adattandosi in base al loro coinvolgimento. Questo è il modello corretto quando il caso d’uso richiede un flusso sequenziale di più messaggi nell’arco di giorni con diramazioni condizionali basate su eventi di coinvolgimento: un singolo messaggio attivato non può soddisfare la logica di dipendenza tra i passaggi.
-
-### Considerazioni tecniche
-
-- Il trigger di ingresso al percorso deve acquisire in modo affidabile gli eventi di creazione di nuovi clienti da tutte le origini di registrazione, inclusi web, app mobili, punti vendita in-store e mercati di terze parti.
-- I passaggi di attesa tra le e-mail devono essere configurati in base ai dati di coinvolgimento; i clienti che aprono e fanno clic potrebbero ricevere il messaggio successivo prima, mentre i clienti meno coinvolti beneficiano di una maggiore spaziatura.
-- I consigli sui prodotti nelle e-mail di benvenuto devono riflettere ciò che il cliente ha navigato o acquistato durante la sua prima visita, non i best-seller generici.
-- I clienti che effettuano un acquisto durante la serie di benvenuto devono passare a un flusso successivo all’acquisto, anziché continuare a ricevere messaggi incentrati sull’acquisizione.
-
-
 ## Avvisi di riduzione prezzo
 
 Avvisa i clienti tramite e-mail o notifica push quando i prodotti nella lista dei desideri o gli articoli visualizzati in precedenza scendono di prezzo. Gli acquirenti che hanno mostrato interesse ma non hanno acquistato sono molto reattivi alle riduzioni di prezzo, rendendo questo uno dei modi più efficienti per convertire il corrispettivo in vendite.
@@ -132,7 +90,6 @@ Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case
 - I segnali di interesse del cliente (aggiunte alla lista dei desideri, visualizzazioni delle pagine dei prodotti, tempo trascorso sulle pagine dei prodotti) devono essere memorizzati e confrontati in modo efficiente con potenziali migliaia di modifiche giornaliere dei prezzi.
 - Le notifiche devono includere il prezzo originale, il nuovo prezzo e l&#39;importo dei risparmi per comunicare chiaramente il valore; messaggi vaghi di &quot;riduzione del prezzo&quot; sottoeseguono determinati callout di risparmio.
 - È possibile utilizzare [!DNL Real-Time Customer Data Platform] segmenti per gli acquirenti attenti al prezzo per assegnare priorità alla consegna degli avvisi e adattare il tono di messaggistica.
-
 
 ## Promemoria rifornimento
 
@@ -153,7 +110,6 @@ Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/us
 - I promemoria devono includere un collegamento diretto per il riordino o un’opzione di riacquisto con un solo clic per ridurre al minimo l’attrito e massimizzare la conversione dalla notifica.
 - I clienti che hanno già effettuato un riordine tramite un altro canale (in-store, servizio di abbonamento) devono essere eliminati per evitare di inviare promemoria irrilevanti.
 
-
 ## Pagine di categorie personalizzate
 
 Personalizza dinamicamente le pagine delle categorie per mostrare i prodotti più rilevanti in base alle preferenze di ciascun cliente, agli acquisti precedenti e al comportamento di navigazione. Quando i consumatori vedono prodotti allineati con i loro gusti nella parte superiore della pagina, scoprono ciò che vogliono più velocemente e convertono a tassi più elevati.
@@ -173,7 +129,6 @@ Utilizza il pattern [Consigli comportamentali](/help/blueprints/use-case-pattern
 - Dovrebbe essere presente un’infrastruttura di test A/B per misurare su base continuativa l’impatto sui ricavi dell’ordinamento personalizzato rispetto alle regole di merchandising predefinite.
 - L&#39;implementazione di [!DNL Experience Platform] Web SDK deve acquisire le interazioni delle pagine delle categorie (profondità di scorrimento, clic sul prodotto, utilizzo del filtro) per perfezionare continuamente i modelli di classificazione.
 
-
 ## Campagne di follow-up post-acquisto
 
 Invia e-mail post-acquisto con suggerimenti per l’assistenza sui prodotti, suggerimenti sui prodotti correlati, richieste di revisione e informazioni sul programma fedeltà. Il periodo immediatamente successivo all’acquisto coincide con il momento in cui i clienti sono più coinvolti con il brand, rendendolo una finestra ideale per approfondire la relazione e incoraggiare attività future.
@@ -192,7 +147,6 @@ Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/us
 - Il contenuto specifico del prodotto (istruzioni per la cura, guide per l’uso, suggerimenti per gli accessori) richiede un sistema di mappatura del contenuto che associ ogni categoria di prodotto ai relativi materiali di follow-up.
 - I tempi delle richieste di revisione devono essere ottimizzati in base alla categoria del prodotto; l’elettronica può richiedere un periodo di utilizzo più lungo prima di una revisione significativa, mentre l’abbigliamento può essere rivisto poco dopo la consegna.
 - I clienti che avviano un reso o uno scambio devono essere automaticamente rimossi dal flusso standard post-acquisto e reindirizzati a un percorso di ripristino del servizio.
-
 
 ## Offerte esclusive per i clienti VIP
 
@@ -232,27 +186,6 @@ Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case
 - Quando un prodotto popolare viene rifornito in quantità limitata, le notifiche devono essere scaglionate o classificate in base alla data di registrazione per evitare di inviare avvisi a più clienti di quanti ne possa servire l’inventario disponibile.
 - Il meccanismo di abbonamento alle notifiche deve acquisire le preferenze del canale (e-mail o messaggio di testo) e soddisfare i requisiti di consenso per ciascun canale, in particolare per gli SMS.
 - Gli attributi del profilo [!DNL Real-Time Customer Data Platform] devono tenere traccia dei prodotti che ogni cliente sta guardando in modo che le notifiche duplicate non vengano ripetute se lo stesso prodotto viene rifornito più volte.
-
-
-## Personalization per bozza social
-
-Visualizza una bozza social personalizzata, incluse recensioni, valutazioni e suggerimenti &quot;I clienti che hanno acquistato questo hanno acquistato anche&quot;, in base al profilo e alle preferenze di ciascun cliente. Personalizzare la bozza social per riflettere le esperienze di clienti simili genera fiducia in modo più efficace rispetto ai soli rating generici.
-
-### Impatto aziendale
-
-La bozza sociale personalizzata aumenta i tassi di conversione e migliora la fiducia dei consumatori, in particolare per i nuovi acquirenti e i prodotti a prezzi più elevati in cui l’esitazione di acquisto è maggiore.
-
-### Come implementare
-
-Utilizza il pattern [Visitatore noto Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Questo approccio personalizza i contenuti web per i visitatori identificati, selezionando le recensioni più rilevanti e gli elementi di prova social in base al profilo, alle preferenze e al contesto di navigazione del cliente. Questo è il modello giusto quando la personalizzazione è guidata dagli attributi di profilo e dall’appartenenza a un segmento anziché da un modello di affinità comportamentale. I consigli comportamentali non sono appropriati in questo caso perché la selezione della bozza social dipende da chi è il cliente, non dagli elementi che ha navigato.
-
-### Considerazioni tecniche
-
-- I dati di revisione e valutazione devono essere strutturati e contrassegnati dagli attributi del cliente (come contesto di acquisto, segmento di cliente e caso di utilizzo del prodotto) per consentire un filtraggio e una personalizzazione significativi.
-- Gli elementi di prova social devono essere caricati in modo asincrono per evitare di bloccare il rendering della pagina del prodotto principale, in quanto i dati di revisione possono provenire da una piattaforma di revisione di terze parti con tempi di risposta variabili.
-- Le normative sulla privacy richiedono che tutti i dati dei clienti utilizzati per far corrispondere le recensioni ai visitatori vengano gestiti in base alle preferenze di consenso; la visualizzazione di contenuti &quot;piacenti ai clienti&quot; implica la profilazione che può richiedere la divulgazione.
-- L&#39;iscrizione al pubblico di [!DNL Experience Platform] può essere utilizzata per selezionare le recensioni da evidenziare, mostrando le recensioni degli appassionati di outdoor di altri acquirenti piuttosto che le recensioni generiche più votate.
-
 
 ## IA Product Advisor
 
@@ -312,7 +245,6 @@ Utilizza il pattern [Audience Activation to Destinations](/help/blueprints/use-c
 - La frequenza di aggiornamento del segmento deve essere allineata con gli obiettivi della campagna: i tipi di pubblico di acquisizione possono richiedere aggiornamenti giornalieri, mentre i tipi di pubblico di retargeting possono beneficiare di aggiornamenti in tempo quasi reale per escludere acquirenti recenti.
 - L’analisi di sovrapposizione tra i tipi di pubblico di acquisizione e di mantenimento consente di evitare la contaminazione incrociata nel caso in cui i clienti esistenti ricevano messaggi di acquisizione di nuovi clienti.
 
-
 ## Soppressione dei clienti per le campagne di acquisizione
 
 Elimina i clienti esistenti e i convertitori recenti dall&#39;acquisizione e dalla spesa attivando i tipi di pubblico di esclusione in destinazioni di media a pagamento, riducendo gli sprechi di spesa. La sincronizzazione continua degli elenchi di soppressione assicura che i budget a pagamento siano destinati a potenziali clienti nuovi anziché a persone che si sono già convertite o che sono attivamente coinvolte.
@@ -352,7 +284,6 @@ Utilizza il pattern [Known-Visitor Web/App Personalization](/help/blueprints/use
 - Le varianti di contenuto devono essere progettate per tutti i segmenti di pubblico di destinazione, inclusa un’esperienza predefinita per i visitatori che non corrispondono a nessuna regola di personalizzazione.
 - Le decisioni di Personalization devono essere registrate per l’analisi, consentendo test A/B delle varianti di contenuto e l’attribuzione di miglioramenti del coinvolgimento a segmenti specifici.
 
-
 ## Personalization Web visitatore anonimo
 
 Personalizza i contenuti per i visitatori non identificati del sito web utilizzando segnali comportamentali durante la sessione come pagine visualizzate, categorie di prodotti visualizzate e sorgenti di riferimento. Poiché la maggior parte del traffico web di vendita al dettaglio è anonimo, la personalizzazione per visitatori non riconosciuti espande notevolmente la portata della personalizzazione nel sito oltre il segmento autenticato.
@@ -372,7 +303,6 @@ Utilizza il pattern [Visitatore anonimo Web Personalization](/help/blueprints/us
 - I requisiti di privacy devono essere valutati attentamente; in alcune giurisdizioni la personalizzazione comportamentale richiede il consenso anche per i visitatori anonimi.
 - Le regole di Personalization per i visitatori anonimi devono essere più semplici e veloci da valutare rispetto alle regole per i visitatori noti, in quanto i vincoli di latenza edge sono più rigidi.
 
-
 ## Percorso serie di benvenuto
 
 Organizza un percorso di benvenuto in più fasi per i nuovi clienti registrati, che fornisce contenuti di onboarding, formazione sui prodotti e un incentivo per il primo acquisto su canali e-mail e push. Una serie di benvenuto ben progettata imposta il tono per la relazione con il cliente e aumenta significativamente la probabilità che un nuovo dichiarante si converta al loro primo acquisto.
@@ -391,7 +321,6 @@ Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/us
 - Il percorso deve includere condizioni di uscita che eliminino i messaggi rimanenti quando un nuovo cliente completa il primo acquisto; continuare la serie di benvenuto dopo l’acquisto mina la rilevanza del messaggio.
 - La preferenza per il canale deve essere rispettata in tutto; i passaggi di notifica push richiedono l’installazione dell’app e il consenso push, con fallback delle e-mail per i clienti senza consenso.
 - Personalization nella serie welcome migliora la conversione ma richiede un numero sufficiente di dati di profilo per essere significativi: i nuovi profili spesso richiedono un fallback su bestseller o prodotti di tendenza.
-
 
 ## Ripristino dell&#39;abbandono del carrello
 
@@ -432,7 +361,6 @@ Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/us
 - I messaggi di richiesta di revisione devono essere conformi ai termini di servizio della piattaforma per le revisioni incentivate e devono essere temporizzati dopo che il cliente ha avuto tempo sufficiente per utilizzare il prodotto.
 - Il coordinamento dei canali è importante: i clienti non devono ricevere e-mail e messaggi push per la stessa milestone a meno che non abbiano contattato il primo canale.
 
-
 ## Campagna di aggiornamento livello fedeltà
 
 Identifica i clienti che si avvicinano alle soglie del livello di fedeltà e distribuisci campagne mirate che li incoraggiano a raggiungere il livello successivo con offerte personalizzate in base alla cronologia e alle preferenze di acquisto. Quando i clienti sono a portata di un aggiornamento di livello, la messaggistica mirata con incentivi personalizzati crea un’urgenza e determina un comportamento di acquisto incrementale.
@@ -451,7 +379,6 @@ Utilizza il pattern [Percorso orchestrato con più passaggi](/help/blueprints/us
 - Le campagne di aggiornamento di livello devono essere eliminate per i clienti che hanno già raggiunto il livello di destinazione o il cui stato di fedeltà è cambiato dall’ingresso della campagna.
 - Gli incentivi personalizzati nella campagna di aggiornamento dovrebbero essere limitati alle offerte per le quali il cliente è effettivamente idoneo e che non compromettono il valore percepito della struttura a livello.
 - La campagna deve includere chiare condizioni di uscita per i clienti che completano l’aggiornamento a metà percorso, passando a un messaggio di congratulazioni anziché continuare la sequenza di persuasione.
-
 
 ## Orchestrazione di campagne cross-channel
 
@@ -472,7 +399,6 @@ Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/u
 - La logica di orchestrazione del percorso deve gestire il reinserimento in modo agevole, impedendo ai clienti di accedere due volte alla stessa campagna e garantendo al contempo che non siano esclusi da campagne realmente nuove.
 - I segnali di coinvolgimento in tempo reale (aperture di e-mail, clic sui collegamenti, sessioni web) devono rientrare nel percorso per abilitare la commutazione del canale e l’uscita anticipata per i clienti che si sono già convertiti.
 
-
 ## Esperienza conversazionale Brand Concierge
 
 Distribuisci un agente conversazionale basato sull’intelligenza artificiale e sicuro per il brand in tutte le proprietà digitali per fornire assistenza personalizzata sui prodotti, aiuto nella navigazione del sito e trasferimento senza soluzione di continuità agli agenti live. Un concierge di IA in loco estende il servizio personalizzato su larga scala, aiutando gli acquirenti a scoprire i prodotti, confrontare le opzioni e completare gli acquisti senza richiedere l’intervento di un agente umano per le query più comuni.
@@ -491,24 +417,6 @@ Utilizza il pattern [Esperienza conversazionale di Brand Concierge](/help/bluepr
 - Le protezioni per la sicurezza del marchio devono essere configurate in modo da impedire che l&#39;agente discuta di prodotti della concorrenza, prenda impegni di prezzo in conflitto con le promozioni o risponda a domande non correlate.
 - La logica di handoff per gli agenti live richiede l’integrazione con la piattaforma di servizio e deve essere attivata quando l’agente di intelligenza artificiale non è in grado di risolvere la query del cliente dopo un numero definito di turni.
 - L’integrazione dei dati del profilo consente all’agente di personalizzare le risposte in base alla cronologia degli acquisti e allo stato di fedeltà, ma è necessaria la risoluzione dell’identità prima dell’inizio della sessione di conversazione.
-
-## Promemoria per il check-in con App Download CTA
-
-Ricordate agli ospiti di effettuare il check-in e incoraggiateli a scaricare l&#39;app per accedere facilmente alle informazioni. I promemoria di check-in tempestivi, insieme alle richieste di download dell’app, stimolano il coinvolgimento dei dispositivi mobili e consentono esperienze in-site più ricche.
-
-### Impatto aziendale
-
-I rivenditori che combinano i promemoria di check-in con le chiamate all’azione per il download dell’app possono vedere tassi di adozione delle app più elevati e un maggiore coinvolgimento in negozio, in quanto i clienti che utilizzano l’app mobile tendono ad interagire più frequentemente con promozioni e contenuti in eventi.
-
-### Come implementare
-
-Utilizza il pattern [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per attivare un promemoria di archiviazione con il download dell&#39;app CTA in base ai dati di partecipazione agli eventi o prenotazione. Questo è il modello corretto quando un singolo messaggio tempestivo deve essere inviato in risposta a un evento noto o a un trigger di pianificazione.
-
-### Considerazioni tecniche
-
-- I promemoria di check-in devono essere temporizzati in modo appropriato rispetto alla data dell’evento o della visita, in modo da massimizzare il coinvolgimento senza essere percepiti come troppo presto o troppo tardi.
-- I collegamenti profondi per il download dell’app devono essere indirizzati all’app store corretto in base alla piattaforma del dispositivo del cliente (iOS o Android).
-- I clienti che hanno già installato l’app devono ricevere un’altra variante di messaggio che salta il download di CTA e si concentra sulla funzionalità di archiviazione.
 
 ## Campagne di compleanno per i fan
 
@@ -582,20 +490,3 @@ Utilizza il pattern [Batch Outbound Message Activation](/help/blueprints/use-cas
 - La segmentazione del pubblico dovrebbe sfruttare la cronologia degli acquisti, il comportamento di navigazione e l’affinità di prodotto per rivolgersi agli acquirenti che hanno più probabilità di utilizzare i prodotti promossi.
 - Per evitare spossatezza promozionale, è necessario applicare un limite di frequenza, soprattutto quando vengono eseguite più campagne contemporaneamente.
 
-## Abbandono carrello
-
-Coinvolgi nuovamente i clienti che abbandonano il carrello con promemoria personalizzati e incentivi per completare l’acquisto. Il recupero dell’abbandono del carrello è uno dei casi di utilizzo con il ROI più elevato nel marketing al dettaglio.
-
-### Impatto aziendale
-
-Le campagne di recupero dopo l’abbandono del carrello recuperano una percentuale significativa dei ricavi altrimenti persi coinvolgendo nuovamente gli acquirenti al momento del più alto intento di acquisto con promemoria e incentivi personalizzati.
-
-### Come implementare
-
-Utilizza il pattern [Messaggi attivati da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) per attivare un messaggio di ripristino quando viene rilevato un evento di abbandono del carrello. Questo è il modello corretto quando un singolo messaggio in tempo reale deve essere inviato in risposta a un evento comportamentale, ad esempio se si lasciano gli elementi nel carrello senza completare l’estrazione.
-
-### Considerazioni tecniche
-
-- Il rilevamento dell’abbandono del carrello richiede una soglia di inattività definita (in genere 30-60 minuti) per distinguere il vero abbandono dai clienti che stanno ancora navigando.
-- I contenuti del carrello devono essere trasmessi nel payload dell’evento per abilitare i promemoria di prodotto personalizzati nel messaggio di recupero.
-- I clienti che completano il loro acquisto tra l’evento di abbandono e l’invio del messaggio devono essere eliminati per evitare messaggi irrilevanti.
