@@ -42,11 +42,11 @@ solo una breve panoramica.
 
 ### Segnali del diagramma (ciascuno = +1 diagramma)
 
-6. **Architettura/immagine del flusso di dati presente** - `.svg`, `.png` o `.jpg` con topologia di sistema,
+&#x200B;6. **Architettura/immagine del flusso di dati presente** - `.svg`, `.png` o `.jpg` con topologia di sistema,
 flusso di dati o frecce di integrazione.
-7. **Topologia di integrazione tra sistemi, forma di distribuzione o guardrail**: descrive come
+&#x200B;7. **Topologia di integrazione tra sistemi, forma di distribuzione o guardrail**: descrive come
 i componenti si connettono, dove risiedono i dati, i modelli di distribuzione (edge vs. hub) o i limiti di capacità.
-8. **Il pubblico è un architetto della soluzione**. Il frame utilizza distribuzione, SDK, Edge, hub o simili
+&#x200B;8. **Il pubblico è un architetto della soluzione**. Il frame utilizza distribuzione, SDK, Edge, hub o simili
 una terminologia orientata agli architetti piuttosto che orientata agli addetti al marketing (campagne, percorsi,
 pubblico).
 
