@@ -3,14 +3,22 @@ title: '[!DNL Journey Optimizer] - Orchestrazione campagna'
 description: Consente agli addetti al marketing di coordinare comunicazioni di marketing pianificate, basate sul pubblico e con più passaggi tra i canali di messaggistica in uscita.
 solution: Journey Optimizer
 exl-id: a8ff16f8-146d-4e1f-9bd0-9eda6af0c69b
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+TQID: https://experienceleague.adobe.com/aPDagEC1zZdi-Bz29fFf6g5Uy8v4qMPhDA47Cdwl-Sw
+product_v2: id: cb954087-f4fc-4456-afb9-e939cabcdc79
+feature_v2: id: a653cc2e-bc85-4353-a306-399e5b247978id: d998adac-2f81-400b-a669-d07bb196e4ebid: df64005d-8f9a-422e-ba4d-c6f6dc3454b4id: fe338112-e2ce-4876-8989-fc4d497613f1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: 358
 ht-degree: 6%
 
 ---
 
 # [!DNL Journey Optimizer] - Blueprint per l’orchestrazione delle campagne
+
+>[!TIP]
+>Questo blueprint è disponibile anche come [modello di casi d&#39;uso](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) in Gestione e orchestrazione campagne.
 
 AJO Campaign Orchestration consente agli esperti di marketing di progettare ed eseguire comunicazioni pianificate, basate sul pubblico e in più passaggi, tra canali in uscita come e-mail, SMS, push e direct mail. A differenza dei Percorsi AJO, che reagiscono ai comportamenti dei singoli clienti utilizzando dati in tempo reale da Real-Time Customer Profile, le campagne sono attività di marketing coordinate e mirate ai tipi di pubblico a intervalli pianificati. Insieme, campagne e percorsi offrono approcci complementari: le campagne guidano le strategie di brand engagement, mentre i percorsi offrono esperienze personalizzate e reattive.
 
@@ -47,7 +55,7 @@ AJO Campaign Orchestration consente agli esperti di marketing di progettare ed e
 
 ## Guardrail
 
-[Collegamento prodotto per campagne orchestrate](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
+[Collegamento prodotto per campagne orchestrate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
 
 [Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails)
 
@@ -58,6 +66,6 @@ AJO Campaign Orchestration consente agli esperti di marketing di progettare ed e
 - [[!DNL Journey Optimizer] campagne orchestrate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/orchestrated-campaigns-landing-page.html)
 - [[!DNL Experience Platform] documentazione](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 - [Documentazione di [!DNL Experience Platform] tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
-- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
-- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=it)
+- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer] descrizione prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)

@@ -1,24 +1,14 @@
 ---
 title: Blueprint per l’acquisizione e la creazione
 description: Acquisizione e creazione - Blueprint per l’integrazione di Marketo Engage e Workfront
-exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-TQID: https://experienceleague.adobe.com/p0lDMluV6wyWfV7TzUEnPWhycpIImpl3z5Erooy2Bxk
-product_v2: id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2: id: adf04a6a-050f-44bc-a52c-db79ccb22ebfid: daec7ead-f475-492a-a3b3-02ae08565d6f
-subfeature_v2: id: cdd3e38b-fec2-4f39-8b10-83ddaab1ac16
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: 1386
+source-wordcount: '1372'
 ht-degree: 86%
 
 ---
 
 # Blueprint per l’acquisizione e la creazione {#intake-and-create}
-
->[!TIP]
->Questo blueprint è disponibile anche come [modello di caso d&#39;uso](/help/blueprints/use-case-patterns/b2b/campaign-intake-and-creation.md) in Attivazione e marketing B2B.
 
 La mole di richieste marketing che un team di marketing deve gestire per lanciare nuove campagne può generare un susseguirsi di attività ripetitive, con conseguente sfinimento del team e stagnazione dell’innovazione.
 
@@ -30,7 +20,7 @@ Per ottenere questo tipo di integrazione, si utilizza Workfront Fusion, un livel
 
 Il flusso di lavoro illustrato di seguito mostra una richiesta relativa a un webinar effettuata dal manager di una campagna utilizzando un modulo di richiesta Workfront. I dettagli inviati nella richiesta attivano quindi un programma e un’e-mail da creare in Marketo Engage per il webinar. Inoltre, dal modulo di richiesta vengono ricavati i dettagli con cui compilare il contenuto dell’e-mail.
 
-![Acquisizione e creazione blueprint](assets/intake-and-create-1.png){zoomable="yes"}
+![Acquisizione e creazione blueprint](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/intake-and-create-1.png){zoomable="yes"}
 
 >[!TIP]
 >
@@ -110,7 +100,7 @@ Per ulteriori informazioni sulla creazione del centro di eccellenza, consulta la
 
 Con Marketo Engage, è possibile utilizzare i token per popolare i contenuti nelle risorse delle campagne. Ad esempio, dopo aver clonato un modello di e-mail dal centro di eccellenza, Workfront Fusion può trasmettere i dettagli dalla richiesta della campagna da Workfront ai token “my” nel programma di Marketo Engage. I valori dei token possono quindi essere ereditati direttamente nell’e-mail per creare il messaggio e-mail stesso.
 
-![Utilizza i token per popolare il diagramma dei contenuti](assets/intake-and-create-2.png){zoomable="yes"}
+![Utilizza i token per popolare il diagramma dei contenuti](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/intake-and-create-2.png){zoomable="yes"}
 
 ### Popolare immagini da AEM Assets {#populate-images-from-aem-assets}
 
@@ -158,7 +148,7 @@ Ecco alcune informazioni di base da includere nella libreria di ricerca dei mode
 
 Di seguito è riportato un esempio di come la logica del flusso di lavoro può essere assemblata in Fusion utilizzando moduli precompilati [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=it){target="_blank"} e [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=it){target="_blank"} che consentono di distribuire l&#39;automazione più rapidamente.
 
-![Flusso di automazione per acquisizione e creazione](assets/intake-and-create-3.png)
+![Flusso di automazione per acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/intake-and-create-3.png)
 
 ## Risorse {#resources}
 

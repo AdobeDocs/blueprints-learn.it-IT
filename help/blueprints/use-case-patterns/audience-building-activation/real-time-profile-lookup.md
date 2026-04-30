@@ -3,24 +3,14 @@ title: Accesso al profilo in tempo reale per scenari di supporto e vendita
 description: Le ricerche in [!UICONTROL Real-time Customer Profile] forniscono informazioni sul contesto utili per fornire assistenza tecnica e commerciale mediante un operatore.
 solution: Data Collection
 kt: 7195
-exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-TQID: https://experienceleague.adobe.com/Ci9pUbGCLQ9uhlQ9l1na7A2NiI9CpCRMLrUSN6lSOnU
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: fdddec33-c9cb-4459-b8b6-2664395a6f10
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: ba929a52-9339-4154-9487-317dc875a3c7id: c132d929-fa62-4271-803e-b823be07b914id: daec7ead-f475-492a-a3b3-02ae08565d6fid: e08599ea-8888-4294-ba74-3ba0a7762a46
-subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: e5ae22e3-a3b0-46ed-804f-9abf1bbe3e74id: ee602049-8a18-43df-9299-a689a025a371
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: 368
-ht-degree: 54%
+source-wordcount: '493'
+ht-degree: 66%
 
 ---
 
 # Accesso al profilo in tempo reale per scenari di supporto e vendita
-
->[!TIP]
->Questo blueprint è disponibile anche come [modello di casi d&#39;uso](/help/blueprints/use-case-patterns/audience-building-activation/real-time-profile-lookup.md) in Creazione e attivazione pubblico.
 
 Il blueprint Real-time Profile Access for Support and Sales Scenarios mostra come le applicazioni esterne possono accedere al [!UICONTROL Profilo cliente in tempo reale] di Adobe Experience Platform.
 
@@ -38,11 +28,21 @@ Grazie a questa funzionalità, quando un cliente chiama il call center è possib
 
 ## Architettura
 
-<img src="assets/customer_activity_hub.svg" alt="Architettura di riferimento del blueprint per hub delle attività dei clienti" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
+<img src="/help/blueprints/audience-activation/assets/customer_activity_hub.svg" alt="Architettura di riferimento del blueprint per hub delle attività dei clienti" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
 
 ## Guardrail
 
 * [Guardrail per [!UICONTROL dati Profilo cliente in tempo reale]](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+
+## Fasi di implementazione
+
+1. [Creare schemi](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&lang=it) per i dati da acquisire.
+1. [Creare set di dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=it) per i dati da acquisire.
+1. [Configurare correttamente le identità e i relativi spazi dei nomi](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=it) nello schema, affinché i dati acquisiti possano essere uniti in un profilo unificato.
+1. [Attivare lo schema e i set di dati per il profilo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=it).
+1. [Inserire i dati](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=it) in Experience Platform.
+1. [Impostare le regole di unione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=it)
+1. Utilizza l&#39;API [Entities per cercare un attributo di profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=it).
 
 ## Documentazione correlata
 

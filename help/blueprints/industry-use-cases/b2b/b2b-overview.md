@@ -3,7 +3,7 @@ title: Casi d’uso B2B
 description: Scopri come le organizzazioni B2B utilizzano Adobe Experience Platform per accelerare la pipeline, migliorare la qualità dei lead e stimolare l’espansione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 6073bdc4-e148-455e-aa4e-3d5226d4b5a2
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '3479'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Le organizzazioni che implementano la personalizzazione di marketing basata sull
 
 ### Come implementare
 
-Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) per creare tipi di pubblico a livello di account e attivare contenuti personalizzati su tutti i canali. Questo modello è progettato appositamente per le strategie basate su account, e supporta sia il targeting a livello di account che di persona. Questo è il modello corretto quando il targeting deve funzionare a livello di account anziché a livello individuale: l’attivazione del pubblico RT-CDP standard non supporta il modello di dati basato sull’account richiesto per le strategie ABM.
+Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md) per creare tipi di pubblico a livello di account e attivare contenuti personalizzati su tutti i canali. Questo modello è progettato appositamente per le strategie basate su account, e supporta sia il targeting a livello di account che di persona. Questo è il modello corretto quando il targeting deve funzionare a livello di account anziché a livello individuale: l’attivazione del pubblico RT-CDP standard non supporta il modello di dati basato sull’account richiesto per le strategie ABM.
 
 ### Considerazioni tecniche
 
@@ -267,7 +267,7 @@ Le organizzazioni B2B con attivazione del pubblico basata sull’account vedono 
 
 ### Come implementare
 
-Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) per creare segmenti a livello di account utilizzando relazioni account-persona e attivarli in destinazioni di supporti a pagamento con supporto B2B. Questo è lo schema corretto quando la costruzione del pubblico deve operare a livello di account, combinando segnali provenienti da più contatti all&#39;interno di un&#39;organizzazione di acquisto, piuttosto che a livello di singola persona.
+Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md) per creare segmenti a livello di account utilizzando relazioni account-persona e attivarli in destinazioni di supporti a pagamento con supporto B2B. Questo è lo schema corretto quando la costruzione del pubblico deve operare a livello di account, combinando segnali provenienti da più contatti all&#39;interno di un&#39;organizzazione di acquisto, piuttosto che a livello di singola persona.
 
 ### Considerazioni tecniche
 
@@ -287,7 +287,7 @@ Le organizzazioni B2B che utilizzano l’orchestrazione dei percorsi di acquisto
 
 ### Come implementare
 
-Utilizza il pattern [Acquisto di marketing basato su gruppo](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md) per creare percorsi qualificati per l&#39;account in grado di segmentare i membri dei gruppi di acquisto per ruolo, valutare i segnali di coinvolgimento a livello di gruppo e orchestrare campagne multi-touch coordinate con ramificazioni condizionali in base allo stato dell&#39;account. Questo è il modello corretto quando la logica di percorso deve operare a livello di gruppo di account anziché a livello di singola persona: l’orchestrazione di percorso standard a livello di persona non può gestire i requisiti di qualificazione del gruppo e di coordinamento interpersonale della gestione dei gruppi di acquisto B2B.
+Utilizza il pattern [Acquisto di marketing basato su gruppo](/help/blueprints/use-case-patterns/b2b/buying-group-marketing.md) per creare percorsi qualificati per l&#39;account in grado di segmentare i membri dei gruppi di acquisto per ruolo, valutare i segnali di coinvolgimento a livello di gruppo e orchestrare campagne multi-touch coordinate con ramificazioni condizionali in base allo stato dell&#39;account. Questo è il modello corretto quando la logica di percorso deve operare a livello di gruppo di account anziché a livello di singola persona: l’orchestrazione di percorso standard a livello di persona non può gestire i requisiti di qualificazione del gruppo e di coordinamento interpersonale della gestione dei gruppi di acquisto B2B.
 
 ### Considerazioni tecniche
 
@@ -307,7 +307,7 @@ Le organizzazioni B2B con personalizzazione a livello di account segnalano tassi
 
 ### Come implementare
 
-Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) per attivare i profili a livello di account per la personalizzazione tra canali web e in uscita. Questo è il modello corretto quando il requisito principale è il targeting a livello di account per la personalizzazione anziché l’orchestrazione del percorso a livello di contatto: i dati del profilo di account guidano le decisioni di personalizzazione anziché i singoli segnali comportamentali.
+Utilizza il pattern [B2B Audience Activation](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md) per attivare i profili a livello di account per la personalizzazione tra canali web e in uscita. Questo è il modello corretto quando il requisito principale è il targeting a livello di account per la personalizzazione anziché l’orchestrazione del percorso a livello di contatto: i dati del profilo di account guidano le decisioni di personalizzazione anziché i singoli segnali comportamentali.
 
 ### Considerazioni tecniche
 
