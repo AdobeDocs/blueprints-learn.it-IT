@@ -3,38 +3,14 @@ title: Blueprint, campagna e piattaforma di Campaign v8
 description: Scopri il blueprint per Campaign v8.
 solution: Campaign,Campaign v8
 version: Campaign v8
-exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-TQID: https://experienceleague.adobe.com/1FmOmeJcV9zxUt6bXHYVV9z6qcQSIBkTHOcu5tJ8yJ0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a658c786-869b-4194-a780-2594d663adda
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-subfeature_v2:
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: 1059
+source-wordcount: '1045'
 ht-degree: 29%
 
 ---
 
 # Blueprint per Campaign v8
-
->[!TIP]
->Questo blueprint è disponibile anche come [modello di casi d&#39;uso](/help/blueprints/use-case-patterns/campaign-management-orchestration/campaign-v8-orchestration.md) in Gestione e orchestrazione campagne.
 
 Adobe Campaign v8 è una piattaforma di gestione delle campagne di nuova generazione progettata per i canali di marketing tradizionali come e-mail e direct mail. Offre solide funzionalità di ETL e gestione dei dati per supportare segmentazione complessa e targeting del pubblico, insieme a un potente motore di orchestrazione per la creazione di programmi di marketing multi-touch basati su batch.
 
@@ -74,13 +50,13 @@ Ulteriori informazioni sui [modelli di distribuzione di Campaign v8](https://exp
 
 ### Distribuzione aziendale di Campaign (FFDA)
 
-<img src="images/campaign-v8-ffda.svg" alt="Architettura di riferimento per il blueprint di distribuzione di Campaign v8 (FFDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/customer-journeys/campaign-v8/images/campaign-v8-ffda.svg" alt="Architettura di riferimento per il blueprint di distribuzione di Campaign v8 (FFDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
 ### Distribuzione FDA di Campaign v8
 
-<img src="images/campaign-v8-fda.svg" alt="Blueprint per l’architettura di riferimento per Campaign v8 (FDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/customer-journeys/campaign-v8/images/campaign-v8-fda.svg" alt="Blueprint per l’architettura di riferimento per Campaign v8 (FDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -88,8 +64,8 @@ Ulteriori informazioni sui [modelli di distribuzione di Campaign v8](https://exp
 
 | Scenario | Descrizione | Considerazioni tecniche |
 | :-- | :--- | :--- |
-| [[!DNL Real-time Customer Data Platform] con Adobe [!DNL Campaign]](rtcdp-and-campaign-v8.md) | Mostra come Adobe Experience Platform e il suo Real-Time Customer Profile e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe [!DNL Campaign] per fornire conversazioni personalizzate | <ul><li>Condivisione di profili e tipi di pubblico da [!DNL Real-Time CDP] ad Adobe [!DNL Campaign] tramite l&#39;utilizzo di scambio di file di archiviazione cloud e flussi di lavoro di acquisizione di Adobe [!DNL Campaign] </li><li>Condividi facilmente i dati di consegna e interazione delle conversazioni con i clienti in [!DNL Real-Time CDP] da Adobe [!DNL Campaign] per migliorare Real-Time Customer Profile e fornire rapporti cross-channel sulle campagne di messaggistica</li></ul> |
-| [[!DNL Journey Optimizer] con Adobe [!DNL Campaign]](ajo-and-campaign-v8.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare 1:1 esperienze utilizzando Real-Time Customer Profile e come sfruttare il sistema nativo di messaggistica transazionale Adobe [!DNL Campaign] per inviare il messaggio | <ul><li>È possibile inviare fino a 1 milione di messaggi all’ora tramite il server di messaggi in tempo reale.<li>Non viene eseguita alcuna limitazione da [!DNL Journey Optimizer]. Assicurarsi quindi che un Enterprise Architect pre-vendita effettui il controllo tecnico</li><li>La funzionalità Gestione delle decisioni non è supportata nei payload per Campaign v8.</li></ul> |
+| [[!DNL Real-time Customer Data Platform] con Adobe [!DNL Campaign]](/help/blueprints/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md) | Mostra come Adobe Experience Platform e il suo Real-Time Customer Profile e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe [!DNL Campaign] per fornire conversazioni personalizzate | <ul><li>Condivisione di profili e tipi di pubblico da [!DNL Real-Time CDP] ad Adobe [!DNL Campaign] tramite l&#39;utilizzo di scambio di file di archiviazione cloud e flussi di lavoro di acquisizione di Adobe [!DNL Campaign] </li><li>Condividi facilmente i dati di consegna e interazione delle conversazioni con i clienti in [!DNL Real-Time CDP] da Adobe [!DNL Campaign] per migliorare Real-Time Customer Profile e fornire rapporti cross-channel sulle campagne di messaggistica</li></ul> |
+| [[!DNL Journey Optimizer] con Adobe [!DNL Campaign]](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare 1:1 esperienze utilizzando Real-Time Customer Profile e come sfruttare il sistema nativo di messaggistica transazionale Adobe [!DNL Campaign] per inviare il messaggio | <ul><li>È possibile inviare fino a 1 milione di messaggi all’ora tramite il server di messaggi in tempo reale.<li>Non viene eseguita alcuna limitazione da [!DNL Journey Optimizer]. Assicurarsi quindi che un Enterprise Architect pre-vendita effettui il controllo tecnico</li><li>La funzionalità Gestione delle decisioni non è supportata nei payload per Campaign v8.</li></ul> |
 
 <br>
 

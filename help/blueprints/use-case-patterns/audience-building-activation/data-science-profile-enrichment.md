@@ -3,18 +3,14 @@ title: Blueprint per personalizzazione Data Science per l’arricchimento del pr
 description: Scopri come acquisire in [!DNL Experience Platform] le informazioni basate sulla scienza dei dati per arricchire Real-time Customer Profile.
 solution: Data Collection
 kt: 7203
-exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 52%
+source-wordcount: '432'
+ht-degree: 64%
 
 ---
 
 # Blueprint per data science personalizzata per l’arricchimento dei profili
-
->[!TIP]
->Questo blueprint è disponibile anche come [modello di casi d&#39;uso](/help/blueprints/use-case-patterns/audience-building-activation/data-science-profile-enrichment.md) in Creazione e attivazione pubblico.
 
 Il blueprint di data science personalizzato per l&#39;arricchimento dei profili illustra come utilizzare i dati per addestrare, distribuire e valutare modelli per fornire informazioni di apprendimento automatico su [!DNL Experience Platform] e [!DNL Real-Time Customer Data Platform] da strumenti di data science e apprendimento automatico.
 
@@ -28,11 +24,16 @@ Le informazioni modellate possono essere acquisite in [!DNL Experience Platform]
 
 ## Architettura
 
-<img src="assets/data_science.svg" alt="Architettura di riferimento per il blueprint per la personalizzazione Data Science per l’arricchimento del profilo" style="width:90%; border:1px solid #4a4a4a" />
+<img src="/help/blueprints/audience-activation/assets/data_science.svg" alt="Architettura di riferimento per il blueprint per la personalizzazione Data Science per l’arricchimento del profilo" style="width:90%; border:1px solid #4a4a4a" />
 
 ## Guardrail
 
-* Per i guardrail dettagliati e le latenze end-to-end durante l&#39;acquisizione dei risultati della data science in [!DNL Experience Platform] e nel profilo cliente in tempo reale, fare riferimento ai guardrail di acquisizione dati e al diagramma di latenza a cui si fa riferimento nel [documento sui guardrail di distribuzione](../experience-platform/guardrails.md).
+* Per i guardrail dettagliati e le latenze end-to-end durante l&#39;acquisizione dei risultati della data science in [!DNL Experience Platform] e nel profilo cliente in tempo reale, fare riferimento ai guardrail di acquisizione dati e al diagramma di latenza a cui si fa riferimento nel [documento sui guardrail di distribuzione](/help/blueprints/experience-platform/guardrails.md).
+
+## Considerazioni sull’implementazione
+
+* Nella maggior parte dei casi i risultati del modello devono essere acquisiti come attributi di profilo, e non come eventi di esperienza. I risultati del modello possono essere semplici stringhe di attributi. Se devi acquisire più risultati del modello, è preferibile utilizzare un campo di tipo mappa o array.
+* Il set di dati dello snapshot di profilo giornaliero (esportazione giornaliera dei dati degli attributi del profilo unificato) può essere utilizzato per addestrare i modelli sui dati degli attributi di profilo. La documentazione sui set di dati dello snapshot del profilo è disponibile [qui](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html?lang=it#profile-attribute-datasets).
 
 ## Documentazione correlata
 

@@ -2,13 +2,13 @@
 title: Personalization Web visitatore anonimo
 description: Scopri come distribuire contenuti web personalizzati a visitatori non identificati in base a segnali comportamentali durante la sessione.
 solution: Journey Optimizer, Real-Time Customer Data Platform
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: e2446801-ffce-40e6-bfe9-abec623c9201
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '8076'
+source-wordcount: '8109'
 ht-degree: 1%
 
 ---
-
 
 # Personalizzazione web visitatore anonimo
 
@@ -104,13 +104,19 @@ In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 - **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Segmentazione di Edge per la valutazione del pubblico in tempo reale basata su segnali comportamentali durante la sessione; gestione anonima dei profili edge
 - **[!DNL Adobe Experience Platform] (AEP)** — [!DNL Web SDK] per la raccolta di segnali comportamentali, [!DNL Edge Network] per il routing dei dati in tempo reale e la consegna della personalizzazione, configurazione dello stream di dati
 
+## Architettura
+
+La seguente architettura di riferimento illustra come i segnali dei visitatori anonimi vengono raccolti al limite, valutati in base alle regole di pubblico e utilizzati per fornire contenuti personalizzati.
+
+![Architettura di riferimento per l&#39;attivazione e la personalizzazione del pubblico anonimo](/help/blueprints/audience-activation/assets/anonymous_activation.svg)
+
 ## Funzioni fondamentali
 
 Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzione, lo stato indica se in genere è obbligatorio, se si presume che sia preconfigurato o meno applicabile.
 
 | Funzione fondamentale | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Amministrazione e governance | Presunto sul posto | Sandbox di AJO con autorizzazioni per il canale web configurate. [!DNL Web SDK] autorizzazioni di implementazione e accesso allo stream di dati concessi al team di implementazione. Agli utenti sono stati assegnati ruoli che consentono la configurazione del canale web, la gestione dell’audience e l’esecuzione della campagna. | [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
+| Amministrazione e governance | Presunto sul posto | Sandbox di AJO con autorizzazioni per il canale web configurate. Autorizzazioni di implementazione [!DNL Web SDK] e accesso allo stream di dati concessi al team di implementazione. Agli utenti sono stati assegnati ruoli che consentono la configurazione del canale web, la gestione dell’audience e l’esecuzione della campagna. | [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
 | Modellazione e preparazione dei dati | Obbligatorio | Lo schema Experience Event acquisisce segnali comportamentali web (visualizzazioni di pagina, clic, profondità di scorrimento, dati di riferimento, parametri UTM). Lo schema deve includere gruppi di campi di interazione web standard ed essere abilitato per il profilo Edge in modo da supportare la valutazione in tempo reale. È necessario creare un set di dati corrispondente e abilitarlo per il profilo. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home) |
 | Origini dati e raccolta | Obbligatorio | [!DNL Web SDK] deve essere implementato in tutte le proprietà web di destinazione con uno stream di dati configurato per instradare i dati a [!DNL AEP Edge Network]. Lo stream di dati deve avere i servizi [!DNL Adobe Experience Platform] e [!DNL Adobe Journey Optimizer] abilitati. Si tratta di una dipendenza critica. Senza [!DNL Web SDK], non è possibile alcuna raccolta di segnali comportamentali o distribuzione di esperienze. | [Panoramica di Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home) |
 | Configurazione identità e profilo | Obbligatorio | ECID ([!DNL Experience Cloud ID]) configurato come spazio dei nomi dell&#39;identità primaria per i visitatori anonimi. Il criterio di unione di Edge deve essere configurato con `isActiveOnEdge: true` per risolvere i dati di profilo anonimi nel server Edge di. Su Edge può essere attivo un solo criterio di unione per sandbox. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) |
@@ -412,7 +418,7 @@ Definisci segmenti di pubblico valutati edge in base ai segnali comportamentali 
 **Per L&#39;Opzione A (Basata Su Regole):**
 Crea segmenti di pubblico distinti per ogni variante di contenuto. Ogni segmento rappresenta una condizione comportamentale specifica (ad esempio, &quot;Referral = Google AND Geo = US&quot; corrisponde alla variante di contenuto A). Il numero di tipi di pubblico è uguale al numero di regole di personalizzazione.
 
-**Per L&#39;Opzione B (Sperimentazione):**
+**Per l&#39;opzione B (sperimentazione):**
 La definizione del pubblico è facoltativa. Se l’esperimento ha come target tutti i visitatori, non è necessario alcun pubblico; la suddivisione del traffico gestisce l’assegnazione delle varianti. Se l’esperimento ha come target un sottoinsieme specifico (ad esempio, solo i visitatori mobili), definisci un singolo pubblico di targeting per l’idoneità all’esperimento.
 
 **Per L&#39;Opzione C (Decisioning):**
@@ -465,7 +471,7 @@ Crea le varianti di contenuto personalizzato che verranno consegnate ai visitato
 **Per L&#39;Opzione A (Basata Su Regole):**
 Crea una variante di contenuto distinta per ogni segmento di pubblico definito nella fase 2. Associa ogni variante al relativo pubblico di destinazione utilizzando le regole di contenuto condizionale nella configurazione della campagna. Assicurati che esista una variante di contenuto predefinita per i visitatori che non corrispondono ad alcuna regola di pubblico.
 
-**Per L&#39;Opzione B (Sperimentazione):**
+**Per l&#39;opzione B (sperimentazione):**
 Creare varianti di trattamento (A, B, C, ecc.) per l’esperimento. Abilita la sperimentazione dei contenuti nella campagna, definisci le varianti di trattamento con il loro contenuto, imposta le percentuali di allocazione del traffico e configura la metrica di successo.
 
 - Definire 2-10 varianti di trattamento con contenuto distinto
@@ -534,7 +540,7 @@ Crea e attiva la campagna web di AJO che associa la superficie web (fase 1), la 
 **Per L&#39;Opzione A (Basata Su Regole):**
 Crea una campagna per regola di personalizzazione, ogni volta indirizzata a un pubblico Edge diverso con la corrispondente variante di contenuto. In alternativa, utilizza una singola campagna con regole di contenuto condizionale che mappano l’iscrizione al pubblico alle varianti di contenuto all’interno di una campagna.
 
-**Per L&#39;Opzione B (Sperimentazione):**
+**Per l&#39;opzione B (sperimentazione):**
 Crea una singola campagna con la sperimentazione dei contenuti abilitata. La configurazione dell’esperimento (varianti, allocazione del traffico, metrica di successo) è stata definita nella Fase 3. Attiva la campagna per avviare l’esperimento.
 
 **Per L&#39;Opzione C (Decisioning):**
@@ -576,7 +582,7 @@ Monitora le prestazioni di personalizzazione utilizzando i rapporti incorporati 
 **Per L&#39;Opzione A (Basata Su Regole):**
 Rivedi i rapporti sulle campagne per ogni segmento di pubblico per confrontare le metriche di consegna e coinvolgimento tra le varianti di contenuto personalizzato. Utilizza CJA per creare un’area di lavoro di confronto che misuri l’impatto della conversione di contenuti personalizzati rispetto a quelli predefiniti.
 
-**Per L&#39;Opzione B (Sperimentazione):**
+**Per l&#39;opzione B (sperimentazione):**
 Esamina il rapporto dell’esperimento per verificare l’affidabilità statistica, l’incremento del trattamento e l’identificazione del vincitore. Attendi che venga raggiunta la soglia di affidabilità prima di dichiarare un vincitore. Applicare i contenuti vincenti come variante permanente (transizione all’opzione A per una distribuzione continua).
 
 - **Navigazione interfaccia utente:** Campagna > Esperimento contenuti > Visualizza rapporto

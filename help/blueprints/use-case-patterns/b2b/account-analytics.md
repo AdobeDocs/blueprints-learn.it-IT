@@ -3,7 +3,7 @@ title: Analisi B2B
 description: Scopri come includere le informazioni a livello di account B2B nell’analisi del percorso clienti cross-channel.
 solution: Customer Journey Analytics, Real-Time Customer Data Platform
 exl-id: 9d576e5c-cbd2-4c60-a6b0-88f8b8b963b4
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '7528'
 ht-degree: 1%
@@ -107,7 +107,7 @@ Per questo modello di caso d’uso devono essere disponibili le seguenti funzion
 | --- | --- | --- | --- |
 | Amministrazione e governance | Obbligatorio | Sandbox configurata con [!DNL CJA] adesioni B2B edition e [!DNL RT-CDP] B2B edition. Ruoli assegnati a data engineer, analisti e utenti delle operazioni di marketing con accesso a [!DNL CJA] e al modello dati B2B. | [Panoramica sulle sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/home) |
 | Modellazione e preparazione dei dati | Obbligatorio | Schemi XDM B2B configurati utilizzando le classi B2B: account aziendale XDM, opportunità aziendale XDM, relazione persona account aziendale XDM, relazione persona opportunità aziendale XDM e membri elenco di marketing aziendale XDM. È necessario definire i gruppi di campi per gli attributi di conto, le fasi di opportunità e i ruoli dei gruppi di acquisto. Set di dati creati e abilitati per il profilo. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home), [Schemi B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b) |
-| Origini dati e raccolta | Obbligatorio | Origini dati B2B connesse, in genere tramite il connettore di origine [!DNL Marketo Engage] o il connettore di origine CRM [!DNL Salesforce]. I record account, i record opportunità, le relazioni persona-account e gli eventi di coinvolgimento comportamentale devono fluire nei set di dati di AEP. [!DNL Web SDK] L&#39;integrazione di o [!DNL Marketo] deve acquisire eventi comportamentali con associazione account. | [Panoramica origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home), [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
+| Origini dati e raccolta | Obbligatorio | Origini dati B2B connesse, in genere tramite il connettore di origine [!DNL Marketo Engage] o il connettore di origine CRM [!DNL Salesforce]. I record account, i record opportunità, le relazioni persona-account e gli eventi di coinvolgimento comportamentale devono fluire nei set di dati di AEP. L&#39;integrazione di [!DNL Web SDK] o [!DNL Marketo] deve acquisire eventi comportamentali con associazione account. | [Panoramica origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home), [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
 | Configurazione identità e profilo | Obbligatorio | Risoluzione identità B2B configurata per risolvere le relazioni persona-account. L&#39;ID account, l&#39;ID persona ([!DNL Marketo] ID lead o ID contatto CRM) e le identità multi-dispositivo (ECID, e-mail) devono essere collegati. Il grafo delle identità deve supportare la mappatura molti-a-molti persona-account inerente ai modelli di dati B2B. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home), [Risoluzione identità B2B](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b) |
 | Definizione e segmentazione del pubblico | Presunto sul posto | Le definizioni del pubblico a livello di account dovrebbero essere disponibili se i segmenti B2B verranno pubblicati da [!DNL CJA] ad AEP per l&#39;attivazione. Per i casi di utilizzo solo di Analytics, questo non è un prerequisito rigoroso ma è consigliato per l’analisi basata su segmenti. | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home) |
 
@@ -559,7 +559,7 @@ Dettagli configurazione chiave:
 
 - [Crea una scorecard per dispositivi mobili](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dashboards/create-scorecard)
 - [Condividi progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
-- [Programmare progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
+- [Programmare progetti](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
 - [Configurare e curare le scorecard](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/curate)
 - [Dashboard di Adobe Analytics: guida esecutiva](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dashboards/set-up-execs)
 - [Panoramica di Audiences](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
@@ -668,7 +668,7 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 - [Tabella coorte](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
 - [Pannello Attribuzione](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/panels/attribution)
 - [Condividi progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
-- [Programmare progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
+- [Programmare progetti](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
 - [Dimensioni di raggruppamento](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/components/dimensions/t-breakdown-fa)
 
 **Componenti**
@@ -703,7 +703,7 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 
 - [Panoramica di RT-CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#702702)
 - [Schemi B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
-- [Panoramica sulle origini B2B](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/sources/b2b)
+- [Panoramica sulle origini B2B](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/sources/b2b)
 
 **AEP data foundation**
 
@@ -720,6 +720,6 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 
 **Tutorial e guide**
 
-- [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition)
+- [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
 - [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview)
 - [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home)

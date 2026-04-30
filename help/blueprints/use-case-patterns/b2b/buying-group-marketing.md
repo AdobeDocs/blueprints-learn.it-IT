@@ -3,7 +3,7 @@ title: Acquisto di soluzioni di marketing e gestione dei Percorsi basate su grup
 description: Scopri come sviluppare percorsi a livello di account che qualifichino i lead in gruppi di acquisto per migliorare l’efficacia del marketing B2B.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 2bf57f67-80c8-4368-98d2-05706427772d
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '7932'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 | Data Lifecycle Management | Consigliato | La gestione del consenso è fondamentale per le comunicazioni e-mail e SMS B2B. I criteri di scadenza dei set di dati consentono di gestire il ciclo di vita dei dati di coinvolgimento transitorio e di garantire la conformità ai requisiti di conservazione dei dati. | [Gestione avanzata del ciclo di vita dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Consigliato | I dati B2B spesso contengono informazioni aziendali sensibili e dati personali di contatti commerciali. I criteri di governance dei dati garantiscono l’uso conforme dei dati B2B tra le destinazioni, in particolare quando si attiva su piattaforme pubblicitarie o sistemi di terze parti. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home) |
 | Monitoraggio e osservabilità | Consigliato | Il monitoraggio garantisce che le pipeline di dati B2B (sincronizzazioni CRM/[!DNL Marketo]) siano integre, che i profili account siano aggiornati e che le esecuzioni del percorso di account procedano senza errori. Gli avvisi sugli errori del flusso di dati di origine sono fondamentali per la gestione della valuta dei dati. | [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home) |
-| Reporting e analisi | Incluso | I dashboard di analisi B2B all&#39;interno di [!DNL AJO B2B Edition] forniscono coinvolgimento del gruppo di acquisto, prestazioni del percorso di account e metriche della pipeline. [!DNL CJA B2B Edition] estende l’analisi con l’analisi dell’area di lavoro a livello di account, l’analisi del gruppo di acquisto e la correlazione delle opportunità. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Reporting e analisi | Incluso | I dashboard di analisi B2B all&#39;interno di [!DNL AJO B2B Edition] forniscono coinvolgimento del gruppo di acquisto, prestazioni del percorso di account e metriche della pipeline. [!DNL CJA B2B Edition] estende l&#39;analisi con l&#39;analisi dell&#39;area di lavoro a livello di account, l&#39;analisi dei gruppi di acquisto e la correlazione delle opportunità. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Funzioni dell’applicazione
 
@@ -274,18 +274,18 @@ I percorsi di account utilizzano l’output di qualificazione dell’intelligenz
 
 **Experience League:**
 
-- [Account qualification](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
-- [AI Assistant in AJO B2B](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview)
+- [Qualificazione dell’account](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [Assistente AI in AJO B2B](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview)
 
 ### Confronto delle opzioni
 
-| Criteri | Option A: Single solution interest | Option B: Multiple solution interests | Option C: AI-assisted qualification |
+| Criteri | Opzione A: interesse per una singola soluzione | Opzione B: Interessi in più soluzioni | Opzione C: qualificazione basata sull’IA |
 | --- | --- | --- | --- |
-| Ideale per | First deployment, single product line | Multi-product organizations | Mature orgs with historical data |
+| Ideale per | Prima implementazione, singola linea di prodotti | Organizzazioni con più prodotti | Organizzazioni mature con dati storici |
 | Complessi | Bassa | Medium - Alta | Alta |
-| Time-to-value | 2-4 weeks | 4-8 weeks | 6-12 weeks |
-| Interessi soluzione | 1 | Multiple | Multiple |
-| Journey structure | Lineare | Branching, parallel tracks | Progressione dinamica basata sull’intelligenza artificiale |
+| Time-to-value | 2-4 settimane | 4-8 settimane | 6-12 settimane |
+| Interessi soluzione | 1 | Più | Più |
+| Struttura del percorso | Lineare | Branching, tracce parallele | Progressione dinamica basata sull’intelligenza artificiale |
 | Approccio punteggio | Soglie basate su regole | Basato su regole per gruppo di acquisto | Qualificazione basata sull’intelligenza artificiale + regole |
 | Requisiti del contenuto | Minimo (una pista di coltura) | Elevato (per ogni soluzione) | Selezione di contenuti dinamici e ad alta risoluzione |
 | Allineamento vendite | Flusso di lavoro con un singolo avviso | Avvisi di interesse per soluzione | Avvisi con priorità e punteggio IA |
@@ -299,33 +299,33 @@ Inizia con queste domande per determinare l’approccio di implementazione migli
 
 2. **Esistono dati storici sufficienti sulle offerte vinte/perse, sulla composizione del comitato di acquisto e sui modelli di coinvolgimento?** In caso affermativo e se l’organizzazione desidera ridurre al minimo la qualifica manuale, l’opzione C offre l’approccio più automatizzato. In caso contrario, l’opzione B fornisce supporto per più interessi delle soluzioni con punteggio basato su regole.
 
-3. **Qual è la capacità di gestione delle modifiche dell&#39;organizzazione?** Options B and C require more organizational alignment (content production, sales enablement, cross-functional coordination). If capacity is limited, start with Option A and expand.
+3. **Qual è la capacità di gestione delle modifiche dell&#39;organizzazione?** Le opzioni B e C richiedono un maggiore allineamento organizzativo (produzione di contenuti, abilitazione delle vendite, coordinamento interfunzionale). Se la capacità è limitata, iniziare con l&#39;opzione A ed espandere.
 
-A common progression path is: start with Option A to prove the concept with one solution interest, expand to Option B by adding solution interests as confidence grows, then layer in Option C&#39;s AI qualification once enough historical data is available to train the models effectively.
+Un percorso di progressione comune è: iniziare con l’opzione A per dimostrare il concetto con un interesse per la soluzione, espandere l’opzione B aggiungendo gli interessi della soluzione man mano che aumenta la fiducia, quindi inserire il livello nella qualifica di IA dell’opzione C una volta che sono disponibili sufficienti dati storici per addestrare i modelli in modo efficace.
 
 ## Fasi di implementazione
 
-The following phases describe the step-by-step implementation process for this use case pattern.
+Le fasi seguenti descrivono il processo di implementazione passo per passo di questo modello di caso d’uso.
 
-### Phase 0: B2B data foundation
+### Fase 0: fondazione di dati B2B
 
-**Application functions:** [!DNL RT-CDP B2B]: Account Profile Unification, B2B Identity Resolution, [!DNL Marketo Engage] Integration, B2B Data Governance, Account Audience Evaluation
+**Funzioni dell&#39;applicazione:** [!DNL RT-CDP B2B]: unificazione profilo account, risoluzione identità B2B, integrazione [!DNL Marketo Engage], governance dati B2B, valutazione pubblico account
 
-This phase establishes the B2B data infrastructure in [!DNL RT-CDP B2B Edition]. You will unify account data from CRM, marketing automation, and other sources into a single account profile, resolve person-to-account relationships, configure B2B data governance, and create account-level audiences that feed into [!DNL AJO B2B Edition] buying group management.
+Questa fase stabilisce l&#39;infrastruttura di dati B2B in [!DNL RT-CDP B2B Edition]. Unificherai i dati dell&#39;account da CRM, automazione marketing e altre origini in un unico profilo account, risolverai le relazioni tra persone e account, configurerai la governance dei dati B2B e creerai tipi di pubblico a livello di account che confluiranno nella gestione dei gruppi di acquisto [!DNL AJO B2B Edition].
 
-#### Decision: B2B data source strategy
+#### Decisione: strategia per le fonti di dati B2B
 
-Which systems serve as the primary sources for account, person, and engagement data?
+Quali sistemi fungono da origini primarie per i dati di account, persona e coinvolgimento?
 
 | Opzione | Quando scegliere | Considerazioni |
 | --- | --- | --- |
-| [!DNL Marketo Engage] as primary source | [!DNL Marketo] is the organization&#39;s marketing automation platform with rich engagement history | Native bidirectional connector simplifies setup; engagement data flows automatically; person-to-account relationships inherited from [!DNL Marketo] |
-| CRM ([!DNL Salesforce]/[!DNL Dynamics]) as primary source | CRM is the system of record for accounts and contacts; [!DNL Marketo] is not used | Requires CRM source connector configuration; engagement data may need supplemental sources; person-to-account relationships from CRM account-contact associations |
-| Hybrid: CRM for accounts + [!DNL Marketo] for engagement | CRM owns account/contact master data while [!DNL Marketo] captures behavioral engagement | Most common pattern for organizations using both; requires careful identity resolution to link [!DNL Marketo] persons to CRM contacts |
+| [!DNL Marketo Engage] come origine primaria | [!DNL Marketo] è la piattaforma di automazione marketing dell&#39;organizzazione con una ricca cronologia di coinvolgimento | Il connettore bidirezionale nativo semplifica la configurazione; il flusso automatico dei dati di coinvolgimento; le relazioni tra persone ereditate da [!DNL Marketo] |
+| CRM ([!DNL Salesforce]/[!DNL Dynamics]) come origine primaria | CRM è il sistema di registrazione per account e contatti; [!DNL Marketo] non è utilizzato | Richiede la configurazione del connettore di origine del sistema di gestione delle relazioni con i clienti; i dati del coinvolgimento possono richiedere origini supplementari; relazioni persona-account da associazioni di contatto dell’account del sistema di gestione delle relazioni con i clienti |
+| Ibrido: CRM per account + [!DNL Marketo] per il coinvolgimento | CRM possiede i dati master account/contatto mentre [!DNL Marketo] acquisisce il coinvolgimento comportamentale | Schema più comune per le organizzazioni che utilizzano entrambi; richiede un&#39;attenta risoluzione dell&#39;identità per collegare [!DNL Marketo] persone ai contatti CRM |
 
-#### Decision: Account audience strategy
+#### Decisione: strategia per il pubblico dell’account
 
-How should account audiences be defined for journey entry?
+Come definire i tipi di pubblico dell’account per l’immissione nel percorso?
 
 | Opzione | Quando scegliere | Considerazioni |
 | --- | --- | --- |
@@ -394,33 +394,33 @@ Come definire i ruoli all’interno di ciascun gruppo di acquisto?
 **Per L&#39;Opzione A (Interesse Soluzione Singola):**
 Crea un interesse per la soluzione e un modello di ruolo. Concentrati su un movimento di acquisto chiaro e ben compreso per il prodotto o servizio principale dell’organizzazione.
 
-**Per L&#39;Opzione B (Più Interessi Soluzione):**
-Crea più interessi per la soluzione, ciascuno con il proprio modello di ruolo. Map each solution interest to the appropriate CRM product/opportunity type for downstream pipeline tracking.
+**Per L&#39;Opzione B (Più Interessi Per La Soluzione):**
+Crea più interessi per la soluzione, ciascuno con il proprio modello di ruolo. Mappa ogni interesse della soluzione al tipo di prodotto/opportunità CRM appropriato per il tracciamento della pipeline a valle.
 
-**For Option C (AI-Assisted Qualification):**
-Configure solution interests and role templates as in Option B, but additionally configure the AI qualification agent with historical data on successful buying group compositions and deal outcomes to train the qualification model.
+**Per L&#39;Opzione C (Qualifica Assistita Da IA):**
+Configura gli interessi della soluzione e i modelli di ruolo come nell’opzione B, ma in aggiunta configura l’agente di qualificazione IA con dati storici sulle composizioni di gruppi di acquisto di successo e sui risultati dell’offerta per addestrare il modello di qualifica.
 
 **Documentazione di Experience League:**
 
-- [Buying groups overview](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
+- [Panoramica sui gruppi di acquisto](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
 - [Interessi soluzione](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
-- [Role templates](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
+- [Modelli di ruolo](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
 - [Creare gruppi di acquisto](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
 
-### Phase 2: Lead qualification &amp; engagement scoring
+### Fase 2: qualificazione dei lead e valutazione del coinvolgimento
 
-**Application functions:** [!DNL AJO B2B]: Engagement Scoring, Account Qualification
+**Funzioni dell&#39;applicazione:** [!DNL AJO B2B]: punteggio di coinvolgimento, qualifica dell&#39;account
 
-This phase sets up the engagement scoring model that measures person-level engagement within buying groups and rolls it up to buying group and account-level readiness scores. You will configure scoring rules, define engagement thresholds for qualification, and optionally enable AI-powered account qualification.
+Questa fase imposta il modello di valutazione del coinvolgimento che misura il coinvolgimento a livello di persona all’interno dei gruppi di acquisto e lo porta ai punteggi di preparazione a livello di gruppo di acquisto e di account. Puoi configurare le regole di punteggio, definire le soglie di coinvolgimento per la qualifica e, facoltativamente, abilitare la qualifica dell’account basata sull’intelligenza artificiale.
 
-#### Decision: Engagement scoring model
+#### Decisione: modello di valutazione del coinvolgimento
 
-How should engagement be scored at the person and buying group level?
+Come si dovrebbe valutare il coinvolgimento a livello di persona e gruppo di acquisto?
 
 | Opzione | Quando scegliere | Considerazioni |
 | --- | --- | --- |
-| Activity-based scoring | Assign point values to specific actions (email open = 5 pts, content download = 15 pts, demo request = 50 pts) | Transparent and easy to tune; requires ongoing maintenance as content and channels change; most familiar to [!DNL Marketo] users |
-| Recency-weighted scoring | Weight recent activities higher than older ones (decaying score model) | Riflette meglio le intenzioni correnti; impedisce che punteggi elevati non aggiornati gonfiino le qualifiche; è più complesso da configurare |
+| Punteggio basato sulle attività | Assegna valori punto ad azioni specifiche (apertura e-mail = 5 punti, download contenuto = 15 punti, richiesta demo = 50 punti) | Trasparente e facile da regolare; richiede manutenzione continua con il cambiare dei contenuti e dei canali; più familiare a [!DNL Marketo] utenti |
+| Punteggio ponderato in base all’attualità | Peso delle attività recenti superiore a quelle precedenti (modello di punteggio in declino) | Riflette meglio le intenzioni correnti; impedisce che punteggi elevati non aggiornati gonfiino le qualifiche; è più complesso da configurare |
 | Punteggio basato sull’intelligenza artificiale | Utilizza l&#39;agente di qualificazione IA [!DNL AJO B2B] per generare punteggi di idoneità basati sul riconoscimento pattern | Più sofisticato; si adatta automaticamente; richiede dati storici; può essere inizialmente opaco per i team di vendita |
 
 #### Decisione: approccio basato sulla soglia di qualifica
@@ -503,10 +503,10 @@ In che modo il ramo di percorso deve essere basato sullo stato dell’account e 
 **Per L&#39;Opzione A (Interesse Soluzione Singola):**
 Progettare un percorso lineare con stadi sequenziali. L’ingresso si basa su un pubblico di un singolo account o su un evento di creazione di un gruppo di acquisto. Un percorso di e-mail nurture con crescente urgenza e profondità di contenuto.
 
-**Per L&#39;Opzione B (Più Interessi Soluzione):**
+**Per L&#39;Opzione B (Più Interessi Per La Soluzione):**
 Progetta un percorso con rami paralleli per ogni interesse della soluzione. Utilizza i nodi delle condizioni per indirizzare gli account alla traccia di sviluppo appropriata in base ai gruppi di acquisto esistenti. Ogni ramo ha le proprie soglie di contenuto e punteggio.
 
-**Per l&#39;opzione C (qualifica assistita da IA):**
+**Per L&#39;Opzione C (Qualifica Assistita Da IA):**
 Progetta un percorso in cui i nodi della condizione valutino il punteggio di qualifica di IA anziché (o in aggiunta a) soglie basate su regole. Includi la selezione del percorso dinamico in cui l’IA determina se accelerare, gestire o de-assegnare la priorità a un account.
 
 **Documentazione di Experience League:**
@@ -566,7 +566,7 @@ Quanto profondamente dovrebbero emergere i dati del gruppo di acquisto nel siste
 
 **Funzioni applicazione:** [!DNL AJO B2B]: dashboard di Analytics B2B
 
-Questa fase stabilisce il framework di reporting e analisi per misurare le prestazioni del percorso di acquisto, l’efficacia del gruppo di account e l’impatto sulla pipeline. [!DNL AJO B2B Edition] fornisce dashboard di analisi incorporati; [!DNL CJA B2B Edition] (se concesso in licenza) estende l&#39;analisi con informazioni più approfondite a livello di account cross-channel.
+Questa fase stabilisce il framework di reporting e analisi per misurare le prestazioni del percorso di acquisto, l’efficacia del gruppo di account e l’impatto sulla pipeline. [!DNL AJO B2B Edition] fornisce dashboard di analisi integrati; [!DNL CJA B2B Edition] (se concesso in licenza) estende l&#39;analisi con informazioni più approfondite a livello di account cross-channel.
 
 #### Decisione: approccio alla comunicazione
 

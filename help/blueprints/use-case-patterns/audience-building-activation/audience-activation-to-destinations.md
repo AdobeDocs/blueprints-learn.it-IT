@@ -3,9 +3,9 @@ title: Attivazione del pubblico nelle destinazioni
 description: Scopri come valutare e pubblicare segmenti di pubblico in destinazioni esterne per il targeting o l’eliminazione tramite Adobe Real-Time CDP.
 solution: Real-Time Customer Data Platform, Experience Platform
 exl-id: b0b9d937-45d2-48f9-ac4c-3611c6e35f58
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '7043'
+source-wordcount: '7080'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Questo modello si applica ogni volta che l’obiettivo è quello di ottenere i d
 Le parti interessate tipiche includono i team di marketing digitale che gestiscono media a pagamento, i team di dati che arricchiscono i magazzini, i team di gestione delle relazioni con i clienti che preparano elenchi di contatti per le campagne e i team di privacy che garantiscono la conformità in materia di governance dei flussi di dati in uscita.
 
 >[!NOTE]
->Se la tua organizzazione utilizza [!DNL Real-Time CDP] B2B edition e si attiva su destinazioni basate su account, consulta [Attivazione del pubblico B2B](b2b-audience-activation.md). Questo modello condivide la stessa meccanica di attivazione ma utilizza un modello di dati account-and-person B2B e richiede la licenza B2B edition.
+>Se la tua organizzazione utilizza [!DNL Real-Time CDP] B2B edition e si attiva su destinazioni basate su account, consulta [Attivazione del pubblico B2B](../b2b/account-audience-activation.md). Questo modello condivide la stessa meccanica di attivazione ma utilizza un modello di dati account-and-person B2B e richiede la licenza B2B edition.
 
 ## Obiettivi aziendali chiave
 
@@ -89,6 +89,12 @@ Migliora il ritorno sull’investimento marketing migliorando il targeting, l’
 
 - **Adobe [!DNL Real-Time Customer Data Platform] (RT-CDP)** — Valutazione del pubblico, gestione della destinazione, attivazione del pubblico, applicazione del consenso e della governance
 - **Adobe [!DNL Experience Platform] (AEP)** — Archivio profili, servizio identità, motore di segmentazione, governance dei dati
+
+## Architettura
+
+La seguente architettura di riferimento illustra il flusso di dati di pubblico e profilo da Real-Time CDP a destinazioni aziendali, tra cui archiviazione cloud, endpoint di streaming e applicazioni SaaS.
+
+![Architettura di riferimento per l&#39;attivazione di tipi di pubblico e profili per le destinazioni enterprise](/help/blueprints/audience-activation/assets/known_activation.svg)
 
 ## Funzioni fondamentali
 

@@ -1,43 +1,46 @@
 ---
-title: Use Case Patterns
-description: Learn about the use case patterns for implementing Adobe Experience Platform and applications to achieve key business objectives.
+title: Modelli di casi d’uso
+description: Scopri i modelli di casi d’uso per l’implementazione di Adobe Experience Platform e delle applicazioni per raggiungere gli obiettivi aziendali chiave.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 doc-type: overview-page
 exl-id: 58caa6ad-0d1c-4290-9614-c68c9c9028bb
-source-git-commit: 27f7e230982807ec70ca96af7f737944a6588f27
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
-# Use case patterns
+# Modelli di casi d’uso
 
-Use case patterns define repeatable implementation approaches for Adobe Experience Platform and applications. Each pattern describes a specific capability, the function chain that delivers it, the applications involved, and the [key business objectives](/help/blueprints/business-objectives/overview.md) it supports.
+I modelli di casi d’uso definiscono approcci di implementazione ripetibili per Adobe Experience Platform e le applicazioni. Ogni modello descrive una funzionalità specifica, la catena di funzioni che la distribuisce, le applicazioni coinvolte e gli [obiettivi aziendali chiave](/help/blueprints/business-objectives/overview.md) supportati.
 
-Use the tables below to find the pattern that matches your implementation needs, then follow the link to the full implementation reference including options, phases, decision guidance, and Experience League documentation.
+Utilizza le tabelle seguenti per trovare il modello che soddisfa le tue esigenze di implementazione, quindi segui il collegamento alla documentazione completa sull’implementazione, comprese opzioni, fasi, guida decisionale e documentazione di Experience League.
 
-## Audience building &amp; activation
+## Creazione e attivazione del pubblico
 
-The following patterns help you build, evaluate, and activate audience segments across channels and destinations.
+I seguenti modelli consentono di creare, valutare e attivare segmenti di pubblico tra canali e destinazioni.
 
-| Pattern | Primary Capability | Core Solutions |
+| Pattern | Funzionalità principale | Soluzioni di base |
 | --- | --- | --- |
-| [Audience activation to destinations](audience-building-activation/audience-activation-to-destinations.md) | Evaluate and publish audience segments to external destinations for targeting or suppression | [!DNL Real-Time CDP] |
-| [Audience Collaboration](audience-building-activation/audience-collaboration-segment-match.md) | Share and match audience segments across sandboxes or organizations using Segment Match | [!DNL Real-Time CDP], [!DNL Experience Platform] |
-| [Inoltro eventi](audience-building-activation/event-forwarding.md) | Forward real-time event data collected via Edge Network to non-Adobe destinations | [!DNL Experience Platform] (Edge Network, event forwarding) |
-| [Attivazione pubblico B2B](audience-building-activation/b2b-audience-activation.md) | Activate account-based B2B audiences across web, email, and advertising channels | [!DNL Real-Time CDP] B2B edition |
+| [Attivazione del pubblico alle destinazioni](audience-building-activation/audience-activation-to-destinations.md) | Valutare e pubblicare segmenti di pubblico in destinazioni esterne per il targeting o l’eliminazione | [!DNL Real-Time CDP] |
+| [Pubblico Collaboration](audience-building-activation/audience-collaboration-segment-match.md) | Condividere e abbinare segmenti di pubblico tra sandbox o organizzazioni utilizzando Segment Match (Corrispondenza segmenti) | [!DNL Real-Time CDP], [!DNL Experience Platform] |
+| [Inoltro eventi](audience-building-activation/event-forwarding.md) | Inoltra i dati evento in tempo reale raccolti tramite Edge Network a destinazioni non Adobe | [!DNL Experience Platform] (Edge Network, inoltro eventi) |
+| [Ricerca profilo in tempo reale per supporto e vendite](audience-building-activation/real-time-profile-lookup.md) | Ricerche di profili cliente in tempo reale che forniscono contesto per scenari di vendita e supporto assistiti da agenti | [!DNL Real-Time CDP], [!DNL Experience Platform] |
+| [Data Science personalizzata per l&#39;arricchimento del profilo](audience-building-activation/data-science-profile-enrichment.md) | Acquisire informazioni basate sulla scienza dei dati in Experience Platform per arricchire il profilo cliente in tempo reale | [!DNL Experience Platform] |
 
 ## Personalizzazione
 
-The following patterns deliver tailored experiences to known and unknown visitors across web and app surfaces.
+I seguenti modelli forniscono esperienze personalizzate a visitatori noti e sconosciuti su superfici web e app.
 
-| Pattern | Primary Capability | Core Solutions |
+| Pattern | Funzionalità principale | Soluzioni di base |
 | --- | --- | --- |
-| [Anonymous visitor web personalization](personalization/anonymous-visitor-web-personalization.md) | Deliver personalized content based on in-session behavioral signals for unidentified visitors | [!DNL Journey Optimizer] (canale web), [!DNL Real-Time CDP] |
+| [Personalizzazione Web visitatore anonimo](personalization/anonymous-visitor-web-personalization.md) | Distribuisci contenuti personalizzati in base a segnali comportamentali durante la sessione per visitatori non identificati | [!DNL Journey Optimizer] (canale web), [!DNL Real-Time CDP] |
 | [Personalizzazione web/app visitatore noto](personalization/known-visitor-web-app-personalization.md) | Distribuisci contenuti personalizzati, offerte o promozioni ai visitatori identificati in base al profilo in tempo reale e all’iscrizione al segmento | [!DNL Journey Optimizer], [!DNL Real-Time CDP] |
 | [Offer Decisioning](personalization/offer-decisioning.md) | Utilizza la logica decisionale centralizzata per selezionare l’offerta o il contenuto migliore per un profilo tra canali diversi | [!DNL Journey Optimizer] (Decisioning), [!DNL Real-Time CDP] |
 | [Consigli comportamentali](personalization/behavioral-recommendation.md) | Generare consigli su articoli e contenuti utilizzando strategie di selezione e modelli di classificazione | [!DNL Journey Optimizer] (Decisioning), [!DNL Real-Time CDP] |
+| [Accesso profilo Edge per Personalization Web/Mobile](personalization/edge-profile-access.md) | Accesso in tempo reale al profilo edge per la personalizzazione di web e dispositivi mobili ad alta velocità, a bassa latenza | [!DNL Real-Time CDP], [!DNL Experience Platform] (Edge Network) |
+| [Condivisione del pubblico con Adobe Target](personalization/audience-sharing-with-target.md) | Condividere profili e tipi di pubblico di Real-Time CDP con Adobe Target per la personalizzazione web e mobile dei clienti noti | [!DNL Real-Time CDP], [!DNL Target], [!DNL Experience Platform] |
 
 ## Gestione e orchestrazione delle campagne
 
@@ -49,7 +52,8 @@ I seguenti modelli coprono la consegna di messaggi pianificata, attivata e in pi
 | [Messaggistica attivata da eventi](campaign-management-orchestration/event-triggered-messaging.md) | Ascolta un evento comportamentale o di sistema in tempo reale, quindi distribuisci un messaggio contestuale al profilo che attiva | [!DNL Journey Optimizer], [!DNL Real-Time CDP] |
 | [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md) | Guida un profilo attraverso un percorso multi-touch diramato con attese, condizioni e più azioni messaggio | [!DNL Journey Optimizer], [!DNL Real-Time CDP] |
 | [percorso cross-channel con decisioning](campaign-management-orchestration/cross-channel-journey-with-decisioning.md) | Orchestrazione di un percorso in più passaggi che incorpora decisioni in tempo reale per selezionare canali, contenuti o offerte ottimali | [!DNL Journey Optimizer], [!DNL Real-Time CDP] |
-| [Acquisto di attività di marketing e gestione dei percorsi basate sui gruppi](campaign-management-orchestration/buying-group-based-marketing.md) | Sviluppare percorsi a livello di account che qualifichino i lead in gruppi di acquisto per migliorare l’efficacia del marketing B2B | [!DNL Journey Optimizer] B2B edition, [!DNL Real-Time CDP] B2B edition |
+| [Orchestrazione in batch di Campaign v8 e messaggistica transazionale](campaign-management-orchestration/campaign-v8-orchestration.md) | Esecuzione di campagne batch, orchestrazione multi-touch, gestione dei dati basata su ETL e messaggistica transazionale in Campaign v8 | [!DNL Campaign] v8 |
+| [Integrazione della messaggistica di terze parti con Journey Optimizer](campaign-management-orchestration/third-party-messaging.md) | Integrare Journey Optimizer con sistemi di messaggistica di terze parti per comunicazioni personalizzate tramite API REST | [!DNL Journey Optimizer] |
 
 ## Analisi
 
@@ -58,7 +62,20 @@ I seguenti modelli supportano l’analisi dei comportamenti e delle prestazioni 
 | Pattern | Funzionalità principale | Soluzioni di base |
 | --- | --- | --- |
 | [Analisi dei clienti e generazione insight](analysis/customer-analytics-insight-generation.md) | Creare aree di lavoro di analisi cross-channel, metriche calcolate e dashboard per l’analisi del comportamento e delle prestazioni | [!DNL Customer Journey Analytics], [!DNL Experience Platform] |
-| [Analisi B2B](analysis/b2b-analytics.md) | Includere informazioni a livello di account B2B nell’analisi del percorso clienti cross-channel | [!DNL Customer Journey Analytics] B2B edition, [!DNL Real-Time CDP] B2B edition |
+
+## Attivazione e marketing B2B
+
+I seguenti modelli riguardano scenari di marketing specifici per B2B: pubblico basato su account, orchestrazione di gruppi di acquisto e analisi B2B.
+
+| Pattern | Funzionalità principale | Soluzioni di base |
+| --- | --- | --- |
+| [Attivazione pubblico B2B](b2b/account-audience-activation.md) | Attiva tipi di pubblico B2B basati sull’account tra canali web, e-mail e pubblicitari | [!DNL Real-Time CDP] B2B edition |
+| [Acquisto di attività di marketing e gestione dei percorsi basate sui gruppi](b2b/buying-group-marketing.md) | Sviluppare percorsi a livello di account che qualifichino i lead in gruppi di acquisto per migliorare l’efficacia del marketing B2B | [!DNL Journey Optimizer] B2B edition, [!DNL Real-Time CDP] B2B edition |
+| [Analisi B2B](b2b/account-analytics.md) | Includere informazioni a livello di account B2B nell’analisi del percorso clienti cross-channel | [!DNL Customer Journey Analytics] B2B edition, [!DNL Real-Time CDP] B2B edition |
+| [Percorsi B2B con dati Marketo](b2b/marketo-data-journeys.md) | Distribuire Journey Optimizer B2B edition con i dati di Marketo per orchestrare percorsi di gruppi di acquisto e coinvolgimento degli account | [!DNL Journey Optimizer] B2B edition, [!DNL Marketo Engage], [!DNL Real-Time CDP] B2B edition |
+| [Controller supporti a pagamento B2B AJO](b2b/paid-media-orchestration.md) | Orchestrazione di campagne multimediali a pagamento B2B utilizzando la logica a cascata per assegnare account alle campagne e attivarle nelle destinazioni | [!DNL Journey Optimizer] B2B edition, [!DNL Real-Time CDP] B2B edition |
+| [Acquisizione e creazione di Marketo e Workfront](b2b/campaign-intake-and-creation.md) | Automatizzare l’inserimento delle richieste di campagne di marketing e la creazione di programmi Marketo Engage tramite Workfront Forms e Fusion | [!DNL Marketo Engage], [!DNL Workfront], [!DNL Workfront Fusion] |
+| [Revisione e approvazione di Marketo e Workfront](b2b/campaign-review-and-approval.md) | Integrare i flussi di lavoro di verifica e approvazione di Workfront con le risorse e-mail di Marketo Engage utilizzando l’automazione Fusion | [!DNL Marketo Engage], [!DNL Workfront], [!DNL Workfront Fusion] |
 
 ## Esperienza conversazionale
 
@@ -82,28 +99,28 @@ Utilizza questa guida quando uno scenario potrebbe adattarsi plausibilmente a pi
 
 ### Follow-up post acquisto
 
-*Un cliente ha appena completato un acquisto. You want to send a confirmation, cross-sell recommendation, and loyalty reward notification.*
+*Un cliente ha appena completato un acquisto. Vuoi inviare una conferma, un consiglio di cross-selling e una notifica di premio fedeltà.*
 
-- **Does the sequence require adaptive branching based on real-time events (e.g., reward claimed, product reviewed)?**
-   - Yes → [Multi-step orchestrated journey](campaign-management-orchestration/multi-step-orchestrated-journey.md)
-   - No (fixed sequence, no branching) → [Batch outbound message activation](campaign-management-orchestration/batch-outbound-message-activation.md)
-- **Does it include personalized product recommendations?**
-   - Yes → Extend with [Behavioral recommendation](personalization/behavioral-recommendation.md) at the content layer
+- **La sequenza richiede diramazioni adattive basate su eventi in tempo reale (ad esempio, premio richiesto, prodotto esaminato)?**
+   - Sì → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+   - Nessuna (sequenza fissa, nessuna diramazione) → [Attivazione messaggio batch in uscita](campaign-management-orchestration/batch-outbound-message-activation.md)
+- **Include consigli di prodotto personalizzati?**
+   - Sì → Estendi con [Consigli comportamentali](personalization/behavioral-recommendation.md) a livello di contenuto
 
-### Loyalty milestone personalization
+### Personalizzazione milestone fedeltà
 
-*A customer reaches a new loyalty tier. You want to show personalized web content and send a congratulatory message.*
+*Un cliente raggiunge un nuovo livello fedeltà. Desideri mostrare contenuti web personalizzati e inviare un messaggio di congratulazioni.*
 
-- **Is the web content personalized (different content per tier or segment)?**
-   - Yes → [Known-visitor web/app personalization](personalization/known-visitor-web-app-personalization.md) for the web surface
-- **Is the outbound message a single send or a nurture sequence?**
-   - Single send → [Event-triggered messaging](campaign-management-orchestration/event-triggered-messaging.md)
-   - Sequence → [Multi-step orchestrated journey](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+- **Il contenuto Web è personalizzato (contenuto diverso per livello o segmento)?**
+   - Sì → [Personalizzazione web/app visitatore noto](personalization/known-visitor-web-app-personalization.md) per la superficie web
+- **Il messaggio in uscita è un singolo invio o una sequenza di sviluppo?**
+   - Invio singolo → [Messaggistica attivata da eventi](campaign-management-orchestration/event-triggered-messaging.md)
+   - Sequenza → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
 
-### Re-engagement campaign
+### Campagna di ricoinvolgimento
 
-*A segment of inactive users needs a multi-touch reactivation sequence.*
+*Un segmento di utenti inattivi richiede una sequenza di riattivazione multi-touch.*
 
-- **Do individual messages need to select from multiple offer variants in real time?**
-   - Yes → [Cross-channel journey with decisioning](campaign-management-orchestration/cross-channel-journey-with-decisioning.md)
-   - No → [Multi-step orchestrated journey](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+- **I singoli messaggi devono essere selezionati da più varianti di offerta in tempo reale?**
+   - Sì → [percorso cross-channel con decisioning](campaign-management-orchestration/cross-channel-journey-with-decisioning.md)
+   - Nessun → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)

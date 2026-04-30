@@ -3,7 +3,7 @@ title: Audience Activation B2B
 description: Scopri come attivare tipi di pubblico B2B basati sull’account tra canali web, e-mail e pubblicitari.
 solution: Real-Time Customer Data Platform
 exl-id: 2b979159-37aa-41d4-a6b4-1105538f6546
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '7611'
 ht-degree: 0%
@@ -25,7 +25,7 @@ I team di marketing B2B devono eseguire il targeting e attivare i tipi di pubbli
 I casi d&#39;uso dei tipi di pubblico attivati per l&#39;account nella generazione della domanda di funnel: campagne di sensibilizzazione top-of-funnel su [!DNL LinkedIn] e visualizzazione di annunci pubblicitari, programmi di sviluppo mid-funnel in [!DNL Marketo Engage] e abilitazione delle vendite bottom-funnel tramite l&#39;integrazione CRM. I tipi di pubblico per la soppressione dell’account impediscono lo spreco di risorse escludendo i clienti esistenti, gli account persi chiusi o gli account già in cicli di vendita attivi.
 
 >[!NOTE]
->Se il tuo caso d&#39;uso prevede l&#39;attivazione dei tipi di pubblico a livello di persona (B2C) anziché a livello di account, consulta [Attivazione del pubblico nelle destinazioni](audience-activation-to-destinations.md). Questo modello utilizza il modello dati standard RT-CDP e non richiede B2B edition.
+>Se il tuo caso d&#39;uso prevede l&#39;attivazione dei tipi di pubblico a livello di persona (B2C) anziché a livello di account, consulta [Attivazione del pubblico nelle destinazioni](../audience-building-activation/audience-activation-to-destinations.md). Questo modello utilizza il modello dati standard RT-CDP e non richiede B2B edition.
 
 ## Obiettivi aziendali chiave
 
@@ -126,7 +126,7 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 
 | Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Creazione di attributi calcolati/derivati | Consigliato | I punteggi di coinvolgimento aggregati, il valore del ciclo di vita e le metriche delle attività a livello di account migliorano la precisione del pubblico. Gli attributi calcolati possono aggregare eventi a livello di persona (aperture di e-mail, visite web, download di contenuti) a livello di account per l’utilizzo nella segmentazione. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
+| Creazione di attributi calcolati/derivati | Consigliato | I punteggi di coinvolgimento aggregati, il valore del ciclo di vita e le metriche delle attività a livello di account migliorano la precisione del pubblico. Gli attributi calcolati possono aggregare eventi a livello di persona (aperture di e-mail, visite web, download di contenuti) a livello di account per l’utilizzo nella segmentazione. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
 | Data Lifecycle Management | Consigliato | I criteri di conservazione dei dati B2B garantiscono la pulizia dei dati obsoleti di account e opportunità. La gestione del consenso per i contatti B2B garantisce la conformità alle normative di e-mail marketing. I criteri di scadenza del set di dati impediscono l’accumulo di dati di sincronizzazione CRM obsoleti. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Incluso | I dati dei conti B2B spesso contengono restrizioni contrattuali (cifre dei ricavi, conteggi dei dipendenti da fornitori terzi). Le etichette di utilizzo dei dati impediscono l’attivazione di attributi dell’account con restrizioni su destinazioni non autorizzate. I criteri di governance garantiscono che i campi PII dei record dei contatti vengano gestiti in modo appropriato durante l’attivazione. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home) |
 | Monitoraggio e osservabilità | Incluso | Il monitoraggio dei flussi di dati del CRM e del connettore di origine [!DNL Marketo Engage] assicura che i dati dell&#39;account rimangano correnti. Il monitoraggio dell&#39;attivazione della destinazione conferma che i tipi di pubblico sono stati recapitati correttamente alle destinazioni [!DNL LinkedIn], [!DNL Marketo] e CRM. Le regole di avviso rilevano gli errori di acquisizione che causerebbero dati dell’account non aggiornati. | [Panoramica avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview), [Monitora flussi dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations) |
@@ -181,7 +181,7 @@ Le opzioni seguenti descrivono diversi approcci per l’implementazione di quest
 
 **Funzionamento:**
 
-Questa opzione utilizza il connettore di destinazione nativo [!DNL Marketo Engage] in [!DNL RT-CDP] per inviare in streaming le modifiche di appartenenza al pubblico dell&#39;account direttamente a [!DNL Marketo Engage]. Quando un account si qualifica per un segmento di pubblico o ne esce, i lead e i contatti associati in [!DNL Marketo] vengono aggiornati con gli attributi di appartenenza al segmento. [!DNL Marketo] le campagne intelligenti possono quindi essere attivate in base a queste modifiche di appartenenza.
+Questa opzione utilizza il connettore di destinazione nativo [!DNL Marketo Engage] in [!DNL RT-CDP] per inviare in streaming le modifiche di appartenenza al pubblico dell&#39;account direttamente a [!DNL Marketo Engage]. Quando un account si qualifica per un segmento di pubblico o ne esce, i lead e i contatti associati in [!DNL Marketo] vengono aggiornati con gli attributi di appartenenza al segmento. [!DNL Marketo] campagne intelligenti possono quindi essere attivate in base a queste modifiche di appartenenza.
 
 La destinazione [!DNL Marketo Engage] è una destinazione di streaming, il che significa che le modifiche di appartenenza al pubblico vengono inviate in modo incrementale quando si verificano anziché in batch pianificati. Questo offre un tempo di azione più rapido per le campagne che devono rispondere alle modifiche di qualificazione dell’account. Le mappature dei campi connettono gli attributi del profilo [!DNL RT-CDP] a [!DNL Marketo] campi lead/contatto, consentendo l&#39;arricchimento di [!DNL Marketo] record con dati a livello di account da [!DNL RT-CDP].
 

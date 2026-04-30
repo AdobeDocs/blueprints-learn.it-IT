@@ -2,13 +2,13 @@
 title: Migliorare la qualifica e la conversione dei lead
 description: Scopri come aumentare la qualità dei lead e accelerare la progressione della pipeline attraverso punteggio, nutrizione e follow-up personalizzato.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 4454b148-79f9-49f9-97ca-f305df00fe0b
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
-
 
 # Migliorare la qualificazione e la conversione dei lead
 
@@ -30,5 +30,5 @@ I seguenti modelli di casi d’uso supportano questo obiettivo aziendale.
 
 | Pattern | Categoria | Come sostiene questo obiettivo |
 | --- | --- | --- |
-| [Attivazione del pubblico B2B](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) | Creazione e attivazione di tipi di pubblico | Attiva i tipi di pubblico basati sull’account per campagne di qualificazione dei lead mirate |
-| [Acquisto di attività di marketing e gestione dei Percorsi basate sui gruppi](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md) | Gestione e orchestrazione delle campagne | Qualifica i lead in gruppi di acquisto e orchestra lo sviluppo di più parti interessate per accelerare la pipeline |
+| [Attivazione del pubblico B2B](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md) | Creazione e attivazione di tipi di pubblico | Attiva i tipi di pubblico basati sull’account per campagne di qualificazione dei lead mirate |
+| [Acquisto di attività di marketing e gestione dei Percorsi basate sui gruppi](/help/blueprints/use-case-patterns/b2b/buying-group-marketing.md) | Gestione e orchestrazione delle campagne | Qualifica i lead in gruppi di acquisto e orchestra lo sviluppo di più parti interessate per accelerare la pipeline |
