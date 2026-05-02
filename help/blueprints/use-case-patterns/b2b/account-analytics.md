@@ -559,7 +559,7 @@ Dettagli configurazione chiave:
 
 - [Crea una scorecard per dispositivi mobili](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dashboards/create-scorecard)
 - [Condividi progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
-- [Programmare progetti](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
+- [Programmare progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
 - [Configurare e curare le scorecard](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/curate)
 - [Dashboard di Adobe Analytics: guida esecutiva](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dashboards/set-up-execs)
 - [Panoramica di Audiences](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
@@ -668,7 +668,7 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 - [Tabella coorte](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
 - [Pannello Attribuzione](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/panels/attribution)
 - [Condividi progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
-- [Programmare progetti](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
+- [Programmare progetti](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
 - [Dimensioni di raggruppamento](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/components/dimensions/t-breakdown-fa)
 
 **Componenti**
@@ -703,7 +703,7 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 
 - [Panoramica di RT-CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#702702)
 - [Schemi B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
-- [Panoramica sulle origini B2B](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/sources/b2b)
+- [Panoramica sulle origini B2B](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/sources/b2b)
 
 **AEP data foundation**
 
@@ -720,6 +720,6 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 
 **Tutorial e guide**
 
-- [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
+- [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition)
 - [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview)
 - [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home)
