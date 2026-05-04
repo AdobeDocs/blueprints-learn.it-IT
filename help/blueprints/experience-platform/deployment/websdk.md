@@ -29,7 +29,7 @@ ht-degree: 67%
 
 Per una panoramica e dettagli sul Web e sul SDK mobile e sull&#39;API server [!DNL Edge Network], vedere quanto segue.
 
-* [Panoramica di Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+* [Panoramica di Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home)
 * [Panoramica di Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
 * [API server [!DNL Edge Network]](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
 
