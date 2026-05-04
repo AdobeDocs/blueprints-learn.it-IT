@@ -5,13 +5,25 @@ solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 2a8027acb8cbac89aaf920c5143fd36e62d1eceb
+TQID: https://experienceleague.adobe.com/s56Vkgc-UvIUNPhcB8x3WFlzhfeEUpRxXZCMu0zf58Y
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 68%
+source-wordcount: 269
+ht-degree: 67%
 
 ---
-
 
 # Experience Platform Web SDK e diagramma dell&#39;architettura [!DNL Edge Network]
 
@@ -19,15 +31,15 @@ Per una panoramica e dettagli sul Web e sul SDK mobile e sull&#39;API server [!D
 
 * [Panoramica di Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home)
 * [Panoramica di Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
-* [[!DNL Edge Network] API server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
+* [API server [!DNL Edge Network]](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
 
 Per una descrizione dettagliata delle funzionalità delle applicazioni supportate in Web SDK, consulta la documentazione seguente.
 
-* [Supporto delle funzionalità delle applicazioni in Web SDK](https://github.com/orgs/adobe/projects/18/views/1)
+* [Supporto delle funzionalità delle applicazioni Web SDK](https://github.com/orgs/adobe/projects/18/views/1)
 
 Per informazioni dettagliate sulla migrazione dagli SDK di specifiche applicazioni a Web/Mobile SDK, consulta la seguente documentazione.
 
-* [Identity Services](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=it)
+* [Servizi identità](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=it)
 * [Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/analytics-overview.html?lang=it)
 * [Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=it)
 * [Analytics for Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html?lang=it)

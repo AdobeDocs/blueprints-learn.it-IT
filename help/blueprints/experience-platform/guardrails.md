@@ -4,13 +4,28 @@ description: I guardrail definiscono le aspettative a livello di prestazioni e l
 solution: Experience Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
+TQID: https://experienceleague.adobe.com/ZSHbFR3sEy4C-876IU3yN8U5vOUVvDWIP-O3l-wKm78
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: a37e4ecd-c740-426a-addf-cb1b483c5c5a
+  - id: c132d929-fa62-4271-803e-b823be07b914
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+subfeature_v2:
+  - id: d1823595-9241-4128-8a33-e4ac3bf08773
+  - id: e5ae22e3-a3b0-46ed-804f-9abf1bbe3e74
+  - id: ee602049-8a18-43df-9299-a689a025a371
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 13%
+source-wordcount: 486
+ht-degree: 14%
 
 ---
-
 
 # Guardrail
 
@@ -39,17 +54,17 @@ Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni
 
 * [Panoramica sui guardrail di Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html?lang=it)
 * [Guardrail di condivisione del pubblico Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=it#latency)
-* [guardrail di acquisizione dati di Customer Journey Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
+* [Guardrail di acquisizione dati Customer Journey Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=it#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
 * [Guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=it)
 
 **Servizi Experience Platform**
 
-* [Guardrail per l’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
-* [[!DNL Edge Network] Guardrail API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=it)
+* [Guardrail di acquisizione dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
+* [Guardrail API [!DNL Edge Network]](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
 * [Guardrail di segmentazione e profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
-* [Guardrail per il servizio Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=it)
-* [Guardrail per il servizio Query](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
-* [Guardrail per l’attivazione delle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=it)
+* [Guardrail identità](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=it)
+* [Guardrail di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
+* [Guardrail di attivazione della destinazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=it)
 
 ## Diagrammi di latenza end-to-end {#end-to-end-latency}
 
