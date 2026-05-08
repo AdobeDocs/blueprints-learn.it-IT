@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Questo è il modello markdown completo per una pagina di diagramma dell’architettura. Sostituisci ogni `{placeholder}` con il valore raccolto durante la Fase 1 del flusso di lavoro abilità. Rimuovere eventuali sezioni facoltative non applicabili (ad esempio il blocco `>[!MORELIKETHIS]`). Non lasciare segnaposto vuoti nel file generato.
 
----
+&#x200B;---
 
 ```markdown
 ---
@@ -60,7 +60,7 @@ The architecture above supports the following use case patterns:
 - [{Article 3 title}]({Experience League URL 3})
 ```
 
----
+&#x200B;---
 
 ## Regole sui contenuti
 
