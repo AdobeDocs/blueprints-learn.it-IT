@@ -106,9 +106,9 @@ Ascolta un evento comportamentale o di sistema in tempo reale, quindi distribuis
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni Adobe.
 
-- **[!DNL Adobe Journey Optimizer](AJO)**: orchestrazione del Percorso con voce evento unitaria, valutazione delle condizioni, passaggi di attesa, authoring dei messaggi, configurazione dei canali, governance della frequenza e reporting sulla consegna
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — Valutazione del pubblico per filtraggio basato su condizioni all&#39;interno di percorsi, applicazione del consenso e della governance, arricchimento del profilo
-- **[!DNL Adobe Experience Platform](AEP)** — Acquisizione di eventi in tempo reale tramite Web SDK, Mobile SDK o API lato server; modellazione dati; risoluzione identità; Edge Network
+- **[!DNL Adobe Journey Optimizer] (AJO)**: orchestrazione del Percorso con voce evento unitaria, valutazione delle condizioni, passaggi di attesa, authoring dei messaggi, configurazione dei canali, governance della frequenza e reporting sulla consegna
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Valutazione del pubblico per filtraggio basato su condizioni all&#39;interno di percorsi, applicazione del consenso e della governance, arricchimento del profilo
+- **[!DNL Adobe Experience Platform] (AEP)** — Acquisizione di eventi in tempo reale tramite Web SDK, Mobile SDK o API lato server; modellazione dati; risoluzione identità; Edge Network
 
 ## Funzioni fondamentali
 
