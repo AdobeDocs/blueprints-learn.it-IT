@@ -6,7 +6,7 @@ exl-id: 75137990-9848-40c0-abf3-adbd21d2de52
 source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
 source-wordcount: '9040'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -206,7 +206,7 @@ I dati evento dell’evento che scatena l’attivazione (nome del prodotto, tota
 
 **Experience League:**
 
-- [Creazione di un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Creare un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
 - [Eventi generali](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
 
 ### Opzione B: messaggio condizionale attivato da un evento con attesa
@@ -245,7 +245,7 @@ Questo approccio riduce i messaggi superflui dando ai clienti il tempo di auto-c
 **Experience League:**
 
 - [Attività Attendi](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [Attività Condizione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Attività Condizione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
 - [Criteri di uscita](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 
 ### Opzione C: evento attivato con governance della frequenza
@@ -511,30 +511,30 @@ Le seguenti fasi descrivono l’implementazione end-to-end della messaggistica a
 - [Utilizzare i frammenti di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
 - [Anteprima e test del contenuto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/preview-test/preview-test)
 
-### Phase 5: Create and configure the journey
+### Fase 5: Creazione e configurazione del percorso
 
-**Application Function:** AJO: Journey Orchestration, AJO: Frequency &amp; Business Rules (Option C), AJO: Conflict &amp; Priority Management
+**Funzione applicazione:** AJO: Journey Orchestration, AJO: Frequency &amp; Business Rules (Opzione C), AJO: Conflict &amp; Priority Management
 
-**What you will configure:** The journey that listens for the triggering event and orchestrates message delivery. This is the core implementation phase where the journey canvas is designed with the event entry node, condition nodes, wait steps (for Option B), message action nodes, and exit criteria. This phase also covers frequency governance (Option C) and conflict/priority configuration.
+**Configurazione:** il percorso che ascolta l&#39;evento che attiva e orchestra la consegna dei messaggi. Questa è la fase di implementazione di base in cui l’area di lavoro del percorso è progettata con il nodo di ingresso dell’evento, i nodi della condizione, i passaggi di attesa (per l’opzione B), i nodi dell’azione del messaggio e i criteri di uscita. Questa fase riguarda anche la governance delle frequenze (opzione C) e la configurazione dei conflitti/priorità.
 
 **Punti decisionali in questa fase:**
 
 >[!NOTE]
 >
->**Decision: Re-entry rules**
+>**Decisione: regole di reinserimento**
 >
->Can a profile re-enter this journey if the triggering event occurs again?
+>Un profilo può rientrare in questo percorso se l’evento che attiva si verifica di nuovo?
 >
 >| Opzione | Quando scegliere | Considerazioni |
 >| --- | --- | --- |
->| Allow re-entry (with cooldown) | The event can legitimately recur and each occurrence warrants a message (e.g., each cart abandonment should trigger a recovery message) | Set a cooldown period (minimum 5 minutes) to prevent rapid re-entry from duplicate events; typical cooldown ranges from 1 hour to 72 hours |
->| No re-entry | The message should only be sent once per profile regardless of event recurrence (e.g., welcome message after first registration) | Profile is permanently excluded after first journey completion; appropriate for one-time lifecycle messages |
+>| Consenti rientro (con raffreddamento) | L’evento può legittimamente ripetersi e ogni occorrenza richiede un messaggio (ad esempio, ogni abbandono del carrello dovrebbe attivare un messaggio di recupero) | Imposta un periodo di raffreddamento (minimo 5 minuti) per evitare il rapido rientro da eventi duplicati; il normale intervallo di raffreddamento va da 1 ora a 72 ore |
+>| Nessun reinserimento | Il messaggio deve essere inviato una sola volta per profilo, indipendentemente dalla ricorrenza dell’evento (ad esempio, messaggio di benvenuto dopo la prima registrazione) | Il profilo viene escluso definitivamente dopo il completamento del primo percorso; appropriato per messaggi del ciclo di vita una tantum |
 
 >[!NOTE]
 >
->**Decision: Wait duration (Option B only)**
+>**Decisione: durata attesa (solo opzione B)**
 >
->How long should the journey wait before evaluating conditions and sending the message?
+>Quanto tempo deve attendere il percorso prima di valutare le condizioni e inviare il messaggio?
 >
 >| Opzione | Quando scegliere | Considerazioni |
 >| --- | --- | --- |
@@ -582,7 +582,7 @@ Le seguenti fasi descrivono l’implementazione end-to-end della messaggistica a
 
 **Opzioni divergenti:**
 
-**Per L&#39;Opzione A (Attivata Da Un Semplice Evento):**
+**Per L&#39;Opzione A (Semplice Attivata Da Evento):**
 L’area di lavoro del percorso è minima: voce evento > consenso facoltativo/condizione di idoneità > azione messaggio > fine. Nessun passaggio di attesa o controllo della conversione. Impostare le regole di reinserimento in base all&#39;eventualità che l&#39;evento generi un messaggio ogni volta che si verifica.
 
 **Opzione B (condizionale con attesa):**
@@ -593,12 +593,12 @@ Configurare i limiti di frequenza a livello di organizzazione tramite Amministra
 
 **Documentazione di Experience League:**
 
-- [Creazione di un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Creare un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
 - [Proprietà del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
 - [Eventi generali](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
-- [Attività Condizione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Attività Condizione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
 - [Attività Attendi](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
+- [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [Criteri di uscita](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [Gestione voci percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
 - [Regole di frequenza](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
@@ -760,13 +760,13 @@ Le risorse seguenti forniscono ulteriori dettagli sulle funzionalità utilizzate
 ### Orchestrazione percorso
 
 - [Introduzione ai percorsi](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/journey)
-- [Creazione di un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Creare un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
 - [Proprietà del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
 - [Eventi generali](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
 - [Eventi di qualificazione del pubblico](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
-- [Attività Condizione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Attività Condizione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
 - [Attività Attendi](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
+- [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [Criteri di uscita](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [Gestione voci percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
 - [Test del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
