@@ -3,10 +3,10 @@ title: Catalogo dei casi d’uso
 description: Sfoglia i casi d’uso del settore in verticale per trovare il punto di partenza ideale per il tuo percorso Adobe Experience Platform e Applications, con collegamenti ai modelli di implementazione e agli obiettivi aziendali.
 doc-type: overview-page
 exl-id: 38593314-b8c9-49f6-85db-a4345ec444e7
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '4157'
-ht-degree: 31%
+ht-degree: 30%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 31%
 
 I casi d’uso di settore mostrano come le organizzazioni in verticali specifici applicano Adobe Experience Platform e le applicazioni per ottenere risultati aziendali misurabili. Ogni caso d&#39;uso descrive uno scenario di business concreto, il relativo impatto previsto e fornisce collegamenti al [modello di caso d&#39;uso](/help/blueprints/use-case-patterns/overview.md) che fornisce indicazioni dettagliate sull&#39;implementazione.
 
-Sfoglia per settore per trovare casi d’uso rilevanti per la tua organizzazione, quindi segui i collegamenti ai modelli per i riferimenti all’implementazione, comprese le linee guida decisionali, le catene di funzioni e la documentazione di Experience League.
+Sfoglia per settore per trovare casi d’uso rilevanti per la tua organizzazione, quindi segui i collegamenti ai modelli per i riferimenti all’implementazione, tra cui linee guida decisionali, piani di esecuzione e documentazione di Experience League.
 
 | Settore | Temi chiave |
 | --- | --- |
@@ -31,7 +31,7 @@ Sfoglia per settore per trovare casi d’uso rilevanti per la tua organizzazione
 
 ## Collegamento dei casi d’uso alle linee guida per l’implementazione
 
-Ogni caso d&#39;uso si collega a un **modello di caso d&#39;uso**: un approccio di implementazione ripetibile che descrive la catena di funzioni, i punti decisionali e i passaggi di configurazione necessari per rendere effettivo il caso d&#39;uso. I modelli dei casi d&#39;uso si connettono a loro volta a [obiettivi aziendali chiave](/help/blueprints/business-objectives/overview.md), aiutandoti ad allineare il lavoro di implementazione con i risultati strategici.
+Ogni caso d&#39;uso si collega a un **modello di caso d&#39;uso**: un approccio di implementazione ripetibile che descrive il piano di esecuzione, i punti decisionali e i passaggi di configurazione necessari per dare vita al caso d&#39;uso. I modelli dei casi d&#39;uso si connettono a loro volta a [obiettivi aziendali chiave](/help/blueprints/business-objectives/overview.md), aiutandoti ad allineare il lavoro di implementazione con i risultati strategici.
 
 ```
 Industry Use Case → Use Case Pattern → Key Business Objective

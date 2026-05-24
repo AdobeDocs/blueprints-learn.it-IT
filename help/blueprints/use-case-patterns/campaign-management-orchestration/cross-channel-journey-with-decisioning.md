@@ -3,7 +3,7 @@ title: Percorso cross-channel con decisioning
 description: Scopri come orchestrare un percorso con più passaggi che incorporano decisioni in tempo reale per selezionare canali, contenuti o offerte ottimali.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: eabdd91f-bb7d-4de3-adb5-5940d3ca4a78
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '9029'
 ht-degree: 2%
@@ -42,11 +42,11 @@ I seguenti obiettivi di business sono supportati da questo modello di casi d’u
 
 **[Distribuisci esperienze cliente personalizzate](../../business-objectives/customer-experience/deliver-personalized-customer-experiences.md)**
 Personalizza contenuti, offerte e messaggi in base a preferenze, comportamenti e fasi del ciclo di vita individuali.
-**KPI:** coinvolgimento, tassi di conversione, soddisfazione cliente (CSAT)
+**KPI:** coinvolgimento, tassi di conversione, soddisfazione del cliente (CSAT)
 
 **[Aumenta la fedeltà dei clienti e il valore del ciclo di vita](../../business-objectives/revenue-monetization/increase-customer-loyalty-lifetime-value.md)**
 Approfondisci le relazioni con i clienti e massimizza il valore a lungo termine tramite programmi di fidelizzazione, premi e coinvolgimento personalizzato.
-**KPI:** valore ciclo di vita cliente, conservazione, upselling/cross-selling %
+**KPI:** valore ciclo di vita cliente, mantenimento, upselling/cross-selling %
 
 **[Miglioramento della conservazione dei clienti](../../business-objectives/customer-experience/improve-customer-retention.md)**
 Coinvolgi e rinnova i clienti esistenti tramite esperienze basate sul valore aggiunto e lo sviluppo di relazioni continuative.
@@ -88,48 +88,48 @@ Utilizza i seguenti KPI per misurare l’efficacia di questo modello di caso d�
 
 Orchestrazione di un percorso multicanale in più passaggi che incorpora decisioni in tempo reale in uno o più nodi per selezionare il canale, il contenuto o l’offerta ottimale.
 
-**Catena di funzioni:** Valutazione del pubblico > Esecuzione del Percorso > Nodo di decisione > Selezione canale > Consegna messaggi > Reporting
+**Piano di esecuzione:** Valutazione del pubblico > Esecuzione del Percorso > Nodo di decisione > Selezione canale > Consegna messaggi > Reporting
 
 ## Applicazioni
 
 Per implementare questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer] ([!DNL AJO])** — orchestrazione del Percorso (progettazione area di lavoro con più passaggi, condizioni di ingresso, attese, condizioni, criteri di uscita), authoring dei messaggi tra canali, configurazione della superficie di canale, gestione dei conflitti e delle priorità
+- **[!DNL Adobe Journey Optimizer]([!DNL AJO])** — orchestrazione del Percorso (progettazione area di lavoro con più passaggi, condizioni di ingresso, attese, condizioni, criteri di uscita), authoring dei messaggi tra canali, configurazione della superficie di canale, gestione dei conflitti e delle priorità
 - **[!DNL Adobe Journey Optimizer]Decisioning** — Gestione di offerte e contenuti, regole di idoneità, strategie di classificazione (priorità, formula, IA), criteri di decisione, posizionamenti, offerte di fallback
-- **[!DNL Adobe Real-Time Customer Data Platform] ([!DNL RT-CDP])** — Valutazione del pubblico per i segmenti di idoneità delle offerte e delle voci di percorso, arricchimento dei profili con attributi calcolati e punteggi di propensione, applicazione del consenso e della governance
-- **[!DNL Adobe Experience Platform] ([!DNL AEP])** — Archivio Profilo cliente in tempo reale, servizio Identity per la risoluzione cross-channel, modellazione dati e infrastruttura di acquisizione
+- **[!DNL Adobe Real-Time Customer Data Platform]([!DNL RT-CDP])** — Valutazione del pubblico per i segmenti di idoneità delle offerte e delle voci di percorso, arricchimento dei profili con attributi calcolati e punteggi di propensione, applicazione del consenso e della governance
+- **[!DNL Adobe Experience Platform]([!DNL AEP])** — Archivio Profilo cliente in tempo reale, servizio Identity per la risoluzione cross-channel, modellazione dati e infrastruttura di acquisizione
 
-## Funzioni fondamentali
+## Funzionalità fondamentali
 
-Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzione, lo stato indica se in genere è obbligatorio, se si presume che sia preconfigurato o meno applicabile.
+Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzionalità, lo stato indica se in genere è richiesta, se si presume che sia preconfigurata o meno.
 
-| Funzione fondamentale | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
+| Funzionalità di base | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Amministrazione e governance | Presunto sul posto | [!DNL AJO] sandbox with journey, campaign, and decisioning permissions configured. Channel surfaces for all possible delivery channels. User roles for journey designers, decisioning managers, and content authors. | [Panoramica sulle sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/home), [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
-| Modellazione e preparazione dei dati | Obbligatorio | Profile schema must include attributes used for decisioning (for example, loyalty tier, purchase history, channel preferences, engagement scores). Offer catalog and decision item schemas must be configured. ExperienceEvent schemas must capture behavioral signals used by eligibility rules and ranking formulas. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home), [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition) |
-| Origini dati e raccolta | Presunto sul posto | Profile attributes and behavioral signals used by decisioning must be current. Real-time event streaming is needed if the journey uses event-triggered entry or exit criteria. Web SDK, Mobile SDK, or server-side collection must be active for channels that feed decisioning context. | [Panoramica di Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home), [Panoramica delle origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home) |
-| Configurazione identità e profilo | Obbligatorio | Cross-channel identity resolution is critical — the journey must resolve profiles across email, push, SMS, and web. Merge policies must produce a unified profile for decisioning. Identity namespaces for all customer identifiers (CRM ID, email, ECID, phone) must be configured. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home), [Panoramica dei criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview) |
-| Definizione e segmentazione del pubblico | Obbligatorio | Definizione del pubblico di ingresso per il percorso. Segmenti aggiuntivi utilizzati per le regole di idoneità delle offerte e per la ramificazione delle condizioni all’interno del percorso. Il metodo di valutazione deve corrispondere ai requisiti di latenza (streaming per immissione in tempo reale, batch per pianificata). | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home), [Guida dell&#39;interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder) |
+| Amministrazione e governance | Presunto sul posto | Sandbox [!DNL AJO] con autorizzazioni di percorso, campagna e decisioning configurate. Superfici di canale per tutti i possibili canali di consegna. Ruoli utente per designer di percorsi, responsabili delle decisioni e autori di contenuti. | [Panoramica sulle sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/home), [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| Modellazione e preparazione dei dati | Obbligatorio | Lo schema del profilo deve includere attributi utilizzati per le decisioni (ad esempio, livello fedeltà, cronologia acquisti, preferenze del canale, punteggi di coinvolgimento). È necessario configurare gli schemi del catalogo delle offerte e degli elementi decisionali. Gli schemi ExperienceEvent devono acquisire segnali comportamentali utilizzati dalle regole di idoneità e dalle formule di classificazione. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home), [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
+| Origini dati e raccolta | Presunto sul posto | Gli attributi del profilo e i segnali comportamentali utilizzati dal decisioning devono essere correnti. Lo streaming degli eventi in tempo reale è necessario se il percorso utilizza criteri di entrata o uscita attivati da eventi. Web SDK, Mobile SDK o la raccolta lato server devono essere attivi per i canali che alimentano il contesto decisionale. | [Panoramica di Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home), [Panoramica delle origini](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
+| Configurazione identità e profilo | Obbligatorio | La risoluzione delle identità cross-channel è fondamentale: il percorso deve risolvere i profili tra e-mail, push, SMS e web. I criteri di unione devono produrre un profilo unificato per il processo decisionale. È necessario configurare gli spazi dei nomi di identità per tutti gli identificatori del cliente (ID CRM, e-mail, ECID, telefono). | [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home), [Panoramica dei criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
+| Definizione e segmentazione del pubblico | Obbligatorio | Definizione del pubblico di ingresso per il percorso. Segmenti aggiuntivi utilizzati per le regole di idoneità delle offerte e per la ramificazione delle condizioni all’interno del percorso. Il metodo di valutazione deve corrispondere ai requisiti di latenza (streaming per immissione in tempo reale, batch per pianificata). | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home), [Guida dell&#39;interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
 
-## Funzioni di supporto
+## Funzionalità di supporto
 
 Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non sono necessarie per l’esecuzione di base.
 
-| Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
+| Funzionalità di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Creazione di attributi calcolati/derivati | Consigliato | Attributi calcolati come i punteggi di tendenza di Customer AI, i punteggi di coinvolgimento, i punteggi di preferenza dei canali e i calcoli del valore del ciclo di vita migliorano notevolmente la qualità del processo decisionale. Questi attributi di profilo arricchiti consentono regole di idoneità e formule di classificazione più sofisticate. | [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview), [Panoramica di IA per l&#39;analisi dei clienti](https://experienceleague.adobe.com/it/docs/experience-platform/intelligent-services/customer-ai/overview) |
-| Data Lifecycle Management | Consigliato | La cronologia delle offerte e i dati degli eventi decisionali si accumulano nel tempo e dovrebbero includere criteri di conservazione. L’applicazione del consenso su più canali è fondamentale: i profili senza consenso valido per un canale devono essere esclusi dal percorso di consegna di quel canale. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home), [Consenso in Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
-| Etichettatura e applicazione dell’utilizzo dati | Consigliato | L’applicazione della governance su più canali e tipi di offerta è importante quando il processo decisionale può indirizzare i profili a canali diversi con restrizioni di utilizzo dei dati diverse. Garantisce la consegna di offerte conformi su tutti i canali. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home), [Applicazione dei criteri](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/enforcement/overview) |
-| Monitoraggio e osservabilità | Incluso | Il monitoraggio dei percorsi e delle decisioni è essenziale per le operazioni di produzione. Gli avvisi relativi a errori di inserimento nel percorso, picchi di fallback decisionali ed errori di consegna consentono una rapida risoluzione dei problemi. | [Panoramica avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview), [Panoramica approfondimenti osservabilità](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home) |
-| Reporting e analisi | Incluso | Le relazioni sul percorso e sulle decisioni sono trattate nella fase di rendicontazione. L’analisi CJA dell’efficacia del processo decisionale, dell’ottimizzazione del mix di canali, delle prestazioni dell’offerta e del ROI del percorso fornisce le informazioni necessarie per perfezionare le strategie di classificazione e ottimizzare il percorso nel tempo. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview), [Guida all&#39;integrazione di AJO + CJA](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
+| Creazione di attributi calcolati/derivati | Consigliato | Attributi calcolati come i punteggi di tendenza di Customer AI, i punteggi di coinvolgimento, i punteggi di preferenza dei canali e i calcoli del valore del ciclo di vita migliorano notevolmente la qualità del processo decisionale. Questi attributi di profilo arricchiti consentono regole di idoneità e formule di classificazione più sofisticate. | [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview), [Panoramica di IA per l&#39;analisi dei clienti](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview) |
+| Data Lifecycle Management | Consigliato | La cronologia delle offerte e i dati degli eventi decisionali si accumulano nel tempo e dovrebbero includere criteri di conservazione. L’applicazione del consenso su più canali è fondamentale: i profili senza consenso valido per un canale devono essere esclusi dal percorso di consegna di quel canale. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home), [Consenso in Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
+| Etichettatura e applicazione dell’utilizzo dati | Consigliato | L’applicazione della governance su più canali e tipi di offerta è importante quando il processo decisionale può indirizzare i profili a canali diversi con restrizioni di utilizzo dei dati diverse. Garantisce la consegna di offerte conformi su tutti i canali. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home), [Applicazione dei criteri](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) |
+| Monitoraggio e osservabilità | Incluso | Il monitoraggio dei percorsi e delle decisioni è essenziale per le operazioni di produzione. Gli avvisi relativi a errori di inserimento nel percorso, picchi di fallback decisionali ed errori di consegna consentono una rapida risoluzione dei problemi. | [Panoramica avvisi](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview), [Panoramica approfondimenti osservabilità](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| Reporting e analisi | Incluso | Le relazioni sul percorso e sulle decisioni sono trattate nella fase di rendicontazione. L’analisi CJA dell’efficacia del processo decisionale, dell’ottimizzazione del mix di canali, delle prestazioni dell’offerta e del ROI del percorso fornisce le informazioni necessarie per perfezionare le strategie di classificazione e ottimizzare il percorso nel tempo. | [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Guida all&#39;integrazione di AJO + CJA](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
-## Funzioni dell’applicazione
+## Funzionalità dell’applicazione
 
-Questo piano esegue le seguenti funzioni dal catalogo delle funzioni dell&#39;applicazione. Le funzioni sono mappate su fasi di implementazione anziché su passaggi numerati.
+Questo piano esegue le seguenti funzionalità dal catalogo delle funzionalità dell&#39;applicazione. Le funzionalità sono mappate alle fasi di implementazione anziché ai passaggi numerati.
 
 ### [!DNL Journey Optimizer] ([!DNL AJO])
 
-| Funzione | Fase di implementazione | Descrizione |
+| Funzionalità | Fase di implementazione | Descrizione |
 | --- | --- | --- |
 | Configurazione canali | Fase 2: configurazione del canale | Configurare le superfici di canale per tutti i canali che possono essere selezionati con le decisioni o utilizzati dal percorso (e-mail, SMS, push, in-app) |
 | Authoring dei messaggi | Fase 4: authoring dei messaggi | Contenuto dei messaggi di authoring per ciascun canale e integrazione dell’output decisionale: posizionamenti di offerte, blocchi di contenuto dinamici, token di personalizzazione da offerte selezionate |
@@ -141,7 +141,7 @@ Questo piano esegue le seguenti funzioni dal catalogo delle funzioni dell&#39;ap
 
 ### [!DNL Real-Time CDP] ([!DNL RT-CDP])
 
-| Funzione | Fase di implementazione | Descrizione |
+| Funzionalità | Fase di implementazione | Descrizione |
 | --- | --- | --- |
 | Valutazione del pubblico | Fase 1: Valutazione del pubblico | Definire e valutare il pubblico di ingresso o l’evento di ingresso qualificato; creare segmenti di idoneità utilizzati dalle decisioni |
 | Arricchimento del profilo | Prerequisito/supporto | Arricchisci i profili con attributi calcolati e punteggi di propensione che migliorano la qualità delle decisioni |
@@ -239,8 +239,8 @@ Questo approccio ottimizza il canale di distribuzione mantenendo al tempo stesso
 
 #### Riferimenti ad Experience League
 
-- [Attività Condizione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
-- [Creazione di un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Attività Condizione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Creare un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
 
 ### Opzione C: percorso adattivo completo (canale dinamico + contenuto dinamico)
 
@@ -316,7 +316,7 @@ Le seguenti fasi descrivono l’implementazione end-to-end di questo modello di 
 
 ### Fase 1: Valutazione del pubblico
 
-**Funzione dell&#39;applicazione:** [!DNL RT-CDP]: valutazione del pubblico
+**Funzionalità dell&#39;applicazione:** [!DNL RT-CDP]: valutazione del pubblico
 
 Questa fase configura il pubblico di ingresso che determina i profili che entrano nel percorso ed eventuali altri segmenti utilizzati per le regole di idoneità delle offerte o per la diramazione delle condizioni all’interno del percorso. La definizione del pubblico è la base per tutta la logica decisionale e di percorso a valle.
 
@@ -354,14 +354,14 @@ Quanto rapidamente il pubblico deve qualificare i profili?
 
 #### Documentazione di Experience League
 
-- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
-- [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Segmentazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Riferimento Profile Query Language](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/pql/overview)
+- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Segmentazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Riferimento Profile Query Language](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### Fase 2: configurazione del canale
 
-**Funzione applicazione:** [!DNL AJO]: Configurazione canale
+**Funzionalità applicazione:** [!DNL AJO]: configurazione canale
 
 Questa fase configura le superfici di canale per ogni canale che il percorso può utilizzare per la consegna dei messaggi. Prima di poter creare i messaggi o pubblicare il percorso, tutti i canali candidati devono avere superfici attive e verificate. Per questo pattern, in genere si configurano superfici per e-mail, SMS e push come minimo e, potenzialmente, in-app o web, se il processo decisionale può selezionare tali canali.
 
@@ -390,32 +390,32 @@ Come deve essere delegato il sottodominio di invio ad Adobe?
 **Navigazione interfaccia utente:** Amministrazione > Canali > Superfici di canale > Crea superficie
 
 - Per le e-mail: configura sottodominio, pool IP, nome del mittente, indirizzo di risposta e gestione dell’annullamento dell’abbonamento
-- For SMS: configure SMS provider credentials and sender number
-- For push: configure APNs and FCM credentials for iOS and Android
-- Verify each surface is in Active status before proceeding
-- Confirm IP warmup is complete for email sending IPs
+- Per SMS: configura le credenziali del provider SMS e il numero del mittente
+- Per il push: configura le credenziali APN e FCM per iOS e Android
+- Verificare che ogni superficie sia nello stato Attivo prima di procedere
+- Conferma completamento riscaldamento IP per gli IP di invio e-mail
 
 #### Documentazione di Experience League
 
-- [Introduzione alla configurazione delle e-mail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [Introduzione alla configurazione delle e-mail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
 - [Delega sottodomini](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/delegate-subdomain)
 - [Creare pool IP](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-pools)
-- [Configurare il canale SMS](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [Configurare il canale SMS](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 - [Configurare il canale di notifica push](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/configure-push/push-configuration)
 
-### Phase 3: Decisioning setup
+### Fase 3: Impostazione del processo decisionale
 
-**Application function:** [!DNL AJO]: Decisioning
+**Funzionalità dell&#39;applicazione:** [!DNL AJO]: Decisioning
 
-This phase configures the complete decisioning framework including placements, eligibility rules, personalized offers, fallback offers, collection qualifiers, collections, ranking strategies, and decision policies. This phase creates the decision logic that will be invoked at journey decision points.
+Questa fase configura il framework decisionale completo, inclusi posizionamenti, regole di idoneità, offerte personalizzate, offerte di fallback, qualificatori di raccolta, raccolte, strategie di classificazione e criteri decisionali. Questa fase crea la logica decisionale che verrà richiamata ai punti di decisione del percorso.
 
-#### Decision: Decisioning scope
+#### Decisione: ambito decisionale
 
-What should decisioning select — offers/content (Option A), channels (Option B), or both (Option C)?
+Cosa deve selezionare il decisioning: offerte/contenuti (opzione A), canali (opzione B) o entrambi (opzione C)?
 
 | Opzione | Quando scegliere | Considerazioni |
 | --- | --- | --- |
-| Offer/content selection only | Channel sequence is fixed; personalization is in the content | I criteri di decisione eseguono il targeting degli elementi di offerta con rappresentazioni di contenuto per posizionamento |
+| Solo selezione offerta/contenuto | La sequenza di canali è fissa; la personalizzazione è nel contenuto | I criteri di decisione eseguono il targeting degli elementi di offerta con rappresentazioni di contenuto per posizionamento |
 | Solo selezione canale | Il contenuto è coerente; l’ottimizzazione si trova sul canale di consegna | Gli elementi decisionali rappresentano i canali; l’idoneità include i controlli del consenso; la classificazione utilizza i dati del coinvolgimento |
 | Canale e contenuto | Personalizzazione adattiva completa su canali e contenuti | Richiede due livelli di criteri decisionali; la personalizzazione più complessa ma più elevata |
 
@@ -457,7 +457,7 @@ Dovrebbero esserci limiti sul numero di volte in cui viene visualizzata un’off
 **Per L&#39;Opzione A (Offer Decisioning):**
 Crea posizionamenti e offerte incentrati sulla personalizzazione dei contenuti all’interno di ciascun canale (ad esempio, offerta banner e-mail hero, offerta piè di pagina e-mail, offerta corpo della notifica push). I criteri di decisione selezionano il contenuto migliore per ogni posizionamento nel messaggio.
 
-**Per L&#39;Opzione B (Selezione Canale Dinamico):**
+**Per L&#39;Opzione B (Selezione Dinamica Canale):**
 Crea elementi decisionali che rappresentano ogni canale. Le regole di idoneità includono i controlli del consenso (ad esempio, un profilo deve disporre del consenso SMS per essere idoneo all’elemento SMS). La classificazione utilizza punteggi di coinvolgimento del canale o espressioni basate su formule.
 
 **Per L&#39;Opzione C (Adattabile):**
@@ -466,8 +466,8 @@ Configura due livelli di decisioning: un set di criteri di decisione per la sele
 #### Documentazione di Experience League
 
 - [Panoramica sulla gestione delle decisioni](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [Creare i posizionamenti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [Creare regole di decisione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [Creare i posizionamenti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [Creare regole di decisione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [Creazione di offerte personalizzate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Creare offerte di fallback](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [Creare le raccolte](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
@@ -476,7 +476,7 @@ Configura due livelli di decisioning: un set di criteri di decisione per la sele
 
 ### Fase 4: authoring dei messaggi
 
-**Funzione dell&#39;applicazione:** [!DNL AJO]: authoring dei messaggi
+**Funzionalità applicazione:** [!DNL AJO]: authoring dei messaggi
 
 Questa fase configura il contenuto del messaggio per ogni canale e punto di contatto nel percorso, integrando l’output del decisioning (contenuto dell’offerta selezionata) nei modelli di messaggio. Ogni nodo di azione del messaggio nel percorso richiede contenuti creati con la superficie di canale, i token di personalizzazione e le integrazioni di posizionamento delle offerte appropriate.
 
@@ -517,7 +517,7 @@ Quale livello di personalizzazione deve includere i messaggi oltre all’output 
 **Per L&#39;Opzione A (Offer Decisioning):**
 Ogni messaggio include posizionamenti di offerta in cui viene visualizzato il contenuto selezionato in base alle decisioni. Il layout del messaggio è coerente, ma l’area offerta mostra in modo dinamico l’offerta migliore per ogni profilo.
 
-**Per L&#39;Opzione B (Selezione Canale Dinamico):**
+**Per L&#39;Opzione B (Selezione Dinamica Canale):**
 Ogni canale ha il proprio contenuto di messaggi creato separatamente. Il contenuto è simile per tutti i canali, ma adattato ai vincoli del canale (testo e-mail HTML vs SMS vs. formato di notifica push).
 
 **Per L&#39;Opzione C (Adattabile):**
@@ -529,14 +529,14 @@ Ogni canale ha il proprio contenuto di messaggi con posizionamenti di offerte in
 - [Aggiungere personalizzazione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Contenuto dinamico](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
 - [Consegnare offerte nei messaggi](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
-- [Utilizzare i modelli di contenuto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [Utilizzare i modelli di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [Utilizzare i frammenti di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
-- [Creare un messaggio SMS](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/sms/create-sms)
-- [Progettare una notifica push](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/push/design-push)
+- [Creare un messaggio SMS](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/create-sms)
+- [Progettare una notifica push](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/design-push)
 
 ### Fase 5: progettazione e attivazione del Percorso
 
-**Funzione dell&#39;applicazione:** [!DNL AJO]: Journey Orchestration, [!DNL AJO]: gestione dei conflitti e delle priorità, [!DNL AJO]: regole di frequenza e regole business
+**Funzionalità dell&#39;applicazione:** [!DNL AJO]: Journey Orchestration, [!DNL AJO]: gestione dei conflitti e delle priorità, [!DNL AJO]: frequenza e regole business
 
 Questa fase configura l’area di lavoro completa del percorso, inclusi la configurazione dell’entrata, i nodi decisionali collegati ai criteri di decisione configurati, le suddivisioni delle condizioni per il routing dei canali (Opzioni B/C), i nodi di azione dei messaggi per ciascun percorso di canale, i nodi di attesa tra i punti di contatto, i criteri di uscita, le impostazioni per conflitti/priorità e le regole di quota limite. Questa fase assembla tutti i componenti configurati in precedenza nel flusso di percorso orchestrato e lo attiva.
 
@@ -575,55 +575,55 @@ Questo percorso dovrebbe avere un punteggio di priorità per la risoluzione dei 
 | Opzione | Quando scegliere | Considerazioni |
 | --- | --- | --- |
 | Priorità alta (70-100) | Percorsi di clienti critici (fidelizzazione, fidelizzazione) che dovrebbero avere la precedenza | Una priorità più alta si ottiene quando più comunicazioni competono; utilizzare con moderazione |
-| Priorità Medium (30-69) | Standard lifecycle journeys | Balanced priority; may be suppressed by higher-priority communications |
-| Priorità bassa (0-29) | Supplemental or informational journeys | Will be suppressed when competing with more important communications |
+| Priorità Medium (30-69) | Percorsi del ciclo di vita standard | Priorità bilanciata; può essere soppressa da comunicazioni con priorità più alta |
+| Priorità bassa (0-29) | Percorsi supplementari o informativi | Sarà soppresso quando si compete con comunicazioni più importanti |
 
 #### Dettagli chiave della configurazione
 
-**UI navigation:** Journeys > Create Journey
+**Navigazione interfaccia utente:** Percorsi > Crea Percorso
 
-- Create the journey and configure properties (name, description, timezone, timeout)
-- Configure entry: Read Audience (for batch) or event trigger (for real-time)
-- Add decision nodes linked to configured decision policies from Phase 3
-- Add condition splits for channel routing based on decision output or profile attributes (Options B/C)
-- Add message action nodes for each channel path, linking to the authored content from Phase 4
-- Add wait nodes between touchpoints (minimum 1 hour for audience-read journeys)
-- Define exit criteria (audience change, event, timeout)
-- Assign priority score for conflict resolution
-- Configure frequency capping if cross-journey frequency limits apply
-- Test the journey in test mode with test profiles before publishing
-- Publish the journey to make it live
+- Creare il percorso e configurare le proprietà (nome, descrizione, fuso orario, timeout)
+- Configura voce: Read Audience (per batch) o trigger di evento (per tempo reale)
+- Aggiunta di nodi decisionali collegati ai criteri di decisione configurati dalla fase 3
+- Aggiungere suddivisioni di condizioni per il routing dei canali in base all’output decisionale o agli attributi di profilo (opzioni B/C)
+- Aggiungi nodi di azione del messaggio per ciascun percorso di canale, collegando al contenuto creato dalla fase 4
+- Aggiungi nodi di attesa tra punti di contatto (almeno 1 ora per i percorsi di lettura del pubblico)
+- Definire i criteri di uscita (modifica del pubblico, evento, timeout)
+- Assegna punteggio di priorità per la risoluzione dei conflitti
+- Configurare il limite di frequenza in caso di applicazione dei limiti di frequenza tra percorsi
+- Test del percorso in modalità di test con profili di test prima della pubblicazione
+- Pubblica il percorso per renderlo live
 
 #### Dove le opzioni divergono
 
 **Per L&#39;Opzione A (Offer Decisioning):**
-The journey canvas is linear with decision policies embedded in each message action node. No branching for channel selection. The offer decision is made at message render time within the action node.
+L’area di lavoro del percorso è lineare con i criteri di decisione incorporati in ciascun nodo di azione del messaggio. Nessuna diramazione per la selezione del canale. La decisione sull’offerta viene presa al momento del rendering del messaggio all’interno del nodo dell’azione.
 
-**Per L&#39;Opzione B (Selezione Canale Dinamico):**
-After each wait step, add a condition node that evaluates channel selection criteria (profile attributes, decisioning output, or consent status). Each condition branch leads to a channel-specific message action node. Includi un percorso predefinito/else per i profili che non soddisfano alcuna condizione.
+**Per L&#39;Opzione B (Selezione Dinamica Canale):**
+Dopo ogni passaggio di attesa, aggiungi un nodo di condizione che valuta i criteri di selezione del canale (attributi di profilo, output del decisioning o stato del consenso). Ogni ramo di condizione porta a un nodo di azione del messaggio specifico per il canale. Includi un percorso predefinito/else per i profili che non soddisfano alcuna condizione.
 
 **Per L&#39;Opzione C (Adattabile):**
 Combina i nodi della condizione di selezione del canale con i nodi dell’azione del messaggio incorporati nei criteri di decisione. A ogni punto di contatto: in primo luogo, una condizione o una decisione determina il canale; quindi, all’interno dell’azione del messaggio del canale selezionato, un criterio di decisione seleziona l’offerta o il contenuto ottimale.
 
 #### Documentazione di Experience League
 
-- [Creazione di un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
-- [Proprietà del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
-- [Attività Read audience](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
-- [Attività Condizione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
-- [Attività Attendi](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
+- [Creare un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Proprietà del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
+- [Attività Read audience](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [Attività Condizione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Attività Attendi](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
+- [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [Criteri di uscita](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [Gestione voci percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
-- [Test del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
+- [Test del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
 - [Pubblicare il percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/publishing-the-journey)
-- [Punteggi di priorità](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
-- [Panoramica sulla gestione dei conflitti e delle priorità](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
+- [Punteggi di priorità](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
+- [Panoramica sulla gestione dei conflitti e delle priorità](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
 - [Regole di frequenza](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
 
 ### Fase 6: Reporting e monitoraggio
 
-**Funzione applicazione:** [!DNL AJO]: Reporting e analisi delle prestazioni
+**Funzionalità applicazione:** [!DNL AJO]: Reporting e analisi delle prestazioni
 
 Questa fase configura il monitoraggio delle prestazioni del percorso e del processo decisionale tramite rapporti live (durante l’esecuzione) e cronologici (dopo il completamento). Metriche specifiche per il processo decisionale, tra cui distribuzione della selezione delle offerte, tassi di fallback ed efficacia della classificazione. Facoltativamente, analisi dello spazio di lavoro CJA per un percorso cross-channel approfondito e analisi del ROI decisionale.
 
@@ -652,8 +652,8 @@ Quale livello di analisi dei rapporti è necessario?
 - [Rapporto live del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [Rapporto globale percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [Utilizzare Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/home)
-- [Guida all’integrazione di AJO e CJA](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Guida all’integrazione di AJO e CJA](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 
 ## Considerazioni sull’implementazione
 
@@ -661,7 +661,7 @@ Rivedi i seguenti guardrail, insidie comuni, best practice e decisioni di compro
 
 ### Guardrail e limiti
 
-- Massimo 500 percorsi live per sandbox: [guardrail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
+- Massimo 500 percorsi live per sandbox: [guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 - La durata massima del percorso è di 91 giorni (timeout globale)
 - Massimo 50 attività per area di lavoro del percorso
 - Read Audience percorsi può elaborare fino a 20.000 profili al secondo
@@ -673,7 +673,7 @@ Rivedi i seguenti guardrail, insidie comuni, best practice e decisioni di compro
 - Massimo 10 superfici di canale per tipo di canale per sandbox
 - I passaggi di attesa hanno una durata minima di 1 ora per i percorsi di lettura del pubblico
 - Il tempo percorso di rientro è di almeno 5 minuti
-- Massimo 4.000 definizioni di segmenti per sandbox: [guardrail della piattaforma](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
+- Massimo 4.000 definizioni di segmenti per sandbox: [guardrail della piattaforma](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 
 ### Insidie comuni
 
@@ -751,96 +751,96 @@ Le risorse seguenti forniscono ulteriori dettagli sulle funzionalità utilizzate
 
 ### Orchestrazione percorso
 
-- [Introduzione ai percorsi](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/journey)
-- [Creazione di un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
-- [Proprietà del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
-- [Attività Read audience](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
-- [Eventi generali](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
-- [Eventi di qualificazione del pubblico](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
-- [Attività Condizione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
-- [Attività Attendi](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
+- [Introduzione ai percorsi](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey)
+- [Creare un percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
+- [Proprietà del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
+- [Attività Read audience](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [Eventi generali](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
+- [Eventi di qualificazione del pubblico](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
+- [Attività Condizione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [Attività Attendi](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
+- [Aggiungere un messaggio in un percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [Criteri di uscita](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [Gestione voci percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
-- [Test del percorso](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
+- [Test del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
 - [Pubblicare il percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/publishing-the-journey)
 
 ### Gestione delle decisioni
 
 - [Panoramica sulla gestione delle decisioni](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [Creare i posizionamenti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [Creare regole di decisione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [Creare i posizionamenti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [Creare regole di decisione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [Creazione di offerte personalizzate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Creare offerte di fallback](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [Creare le raccolte](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
-- [Creare qualificatori di raccolta](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
+- [Creare qualificatori di raccolta](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
 - [Crea decisioni](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 - [Strategie di classificazione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/ranking/ranking-strategies)
 - [Consegnare offerte nei messaggi](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
 
 ### Configurazione dei canali
 
-- [Introduzione alla configurazione delle e-mail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [Introduzione alla configurazione delle e-mail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
 - [Delega sottodomini](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/delegate-subdomain)
 - [Creare pool IP](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-pools)
 - [Piani di riscaldamento IP](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-warmup/ip-warmup-gs)
-- [Impostazioni superficie e-mail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
-- [Configurare il canale SMS](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [Impostazioni superficie e-mail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
+- [Configurare il canale SMS](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 - [Configurare il canale di notifica push](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/configure-push/push-configuration)
 
 ### Authoring e personalizzazione dei messaggi
 
-- [Creare un messaggio e-mail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/email/create-email)
+- [Creare un messaggio e-mail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/create-email)
 - [Progettare contenuti e-mail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/design-emails)
 - [Aggiungere personalizzazione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Sintassi Personalization](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalization-syntax)
 - [Contenuto dinamico](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
-- [Utilizzare i modelli di contenuto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [Utilizzare i modelli di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [Utilizzare i frammenti di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
-- [Anteprima e test del contenuto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/preview-test/preview-test)
+- [Anteprima e test del contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/preview-test/preview-test)
 
 ### Gestione dei conflitti, delle priorità e delle frequenze
 
-- [Panoramica sulla gestione dei conflitti e delle priorità](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
-- [Punteggi di priorità](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
-- [Identificare potenziali conflitti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/conflicts)
-- [Limitazione di percorso e arbitrato](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/conflict-prioritization/journey-capping)
+- [Panoramica sulla gestione dei conflitti e delle priorità](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
+- [Punteggi di priorità](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
+- [Identificare potenziali conflitti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/conflicts)
+- [Limitazione di percorso e arbitrato](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/journey-capping)
 - [Regole di frequenza](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
 
 ### Tipi di pubblico e segmentazione
 
-- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
-- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
-- [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Segmentazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Composizione del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-composition)
-- [Riferimento Profile Query Language](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/pql/overview)
+- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Segmentazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Composizione del pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [Riferimento Profile Query Language](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### Reporting e analisi
 
 - [Rapporto live del percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [Rapporto globale percorso](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [Utilizzare Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Guida all’integrazione di AJO e CJA](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
-- [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/home)
+- [Guida all’integrazione di AJO e CJA](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
 
 ### Profilo e identità
 
-- [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/home)
-- [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
-- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview)
-- [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview)
-- [Panoramica di Customer AI](https://experienceleague.adobe.com/it/docs/experience-platform/intelligent-services/customer-ai/overview)
+- [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [Panoramica degli attributi calcolati](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- [Panoramica di Customer AI](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview)
 
 ### Governance dei dati e consenso
 
-- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home)
+- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
 - [Consenso in Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted)
-- [Gestire l’elenco di soppressione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list)
+- [Gestire l’elenco di soppressione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list)
 
 ### Guardrail
 
-- [Guardrail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
-- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
-- [Guardrail del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/guardrails)
+- [Guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Guardrail del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)

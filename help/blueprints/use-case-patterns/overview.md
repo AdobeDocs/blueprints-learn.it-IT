@@ -4,7 +4,7 @@ description: Scopri i modelli di casi d’uso per l’implementazione di Adobe E
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 doc-type: overview-page
 exl-id: 58caa6ad-0d1c-4290-9614-c68c9c9028bb
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Modelli di casi d’uso
 
-I modelli di casi d’uso definiscono approcci di implementazione ripetibili per Adobe Experience Platform e le applicazioni. Ogni modello descrive una funzionalità specifica, la catena di funzioni che la distribuisce, le applicazioni coinvolte e gli [obiettivi aziendali chiave](/help/blueprints/business-objectives/overview.md) supportati.
+I modelli di casi d’uso definiscono approcci di implementazione ripetibili per Adobe Experience Platform e le applicazioni. Ogni modello descrive una funzionalità specifica, il piano di esecuzione che la distribuisce, le applicazioni coinvolte e i [obiettivi aziendali chiave](/help/blueprints/business-objectives/overview.md) supportati.
 
 Utilizza le tabelle seguenti per trovare il modello che soddisfa le tue esigenze di implementazione, quindi segui il collegamento alla documentazione completa sull’implementazione, comprese opzioni, fasi, guida decisionale e documentazione di Experience League.
 

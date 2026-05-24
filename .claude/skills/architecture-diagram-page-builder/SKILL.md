@@ -1,9 +1,9 @@
 ---
 name: architecture-diagram-page-builder
 description: 'Guida alla creazione di nuove pagine di diagramma dell’architettura per l’archivio dei blueprint di Adobe Experience Platform. Utilizza questa abilità per aggiungere un nuovo diagramma dell’architettura di livello superiore, una pagina dell’architettura di integrazione o una panoramica dell’architettura delle applicazioni. Le pagine dell’architettura descrivono architetture AEP di primo livello, architetture di applicazioni e punti di integrazione primari, non casi d’uso approfonditi (che appartengono a use-case-pattern-builder). Gestisce l’intero flusso di lavoro: raccolta delle informazioni di pagina, generazione del file Markdown, inserimento nella cartella degli argomenti corretta e aggiornamento di TOC.md.'
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1393'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Le pagine del diagramma dell&#39;architettura sono **pagine concentrate e in sti
 - È illustrato un breve elenco dei flussi di dati primari e dei punti di integrazione
 - Collegamenti Experience League per ulteriori informazioni sul dominio dell’applicazione
 
-Sono **non** il luogo in cui inserire il contenuto del caso d&#39;uso approfondito. I KPI, gli obiettivi aziendali, gli esempi di casi d&#39;uso tattici, le catene di funzioni e le narrazioni personalizzate appartengono invece alle pagine dei modelli di casi d&#39;uso, generate tramite l&#39;abilità `use-case-pattern-builder`. Vedere `references/scope-guardrails.md` per i guardrail completi.
+Sono **non** il luogo in cui inserire il contenuto del caso d&#39;uso approfondito. I KPI, gli obiettivi aziendali, gli esempi di casi d&#39;uso tattici, le funzionalità e le narrazioni personalizzate appartengono invece alle pagine dei modelli di casi d&#39;uso, generate tramite l&#39;abilità `use-case-pattern-builder`. Vedere `references/scope-guardrails.md` per i guardrail completi.
 
 ## Lettura richiesta prima dell&#39;avvio
 
@@ -71,7 +71,7 @@ Intervistare l&#39;utente per raccogliere tutte le informazioni necessarie prima
 
 8. **Flussi di dati primari/punti di integrazione** — 3-7 punti elenco che descrivono i flussi chiave e i limiti di integrazione visualizzati nei diagrammi (ad esempio, `Real-time event ingestion from Web SDK to Edge Network`, `Profile synchronization between Experience Platform Hub and Edge`).
 
-9. **Collegamenti Experience League** — 3-6 collegamenti alla documentazione pertinente di Experience League per ulteriori informazioni. Ogni deve iniziare con `https://experienceleague.adobe.com/it`.
+9. **Collegamenti Experience League** — 3-6 collegamenti alla documentazione pertinente di Experience League per ulteriori informazioni. Ogni deve iniziare con `https://experienceleague.adobe.com/`.
 
    **Consigliare prima i candidati.** In base alle soluzioni Adobe e allo scopo della pagina, propone 4-8 articoli Experience League plausibili (ad esempio, le pagine di destinazione canoniche o di panoramica per ciascuna soluzione denominata, le guide all’integrazione chiave e i riferimenti alla distribuzione). Per ogni suggerimento, presenta:
    - Titolo articolo
@@ -95,7 +95,7 @@ Se nel contenuto pianificato viene visualizzato uno dei seguenti elementi, avvis
 - KPI o formule di misurazione
 - Obiettivi aziendali o narrazioni sull’impatto aziendale
 - Esempi di casi d’uso tattici (scenari di personalizzazione specifici, esempi di campagne, ecc.)
-- Catene di funzioni (`A > B > C > D` style)
+- Funzionalità (`A > B > C > D` style)
 - Narrazione basata su persone
 
 Se il contenuto pianificato rimane nell’ambito dell’architettura della pagina (architettura di livello superiore, flusso di dati del sistema, punti di integrazione, topologia di distribuzione, edge o hub), conferma con l’utente e procedi alla fase 3.
@@ -176,7 +176,7 @@ Dopo aver creato e aggiornato tutti i file, verifica quanto segue e segnala even
 
 2. **Collegamenti per casi d&#39;uso**: ogni collegamento per motivi nel file punta a un file Markdown esistente in `/help/blueprints/use-case-patterns/`. Utilizza `Read` o glob per confermare l&#39;esistenza di ogni destinazione.
 
-3. **Collegamenti Experience League** - Controllare che ogni URL nella sezione `## Further reading` inizi con `https://experienceleague.adobe.com/it`.
+3. **Collegamenti Experience League** - Controllare che ogni URL nella sezione `## Further reading` inizi con `https://experienceleague.adobe.com/`.
 
 4. **Posizionamento voce sommario**: la nuova voce si trova all&#39;interno della sottosezione corretta, utilizza il rientro a 4 spazi e il percorso corrisponde esattamente alla posizione del file generato.
 
@@ -192,4 +192,4 @@ Correggi eventuali problemi di convalida prima di considerare il completamento d
 - I diagrammi di architettura sono tipicamente SVG (preferiti per la nitidezza e il ridimensionamento), ma PNG è accettabile per i disegni raster-source.
 - Le stringhe di incorporamento in linea (`border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;`) e `class="modal-image"` di `<img>` sono obbligatorie e abilitano l&#39;interazione di zoom modale di Experience League.
 - Se l&#39;utente sta creando una pagina per una nuova cartella di argomenti che non esiste ancora, avvisare che TOC.md richiede una nuova sottosezione di livello superiore in `+ Architecture Diagrams and Blueprints{#architecture-diagrams}`. Gestiscilo come passaggio separato con l’approvazione esplicita dell’utente.
-- Se il diagramma dell&#39;architettura documenta ampiamente un *caso d&#39;uso singolo end-to-end* (con KPI, obiettivi aziendali, catena di funzioni), reindirizzare l&#39;utente a `use-case-pattern-builder`, che non è una pagina dell&#39;architettura.
+- Se il diagramma dell&#39;architettura documenta ampiamente un *caso d&#39;uso singolo end-to-end* (con KPI, obiettivi aziendali, funzionalità), reindirizzare l&#39;utente a `use-case-pattern-builder`, che non è una pagina dell&#39;architettura.

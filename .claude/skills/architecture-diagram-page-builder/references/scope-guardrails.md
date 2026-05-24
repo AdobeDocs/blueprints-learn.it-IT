@@ -1,7 +1,7 @@
 ---
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Se scrivi uno dei seguenti elementi, reindirizza a una pagina di pattern del cas
 | KPI e formule di misurazione | I modelli di casi d’uso misurano i risultati; le pagine dell’architettura non |
 | Obiettivi aziendali, impatto aziendale | Il contenuto KBO si trova in `/help/blueprints/business-objectives/`; i modelli vi fanno riferimento |
 | Esempi di casi d’uso tattici | &quot;Promemoria di abbandono carrello&quot;, &quot;eroe homepage personalizzato&quot;, ecc. — questi sono contenuti pattern |
-| Catene di funzioni (`A > B > C > D`) | Il costrutto a catena di funzioni fa parte del modello di pattern Use Case |
+| Funzionalità (`A > B > C > D`) | Il costrutto delle funzionalità fa parte del modello di pattern del caso di utilizzo |
 | Narrative personali | &quot;Maria l&#39;addetta al marketing vuole...&quot; gli scenari di stile appartengono ai modelli, non ai riferimenti all’architettura |
 | Opzioni di implementazione | Le linee guida per l’implementazione con più opzioni (consigliate per, come funziona, vantaggi, limitazioni) sono un costrutto per pattern |
 | Tabelle delle funzioni fondamentali/di supporto | Queste sono sezioni di pagina pattern |
@@ -47,7 +47,7 @@ Se l’utente fornisce una di queste frasi durante la descrizione della nuova pa
 - &quot;KPI&quot;
 - &quot;impatto aziendale&quot; / &quot;risultati aziendali&quot;
 - &quot;casi d’uso tattici&quot;/&quot;scenari d’esempio&quot;
-- &quot;catena di funzioni&quot;
+- &quot;funzionalità&quot;
 - &quot;opzioni di implementazione&quot;
 - &quot;ideale per&quot;
 - &quot;vantaggi e limitazioni&quot;
