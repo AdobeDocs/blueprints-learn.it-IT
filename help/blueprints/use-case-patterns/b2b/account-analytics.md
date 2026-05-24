@@ -121,7 +121,7 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 | Data Lifecycle Management | Consigliato | I set di dati B2B, in particolare i dati degli eventi comportamentali di [!DNL Marketo Engage], possono crescere rapidamente. Le regole di scadenza dei dataset consentono di gestire lo storage e garantire la conformità ai requisiti di conservazione dei dati. | [Gestione avanzata del ciclo di vita dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Consigliato | I dati B2B spesso contengono informazioni aziendali sensibili (valori contrattuali, dati sulla concorrenza). Le etichette di utilizzo dei dati e i criteri di governance garantiscono che i dati vengano utilizzati in modo appropriato in tutti i flussi di lavoro di analisi e attivazione. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
 | Monitoraggio e osservabilità | Consigliato | I connettori di origine B2B ([!DNL Marketo], [!DNL Salesforce]) richiedono il monitoraggio per l&#39;integrità dell&#39;acquisizione. Il monitoraggio dello stato della connessione in [!DNL CJA] garantisce l&#39;aggiornamento dei dati per l&#39;analisi. Le regole di avviso per gli errori di acquisizione impediscono l’utilizzo di dashboard non aggiornati. | [Panoramica di Observability Insights](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
-| Reporting e analisi | Incluso | Questo modello è esso stesso un modello di analisi. Questa funzionalità è intrinsecamente inclusa in quanto il piano di esecuzione di base fornisce funzionalità di reporting e analisi. | [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Reporting e analisi | Incluso | Questo modello è esso stesso un modello di analisi. Questa funzionalità è intrinsecamente inclusa in quanto il piano di esecuzione di base fornisce funzionalità di reporting e analisi. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Funzionalità dell’applicazione
 
@@ -277,7 +277,7 @@ La visualizzazione dati incentrata sulla persona fornisce un’analisi di percor
 **Experience League:**
 
 - [Creare o modificare una visualizzazione dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
-- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dataviews/data-views)
 
 ### Confronto delle opzioni
 
@@ -436,7 +436,7 @@ Crea due visualizzazioni dati dalla stessa connessione. La visualizzazione dati 
 
 **Documentazione di Experience League:**
 
-- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dataviews/data-views)
 - [Creare o modificare una visualizzazione dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
 - [Panoramica delle impostazioni dei componenti](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
 - [Impostazioni persistenza](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
@@ -502,7 +502,7 @@ Dettagli configurazione chiave:
 
 **Documentazione di Experience League:**
 
-- [Panoramica di Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Panoramica di Workspace](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/home)
 - [Creare un progetto](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
 - [Tabella a forma libera](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
 - [Pannello Attribuzione](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/attribution)
@@ -638,7 +638,7 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 **[!DNL CJA]B2B edition**
 
 - [Panoramica di CJA B2B edition](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
-- [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview)
 - [Guardrail CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-admin/guardrails)
 
 **Connessioni**
@@ -649,7 +649,7 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 
 **Visualizzazioni dati**
 
-- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dataviews/data-views)
 - [Creare o modificare una visualizzazione dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
 - [Panoramica delle impostazioni dei componenti](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
 - [Impostazioni persistenza](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
@@ -660,7 +660,7 @@ Le risorse seguenti forniscono informazioni aggiuntive per l’implementazione d
 
 **Workspace e analisi**
 
-- [Panoramica di Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Panoramica di Workspace](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/home)
 - [Creare un progetto](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
 - [Tabella a forma libera](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
 - [Visualizzazione del flusso](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
