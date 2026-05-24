@@ -3,7 +3,7 @@ title: Esperienza conversazionale Brand Concierge
 description: Scopri come trasformare le proprietà digitali in esperienze di conversazione basate sull’intelligenza artificiale e brand-safe che guidano l’individuazione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform
 exl-id: a9545328-316d-446a-9308-18af61c58d1c
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7239'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Descrive tutti gli approcci possibili per la distribuzione di esperienze convers
 
 ## Panoramica del caso d’uso
 
-Le organizzazioni cercano sempre più di trasformare le esperienze digitali statiche in conversazioni dinamiche basate sull’intelligenza artificiale che guidano i clienti attraverso l’individuazione, la selezione dei prodotti e le decisioni di acquisto. [!DNL Adobe Brand Concierge] affronta questo problema fornendo un livello di intelligenza artificiale conversazionale orchestrato che si trova al di sopra delle proprietà digitali esistenti, basato su AEP Agent Orchestrator.
+Le organizzazioni cercano sempre più di trasformare le esperienze digitali statiche in conversazioni dinamiche basate sull’intelligenza artificiale che guidano i clienti attraverso l’individuazione, la selezione dei prodotti e le decisioni di acquisto. [!DNL Adobe Brand Concierge] affronta questo problema fornendo un livello di intelligenza artificiale conversazionale orchestrato che si trova sopra le proprietà digitali esistenti, basato su AEP Agent Orchestrator.
 
 Questo modello è distinto dalle implementazioni chatbot tradizionali perché è integrato in modo nativo con il profilo unificato di AEP, utilizza guardrail di governance del brand per garantire che ogni risposta sia allineata agli standard del brand e invia segnali conversazionali nella piattaforma dati del cliente per la personalizzazione e l’attivazione a valle.
 
@@ -100,7 +100,7 @@ I KPI seguenti aiutano a misurare il successo di questo modello di caso d’uso.
 
 Trasforma le proprietà digitali in esperienze di conversazione basate sull’intelligenza artificiale e brand-safe che guidano l’individuazione dei clienti attraverso il dialogo naturale, arricchiscono i profili con segnali di intento e di sentiment e forniscono consigli di prodotto personalizzati.
 
-**Catena di funzioni:** Configurazione agente > Impostazione Brand Governance > Integrazione dei contenuti > Distribuzione esperienza conversazionale > Arricchimento profilo > Analytics e ottimizzazione
+**Piano di esecuzione:** Configurazione agente > Impostazione Brand Governance > Integrazione dei contenuti > Distribuzione esperienza conversazionale > Arricchimento profilo > Analytics e ottimizzazione
 
 ## Applicazioni
 
@@ -110,11 +110,11 @@ Per implementare questo modello di caso d’uso vengono utilizzate le seguenti a
 - **[!DNL Adobe Experience Platform] (AEP)** — Unified data foundation che fornisce schemi XDM, risoluzione delle identità, profili cliente in tempo reale e infrastruttura di raccolta dati per i segnali conversazionali
 - **[!DNL Real-Time CDP] ([!DNL RT-CDP])** — Piattaforma dati cliente che fornisce la ricerca dei profili in tempo reale per conversazioni personalizzate, segmentazione del pubblico da segnali conversazionali e arricchimento dei profili con dati di intento e sentiment
 
-## Funzioni fondamentali
+## Funzionalità fondamentali
 
-Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzione, lo stato indica se in genere è obbligatorio, se si presume che sia preconfigurato o meno applicabile.
+Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzionalità, lo stato indica se in genere è richiesta, se si presume che sia preconfigurata o meno.
 
-| Funzione fondamentale | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
+| Funzionalità di base | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Amministrazione e governance | Obbligatorio | Sandbox con abilitazione per [!DNL Brand Concierge]; ruoli configurati per amministratori di esperienza di conversazione, content manager e utenti di analisi; criteri ABAC in uso per i dati di conversazione contenenti PII o segnali sensibili dei clienti | [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
 | Modellazione e preparazione dei dati | Obbligatorio | Schemi XDM per eventi conversazionali (classe ExperienceEvent con gruppi di campi specifici per la conversazione che acquisiscono intento, sentiment, interazioni di prodotto ed eventi di handoff); schema di profilo esteso con preferenze conversazionali e attributi di intento; schema di ricerca nel catalogo dei prodotti per consigli di base | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home) |
@@ -122,11 +122,11 @@ Per questo modello di caso d’uso devono essere disponibili le seguenti funzion
 | Configurazione identità e profilo | Obbligatorio | Spazi dei nomi di identità configurati per l’identificazione dei visitatori (ECID per anonimo, ID CRM o e-mail per autenticato); criterio di unione configurato con l’attivazione Edge per la ricerca dei profili in tempo reale durante le conversazioni; regole di collegamento delle identità per la continuità delle conversazioni tra dispositivi | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) |
 | Definizione e segmentazione del pubblico | Presunto sul posto | Tipi di pubblico non necessari per l’implementazione conversazionale di base, ma necessari per strategie di conversazione personalizzate (ad esempio, segmenti di clienti di alto valore che ricevono flussi di conversazione diversi); si consiglia la valutazione in streaming o Edge per la personalizzazione delle conversazioni in tempo reale | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home) |
 
-## Funzioni di supporto
+## Funzionalità di supporto
 
 Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non sono necessarie per l’esecuzione di base.
 
-| Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
+| Funzionalità di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Creazione di attributi calcolati/derivati | Consigliato | Aggregare i segnali conversazionali in attributi a livello di profilo (ad esempio, conversazioni totali, interessi di prodotto dominanti, punteggio medio di sentiment) da utilizzare nella segmentazione e nella personalizzazione a valle | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
 | Data Lifecycle Management | Consigliato | Configura i criteri di conservazione per i dati degli eventi di conversazione, gestisci il consenso per la registrazione delle conversazioni e la creazione di profili e supporta le richieste di eliminazione della privacy per le trascrizioni delle conversazioni | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
@@ -134,13 +134,13 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 | Monitoraggio e osservabilità | Consigliato | Monitora le pipeline di acquisizione degli eventi di conversazione, tieni traccia dei tassi di successo dell’arricchimento dei profili e genera avvisi sugli errori di flusso dei dati che potrebbero influire sulla qualità della personalizzazione della conversazione | [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home) |
 | Reporting e analisi | Incluso | Analizza le prestazioni della conversazione, il feedback del cliente, l&#39;attribuzione della conversione e l&#39;efficacia dell&#39;agente utilizzando [!DNL Brand Concierge] analisi integrate e [!DNL CJA] per l&#39;analisi dell&#39;impatto delle conversazioni cross-channel | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## Funzioni dell’applicazione
+## Funzionalità dell’applicazione
 
-Questo piano esegue le seguenti funzioni dal catalogo delle funzioni dell&#39;applicazione. Le funzioni sono mappate su fasi di implementazione anziché su passaggi numerati.
+Questo piano esegue le seguenti funzionalità dal catalogo delle funzionalità dell&#39;applicazione. Le funzionalità sono mappate alle fasi di implementazione anziché ai passaggi numerati.
 
 ### [!DNL Brand Concierge]
 
-| Funzione | Fase di implementazione | Descrizione |
+| Funzionalità | Fase di implementazione | Descrizione |
 | --- | --- | --- |
 | Configurazione agente | Fase 1: Configurazione agente | Configurare l&#39;orchestratore di agenti [!DNL Brand Concierge] con le specializzazioni degli agenti (Product Advisor, Site Advisory) e le impostazioni di comportamento di base |
 | Configurazione della governance dei marchi | Fase 2: configurazione della governance dei marchi | Definisci la voce del brand, il tono, i guardrail di messaggistica, i limiti dei contenuti approvati e gli argomenti vietati che modellano tutte le interazioni conversazionali |
@@ -155,7 +155,7 @@ Questo piano esegue le seguenti funzioni dal catalogo delle funzioni dell&#39;ap
 
 ### [!DNL Real-Time CDP]
 
-| Funzione | Fase di implementazione | Descrizione |
+| Funzionalità | Fase di implementazione | Descrizione |
 | --- | --- | --- |
 | Ricerca profilo in tempo reale | Fase 4: Distribuzione dell’esperienza conversazionale | Accedi agli attributi del profilo cliente in tempo reale e alle iscrizioni ai segmenti per personalizzare le risposte conversazionali in base ai dati noti del cliente |
 | Arricchimento del profilo | Fase 5: Arricchimento del profilo | Arricchisci i profili con attributi calcolati derivati da eventi comportamentali conversazionali (punteggi di intento, tendenze dei sentiment, affinità di prodotto) |
@@ -312,7 +312,7 @@ Le seguenti fasi delineano la sequenza di implementazione consigliata.
 
 ### Fase 1: configurazione dell’agente
 
-**Funzione applicazione:** [!DNL Brand Concierge]: configurazione agente
+**Funzionalità applicazione:** [!DNL Brand Concierge]: configurazione agente
 
 Configurare l&#39;orchestrator principale dell&#39;agente [!DNL Brand Concierge], incluse la selezione delle specializzazioni dell&#39;agente (Product Advisor, Site Advisory o entrambi), la configurazione del comportamento dell&#39;agente di base e l&#39;impostazione della connessione tra [!DNL Brand Concierge] e AEP per l&#39;accesso al profilo e l&#39;acquisizione di eventi.
 
@@ -367,7 +367,7 @@ Abilita entrambe le specializzazioni e configura la logica di indirizzamento int
 
 ### Fase 2: configurazione della governance del brand
 
-**Funzione dell&#39;applicazione:** [!DNL Brand Concierge]: Impostazione della governance del brand
+**Funzionalità dell&#39;applicazione:** [!DNL Brand Concierge]: configurazione di Brand Governance
 
 Configura i guardrail di governance del brand che modellano tutte le interazioni conversazionali. Ciò include definizioni di voce e tono del brand, limiti di contenuto approvati, argomenti vietati, linee guida sullo stile di risposta e regole di escalation. La governance del brand garantisce che ogni risposta generata dall’intelligenza artificiale sia allineata agli standard del brand.
 
@@ -412,7 +412,7 @@ Dettagli configurazione chiave:
 
 ### Fase 3: integrazione dei contenuti
 
-**Funzione applicazione:** [!DNL Brand Concierge]: integrazione dei contenuti, configurazione di Product Advisor, configurazione di Site Advisory
+**Funzionalità dell&#39;applicazione:** [!DNL Brand Concierge]: integrazione dei contenuti, configurazione di Product Advisor, configurazione di Site Advisory
 
 Configura le origini di contenuto che rispondono alle conversazioni in background in informazioni accurate e approvate dal brand. Ciò include l’integrazione del catalogo dei prodotti, le connessioni ai contenuti di AEM, le importazioni della knowledge base e le pianificazioni di aggiornamento dei contenuti.
 
@@ -468,7 +468,7 @@ Configura sia le origini di contenuto del catalogo dei prodotti che quelle del s
 
 ### Fase 4: Distribuzione dell’esperienza conversazionale
 
-**Funzione applicazione:** [!DNL Brand Concierge]: distribuzione esperienza conversazionale, gestione flusso codice basso, handoff agente live; [!DNL RT-CDP]: ricerca profilo in tempo reale
+**Funzionalità applicazione:** [!DNL Brand Concierge]: distribuzione esperienza conversazionale, gestione flusso codice basso, handoff agente live; [!DNL RT-CDP]: ricerca profilo in tempo reale
 
 Distribuisci l’esperienza di conversazione sulle proprietà digitali di Target, tra cui la configurazione dei canali, la personalizzazione dei widget, l’integrazione della ricerca di profili per la personalizzazione, le regole di handoff degli agenti live e gli strumenti low-code per la gestione dei contenuti continua.
 
@@ -526,7 +526,7 @@ Dettagli configurazione chiave:
 
 ### Fase 5: Arricchimento del profilo
 
-**Funzione applicazione:** [!DNL Brand Concierge]: Arricchimento del profilo conversazionale; [!DNL RT-CDP]: Arricchimento del profilo, Valutazione del pubblico
+**Funzionalità applicazione:** [!DNL Brand Concierge]: Arricchimento profilo conversazionale; [!DNL RT-CDP]: Arricchimento profilo, Valutazione pubblico
 
 Configura la pipeline di acquisizione e arricchimento che restituisce i segnali conversazionali al profilo cliente unificato di AEP. Ciò include la mappatura degli eventi di conversazione su XDM, l’estrazione dei segnali di intento e di sentiment, la creazione di attributi calcolati dai dati conversazionali e la creazione di tipi di pubblico basati su comportamenti conversazionali.
 
@@ -572,7 +572,7 @@ Dettagli configurazione chiave:
 
 ### Fase 6: analisi e ottimizzazione
 
-**Funzione applicazione:** [!DNL Brand Concierge]: Conversational Analytics
+**Funzionalità applicazione:** [!DNL Brand Concierge]: analisi conversazionale
 
 Imposta dashboard di analisi e reporting per misurare le prestazioni dell’esperienza di conversazione, identificare opportunità di ottimizzazione e tracciare i KPI. Ciò include analisi integrate di [!DNL Brand Concierge], integrazione opzionale di [!DNL CJA] per l&#39;impact analysis delle conversazioni tra canali e flussi di lavoro di ottimizzazione continui.
 

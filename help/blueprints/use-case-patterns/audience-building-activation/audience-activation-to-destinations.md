@@ -3,7 +3,7 @@ title: Attivazione del pubblico nelle destinazioni
 description: Scopri come valutare e pubblicare segmenti di pubblico in destinazioni esterne per il targeting o l’eliminazione tramite Adobe Real-Time CDP.
 solution: Real-Time Customer Data Platform, Experience Platform
 exl-id: b0b9d937-45d2-48f9-ac4c-3611c6e35f58
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7080'
 ht-degree: 1%
@@ -83,7 +83,7 @@ Migliora il ritorno sull’investimento marketing migliorando il targeting, l’
 
 **Audience Activation in destinazioni**: valuta e pubblica un segmento di pubblico in destinazioni esterne per il targeting o l&#39;eliminazione.
 
-**Catena di funzioni:** Valutazione pubblico > Configurazione destinazione > Audience Activation > Monitoraggio
+**Piano di esecuzione:** Valutazione del pubblico > Configurazione di destinazione > Audience Activation > Monitoraggio
 
 ## Applicazioni
 
@@ -96,37 +96,37 @@ La seguente architettura di riferimento illustra il flusso di dati di pubblico e
 
 ![Architettura di riferimento per l&#39;attivazione di tipi di pubblico e profili per le destinazioni enterprise](/help/blueprints/audience-activation/assets/known_activation.svg)
 
-## Funzioni fondamentali
+## Funzionalità fondamentali
 
-Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzione, lo stato indica se in genere è obbligatorio, se si presume che sia preconfigurato o meno applicabile.
+Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzionalità, lo stato indica se in genere è richiesta, se si presume che sia preconfigurata o meno.
 
-| Funzione fondamentale | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
+| Funzionalità di base | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Amministrazione e governance | Presunto sul posto | Sandbox RT-CDP attivata e attiva. Autorizzazioni di attivazione e gestione delle destinazioni assegnate ai ruoli di implementazione. Credenziali dell’account di destinazione disponibili per le piattaforme di destinazione. | [Panoramica sulle sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/home), [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
 | Modellazione e preparazione dei dati | Obbligatorio | Lo schema del profilo deve includere attributi che verranno mappati sui campi di destinazione (ad esempio e-mail, telefono, identificatori con hash, attributi demografici). Lo schema deve essere abilitato per il profilo con set di dati che ricevono attivamente i dati. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home), [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition) |
 | Origini dati e raccolta | Presunto sul posto | I dati di profilo che alimentano la valutazione del pubblico devono essere acquisiti e aggiornati. Le pipeline di acquisizione in batch e/o in streaming sono operative. Web SDK, connettori di origine o acquisizione in batch che fornisce dati in set di dati abilitati per il profilo. | [Panoramica origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home), [Panoramica Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home) |
 | Configurazione identità e profilo | Obbligatorio | È necessario configurare gli spazi dei nomi delle identità per la corrispondenza della destinazione (ad esempio, e-mail con hash per i tipi di pubblico personalizzati di Facebook, Customer Match di Google Ads). I criteri di unione devono produrre profili unificati con tutti gli attributi richiesti per l’attivazione. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home), [Panoramica dei criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview) |
-| Definizione e segmentazione del pubblico | Obbligatorio | Il pubblico di destinazione è definito utilizzando Segment Builder (Generatore di segmenti), Audience Composition (Composizione del pubblico) o Federated Audience Composition (Composizione federata del pubblico). Metodo di valutazione (batch, streaming o edge) selezionato in base alle esigenze di latenza di attivazione. Questa funzione è esercitata nella fase 1 del presente piano. | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home), [Guida dell&#39;interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder) |
+| Definizione e segmentazione del pubblico | Obbligatorio | Il pubblico di destinazione è definito utilizzando Segment Builder (Generatore di segmenti), Audience Composition (Composizione del pubblico) o Federated Audience Composition (Composizione federata del pubblico). Metodo di valutazione (batch, streaming o edge) selezionato in base alle esigenze di latenza di attivazione. Questa capacità viene esercitata nella fase 1 del presente piano. | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home), [Guida dell&#39;interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder) |
 
-## Funzioni di supporto
+## Funzionalità di supporto
 
 Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non sono necessarie per l’esecuzione di base.
 
-| Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
+| Funzionalità di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Creazione di attributi calcolati/derivati | Consigliato | Attributi calcolati come il valore del ciclo di vita, il punteggio di coinvolgimento o il punteggio di propensione migliorano la precisione del pubblico e forniscono attributi di arricchimento da mappare sulle destinazioni. Particolarmente utile quando le destinazioni traggono vantaggio dalla segmentazione del pubblico basata su valori o su punteggi. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
 | Data Lifecycle Management | Consigliato | Le policy di scadenza dei set di dati e dei profili garantiscono l’aggiornamento e la conformità dei dati. La configurazione dello schema di consenso assicura che siano attivati solo i profili consentiti. Critico per la conformità normativa durante l&#39;esportazione dei dati in sistemi esterni. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Consigliato | Le etichette e i criteri di governance impediscono l’attivazione di dati limitati a destinazioni non autorizzate (ad esempio, PII per piattaforme di annunci, segmenti sensibili per partner di dati). Particolarmente importante per l’attivazione del pubblico su sistemi esterni di terze parti. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home), [Panoramica sulle etichette di utilizzo dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/labels/overview) |
-| Monitoraggio e osservabilità | Incluso | Il monitoraggio dell&#39;attivazione fa parte della catena di funzioni (fase 5). Include il monitoraggio dell’esecuzione dei flussi di dati, gli avvisi sullo stato della consegna, il tracciamento della popolazione del pubblico e la visibilità dell’utilizzo delle licenze. | [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations), [Panoramica avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview) |
+| Monitoraggio e osservabilità | Incluso | Il monitoraggio dell&#39;attivazione fa parte del piano di esecuzione (fase 5). Include il monitoraggio dell’esecuzione dei flussi di dati, gli avvisi sullo stato della consegna, il tracciamento della popolazione del pubblico e la visibilità dell’utilizzo delle licenze. | [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations), [Panoramica avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview) |
 | Reporting e analisi | Consigliato | L’analisi CJA dell’efficacia dell’attivazione del pubblico consente di misurare le prestazioni per i tipi di pubblico attivati (ad esempio, incremento della conversione da soppressione, ROAS da tipi di pubblico simili). | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## Funzioni dell’applicazione
+## Funzionalità dell’applicazione
 
-Questo piano esegue le seguenti funzioni dal catalogo delle funzioni dell&#39;applicazione. Le funzioni sono mappate su fasi di implementazione anziché su passaggi numerati.
+Questo piano esegue le seguenti funzionalità dal catalogo delle funzionalità dell&#39;applicazione. Le funzionalità sono mappate alle fasi di implementazione anziché ai passaggi numerati.
 
 ### [!DNL Real-Time CDP] (RT-CDP)
 
-| Funzione | Fase di implementazione | Descrizione |
+| Funzionalità | Fase di implementazione | Descrizione |
 | --- | --- | --- |
 | Valutazione del pubblico | Fase 1: Valutazione del pubblico | Definisci le regole del pubblico e valuta l’iscrizione al segmento utilizzando metodi di valutazione batch, in streaming o edge |
 | Composizione del pubblico | Fase 1: Valutazione del pubblico | Facoltativamente, comporre tipi di pubblico derivati tramite operazioni di arricchimento, classificazione, suddivisione, esclusione e unione per logiche di pubblico complesse |
@@ -295,7 +295,7 @@ L&#39;implementazione segue queste fasi. Ogni fase include dettagli di configura
 
 ### Fase 1: Valutazione del pubblico
 
-**Funzione dell&#39;applicazione:** RT-CDP: Audience Evaluation, RT-CDP: Audience Composition
+**Funzionalità dell&#39;applicazione:** RT-CDP: Audience Evaluation, RT-CDP: Audience Composition
 
 **Configurazione:** Definire il pubblico di destinazione che verrà attivato nelle destinazioni. Ciò include la specifica dei criteri di pubblico (quali profili sono idonei), la selezione del metodo di valutazione (la rapidità con cui l’iscrizione si aggiorna) e la convalida della popolazione del pubblico. Questo è il punto di partenza per tutte le attivazioni: senza un pubblico definito e valutato, non c&#39;è nulla da attivare.
 
@@ -369,7 +369,7 @@ Il metodo di valutazione dovrebbe tener conto della destinazione più impegnativ
 
 ### Fase 2: configurazione della destinazione
 
-**Funzione applicazione:** RT-CDP: configurazione di destinazione
+**Funzionalità dell&#39;applicazione:** RT-CDP: configurazione di destinazione
 
 **Configurazione:** stabilire connessioni autenticate alle destinazioni esterne in cui verranno pubblicati i tipi di pubblico. Ciò include la selezione della destinazione dal catalogo, l’immissione delle credenziali di autenticazione e la configurazione di parametri specifici della destinazione, ad esempio il formato del file, la posizione di archiviazione e la pianificazione delle esportazioni. Ogni destinazione richiede la propria configurazione di connessione.
 
@@ -446,7 +446,7 @@ Ripeti questa fase per ogni destinazione. Ogni connessione è indipendente: è p
 
 ### Fase 3: Attivazione del pubblico
 
-**Funzione dell&#39;applicazione:** RT-CDP: Audience Activation
+**Funzionalità dell&#39;applicazione:** RT-CDP: Audience Activation
 
 **Configurazione:** Pubblicare il pubblico valutato nella destinazione configurata creando il flusso di dati di attivazione. Ciò comporta la selezione dei tipi di pubblico da attivare, la mappatura degli attributi del profilo ai campi di destinazione e la configurazione della pianificazione di esportazione. Il flusso di dati di attivazione connette il pubblico di origine alla destinazione di destinazione e gestisce la distribuzione continua dei dati.
 
@@ -507,7 +507,7 @@ Ripeti il flusso di lavoro di attivazione per ogni destinazione. Lo stesso pubbl
 
 ### Fase 4: convalida della governance
 
-**Funzione dell&#39;applicazione:** RT-CDP: applicazione del consenso e della governance
+**Funzionalità dell&#39;applicazione:** RT-CDP: applicazione del consenso e della governance
 
 **Configurazione:** Verificare che i criteri di governance e le preferenze di consenso siano applicati correttamente prima e durante l&#39;attivazione. Questa fase garantisce che i dati con restrizioni (PII, attributi sensibili) non vengano inviati a destinazioni non autorizzate e che i profili senza consenso valido siano esclusi dall’attivazione. L’applicazione della governance avviene automaticamente al momento dell’attivazione, ma la convalida proattiva impedisce le attivazioni bloccate e le violazioni della conformità.
 
@@ -555,7 +555,7 @@ Ripeti il flusso di lavoro di attivazione per ogni destinazione. Lo stesso pubbl
 
 ### Fase 5: Monitoraggio e convalida
 
-**Funzione applicazione:** Monitoraggio e osservabilità
+**Funzionalità dell&#39;applicazione:** monitoraggio e osservabilità
 
 **Configurazione:** configurare il monitoraggio continuo per i flussi di dati di attivazione, configurare gli avvisi per gli errori, convalidare la popolazione del pubblico nelle destinazioni e tenere traccia dell&#39;utilizzo delle licenze. Il monitoraggio è fondamentale per le attivazioni di produzione in cui gli errori di consegna influiscono direttamente sulle prestazioni della campagna e sulla spesa per i contenuti multimediali.
 

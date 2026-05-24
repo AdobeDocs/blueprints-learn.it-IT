@@ -3,7 +3,7 @@ title: Audience Collaboration
 description: Scopri come condividere e abbinare i segmenti di pubblico tra sandbox o organizzazioni utilizzando Segment Match.
 solution: Real-Time Customer Data Platform, Experience Platform
 exl-id: 7014849c-5e32-4ec3-a531-c0e8ce896f44
-source-git-commit: 27f7e230982807ec70ca96af7f737944a6588f27
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '6232'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Migliora l’efficienza del targeting, elimina i clienti esistenti dalle campagn
 
 ### Ottimizzazione della spesa di marketing e del ROI
 
-Migliora il ritorno sull’investimento marketing migliorando il targeting, l’attribuzione, l’eliminazione del pubblico e l’allocazione del budget. [!DNL Segment Match] consente l’eliminazione dei tipi di pubblico tra organizzazioni e il targeting congiunto che riduce la duplicazione e migliora la precisione.
+Migliora il ritorno sull’investimento marketing migliorando il targeting, l’attribuzione, l’eliminazione del pubblico e l’allocazione del budget. [!DNL Segment Match] consente l&#39;eliminazione del pubblico tra organizzazioni e il targeting congiunto che riduce la duplicazione e migliora la precisione.
 
 - **KPI:** Risparmio sui costi, Costo di acquisizione cliente, Ricavi incrementali
 - [Ottimizzazione della spesa di marketing e del ROI](/help/blueprints/business-objectives/cost-efficiency/optimize-marketing-spend-roi.md)
@@ -82,7 +82,7 @@ Questo caso d’uso segue il pattern di Audience Collaboration.
 
 Condividi e abbina segmenti di pubblico tra sandbox o organizzazioni utilizzando [!DNL Segment Match].
 
-**Catena di funzioni:** Selezione segmenti > Configurazione corrispondenza > Stima sovrapposizione > Condivisione pubblico > Attivazione
+**Piano di esecuzione:** Selezione segmenti > Configurazione corrispondenza > Stima sovrapposizione > Condivisione pubblico > Attivazione
 
 ## Applicazioni
 
@@ -91,11 +91,11 @@ In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 - **[!DNL Real-Time CDP]** - Fornisce la funzionalità [!DNL Segment Match] per la condivisione del pubblico sicura per la privacy, la valutazione del pubblico per la creazione di segmenti e l&#39;attivazione della destinazione per l&#39;utilizzo a valle dei tipi di pubblico corrispondenti.
 - **[!DNL Adobe Experience Platform]**: fornisce l&#39;infrastruttura di dati di base, tra cui la risoluzione delle identità, l&#39;unificazione dei profili, la governance dei dati e l&#39;applicazione del consenso da cui dipende [!DNL Segment Match].
 
-## Funzioni fondamentali
+## Funzionalità fondamentali
 
-Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzione, lo stato indica se in genere è obbligatorio, se si presume che sia preconfigurato o meno applicabile.
+Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzionalità, lo stato indica se in genere è richiesta, se si presume che sia preconfigurata o meno.
 
-| Funzione fondamentale | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
+| Funzionalità di base | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Amministrazione e governance | Obbligatorio | Sia l’organizzazione del mittente che quella del destinatario devono disporre di sandbox con ruoli e autorizzazioni appropriati. Gli utenti che gestiscono [!DNL Segment Match] devono disporre delle autorizzazioni per visualizzare e condividere segmenti, configurare connessioni e gestire feed dei partner. I criteri ABAC devono essere configurati per controllare quali utenti possono avviare e accettare condivisioni di segmenti. | [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
 | Modellazione e preparazione dei dati | Presunto sul posto | Devono esistere schemi XDM per profili ed eventi con i gruppi di campi richiesti. I set di dati profilo ed evento devono essere creati e abilitati per [!DNL Real-Time Customer Profile]. Il modello dati deve supportare gli spazi dei nomi di identità utilizzati per la corrispondenza dei segmenti (in genere e-mail con hash o telefono con hash). | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home) |
@@ -103,25 +103,25 @@ Per questo modello di caso d’uso devono essere disponibili le seguenti funzion
 | Configurazione identità e profilo | Obbligatorio | Gli spazi dei nomi delle identità devono essere configurati per gli identificatori utilizzati nella corrispondenza dei segmenti. Sia il mittente che il destinatario devono utilizzare spazi dei nomi di identità compatibili. I criteri di unione devono essere configurati in modo da unificare correttamente i profili. È opportuno stabilire regole di collegamento delle identità per garantire una risoluzione accurata del profilo. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) |
 | Definizione e segmentazione del pubblico | Obbligatorio | I tipi di pubblico di Source devono essere definiti e valutati prima di poter essere condivisi tramite [!DNL Segment Match]. I tipi di pubblico devono essere generati utilizzando [!DNL Segment Builder] o [!DNL Audience Composition] con la valutazione batch completata. Solo i tipi di pubblico valutati in batch sono idonei per la condivisione [!DNL Segment Match]. | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home) |
 
-## Funzioni di supporto
+## Funzionalità di supporto
 
 Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non sono necessarie per l’esecuzione di base.
 
-| Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
+| Funzionalità di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Creazione di attributi calcolati/derivati | Consigliato | Attributi calcolati come il valore di acquisto del ciclo di vita, il punteggio di coinvolgimento o l’affinità di prodotto possono creare segmenti più precisi da condividere. Segmenti di input di qualità superiore portano a una collaborazione più preziosa tra il pubblico. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
 | Data Lifecycle Management | Consigliato | Le policy di conservazione dei dati e del consenso garantiscono che i segmenti condivisi siano conformi alle normative sulla privacy. I criteri di scadenza dei set di dati consentono di gestire il ciclo di vita dei dati sul pubblico ricevuti. L’applicazione del consenso impedisce la condivisione di profili che hanno rinunciato. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
 | Etichettatura e applicazione dell’utilizzo dati | Incluso | I criteri di governance dei dati devono essere valutati prima di condividere i segmenti per garantire la conformità. Le etichette sui campi di identità e gli attributi del profilo determinano cosa può essere condiviso. L’applicazione della governance impedisce l’inclusione di dati non autorizzati nelle condivisioni di segmenti. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home) |
 | Monitoraggio e osservabilità | Consigliato | Il monitoraggio del processo di condivisione [!DNL Segment Match], dei processi di stima della sovrapposizione e dei flussi di dati di attivazione consente di rilevare gli errori in anticipo. Gli avvisi possono essere configurati per errori di condivisione o percentuali di corrispondenza inaspettatamente basse. | [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home) |
-| Reporting e analisi | Consigliato | La misurazione delle prestazioni delle campagne che utilizzano tipi di pubblico corrispondenti convalida il valore della collaborazione. [!DNL Customer Journey Analytics] l’analisi può confrontare le prestazioni della campagna pubblico corrispondenti con quelle dei gruppi di controllo. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Reporting e analisi | Consigliato | La misurazione delle prestazioni delle campagne che utilizzano tipi di pubblico corrispondenti convalida il valore della collaborazione. L&#39;analisi [!DNL Customer Journey Analytics] può confrontare le prestazioni della campagna del pubblico corrispondenti con quelle dei gruppi di controllo. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## Funzioni dell’applicazione
+## Funzionalità dell’applicazione
 
-Questo piano esegue le seguenti funzioni dal catalogo delle funzioni dell&#39;applicazione. Le funzioni sono mappate su fasi di implementazione anziché su passaggi numerati.
+Questo piano esegue le seguenti funzionalità dal catalogo delle funzionalità dell&#39;applicazione. Le funzionalità sono mappate alle fasi di implementazione anziché ai passaggi numerati.
 
 ### [!DNL Real-Time CDP]
 
-| Funzione | Fase di implementazione | Descrizione |
+| Funzionalità | Fase di implementazione | Descrizione |
 | --- | --- | --- |
 | Valutazione del pubblico | Fase 1: Selezione e preparazione dei segmenti | Valuta l&#39;appartenenza al segmento utilizzando la valutazione in batch per produrre i tipi di pubblico che verranno condivisi tramite [!DNL Segment Match] |
 | Composizione del pubblico | Fase 1: Selezione e preparazione dei segmenti | Facoltativamente, comporre tipi di pubblico derivati (classificazione, suddivisione, esclusione, arricchimento) per creare segmenti più mirati per la condivisione |
@@ -292,7 +292,7 @@ Le fasi seguenti descrivono il processo di implementazione end-to-end per la col
 
 ### Fase 1: Selezionare e preparare i segmenti
 
-**Funzione dell&#39;applicazione:** [!DNL Real-Time CDP]: valutazione del pubblico, [!DNL Real-Time CDP]: composizione del pubblico
+**Funzionalità dell&#39;applicazione:** [!DNL Real-Time CDP]: valutazione del pubblico, [!DNL Real-Time CDP]: composizione del pubblico
 
 Questa fase prevede la definizione e la valutazione dei segmenti di pubblico che verranno condivisi tramite [!DNL Segment Match]. Prima di poter essere selezionati per la condivisione, i segmenti di origine devono essere valutati completamente con popolazioni diverse da zero. Questa fase tratta anche la composizione facoltativa del pubblico per perfezionare i segmenti prima della condivisione.
 
@@ -351,7 +351,7 @@ Assicurati che i tipi di pubblico sorgente nella sandbox di invio utilizzino gli
 
 ### Fase 2: configurare corrispondenza e governance
 
-**Funzione dell&#39;applicazione:** [!DNL Real-Time CDP]: applicazione del consenso e della governance
+**Funzionalità dell&#39;applicazione:** [!DNL Real-Time CDP]: applicazione del consenso e della governance
 
 Questa fase stabilisce la connessione [!DNL Segment Match] tra organizzazioni o sandbox, configura gli spazi dei nomi di identità utilizzati per la corrispondenza e garantisce che i criteri di governance dei dati consentano la condivisione. L’applicazione della governance funge da gate dei criteri che devono essere cancellati prima che i dati di qualsiasi segmento vengano condivisi.
 
@@ -412,7 +412,7 @@ Stabilisci connessioni sandbox-sandbox all’interno dell’organizzazione. La g
 
 ### Fase 3: Stima della sovrapposizione
 
-**Funzione dell&#39;applicazione:** [!DNL Real-Time CDP]: Valutazione del pubblico (per la stima della sovrapposizione)
+**Funzionalità applicazione:** [!DNL Real-Time CDP]: valutazione del pubblico (per la stima della sovrapposizione)
 
 Questa fase esegue la stima della sovrapposizione tra i segmenti del mittente e la base del profilo del ricevente. La stima della sovrapposizione fornisce a entrambe le parti il volume e la percentuale di corrispondenza previsti prima di impegnarsi nella condivisione completa dei segmenti, consentendo decisioni informate sul valore della collaborazione.
 
@@ -447,7 +447,7 @@ Questa fase esegue la stima della sovrapposizione tra i segmenti del mittente e 
 
 ### Fase 4: Condividere i tipi di pubblico
 
-**Funzione dell&#39;applicazione:** [!DNL Real-Time CDP]: valutazione del pubblico (per l&#39;esecuzione della condivisione)
+**Funzionalità dell&#39;applicazione:** [!DNL Real-Time CDP]: valutazione del pubblico (per l&#39;esecuzione della condivisione)
 
 Questa fase esegue la condivisione del segmento effettivo dal mittente al ricevente. Il mittente avvia la condivisione per i segmenti selezionati e il destinatario accetta la condivisione in ingresso. Una volta accettato, il pubblico corrispondente viene visualizzato nell’elenco del pubblico del ricevente come nuovo pubblico disponibile per l’attivazione a valle.
 
@@ -503,7 +503,7 @@ Esegui la condivisione tra sandbox. Il pubblico corrispondente viene visualizzat
 
 ### Fase 5: attivare i tipi di pubblico corrispondenti
 
-**Funzione applicazione:** [!DNL Real-Time CDP]: configurazione di destinazione, [!DNL Real-Time CDP]: Audience Activation
+**Funzionalità applicazione:** [!DNL Real-Time CDP]: configurazione di destinazione, [!DNL Real-Time CDP]: Audience Activation
 
 Questa fase attiva il pubblico corrispondente (sul lato ricevente) a destinazioni esterne per il targeting, la soppressione o l’utilizzo a valle. Il pubblico corrispondente viene trattato come qualsiasi altro pubblico nella sandbox del destinatario e può essere attivato tramite il flusso di lavoro standard di attivazione della destinazione.
 

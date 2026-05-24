@@ -1,8 +1,8 @@
 ---
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 # Pagine da aggiornare quando si aggiunge un modello di caso d’uso
@@ -64,5 +64,5 @@ Quando viene creato un nuovo pattern di casi d’uso, è necessario aggiornare l
 - [ Il file ] utilizza la convenzione di denominazione con maiuscole/minuscole
 - [ ] Tutti i collegamenti Experience League sono URL validi
 - [ I nomi di prodotto di Adobe ] utilizzano la sintassi `[!DNL ...]`
-- [ La catena di funzioni ] utilizza il formato separatore ` > `
+- [ Il piano di esecuzione ] utilizza il formato separatore ` > `
 - [ Il file del modello ] include tutte le sezioni richieste (vedere pattern-template.md)

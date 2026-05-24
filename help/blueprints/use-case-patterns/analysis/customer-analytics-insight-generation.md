@@ -3,7 +3,7 @@ title: Customer Analytics e Insight Generation
 description: Scopri come creare aree di lavoro di analisi cross-channel, metriche calcolate e dashboard per l’analisi del comportamento e delle prestazioni.
 solution: Customer Journey Analytics, Experience Platform
 exl-id: 235a4eb0-91ae-4030-b90e-7eda08c67ae1
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '8947'
 ht-degree: 1%
@@ -93,7 +93,7 @@ I KPI seguenti aiutano a misurare il successo di questo modello di caso d’uso.
 
 Crea aree di lavoro di analisi cross-channel, metriche calcolate e dashboard per comprendere il comportamento dei clienti e le prestazioni della campagna.
 
-**Catena di funzioni:** Connessione dati > Configurazione visualizzazione dati > Analisi Workspace > Creazione di metriche calcolate > Pubblicazione dashboard
+**Piano di esecuzione:** Connessione dati > Configurazione visualizzazione dati > Analisi Workspace > Creazione metrica calcolata > Pubblicazione dashboard
 
 Consulta la sezione [Opzioni di implementazione](#implementation-options) per informazioni sulla composizione.
 
@@ -104,11 +104,11 @@ In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 - **[!DNL Customer Journey Analytics] (CJA)** — Connessioni, visualizzazioni dati, analisi dell&#39;area di lavoro, analisi guidata, metriche calcolate, dashboard, pubblicazione di tipi di pubblico e analisi dei contenuti
 - **[!DNL Adobe Experience Platform] (AEP)** — Data lake, set di dati, schemi XDM, dati di profilo ed eventi che alimentano le connessioni CJA
 
-## Funzioni fondamentali
+## Funzionalità fondamentali
 
-Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzione, lo stato indica se in genere è obbligatorio, se si presume che sia preconfigurato o meno applicabile.
+Per questo modello di caso d’uso devono essere disponibili le seguenti funzionalità fondamentali. Per ogni funzionalità, lo stato indica se in genere è richiesta, se si presume che sia preconfigurata o meno.
 
-| Funzione fondamentale | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
+| Funzionalità di base | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Amministrazione e governance | Presunto sul posto | È stato eseguito il provisioning del profilo di prodotto CJA con la creazione di un’area di lavoro e le autorizzazioni di accesso alla visualizzazione dati. Set di dati di AEP accessibili alla connessione CJA. Utenti assegnati ai ruoli CJA appropriati. | [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
 | Modellazione e preparazione dei dati | Obbligatorio | Gli schemi e i set di dati XDM che verranno collegati a CJA devono esistere in AEP. La progettazione degli schemi influisce direttamente sulle dimensioni e sulle metriche disponibili nelle visualizzazioni dati di CJA. Gli schemi evento richiedono campi timestamp; gli schemi di ricerca richiedono campi chiave. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home) |
@@ -116,11 +116,11 @@ Per questo modello di caso d’uso devono essere disponibili le seguenti funzion
 | Configurazione identità e profilo | Obbligatorio | La configurazione dell’ID della persona nella connessione CJA determina il modo in cui gli eventi vengono uniti nei diversi set di dati. L’unione delle identità tra dispositivi in AEP migliora la capacità di CJA di creare percorsi completi per i clienti. Lo spazio dei nomi dell’identità deve essere configurato per il campo ID persona. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) |
 | Definizione e segmentazione del pubblico | Non applicabile | CJA crea i propri filtri e tipi di pubblico all’interno del contesto di analisi. I tipi di pubblico RT-CDP non sono un prerequisito, anche se CJA può pubblicare di nuovo i tipi di pubblico in AEP tramite la pubblicazione dei tipi di pubblico (opzione C). | [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home) |
 
-## Funzioni di supporto
+## Funzionalità di supporto
 
 Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non sono necessarie per l’esecuzione di base.
 
-| Funzione di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
+| Funzionalità di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
 | Creazione di attributi calcolati/derivati | Consigliato | Gli attributi calcolati di AEP possono arricchire i set di dati connessi a CJA, fornendo dimensioni e metriche aggiuntive per l’analisi (ad esempio, conteggio degli acquisti per tutto il ciclo di vita, giorni dall’ultima attività). Queste aggregazioni a livello di profilo diventano disponibili come dimensioni nelle visualizzazioni dati di CJA. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
 | Data Lifecycle Management | Consigliato | I criteri di conservazione dei set di dati influiscono sui dati storici disponibili in CJA. La conservazione a lungo termine è in genere desiderata per le analisi per consentire confronti su base annua e analisi delle tendenze a lungo termine. Configura i TTL dei set di dati per garantire una profondità storica adeguata. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
@@ -128,15 +128,15 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 | Monitoraggio e osservabilità | Consigliato | È necessario monitorare lo stato e l’aggiornamento dei dati della connessione CJA. Configura gli avvisi per gli errori del flusso di dati di origine e i problemi di acquisizione per garantire l’affidabilità e l’attualità del CJA di inserimento dei dati. | [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home) |
 | Reporting e analisi | Incluso | Questa è l’implementazione per reporting e analisi. Quando un piano di riferimento per un altro modello include S5, utilizza questo piano di generazione di analisi dei clienti e insight per l’implementazione di analisi. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## Funzioni dell’applicazione
+## Funzionalità dell’applicazione
 
-Questo piano esegue le seguenti funzioni dal catalogo delle funzioni dell&#39;applicazione. Le funzioni sono mappate su fasi di implementazione anziché su passaggi numerati.
+Questo piano esegue le seguenti funzionalità dal catalogo delle funzionalità dell&#39;applicazione. Le funzionalità sono mappate alle fasi di implementazione anziché ai passaggi numerati.
 
 ### [!DNL Customer Journey Analytics] (CJA)
 
-Nella tabella seguente sono elencate le funzioni dell&#39;applicazione CJA utilizzate in questo modello.
+Nella tabella seguente sono elencate le funzionalità dell&#39;applicazione CJA utilizzate in questo modello.
 
-| Funzione | Fase di implementazione | Descrizione |
+| Funzionalità | Fase di implementazione | Descrizione |
 | --- | --- | --- |
 | Connessione dati | Fase 1: Connessione dati | Associa i set di dati di AEP a una connessione CJA per l’analisi cross-channel, configurando i tipi di set di dati e l’ID persona per l’unione di set di dati diversi |
 | Configurazione visualizzazione dati | Fase 2: configurazione della visualizzazione dati | Definisci dimensioni, metriche, modelli di attribuzione, impostazioni di persistenza, parametri di sessione e campi derivati che modellano la prospettiva analitica. |
@@ -149,9 +149,9 @@ Nella tabella seguente sono elencate le funzioni dell&#39;applicazione CJA utili
 
 ### [!DNL Adobe Experience Platform] (AEP)
 
-Nella tabella seguente sono elencate le funzioni dell’applicazione AEP utilizzate in questo modello.
+Nella tabella seguente sono elencate le funzionalità dell’applicazione AEP utilizzate in questo modello.
 
-| Funzione | Fase di implementazione | Descrizione |
+| Funzionalità | Fase di implementazione | Descrizione |
 | --- | --- | --- |
 | Data lake e set di dati | Prerequisito (F2, F3) | Fornisci i set di dati di evento, profilo e ricerca di origine che alimentano la connessione CJA |
 | Servizio identità | Prerequisito (F4) | Fornisci la configurazione dello spazio dei nomi delle identità per l’unione degli ID persona nei diversi set di dati nella connessione CJA |
@@ -333,7 +333,7 @@ La tabella seguente confronta le opzioni di implementazione disponibili.
 | Visualizzazioni chiave | Tabelle a forma libera, numeri di riepilogo, linee di tendenza | Flusso, abbandono, coorte, attribuzione | Come A o B, più pubblicazione di pubblico | Funnel, tendenze, conservazione, crescita |
 | Funzionalità di attivazione | No (solo reporting) | No (solo reporting) | Sì (pubblica i tipi di pubblico in AEP) | No (solo reporting) |
 | Pubblico richiesto | Analisti di marketing, manager di campagne | Analisti di dati, architetti di percorso | Analisti e team di attivazione | Responsabili di prodotto, analisti di crescita |
-| Funzioni CJA utilizzate | Connessione, Visualizzazione dati, Workspace, Metriche calcolate, Dashboard | Connessione, Visualizzazione dati, Workspace, Metriche calcolate, Dashboard | Come A o B, più Pubblicazione dei tipi di pubblico | Connessione, Visualizzazione dati, Analisi guidata, Dashboard |
+| Funzionalità CJA utilizzate | Connessione, Visualizzazione dati, Workspace, Metriche calcolate, Dashboard | Connessione, Visualizzazione dati, Workspace, Metriche calcolate, Dashboard | Come A o B, più Pubblicazione dei tipi di pubblico | Connessione, Visualizzazione dati, Analisi guidata, Dashboard |
 | Tempo per il primo insight | Giorni | Weeks | Weeks | Ore-Giorni |
 
 ### Scegli l’opzione giusta
@@ -356,7 +356,7 @@ Questa sezione descrive le fasi di implementazione dettagliate per questo modell
 
 ### Fase 1: Connessione dati
 
-**Funzione dell&#39;applicazione:** CJA: connessione dati
+**Funzionalità dell&#39;applicazione:** CJA: connessione dati
 
 Questa fase configura una connessione CJA che associa uno o più set di dati di AEP a CJA per l’analisi. La connessione definisce quali set di dati fluiscono in CJA, come gli eventi vengono uniti tra i set di dati tramite l’ID persona e come vengono acquisiti i dati storici e in streaming. Questo è il collegamento fondamentale tra il data lake di AEP e CJA.
 
@@ -439,7 +439,7 @@ Dettagli configurazione chiave:
 
 ### Fase 2: configurazione della visualizzazione dati
 
-**Funzione applicazione:** CJA: configurazione visualizzazione dati
+**Funzionalità applicazione:** CJA: configurazione visualizzazione dati
 
 Questa fase configura una visualizzazione dati che definisce la modalità di visualizzazione dei dati di connessione nell’analisi. La visualizzazione dati determina quali campi dello schema vengono esposti come dimensioni e metriche, in che modo i valori vengono attribuiti e persistenti, come vengono definite le sessioni e quali campi derivati trasformano i dati non elaborati in componenti pronti per l’analisi. È possibile creare più visualizzazioni dati da una singola connessione per diverse prospettive analitiche.
 
@@ -541,7 +541,7 @@ Mappa dimensioni e metriche a livello di evento rilevanti per l’analisi dell�
 
 ### Fase 3: analisi e creazione di metriche
 
-**Funzione dell&#39;applicazione:** CJA: Workspace Analysis, CJA: analisi guidata, CJA: creazione di metriche calcolate
+**Funzionalità applicazione:** CJA: Workspace Analysis, CJA: analisi guidata, CJA: creazione di metriche calcolate
 
 Questa fase crea le aree di lavoro di analisi (progetti a forma libera o analisi guidata), le metriche calcolate per i KPI derivati, i filtri per l’analisi segmentata e le annotazioni per gli eventi chiave. Il valore analitico si realizza qui, creando tabelle, visualizzazioni e metriche che rispondono alle domande aziendali.
 
@@ -652,7 +652,7 @@ Seleziona il tipo di analisi guidata appropriato in base alla domanda aziendale.
 
 ### Fase 4: pubblicazione del dashboard
 
-**Funzione applicazione:** CJA: pubblicazione dashboard e scorecard
+**Funzionalità applicazione:** CJA: pubblicazione dashboard e scorecard
 
 Questa fase crea dashboard interattivi (progetti Workspace) e scorecard per dispositivi mobili che forniscono visibilità KPI alle parti interessate. I dashboard forniscono visibilità esecutiva e operativa attraverso numeri di riepilogo, linee di tendenza, raggruppamenti e annotazioni. Le scorecard per dispositivi mobili forniscono dati immediati sulle prestazioni tramite l&#39;app mobile [!DNL Adobe Analytics] per dashboard.
 
@@ -722,7 +722,7 @@ Dettagli configurazione chiave:
 
 ### Fase 5: Pubblicazione dei tipi di pubblico (solo opzione C)
 
-**Funzione dell&#39;applicazione:** CJA: Pubblicazione del pubblico
+**Funzionalità dell&#39;applicazione:** CJA: pubblicazione del pubblico
 
 Questa fase configura la pubblicazione del pubblico CJA per inviare nuovamente i segmenti rilevati dall’analisi al profilo cliente in tempo reale di AEP per l’attivazione a valle nelle destinazioni RT-CDP, nelle campagne AJO o nei percorsi AJO.
 
