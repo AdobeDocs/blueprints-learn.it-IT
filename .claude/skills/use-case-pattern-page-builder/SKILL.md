@@ -1,10 +1,10 @@
 ---
 name: use-case-pattern-page-builder
 description: 'Guida alla creazione di nuovi contenuti del modello di caso d’uso per l’archivio Adobe Experience Platform blueprint. Utilizza questa abilità quando aggiungi un nuovo pattern di casi d’uso, crei contenuti di guida all’implementazione o quando l’utente menziona l’aggiunta di pattern al sito blueprint. Gestisce l’intero flusso di lavoro: raccoglie informazioni sul modello, genera il file markdown con la struttura corretta del modello e aggiorna tutte le pagine di riferimenti incrociati (TOC.md, overview.md).'
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+source-git-commit: 2577bb034012a78fd30a65b7b44196b91921923e
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 88%
+source-wordcount: '923'
+ht-degree: 94%
 
 ---
 
@@ -37,31 +37,18 @@ Intervistare l&#39;utente per raccogliere tutte le informazioni necessarie prima
 
 4. **Soluzioni core di Adobe**: i prodotti Adobe centrali per questo modello. Scegli tra: Journey Optimizer, Real-Time Customer Data Platform, Experience Platform, Customer Journey Analytics, Brand Concierge, Journey Optimizer B2B edition, Real-Time CDP B2B edition o altri, a seconda delle necessità.
 
-5. **Passaggi del piano di esecuzione**: 3-6 fasi sequenziali che descrivono il flusso di esecuzione del modello, separate da `>`. Esempio: &quot;Acquisizione evento > Inserimento Percorso > Valutazione condizione > Consegna messaggio > Reporting&quot;.
+5. **Obiettivi aziendali supportati**: uno o più obiettivi aziendali del set esistente in `/help/blueprints/business-objectives/`. Ciascuno deve includere il nome dell&#39;obiettivo, la sottocartella della categoria e il nome del file. Verifica che i file a cui si fa riferimento esistano prima di generare il contenuto.
 
-6. **Obiettivi aziendali supportati**: uno o più obiettivi aziendali del set esistente in `/help/blueprints/business-objectives/`. Ciascuno deve includere il nome dell&#39;obiettivo, la sottocartella della categoria e il nome del file. Verifica che i file a cui si fa riferimento esistano prima di generare il contenuto.
+6. **Casi d&#39;uso tattici di esempio** — 6-10 scenari puntati che descrivono come questo modello può essere applicato in contesti aziendali diversi. Ogni scenario deve avere un nome in grassetto seguito da una descrizione.
 
-7. **Casi d&#39;uso tattici di esempio** — 6-10 scenari puntati che descrivono come questo modello può essere applicato in contesti aziendali diversi. Ogni scenario deve avere un nome in grassetto seguito da una descrizione.
+7. **KPI** — Tabella con tre colonne: KPI (nome), Descrizione (cosa viene misurato), Misurazione (formula o approccio).
 
-8. **KPI** — Tabella con tre colonne: KPI (nome), Descrizione (cosa viene misurato), Misurazione (formula o approccio).
-
-9. **Opzioni di implementazione** — 2-4 opzioni di implementazione. Per ogni opzione, raccogli:
-   - Nome opzione
-   - Consigliato per (quando utilizzare questa opzione)
-   - Come funziona (2-4 paragrafi)
-   - Considerazioni chiave (elenco puntato)
-   - Vantaggi (elenco puntato)
-   - Limitazioni (elenco puntato)
-   - Collegamenti Experience League (URL della documentazione pertinente)
+8. **Collegamenti di riferimento**: collegamenti di riferimento a documenti Experience League principali che descrivono le applicazioni e le funzionalità del modello di caso d&#39;uso.
 
 ### Facoltativo ma consigliato
 
 - Paragrafi di panoramica del caso d’uso (3-5 paragrafi; se non forniti, estrapolali dalle altre informazioni)
 - Elenco delle applicazioni con la descrizione del ruolo di ogni app Adobe
-- Tabella delle funzionalità fondamentali (Capacità, Stato, Requisiti, Riferimento Experience League)
-- Tabella delle funzionalità di supporto (Capacità, Stato, Perché è importante, Riferimento Experience League)
-- Tabelle delle funzionalità dell’applicazione (una per applicazione, con capacità, fase di implementazione, descrizione)
-- Elenco di controllo dei prerequisiti
 
 Se l&#39;utente non fornisce gli elementi facoltativi, generare valori predefiniti ragionevoli in base alla categoria di pattern, alle soluzioni e al piano di esecuzione.
 
@@ -92,18 +79,6 @@ Utilizzare il modello da `references/pattern-template.md` e inserire tutti i val
 7. **Caso d&#39;uso** - Paragrafo di descrizione e piano di esecuzione.
 
 8. **Applicazioni** — Elenco di applicazioni Adobe con formattazione e descrizioni `[!DNL ...]`.
-
-9. **Funzionalità fondamentali** — Tabella con colonne: Funzionalità fondamentali, Stato, Requisiti, Riferimento Experience League. Valori di stato: Obbligatorio, Presupposto attivo, Non applicabile.
-
-10. **Funzionalità di supporto** — Tabella con colonne: Funzionalità di supporto, Stato, Perché è importante, Riferimento Experience League. Valori di stato: consigliato, incluso, non applicabile.
-
-11. **Funzionalità dell&#39;applicazione**: una tabella per applicazione con colonne: capacità, fase di implementazione, descrizione.
-
-12. **Prerequisiti** — Elenco di controllo con sintassi `- [ ]`.
-
-13. **Opzioni di implementazione**: 2-4 opzioni dettagliate, ciascuna con Best for, Come funziona, Considerazioni chiave, Vantaggi, Limitazioni e collegamenti Experience League.
-
-14. **Confronto opzioni**: tabella di confronto di riepilogo alla fine.
 
 ## Fase 3: Aggiornamenti dei riferimenti incrociati
 
@@ -157,7 +132,7 @@ Dopo aver creato e aggiornato tutti i file, verifica quanto segue:
 
 5. **Completezza frontmatter**: il file di pattern include titolo, descrizione, soluzione ed exl-id nel frontmatter YAML.
 
-6. **Collegamenti Experience League** — Verifica che gli URL Experience League siano plausibili (inizia con `https://experienceleague.adobe.com/it`).
+6. **Collegamenti Experience League** — Verifica che gli URL Experience League siano plausibili (inizia con `https://experienceleague.adobe.com/`).
 
 Segnala eventuali errori di convalida all’utente e correggili prima di considerare completata l’attività.
 
