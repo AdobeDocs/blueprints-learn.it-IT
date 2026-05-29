@@ -3,7 +3,7 @@ title: Personalization Web visitatore anonimo
 description: Scopri come distribuire contenuti web personalizzati a visitatori non identificati in base a segnali comportamentali durante la sessione.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: e2446801-ffce-40e6-bfe9-abec623c9201
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
 workflow-type: tm+mt
 source-wordcount: '8109'
 ht-degree: 1%
@@ -100,15 +100,15 @@ Distribuisci contenuti personalizzati in base a segnali comportamentali durante 
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer] (AJO)**: configurazione della superficie del canale web, authoring dei contenuti (esperienze web e basate su codice), esecuzione di campagne, sperimentazione dei contenuti (test A/B), decisioning (selezione dinamica dei contenuti) e reporting
-- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Segmentazione di Edge per la valutazione del pubblico in tempo reale basata su segnali comportamentali durante la sessione; gestione anonima dei profili edge
-- **[!DNL Adobe Experience Platform] (AEP)** — [!DNL Web SDK] per la raccolta di segnali comportamentali, [!DNL Edge Network] per il routing dei dati in tempo reale e la consegna della personalizzazione, configurazione dello stream di dati
+- **[!DNL Adobe Journey Optimizer](AJO)**: configurazione della superficie del canale web, authoring dei contenuti (esperienze web e basate su codice), esecuzione di campagne, sperimentazione dei contenuti (test A/B), decisioning (selezione dinamica dei contenuti) e reporting
+- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — Segmentazione di Edge per la valutazione del pubblico in tempo reale basata su segnali comportamentali durante la sessione; gestione anonima dei profili edge
+- **[!DNL Adobe Experience Platform](AEP)** — [!DNL Web SDK] per la raccolta di segnali comportamentali, [!DNL Edge Network] per il routing dei dati in tempo reale e la consegna della personalizzazione, configurazione dello stream di dati
 
 ## Architettura
 
 La seguente architettura di riferimento illustra come i segnali dei visitatori anonimi vengono raccolti al limite, valutati in base alle regole di pubblico e utilizzati per fornire contenuti personalizzati.
 
-![Architettura di riferimento per l&#39;attivazione e la personalizzazione del pubblico anonimo](/help/blueprints/audience-activation/assets/anonymous_activation.svg)
+![Architettura di riferimento per l&#39;attivazione e la personalizzazione del pubblico anonimo](/help/blueprints/audience-activation/assets/anonymous_activation.png)
 
 ## Funzionalità fondamentali
 
@@ -116,11 +116,11 @@ Per questo modello di caso d’uso devono essere disponibili le seguenti funzion
 
 | Funzionalità di base | Stato | Cosa deve essere al suo posto | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Amministrazione e governance | Presunto sul posto | Sandbox di AJO con autorizzazioni per il canale web configurate. Autorizzazioni di implementazione [!DNL Web SDK] e accesso allo stream di dati concessi al team di implementazione. Agli utenti sono stati assegnati ruoli che consentono la configurazione del canale web, la gestione dell’audience e l’esecuzione della campagna. | [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/home) |
-| Modellazione e preparazione dei dati | Obbligatorio | Lo schema Experience Event acquisisce segnali comportamentali web (visualizzazioni di pagina, clic, profondità di scorrimento, dati di riferimento, parametri UTM). Lo schema deve includere gruppi di campi di interazione web standard ed essere abilitato per il profilo Edge in modo da supportare la valutazione in tempo reale. È necessario creare un set di dati corrispondente e abilitarlo per il profilo. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home) |
-| Origini dati e raccolta | Obbligatorio | [!DNL Web SDK] deve essere implementato in tutte le proprietà web di destinazione con uno stream di dati configurato per instradare i dati a [!DNL AEP Edge Network]. Lo stream di dati deve avere i servizi [!DNL Adobe Experience Platform] e [!DNL Adobe Journey Optimizer] abilitati. Si tratta di una dipendenza critica. Senza [!DNL Web SDK], non è possibile alcuna raccolta di segnali comportamentali o distribuzione di esperienze. | [Panoramica di Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home) |
-| Configurazione identità e profilo | Obbligatorio | ECID ([!DNL Experience Cloud ID]) configurato come spazio dei nomi dell&#39;identità primaria per i visitatori anonimi. Il criterio di unione di Edge deve essere configurato con `isActiveOnEdge: true` per risolvere i dati di profilo anonimi nel server Edge di. Su Edge può essere attivo un solo criterio di unione per sandbox. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) |
-| Definizione e segmentazione del pubblico | Obbligatorio | Segmenti di pubblico valutati da Edge definiti in base ai segnali comportamentali durante la sessione. La segmentazione di Edge è obbligatoria per la latenza di valutazione dei secondi secondari. Le regole di segmento devono utilizzare solo espressioni di regole di segmento idonee per gli edge (controlli di attributi semplici e appartenenza ai segmenti, senza query di serie temporali o aggregazioni complesse). | [Segmentazione di Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation) |
+| Amministrazione e governance | Presunto sul posto | Sandbox di AJO con autorizzazioni per il canale web configurate. Autorizzazioni di implementazione [!DNL Web SDK] e accesso allo stream di dati concessi al team di implementazione. Agli utenti sono stati assegnati ruoli che consentono la configurazione del canale web, la gestione dell’audience e l’esecuzione della campagna. | [Panoramica sul controllo degli accessi](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| Modellazione e preparazione dei dati | Obbligatorio | Lo schema Experience Event acquisisce segnali comportamentali web (visualizzazioni di pagina, clic, profondità di scorrimento, dati di riferimento, parametri UTM). Lo schema deve includere gruppi di campi di interazione web standard ed essere abilitato per il profilo Edge in modo da supportare la valutazione in tempo reale. È necessario creare un set di dati corrispondente e abilitarlo per il profilo. | [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) |
+| Origini dati e raccolta | Obbligatorio | [!DNL Web SDK] deve essere implementato in tutte le proprietà web di destinazione con uno stream di dati configurato per instradare i dati a [!DNL AEP Edge Network]. Lo stream di dati deve avere i servizi [!DNL Adobe Experience Platform] e [!DNL Adobe Journey Optimizer] abilitati. Si tratta di una dipendenza critica. Senza [!DNL Web SDK], non è possibile alcuna raccolta di segnali comportamentali o distribuzione di esperienze. | [Panoramica di Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) |
+| Configurazione identità e profilo | Obbligatorio | ECID ([!DNL Experience Cloud ID]) configurato come spazio dei nomi dell&#39;identità primaria per i visitatori anonimi. Il criterio di unione di Edge deve essere configurato con `isActiveOnEdge: true` per risolvere i dati di profilo anonimi nel server Edge di. Su Edge può essere attivo un solo criterio di unione per sandbox. | [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) |
+| Definizione e segmentazione del pubblico | Obbligatorio | Segmenti di pubblico valutati da Edge definiti in base ai segnali comportamentali durante la sessione. La segmentazione di Edge è obbligatoria per la latenza di valutazione dei secondi secondari. Le regole di segmento devono utilizzare solo espressioni di regole di segmento idonee per gli edge (controlli di attributi semplici e appartenenza ai segmenti, senza query di serie temporali o aggregazioni complesse). | [Segmentazione di Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation) |
 
 ## Funzionalità di supporto
 
@@ -128,11 +128,11 @@ Le seguenti funzionalità incrementano questo modello di caso d’uso, ma non so
 
 | Funzionalità di supporto | Stato | Perché è importante | Guida di riferimento di Experience League |
 | --- | --- | --- | --- |
-| Creazione di attributi calcolati/derivati | Non applicabile | Valore limitato per i visitatori anonimi, in quanto i dati del profilo storico da aggregare sono minimi. Può diventare applicabile se il profilo Edge accumula dati comportamentali significativi da precedenti visite anonime in più sessioni. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/it/docs/experience-platform/profile/computed-attributes/overview) |
-| Data Lifecycle Management | Consigliato | La scadenza del profilo pseudonimo deve essere configurata per i profili edge anonimi in modo da gestire l’archiviazione e rispettare i requisiti di privacy. I profili solo ECID possono essere impostati per scadere tra 14 e 365 giorni. I criteri di consenso dei cookie devono essere applicati per la raccolta dei dati comportamentali. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home) |
-| Etichettatura e applicazione dell’utilizzo dati | Consigliato | Le etichette di governance sui dati comportamentali garantiscono la conformità, in particolare per il geotargeting (etichetta geografica sensibile a S2) e la personalizzazione basata su dispositivi. Le etichette impediscono l’utilizzo di dati comportamentali limitati in contesti di personalizzazione non autorizzati. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home) |
-| Monitoraggio e osservabilità | Consigliato | Il monitoraggio del flusso di dati di [!DNL Edge Network] e [!DNL Web SDK] consente di rilevare i problemi di consegna della personalizzazione. Configura gli avvisi per gli errori dello stream di dati, gli errori di acquisizione e le anomalie di consegna Edge. Critico per le distribuzioni di produzione in cui gli errori di personalizzazione degradano l’esperienza del visitatore. | [Panoramica di Observability Insights](https://experienceleague.adobe.com/it/docs/experience-platform/observability/home) |
-| Reporting e analisi | Incluso | Il reporting sulle prestazioni di Personalization fa parte del piano di esecuzione (fase 5). L’analisi CJA dell’efficacia della personalizzazione dei visitatori anonimi consente un’analisi approfondita del funnel, un confronto tra coorti e una misurazione dell’impatto della conversione oltre a quelli forniti dai rapporti nativi di AJO. | [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview) |
+| Creazione di attributi calcolati/derivati | Non applicabile | Valore limitato per i visitatori anonimi, in quanto i dati del profilo storico da aggregare sono minimi. Può diventare applicabile se il profilo Edge accumula dati comportamentali significativi da precedenti visite anonime in più sessioni. | [Panoramica attributi calcolati](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
+| Data Lifecycle Management | Consigliato | La scadenza del profilo pseudonimo deve essere configurata per i profili edge anonimi in modo da gestire l’archiviazione e rispettare i requisiti di privacy. I profili solo ECID possono essere impostati per scadere tra 14 e 365 giorni. I criteri di consenso dei cookie devono essere applicati per la raccolta dei dati comportamentali. | [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
+| Etichettatura e applicazione dell’utilizzo dati | Consigliato | Le etichette di governance sui dati comportamentali garantiscono la conformità, in particolare per il geotargeting (etichetta geografica sensibile a S2) e la personalizzazione basata su dispositivi. Le etichette impediscono l’utilizzo di dati comportamentali limitati in contesti di personalizzazione non autorizzati. | [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
+| Monitoraggio e osservabilità | Consigliato | Il monitoraggio del flusso di dati di [!DNL Edge Network] e [!DNL Web SDK] consente di rilevare i problemi di consegna della personalizzazione. Configura gli avvisi per gli errori dello stream di dati, gli errori di acquisizione e le anomalie di consegna Edge. Critico per le distribuzioni di produzione in cui gli errori di personalizzazione degradano l’esperienza del visitatore. | [Panoramica di Observability Insights](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| Reporting e analisi | Incluso | Il reporting sulle prestazioni di Personalization fa parte del piano di esecuzione (fase 5). L’analisi CJA dell’efficacia della personalizzazione dei visitatori anonimi consente un’analisi approfondita del funnel, un confronto tra coorti e una misurazione dell’impatto della conversione oltre a quelli forniti dai rapporti nativi di AJO. | [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## Funzionalità dell’applicazione
 
@@ -207,8 +207,8 @@ Questo approccio richiede la definizione di segmenti di pubblico distinti in RT-
 
 **Experience League:**
 
-- [Introduzione al canale web](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/web/get-started-web)
-- [Segmentazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Introduzione al canale web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/get-started-web)
+- [Segmentazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
 
 ### Opzione B: Personalizzazione web basata sulla sperimentazione
 
@@ -248,7 +248,7 @@ Questa opzione non richiede segmenti di pubblico predefiniti per il targeting: t
 
 **Experience League:**
 
-- [Introduzione all’esperimento sui contenuti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
+- [Introduzione all’esperimento sui contenuti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
 - [Creare un esperimento sui contenuti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/create-content-experiment)
 - [Rapporto sull’esperimento sui contenuti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment-report)
 
@@ -291,7 +291,7 @@ La strategia di classificazione determina il modo in cui vengono ordinati gli el
 **Experience League:**
 
 - [Panoramica sulla gestione delle decisioni](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [Creare i posizionamenti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [Creare i posizionamenti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
 - [Creazione di offerte personalizzate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Crea decisioni](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 
@@ -370,8 +370,8 @@ Definisci le superfici dei canali web che specificano dove verrà distribuito il
 
 **Documentazione di Experience League:**
 
-- [Introduzione al canale web](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/web/get-started-web)
-- [Creare esperienze web](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/web/create-web)
+- [Introduzione al canale web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/get-started-web)
+- [Creare esperienze web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/create-web)
 - [Canale di esperienza basato su codice](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based/get-started-code-based)
 - [Configurazione dell’esperienza basata su codice](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based/code-based-configuration)
 
@@ -426,10 +426,10 @@ Definisci i tipi di pubblico da utilizzare come regole di idoneità per gli elem
 
 **Documentazione di Experience League:**
 
-- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
-- [Segmentazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Riferimento Profile Query Language](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/pql/overview)
-- [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Segmentazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Riferimento Profile Query Language](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
+- [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
 
 ### Fase 3: Creare contenuti e varianti
 
@@ -499,7 +499,7 @@ Imposta lo stack di componenti Decisioning e integralo nella campagna.
 
 **Documentazione di Experience League:**
 
-- [Creare esperienze web](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/web/create-web)
+- [Creare esperienze web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/create-web)
 - [Canale di esperienza basato su codice](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based/get-started-code-based)
 - [Aggiungere personalizzazione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Contenuto dinamico](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
@@ -549,7 +549,7 @@ Crea una campagna che incorpora il criterio di decisione configurato nella fase 
 **Documentazione di Experience League:**
 
 - [Creare una campagna](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/create-campaign)
-- [Introduzione alle campagne](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
+- [Introduzione alle campagne](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
 - [Consegnare offerte nei messaggi](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
 
 ### Fase 5: rapporto e analisi delle prestazioni
@@ -596,7 +596,7 @@ Rivedi le metriche delle prestazioni di decisioning, inclusi i tassi di impressi
 - [Rapporto live delle campagne](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-live-report)
 - [Rapporto globale della campagna](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-global-report-cja)
 - [Utilizzare Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/home)
+- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
 - [Calcoli statistici nell’esperimento sui contenuti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment-calculations)
 
 ## Considerazioni sull’implementazione
@@ -607,13 +607,13 @@ Questa sezione descrive guardrail, insidie comuni, best practice e decisioni di 
 
 Rivedi i seguenti guardrail prima e durante l’implementazione.
 
-- I segmenti Edge sono limitati a semplici controlli degli attributi e appartenenza ai segmenti, ovvero nessuna query di serie temporali o aggregazione complessa. [Idoneità alla segmentazione di Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
-- È possibile attivare un solo criterio di unione su Edge per sandbox: [Guardrail di profilo](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
-- Massimo 4.000 definizioni di segmenti per sandbox: [Guardrail di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
-- Massimo 500 campagne live attive per sandbox: [guardrail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
-- Massimo 10 varianti di trattamento per esperimento di contenuti — [Limiti per esperimento di contenuti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
-- Massimo 10.000 offerte personalizzate approvate per sandbox (opzione C) — [Guardrail di gestione delle decisioni](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
-- Massimo 30 posizionamenti per decisione (opzione C): [guardrail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
+- I segmenti Edge sono limitati a semplici controlli degli attributi e appartenenza ai segmenti, ovvero nessuna query di serie temporali o aggregazione complessa. [Idoneità alla segmentazione di Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- È possibile attivare un solo criterio di unione su Edge per sandbox: [Guardrail di profilo](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- Massimo 4.000 definizioni di segmenti per sandbox: [Guardrail di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- Massimo 500 campagne live attive per sandbox: [guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- Massimo 10 varianti di trattamento per esperimento di contenuti — [Limiti per esperimento di contenuti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- Massimo 10.000 offerte personalizzate approvate per sandbox (opzione C) — [Guardrail di gestione delle decisioni](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- Massimo 30 posizionamenti per decisione (opzione C): [guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 - I modelli di classificazione IA richiedono almeno 1.000 eventi di conversione per l’apprendimento (opzione C)
 - [!DNL Edge Network] tempo di risposta SLA: &lt; 200 ms per i segmenti valutati edge
 - Scadenza profilo pseudonimo: configurabile da 14 a 365 giorni per profili solo ECID
@@ -681,30 +681,30 @@ Le seguenti risorse di Experience League forniscono ulteriori dettagli sulle fun
 
 **Canale web ed esperienze basate su codice**
 
-- [Introduzione al canale web](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/web/get-started-web)
-- [Creare esperienze web](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/web/create-web)
+- [Introduzione al canale web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/get-started-web)
+- [Creare esperienze web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/create-web)
 - [Canale di esperienza basato su codice](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based/get-started-code-based)
 - [Configurazione dell’esperienza basata su codice](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based/code-based-configuration)
 
 **Tipi di pubblico e segmentazione**
 
-- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
-- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
-- [Segmentazione Edge](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Riferimento Profile Query Language](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/pql/overview)
+- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Segmentazione Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Riferimento Profile Query Language](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 **Personalization e contenuto**
 
 - [Aggiungere personalizzazione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Sintassi Personalization](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalization-syntax)
 - [Contenuto dinamico](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
-- [Utilizzare i modelli di contenuto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [Utilizzare i modelli di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [Utilizzare i frammenti di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
 
 **Sperimentazione dei contenuti**
 
-- [Introduzione all’esperimento sui contenuti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
+- [Introduzione all’esperimento sui contenuti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
 - [Creare un esperimento sui contenuti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/create-content-experiment)
 - [Rapporto sull’esperimento sui contenuti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment-report)
 - [Calcoli statistici](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment-calculations)
@@ -712,8 +712,8 @@ Le seguenti risorse di Experience League forniscono ulteriori dettagli sulle fun
 **Gestione delle decisioni**
 
 - [Panoramica sulla gestione delle decisioni](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [Creare i posizionamenti](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [Creare regole di decisione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [Creare i posizionamenti](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [Creare regole di decisione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [Creazione di offerte personalizzate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [Creare offerte di fallback](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [Creare le raccolte](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
@@ -723,44 +723,44 @@ Le seguenti risorse di Experience League forniscono ulteriori dettagli sulle fun
 
 **Campagne**
 
-- [Introduzione alle campagne](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
+- [Introduzione alle campagne](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
 - [Creare una campagna](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/create-campaign)
 
 **[!DNL Web SDK]e raccolta dati**
 
-- [Panoramica di Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home)
-- [Installare Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/install/overview)
-- [Configurare gli stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/configure)
-- [Panoramica sui tag](https://experienceleague.adobe.com/it/docs/experience-platform/tags/home)
+- [Panoramica di Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Installare Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)
+- [Configurare gli stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [Panoramica sui tag](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 **Identità e profilo**
 
-- [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
+- [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
 - [Panoramica sugli spazi dei nomi delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/namespaces)
-- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview)
-- [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/home)
+- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 **Modellazione dati**
 
-- [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home)
-- [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition)
+- [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
 
 **Reporting e analisi**
 
 - [Rapporto live delle campagne](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-live-report)
 - [Rapporto globale della campagna](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-global-report-cja)
 - [Utilizzare Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-workspace/home)
-- [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Panoramica di Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
 
 **Governance dei dati e privacy**
 
-- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home)
-- [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home)
-- [Gruppo di campi Consenso e preferenze](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/field-groups/profile/consents)
+- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Panoramica di Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
+- [Gruppo di campi Consenso e preferenze](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents)
 
 **Guardrail**
 
-- [Guardrail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
-- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
-- [Guardrail del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/guardrails)
+- [Guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Guardrail del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)
