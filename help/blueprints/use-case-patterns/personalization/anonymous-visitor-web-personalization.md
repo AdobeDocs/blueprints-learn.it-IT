@@ -3,7 +3,7 @@ title: Personalization Web visitatore anonimo
 description: Scopri come distribuire contenuti web personalizzati a visitatori non identificati in base a segnali comportamentali durante la sessione.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: e2446801-ffce-40e6-bfe9-abec623c9201
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
 workflow-type: tm+mt
 source-wordcount: '8109'
 ht-degree: 1%
@@ -108,7 +108,7 @@ In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
 La seguente architettura di riferimento illustra come i segnali dei visitatori anonimi vengono raccolti al limite, valutati in base alle regole di pubblico e utilizzati per fornire contenuti personalizzati.
 
-![Architettura di riferimento per l&#39;attivazione e la personalizzazione del pubblico anonimo](/help/blueprints/audience-activation/assets/anonymous_activation.svg)
+![Architettura di riferimento per l&#39;attivazione e la personalizzazione del pubblico anonimo](/help/blueprints/audience-activation/assets/anonymous_activation.png)
 
 ## Funzionalità fondamentali
 

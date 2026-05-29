@@ -19,9 +19,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
 workflow-type: tm+mt
-source-wordcount: 2349
+source-wordcount: 2322
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Quando un lead dimostra chiaramente l&#39;interesse della soluzione, indica un e
 
 Come illustrato nel diagramma seguente, è possibile raccogliere i dettagli nei moduli o tramite l’attivazione di LinkedIn e qualificare un intento della soluzione quando si è verificata un’interazione con un chat-bot.
 
-![percorso di gruppi di acquisto](./assets/buying-group-journey-diagram.svg){zoomable="yes"}
+![percorso di gruppi di acquisto](./assets/buying-group-journey-diagram.png){zoomable="yes"}
 
 Quando la percentuale di completamento del gruppo di acquisto è sufficientemente alta, il gruppo viene condiviso con il team vendite tramite SQL o SOL per convertire i lead nell&#39;account in una vendita completata.
 
