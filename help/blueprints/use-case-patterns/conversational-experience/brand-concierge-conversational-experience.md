@@ -112,4 +112,4 @@ Per implementare questo modello di caso d’uso vengono utilizzate le seguenti a
 
 ## Documentazione correlata
 
-Per istruzioni sull&#39;implementazione e ulteriori informazioni, consulta [Panoramica di Brand Concierge](https://experienceleague.adobe.com/en/docs/brand-concierge/content/documentation/overview) su Adobe Experience League.
+Per istruzioni sull&#39;implementazione e ulteriori informazioni, consulta [Panoramica di Brand Concierge](https://experienceleague.adobe.com/it/docs/brand-concierge/content/documentation/overview) su Adobe Experience League.
