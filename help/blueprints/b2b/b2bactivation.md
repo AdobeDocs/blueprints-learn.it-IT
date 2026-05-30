@@ -16,9 +16,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: b8b25146021472c6f513435df8e3be88254d9c3f
 workflow-type: tm+mt
-source-wordcount: 1034
+source-wordcount: 1036
 ht-degree: 52%
 
 ---
@@ -34,7 +34,7 @@ Associa a un singolo cliente le informazioni relative all’account, alle opport
 
 * Crea un pubblico basato su persone e utilizzalo per il targeting e la personalizzazione su canali diversi, grazie a dati B2B quali account, opportunità e lead.
 * Attiva uno specifico pubblico in qualsiasi destinazione di Experience Platform per attività di targeting e personalizzazione.
-* Crea tipi di pubblico di account (ad esempio, elenchi di aziende) ed esegui il targeting di tali aziende tramite destinazioni come LinkedIn che accettano elenchi di aziende come input o esportazione in destinazioni di archiviazione cloud per il targeting e la divulgazione delle vendite.
+* Crea tipi di pubblico di account (ad esempio, elenchi di aziende) ed esegui il targeting di tali aziende tramite destinazioni come LinkedIn o l’archiviazione cloud. Per informazioni dettagliate, requisiti e guardrail per il pubblico dell&#39;account, consulta [Attivazione account B2B in destinazioni Advertising e destinazioni file](b2b-account-activation.md).
 
 ## Applicazioni
 
