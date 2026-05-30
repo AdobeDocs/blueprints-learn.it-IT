@@ -1,7 +1,7 @@
 ---
 name: use-case-pattern-page-builder
 description: 'Guida alla creazione di nuovi contenuti del modello di caso d’uso per l’archivio Adobe Experience Platform blueprint. Utilizza questa abilità quando aggiungi un nuovo pattern di casi d’uso, crei contenuti di guida all’implementazione o quando l’utente menziona l’aggiunta di pattern al sito blueprint. Gestisce l’intero flusso di lavoro: raccoglie informazioni sul modello, genera il file markdown con la struttura corretta del modello e aggiorna tutte le pagine di riferimenti incrociati (TOC.md, overview.md).'
-source-git-commit: 2577bb034012a78fd30a65b7b44196b91921923e
+source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 94%
@@ -68,15 +68,15 @@ Utilizzare il modello da `references/pattern-template.md` e inserire tutti i val
 
 2. **Apertura dell&#39;intestazione** - `# {Pattern name}` seguita da un paragrafo introduttivo e dal messaggio &quot;Utilizzare questa guida per comprendere...&quot; frase.
 
-3. **Panoramica sul caso d&#39;uso** — 3-5 paragrafi che descrivono l&#39;ambito del pattern, quando viene applicato, quali operazioni vengono eseguite e quali no e quali sono le parti interessate tipiche.
+3. **Caso d&#39;uso** - Paragrafo di descrizione e piano di esecuzione.
 
-4. **Obiettivi aziendali chiave**: ogni obiettivo come intestazione collegata con una breve descrizione e una riga di riepilogo dei KPI.
+4. **Panoramica sul caso d&#39;uso** — 3-5 paragrafi che descrivono l&#39;ambito del pattern, quando viene applicato, quali operazioni vengono eseguite e quali no e quali sono le parti interessate tipiche.
 
-5. **Casi d&#39;uso tattici di esempio** — Elenco puntato di 6-10 scenari.
+5. **Obiettivi aziendali chiave**: ogni obiettivo come intestazione collegata con una breve descrizione e una riga di riepilogo dei KPI.
 
-6. **Indicatori prestazioni chiave** — Tabella con colonne KPI, Descrizione e Misurazione.
+6. **Casi d&#39;uso tattici di esempio** — Elenco puntato di 6-10 scenari.
 
-7. **Caso d&#39;uso** - Paragrafo di descrizione e piano di esecuzione.
+7. **Indicatori prestazioni chiave** — Tabella con colonne KPI, Descrizione e Misurazione.
 
 8. **Applicazioni** — Elenco di applicazioni Adobe con formattazione e descrizioni `[!DNL ...]`.
 
@@ -132,7 +132,7 @@ Dopo aver creato e aggiornato tutti i file, verifica quanto segue:
 
 5. **Completezza frontmatter**: il file di pattern include titolo, descrizione, soluzione ed exl-id nel frontmatter YAML.
 
-6. **Collegamenti Experience League** — Verifica che gli URL Experience League siano plausibili (inizia con `https://experienceleague.adobe.com/it`).
+6. **Collegamenti Experience League** — Verifica che gli URL Experience League siano plausibili (inizia con `https://experienceleague.adobe.com/`).
 
 Segnala eventuali errori di convalida all’utente e correggili prima di considerare completata l’attività.
 
