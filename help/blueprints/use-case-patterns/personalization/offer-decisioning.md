@@ -80,9 +80,9 @@ I KPI seguenti aiutano a misurare l’efficacia di un’implementazione di Offer
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni Adobe.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** — Motore di gestione delle decisioni per la creazione di offerte, regole di idoneità, strategie di classificazione, posizionamenti e criteri di decisione; configurazione dei canali e authoring dei messaggi per la consegna delle offerte; esecuzione di campagne e percorsi
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — Valutazione del pubblico per i segmenti di idoneità delle offerte; dati di profilo e attributi calcolati utilizzati nell&#39;idoneità e nella classificazione
-- **[!DNL Adobe Experience Platform](AEP)**: archivio profili unificato, risoluzione identità e base dati che supportano sia AJO che RT-CDP
+- **[!DNL Adobe Journey Optimizer] (AJO)** — Motore di gestione delle decisioni per la creazione di offerte, regole di idoneità, strategie di classificazione, posizionamenti e criteri di decisione; configurazione dei canali e authoring dei messaggi per la consegna delle offerte; esecuzione di campagne e percorsi
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Valutazione del pubblico per i segmenti di idoneità delle offerte; dati di profilo e attributi calcolati utilizzati nell&#39;idoneità e nella classificazione
+- **[!DNL Adobe Experience Platform] (AEP)**: archivio profili unificato, risoluzione identità e base dati che supportano sia AJO che RT-CDP
 
 ## Documentazione correlata
 

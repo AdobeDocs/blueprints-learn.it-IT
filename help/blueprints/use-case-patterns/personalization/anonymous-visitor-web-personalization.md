@@ -98,9 +98,9 @@ Utilizza i seguenti KPI per misurare l’efficacia di questo modello di caso d�
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer](AJO)**: configurazione della superficie del canale web, authoring dei contenuti (esperienze web e basate su codice), esecuzione di campagne, sperimentazione dei contenuti (test A/B), decisioning (selezione dinamica dei contenuti) e reporting
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — Segmentazione di Edge per la valutazione del pubblico in tempo reale basata su segnali comportamentali durante la sessione; gestione anonima dei profili edge
-- **[!DNL Adobe Experience Platform](AEP)** — [!DNL Web SDK] per la raccolta di segnali comportamentali, [!DNL Edge Network] per il routing dei dati in tempo reale e la consegna della personalizzazione, configurazione dello stream di dati
+- **[!DNL Adobe Journey Optimizer] (AJO)**: configurazione della superficie del canale web, authoring dei contenuti (esperienze web e basate su codice), esecuzione di campagne, sperimentazione dei contenuti (test A/B), decisioning (selezione dinamica dei contenuti) e reporting
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Segmentazione di Edge per la valutazione del pubblico in tempo reale basata su segnali comportamentali durante la sessione; gestione anonima dei profili edge
+- **[!DNL Adobe Experience Platform] (AEP)** — [!DNL Web SDK] per la raccolta di segnali comportamentali, [!DNL Edge Network] per il routing dei dati in tempo reale e la consegna della personalizzazione, configurazione dello stream di dati
 
 ## Architettura
 

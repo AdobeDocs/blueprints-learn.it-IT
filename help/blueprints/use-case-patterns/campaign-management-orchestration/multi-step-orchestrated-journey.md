@@ -99,9 +99,9 @@ Utilizza i KPI seguenti per misurare l’efficacia dell’implementazione di un 
 
 Per implementare questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer](AJO)**: motore di orchestrazione del Percorso, authoring dei messaggi, configurazione dei canali, sperimentazione dei contenuti, gestione dei conflitti e della frequenza e reporting
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — Valutazione e definizione del pubblico per tipi di pubblico di ingresso nel percorso, dati del profilo per la personalizzazione e diramazione delle condizioni
-- **[!DNL Adobe Experience Platform](AEP)** — Archivio profili, servizio Identity, acquisizione dati evento e infrastruttura dati di base
+- **[!DNL Adobe Journey Optimizer] (AJO)**: motore di orchestrazione del Percorso, authoring dei messaggi, configurazione dei canali, sperimentazione dei contenuti, gestione dei conflitti e della frequenza e reporting
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Valutazione e definizione del pubblico per tipi di pubblico di ingresso nel percorso, dati del profilo per la personalizzazione e diramazione delle condizioni
+- **[!DNL Adobe Experience Platform] (AEP)** — Archivio profili, servizio Identity, acquisizione dati evento e infrastruttura dati di base
 
 ## Documentazione correlata
 

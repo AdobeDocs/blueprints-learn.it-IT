@@ -88,9 +88,9 @@ La tabella seguente definisce i KPI utilizzati per misurare l’efficacia della 
 
 Per implementare questo modello vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer](AJO)** — Authoring dei messaggi, configurazione del canale, esecuzione della campagna, orchestrazione del percorso, sperimentazione dei contenuti, regole di frequenza e reporting
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — Valutazione del pubblico, consenso e applicazione della governance
-- **[!DNL Adobe Experience Platform](AEP)** — Archivio profili, servizio identità, schemi, set di dati, raccolta dati
+- **[!DNL Adobe Journey Optimizer] (AJO)** — Authoring dei messaggi, configurazione del canale, esecuzione della campagna, orchestrazione del percorso, sperimentazione dei contenuti, regole di frequenza e reporting
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Valutazione del pubblico, consenso e applicazione della governance
+- **[!DNL Adobe Experience Platform] (AEP)** — Archivio profili, servizio identità, schemi, set di dati, raccolta dati
 
 ## Documentazione correlata
 

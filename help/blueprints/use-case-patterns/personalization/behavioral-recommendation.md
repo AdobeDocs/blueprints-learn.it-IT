@@ -85,9 +85,9 @@ I KPI seguenti aiutano a misurare l’efficacia delle implementazioni di consigl
 
 In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer](AJO) Decisioning** — Strategie di selezione, modelli di classificazione, cataloghi di elementi e criteri decisionali che valutano i segnali comportamentali e restituiscono gli elementi più rilevanti per ogni visitatore
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — Accumulo dei dati del profilo comportamentale, valutazione del pubblico per l&#39;ambito dei consigli e attributi calcolati per il punteggio di affinità comportamentale
-- **[!DNL Adobe Experience Platform](AEP)** — Acquisizione di eventi comportamentali tramite [!DNL Web SDK] e [!DNL Mobile SDK], elaborazione di [!DNL Edge Network], gestione dello schema XDM per i dati evento e catalogo
+- **[!DNL Adobe Journey Optimizer] (AJO) Decisioning** — Strategie di selezione, modelli di classificazione, cataloghi di elementi e criteri decisionali che valutano i segnali comportamentali e restituiscono gli elementi più rilevanti per ogni visitatore
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Accumulo dei dati del profilo comportamentale, valutazione del pubblico per l&#39;ambito dei consigli e attributi calcolati per il punteggio di affinità comportamentale
+- **[!DNL Adobe Experience Platform] (AEP)** — Acquisizione di eventi comportamentali tramite [!DNL Web SDK] e [!DNL Mobile SDK], elaborazione di [!DNL Edge Network], gestione dello schema XDM per i dati evento e catalogo
 
 ## Documentazione correlata
 

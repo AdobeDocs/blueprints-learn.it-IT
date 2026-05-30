@@ -92,10 +92,10 @@ Utilizza i seguenti KPI per misurare l’efficacia di questo modello di caso d�
 
 Per implementare questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
-- **[!DNL Adobe Journey Optimizer]([!DNL AJO])** — orchestrazione del Percorso (progettazione area di lavoro con più passaggi, condizioni di ingresso, attese, condizioni, criteri di uscita), authoring dei messaggi tra canali, configurazione della superficie di canale, gestione dei conflitti e delle priorità
+- **[!DNL Adobe Journey Optimizer] ([!DNL AJO])** — orchestrazione del Percorso (progettazione area di lavoro con più passaggi, condizioni di ingresso, attese, condizioni, criteri di uscita), authoring dei messaggi tra canali, configurazione della superficie di canale, gestione dei conflitti e delle priorità
 - **[!DNL Adobe Journey Optimizer]Decisioning** — Gestione di offerte e contenuti, regole di idoneità, strategie di classificazione (priorità, formula, IA), criteri di decisione, posizionamenti, offerte di fallback
-- **[!DNL Adobe Real-Time Customer Data Platform]([!DNL RT-CDP])** — Valutazione del pubblico per i segmenti di idoneità delle offerte e delle voci di percorso, arricchimento dei profili con attributi calcolati e punteggi di propensione, applicazione del consenso e della governance
-- **[!DNL Adobe Experience Platform]([!DNL AEP])** — Archivio Profilo cliente in tempo reale, servizio Identity per la risoluzione cross-channel, modellazione dati e infrastruttura di acquisizione
+- **[!DNL Adobe Real-Time Customer Data Platform] ([!DNL RT-CDP])** — Valutazione del pubblico per i segmenti di idoneità delle offerte e delle voci di percorso, arricchimento dei profili con attributi calcolati e punteggi di propensione, applicazione del consenso e della governance
+- **[!DNL Adobe Experience Platform] ([!DNL AEP])** — Archivio Profilo cliente in tempo reale, servizio Identity per la risoluzione cross-channel, modellazione dati e infrastruttura di acquisizione
 
 ## Documentazione correlata
 
