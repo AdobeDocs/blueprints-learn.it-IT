@@ -101,14 +101,14 @@ Le risorse seguenti forniscono ulteriori dettagli sulle applicazioni e funzional
 
 ### [!DNL AJO B2B Edition]
 
-- [Pagina principale della documentazione di AJO B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
-- [Panoramica sui gruppi di acquisto](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
-- [Interessi soluzione](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
-- [Modelli di ruolo](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
-- [Creare gruppi di acquisto](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
-- [Fasi del gruppo di acquisto](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
-- [Panoramica sui percorsi di account](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
-- [Nodi del percorso di account](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
+- [Pagina principale della documentazione di AJO B2B edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview)
+- [Panoramica sui gruppi di acquisto](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
+- [Interessi soluzione](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
+- [Modelli di ruolo](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
+- [Creare gruppi di acquisto](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
+- [Fasi del gruppo di acquisto](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [Panoramica sui percorsi di account](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
+- [Nodi del percorso di account](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
 - [E-mail di avviso vendite](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/sales-alert-email)
 - [Approfondimenti vendite CRM](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/crm-sales-insights)
 
@@ -120,49 +120,49 @@ Le risorse seguenti forniscono ulteriori dettagli sulle applicazioni e funzional
 
 ### Analisi e dashboard B2B
 
-- [Dashboard dei gruppi di acquisto](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/buying-groups-dashboard)
-- [Dashboard di coinvolgimento](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/engagement-dashboard)
-- [Dashboard intelligente](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/intelligent-dashboard)
+- [Dashboard dei gruppi di acquisto](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/dashboards/buying-groups-dashboard)
+- [Dashboard di coinvolgimento](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/dashboards/engagement-dashboard)
+- [Dashboard intelligente](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/dashboards/intelligent-dashboard)
 - [Panoramica di CJA B2B edition](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
 
 ### [!DNL RT-CDP B2B Edition]
 
 - [Panoramica di RT-CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)
-- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Pubblico dell’account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
-- [Connettore sorgente Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
+- [Pubblico dell’account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/types/account-audiences)
+- [Connettore sorgente Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
 
 ### Data Foundation
 
-- [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-- [Panoramica sulle origini](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home)
+- [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
+- [Panoramica sulle origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home)
+- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
 
 ### Configurazione dei canali
 
-- [Introduzione alla configurazione delle e-mail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
-- [Configurare il canale SMS](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [Introduzione alla configurazione delle e-mail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [Configurare il canale SMS](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 
 ### Governance dei dati e privacy
 
-- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
-- [Advanced Data Lifecycle Management](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
+- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home)
+- [Advanced Data Lifecycle Management](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/home)
 
 ### Destinazioni
 
-- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Catalogo delle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/home)
+- [Catalogo delle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/overview)
+- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/social/linkedin)
 
 ### Guardrail
 
-- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Guardrail del profilo cliente in tempo reale](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
 - [Guardrail di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
-- [Guardrail di acquisizione](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
-- [Guardrail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- [Guardrail di acquisizione](https://experienceleague.adobe.com/it/docs/experience-platform/ingestion/guardrails)
+- [Guardrail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
 
 ### Tutorial e guida introduttiva
 
-- [Guida introduttiva di AJO B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
+- [Guida introduttiva di AJO B2B edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview)
 - [Tutorial su B2B edition per RT-CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-tutorial)

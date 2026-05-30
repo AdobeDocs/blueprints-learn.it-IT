@@ -115,65 +115,65 @@ Le risorse seguenti forniscono ulteriore contesto e indicazioni dettagliate per 
 **[!DNL RT-CDP]B2B edition**
 
 - [Panoramica di Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b)
-- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Pubblico dell’account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
-- [Descrizione del prodotto B2B edition RT-CDP](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
+- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
+- [Pubblico dell’account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/types/account-audiences)
+- [Descrizione del prodotto B2B edition RT-CDP](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
 
 **Valutazione del pubblico e segmentazione**
 
-- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
-- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Composizione del pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Guardrail di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
+- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
+- [Composizione del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-composition)
+- [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Guardrail di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
 
 **Destinazioni e attivazione**
 
-- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Catalogo delle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [Destinazione Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
-- [Destinazione Salesforce CRM](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Destinazione Microsoft Dynamics 365](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
-- [Destinazione Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Guardrail di attivazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/home)
+- [Catalogo delle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/overview)
+- [Destinazione Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Destinazione Salesforce CRM](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/salesforce)
+- [Destinazione Microsoft Dynamics 365](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
+- [Destinazione Amazon S3](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Guardrail di attivazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
 
 **Origini dati e connettori**
 
-- [Panoramica sulle origini](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [Connettore Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Connettore Salesforce](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/crm/salesforce)
+- [Panoramica sulle origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home)
+- [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Connettore Salesforce](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/crm/salesforce)
 
 **Modellazione dati e identità**
 
-- [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-- [Panoramica del profilo](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
-- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home)
+- [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
+- [Panoramica del profilo](https://experienceleague.adobe.com/it/docs/experience-platform/profile/home)
+- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview)
 
 **Governance dei dati e privacy**
 
-- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home)
 - [Panoramica sulle etichette di utilizzo dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/labels/overview)
 - [Consenso e preferenze](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
 **Monitoraggio e osservabilità**
 
-- [Panoramica degli avvisi](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
-- [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [Monitorare i flussi di dati di origine](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/monitor)
+- [Panoramica degli avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview)
+- [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Monitorare i flussi di dati di origine](https://experienceleague.adobe.com/it/docs/experience-platform/sources/api-tutorials/monitor)
 - [Dashboard utilizzo licenze](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 **Reporting e analisi**
 
-- [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Panoramica delle connessioni](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
-- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Panoramica delle connessioni](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-connections/overview)
+- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dataviews/data-views)
 
 **Tutorial e guide**
 
 - [Guida introduttiva a Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro)
-- [Creare uno schema per le origini B2B](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Strumenti sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/sandbox-tooling-api/overview)
+- [Creare uno schema per le origini B2B](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
+- [Strumenti sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/sandbox-tooling-api/overview)
