@@ -174,7 +174,7 @@ Dopo aver creato e aggiornato tutti i file, verifica quanto segue e segnala even
 
 2. **Collegamenti per casi d&#39;uso**: ogni collegamento per motivi nel file punta a un file Markdown esistente in `/help/blueprints/use-case-patterns/`. Utilizza `Read` o glob per confermare l&#39;esistenza di ogni destinazione.
 
-3. **Collegamenti Experience League** - Controllare che ogni URL nella sezione `## Further reading` inizi con `https://experienceleague.adobe.com/`.
+3. **Collegamenti Experience League** - Controllare che ogni URL nella sezione `## Further reading` inizi con `https://experienceleague.adobe.com/it`.
 
 4. **Posizionamento voce sommario**: la nuova voce si trova all&#39;interno della sottosezione corretta, utilizza il rientro a 4 spazi e il percorso corrisponde esattamente alla posizione del file generato.
 
