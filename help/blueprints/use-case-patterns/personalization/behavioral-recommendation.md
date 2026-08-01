@@ -3,9 +3,9 @@ title: Consigli comportamentali
 description: Scopri come generare consigli su elementi e contenuti utilizzando strategie di selezione e modelli di classificazione.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: db16e773-e0da-46c4-9fa5-d16f04feb46b
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+source-git-commit: 9ea30e48ec0fade2f9a97b185e35fbfa93f49c43
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1652'
 ht-degree: 5%
 
 ---
@@ -36,19 +36,25 @@ Il pubblico di destinazione di questo modello include i team di merchandising di
 
 I seguenti obiettivi di business sono supportati da questo modello di casi d’uso.
 
-### [Incrementa le vendite incrociate e incrementa i ricavi](../../business-objectives/revenue-monetization/drive-cross-sell-upsell-revenue.md)
+### Aumentare i ricavi da vendita incrociata e upselling
+
+[Aumentare i ricavi da vendita incrociata e upselling](../../business-objectives/revenue-monetization/drive-cross-sell-upsell-revenue.md)
 
 Promuovere prodotti o servizi complementari e di alta qualità ai clienti esistenti in base al comportamento e alla cronologia degli acquisti.
 
 **KPI:** % vendite incrociate/upselling, ricavi incrementali, valore ciclo di vita cliente
 
-### [Aumentare i tassi di conversione](../../business-objectives/revenue-monetization/increase-conversion-rates.md)
+### Aumentare i tassi di conversione
+
+[Aumentare i tassi di conversione](../../business-objectives/revenue-monetization/increase-conversion-rates.md)
 
 Migliora la percentuale di visitatori e potenziali clienti che completano le azioni desiderate, ad esempio acquisti, iscrizioni o invii di moduli.
 
 **KPI:** Tassi di conversione, Conversione lead, Costo per lead
 
-### [Distribuisci esperienze cliente personalizzate](../../business-objectives/customer-experience/deliver-personalized-customer-experiences.md)
+### Fornire esperienze cliente personalizzate
+
+[Fornire esperienze cliente personalizzate](../../business-objectives/customer-experience/deliver-personalized-customer-experiences.md)
 
 Personalizza contenuti, offerte e messaggi in base a preferenze, comportamenti e fasi del ciclo di vita individuali.
 
