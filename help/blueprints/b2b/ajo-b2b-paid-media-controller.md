@@ -1,16 +1,16 @@
 ---
-title: AJO B2B - controller per supporti a pagamento
+title: Account Journey Orchestration - Controller per supporti a pagamento
 description: Priorità delle campagne e attivazione degli account per le destinazioni dei file multimediali a pagamento
 solution: Journey Optimizer B2B Edition
 exl-id: a4f4982f-2b56-4ce2-9c16-abdf627f97de
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: 796e113c40b6b4e8b56e5fbbd22122c066c30c6f
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1557'
 ht-degree: 0%
 
 ---
 
-# AJO B2B - Account Journey Orchestration - Controller per contenuti multimediali a pagamento
+# Account Journey Orchestration - Controller per supporti a pagamento
 
 >[!TIP]
 >Questo blueprint è disponibile anche come [modello di caso d&#39;uso](/help/blueprints/use-case-patterns/b2b/paid-media-orchestration.md) in Attivazione e marketing B2B.
@@ -71,7 +71,7 @@ Flusso ad alto livello:
 
 ## Modellazione dei dati in AEP B2B
 
-Con qualsiasi orchestrazione basata sui dati, la progettazione dello schema è importante. I profili account e persona in AEP/RTCDP devono includere gli attributi utilizzati in **condizioni del percorso diviso** (ad esempio, flag di ricerca, interesse della soluzione, persona, categoria intento, punteggio di coinvolgimento). Gli schemi B2B (XDM Business Account, XDM Individual Profile, relazionale) devono rappresentare la gerarchia e le origini dati. Per informazioni dettagliate, consulta [Schemi B2B di RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) e [Documentazione B2B di AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/home).
+Con qualsiasi orchestrazione basata sui dati, la progettazione dello schema è importante. I profili account e persona in AEP/RTCDP devono includere gli attributi utilizzati in **condizioni del percorso diviso** (ad esempio, flag di ricerca, interesse della soluzione, persona, categoria intento, punteggio di coinvolgimento). Gli schemi B2B (XDM Business Account, XDM Individual Profile, relazionale) devono rappresentare la gerarchia e le origini dati. Per informazioni dettagliate, vedere [Schemi B2B di RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) e [Documentazione di Journey Optimizer B2B edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview).
 
 **Nota:** la logica dei percorsi suddivisi nel percorso utilizza i dati di profilo e, se supportati, i dati relazionali; assicurati che i campi necessari per la logica delle cascate siano disponibili nel percorso.
 
