@@ -19,10 +19,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
+source-git-commit: b3bc4a99bf083cccc5cec076caf7faa2d8258501
 workflow-type: tm+mt
-source-wordcount: 2322
-ht-degree: 0%
+source-wordcount: 2351
+ht-degree: 1%
 
 ---
 
@@ -146,7 +146,7 @@ I passaggi seguenti forniscono indicazioni per abilitare i gruppi di acquisto ne
 
    Come primo passo, puoi definire e creare uno schema di esperienza progettato per soddisfare le esigenze dei casi d’uso B2B e coprire le origini dati, sia in batch che in tempo reale. Questa progettazione deve rappresentare il modo in cui l’azienda pensa alle entità account e persona e ai casi d’uso che desideri supportare. Affinché lo schema sia uno schema B2B, lo schema deve seguire le strutture disponibili nella [documentazione dello schema B2B di RTCDP](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
-   Una pratica utile consiste nell’estrarre i nomi delle entità dal diagramma e identificarli nello schema assegnandogli lo stesso marchio. Alcuni schemi richiedono chiavi specifiche, ad esempio `sourceKey`, per funzionare in RTCDP B2B. Nel breve periodo, la relazione _Many-to-Many_ tra account e persona tramite Account Person Relationship non è supportata in Journey Optimizer B2B. Utilizza gli script acceleratori per il miglior punto di partenza:
+   Una pratica utile consiste nell’estrarre i nomi delle entità dal diagramma e identificarli nello schema assegnandogli lo stesso marchio. Alcuni schemi richiedono chiavi specifiche, ad esempio `sourceKey`, per funzionare in RTCDP B2B.  Utilizza gli script acceleratori per il miglior punto di partenza:
 
    * Utilizza lo script di creazione dello schema B2B [RTCDP](https://github.com/adobe/experience-platform-postman-samples/tree/master/Postman%20Collections/CDP%20Namespaces%20and%20Schemas%20Utility) per generare lo schema iniziale
    * Aggiungi campi specifici per il caso d’uso agli schemi generati per completare lo schema in base alle esigenze dell’organizzazione.
