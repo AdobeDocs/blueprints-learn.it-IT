@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Denormalizza
 description: Applicare le regole di denormalizzazione della metodologia LID per ripiegare il bridge e le tabelle dipendenti da un ERD nelle tabelle di profilo, evento e ricerca padre.
 doc-type: article
 solution: Experience Platform
 exl-id: c98c9f58-03bc-4b28-becb-f84f3de04300
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

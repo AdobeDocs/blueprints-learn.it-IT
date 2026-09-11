@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Correggere le mappature passthrough
 description: Identifica e corregge le mappature passthrough AI/ML errate, ad esempio assegnazioni di campi di destinazione duplicate o non corrispondenti, prima della convalida.
 doc-type: article
 solution: Experience Platform
 exl-id: b06cc091-661e-4ff4-b6e5-f16bc5128b6b
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -61,7 +60,7 @@ Il mapping è corretto, ma dopo un&#39;ispezione più dettagliata **email** non 
 
 E questo in cui **email\_optIn** non esegue correttamente il mapping all&#39;oggetto di consenso errato
 
-![email_optIn mappato in modo errato all&#39;oggetto di consenso &#x200B;](assets/fix-passthrough-mappings-email-optin-wrong-consent-object.png "email_optIn sembra mappato correttamente, ma non è corretto in base ai requisiti")
+![email_optIn mappato in modo errato all&#39;oggetto di consenso ](assets/fix-passthrough-mappings-email-optin-wrong-consent-object.png "email_optIn sembra mappato correttamente, ma non è corretto in base ai requisiti")
 
 
 

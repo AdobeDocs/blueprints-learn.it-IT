@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Modellazione interfaccia utente
 description: Scopri come mappare i dati di origine su oggetti standard e personalizzati XDM e creare e configurare uno schema per il profilo utilizzando l’interfaccia utente dello schema.
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 66c3a386-7292-49e4-a75a-619e73c2a14d
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%

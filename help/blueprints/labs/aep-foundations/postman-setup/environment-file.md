@@ -1,11 +1,10 @@
 ---
-hold: true
 title: File di ambiente
 description: Importa il file di ambiente Postman e popola le variabili di progetto sviluppatore e sandbox necessarie per le chiamate API di bootcamp.
 doc-type: article
 solution: Experience Platform
 exl-id: 1461fac5-0714-44d4-b5c8-949df6bcff83
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Configurazione
 description: Completa i passaggi di configurazione sandbox e Postman necessari prima di avviare i laboratori di bootcamp di AEP Foundations.
 doc-type: article
 solution: Experience Platform
 exl-id: 2b6e8a4c-9d1f-4c7a-b3e6-8a2c5f9d1e7b
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 1%

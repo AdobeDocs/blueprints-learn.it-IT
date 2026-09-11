@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Ottieni classe profilo
 description: Chiama l’API del registro dello schema globale per recuperare e salvare il $id della classe XDM Individual Profile da utilizzare in uno schema personalizzato.
 doc-type: article
 solution: Experience Platform
 exl-id: d87c21a2-dad4-4666-b917-cdf8e16058d4
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%

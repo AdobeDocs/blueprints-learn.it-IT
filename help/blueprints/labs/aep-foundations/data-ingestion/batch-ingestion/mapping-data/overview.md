@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Mappatura dei dati
 description: Scopri perché le mappature passthrough generate da IA/ML tra campi sorgente e campi schema richiedono un’ispezione attenta prima dell’acquisizione.
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 6c61093d-de03-4b76-9b4b-3e36962047da
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%

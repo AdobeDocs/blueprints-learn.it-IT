@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Riepilogo
 description: Riepiloga gli schemi di navigazione, configura un profilo Dimension di Target e genera e verifica di una campagna orchestrata che combina i tipi di pubblico di AEP con i dati dello schema relazionale.
 doc-type: article
 solution: Experience Platform
 exl-id: 787276d3-5720-447b-ab5c-a910670eb011
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 1%

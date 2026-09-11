@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Ottieni ID schema piano
 description: Eseguire una query sull'API del Registro di sistema dello schema tenant per trovare e salvare il valore $id dello schema di ricerca del piano da utilizzare in un descrittore di relazione.
 doc-type: article
 solution: Experience Platform
 exl-id: f66e0483-b5b3-4493-b752-c4e00211a8bd
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%

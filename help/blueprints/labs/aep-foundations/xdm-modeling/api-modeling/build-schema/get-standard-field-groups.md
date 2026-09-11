@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Recupera gruppi di campi standard
 description: Esegui una query sull’API del registro dello schema globale per trovare e salvare i $id dei gruppi di campi XDM standard necessari per creare uno schema del profilo cliente.
 doc-type: article
 solution: Experience Platform
 exl-id: 62017ece-eef2-4785-afed-5c690c00ed02
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%

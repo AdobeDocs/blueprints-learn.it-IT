@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Analisi del profilo
 description: Guarda un video introduttivo sull’esplorazione e la convalida dei dati del profilo in Real-Time Customer Profile.
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 0dc44337-0b5a-44b7-9169-ac3599d985af
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%
