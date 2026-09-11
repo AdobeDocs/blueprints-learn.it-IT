@@ -109,7 +109,7 @@ Questo campo richiede valori standardizzati, quindi utilizza l&#39;opzione **Enu
 
 >[!NOTE]
 >
->L’obiettivo dei valori Enum e Suggested è facilitare la segmentazione per l’utente finale. Le enumerazioni impongono la convalida al momento dell’acquisizione dei dati, mentre i valori consigliati no. Per ulteriori informazioni su questa funzione, consulta la documentazione disponibile qui -> [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values)
+>L’obiettivo dei valori Enum e Suggested è facilitare la segmentazione per l’utente finale. Le enumerazioni impongono la convalida al momento dell’acquisizione dei dati, mentre i valori consigliati no. Per ulteriori informazioni su questa funzione, consulta la documentazione disponibile qui -> [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it#enums-and-suggested-values)
 
 
 

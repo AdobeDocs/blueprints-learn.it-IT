@@ -247,7 +247,7 @@ Non modificare la mappatura, fai clic su Avanti e su Fine
 >
 >I contenitori consentono di fare riferimento a una variabile evento o a un elemento Array. Puoi saperne di più sulle ramificazioni di questo in questo Blog, ma per semplicità, questo ti consente di specificare se un singolo elemento nell’array soddisfa entrambe le condizioni o se la condizione può essere distribuita su due elementi.
 >
->[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780)
+>[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780?profile.language=it](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780?profile.language=it)
 
 >[!WARNING]
 >

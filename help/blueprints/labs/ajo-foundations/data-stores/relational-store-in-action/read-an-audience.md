@@ -185,4 +185,4 @@ Orchestrated Campaign utilizza lo schema relazionale per tutte le attività. Qua
 
 Ora hai visto quanto è facile creare una campagna, eseguire un’attività Read Audience insieme al Dimension di destinazione del profilo per sfruttare lo schema relazionale. Hai utilizzato l’attività Dividi per dividere il pubblico in base a una condizione. Infine, la modalità di test ha aiutato a capire che è importante disporre della coerenza dei dati tra il profilo e lo schema relazionale.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience) se sei interessato.

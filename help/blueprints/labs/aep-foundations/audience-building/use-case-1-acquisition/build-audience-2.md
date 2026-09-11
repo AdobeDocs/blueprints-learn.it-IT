@@ -163,7 +163,7 @@ Aggiungi il nuovo percorso:
 >
 >Considerazioni sul perché scegliere Batch vs Streaming o Edge:
 >
->Guardrail più recenti: [https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+>Guardrail più recenti: [https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
 >[!TIP]
 >
