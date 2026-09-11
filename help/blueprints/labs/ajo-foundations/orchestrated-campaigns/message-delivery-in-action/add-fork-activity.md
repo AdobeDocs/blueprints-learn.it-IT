@@ -32,4 +32,4 @@ Viene presentata l&#39;area di lavoro con il pubblico **Build** configurato. Fai
 
 Ora hai visto quanto è facile utilizzare l’attività Fork nell’area di lavoro della campagna per creare rami identici degli stessi dati che fluiscono in. I rami dell’attività Fork verranno utilizzati nel passaggio successivo.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/fork) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/fork) se sei interessato.
