@@ -26,8 +26,8 @@ Verifica che il percorso sia stato attivato ed eseguito come previsto.  I rappor
 
 ![Numero di profili immessi visualizzato per il percorso](assets/validate-journey-profile-entered-count.png)
 
-3. Fai clic su **Visualizza rapporto** -> **Ultime 24 ore** in alto a destra.
-4. Per impostazione predefinita, ti trovi nella scheda **Percorso** (nella barra a sinistra)
+&#x200B;3. Fai clic su **Visualizza rapporto** -> **Ultime 24 ore** in alto a destra.
+&#x200B;4. Per impostazione predefinita, ti trovi nella scheda **Percorso** (nella barra a sinistra)
    - Vedrai alcune entrate e uscite (il conteggio dipenderà dal numero di eventi inviati, da eventuali test, da eventuali errori, ecc.)
 
 ![Scheda Percorso che riporta entrate ed uscite](assets/validate-journey-journey-tab-enters-exits.png)
@@ -56,7 +56,7 @@ Se lo desideri, puoi fare clic sull&#39;interruttore in alto per **escludere eve
 
 3 Eventi esterni
 
-5. Fai clic sulla scheda **E-mail** (nella barra a sinistra)
+&#x200B;5. Fai clic sulla scheda **E-mail** (nella barra a sinistra)
    - **E-mail - Prestazioni invio**
      - Sono presenti alcuni valori per **Delivered** e **Sent** (il conteggio dipenderà dal numero di eventi inviati, da eventuali errori e così via)
      - Speriamo di non avere errori (a meno che non si siano verificati alcuni problemi in precedenza)
@@ -65,10 +65,10 @@ Se lo desideri, puoi fare clic sull&#39;interruttore in alto per **escludere eve
 
 ![Scheda E-mail con le prestazioni e le statistiche di invio](assets/validate-journey-email-tab-sending-performance.png)
 
-6. Controlla la tua **casella in entrata** e verifica di aver ricevuto l&#39;e-mail (è simile a quella riportata di seguito)
+&#x200B;6. Controlla la tua **casella in entrata** e verifica di aver ricevuto l&#39;e-mail (è simile a quella riportata di seguito)
    - *,* il tuo ordine ha spedito l&#39;ETA: *10/17/2026* Numero di registrazione: *051009364*
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Controlla la cartella Spam per AJO Campaigns [ajo-campaigns@email.dep-labs.com](mailto:ajo-campaigns@email.dep-labs.com)
 
@@ -82,7 +82,7 @@ Se lo desideri, puoi fare clic sull&#39;interruttore in alto per **escludere eve
 
 
 
-7. *Dopo 30-60 minuti*, puoi anche controllare il set di dati nel data lake con: **Query** -> **Crea query** -> **Copia/Incolla SQL** -> **Esegui**
+&#x200B;7. *Dopo 30-60 minuti*, puoi anche controllare il set di dati nel data lake con: **Query** -> **Crea query** -> **Copia/Incolla SQL** -> **Esegui**
 
 >[!NOTE]
 >

@@ -66,6 +66,6 @@ _dep.account.createDate. Details: Unable to convert
 Created on 2023-09-24T10:19:58Z to schema type DATE_TIME
 ```
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Questo errore non è grave, in quanto genera solo avvisi durante la mappatura. L’esecuzione del flusso di dati non ha esito negativo per questo motivo, pertanto questa esercitazione non corregge questo errore.

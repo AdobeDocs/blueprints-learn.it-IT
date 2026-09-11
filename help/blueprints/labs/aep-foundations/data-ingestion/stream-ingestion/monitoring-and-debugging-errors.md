@@ -65,7 +65,7 @@ ht-degree: 0%
 
 1. Per correggere gli errori, passa a **Origini->Flussi dati->Nome flusso dati->Aggiorna flusso dati** e correggi i mapping.
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Per ricaricare il file di esempio JSON, devi prima eliminarlo e aggiungerlo nuovamente in modo che ora il mapper venga aggiornato con una nuova copia per la convalida.
 

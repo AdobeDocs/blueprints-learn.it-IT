@@ -37,21 +37,21 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 ![Menu icona app con Journey Optimizer selezionato](assets/profile-target-dimension-navigate-to-journey-optimizer.png)
 
-2. Fai clic su **Schemi** nel menu Gestione dati e accertati di aver selezionato la scheda **Sfoglia**.
-3. Cerca lo schema denominato `dep-rel: Customer Account`
+&#x200B;2. Fai clic su **Schemi** nel menu Gestione dati e accertati di aver selezionato la scheda **Sfoglia**.
+&#x200B;3. Cerca lo schema denominato `dep-rel: Customer Account`
 
 ![Ricerca schema per dep-rel: account cliente](assets/profile-target-dimension-search-schema.png)
 
-4. Apri lo schema facendo clic sul nome e quindi fai clic sul campo **customer\_id**
+&#x200B;4. Apri lo schema facendo clic sul nome e quindi fai clic sul campo **customer\_id**
 
 ![Elenco campi schema con customer_id selezionato](assets/profile-target-dimension-select-customer-id-field.png)
 
-5. Nella barra a destra individua la casella di controllo denominata **Identità**, **seleziona la casella** e scegli lo spazio dei nomi Identità denominato **customerID**
+&#x200B;5. Nella barra a destra individua la casella di controllo denominata **Identità**, **seleziona la casella** e scegli lo spazio dei nomi Identità denominato **customerID**
 
 ![Casella di controllo dell&#39;identità con lo spazio dei nomi customerID selezionato](assets/profile-target-dimension-choose-identity-namespace.png)
 
-6. Fai clic sul pulsante **Salva** per salvare lo schema. Viene visualizzato un messaggio di conferma
-7. Fai clic sul pulsante **Annulla** o sugli **Schemi** nella barra a sinistra per uscire dall&#39;interfaccia utente dello schema
+&#x200B;6. Fai clic sul pulsante **Salva** per salvare lo schema. Viene visualizzato un messaggio di conferma
+&#x200B;7. Fai clic sul pulsante **Annulla** o sugli **Schemi** nella barra a sinistra per uscire dall&#39;interfaccia utente dello schema
 
 >[!CAUTION]
 >
@@ -67,15 +67,15 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 ![Menu Amministrazione con configurazioni selezionate](assets/profile-target-dimension-configurations-menu.png)
 
-2. Seleziona **Dimension di destinazione profilo** e fai clic su **Gestisci**
+&#x200B;2. Seleziona **Dimension di destinazione profilo** e fai clic su **Gestisci**
 
 ![Configurazione del profilo di Target Dimension con l&#39;opzione Gestisci](assets/profile-target-dimension-manage-configuration.png)
 
-3. Viene aperto il riquadro Dimension di destinazione del profilo. Fare clic su **Crea**
+&#x200B;3. Viene aperto il riquadro Dimension di destinazione del profilo. Fare clic su **Crea**
 
 ![Riquadro Dimension di destinazione del profilo con il pulsante Crea](assets/profile-target-dimension-create-button.png)
 
-4. Selezionare lo schema `dep-rel: Customer Account` dal menu a discesa.
+&#x200B;4. Selezionare lo schema `dep-rel: Customer Account` dal menu a discesa.
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 ![Crea modulo Dimension di destinazione profilo con il menu a discesa dello schema](assets/profile-target-dimension-select-schema-dropdown.png)
 
-5. Per il **valore identità** selezionare `/customer_id`
+&#x200B;5. Per il **valore identità** selezionare `/customer_id`
 
 ![Elenco a discesa del valore dell&#39;identità con /customer_id selezionato](assets/profile-target-dimension-select-identity-value.png)
 
@@ -93,7 +93,7 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 
 
-6. Fai clic sul pulsante **Salva** per creare il Dimension di destinazione del profilo. Viene quindi visualizzato il record.
+&#x200B;6. Fai clic sul pulsante **Salva** per creare il Dimension di destinazione del profilo. Viene quindi visualizzato il record.
 
 ![Record Dimension di destinazione profilo salvato nell&#39;elenco](assets/profile-target-dimension-saved-record.png)
 

@@ -75,16 +75,16 @@ Prima di poter eseguire la richiesta API è necessario aggiungere l’ID dello s
 
 ![Variabili nella richiesta nella barra degli strumenti di Postman](assets/send-an-edge-web-event-click-variables-in-request.png)
 
-2. Aggiorna **DATASTREAM_CONFIG** **Value** con **ID datastream** dal primo passaggio della pagina.
+&#x200B;2. Aggiorna **DATASTREAM_CONFIG** **Value** con **ID datastream** dal primo passaggio della pagina.
 
 ![Variabile DATASTREAM_CONFIG aggiornata con ID datastream](assets/send-an-edge-web-event-update-datastream-config-variable.png)
 
-3. **Salva** il tuo aggiornamento (ctrl+s o comando+s)
-4. Fai clic su &#39;**X**&#39; nell&#39;angolo superiore destro della barra laterale dell&#39;ambiente per chiudere la barra laterale
+&#x200B;3. **Salva** il tuo aggiornamento (ctrl+s o comando+s)
+&#x200B;4. Fai clic su &#39;**X**&#39; nell&#39;angolo superiore destro della barra laterale dell&#39;ambiente per chiudere la barra laterale
 
 ![Chiusura della barra laterale dell&#39;ambiente Postman dopo il salvataggio](assets/send-an-edge-web-event-close-environment-sidebar.png)
 
-5. La richiesta **Crea evento Web** è ora pronta per l&#39;invio poiché tutte le variabili sono ora blu e hanno un valore nell&#39;ambiente.
+&#x200B;5. La richiesta **Crea evento Web** è ora pronta per l&#39;invio poiché tutte le variabili sono ora blu e hanno un valore nell&#39;ambiente.
 
 ![Crea richiesta evento Web con tutte le variabili popolate](assets/send-an-edge-web-event-request-ready-to-send.png)
 

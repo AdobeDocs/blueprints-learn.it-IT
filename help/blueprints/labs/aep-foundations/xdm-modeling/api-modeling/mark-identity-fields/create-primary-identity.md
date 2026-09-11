@@ -55,6 +55,6 @@ SOLO ESEMPIO
 
 ![201 Risposta creata dopo la creazione del descrittore di identità primaria](assets/create-primary-identity-201-created-response.png "Il descrittore di identità primaria è stato creato")
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >Congratulazioni!  Hai appena creato un descrittore di identità primaria nello schema

@@ -37,11 +37,11 @@ A questo punto, hai imparato che non solo possiamo personalizzare gli attributi 
 
 Viene visualizzato un pannello di simulazione.
 
-3. Fare clic su **Invia bozza**.
+&#x200B;3. Fare clic su **Invia bozza**.
 
 ![Pulsante Invia bozza nel pannello di simulazione](assets/test-the-email-click-send-proof-button.png)
 
-4. Aggiungi il tuo indirizzo e-mail personale.
+&#x200B;4. Aggiungi il tuo indirizzo e-mail personale.
 
 >[!NOTE]
 >
@@ -49,11 +49,11 @@ Viene visualizzato un pannello di simulazione.
 
 
 
-5. Seleziona entrambe le varianti.
-6. Aggiungi prefisso riga oggetto
+&#x200B;5. Seleziona entrambe le varianti.
+&#x200B;6. Aggiungi prefisso riga oggetto
    1. Variante 1: superiore a 40
    2. Variante 2: inferiore a 40
-7. Fare clic su **Invia bozza**. Viene visualizzato un messaggio di conferma verde &quot;**Bozze inviate correttamente**&quot;
+&#x200B;7. Fare clic su **Invia bozza**. Viene visualizzato un messaggio di conferma verde &quot;**Bozze inviate correttamente**&quot;
 
 ![Messaggio di conferma verde con le bozze inviate correttamente](assets/test-the-email-proofs-sent-successfully-confirmation.png)
 

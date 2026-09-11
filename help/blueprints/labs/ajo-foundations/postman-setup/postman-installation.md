@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Al termine di questa esercitazione, potrai installare Postman, configurare un’area di lavoro e un ambiente di base per effettuare chiamate API successive necessarie per i laboratori futuri.
 
-> [!IMPORTANT]
+&#x200B;> [!IMPORTANT]
 >
 >Postman è richiesto per vari laboratori in questo corso.  Anche se hai già installato Postman, dovrai completare questa esercitazione per assicurarti di aver installato e configurato correttamente i file di ambiente e la raccolta API.
 

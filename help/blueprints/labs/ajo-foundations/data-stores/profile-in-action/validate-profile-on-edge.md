@@ -31,7 +31,7 @@ Verifica che il profilo non esista nell’archivio dei profili di rete di Edge.
 
 
 
-2. Fai clic sulla scheda Appartenenza al pubblico.  Sarà **vuoto**.
+&#x200B;2. Fai clic sulla scheda Appartenenza al pubblico.  Sarà **vuoto**.
 
 ![Scheda Appartenenza pubblico vuota nel profilo Edge](assets/validate-profile-on-edge-empty-audience-membership-tab.png)
 

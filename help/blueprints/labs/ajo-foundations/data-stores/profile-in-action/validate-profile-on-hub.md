@@ -55,7 +55,7 @@ In Adobe Experience Platform, cerca il profilo appena inviato dall’evento appe
 
 ![Visualizzazione JSON attributi profilo con segmentMembership](assets/validate-profile-on-hub-json-view.png)
 
-2. Trova **segmentMembership**.  Deve essere simile al seguente (gli ID saranno diversi)
+&#x200B;2. Trova **segmentMembership**.  Deve essere simile al seguente (gli ID saranno diversi)
 
 ```json
   "segmentMembership": {

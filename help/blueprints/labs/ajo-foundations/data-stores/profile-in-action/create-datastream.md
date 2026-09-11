@@ -61,13 +61,13 @@ Questo ti consente di inviare i dati all’hub e inviarli a un set di dati per i
 
 ![Pulsante Aggiungi servizio nella schermata di configurazione dello stream di dati](assets/create-datastream-add-service-button.png)
 
-2. Configura i seguenti elementi:
+&#x200B;2. Configura i seguenti elementi:
    - **Servizio** -> `Adobe Experience Platform`
    - **Set di dati evento** -> `dep: Web`
    - **Set di dati profilo** -> `dep: Customer Account`
    - **Seleziona casella di controllo** -> `Offer Decisioning`
    - **Seleziona casella di controllo** -> `Adobe Journey Optimizer`
-3. Al termine, fai clic su **Salva**
+&#x200B;3. Al termine, fai clic su **Salva**
 
 ![Finestra di dialogo per la configurazione del servizio Adobe Experience Platform con campi set di dati evento e profilo](assets/create-datastream-configure-aep-service.png)
 

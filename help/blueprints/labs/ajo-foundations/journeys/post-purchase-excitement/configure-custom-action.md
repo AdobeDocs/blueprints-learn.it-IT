@@ -35,7 +35,7 @@ Nella barra a sinistra del menu Amministrazione, fai clic su **Configurazioni**,
 
 ![Crea pulsante Azione in alto a destra](assets/configure-custom-action-click-create-action-button.png)
 
-2. Nel pannello di configurazione visualizzato, aggiorna i seguenti valori di base come mostrato di seguito:
+&#x200B;2. Nel pannello di configurazione visualizzato, aggiorna i seguenti valori di base come mostrato di seguito:
    - **Nome**: `GetShippingDetails`
    - **Descrizione**: `Call third party to get Shipping ETA and Tracking Number`
    - **Tipo azione**: `Custom`
@@ -80,7 +80,7 @@ Ora devi fornire un payload di esempio in modo che l’azione sappia come dovreb
 
 
 
-2. **Copia e incolla** il payload seguente nella casella Payload
+&#x200B;2. **Copia e incolla** il payload seguente nella casella Payload
 
 ```json
 {
@@ -94,7 +94,7 @@ Ora devi fornire un payload di esempio in modo che l’azione sappia come dovreb
 >Si tratta della stessa struttura JSON che l’endpoint Mockaroo di cui sopra deve restituire:
 
 
-3. Viene visualizzato il payload di risposta. Fai clic sul pulsante **Salva**.
+&#x200B;3. Viene visualizzato il payload di risposta. Fai clic sul pulsante **Salva**.
 
 ![Payload di risposta visualizzato con il pulsante Salva](assets/configure-custom-action-save-response-payload.png)
 
@@ -112,13 +112,13 @@ Ora devi fornire un payload di esempio in modo che l’azione sappia come dovreb
 
 
 
-2. Fai clic sulla scheda **Parametri query** e aggiorna il valore per `orderId` a **123**
+&#x200B;2. Fai clic sulla scheda **Parametri query** e aggiorna il valore per `orderId` a **123**
 
 ![Scheda Parametri query con valore orderId impostato su 123](assets/configure-custom-action-set-orderid-query-parameter.png)
 
 
 
-3. Fai clic sul pulsante **Invia** e se tutto funziona correttamente, dovresti visualizzare un codice di risposta pari a 200 e un&#39;anteprima del payload, come illustrato di seguito...
+&#x200B;3. Fai clic sul pulsante **Invia** e se tutto funziona correttamente, dovresti visualizzare un codice di risposta pari a 200 e un&#39;anteprima del payload, come illustrato di seguito...
 
 ![Codice di risposta 200 e anteprima del payload dopo l&#39;invio della richiesta di test](assets/configure-custom-action-response-200-preview.png)
 
@@ -137,7 +137,7 @@ Anteprima
 
 
 
-4. Fai clic sul pulsante **Annulla** per tornare alla schermata Azione, quindi scorri di nuovo nella barra in alto a destra e fai clic sul pulsante **Salva**
+&#x200B;4. Fai clic sul pulsante **Annulla** per tornare alla schermata Azione, quindi scorri di nuovo nella barra in alto a destra e fai clic sul pulsante **Salva**
 
 >[!TIP]
 >

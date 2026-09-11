@@ -60,18 +60,18 @@ Ora mapperai queste credenziali API a una configurazione di canale utilizzabile 
 
 
 
-2. Fai clic su **Crea configurazione canale**.
+&#x200B;2. Fai clic su **Crea configurazione canale**.
 
 ![Pulsante Crea configurazione canale](assets/configure-sms-channel-click-create-configuration.png)
 
 
 
-3. Inserisci le impostazioni di configurazione del canale SMS con i seguenti valori:
+&#x200B;3. Inserisci le impostazioni di configurazione del canale SMS con i seguenti valori:
    - **Nome:** `Relational-SMS-Multi-Entity`
    - **Canale:** `Mobile Message`
    - **Azione di marketing:** `SMS Targeting`
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Se ricevi un errore che indica che l’utente non dispone delle autorizzazioni necessarie, ignoralo e continua.
 
@@ -97,13 +97,13 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 
 
 
-2. Verifica che la casella di controllo **Abilitato** sia selezionata
+&#x200B;2. Verifica che la casella di controllo **Abilitato** sia selezionata
 
 ![Casella di controllo abilitata selezionata per le campagne orchestrate](assets/configure-sms-channel-enabled-checkbox.png)
 
 
 
-3. Avanti nella sottosezione **Dimensione di esecuzione** assicurati che le seguenti impostazioni siano configurate come segue:
+&#x200B;3. Avanti nella sottosezione **Dimensione di esecuzione** assicurati che le seguenti impostazioni siano configurate come segue:
    - **Consegna su messaggio per:** `Target + Secondary Dimension`
    - **Dimension di destinazione profilo:** `dep-rel: Customer Account - customer_id`
    - **Dimension secondario:** `Customer Line`
@@ -118,13 +118,13 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 
 
 
-4. Nell&#39;intestazione Indirizzo di esecuzione assicurarsi di selezionare il pulsante di opzione per **Dimension secondario** e quindi fare clic sul pulsante Modifica nel **Campo di esecuzione SMS**
+&#x200B;4. Nell&#39;intestazione Indirizzo di esecuzione assicurarsi di selezionare il pulsante di opzione per **Dimension secondario** e quindi fare clic sul pulsante Modifica nel **Campo di esecuzione SMS**
 
 ![Indirizzo di esecuzione impostato su Dimension secondario con campo di modifica](assets/configure-sms-channel-execution-address-selection.png)
 
 
 
-5. Nel popup, fare clic nello schema **dep-rel: Customer Line** e selezionare **Mobile Phone**.
+&#x200B;5. Nel popup, fare clic nello schema **dep-rel: Customer Line** e selezionare **Mobile Phone**.
 
 ![Finestra a comparsa schema per Dep-rel: schema della linea cliente](assets/configure-sms-channel-customer-line-schema-popup.png)
 
@@ -132,7 +132,7 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 
 
 
-6. Conferma le corrispondenze della sezione dei dettagli di esecuzione finale di seguito
+&#x200B;6. Conferma le corrispondenze della sezione dei dettagli di esecuzione finale di seguito
 
 ![Configurazione dei dettagli dell&#39;esecuzione finale corrispondente alle impostazioni richieste](assets/configure-sms-channel-final-execution-details.png)
 
@@ -146,7 +146,7 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 
 
 
-2. Nella pagina di inventario delle configurazioni del canale, verifica che lo stato sia **Attivo** prima di procedere
+&#x200B;2. Nella pagina di inventario delle configurazioni del canale, verifica che lo stato sia **Attivo** prima di procedere
 
 ![Stato configurazione canale visualizzato come Attivo](assets/configure-sms-channel-active-status.png)
 
@@ -156,7 +156,7 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 
 
 
-3. Quando lo stato diventa Attivo, l’operazione è completata.
+&#x200B;3. Quando lo stato diventa Attivo, l’operazione è completata.
 
 >[!TIP]
 >

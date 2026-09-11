@@ -30,14 +30,14 @@ In questo scenario di laboratorio, faremo finta che il team di marketing di rice
 
 ![Pagina delle formule di classificazione vuota prima della creazione di una formula](assets/create-ranking-formula-empty-ranking-formulas-page.png)
 
-3. Fai clic sul pulsante blu **Crea formula** per iniziare a creare una nuova formula di classificazione
-4. Denomina la formula di classificazione **iPhone 17 Formula di classificazione**
+&#x200B;3. Fai clic sul pulsante blu **Crea formula** per iniziare a creare una nuova formula di classificazione
+&#x200B;4. Denomina la formula di classificazione **iPhone 17 Formula di classificazione**
 
 >[!NOTE]
 >
 >Quando un evento esperienza viene inviato ad Edge Data Collection con i parametri richiesti per richiedere un’offerta da un pacchetto Decisioning attivo, tutte le offerte in tale pacchetto vengono valutate utilizzando la formula di classificazione. Ogni offerta manterrà la priorità originale o la sua priorità verrà regolata dinamicamente in base al profilo che ha attivato l’evento esperienza.
 
-5. Scorri fino alla parte inferiore della sezione &quot;Criteri&quot; e fai clic sull&#39;icona **\&lt;/>** della casella di testo più in basso e seleziona la variabile **Punteggio di priorità dell&#39;offerta**.
+&#x200B;5. Scorri fino alla parte inferiore della sezione &quot;Criteri&quot; e fai clic sull&#39;icona **\&lt;/>** della casella di testo più in basso e seleziona la variabile **Punteggio di priorità dell&#39;offerta**.
 
 ![Variabile del punteggio di priorità dell&#39;offerta selezionata nei criteri della formula di classificazione](assets/create-ranking-formula-select-offer-priority-score.png)
 
@@ -69,29 +69,29 @@ Un modo per considerare le regole di adeguamento delle priorità è trattarle co
 
 ![Opzione Seleziona attributo visualizzata per il criterio 1](assets/create-ranking-formula-criterion-one-select-attribute.png)
 
-2. Quando viene visualizzata la finestra di dialogo &#39;Seleziona un attributo&#39;, fare clic su **Nome offerta**. Una volta selezionata, fai clic su **Salva.**
+&#x200B;2. Quando viene visualizzata la finestra di dialogo &#39;Seleziona un attributo&#39;, fare clic su **Nome offerta**. Una volta selezionata, fai clic su **Salva.**
 
 >[!NOTE]
 >
 >L’attributo &quot;Decision&quot; si riferisce agli elementi dell’articolo dell’offerta. Poiché è qui che si delineano gli articoli di offerta a cui si applicano i criteri, le uniche opzioni disponibili sono gli attributi dell&#39;articolo di offerta.
 >
 
-3. Lascia l&#39;operatore impostato su &quot;È uguale a&quot; e nella casella di testo rimanente immetti il nome dell&#39;elemento di offerta ultra-tier, che è **iphone:17\:ultra**. Dopo aver inserito il testo, l’interfaccia utente si aggiorna e indica che la condizione corrispondente è stata accettata.
-4. Fai clic su **+Aggiungi condizione**, quindi fai clic sulla **nuova casella di testo visualizzata** (contiene il testo &#39;*Fai clic per creare un elemento di decisione...*&#39;
-5. Fare clic sull&#39;opzione **Seleziona attributo** disponibile**.**
-6. Quando si apre la finestra di dialogo &#39;Seleziona un attributo&#39;, fare clic su **Attributi profilo > Persona** (probabilmente sarà necessario scorrere verso il basso) **> Anno di nascita**. Una volta selezionata, fai clic su **Salva.**
+&#x200B;3. Lascia l&#39;operatore impostato su &quot;È uguale a&quot; e nella casella di testo rimanente immetti il nome dell&#39;elemento di offerta ultra-tier, che è **iphone:17\:ultra**. Dopo aver inserito il testo, l’interfaccia utente si aggiorna e indica che la condizione corrispondente è stata accettata.
+&#x200B;4. Fai clic su **+Aggiungi condizione**, quindi fai clic sulla **nuova casella di testo visualizzata** (contiene il testo &#39;*Fai clic per creare un elemento di decisione...*&#39;
+&#x200B;5. Fare clic sull&#39;opzione **Seleziona attributo** disponibile&#x200B;**.**
+&#x200B;6. Quando si apre la finestra di dialogo &#39;Seleziona un attributo&#39;, fare clic su **Attributi profilo > Persona** (probabilmente sarà necessario scorrere verso il basso) **> Anno di nascita**. Una volta selezionata, fai clic su **Salva.**
 
 >[!NOTE]
 >
 > &quot;Attributi del profilo&quot; si riferisce all’utente o al profilo che ha inviato l’evento esperienza, mentre &quot;Dati contestuali&quot; si riferisce agli elementi nell’evento esperienza stesso, come URL, nome pagina o altri attributi del payload dell’evento esperienza.
 
-7. Cambia l&#39;operatore in **Maggiore di** e immetti l&#39;anno di nascita **1986** (l&#39;interfaccia utente inserisce una virgola nell&#39;anno, come previsto). Dopo l’immissione, l’interfaccia utente si aggiorna per indicare che la condizione è stata accettata. Dal momento che il caso d&#39;uso aziendale è quello di offrire il livello Ultra a chiunque abbia meno di 40 anni, la priorità viene regolata per chiunque nasca dopo il 1986.
+&#x200B;7. Cambia l&#39;operatore in **Maggiore di** e immetti l&#39;anno di nascita **1986** (l&#39;interfaccia utente inserisce una virgola nell&#39;anno, come previsto). Dopo l’immissione, l’interfaccia utente si aggiorna per indicare che la condizione è stata accettata. Dal momento che il caso d&#39;uso aziendale è quello di offrire il livello Ultra a chiunque abbia meno di 40 anni, la priorità viene regolata per chiunque nasca dopo il 1986.
 
 >[!NOTE]
 >
 >Come indicato in precedenza, l’interfaccia utente indica che queste condizioni aggiuntive sono &quot;facoltative&quot;. Questo è vero perché potrebbe essere utile regolare dinamicamente la priorità di un set di articoli di offerta senza alcun criterio aggiuntivo. È possibile che gli stessi elementi di offerta possano essere utilizzati in una raccolta diversa e classificati con un set diverso di regole di classificazione. Poiché questo laboratorio utilizza un solo insieme di articoli di offerta, vengono utilizzate condizioni aggiuntive per regolare la priorità.
 
-8. La priorità originale per l&#39;articolo di offerta Ultra tier è 4. Per aumentare la priorità, moltiplicalo per 100. A tale scopo, fai clic sull&#39;icona **\&lt;/>** accanto all&#39;ultima casella di testo e seleziona la variabile **Punteggio di priorità dell&#39;offerta**. Aggiungi **\*100** dopo il testo immesso automaticamente. Questa espressione moltiplica la priorità originale (4) per 100 e le assegna una nuova priorità di 400.
+&#x200B;8. La priorità originale per l&#39;articolo di offerta Ultra tier è 4. Per aumentare la priorità, moltiplicalo per 100. A tale scopo, fai clic sull&#39;icona **\&lt;/>** accanto all&#39;ultima casella di testo e seleziona la variabile **Punteggio di priorità dell&#39;offerta**. Aggiungi **\*100** dopo il testo immesso automaticamente. Questa espressione moltiplica la priorità originale (4) per 100 e le assegna una nuova priorità di 400.
 
    La regola ora dovrebbe essere simile alla seguente:
 
@@ -145,12 +145,11 @@ Un modo per considerare le regole di adeguamento delle priorità è trattarle co
 >- Gli utenti nati nel 1990 con un ID **piano = 1** avranno offerte Ultra e Pro rimosse, anche se si sono classificati ai primi posti. L&#39;utente vede le offerte Base e Generic solo perché i livelli Ultra e Pro hanno una condizione aggiuntiva: solo gli utenti con **ID piano 2 o 3** possono vederle.
 >- Poiché l&#39;offerta generica non ha regole per il limite di frequenza, l&#39;utente dell&#39;anno di nascita **1970** non vedrà mai l&#39;offerta Ultra, in quanto il suo punteggio di priorità è inferiore al punteggio incrementato del generico.
 
-5. Con tutte le regole e il punteggio di priorità predefinito attivo, scorri verso l&#39;alto e fai clic sul pulsante blu **Crea** nell&#39;angolo superiore destro.
+&#x200B;5. Con tutte le regole e il punteggio di priorità predefinito attivo, scorri verso l&#39;alto e fai clic sul pulsante blu **Crea** nell&#39;angolo superiore destro.
 
 >[!TIP]
 >
 >Ora viene visualizzata la pagina &quot;Impostazione strategia&quot; con la formula di classificazione singola appena creata.
-
 > [!NOTE]
 >
 >Cosa succede se due offerte danno la stessa priorità? Le offerte con lo stesso punteggio di priorità vengono scelte a caso per tornare al sistema richiedente.

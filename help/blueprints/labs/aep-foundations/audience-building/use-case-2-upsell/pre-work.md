@@ -26,11 +26,11 @@ Per questo caso d’uso non c’è molto lavoro preliminare da fare. Fondamental
 
 
 
-3. Cerca &quot;utilizzo&quot; negli Eventi.  Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
+&#x200B;3. Cerca &quot;utilizzo&quot; negli Eventi.  Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
 
 ![Cerca informazioni sull&#39;utilizzo negli eventi - nessuna descrizione visualizzata](assets/pre-work-search-usage-in-events.png)
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Nessuno di questi elementi contiene descrizioni, pertanto l’addetto al marketing potrebbe fare alcune supposizioni e formulare ipotesi errate.
 >
@@ -41,7 +41,6 @@ Per questo caso d’uso non c’è molto lavoro preliminare da fare. Fondamental
 >- Consigliato/preferito in casi d’uso specifici?
 >
 >Fornendo queste informazioni nelle descrizioni, possiamo guidarli meglio.
-
 > [!NOTE]
 >
 >Prova a cercare &quot;Fatturazione&quot;.  Nota che non viene visualizzato come attributo di profilo.  Viene visualizzato come scheda del tipo di evento insieme al campo &quot;Utilizzo dati fatturazione&quot;.

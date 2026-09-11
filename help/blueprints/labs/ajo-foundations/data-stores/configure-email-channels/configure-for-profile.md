@@ -26,7 +26,7 @@ Nei passaggi successivi verrà creata una configurazione del canale e-mail con P
 
 ![Crea configurazione canale](assets/configure-for-profile-create-configuration-button.png)
 
-3. Nella procedura guidata Crea, imposta i seguenti valori:
+&#x200B;3. Nella procedura guidata Crea, imposta i seguenti valori:
    - **Nome:** `Profile-Email`
    - **Canale:** `Email`
    - **Azione di marketing:** `Email Targeting`
@@ -97,43 +97,43 @@ Lascia le impostazioni predefinite
 
 ![Dettagli di esecuzione](assets/configure-for-profile-execution-details-journey-tab.png)
 
-2. Fai clic sulla cartella **E-mail personale** per aprirla
+&#x200B;2. Fai clic sulla cartella **E-mail personale** per aprirla
 
 ![Indirizzo di consegna](assets/configure-for-profile-personal-email-folder.png)
 
-3. Fai clic sulla **casella di controllo** nel campo `Address`, quindi sul pulsante **Seleziona**
+&#x200B;3. Fai clic sulla **casella di controllo** nel campo `Address`, quindi sul pulsante **Seleziona**
 
 ![Indirizzo e-mail personale come recapito](assets/configure-for-profile-select-address-checkbox-journeys.png)
 
-4. Per **Profilo**, `personalEmail.address` è ora configurato come **Indirizzo di consegna** nella sezione **Indirizzo di esecuzione**
+&#x200B;4. Per **Profilo**, `personalEmail.address` è ora configurato come **Indirizzo di consegna** nella sezione **Indirizzo di esecuzione**
 
 ![Indirizzo di consegna configurato](assets/configure-for-profile-delivery-address-configured-journeys.png)
 
-5. Fai clic sulla scheda Campagna orchestrata e **seleziona** la casella di controllo Abilitato.
+&#x200B;5. Fai clic sulla scheda Campagna orchestrata e **seleziona** la casella di controllo Abilitato.
 
 ![Configurazione della campagna orchestrata](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
 
-6. Sotto l’intestazione della dimensione di esecuzione configura quanto segue:
+&#x200B;6. Sotto l’intestazione della dimensione di esecuzione configura quanto segue:
    - **Consegna un messaggio per:** `Target Dimension`
    - **Dimension di destinazione profilo:** `dep-rel: Customer Account - customer_id`
 
 ![Dimension di destinazione](assets/configure-for-profile-target-dimension-settings.png)
 
-7. In Indirizzo di esecuzione configura quanto segue:
+&#x200B;7. In Indirizzo di esecuzione configura quanto segue:
    - **Source:** `Profile`
    - **Indirizzo di consegna:** `click on the Edit icon`
 
 ![Indirizzo di esecuzione](assets/configure-for-profile-execution-address-source-profile.png)
 
-8. Cercare e fare clic sulla cartella `Personal Email` per aprirla
+&#x200B;8. Cercare e fare clic sulla cartella `Personal Email` per aprirla
 
 ![Attributo profilo e-mail personale](assets/configure-for-profile-search-personal-email-folder.png)
 
-9. Seleziona il campo `Address` all&#39;interno della cartella Posta personale e fai clic su **Seleziona**
+&#x200B;9. Seleziona il campo `Address` all&#39;interno della cartella Posta personale e fai clic su **Seleziona**
 
 ![Indirizzo e-mail personale come recapito](assets/configure-for-profile-select-address-field-orchestrated.png)
 
-10. Per la **campagna orchestrata**, **dep-rel: Account cliente - cliente\_id** è configurato come **Dimension di destinazione profilo** per la **dimensione di esecuzione** con **Indirizzo di esecuzione** con **Source** di **Profilo** e `personalEmail.address` come **Indirizzo di consegna**
+&#x200B;10. Per la **campagna orchestrata**, **dep-rel: Account cliente - cliente\_id** è configurato come **Dimension di destinazione profilo** per la **dimensione di esecuzione** con **Indirizzo di esecuzione** con **Source** di **Profilo** e `personalEmail.address` come **Indirizzo di consegna**
 
 ![Dimensione di esecuzione configurata](assets/configure-for-profile-orchestrated-execution-dimension-configured.png)
 
@@ -147,7 +147,7 @@ Lascia le impostazioni predefinite
 1. Rivedi nuovamente tutti i dettagli per assicurarti che corrispondano.
 1. Scorri verso l&#39;alto e fai clic su **Invia**.
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >È stato osservato che l’elaborazione della configurazione del canale e-mail richiede fino a 2 ore.  Che schifo!
 >

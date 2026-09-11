@@ -39,7 +39,7 @@ Verifica che l’evento sia stato correttamente acquisito in Adobe Experience Pl
 
 
 
-3. Convalida che il profilo è qualificato per le **audience** (potrebbero essere necessari alcuni minuti).
+&#x200B;3. Convalida che il profilo è qualificato per le **audience** (potrebbero essere necessari alcuni minuti).
    - Qualsiasi evento Edge (entro 15 minuti)
    - Qualsiasi streaming di eventi (entro 15 minuti)
 
@@ -56,8 +56,8 @@ Dopo aver convalidato il profilo ricevuto, invia alcuni eventi con spedizione or
 
 ![Indirizzo e-mail modificato nel corpo della richiesta Postman](assets/validate-event-ingested-change-email-in-postman-body.png)
 
-3. **Salva** e premi **Invia**.
-4. Torna ai passaggi 1-3 e convalida utilizzando il tuo indirizzo e-mail.
+&#x200B;3. **Salva** e premi **Invia**.
+&#x200B;4. Torna ai passaggi 1-3 e convalida utilizzando il tuo indirizzo e-mail.
 
 ## Riassunto
 

@@ -21,7 +21,7 @@ Verifica che l’evento web sia stato scritto nel Data Lake di Experience Platfo
 
 ## Convalida evento
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Alla fine i dati verranno visualizzati nel Data Lake.  **L&#39;operazione potrebbe richiedere fino a 60 minuti**.  Sappiamo che il set di dati è abilitato per il profilo e quindi l’evento creerà un frammento di profilo.
 >
@@ -31,16 +31,16 @@ Verifica che l’evento web sia stato scritto nel Data Lake di Experience Platfo
 
 ![Crea schermata Query nella sezione Query](assets/validate-event-on-data-lake-create-query.png)
 
-2. Copia il file SQL e incollalo nella query
+&#x200B;2. Copia il file SQL e incollalo nella query
 
 ```sql
 SELECT identityMap['email'][0].id, * FROM dep_web
 where identityMap['email'][0].id = 'henry.creel@emailsim.io'
 ```
 
-3. **Esegui** query
+&#x200B;3. **Esegui** query
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >**Ricorda**: i dati verranno infine visualizzati nel Data Lake.  **L&#39;operazione potrebbe richiedere fino a 60 minuti**.
 >

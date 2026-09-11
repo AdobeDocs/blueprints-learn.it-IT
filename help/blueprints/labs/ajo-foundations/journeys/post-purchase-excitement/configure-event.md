@@ -35,11 +35,11 @@ Per creare un Percorso che utilizza un evento unitario, è necessario innanzitut
 
 ![Pulsante Gestisci nella sezione Eventi in Configurazioni](assets/configure-event-open-events-manage.png)
 
-2. In alto a destra, fai clic sul pulsante **Crea evento**
+&#x200B;2. In alto a destra, fai clic sul pulsante **Crea evento**
 
 ![Crea pulsante evento in alto a destra](assets/configure-event-click-create-event-button.png)
 
-3. Aggiorna le impostazioni dell’evento come segue:
+&#x200B;3. Aggiorna le impostazioni dell’evento come segue:
    - **Nome** = `orderShipped`
    - **Tipo** = `Unitary`
    - **Tipo ID evento** = `Rule based`
@@ -47,11 +47,11 @@ Per creare un Percorso che utilizza un evento unitario, è necessario innanzitut
 
 ![evento orderShipped configurato con tipo unitario e dep: Orders v.1 schema](assets/configure-event-set-name-type-schema.png)
 
-4. Nella casella di input `Fields` fare clic sull&#39;icona **Matita**
+&#x200B;4. Nella casella di input `Fields` fare clic sull&#39;icona **Matita**
 
 ![Icona matita nella casella di immissione Campi](assets/configure-event-click-fields-pencil-icon.png)
 
-5. Selezionare i campi seguenti da aggiungere all&#39;evento e al termine fare clic sul pulsante **OK**
+&#x200B;5. Selezionare i campi seguenti da aggiungere all&#39;evento e al termine fare clic sul pulsante **OK**
    - `Event Type (eventType)`
    - `Order ID (orderID)`
 
@@ -63,19 +63,19 @@ Per creare un Percorso che utilizza un evento unitario, è necessario innanzitut
 
 
 
-6. In `Event Id condition input`, fai clic sull&#39;icona **Matita**
+&#x200B;6. In `Event Id condition input`, fai clic sull&#39;icona **Matita**
 
 ![Icona della matita nell&#39;input della condizione ID evento](assets/configure-event-click-event-id-condition-pencil.png)
 
-7. **Trascina** il campo `Event Type` nell&#39;area di lavoro
+&#x200B;7. **Trascina** il campo `Event Type` nell&#39;area di lavoro
 
 ![Trascina il campo Tipo evento nell&#39;area di lavoro delle condizioni](assets/configure-event-drag-event-type-field-onto-canvas.png)
 
-8. Nella casella di selezione visualizzata cercare e controllare il valore con titolo **orders.shipped.** Quindi fare clic sul pulsante **OK**.
+&#x200B;8. Nella casella di selezione visualizzata cercare e controllare il valore con titolo **orders.shipped.** Quindi fare clic sul pulsante **OK**.
 
 ![valore orders.shipped selezionato nella casella di selezione](assets/configure-event-select-orders-shipped-value.png)
 
-9. Avanti aggiorna gli ultimi due valori di Spazio dei nomi e Identificatore profilo con i valori mostrati di seguito:
+&#x200B;9. Avanti aggiorna gli ultimi due valori di Spazio dei nomi e Identificatore profilo con i valori mostrati di seguito:
    - **Spazio dei nomi** —> `Email`
    - **Identificatore profilo** —> `personalEmail`
 

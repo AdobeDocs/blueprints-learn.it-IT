@@ -46,19 +46,19 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 
 
 
-2. Fornisci una descrizione e impostala in streaming.
+&#x200B;2. Fornisci una descrizione e impostala in streaming.
 
-3. Sopra l’evento inserito, cambia &quot;Qualsiasi momento&quot; in &quot;Oggi&quot;
+&#x200B;3. Sopra l’evento inserito, cambia &quot;Qualsiasi momento&quot; in &quot;Oggi&quot;
 
 ![Modifica il filtro dell&#39;ora evento da Qualsiasi ora a Oggi](assets/build-audience-1-change-any-time-to-today.png)
 
-4. Salva questo pubblico come &quot;*Visitato qualsiasi pagina*&quot;
+&#x200B;4. Salva questo pubblico come &quot;*Visitato qualsiasi pagina*&quot;
 
-5. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
+&#x200B;5. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
 
-6. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
+&#x200B;6. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
 
-7. Fare clic su Avanti e su Fine
+&#x200B;7. Fare clic su Avanti e su Fine
 
 ## Creare un pubblico (ha visitato la pagina di iPhone 14 ma non ne è proprietario/l’ha ordinato)
 
@@ -68,7 +68,7 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 
 
 
-2. Passa alla posizione in cui si trova Nome pagina e aggiungi il campo Nome pagina all’Evento, in modo da poterlo filtrare.
+&#x200B;2. Passa alla posizione in cui si trova Nome pagina e aggiungi il campo Nome pagina all’Evento, in modo da poterlo filtrare.
 
 - XDM ExperienceEvent —> Web —> Dettagli pagina Web —> Nome
 
@@ -76,11 +76,11 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 
 
 
-3. Aggiungi contiene &quot;iPhone 14&quot;
+&#x200B;3. Aggiungi contiene &quot;iPhone 14&quot;
 
 ![Aggiungi una condizione contains per &quot;iPhone 14&quot;](assets/build-audience-3-add-contains-iphone-14.png)
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >**Ricerca di &quot;Page&quot;** in corso
 >
@@ -98,7 +98,7 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 
 
 
-4. Sopra l’evento inserito, cambia &quot;Qualsiasi momento&quot; in &quot;Oggi&quot;
+&#x200B;4. Sopra l’evento inserito, cambia &quot;Qualsiasi momento&quot; in &quot;Oggi&quot;
 
 ![Modifica il filtro dell&#39;ora evento da Qualsiasi ora a Oggi](assets/build-audience-1-change-any-time-to-today.png)
 
@@ -108,19 +108,19 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 
 
 
-5. Verifica che sia in streaming e fornisci una descrizione.
+&#x200B;5. Verifica che sia in streaming e fornisci una descrizione.
 
-6. Salva pubblico come &quot;*Pagina visitata di iPhone 14*&quot;
+&#x200B;6. Salva pubblico come &quot;*Pagina visitata di iPhone 14*&quot;
 
 ![Salva il pubblico come &quot;Pagina visitata di iPhone 14&quot;](assets/build-audience-3-save-audience-as-visited-iphone-14-page.png)
 
 
 
-7. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
+&#x200B;7. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
 
-8. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
+&#x200B;8. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
 
-9. Fare clic su Avanti e su Fine
+&#x200B;9. Fare clic su Avanti e su Fine
 
 
 
@@ -135,24 +135,23 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 
 
 
-5. Fornisci una descrizione.
+&#x200B;5. Fornisci una descrizione.
 
-6. Cambia in streaming
+&#x200B;6. Cambia in streaming
 
-7. Salva come &quot;*ha visitato la pagina iPhone 14 ma non ne è proprietario né l&#39;ha ordinata*&quot;
+&#x200B;7. Salva come &quot;*ha visitato la pagina iPhone 14 ma non ne è proprietario né l&#39;ha ordinata*&quot;
 
-8. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
+&#x200B;8. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
 
-9. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
+&#x200B;9. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
 
-10. Fare clic su Avanti e su Fine
+&#x200B;10. Fare clic su Avanti e su Fine
 
 >[!NOTE]
 >
 >**Filtro Ora**
 >
 >I requisiti non avevano requisiti temporali, quindi se qualcuno visitasse tre anni fa, si qualificherebbe. A seconda del nostro caso d’uso che potrebbe funzionare o meno. Vale la pena chiedere. Ne abbiamo aggiunto uno perché attiviamo in base alle persone che hanno visitato il nostro sito oggi stesso.  Questo potrebbe non funzionare in tutti i casi d’uso.  Se aggiungiamo un filtro temporale, quanto indietro possiamo andare prima che un pubblico di Edge diventi in streaming o anche in batch?
-
 > [!NOTE]
 >
 >**Ramificazioni di interruzione**

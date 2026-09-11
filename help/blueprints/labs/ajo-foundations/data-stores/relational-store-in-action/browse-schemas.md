@@ -45,20 +45,20 @@ Effettua le seguenti operazioni:
 
 
 
-2. Fai clic su **Seleziona schemi**
-3. Dal popup, selezionare `dep-rel: Customer Account` e quindi fare clic su **Conferma**
+&#x200B;2. Fai clic su **Seleziona schemi**
+&#x200B;3. Dal popup, selezionare `dep-rel: Customer Account` e quindi fare clic su **Conferma**
 
 ![Menu a comparsa Seleziona schemi con dep-rel: account cliente scelto](assets/browse-schemas-select-schema-popup.png)
 
 
 
-4. Nel RED, fai clic su **3 punti** e seleziona **Mostra entità correlate**
+&#x200B;4. Nel RED, fai clic su **3 punti** e seleziona **Mostra entità correlate**
 
 ![Mostra l&#39;opzione delle entità correlate nel menu di scelta rapida ERD](assets/browse-schemas-show-related-entities.png)
 
 
 
-5. Visualizzare il documento ERD con tutte le tabelle direttamente correlate a dep-rel: Conto cliente. È possibile scaricare ERD come file PNG.
+&#x200B;5. Visualizzare il documento ERD con tutte le tabelle direttamente correlate a dep-rel: Conto cliente. È possibile scaricare ERD come file PNG.
 
 ![Diagramma delle relazioni di entità che mostra le tabelle correlate all&#39;account cliente](assets/browse-schemas-erd-diagram.png)
 

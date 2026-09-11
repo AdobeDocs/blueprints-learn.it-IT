@@ -23,7 +23,7 @@ Dopo aver configurato il percorso, hai testato la configurazione e inviato un ev
 
 
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >**SE STAI LEGGENDO, SIGNIFICA CHE SEI ALLA FINE DEL LABORATORIO.**
 >

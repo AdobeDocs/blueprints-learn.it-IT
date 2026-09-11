@@ -105,7 +105,7 @@ Aggiungi un **nuovo mapping** come segue:
 | ---------------------- | ------------ |
 | \_tenantName.plan.name | Nome piano |
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Ricorda di sostituire **\_tenantName** con il nome tenant
 

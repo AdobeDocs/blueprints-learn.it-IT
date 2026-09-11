@@ -104,7 +104,7 @@ Il marketing è entrato oggi e ci ha dato un requisito per avere questo Streamin
 
 
 
-3. Aggiorna Descrizione, nome e metodo di valutazione in streaming nell’angolo in basso a destra, quindi fai clic sull’icona della cartella accanto al metodo di valutazione. Dovresti visualizzare:
+&#x200B;3. Aggiorna Descrizione, nome e metodo di valutazione in streaming nell’angolo in basso a destra, quindi fai clic sull’icona della cartella accanto al metodo di valutazione. Dovresti visualizzare:
 
 ![Metodo di valutazione impostato su Streaming dopo aver fatto clic sull&#39;icona della cartella](assets/build-audience-2-evaluation-method-streaming-folder-icon.png)
 
@@ -124,7 +124,7 @@ Anche se non ovvio, il motivo è che utilizziamo Nome prodotto in uno schema di 
 
 
 
-4. Sostituisci il valore esistente per il nome del prodotto in modo che ora provenga dallo schema Profilo individuale XDM
+&#x200B;4. Sostituisci il valore esistente per il nome del prodotto in modo che ora provenga dallo schema Profilo individuale XDM
 
 Sostituisci il seguente percorso:
 
@@ -140,13 +140,13 @@ Aggiungi il nuovo percorso:
 
 
 
-5. Modifica il metodo di valutazione in Streaming e fai clic sull’icona della cartella
+&#x200B;5. Modifica il metodo di valutazione in Streaming e fai clic sull’icona della cartella
 
 ![Impostare il metodo di valutazione su Streaming e fare clic sull&#39;icona della cartella](assets/build-audience-2-change-evaluation-method-to-streaming.png)
 
 
 
-6. Per il nuovo pubblico idoneo per lo streaming, fornisci una descrizione.
+&#x200B;6. Per il nuovo pubblico idoneo per lo streaming, fornisci una descrizione.
 
 - Salva il pubblico come &quot;*Proprietario del pubblico iPhone 14*&quot;.
 - Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
@@ -155,11 +155,11 @@ Aggiungi il nuovo percorso:
 
 
 
-7. Seleziona la destinazione del webhook **Protezione esecuzione programmi in streaming** e fai clic su **Avanti**
+&#x200B;7. Seleziona la destinazione del webhook **Protezione esecuzione programmi in streaming** e fai clic su **Avanti**
 
-8. Fai clic su **Avanti** e **Fine**
+&#x200B;8. Fai clic su **Avanti** e **Fine**
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Considerazioni sul perché scegliere Batch vs Streaming o Edge:
 >

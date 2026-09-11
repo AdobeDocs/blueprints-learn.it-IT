@@ -55,14 +55,14 @@ Questa funzionalità consente agli utenti orientati ai contenuti di lavorare su 
 
 ![Accesso a Gestione contenuto e quindi a Modelli di contenuto](assets/building-content-template-navigate-content-templates.png)
 
-2. Fai clic su **Crea modello** e quindi compila quanto segue:
+&#x200B;2. Fai clic su **Crea modello** e quindi compila quanto segue:
    - **Nome:** `Promotional Template`
    - **Descrizione:** `Promotional Template for phone products`
    - **Canale:** `Email`
 
 ![Crea modulo modello con nome, descrizione e canale e-mail](assets/building-content-template-create-template-form-fields.png)
 
-3. Fai clic su **Crea**.
+&#x200B;3. Fai clic su **Crea**.
 
 ![Crea pulsante per completare la creazione del modello promozionale](assets/building-content-template-click-create-button.png)
 
@@ -73,7 +73,7 @@ Questa funzionalità consente agli utenti orientati ai contenuti di lavorare su 
 
 ![Aggiunta dell&#39;oggetto e apertura del corpo dell&#39;e-mail da modificare](assets/building-content-template-add-subject-line-open-editor.png)
 
-2. Sono disponibili tre opzioni:
+&#x200B;2. Sono disponibili tre opzioni:
    1. Progettare da zero
    2. Crea il codice
    3. Importa HTML
@@ -92,11 +92,11 @@ Seleziona la terza opzione. Fai clic su **Importa HTML**
 
 ![Caricamento di promotional-template-final.html dalla cartella toolkit](assets/building-content-template-upload-html-template-file.png)
 
-2. Fai clic sul pulsante Importa per **importare** il modello.
+&#x200B;2. Fai clic sul pulsante Importa per **importare** il modello.
 
 ![Pulsante Importa per importare il modello di HTML caricato](assets/building-content-template-click-import-button.png)
 
-3. Attendere il rendering del layout. Noterai problemi come l’interruzione dei collegamenti immagine e la mancanza di branding. (comportamento previsto, in quanto sono presenti risorse segnaposto)
+&#x200B;3. Attendere il rendering del layout. Noterai problemi come l’interruzione dei collegamenti immagine e la mancanza di branding. (comportamento previsto, in quanto sono presenti risorse segnaposto)
 
 ![Modello con rendering che mostra collegamenti immagine interrotti e segnaposto di branding mancanti](assets/building-content-template-rendered-template-broken-images.png)
 
@@ -127,7 +127,7 @@ Il frammento di intestazione creato nell’esercizio precedente viene visualizza
 
 ![Frammento di intestazione visualizzato con un punto blu nella barra laterale sinistra](assets/building-content-template-header-fragment-live-sidebar.png)
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Se il frammento non viene visualizzato qui, significa che non è stato salvato correttamente e deve essere ricaricato.
 
@@ -145,19 +145,19 @@ Vedete qualcosa come questo.
 
 ![Layout del modello dopo l&#39;aggiunta della nuova colonna sopra il contenuto](assets/building-content-template-column-added-above-content.png)
 
-2. Lo sfondo utilizza il colore di sfondo del modello, attualmente nero. Imposta il colore di sfondo **su bianco. Fare clic su** nella scheda Stile nella barra a destra e utilizzare il colore bianco nel selettore dei colori.
+&#x200B;2. Lo sfondo utilizza il colore di sfondo del modello, attualmente nero. Imposta il colore di sfondo **su bianco. Fare clic su** nella scheda Stile nella barra a destra e utilizzare il colore bianco nel selettore dei colori.
 
 ![Impostazione del colore di sfondo della colonna su bianco mediante il selettore colore](assets/building-content-template-set-background-color-white.png)
 
-3. Apri **Frammenti** e trascina il frammento **Intestazione**.
+&#x200B;3. Apri **Frammenti** e trascina il frammento **Intestazione**.
 
 ![Trascinamento del frammento di intestazione nel modello dal pannello Frammenti](assets/building-content-template-drag-header-fragment-into-template.png)
 
-4. Il frammento di intestazione è allineato correttamente al modello, come illustrato di seguito.
+&#x200B;4. Il frammento di intestazione è allineato correttamente al modello, come illustrato di seguito.
 
 ![Frammento di intestazione allineato correttamente nel modello](assets/building-content-template-header-fragment-aligned-template.png)
 
-5. Fai clic sul pulsante **Salva** per salvare il modello, quindi fai clic su **Indietro**.
+&#x200B;5. Fai clic sul pulsante **Salva** per salvare il modello, quindi fai clic su **Indietro**.
 
 ![Salva pulsante per salvare il modello prima di fare clic su Indietro](assets/building-content-template-click-save-button-template.png)
 

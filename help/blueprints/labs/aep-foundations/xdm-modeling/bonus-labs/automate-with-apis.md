@@ -65,6 +65,6 @@ Per scoprire come automatizzare le distribuzioni utilizzando le API, esegui una 
 
 ![Due set di dati creati con Postman: prefisso corrispondente agli schemi automatizzati](assets/automate-with-apis-datasets-created-in-ui.png "Set di dati di automazione")
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >Congratulazioni!  Hai appena automatizzato la distribuzione di spazi dei nomi di identità, gruppi di campi, schemi, descrittori di identità/relazione e l’abilitazione di uno schema per il profilo e la generazione di un set di dati utilizzando lo schema

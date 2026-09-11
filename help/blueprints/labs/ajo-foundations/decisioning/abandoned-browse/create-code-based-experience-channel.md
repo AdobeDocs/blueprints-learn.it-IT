@@ -45,7 +45,7 @@ Ricorda che i requisiti aziendali sono che qualsiasi sistema di Connection 5G de
 
 ![Configurazione del canale esperienza basata su codice completata con formato JSON selezionato](assets/create-code-based-experience-channel-completed-config.png)
 
-9. Una volta che tutto sembra corretto, fai clic sul pulsante blu **Invia** nell&#39;angolo in alto a destra.
+&#x200B;9. Una volta che tutto sembra corretto, fai clic sul pulsante blu **Invia** nell&#39;angolo in alto a destra.
 
 >[!TIP]
 >

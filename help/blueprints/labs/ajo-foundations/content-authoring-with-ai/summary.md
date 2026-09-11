@@ -36,7 +36,7 @@ In questo corso hai esplorato l’intero percorso di creazione di campagne perso
 
 
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >**SE STAI LEGGENDO, SIGNIFICA CHE SEI ALLA FINE DEL LABORATORIO.**
 >

@@ -30,6 +30,6 @@ Eseguire la seguente serie di operazioni come nel laboratorio precedente.
 1. In Postman compila il **Crea evento ordine** con le informazioni necessarie per inviare correttamente i dati e allegarli al record Account cliente creato in precedenza
 1. Verifica che l’ordine sia collegato al tuo profilo
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >Buona fortuna e che gli dei di Adobe Experience Platform siano con voi!

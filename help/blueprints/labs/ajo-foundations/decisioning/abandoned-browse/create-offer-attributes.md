@@ -36,7 +36,7 @@ In questa sezione aggiungerai campi XDM personalizzati allo schema XDM standard 
 >
 >Inoltre, passare attraverso la pagina delle offerte è un collegamento per accedere a questo schema. Puoi anche accedervi tramite il menu Schema nella barra a sinistra.
 
-3. Fai clic sull&#39;icona **+** a destra del livello principale dello schema e, utilizzando il menu &#39;Proprietà campo&#39; ora visibile nella barra a destra, compila i campi seguenti con i valori forniti:
+&#x200B;3. Fai clic sull&#39;icona **+** a destra del livello principale dello schema e, utilizzando il menu &#39;Proprietà campo&#39; ora visibile nella barra a destra, compila i campi seguenti con i valori forniti:
    - Nome campo: **dispositivo**
    - Nome visualizzato: **Dispositivo**
    - Menu a discesa del tipo: **Oggetto**
@@ -46,11 +46,11 @@ In questa sezione aggiungerai campi XDM personalizzati allo schema XDM standard 
 >
 >Il gruppo di campi Assegna a sembra essere un elenco a discesa, ma accetta anche l’immissione diretta di testo; pertanto, inserisci il testo &quot;Dettagli offerta&quot;. Quando lo digiti in, viene visualizzato anche un elemento &quot;Dettagli offerta (nuovo)&quot;. Qualsiasi nuovo attributo deve essere assegnato a un gruppo di campi, pertanto in questo passaggio stai effettivamente creando un nuovo gruppo di campi denominato Dettagli offerta.
 
-4. Assicurati che tutte le proprietà siano state compilate come nella schermata seguente:
+&#x200B;4. Assicurati che tutte le proprietà siano state compilate come nella schermata seguente:
 
 ![Le proprietà del campo per il nuovo oggetto Device sono state compilate](assets/create-offer-attributes-device-object-field-properties.png)
 
-5. Dopo aver verificato che tutti i campi sono corretti, fai clic sul pulsante blu **Applica** nella parte inferiore del menu &#39;Proprietà campo&#39; (barra a destra) per visualizzare le modifiche applicate allo schema:
+&#x200B;5. Dopo aver verificato che tutti i campi sono corretti, fai clic sul pulsante blu **Applica** nella parte inferiore del menu &#39;Proprietà campo&#39; (barra a destra) per visualizzare le modifiche applicate allo schema:
 
 ![Gruppo di campi dispositivo applicato allo schema dell&#39;offerta](assets/create-offer-attributes-device-object-applied.png)
 
@@ -76,7 +76,7 @@ Dopo aver creato l’oggetto XDM per dispositivo, puoi passare alla creazione di
 
 ![Schema dell&#39;offerta che mostra i campi Make, Model e Tier completati](assets/create-offer-attributes-make-model-tier-fields.png)
 
-3. Dopo aver creato tutti i nuovi campi/attributi XDM, fai clic su **Salva** nell&#39;angolo superiore destro e nella parte inferiore dello schermo riceverai un messaggio verde di tipo &quot;Schema correttamente salvato&quot;. Hai completato i passaggi descritti in questa sezione.
+&#x200B;3. Dopo aver creato tutti i nuovi campi/attributi XDM, fai clic su **Salva** nell&#39;angolo superiore destro e nella parte inferiore dello schermo riceverai un messaggio verde di tipo &quot;Schema correttamente salvato&quot;. Hai completato i passaggi descritti in questa sezione.
 
 >[!WARNING]
 >

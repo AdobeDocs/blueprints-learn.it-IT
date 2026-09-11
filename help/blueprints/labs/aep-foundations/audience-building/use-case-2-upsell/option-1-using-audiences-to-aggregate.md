@@ -35,7 +35,7 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-2. Fai clic sull’ellisse nelle regole in basso a destra e scegli Aggrega. Fai clic su Seleziona un attributo e digita Utilizzo. Seleziona il campo Uso dati fatturazione.
+&#x200B;2. Fai clic sull’ellisse nelle regole in basso a destra e scegli Aggrega. Fai clic su Seleziona un attributo e digita Utilizzo. Seleziona il campo Uso dati fatturazione.
 
 
 
@@ -47,17 +47,17 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-3. Cambia il valore È uguale a maggiore di e il valore a 140.
+&#x200B;3. Cambia il valore È uguale a maggiore di e il valore a 140.
 
-4. Modifica l’ora sopra la scheda Evento da Qualsiasi ora a In ultimo e il valore a 6 e i giorni a mesi
+&#x200B;4. Modifica l’ora sopra la scheda Evento da Qualsiasi ora a In ultimo e il valore a 6 e i giorni a mesi
 
 ![Modifica l&#39;intervallo di tempo dell&#39;evento in In ultimi 6 mesi](assets/option-1-using-audiences-to-aggregate-change-time-to-last-6-months.png)
 
 
 
-5. Fornisci una descrizione e salva.
+&#x200B;5. Fornisci una descrizione e salva.
 
-6. Assegna al pubblico il nome &quot;*Somma utilizzo fatturazione > 140 GB (ultimi 6 mesi)*&quot;
+&#x200B;6. Assegna al pubblico il nome &quot;*Somma utilizzo fatturazione > 140 GB (ultimi 6 mesi)*&quot;
 
 >[!NOTE]
 >
@@ -84,13 +84,13 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-2. Fai clic sulla copia e modificala.  Fai clic sulla scheda Evento e modifica il campo Somma in Media. Modifica il maggiore di o uguale a e il valore a 20. Copia lo pseudo codice nella descrizione.
+&#x200B;2. Fai clic sulla copia e modificala.  Fai clic sulla scheda Evento e modifica il campo Somma in Media. Modifica il maggiore di o uguale a e il valore a 20. Copia lo pseudo codice nella descrizione.
 
 ![Copia lo pseudo codice nella descrizione del pubblico](assets/option-1-using-audiences-to-aggregate-copy-pseudo-code-into-description.png)
 
 
 
-3. Assegna al pubblico il nome &quot;*Media utilizzo fatturazione > 20 GB (ultimi 6 mesi)*&quot;
+&#x200B;3. Assegna al pubblico il nome &quot;*Media utilizzo fatturazione > 20 GB (ultimi 6 mesi)*&quot;
 
 ## Audience #3: non dispone di un piano telefonico definitivo
 
@@ -109,15 +109,15 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-5. Fai clic su Audiences —> Experience Platform. Trascina Somma utilizzo fatturazione > 140 GB e Media utilizzo fatturazione >= 20 GB accanto a Nome piano.
+&#x200B;5. Fai clic su Audiences —> Experience Platform. Trascina Somma utilizzo fatturazione > 140 GB e Media utilizzo fatturazione >= 20 GB accanto a Nome piano.
 
 ![Trascina i tipi di pubblico di utilizzo fatturazione accanto a Nome piano](assets/option-1-using-audiences-to-aggregate-20-gb-next-to-plan-name.png)
 
 
 
-6. Copiare lo pseudo codice nella descrizione
+&#x200B;6. Copiare lo pseudo codice nella descrizione
 
-7. Seleziona questa opzione per Streaming. **Non può essere in streaming**. Apporta alcune modifiche:
+&#x200B;7. Seleziona questa opzione per Streaming. **Non può essere in streaming**. Apporta alcune modifiche:
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-8. Sostituisci **Nome piano (Nome piano)** con: Profilo individuale XDM > Devbc > Dettagli piano > **Nome piano**
+&#x200B;8. Sostituisci **Nome piano (Nome piano)** con: Profilo individuale XDM > Devbc > Dettagli piano > **Nome piano**
 
 ![Sostituisci nome piano (nome piano) con il campo Nome piano denormalizzato](assets/option-1-using-audiences-to-aggregate-replace-denormalized-plan-name.png)
 
@@ -143,9 +143,9 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-9. Verifica di poter salvare l’elemento come Streaming. Salva pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate*&quot;
+&#x200B;9. Verifica di poter salvare l’elemento come Streaming. Salva pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate*&quot;
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Anche se questo metodo di valutazione è Streaming, basa la qualificazione del pubblico su due tipi di pubblico in batch.
 

@@ -23,7 +23,7 @@ Attraverso questi passaggi, hai mostrato come gli eventi si spostano attraverso 
 
 
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >**SE STAI LEGGENDO, SIGNIFICA CHE SEI ALLA FINE DEL LABORATORIO.**
 >

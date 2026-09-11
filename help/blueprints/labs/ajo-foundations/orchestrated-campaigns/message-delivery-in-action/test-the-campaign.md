@@ -31,7 +31,7 @@ Nei passaggi successivi eseguirai la campagna in modalità di test per confermar
 
 
 
-2. Viene avviata l’esecuzione di test di tutte le attività della campagna, verifica i risultati
+&#x200B;2. Viene avviata l’esecuzione di test di tutte le attività della campagna, verifica i risultati
 
 ![Esecuzione test delle attività campagna in corso](assets/test-the-campaign-verify-execution-results.png)
 
@@ -43,11 +43,11 @@ Nei passaggi successivi eseguirai la campagna in modalità di test per confermar
 
 ![Esegui il test per l&#39;e-mail utilizzando l&#39;attività dell&#39;attributo del profilo](assets/test-the-campaign-run-test-profile-attribute.png)
 
-2. Attendi il messaggio di conferma, quindi fai clic su **Visualizza report** per visualizzare i dettagli del test e-mail
+&#x200B;2. Attendi il messaggio di conferma, quindi fai clic su **Visualizza report** per visualizzare i dettagli del test e-mail
 
 ![Fare clic su Visualizza report per visualizzare i dettagli del test e-mail](assets/test-the-campaign-view-report-1.png)
 
-3. La pagina del rapporto e-mail presenta le statistiche della campagna e lo stato di esecuzione. Il test E-mail è una verifica dell’attività per garantire che non vi siano errori e non invii e-mail. In genere il completamento richiede circa \~**5** minuti.
+&#x200B;3. La pagina del rapporto e-mail presenta le statistiche della campagna e lo stato di esecuzione. Il test E-mail è una verifica dell’attività per garantire che non vi siano errori e non invii e-mail. In genere il completamento richiede circa \~**5** minuti.
 
 ![Pagina report e-mail con statistiche campagna](assets/test-the-campaign-campaign-statistics-1.png)
 
@@ -57,11 +57,11 @@ Nei passaggi successivi eseguirai la campagna in modalità di test per confermar
 
 
 
-4. Una volta completato il test e-mail, vengono presentati i risultati. Percentuale di errori. Fare clic su **Visualizza altro** per conoscerne il motivo.
+&#x200B;4. Una volta completato il test e-mail, vengono presentati i risultati. Percentuale di errori. Fare clic su **Visualizza altro** per conoscerne il motivo.
 
 ![Frequenza errori con collegamento Visualizza altro](assets/test-the-campaign-error-rate-view-more.png)
 
-5. Il motivo indica `Email address not found in profile`
+&#x200B;5. Il motivo indica `Email address not found in profile`
 
 ![Motivo: indirizzo e-mail non trovato nel profilo](assets/test-the-campaign-email-not-found-reason.png)
 
@@ -81,11 +81,11 @@ Nei passaggi successivi eseguirai la campagna in modalità di test per confermar
 
 ![Esegui il test per la posta elettronica utilizzando l&#39;attività di Target Dimension](assets/test-the-campaign-run-test-target-dimension.png)
 
-2. Attendi il messaggio di conferma, quindi fai clic su **Visualizza report** per visualizzare i dettagli del test e-mail
+&#x200B;2. Attendi il messaggio di conferma, quindi fai clic su **Visualizza report** per visualizzare i dettagli del test e-mail
 
 ![Fare clic su Visualizza report per visualizzare i dettagli del test e-mail](assets/test-the-campaign-view-report-2.png)
 
-3. Una volta completato il test e-mail, vengono presentati i risultati. In questo caso, non ci saranno errori
+&#x200B;3. Una volta completato il test e-mail, vengono presentati i risultati. In questo caso, non ci saranno errori
 
 ![Statistiche campagna senza errori](assets/test-the-campaign-campaign-statistics-2.png)
 

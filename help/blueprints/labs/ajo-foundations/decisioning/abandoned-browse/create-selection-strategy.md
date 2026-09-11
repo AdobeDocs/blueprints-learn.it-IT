@@ -28,21 +28,21 @@ Immagina che abbiamo avuto centinaia di offerte utilizzate in quaranta raccolte 
 
 ![Pagina Strategie di selezione con il pulsante Crea strategia di selezione](assets/create-selection-strategy-create-button.png)
 
-3. Assegna un nome alla strategia di selezione **Strategia di selezione iPhone 17**
-4. È possibile notare che una strategia di selezione richiede 3 elementi.
+&#x200B;3. Assegna un nome alla strategia di selezione **Strategia di selezione iPhone 17**
+&#x200B;4. È possibile notare che una strategia di selezione richiede 3 elementi.
    - Una raccolta di offerte
    - Requisiti di idoneità
    - Un metodo di classificazione
 
 Fai clic sul pulsante **Seleziona raccolta**, seleziona la casella accanto all&#39;unica raccolta disponibile (**Raccolta iPhone 17**) e fai clic su **Salva**.
 
-5. Lascia il menu a discesa &quot;Idoneità&quot; impostato su Tutti i visitatori.
+&#x200B;5. Lascia il menu a discesa &quot;Idoneità&quot; impostato su Tutti i visitatori.
 
 >[!NOTE]
 >
 >L’idoneità può essere applicata a livello di offerta, di strategia di selezione o di Percorso/campagna tramite i criteri di inserimento nel Percorso o nella campagna. Dipende tutto dal caso d’uso che stai cercando di realizzare. Se fai clic sull&#39;elenco a discesa **Idoneità**, vengono visualizzate le stesse opzioni per Pubblico e Regola di decisione visualizzate a livello di offerta. Nel nostro caso d’uso, volevamo solo limitare offerte specifiche, quindi aveva senso fare l’idoneità a livello di offerta.
 
-6. Imposta il **metodo di classificazione** su **formula,** quindi fai clic sul pulsante **Seleziona formula**
+&#x200B;6. Imposta il **metodo di classificazione** su **formula,** quindi fai clic sul pulsante **Seleziona formula**
 
 >[!NOTE]
 >
@@ -50,11 +50,11 @@ Fai clic sul pulsante **Seleziona raccolta**, seleziona la casella accanto all&#
 >
 >L’opzione Modello di intelligenza artificiale utilizza un modello di intelligenza artificiale che analizza impression, clic e conversioni per le offerte restituite per determinare quale offerta visualizzare all’utente. Non li utilizzeremo in questo laboratorio perché sono richieste soglie minime di dati e due settimane per addestrare i modelli.
 
-7. Selezionare la casella accanto all&#39;unica formula di classificazione disponibile (**iPhone 17 Ranking Formula**) e fare clic su **Salva**. Al termine, la strategia di selezione sarà simile alla seguente:
+&#x200B;7. Selezionare la casella accanto all&#39;unica formula di classificazione disponibile (**iPhone 17 Ranking Formula**) e fare clic su **Salva**. Al termine, la strategia di selezione sarà simile alla seguente:
 
 ![Strategia di selezione completata con raccolta, idoneità e formula di classificazione impostate](assets/create-selection-strategy-completed-configuration.png)
 
-8. Una volta corretta la strategia di selezione, fai clic sul pulsante blu **Crea**.
+&#x200B;8. Una volta corretta la strategia di selezione, fai clic sul pulsante blu **Crea**.
 
 >[!TIP]
 >

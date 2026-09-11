@@ -29,7 +29,7 @@ Nei passaggi successivi creerai il pubblico di destinazione per la campagna, ovv
 
 
 
-2. Nella barra a destra trovi le proprietà Genera pubblico. Aggiornare l&#39;etichetta per indicare quanto segue: `Active Lines with Apple`
+&#x200B;2. Nella barra a destra trovi le proprietà Genera pubblico. Aggiornare l&#39;etichetta per indicare quanto segue: `Active Lines with Apple`
 
 ![Genera etichetta pubblico impostata su Linee attive con Apple](assets/build-an-audience-set-label.png)
 
@@ -42,7 +42,7 @@ Il passaggio successivo consiste nel selezionare la **dimensione di targeting** 
 
 ![Icona Ricerca nella casella della dimensione Targeting](assets/build-an-audience-search-targeting-dimension.png)
 
-2. Nella finestra a comparsa, cercare e selezionare la tabella denominata **dep-rel: Customer Line**, quindi fare clic sul pulsante **Confirm**.
+&#x200B;2. Nella finestra a comparsa, cercare e selezionare la tabella denominata **dep-rel: Customer Line**, quindi fare clic sul pulsante **Confirm**.
 
 ![Selezionare la tabella Dep-rel: Customer Line e fare clic su Conferma](assets/build-an-audience-select-customer-line-table.png)
 
@@ -64,7 +64,7 @@ Ora che hai selezionato la dimensione di targeting (lo schema relazionale su cui
 
 ![Pulsante Crea pubblico nella barra a destra](assets/build-an-audience-click-create-audience.png)
 
-2. Fai clic sul pulsante **Aggiungi condizione**
+&#x200B;2. Fai clic sul pulsante **Aggiungi condizione**
 
 ![Pulsante Aggiungi condizione per la definizione del pubblico](assets/build-an-audience-click-add-condition.png)
 
@@ -82,7 +82,7 @@ Ora è il momento di scrivere la logica del pubblico utilizzando gli attributi p
 
 ![Condizione 1 impostata su Linea attiva uguale a true](assets/build-an-audience-condition-active-line-true.png)
 
-2. Fai clic sull&#39;icona **Aggiorna** per visualizzare i conteggi validi per la condizione.
+&#x200B;2. Fai clic sull&#39;icona **Aggiorna** per visualizzare i conteggi validi per la condizione.
 
 ![Icona di aggiornamento che mostra il conteggio qualificato di 241 per la condizione 1](assets/build-an-audience-condition-1-refresh-count.png)
 
@@ -99,13 +99,13 @@ Ora è il momento di scrivere la logica del pubblico utilizzando gli attributi p
 ![Selezionare lo schema dep-rel: prodotto [Ricerca] facendo clic sull&#39;icona >](assets/build-an-audience-select-product-lookup-schema.png)
 
 
-2. Cerca il campo denominato **Make**, fai clic sui tre punti e seleziona **Distribuzione dei valori**
+&#x200B;2. Cerca il campo denominato **Make**, fai clic sui tre punti e seleziona **Distribuzione dei valori**
 
 ![Opzione Distribuzione di valori per il campo Make](assets/build-an-audience-make-distribution-of-values.png)
 
 
 
-3. Prendi nota dei vari valori. Vuoi solo `Apple` e per fortuna non ha 100 ortografie diverse. Fai clic sul **campo Apple** per selezionarlo, quindi fai clic sul **pulsante Seleziona attributo e valore** in alto a destra.
+&#x200B;3. Prendi nota dei vari valori. Vuoi solo `Apple` e per fortuna non ha 100 ortografie diverse. Fai clic sul **campo Apple** per selezionarlo, quindi fai clic sul **pulsante Seleziona attributo e valore** in alto a destra.
 
 ![Valore Apple selezionato con il pulsante Seleziona attributo e valore](assets/build-an-audience-select-apple-attribute-value.png)
 
@@ -115,12 +115,12 @@ Ora è il momento di scrivere la logica del pubblico utilizzando gli attributi p
 
 
 
-4. Il campo `Make` viene aggiunto automaticamente insieme alle condizioni mostrate di seguito.
+&#x200B;4. Il campo `Make` viene aggiunto automaticamente insieme alle condizioni mostrate di seguito.
    - **Operatore:** `Equal to`
    - **Valore:** `Apple`
    - **Distinzione maiuscole/minuscole:** `Enabled`
 
-5. Fai clic sull&#39;icona **calcola** e visualizzerai 85 come risultato.
+&#x200B;5. Fai clic sull&#39;icona **calcola** e visualizzerai 85 come risultato.
 
 ![Condizione 2 conteggio calcolato di 85](assets/build-an-audience-condition-2-final-count.png)
 
@@ -142,7 +142,7 @@ Ora è il momento di scrivere la logica del pubblico utilizzando gli attributi p
 
 
 
-2. Se visualizzi il conteggio finale di **65**, fai clic sul pulsante **Conferma** in alto a destra dello schermo, quindi fai clic sul pulsante **Salva** in alto a destra per salvare i tuoi dati.
+&#x200B;2. Se visualizzi il conteggio finale di **65**, fai clic sul pulsante **Conferma** in alto a destra dello schermo, quindi fai clic sul pulsante **Salva** in alto a destra per salvare i tuoi dati.
 
 
 

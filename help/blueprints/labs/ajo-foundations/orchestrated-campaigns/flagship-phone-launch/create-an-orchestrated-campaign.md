@@ -29,14 +29,14 @@ Nei passaggi successivi crei la shell di una campagna orchestrata (nessuna attiv
 
 
 
-2. Nella barra di navigazione a sinistra, seleziona **Campagne**
-3. Quindi fai clic sul pulsante **Crea campagna** in alto a destra
+&#x200B;2. Nella barra di navigazione a sinistra, seleziona **Campagne**
+&#x200B;3. Quindi fai clic sul pulsante **Crea campagna** in alto a destra
 
 ![Pulsante Crea campagna nella navigazione Campagne](assets/create-an-orchestrated-campaign-click-create-campaign.png)
 
 
 
-4. Nel modale che visualizza, seleziona **Orchestrazione - Marketing** e fai clic su **Conferma**
+&#x200B;4. Nel modale che visualizza, seleziona **Orchestrazione - Marketing** e fai clic su **Conferma**
 
 ![Seleziona orchestrazione - Marketing e fai clic su Conferma](assets/create-an-orchestrated-campaign-select-orchestration-marketing.png)
 
@@ -52,7 +52,7 @@ Al termine, lo schermo dovrebbe essere simile al seguente.
 
 ![Impostazioni campagna compilate con nome e criterio di unione](assets/create-an-orchestrated-campaign-settings-filled.png)
 
-2. Fai clic sul pulsante **Salva** per continuare.
+&#x200B;2. Fai clic sul pulsante **Salva** per continuare.
 
 
 

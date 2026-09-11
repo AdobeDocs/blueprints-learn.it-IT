@@ -27,9 +27,9 @@ In questo passaggio verrà importata la raccolta API che contiene tutte le varie
 
 Scarica il file — [AJO Bootcamp (Labs).postman_collection.json](assets/ajo-bootcamp-labs.postman_collection.json)
 
-2. Come prima, fai clic sul pulsante **Importa**.
-3. Incolla l&#39;URL locale del file **AJO Bootcamp (Labs).postman\_collection.json** nella casella di testo modale di importazione oppure rilascialo nella finestra di dialogo di importazione.  Questo attiva un’importazione automatica.
-4. Al termine dell&#39;importazione, fare clic su **Raccolte** nella barra di navigazione a sinistra, espandere la cartella **AJO Bootcamp (Labs)** e visualizzare la raccolta appena importata
+&#x200B;2. Come prima, fai clic sul pulsante **Importa**.
+&#x200B;3. Incolla l&#39;URL locale del file **AJO Bootcamp (Labs).postman\_collection.json** nella casella di testo modale di importazione oppure rilascialo nella finestra di dialogo di importazione.  Questo attiva un’importazione automatica.
+&#x200B;4. Al termine dell&#39;importazione, fare clic su **Raccolte** nella barra di navigazione a sinistra, espandere la cartella **AJO Bootcamp (Labs)** e visualizzare la raccolta appena importata
 
 ![verifica importazione raccolta postman](assets/import-api-collection-verify-collection-imported.png)
 
@@ -55,11 +55,11 @@ Per garantire che l’ambiente e la raccolta funzionino correttamente insieme, s
 
 ![Richiesta Postman con le variabili di ambiente evidenziate in rosso perché non è selezionato alcun ambiente](assets/import-api-collection-environment-variables-shown-red.png "Verifica che le variabili di ambiente postman siano rosse")
 
-3. Fai clic sul menu a discesa **Ambiente** in alto a destra e scegli l&#39;ambiente **AJO Bootcamp**.
+&#x200B;3. Fai clic sul menu a discesa **Ambiente** in alto a destra e scegli l&#39;ambiente **AJO Bootcamp**.
 
 ![Selezionare l&#39;ambiente Postman corretto](assets/import-api-collection-select-postman-environment.png)
 
-4. Selezionando l&#39;ambiente appropriato, la variabile EDGE\_REGION diventa di colore blu più chiaro. Questo indica che la variabile ora ha un valore per l’ambiente selezionato. La variabile DATASTREAM\_CONFIG rimane rossa perché non hai ancora creato lo stream di dati, pertanto non disponi ancora di un valore per tale variabile di ambiente. Passando il puntatore del mouse su EDGE\_REGION viene visualizzato il valore dell&#39;ambiente.
+&#x200B;4. Selezionando l&#39;ambiente appropriato, la variabile EDGE\_REGION diventa di colore blu più chiaro. Questo indica che la variabile ora ha un valore per l’ambiente selezionato. La variabile DATASTREAM\_CONFIG rimane rossa perché non hai ancora creato lo stream di dati, pertanto non disponi ancora di un valore per tale variabile di ambiente. Passando il puntatore del mouse su EDGE\_REGION viene visualizzato il valore dell&#39;ambiente.
 
 ![La variabile Postman EDGE_REGION è ora compilata e non è più visualizzata in rosso](assets/import-api-collection-environment-works-with-collection.png "Verificare che l&#39;ambiente Postman funzioni con la raccolta")
 

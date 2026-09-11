@@ -26,13 +26,13 @@ Ora che le offerte sono state create, devono essere organizzate in una raccolta.
 
 ![Scheda Raccolte nella pagina Cataloghi](assets/create-offer-collection-collections-tab.png)
 
-3. Fai clic sulla **Crea raccolta** blu per creare la nuova raccolta.
-4. Denomina la raccolta **iPhone 17 Collection**
-5. Nella sezione &quot;Regole di raccolta&quot; fare clic sulla casella di testo contenente il testo **_Fare clic per creare un elemento di decisione_**. Dopo aver fatto clic su, vengono visualizzate le opzioni per la creazione della regola.
+&#x200B;3. Fai clic sulla **Crea raccolta** blu per creare la nuova raccolta.
+&#x200B;4. Denomina la raccolta **iPhone 17 Collection**
+&#x200B;5. Nella sezione &quot;Regole di raccolta&quot; fare clic sulla casella di testo contenente il testo **_Fare clic per creare un elemento di decisione_**. Dopo aver fatto clic su, vengono visualizzate le opzioni per la creazione della regola.
 
 ![Casella di testo della regola di raccolta aperta per la creazione di un elemento di decisione](assets/create-offer-collection-create-decision-item.png)
 
-6. Fai clic sul pulsante **Seleziona attributo**, quindi esplora lo schema dell&#39;elemento dell&#39;offerta facendo clic su **Dispositivo > Rendi**. Fare clic su **Salva,** e l&#39;attributo &#39;Make&#39; è ora incluso nella regola di decisione.
+&#x200B;6. Fai clic sul pulsante **Seleziona attributo**, quindi esplora lo schema dell&#39;elemento dell&#39;offerta facendo clic su **Dispositivo > Rendi**. Fare clic su **Salva,** e l&#39;attributo &#39;Make&#39; è ora incluso nella regola di decisione.
 
 ![Attributo Device Make aggiunto alla regola di raccolta](assets/create-offer-collection-select-make-attribute.png)
 
@@ -40,7 +40,7 @@ Ora che le offerte sono state create, devono essere organizzate in una raccolta.
 >
 >Tieni presente che le opzioni disponibili sono gli stessi campi configurabili utilizzati durante la creazione degli elementi dell’offerta. Poiché una raccolta è un raggruppamento di elementi di offerta, le regole per raggrupparli dipendono dai loro attributi.
 
-7. Lascia l&#39;operatore &quot;È uguale a&quot; sul posto e immetti il testo **iPhone** nel campo del valore. Viene visualizzato il numero di elementi che cambia in 4, a indicare che tutti gli elementi dell&#39;offerta soddisfano tali criteri
+&#x200B;7. Lascia l&#39;operatore &quot;È uguale a&quot; sul posto e immetti il testo **iPhone** nel campo del valore. Viene visualizzato il numero di elementi che cambia in 4, a indicare che tutti gli elementi dell&#39;offerta soddisfano tali criteri
 
 ![Regola di raccolta che mostra quattro elementi di offerta che corrispondono ai criteri di iPhone](assets/create-offer-collection-four-matching-offers.png)
 
@@ -48,7 +48,7 @@ Ora che le offerte sono state create, devono essere organizzate in una raccolta.
 >
 >Puoi anche fare clic sul pulsante **Anteprima raccolta** per visualizzare gli elementi dell&#39;offerta che soddisfano i criteri.
 
-8. Con tutti e quattro gli elementi dell&#39;offerta selezionati, fai clic sul pulsante blu **Crea**. Viene visualizzata una pagina che mostra la raccolta appena creata.
+&#x200B;8. Con tutti e quattro gli elementi dell&#39;offerta selezionati, fai clic sul pulsante blu **Crea**. Viene visualizzata una pagina che mostra la raccolta appena creata.
 
 ![Pagina di raccolta iPhone 17 appena creata](assets/create-offer-collection-created-collection-page.png)
 

@@ -25,9 +25,9 @@ Conferma che il profilo non sia ancora visualizzato nel set di dati Snapshot pro
 
 ![Scheda Sfoglia set di dati nella sezione Gestione dati](assets/validate-profile-snapshot-datasets-browse-tab.png)
 
-2. Nella **casella di ricerca** digitare `profile`, quindi **fare clic sulla riga** con il titolo &quot;Profile-Snapshot...&quot;.   e nella barra a destra **copia il nome della tabella** e incollalo da qualche parte a cui puoi fare riferimento nel passaggio successivo.
+&#x200B;2. Nella **casella di ricerca** digitare `profile`, quindi **fare clic sulla riga** con il titolo &quot;Profile-Snapshot...&quot;.   e nella barra a destra **copia il nome della tabella** e incollalo da qualche parte a cui puoi fare riferimento nel passaggio successivo.
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Potrebbe essere necessario cancellare tutti i filtri se non viene visualizzato &quot;Profile-Snapshot...&quot; set di dati.
 
@@ -35,7 +35,7 @@ Conferma che il profilo non sia ancora visualizzato nel set di dati Snapshot pro
 
 ![Risultati della ricerca per il set di dati Profilo-Snapshot](assets/validate-profile-snapshot-dataset-search.png)
 
-3. Torna all’editor delle query, copia e incolla l’istruzione SQL seguente nell’editor
+&#x200B;3. Torna all’editor delle query, copia e incolla l’istruzione SQL seguente nell’editor
 
 ```sql
 select
@@ -60,15 +60,15 @@ from
   limit 50
 ```
 
-4. Aggiorna il nome della tabella e l’indirizzo e-mail come descritto di seguito:
+&#x200B;4. Aggiorna il nome della tabella e l’indirizzo e-mail come descritto di seguito:
    - **Nome tabella:** alla riga 14 copia e incolla il nome della tabella disponibile per la tabella snapshot del profilo tra `from` e `where`
    - **Indirizzo e-mail:** per il momento, digitare alla riga 19 nello stesso indirizzo e-mail utilizzato per inviare l&#39;evento Web (abbiamo utilizzato henry.creel\@emailsim.io, a meno che non sia stato modificato).
      - Al momento, abbiamo commentato questo (lascialo così). Quando la query viene eseguita e cerchi Henry, non lo trovi.
 
 ![Editor query con il nome della tabella snapshot del profilo e l&#39;indirizzo di posta elettronica da aggiornare](assets/validate-profile-snapshot-update-query-table-name.png)
 
-5. **Esegui** la query facendo clic sulla freccia in alto a sinistra
-6. I risultati sono i seguenti (ma se cerchi henry, non lo trovi)
+&#x200B;5. **Esegui** la query facendo clic sulla freccia in alto a sinistra
+&#x200B;6. I risultati sono i seguenti (ma se cerchi henry, non lo trovi)
 
 ![I risultati della query non mostrano alcuna corrispondenza per il profilo in streaming nello snapshot](assets/validate-profile-snapshot-query-results-no-match.png)
 

@@ -75,7 +75,7 @@ La CLI viene distribuita in qualsiasi sandbox in cui punti il file di ambiente, 
 | `SCOPES` | Deve includere entrambi gli ambiti API di Experience Platform e API di Adobe Journey Optimizer <br />*(ad esempio cjm.suppression\_service.client.delete, cjm.suppression\_service.client.all, openid, session, AdobeID, read\_organization, additional\_info.projectedProductContext)* |
 | `SANDBOX_NAME` | La sandbox di destinazione deve essere vuota e di tipo `dev` |
 
-3. Salva e chiudi il file
+&#x200B;3. Salva e chiudi il file
 
 >[!NOTE]
 >
@@ -118,7 +118,6 @@ Il passaggio 1 dura circa 2 minuti, il passaggio 2 circa 6 minuti.
 >[!NOTE]
 >
 >Utilizzare il passaggio 6 invece di eseguire separatamente i passaggi 4 e 5: esegue la stessa operazione in un passaggio con l&#39;attesa di propagazione gestita automaticamente.
-
 > [!NOTE]
 >
 >Tutti i tempi di attesa indicati sopra vengono controllati automaticamente da CLI. Se esegui un passaggio troppo presto, questo blocca e ti dice quanto tempo aspettare.

@@ -19,7 +19,7 @@ Il video seguente riassume il modo in cui hai creato lo schema, le identità e i
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459564/?quality=12&learn=on)
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >Prima di tutto congratulazioni! Costruire cose tramite API non è facile, ma comprendere come funziona ti aiuterà a comprendere il sistema nel suo complesso. Kudos!
 

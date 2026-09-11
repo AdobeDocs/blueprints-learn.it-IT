@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Istruzioni di distribuzione
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Questa opzione è necessaria solo se si lavora nei laboratori al proprio ritmo. Se ti trovi in un corso o evento di formazione live, la sandbox è già stata distribuita per te.
 
@@ -68,7 +68,7 @@ La CLI viene distribuita in qualsiasi sandbox in cui punti il file di ambiente, 
 | `SCOPES` | Deve includere ambiti API di Experience Platform (openid, session, AdobeID, read_organization, additional_info.projectedProductContext) |
 | `SANDBOX_NAME` | La sandbox di destinazione deve essere vuota e di tipo `dev` |
 
-3. Salva e chiudi il file
+&#x200B;3. Salva e chiudi il file
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Dal menu principale, seleziona **AEP Foundation**. Ci sono tre passaggi, che dev
 
 Il passaggio 1 richiede circa 2 minuti, il passaggio 2 circa 6 minuti e il passaggio 3 è una convalida rapida senza attese proprie. Gli intervalli di 60 e 15 minuti tra i passaggi consentono ad AEP di completare la propagazione dei dati dietro le quinte, che rappresentano la maggior parte della sequenza temporale di 2 ore.
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >La CLI controlla automaticamente questi tempi di attesa. Se si esegue un passaggio troppo presto, questo blocca e indica quanti minuti rimangono, non è necessario tenere traccia dell&#39;orologio da soli.
 

@@ -27,7 +27,7 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
 ![Area di lavoro del flusso di lavoro finale pronta per il test](assets/run-the-workflow-final-workflow-canvas.png)
 
-2. Se non hai già interrotto il flusso di lavoro, assicurati di farlo ora facendo clic sul pulsante **Interrompi** in alto a destra.
+&#x200B;2. Se non hai già interrotto il flusso di lavoro, assicurati di farlo ora facendo clic sul pulsante **Interrompi** in alto a destra.
 
 ![Pulsante Interrompi in alto a destra del flusso di lavoro](assets/run-the-workflow-click-stop-button.png)
 
@@ -37,13 +37,13 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
 
 
-3. Fai clic sul pulsante **Inizio** per eseguire e verificare l&#39;fine del flusso di lavoro
+&#x200B;3. Fai clic sul pulsante **Inizio** per eseguire e verificare l&#39;fine del flusso di lavoro
 
 ![Pulsante Avvia per eseguire il test del flusso di lavoro](assets/run-the-workflow-click-start-button.png)
 
 
 
-4. Controlla i risultati in arrivo nell&#39;attività SMS facendo clic su **Risultato** (sono presenti due risultati, quindi utilizza quello a sinistra come mostrato di seguito) e quindi nella barra a sinistra facendo clic sul pulsante **Anteprima risultati**.
+&#x200B;4. Controlla i risultati in arrivo nell&#39;attività SMS facendo clic su **Risultato** (sono presenti due risultati, quindi utilizza quello a sinistra come mostrato di seguito) e quindi nella barra a sinistra facendo clic sul pulsante **Anteprima risultati**.
 
 ![Transizione risultati sinistra selezionata prima dell&#39;attività SMS](assets/run-the-workflow-select-result-transition.png)
 
@@ -51,7 +51,7 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
 
 
-5. Sono presenti **33 record** e la dimensione di targeting corrisponde all&#39;ID cliente (la chiave di join per il profilo)
+&#x200B;5. Sono presenti **33 record** e la dimensione di targeting corrisponde all&#39;ID cliente (la chiave di join per il profilo)
 
 ![33 record con dimensione di targeting corrispondente all&#39;ID cliente](assets/run-the-workflow-33-records-customer-id.png)
 
@@ -65,7 +65,7 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
 
 
-2. Quasi immediatamente viene visualizzato un nuovo pulsante con l&#39;etichetta **Visualizza report**.  Fare clic sul pulsante **Visualizza report** per passare alla schermata del report.
+&#x200B;2. Quasi immediatamente viene visualizzato un nuovo pulsante con l&#39;etichetta **Visualizza report**.  Fare clic sul pulsante **Visualizza report** per passare alla schermata del report.
 
 ![Pulsante Visualizza report per il test attività SMS](assets/run-the-workflow-click-view-report.png)
 
@@ -75,7 +75,7 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
 
 
-3. Quando ottieni risultati, vedi che il target era al 100%!
+&#x200B;3. Quando ottieni risultati, vedi che il target era al 100%!
 
 ![Risultati invio test SMS con destinazione 100%](assets/run-the-workflow-100-percent-targeted.png)
 
@@ -83,13 +83,13 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
 
 
-4. Torna all&#39;area di lavoro del flusso di lavoro e fai clic sulla transizione **Risultato** che entra nell&#39;attività SMS, quindi fai clic su **Anteprima risultati** nella barra a destra.
+&#x200B;4. Torna all&#39;area di lavoro del flusso di lavoro e fai clic sulla transizione **Risultato** che entra nell&#39;attività SMS, quindi fai clic su **Anteprima risultati** nella barra a destra.
 
 ![Revisione dei risultati della transizione dopo il test SMS](assets/run-the-workflow-recheck-transition-results.png)
 
 
 
-5. Nella schermata Risultati anteprima scorri fino alla fine della tabella e noterai che **4 record** hanno una **dimensione di targeting vuota**.
+&#x200B;5. Nella schermata Risultati anteprima scorri fino alla fine della tabella e noterai che **4 record** hanno una **dimensione di targeting vuota**.
 
 ![4 record con una dimensione di targeting vuota nella parte inferiore della tabella](assets/run-the-workflow-4-records-missing-dimension.png)
 

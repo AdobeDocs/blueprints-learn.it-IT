@@ -106,7 +106,7 @@ Una richiesta corretta dovrebbe rispondere con un `200 OK` e dovrebbero essere v
 
 ![Risposta OK filtrata 200 che mostra solo i campi Nome, Cognome e Prodotti attivi](assets/profile-and-identity-apis-successful-filtered-attributes-response.png "Risposta API di ricerca entità profilo (attributi) riuscita con filtro abilitato")
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >Congratulazioni!  Hai cercato correttamente gli attributi di un profilo utilizzando l’API di entità profilo
 

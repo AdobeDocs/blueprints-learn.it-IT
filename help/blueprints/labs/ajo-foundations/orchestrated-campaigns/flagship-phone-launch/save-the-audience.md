@@ -23,13 +23,13 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 ## Modificare la dimensione
 
-1. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona ****+**** nel ramo **Salva pubblico** e dall&#39;elenco delle attività selezionare l&#39;attività **Cambia dimensione**
+1. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona **&#x200B;**+**&#x200B;** nel ramo **Salva pubblico** e dall&#39;elenco delle attività selezionare l&#39;attività **Cambia dimensione**
 
 ![Aggiungi l&#39;attività di modifica della dimensione nel ramo Save Audience](assets/save-the-audience-add-change-dimension.png)
 
 
 
-2. Aggiornate le proprietà della quota di modifica come descritto di seguito:
+&#x200B;2. Aggiornate le proprietà della quota di modifica come descritto di seguito:
    - **Etichetta:** `Convert Line to Account`
    - **Nuova dimensione di destinazione:** `dep-rel: Customer Account`
 
@@ -43,7 +43,7 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 
 
-3. Al termine dell’operazione, l’area di lavoro si presenterà così.  Salva il tuo lavoro.
+&#x200B;3. Al termine dell’operazione, l’area di lavoro si presenterà così.  Salva il tuo lavoro.
 
 ![Area di lavoro del flusso di lavoro dopo l&#39;aggiunta dell&#39;attività di modifica della dimensione](assets/save-the-audience-canvas-after-change-dimension.png)
 
@@ -57,13 +57,13 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 
 
-2. Aggiorna l&#39;etichetta dell&#39;attività Deduplication in `Dedup customer id`
+&#x200B;2. Aggiorna l&#39;etichetta dell&#39;attività Deduplication in `Dedup customer id`
 
 ![Etichetta attività di deduplicazione impostata su Dedup customer id](assets/save-the-audience-deduplication-label.png)
 
 
 
-3. Ora fai clic sul pulsante **+ Aggiungi attributo** e seleziona il campo dallo schema con titolo **ID cliente**
+&#x200B;3. Ora fai clic sul pulsante **+ Aggiungi attributo** e seleziona il campo dallo schema con titolo **ID cliente**
 
 ![Pulsante Aggiungi attributo per l&#39;attività Deduplication](assets/save-the-audience-add-attribute-button.png)
 
@@ -71,7 +71,7 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 
 
-4. Nelle impostazioni di deduplicazione, assicurati di disporre del seguente set:
+&#x200B;4. Nelle impostazioni di deduplicazione, assicurati di disporre del seguente set:
    - **Duplicati da mantenere:** `1`
    - **Metodo di deduplicazione:** `Random selection`
 
@@ -83,7 +83,7 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 
 
-5. Al termine dell’operazione, l’area di lavoro si presenta così. Fai clic sul pulsante **Salva** in alto a destra prima di proseguire.
+&#x200B;5. Al termine dell’operazione, l’area di lavoro si presenta così. Fai clic sul pulsante **Salva** in alto a destra prima di proseguire.
 
 ![Attività di deduplicazione completamente configurata nell&#39;area di lavoro](assets/save-the-audience-deduplication-configured.png)
 
@@ -95,7 +95,7 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 ![Aggiungi l&#39;attività Salva pubblico dopo la deduplicazione](assets/save-the-audience-add-save-audience-activity.png)
 
-2. Nella barra a destra, imposta le proprietà dell’attività sui seguenti elementi:
+&#x200B;2. Nella barra a destra, imposta le proprietà dell’attività sui seguenti elementi:
    - **Etichetta pubblico**: `Apple Upgrade Eligible Customer Accounts`
    - **Campo di mappatura profilo**: `dep-rel: Customer Account - customer id`
 
@@ -134,7 +134,7 @@ Per impostazione predefinita, la chiave primaria della dimensione di targeting (
 
 
 
-2. Fai clic sul pulsante **Avvia** per eseguire il flusso di lavoro. Il flusso di lavoro è ora simile al seguente e i conteggi sono visualizzati come segue:
+&#x200B;2. Fai clic sul pulsante **Avvia** per eseguire il flusso di lavoro. Il flusso di lavoro è ora simile al seguente e i conteggi sono visualizzati come segue:
    - Genera pubblico: `65`
    - Converti riga in account: `65`
    - ID cliente deduplicazione: `46`

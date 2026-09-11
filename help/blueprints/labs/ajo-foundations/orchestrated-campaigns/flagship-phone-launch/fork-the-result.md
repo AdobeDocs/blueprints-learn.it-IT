@@ -26,13 +26,13 @@ Questo passaggio è semplice in quanto tutto ciò che desideri è aggiungere un�
 
 ## Creare il fork
 
-1. Nell&#39;area di lavoro del flusso di lavoro, fai clic sull&#39;icona **+** **** dopo l&#39;attività Genera pubblico e seleziona l&#39;**Attività Fork**
+1. Nell&#39;area di lavoro del flusso di lavoro, fai clic sull&#39;icona **+** **&#x200B;**&#x200B;dopo l&#39;attività Genera pubblico e seleziona l&#39;**Attività Fork**
 
 ![Aggiungi un&#39;attività Fork dopo l&#39;attività Genera pubblico](assets/fork-the-result-add-fork-activity.png)
 
 
 
-2. Aggiorna i nomi di ciascuna transizione nel fork facendo clic sulla transizione e assegnando i nomi come descritto di seguito:
+&#x200B;2. Aggiorna i nomi di ciascuna transizione nel fork facendo clic sulla transizione e assegnando i nomi come descritto di seguito:
    - **Primi** —> `Save Audience`
    - **Inferiore** —> `SMS`
 
@@ -50,7 +50,7 @@ Una volta terminata, l&#39;area di lavoro dovrebbe ora essere simile a così...
 
 
 
-3. Fai clic su **Salva** nella parte superiore dell&#39;area di lavoro del flusso di lavoro.
+&#x200B;3. Fai clic su **Salva** nella parte superiore dell&#39;area di lavoro del flusso di lavoro.
 
 ![Pulsante Salva sulla barra degli strumenti dell&#39;area di lavoro del flusso di lavoro](assets/fork-the-result-click-save.png)
 

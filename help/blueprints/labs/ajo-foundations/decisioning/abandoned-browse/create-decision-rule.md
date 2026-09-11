@@ -32,14 +32,14 @@ Poiché l’idoneità è uno degli elementi costitutivi chiave di un’offerta, 
 
 ![Pagina Regole di decisione con il pulsante Crea regola](assets/create-decision-rule-create-rule-button.png)
 
-4. Viene visualizzata una schermata simile all’interfaccia utente del Generatore di segmenti. Aggiungere l&#39;attributo ID piano all&#39;area di lavoro delle regole facendo clic su **Profilo individuale XDM > Protezione esecuzione programmi > Dettagli piano**, quindi trascinare l&#39;attributo **ID piano** nell&#39;area di lavoro.
-5. Modifica il menu a discesa da è uguale a **contiene.**
-6. Immetti il testo **2** nella casella, premi il tasto **TAB** per accettare il valore 2, quindi immetti un valore **3,** premi di nuovo **TAB** in modo che la regola stia cercando qualsiasi ID piano che contiene un 2 o un 3
-7. Utilizza la casella di testo **Nome** nella barra a destra per denominare la regola di decisione **Piani di livello superiore**. Se lo desideri, aggiungi una descrizione. Al termine, la regola di decisione sarà simile alla seguente:
+&#x200B;4. Viene visualizzata una schermata simile all’interfaccia utente del Generatore di segmenti. Aggiungere l&#39;attributo ID piano all&#39;area di lavoro delle regole facendo clic su **Profilo individuale XDM > Protezione esecuzione programmi > Dettagli piano**, quindi trascinare l&#39;attributo **ID piano** nell&#39;area di lavoro.
+&#x200B;5. Modifica il menu a discesa da è uguale a **contiene.**
+&#x200B;6. Immetti il testo **2** nella casella, premi il tasto **TAB** per accettare il valore 2, quindi immetti un valore **3,** premi di nuovo **TAB** in modo che la regola stia cercando qualsiasi ID piano che contiene un 2 o un 3
+&#x200B;7. Utilizza la casella di testo **Nome** nella barra a destra per denominare la regola di decisione **Piani di livello superiore**. Se lo desideri, aggiungi una descrizione. Al termine, la regola di decisione sarà simile alla seguente:
 
 ![Regola di decisione Piani di livello superiore completata con ID piano contenente 2 o 3](assets/create-decision-rule-upper-tier-plans-finished.png "Regola di decisione Piani di livello superiore completati con ID piano contenente 2 o 3")
 
-8. Una volta corretta la regola, fai clic sul pulsante blu **Crea** nell&#39;angolo in alto a destra e vieni reindirizzato alla pagina Impostazione strategia, dove la regola di decisione appena creata è elencata come unica regola di decisione.
+&#x200B;8. Una volta corretta la regola, fai clic sul pulsante blu **Crea** nell&#39;angolo in alto a destra e vieni reindirizzato alla pagina Impostazione strategia, dove la regola di decisione appena creata è elencata come unica regola di decisione.
 
 >[!NOTE]
 >

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Configurare la mappatura
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Segui questa sezione solo se hai completato correttamente l’esercitazione di acquisizione in batch.  In caso contrario, segui i [passaggi di mappatura dei dati](../batch-ingestion/mapping-data/overview.md) trovati nella esercitazione di acquisizione in batch.
 

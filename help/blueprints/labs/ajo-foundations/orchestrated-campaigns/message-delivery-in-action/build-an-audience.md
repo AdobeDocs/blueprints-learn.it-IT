@@ -25,31 +25,31 @@ Nel prossimo set di passaggi creerai un pubblico dallo schema relazionale selezi
 
 ![Seleziona Genera pubblico dalle attività di targeting](assets/build-an-audience-select-build-audience-activity.png)
 
-2. L&#39;attività **Genera pubblico** apre il riquadro dei dettagli a destra, quindi fai clic sull&#39;icona di ricerca per selezionare la **dimensione di targeting**.
+&#x200B;2. L&#39;attività **Genera pubblico** apre il riquadro dei dettagli a destra, quindi fai clic sull&#39;icona di ricerca per selezionare la **dimensione di targeting**.
 
 ![Seleziona dimensione di targeting](assets/build-an-audience-select-targeting-dimension.png)
 
-3. Seleziona `dep-rel: Customer Account` dall&#39;elenco e fai clic su **Conferma**
+&#x200B;3. Seleziona `dep-rel: Customer Account` dall&#39;elenco e fai clic su **Conferma**
 
 ![Seleziona dep-rel: schema account cliente](assets/build-an-audience-select-customer-account-schema.png)
 
-4. Una volta configurata la **dimensione di targeting**, fai clic su Crea pubblico per avviare il processo di creazione del pubblico dallo schema relazionale
+&#x200B;4. Una volta configurata la **dimensione di targeting**, fai clic su Crea pubblico per avviare il processo di creazione del pubblico dallo schema relazionale
 
 ![Fai clic sul pulsante Crea pubblico](assets/build-an-audience-create-audience-button.png)
 
-5. Viene visualizzato il riquadro Crea dettagli pubblico. Fai clic su **Aggiungi condizione**
+&#x200B;5. Viene visualizzato il riquadro Crea dettagli pubblico. Fai clic su **Aggiungi condizione**
 
 ![Fai clic su Aggiungi condizione in Crea riquadro pubblico](assets/build-an-audience-add-condition.png)
 
-6. Scorri verso il basso ed espandi `dep-rel: Plan Lookup` facendo clic su **>** accanto
+&#x200B;6. Scorri verso il basso ed espandi `dep-rel: Plan Lookup` facendo clic su **>** accanto
 
 ![Espandi dep-rel: ricerca piano](assets/build-an-audience-expand-plan-lookup.png)
 
-7. Seleziona `dep-rel: Plan Name` e fai clic su **Conferma**
+&#x200B;7. Seleziona `dep-rel: Plan Name` e fai clic su **Conferma**
 
 ![Selezionare dep-rel: nome piano](assets/build-an-audience-select-plan-name.png)
 
-8. Nel pannello Condizione personalizzata, lascia l’operatore &quot;uguale a&quot; e per Valore, seleziona Base dal menu a discesa.
+&#x200B;8. Nel pannello Condizione personalizzata, lascia l’operatore &quot;uguale a&quot; e per Valore, seleziona Base dal menu a discesa.
 
 ![Condizione personalizzata con nome piano uguale a Base](assets/build-an-audience-plan-name-equals-basic.png)
 
@@ -59,7 +59,7 @@ Nel prossimo set di passaggi creerai un pubblico dallo schema relazionale selezi
 
 
 
-9. Con la condizione Personalizzata configurata, fai clic sull’icona Aggiorna per calcolare e visualizzare il conteggio. Esistono due posizioni per il calcolo dei risultati
+&#x200B;9. Con la condizione Personalizzata configurata, fai clic sull’icona Aggiorna per calcolare e visualizzare il conteggio. Esistono due posizioni per il calcolo dei risultati
 
 ![Fare clic sull&#39;icona Aggiorna per calcolare il numero di righe previsto](assets/build-an-audience-refresh-row-counts.png)
 
@@ -69,7 +69,7 @@ Nel prossimo set di passaggi creerai un pubblico dallo schema relazionale selezi
 
 
 
-10. I conteggi (**38**) indicano il numero di righe nell&#39;archivio relazionale che corrispondono alla condizione specificata. Fai clic su **Conferma** per uscire dal riquadro **Crea pubblico**
+&#x200B;10. I conteggi (**38**) indicano il numero di righe nell&#39;archivio relazionale che corrispondono alla condizione specificata. Fai clic su **Conferma** per uscire dal riquadro **Crea pubblico**
 
 ![Conferma conteggio righe ed esci da Crea riquadro pubblico](assets/build-an-audience-confirm-row-count.png)
 

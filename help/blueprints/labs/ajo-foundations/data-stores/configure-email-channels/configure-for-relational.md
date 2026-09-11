@@ -26,7 +26,7 @@ Nei passaggi successivi verrà creata una configurazione del canale e-mail da ut
 
 ![Crea configurazione canale](assets/configure-for-profile-create-configuration-button.png)
 
-3. Nella procedura guidata Crea, imposta i seguenti valori:
+&#x200B;3. Nella procedura guidata Crea, imposta i seguenti valori:
    - **Nome:** `Relational-Email`
    - **Canale:** `Email`
    - **Azione di marketing:** `Email Targeting`
@@ -101,27 +101,27 @@ Lascia le impostazioni predefinite
 
 ![Configura campagna orchestrata](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
 
-2. In Dimensione di esecuzione configura quanto segue:
+&#x200B;2. In Dimensione di esecuzione configura quanto segue:
    - **Consegna un messaggio per:** `Target Dimension `
    - **Dimension di destinazione profilo:** `dep-rel: Customer Account - customer_id`
 
 ![Dimensione di esecuzione](assets/configure-for-relational-execution-dimension-target-settings.png)
 
-3. In Indirizzo di esecuzione configura quanto segue:
+&#x200B;3. In Indirizzo di esecuzione configura quanto segue:
    - **Source:** `Target Dimension`
    - **Indirizzo di consegna:** `click on the Edit button`
 
 ![Dimension di destinazione](assets/configure-for-relational-execution-address-source-target-dimension.png)
 
-4. Nel popup, fare clic nella cartella **dep-rel: Account cliente**
+&#x200B;4. Nel popup, fare clic nella cartella **dep-rel: Account cliente**
 
 ![Configura indirizzo di consegna](assets/configure-for-relational-customer-account-folder.png)
 
-5. Seleziona **E-mail** e fai clic sul pulsante **Seleziona**
+&#x200B;5. Seleziona **E-mail** e fai clic sul pulsante **Seleziona**
 
 ![Indirizzo e-mail come recapito](assets/configure-for-relational-select-email-as-delivery-address.png)
 
-6. Al termine, i dettagli di esecuzione finali avranno un aspetto simile alla schermata seguente
+&#x200B;6. Al termine, i dettagli di esecuzione finali avranno un aspetto simile alla schermata seguente
 
 ![Dimensione di esecuzione configurata](assets/configure-for-relational-execution-details-final-result.png)
 

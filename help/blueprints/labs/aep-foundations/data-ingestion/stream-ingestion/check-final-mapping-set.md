@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Mappature pass-through
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Prima di continuare, assicurati che la mappatura finale corrisponda a quanto mostrato di seguito.
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 | concat(date\_part(&quot;mm&quot;, date(nascita\_Date, &quot;aaaa-M-g&quot;)).toString(), &quot;-&quot;, date\_part(&quot;gg&quot;, date(nascita\_Date, &quot;aaaa-M-g&quot;)).toString()) | person.bornDayAndMonth |
 | date\_part(&quot;aaaa&quot;,date(nascita\_Date,&quot;aaaa-M-g&quot;)) | person.bornYear |
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Prima di continuare, assicurati che la mappatura finale corrisponda a quanto mostrato di seguito
 

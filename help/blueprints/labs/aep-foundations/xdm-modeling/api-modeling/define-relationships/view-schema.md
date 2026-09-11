@@ -32,15 +32,15 @@ ht-degree: 0%
 
 
 
-2. Nell&#39;URL della richiesta sostituire `<replace me>` con `$meta:altId` salvato dalla sezione precedente [Crea schema](../build-schema/create-schema.md) come mostrato di seguito
+&#x200B;2. Nell&#39;URL della richiesta sostituire `<replace me>` con `$meta:altId` salvato dalla sezione precedente [Crea schema](../build-schema/create-schema.md) come mostrato di seguito
 
 ![Richiesta passaggio 4 con meta:altId aggiunta all&#39;URL](assets/view-schema-final-step-4-request.png "Richiesta passaggio 4 finale")
 
 
 
-3. Salva la richiesta utilizzando il pulsante `Save`
+&#x200B;3. Salva la richiesta utilizzando il pulsante `Save`
 
-4. Eseguire la richiesta facendo clic sul pulsante `Send`
+&#x200B;4. Eseguire la richiesta facendo clic sul pulsante `Send`
 
 A questo punto dovrebbe essere visualizzata una risposta `200 OK` e dovrebbe essere possibile passare alla fine dello schema creato per visualizzare l&#39;identità attraverso l&#39;obiettivo della struttura JSON XDM
 

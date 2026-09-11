@@ -86,6 +86,6 @@ Ora dovresti vedere una schermata simile a quella riportata di seguito
 
 ![Azure Storage Explorer mostra l&#39;account della zona di destinazione dati connesso correttamente](assets/overview-successfully-connected-account.png)
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >Congratulazioni!  Configurazione di Azure Storage Explorer completata

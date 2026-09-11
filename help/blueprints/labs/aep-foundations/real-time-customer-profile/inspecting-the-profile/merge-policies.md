@@ -30,7 +30,7 @@ Un criterio di unione esegue due operazioni:
    - Precedenza timestamp: utilizza il record più recente di tutti i set di dati come set di verità e lascia che tutti gli altri record riempiano i vuoti in ordine da recente a meno recente
    - Precedenza set di dati: scegli quali set di dati profilo individuali XDM possono essere utilizzati per formare il profilo e in quale ordine assemblarli
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Quando si sceglie il metodo di unione Precedenza set di dati, è possibile scegliere quali set di dati XDM Profilo individuale e XDM Experience Event possono essere utilizzati nella formazione del profilo.
 >
@@ -198,7 +198,7 @@ Quando il grafo delle identità viene utilizzato con l’archivio dei profili, p
 
 Senza il grafo delle identità, l’archivio profili può recuperare solo frammenti di profilo utilizzando un singolo identificatore (ad esempio, identità primaria)
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >**Avere del tempo in più e provare...:**
 >

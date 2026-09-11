@@ -90,19 +90,19 @@ Dal riquadro di sinistra sotto il menu **Eventi** trascina &#39;n rilasciare l&#
 
 ![Trascina l&#39;azione personalizzata GetShippingDetails nell&#39;area di lavoro dopo l&#39;evento orderShipped](assets/build-journey-drag-getshippingdetails-action-onto-canvas.png)
 
-2. Nella barra a destra, sotto Configurazione di accesso e privacy —> Menu a discesa Azione di marketing, verifica che il valore sia impostato su **Nessuno**
+&#x200B;2. Nella barra a destra, sotto Configurazione di accesso e privacy —> Menu a discesa Azione di marketing, verifica che il valore sia impostato su **Nessuno**
 
 ![Elenco a discesa Azione di marketing impostato su Nessuno nella configurazione di accesso e privacy](assets/build-journey-set-marketing-action-to-none.png)
 
-3. Nel menu Configurazione endpoint —> Parametri query, fai clic sull&#39;icona **Matita** accanto a orderid
+&#x200B;3. Nel menu Configurazione endpoint —> Parametri query, fai clic sull&#39;icona **Matita** accanto a orderid
 
 ![Icona matita per modificare il parametro di query orderid nella configurazione dell&#39;endpoint](assets/build-journey-edit-orderid-query-parameter.png)
 
-4. Nel modale visualizzato espandere **Contesto** -> **ordineSpedito** -> **Ordine**, quindi selezionare **ID ordine (orderID)** e fare clic su **OK**
+&#x200B;4. Nel modale visualizzato espandere **Contesto** -> **ordineSpedito** -> **Ordine**, quindi selezionare **ID ordine (orderID)** e fare clic su **OK**
 
 ![Selezionare l&#39;ID ordine (orderID) dai campi di contesto ordine spedito](assets/build-journey-select-order-id-context-field.png)
 
-5. Nella barra a destra, verifica che l&#39;opzione per Timeout o errore sia **deselezionata**, quindi fai clic sul **pulsante Salva**
+&#x200B;5. Nella barra a destra, verifica che l&#39;opzione per Timeout o errore sia **deselezionata**, quindi fai clic sul **pulsante Salva**
 
 ![Opzione di timeout o errore deselezionata con il pulsante Salva evidenziato](assets/build-journey-uncheck-timeout-or-error.png)
 
@@ -114,15 +114,15 @@ Dal riquadro di sinistra sotto il menu **Eventi** trascina &#39;n rilasciare l&#
 
 ![Trascinare il nodo Azione nell&#39;area di lavoro dopo l&#39;azione GetShippingDetails](assets/build-journey-drag-email-action-onto-canvas.png)
 
-2. Seleziona **Email** per l&#39;azione di marketing, quindi **Aggiungi**.
+&#x200B;2. Seleziona **Email** per l&#39;azione di marketing, quindi **Aggiungi**.
 
 ![Seleziona E-mail come azione di marketing e fai clic su Aggiungi](assets/build-journey-select-email-marketing-action.png)
 
-3. Nella barra a destra, fai clic su **Configura azione**
+&#x200B;3. Nella barra a destra, fai clic su **Configura azione**
 
 ![Configura il pulsante di azione nella barra a destra](assets/build-journey-click-configure-action.png)
 
-4. imposta **Configurazione canale e-mail** su `Profile-Email`, quindi fai clic su **Modifica contenuto**
+&#x200B;4. imposta **Configurazione canale e-mail** su `Profile-Email`, quindi fai clic su **Modifica contenuto**
 
 ![Configurazione del canale e-mail impostata su Profilo-E-mail con collegamento Modifica contenuto](assets/build-journey-set-profile-email-channel-configuration.png)
 
@@ -136,27 +136,27 @@ Per quanto riguarda i contenuti, dovrai mantenere le cose semplici. Come stupidi
 
 ![Riga oggetto aggiornata al pulsante Modifica corpo dell&#39;e-mail Spedito con ordine](assets/build-journey-update-subject-line-order-shipped.png)
 
-2. Nella barra superiore fai clic sul blocco di contenuto **Struttura da zero**
+&#x200B;2. Nella barra superiore fai clic sul blocco di contenuto **Struttura da zero**
 
 ![Progetta da zero blocco di contenuto nella barra superiore](assets/build-journey-click-design-from-scratch.png)
 
-3. Dalla barra sinistra sotto il contenitore Struttura trascinare &#39;n rilasciare la **Colonna 1:1** nell&#39;area di lavoro
+&#x200B;3. Dalla barra sinistra sotto il contenitore Struttura trascinare &#39;n rilasciare la **Colonna 1:1** nell&#39;area di lavoro
 
 ![Trascina l&#39;elemento struttura colonna 1:1 nell&#39;area di lavoro e-mail](assets/build-journey-drag-1-1-column-onto-canvas.png)
 
-4. Quindi trascina il componente **Testo** nella **Colonna:1:1** sotto il contenitore Sommario
+&#x200B;4. Quindi trascina il componente **Testo** nella **Colonna:1:1** sotto il contenitore Sommario
 
 ![Trascina il componente Testo nella colonna 1:1](assets/build-journey-drag-text-component-into-column.png)
 
-5. Fai clic sul componente Testo e **elimina il testo corrente**, quindi fai clic sull&#39;icona **Aggiungi Personalization**
+&#x200B;5. Fai clic sul componente Testo e **elimina il testo corrente**, quindi fai clic sull&#39;icona **Aggiungi Personalization**
 
 ![Aggiungi icona Personalization dopo aver eliminato il testo predefinito](assets/build-journey-click-add-personalization-icon.png)
 
-6. Nella barra a sinistra, fai clic sulla cartella **Attributi contestuali**, quindi passa a **Journey Orchestration** -> **Azioni** e seleziona **GetShippingDetails**
+&#x200B;6. Nella barra a sinistra, fai clic sulla cartella **Attributi contestuali**, quindi passa a **Journey Orchestration** -> **Azioni** e seleziona **GetShippingDetails**
 
 ![Selezionare GetShippingDetails in Attributi contestuali - Journey Orchestration - Azioni](assets/build-journey-select-getshippingdetails-contextual-attribute.png)
 
-7. Nel corpo principale dell&#39;e-mail ora **copia e incolla** il JSON seguente nel **editor** di Personalization
+&#x200B;7. Nel corpo principale dell&#39;e-mail ora **copia e incolla** il JSON seguente nel **editor** di Personalization
 
 ```json
 {{profile.person.name.firstName}}, your order has shipped
@@ -164,7 +164,7 @@ ETA:
 Tracking Number: 
 ```
 
-8. Aggiungi i campi di personalizzazione come segue (**fai clic sul segno più &#39;+&#39; accanto al campo nella barra a sinistra**):
+&#x200B;8. Aggiungi i campi di personalizzazione come segue (**fai clic sul segno più &#39;+&#39; accanto al campo nella barra a sinistra**):
    - **ETA:** `eta`
    - **Numero di tracciamento:** `tracking_number`
 
@@ -180,16 +180,16 @@ Tracking Number:
 >
 >![Scheda Attributi profilo per l&#39;aggiunta di attributi di profilo aggiuntivi](assets/build-journey-profile-attributes-tab.png)
 
-9. Nella parte inferiore della schermata, fai clic sul pulsante **Convalida** per verificare che non siano presenti errori
+&#x200B;9. Nella parte inferiore della schermata, fai clic sul pulsante **Convalida** per verificare che non siano presenti errori
 
 ![Pulsante Convalida senza errori nella parte inferiore della schermata](assets/build-journey-click-validate-button.png)
 
-10. Se tutto è a posto, fai clic sul pulsante **Salva** in alto a destra
-11. Fai di nuovo clic sul pulsante **Salva** in alto a destra e quindi sulla freccia **\&lt;- sinistra** in alto a sinistra
+&#x200B;10. Se tutto è a posto, fai clic sul pulsante **Salva** in alto a destra
+&#x200B;11. Fai di nuovo clic sul pulsante **Salva** in alto a destra e quindi sulla freccia **\&lt;- sinistra** in alto a sinistra
 
 ![Pulsante Salva e freccia indietro in alto a destra e in alto a sinistra](assets/build-journey-save-and-back-arrow.png)
 
-12. Infine, fai clic sull&#39;icona **\&lt; Indietro** in alto a sinistra per tornare all&#39;area di lavoro del Percorso
+&#x200B;12. Infine, fai clic sull&#39;icona **\&lt; Indietro** in alto a sinistra per tornare all&#39;area di lavoro del Percorso
 
 ![Icona Indietro in alto a sinistra per tornare all&#39;area di lavoro del Percorso](assets/build-journey-back-icon-to-journey-canvas.png)
 
@@ -209,7 +209,7 @@ Tornando all&#39;area di lavoro principale del Percorso, nel nodo E-mail, accert
 
 ![Abilita l&#39;icona di sostituzione del parametro in Parametri e-mail](assets/build-journey-enable-parameter-override.png)
 
-2. Fai clic nella casella di testo vuota, quindi nella barra a sinistra approfondisci in **Contesto** -> **ordineSpedito** -> **\_dep** e fai clic sul campo **personalEmail**.  Quindi fare clic sul pulsante **OK**
+&#x200B;2. Fai clic nella casella di testo vuota, quindi nella barra a sinistra approfondisci in **Contesto** -> **ordineSpedito** -> **\_dep** e fai clic sul campo **personalEmail**.  Quindi fare clic sul pulsante **OK**
 
 ![Selezionare il campo personalEmail nel contesto orderShipped _dep](assets/build-journey-select-personalemail-context-field.png)
 
@@ -219,7 +219,7 @@ Tornando all&#39;area di lavoro principale del Percorso, nel nodo E-mail, accert
 
 
 
-3. Fai clic sul pulsante **Salva** in alto a destra, quindi fai clic sulla **freccia indietro** \&lt;- in alto a sinistra per **chiudere** il Percorso
+&#x200B;3. Fai clic sul pulsante **Salva** in alto a destra, quindi fai clic sulla **freccia indietro** \&lt;- in alto a sinistra per **chiudere** il Percorso
 
 ![Pulsante Salva e freccia indietro per chiudere il Percorso](assets/build-journey-save-and-close-journey.png)
 

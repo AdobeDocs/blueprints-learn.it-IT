@@ -47,7 +47,7 @@ Dopo aver fatto clic su **Fine**, viene visualizzata la schermata **Flussi dati*
 
 ![Schermata Flussi dati che mostra il nuovo flusso di dati con stato Nessuna esecuzione](assets/schedule-dataflow-dataflows-screen-no-runs-status.png "Schermata Origini flussi dati")
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Devi aggiornare la pagina continuamente per visualizzare l’aggiornamento di stato, in quanto il backend non invia aggiornamenti all’interfaccia utente.
 

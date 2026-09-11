@@ -33,7 +33,7 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 >
 >Indica che in una variante e-mail manca il collegamento di rinuncia
 
-4. Fai clic su **Simula** e, a sinistra, seleziona **Modalità test**
+&#x200B;4. Fai clic su **Simula** e, a sinistra, seleziona **Modalità test**
 
 ![Modalità test selezionata in Simula sul lato sinistro](assets/test-journey-select-test-mode.png)
 
@@ -45,15 +45,15 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
 
 
-5. Fai clic su **Attiva un evento** e compila le seguenti proprietà:
+&#x200B;5. Fai clic su **Attiva un evento** e compila le seguenti proprietà:
    - **Tipo evento**: `orders.shipped`
    - **E-mail personale**: `henry.creel@emailsim.io`
    - **ID ordine**: `123`
-6. Fai clic su **Invia** (la risposta richiede alcuni secondi dopo aver fatto clic su Invia)
+&#x200B;6. Fai clic su **Invia** (la risposta richiede alcuni secondi dopo aver fatto clic su Invia)
 
 ![Attiva un modulo evento compilato e Invia selezionato](assets/test-journey-trigger-event-send.png)
 
-> [!WARNING]
+&#x200B;> [!WARNING]
 >
 >Alcuni studenti ricevono errori e devono inviarli alcune volte. Potrebbe essere necessario eseguire **più** volte.
 >
@@ -65,11 +65,11 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
 
 
-7. In **Risultati** -> Fai clic su **Mostra registro** a sinistra
+&#x200B;7. In **Risultati** -> Fai clic su **Mostra registro** a sinistra
 
 ![Mostra opzione di registro in Risultati dopo l&#39;attivazione dell&#39;evento di test](assets/test-journey-show-log-results.png)
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Alcuni studenti che hanno ricevuto errori a volte ricevono registri diversi che mostrano un array di istanze vuoto `{"instances": []}`. Questo non è un bloccante. Procedi e passa al passaggio successivo.
 
@@ -106,16 +106,16 @@ Dovresti vedere qualcosa di simile a questo nel registro:
 
 
 
-8. **Chiudi** il browser **scheda**
-9. **Chiudi modalità test** in alto a destra
+&#x200B;8. **Chiudi** il browser **scheda**
+&#x200B;9. **Chiudi modalità test** in alto a destra
 
 ![Pulsante Chiudi modalità test in alto a destra](assets/test-journey-close-test-mode.png)
 
-10. Fai clic su **Pubblica** il Percorso in alto a destra
+&#x200B;10. Fai clic su **Pubblica** il Percorso in alto a destra
 
 ![Pulsante Pubblica per il Percorso in alto a destra](assets/test-journey-publish-journey.png)
 
-11. **Chiudi** il **Percorso** facendo clic sulla freccia \&lt;- in alto a sinistra
+&#x200B;11. **Chiudi** il **Percorso** facendo clic sulla freccia \&lt;- in alto a sinistra
 
 ![Freccia indietro in alto a sinistra per chiudere il Percorso](assets/test-journey-close-journey-back-arrow.png)
 

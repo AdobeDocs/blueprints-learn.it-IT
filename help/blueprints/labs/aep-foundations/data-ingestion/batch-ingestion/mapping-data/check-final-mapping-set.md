@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Verifica set di mappatura finale
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Se si proviene da Streaming Ingestion Lab, fare clic sul link seguente per procedere al passaggio successivo:
 >
@@ -52,7 +52,7 @@ ht-degree: 0%
 | shipping\_state | shippingAddress.state |
 | shipping\_street\_address | shippingAddress.street1 |
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Prima di continuare, assicurati che la mappatura finale corrisponda a quanto mostrato di seguito.
 
@@ -66,6 +66,6 @@ ht-degree: 0%
 | concat(date\_part(&quot;mese&quot;, date(nascita\_Date,&quot;M/g/aaaa&quot;)).toString(), &quot;-&quot;, date\_part(&quot;giorno&quot;, date(nascita\_Date,&quot;M/g/aaaa&quot;)).toString()) | person.bornDayAndMonth |
 | date\_part(&quot;yyyy&quot;,date(nascita\_Date,&quot;M/d/yyyy&quot;)) | person.bornYear |
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Prima di continuare, assicurati che la mappatura finale corrisponda a quanto mostrato di seguito

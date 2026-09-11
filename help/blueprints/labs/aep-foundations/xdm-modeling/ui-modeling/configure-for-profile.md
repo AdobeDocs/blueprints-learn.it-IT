@@ -141,7 +141,6 @@ Sfoglia la classe Profilo individuale XDM e quindi impiega qualche istante per r
 >[!NOTE]
 >
 >Osserva che lo schema mostrato è una visualizzazione combinata aggregata di tutti gli schemi abilitati per il profilo nella sandbox. Campi simili all’interno della struttura XDM gerarchica si uniscono, mentre campi con nomi e/o gerarchie diversi vengono aggiunti alla visualizzazione complessiva.
-
 > [!NOTE]
 >
 >Solo la classe basata su Profilo individuale XDM esegue unioni tra campi con nomi simili.

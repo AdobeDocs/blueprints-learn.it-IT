@@ -57,7 +57,7 @@ lastOrderStatusUpdate
 
 Se la schermata di mappatura ora lamenta la presenza di una mappatura duplicata come **orderStatus** mappata a **order.\_devbc.acqSource,** fai clic sull&#39;icona &quot;-&quot; per rimuovere la mappatura.
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >Tieni presente che più campi di input non possono essere mappati sullo stesso campo di output, in quanto questo rende ambigua la mappatura. Tuttavia, un singolo campo di input può essere mappato su più campi di output nello schema XDM.
 

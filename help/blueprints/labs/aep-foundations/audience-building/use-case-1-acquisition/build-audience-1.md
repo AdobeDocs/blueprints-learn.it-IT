@@ -48,9 +48,9 @@ Si ottengono molti oggetti correlati a un ordine
 
 >[!NOTE]
 >
->* Non c&#39;è nessuna &quot;i&quot; per la &quot;cartella&quot; dell&#39;ordine. Anche se la nostra descrizione è stata compilata, non la contiene e questo può essere fonte di confusione per l’addetto al marketing, in quanto potrebbe provare a utilizzarla o voler sapere di cosa si tratta.
->* La &quot;i&quot; per le schede evento ripete semplicemente il tipo, poiché il Tipo evento è un campo, non molti.
->* I dati di riepilogo vengono visualizzati solo se il valore è presente in più del 2% dei profili uniti. Questo determina anche il completamento automatico quando si filtra su una stringa.
+>&#x200B;* Non c&#39;è nessuna &quot;i&quot; per la &quot;cartella&quot; dell&#39;ordine. Anche se la nostra descrizione è stata compilata, non la contiene e questo può essere fonte di confusione per l’addetto al marketing, in quanto potrebbe provare a utilizzarla o voler sapere di cosa si tratta.
+>&#x200B;* La &quot;i&quot; per le schede evento ripete semplicemente il tipo, poiché il Tipo evento è un campo, non molti.
+>&#x200B;* I dati di riepilogo vengono visualizzati solo se il valore è presente in più del 2% dei profili uniti. Questo determina anche il completamento automatico quando si filtra su una stringa.
 
 
 
@@ -58,7 +58,7 @@ Utilizza la scheda Tipo evento inserito ordine e trascinala nell’area di lavor
 
 ![Trascina la scheda del tipo di evento Ordine inoltrato nell&#39;area di lavoro](assets/build-audience-1-drag-order-placed-event-onto-canvas.png)
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >**Facoltativo:**
 >

@@ -41,7 +41,7 @@ Fai clic sul pulsante **Modifica contenuto** oppure passa direttamente alla sche
 
 
 
-2. Copia e incolla il testo seguente nel corpo del messaggio SMS.
+&#x200B;2. Copia e incolla il testo seguente nel corpo del messaggio SMS.
 
 ```none
 Hi from Connection 5G! Your phone_make phone_model is eligible for a free upgrade to one of the new iPhone 17 models. Shop online or come into a store today to take advantage of this offer.
@@ -53,7 +53,7 @@ Hi from Connection 5G! Your phone_make phone_model is eligible for a free upgrad
 
 
 
-3. Aggiorna i due campi nel messaggio denominato **phone\_make** e **phone\_model** di seguito utilizzando l&#39;opzione **Target attributes** nella barra a sinistra.  Al termine il messaggio dovrebbe corrispondere alla schermata.
+&#x200B;3. Aggiorna i due campi nel messaggio denominato **phone\_make** e **phone\_model** di seguito utilizzando l&#39;opzione **Target attributes** nella barra a sinistra.  Al termine il messaggio dovrebbe corrispondere alla schermata.
 
 ![Messaggio SMS finale con marca del telefono e modello personalizzati](assets/compose-the-sms-final-message-text.png)
 
@@ -63,13 +63,13 @@ Hi from Connection 5G! Your phone_make phone_model is eligible for a free upgrad
 
 
 
-4. Fai clic su **Convalida** nell&#39;editor e accertati che non vi siano errori di convalida; in caso affermativo, fai clic sul pulsante **Salva**
+&#x200B;4. Fai clic su **Convalida** nell&#39;editor e accertati che non vi siano errori di convalida; in caso affermativo, fai clic sul pulsante **Salva**
 
 ![Pulsanti di convalida e salvataggio nell&#39;editor messaggi](assets/compose-the-sms-validate-and-save.png)
 
 
 
-5. Fai clic sulla freccia indietro **(\&lt;-)** quando hai finito di tornare all&#39;area di lavoro del flusso di lavoro
+&#x200B;5. Fai clic sulla freccia indietro **(\&lt;-)** quando hai finito di tornare all&#39;area di lavoro del flusso di lavoro
 
 ![Freccia indietro per tornare all&#39;area di lavoro del flusso di lavoro](assets/compose-the-sms-return-to-canvas.png)
 

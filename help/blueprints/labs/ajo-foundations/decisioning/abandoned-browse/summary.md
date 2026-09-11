@@ -25,7 +25,7 @@ Infine, **hai testato il flusso decisionale end-to-end**, verificando che Adobe 
 
 
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >**SE STAI LEGGENDO, SIGNIFICA CHE SEI ALLA FINE DEL LABORATORIO.**
 >

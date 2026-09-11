@@ -27,14 +27,14 @@ ht-degree: 0%
 
 
 
-2. Apri il corpo della chiamata e visualizza la struttura di come è definito uno schema. Ricorda che uno schema è sempre composto da una sola (1) classe e da uno o più gruppi di campi.
+&#x200B;2. Apri il corpo della chiamata e visualizza la struttura di come è definito uno schema. Ricorda che uno schema è sempre composto da una sola (1) classe e da uno o più gruppi di campi.
 
-3. Compila i campi `title` e `description` nel corpo dello schema con quanto segue:
+&#x200B;3. Compila i campi `title` e `description` nel corpo dello schema con quanto segue:
 
 - Titolo -> `Sample Customer Schema - <your sandbox number>`
 - Descrizione -> `Sample Customer Schema - <your sandbox number>`
 
-4. Compilare i campi `$ref` con i `$ids` salvati dalle precedenti sezioni del laboratorio completate: [Creare gruppi di campi personalizzati](./create-custom-field-groups.md) e [Ottenere la classe del profilo](./get-profile-class.md). È necessario disporre di $id per ciascuno dei seguenti elementi:
+&#x200B;4. Compilare i campi `$ref` con i `$ids` salvati dalle precedenti sezioni del laboratorio completate: [Creare gruppi di campi personalizzati](./create-custom-field-groups.md) e [Ottenere la classe del profilo](./get-profile-class.md). È necessario disporre di $id per ciascuno dei seguenti elementi:
 
 - Classe -> Profilo individuale XDM
 - Gruppo di campi -> Dettagli demografici
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 
 
-5. Esamina il corpo finale e assicurati che sia simile a questo
+&#x200B;5. Esamina il corpo finale e assicurati che sia simile a questo
 
 ![Corpo della richiesta dello schema completato con titolo, descrizione e tutti i valori $ref popolati](assets/create-schema-example-of-final-body-payload.png "Esempio di payload del corpo finale")
 

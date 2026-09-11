@@ -36,7 +36,7 @@ Se lo aveste provato in Percorsi non sareste stati in grado di soddisfare entram
 
 
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >**SE STAI LEGGENDO, SIGNIFICA CHE SEI ALLA FINE DEL LABORATORIO.**
 >
