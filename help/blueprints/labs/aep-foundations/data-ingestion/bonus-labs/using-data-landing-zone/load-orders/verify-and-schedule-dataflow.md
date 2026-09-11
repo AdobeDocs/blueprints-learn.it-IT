@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Verifica e pianifica il flusso di dati
 description: Verifica il set di mappatura completo degli ordini, visualizza l’anteprima dell’output e pianifica l’esecuzione del flusso di dati ogni 15 minuti.
 doc-type: article
 solution: Experience Platform
 exl-id: b7f0c43b-092c-45ba-b95b-27cb4a49d110
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 7%
@@ -57,7 +56,7 @@ ht-degree: 7%
 
 1. Visualizzate l&#39;anteprima dell&#39;output di mappatura. Scorri tra tutti gli attributi per verificare che non sia presente alcuna esclamazione rossa accanto a nessuno degli attributi sul lato destro.
 
-![Anteprima schermata di mappatura senza errori su attributi mappati](assets/verify-and-schedule-dataflow-preview-mapping-screen.png "La schermata di mappatura anteprima sarà simile a questa")
+   ![Anteprima schermata di mappatura senza errori su attributi mappati](assets/verify-and-schedule-dataflow-preview-mapping-screen.png "La schermata di mappatura anteprima sarà simile a questa")
 
 1. Nel menu di navigazione a sinistra dell&#39;anteprima, selezionare l&#39;array di oggetti **productListItems**. Il lato destro viene aggiornato in modo da visualizzare solo gli attributi nell’array di oggetti.
 
@@ -71,9 +70,9 @@ ht-degree: 7%
 
 1. Impostare la pianificazione per l&#39;esecuzione di **ogni 15 minuti** impostando Frequenza come Minuti e Intervallo come 15. Rivedere il flusso e fare clic su Fine.
 
->[!CAUTION]
->
->Verificare che la pianificazione sia impostata su 15 minuti. Se si pianifica l&#39;esecuzione come **Esegui una volta**, non sarà possibile eseguirla nuovamente anche se si apportano modifiche alla mappatura in un secondo momento.
+   >[!CAUTION]
+   >
+   >Verificare che la pianificazione sia impostata su 15 minuti. Se si pianifica l&#39;esecuzione come **Esegui una volta**, non sarà possibile eseguirla nuovamente anche se si apportano modifiche alla mappatura in un secondo momento.
 
 1. L’esecuzione del flusso di dati non si avvia immediatamente e richiede alcuni minuti. Lo stato dell&#39;ultima esecuzione del flusso di dati è impostato su &quot;*Nessuna esecuzione*&quot;.
 

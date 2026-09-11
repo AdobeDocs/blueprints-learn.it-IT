@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Verifica l’e-mail
 description: Scopri come inviare e verificare le e-mail delle bozze in Adobe Journey Optimizer per convalidare contenuti personalizzati e varianti condizionali prima dell’attivazione.
 doc-type: article
 solution: Experience Platform
 exl-id: 1abab39e-811c-4010-a4f5-a7adc9e4e0a4
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -33,27 +32,27 @@ A questo punto, hai imparato che non solo possiamo personalizzare gli attributi 
 1. Fare clic su **Simula contenuto**.
 2. Seleziona **Simula variante contenuto**.
 
-![Fare clic su Simula contenuto e selezionare Simula variante contenuto](assets/content-simulation-click-simulate-content-variation.png)
+   ![Fare clic su Simula contenuto e selezionare Simula variante contenuto](assets/content-simulation-click-simulate-content-variation.png)
 
-Viene visualizzato un pannello di simulazione.
+   Viene visualizzato un pannello di simulazione.
 
-&#x200B;3. Fare clic su **Invia bozza**.
+3. Fare clic su **Invia bozza**.
 
-![Pulsante Invia bozza nel pannello di simulazione](assets/test-the-email-click-send-proof-button.png)
+   ![Pulsante Invia bozza nel pannello di simulazione](assets/test-the-email-click-send-proof-button.png)
 
-&#x200B;4. Aggiungi il tuo indirizzo e-mail personale.
+4. Aggiungi il tuo indirizzo e-mail personale.
 
->[!NOTE]
->
->Tieni presente che a volte l’e-mail aziendale blocca le e-mail dalla sandbox. Ti consiglio di usare la tua e-mail personale.
+   >[!NOTE]
+   >
+   >Tieni presente che a volte l’e-mail aziendale blocca le e-mail dalla sandbox. Ti consiglio di usare la tua e-mail personale.
 
 
 
-&#x200B;5. Seleziona entrambe le varianti.
-&#x200B;6. Aggiungi prefisso riga oggetto
+5. Seleziona entrambe le varianti.
+6. Aggiungi prefisso riga oggetto
    1. Variante 1: superiore a 40
    2. Variante 2: inferiore a 40
-&#x200B;7. Fare clic su **Invia bozza**. Viene visualizzato un messaggio di conferma verde &quot;**Bozze inviate correttamente**&quot;
+7. Fare clic su **Invia bozza**. Viene visualizzato un messaggio di conferma verde &quot;**Bozze inviate correttamente**&quot;
 
 ![Messaggio di conferma verde con le bozze inviate correttamente](assets/test-the-email-proofs-sent-successfully-confirmation.png)
 

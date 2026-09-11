@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Trasmetti un evento ordine
 description: Esercitazione sulla creazione di un flusso di dati in streaming API HTTP per inviare un evento di ordine di esempio e collegarlo a un profilo cliente esistente.
 doc-type: article
 solution: Experience Platform
 exl-id: 558c21d1-f9b7-489b-9153-5f10d0b8448a
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -30,6 +29,6 @@ Eseguire la seguente serie di operazioni come nel laboratorio precedente.
 1. In Postman compila il **Crea evento ordine** con le informazioni necessarie per inviare correttamente i dati e allegarli al record Account cliente creato in precedenza
 1. Verifica che l’ordine sia collegato al tuo profilo
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >Buona fortuna e che gli dei di Adobe Experience Platform siano con voi!

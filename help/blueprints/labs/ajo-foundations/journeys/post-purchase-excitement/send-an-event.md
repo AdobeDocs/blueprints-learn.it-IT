@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Inviare un evento
 description: Utilizza Postman per inviare in streaming un evento simulato di Ordine spedito direttamente all’hub per attivare il percorso, anziché inviarlo all’Edge.
 doc-type: article
 solution: Experience Platform
 exl-id: a0f75f5a-e3b3-42a2-8547-f075a7661a22
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -51,7 +50,7 @@ Inizia raccogliendo i seguenti valori:
 1. Trova il record per **dep: Orders (stream)** fai clic sul collegamento dei flussi di dati
 1. Nella barra a destra copia e salva i valori **ID flusso di dati** da qualche parte a cui puoi fare riferimento in seguito
 
-&#x200B;> [!WARNING]
+>[!WARNING]
 >
 >Fare clic in uno spazio vuoto sulla riga.  NON fare clic sui collegamenti blu.
 
@@ -80,7 +79,7 @@ Avvia Postman sul computer e passa alla seguente chiamata API:
    - **Verde** —> `Dataflow ID`
      - Il valore ha l&#39;aspetto di un GUID (non inizia con http)
 
-&#x200B;> [!CAUTION]
+>[!CAUTION]
 >
 >NON ESEGUIRE ANCORA!
 

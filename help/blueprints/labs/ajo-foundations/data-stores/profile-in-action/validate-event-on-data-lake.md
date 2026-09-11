@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Convalida evento su Data Lake
 description: Scopri come eseguire una query sul Data Lake per verificare che un evento web in streaming sia stato scritto nel set di dati corretto.
 doc-type: article
 solution: Experience Platform
 exl-id: 14445089-aa3c-4cce-9d33-80032b6f9868
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
@@ -21,7 +20,7 @@ Verifica che l’evento web sia stato scritto nel Data Lake di Experience Platfo
 
 ## Convalida evento
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Alla fine i dati verranno visualizzati nel Data Lake.  **L&#39;operazione potrebbe richiedere fino a 60 minuti**.  Sappiamo che il set di dati è abilitato per il profilo e quindi l’evento creerà un frammento di profilo.
 >
@@ -29,18 +28,18 @@ Verifica che l’evento web sia stato scritto nel Data Lake di Experience Platfo
 
 1. Vai a **Query** e **Crea query**
 
-![Crea schermata Query nella sezione Query](assets/validate-event-on-data-lake-create-query.png)
+   ![Crea schermata Query nella sezione Query](assets/validate-event-on-data-lake-create-query.png)
 
-&#x200B;2. Copia il file SQL e incollalo nella query
+2. Copia il file SQL e incollalo nella query
 
-```sql
-SELECT identityMap['email'][0].id, * FROM dep_web
-where identityMap['email'][0].id = 'henry.creel@emailsim.io'
-```
+   ```sql
+   SELECT identityMap['email'][0].id, * FROM dep_web
+   where identityMap['email'][0].id = 'henry.creel@emailsim.io'
+   ```
 
-&#x200B;3. **Esegui** query
+3. **Esegui** query
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >**Ricorda**: i dati verranno infine visualizzati nel Data Lake.  **L&#39;operazione potrebbe richiedere fino a 60 minuti**.
 >

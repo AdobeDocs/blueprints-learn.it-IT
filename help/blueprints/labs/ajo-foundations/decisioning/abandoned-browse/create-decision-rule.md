@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Crea regola di decisione
 description: Crea una Regola di decisione che limiti l’idoneità per le offerte telefoniche premium ai clienti con piani di livello superiore.
 doc-type: article
 solution: Experience Platform
 exl-id: 1c1e2d82-ca09-4074-813d-3b29af77388b
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -24,22 +23,22 @@ Poiché l’idoneità è uno degli elementi costitutivi chiave di un’offerta, 
 1. Se necessario, accedi ad Adobe Experience Cloud e passa a **Adobe Journey Optimizer.**
 2. Espandere la voce di menu **Decisioning** nella barra a sinistra, se necessario, e fare clic su **Imposta strategia.**
 
->[!WARNING]
->
->Accertati di essere nel menu Decisioning e NON nel menu Decision Management. Se il menu Gestione delle decisioni è espanso, comprimerlo per evitare confusione durante la navigazione in questa esercitazione.
+   >[!WARNING]
+   >
+   >Accertati di essere nel menu Decisioning e NON nel menu Decision Management. Se il menu Gestione delle decisioni è espanso, comprimerlo per evitare confusione durante la navigazione in questa esercitazione.
 
 3. Fai clic su **Regole di decisione** nel menu &#39;Idoneità&#39;, seguito dal pulsante **Crea regola** nell&#39;angolo superiore destro.
 
-![Pagina Regole di decisione con il pulsante Crea regola](assets/create-decision-rule-create-rule-button.png)
+   ![Pagina Regole di decisione con il pulsante Crea regola](assets/create-decision-rule-create-rule-button.png)
 
-&#x200B;4. Viene visualizzata una schermata simile all’interfaccia utente del Generatore di segmenti. Aggiungere l&#39;attributo ID piano all&#39;area di lavoro delle regole facendo clic su **Profilo individuale XDM > Protezione esecuzione programmi > Dettagli piano**, quindi trascinare l&#39;attributo **ID piano** nell&#39;area di lavoro.
-&#x200B;5. Modifica il menu a discesa da è uguale a **contiene.**
-&#x200B;6. Immetti il testo **2** nella casella, premi il tasto **TAB** per accettare il valore 2, quindi immetti un valore **3,** premi di nuovo **TAB** in modo che la regola stia cercando qualsiasi ID piano che contiene un 2 o un 3
-&#x200B;7. Utilizza la casella di testo **Nome** nella barra a destra per denominare la regola di decisione **Piani di livello superiore**. Se lo desideri, aggiungi una descrizione. Al termine, la regola di decisione sarà simile alla seguente:
+4. Viene visualizzata una schermata simile all’interfaccia utente del Generatore di segmenti. Aggiungere l&#39;attributo ID piano all&#39;area di lavoro delle regole facendo clic su **Profilo individuale XDM > Protezione esecuzione programmi > Dettagli piano**, quindi trascinare l&#39;attributo **ID piano** nell&#39;area di lavoro.
+5. Modifica il menu a discesa da è uguale a **contiene.**
+6. Immetti il testo **2** nella casella, premi il tasto **TAB** per accettare il valore 2, quindi immetti un valore **3,** premi di nuovo **TAB** in modo che la regola stia cercando qualsiasi ID piano che contiene un 2 o un 3
+7. Utilizza la casella di testo **Nome** nella barra a destra per denominare la regola di decisione **Piani di livello superiore**. Se lo desideri, aggiungi una descrizione. Al termine, la regola di decisione sarà simile alla seguente:
 
-![Regola di decisione Piani di livello superiore completata con ID piano contenente 2 o 3](assets/create-decision-rule-upper-tier-plans-finished.png "Regola di decisione Piani di livello superiore completati con ID piano contenente 2 o 3")
+   ![Regola di decisione Piani di livello superiore completata con ID piano contenente 2 o 3](assets/create-decision-rule-upper-tier-plans-finished.png "Regola di decisione Piani di livello superiore completati con ID piano contenente 2 o 3")
 
-&#x200B;8. Una volta corretta la regola, fai clic sul pulsante blu **Crea** nell&#39;angolo in alto a destra e vieni reindirizzato alla pagina Impostazione strategia, dove la regola di decisione appena creata è elencata come unica regola di decisione.
+8. Una volta corretta la regola, fai clic sul pulsante blu **Crea** nell&#39;angolo in alto a destra e vieni reindirizzato alla pagina Impostazione strategia, dove la regola di decisione appena creata è elencata come unica regola di decisione.
 
 >[!NOTE]
 >

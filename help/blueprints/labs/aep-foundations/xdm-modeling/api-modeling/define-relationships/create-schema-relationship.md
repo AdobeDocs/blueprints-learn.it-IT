@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Crea relazione schema
 description: Utilizza l’API del registro dello schema per creare un descrittore di relazione uno-a-uno che colleghi lo schema Account cliente a uno schema di piano di ricerca.
 doc-type: article
 solution: Experience Platform
 exl-id: c9079585-fff1-4ee1-8992-93825fcde759
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -17,15 +16,15 @@ ht-degree: 0%
 
 1. Fai clic sulla richiesta API `Step 2 - Relationship Descriptor Customer Account To Plan` nella cartella `XDM Schema Lab -> Create Relationship Descriptors`
 
->[!CAUTION]
->
->Non eseguire ancora la richiesta
+   >[!CAUTION]
+   >
+   >Non eseguire ancora la richiesta
 
-![Passaggio 2 - Richiesta dell&#39;account cliente del descrittore di relazione al piano API](assets/create-schema-relationship-step-2-descriptor-request.png "Passaggio 2 - Account cliente del descrittore di relazione al piano")
+   ![Passaggio 2 - Richiesta dell&#39;account cliente del descrittore di relazione al piano API](assets/create-schema-relationship-step-2-descriptor-request.png "Passaggio 2 - Account cliente del descrittore di relazione al piano")
 
 
 
-&#x200B;2. Aggiorna le seguenti proprietà nel corpo della chiamata API.
+2. Aggiorna le seguenti proprietà nel corpo della chiamata API.
 
 - Imposta il valore della proprietà `xdm:sourceSchema` su `$id` dello schema dell&#39;account cliente salvato dal passaggio lab [Crea schema](../build-schema/create-schema.md)
 - Impostare il valore di `xdm:sourceProperty` sul percorso del campo `planID` dallo schema account cliente.
@@ -58,9 +57,9 @@ SOLO ESEMPIO
 
 
 
-&#x200B;3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
+3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
 
-&#x200B;4. Eseguire l&#39;API facendo clic sul pulsante `Send`
+4. Eseguire l&#39;API facendo clic sul pulsante `Send`
 
 Dovresti ora visualizzare una risposta `201 Created` come segue
 

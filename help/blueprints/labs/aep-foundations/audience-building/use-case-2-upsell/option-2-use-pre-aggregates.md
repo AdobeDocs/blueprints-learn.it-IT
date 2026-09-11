@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Opzione
 description: Crea un pubblico completamente in streaming utilizzando gli attributi di utilizzo preaggregati calcolati a monte invece di aggregare gli eventi all’interno della regola di pubblico.
 doc-type: article
 solution: Experience Platform
 exl-id: fe6ee041-814f-41c1-91cf-c3473cbca0c2
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
@@ -33,19 +32,19 @@ Crea un pubblico di tutti i profili con un utilizzo elevato dei dati di fatturaz
 1. Crea un nuovo pubblico
 1. Cerca &quot;Agg&quot; nella scheda Attributi non evento e trascina i due aggregati sull’area di lavoro. Impostare gli operatori e i valori appropriati per ciascuno di essi.
 
-![Impostare gli operatori e i valori appropriati per ogni aggregato](assets/option-2-use-pre-aggregates-set-operators-and-values.png)
+   ![Impostare gli operatori e i valori appropriati per ogni aggregato](assets/option-2-use-pre-aggregates-set-operators-and-values.png)
 
 
 
-&#x200B;3. Cercare il nome del piano nel profilo e aggiungerlo (Profilo individuale XDM > Dispositivo > Dettagli piano > Nome piano). Seleziona Does not Equal &quot;Ultimate&quot;
+3. Cercare il nome del piano nel profilo e aggiungerlo (Profilo individuale XDM > Dispositivo > Dettagli piano > Nome piano). Seleziona Does not Equal &quot;Ultimate&quot;
 
-![Il nome del piano selezionato non è uguale a Ultimate](assets/option-2-use-pre-aggregates-select-does-not-equal-ultimate.png)
+   ![Il nome del piano selezionato non è uguale a Ultimate](assets/option-2-use-pre-aggregates-select-does-not-equal-ultimate.png)
 
 
 
-&#x200B;4. Fornisci una descrizione.  Il metodo di valutazione della convalida è Streaming.
+4. Fornisci una descrizione.  Il metodo di valutazione della convalida è Streaming.
 
-&#x200B;5. Salva il pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate (Agg)*&quot;
+5. Salva il pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate (Agg)*&quot;
 
 >[!NOTE]
 >

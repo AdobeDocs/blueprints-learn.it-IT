@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Correzione di errori
 description: Correggi un’espressione di campo calcolato per un errore di formattazione della data, quindi conferma il successo utilizzando le metriche di monitoraggio Origini, Identità e Profili.
 doc-type: article
 solution: Experience Platform
 exl-id: 7a3d0c15-4d58-497e-bfa5-9421d5d2eea7
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -19,17 +18,17 @@ ht-degree: 0%
 
 1. Fai clic sull&#39;icona a forma di freccia accanto al campo calcolato che popola il campo XDM **person.bornDayAndMonth**
 
-![Editor espressioni di campo calcolato per la correzione di bornDayAndMonth](assets/fixing-errors-update-the-calculated-expression.png)
+   ![Editor espressioni di campo calcolato per la correzione di bornDayAndMonth](assets/fixing-errors-update-the-calculated-expression.png)
 
 1. Aggiorna l&#39;espressione utilizzando il codice di campo calcolato seguente e fai clic su **Anteprima**
 
-```none
-concat(date_part("mm", date(birth_Date, "M/d/yyyy")).toString(),"-", date_part("dd", date(birth_Date, "M/d/yyyy")).toString())
-```
+   ```none
+   concat(date_part("mm", date(birth_Date, "M/d/yyyy")).toString(),"-", date_part("dd", date(birth_Date, "M/d/yyyy")).toString())
+   ```
 
->[!NOTE]
->
->I dati devono essere visualizzati come mese a 2 cifre e giorno a 2 cifre (ovvero il 27 aprile è indicato come 04-27). I parametri `mm` e `dd` aggiungono 0 spaziatura.
+   >[!NOTE]
+   >
+   >I dati devono essere visualizzati come mese a 2 cifre e giorno a 2 cifre (ovvero il 27 aprile è indicato come 04-27). I parametri `mm` e `dd` aggiungono 0 spaziatura.
 
 1. Se tutto sembra buono **Salva** il campo calcolato
 

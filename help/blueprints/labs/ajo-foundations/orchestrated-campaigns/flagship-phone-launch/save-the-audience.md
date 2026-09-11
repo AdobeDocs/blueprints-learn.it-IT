@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Salvare il pubblico
 description: Scopri come modificare la dimensione, deduplicare e salvare un pubblico in Audience Portal da un flusso di lavoro di Orchestrated Campaign.
 doc-type: article
 solution: Experience Platform
 exl-id: 6422ea8d-146b-4fc7-86e6-491f77590ca1
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -23,27 +22,27 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 ## Modificare la dimensione
 
-1. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona **&#x200B;**+**&#x200B;** nel ramo **Salva pubblico** e dall&#39;elenco delle attività selezionare l&#39;attività **Cambia dimensione**
+1. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona ****+**** nel ramo **Salva pubblico** e dall&#39;elenco delle attività selezionare l&#39;attività **Cambia dimensione**
 
-![Aggiungi l&#39;attività di modifica della dimensione nel ramo Save Audience](assets/save-the-audience-add-change-dimension.png)
+   ![Aggiungi l&#39;attività di modifica della dimensione nel ramo Save Audience](assets/save-the-audience-add-change-dimension.png)
 
 
 
-&#x200B;2. Aggiornate le proprietà della quota di modifica come descritto di seguito:
+2. Aggiornate le proprietà della quota di modifica come descritto di seguito:
    - **Etichetta:** `Convert Line to Account`
    - **Nuova dimensione di destinazione:** `dep-rel: Customer Account`
 
-![Modifica l&#39;etichetta della dimensione e i nuovi campi della dimensione di destinazione](assets/save-the-audience-change-dimension-label.png)
+   ![Modifica l&#39;etichetta della dimensione e i nuovi campi della dimensione di destinazione](assets/save-the-audience-change-dimension-label.png)
 
-![Account cliente selezionato come nuova dimensione di destinazione](assets/save-the-audience-select-customer-account.png)
+   ![Account cliente selezionato come nuova dimensione di destinazione](assets/save-the-audience-select-customer-account.png)
 
->[!NOTE]
->
->**Perché lo fai?**  Per partecipare a Real-Time Customer Profile (il profilo cliente in cui vengono salvati i tipi di pubblico) devi utilizzare la mappatura di destinazione profilo configurata, che si aggiunge solo dallo schema dep-rel: Customer Account.
+   >[!NOTE]
+   >
+   >**Perché lo fai?**  Per partecipare a Real-Time Customer Profile (il profilo cliente in cui vengono salvati i tipi di pubblico) devi utilizzare la mappatura di destinazione profilo configurata, che si aggiunge solo dallo schema dep-rel: Customer Account.
 
 
 
-&#x200B;3. Al termine dell’operazione, l’area di lavoro si presenterà così.  Salva il tuo lavoro.
+3. Al termine dell’operazione, l’area di lavoro si presenterà così.  Salva il tuo lavoro.
 
 ![Area di lavoro del flusso di lavoro dopo l&#39;aggiunta dell&#39;attività di modifica della dimensione](assets/save-the-audience-canvas-after-change-dimension.png)
 
@@ -53,37 +52,37 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 1. Fai clic sull&#39;icona **+** **dopo l&#39;attività Modifica dimensione e seleziona l&#39;attività** Deduplicazione **dall&#39;elenco delle attività**
 
-![Aggiungi l&#39;attività di deduplicazione dopo la modifica della dimensione](assets/save-the-audience-add-deduplication-activity.png)
+   ![Aggiungi l&#39;attività di deduplicazione dopo la modifica della dimensione](assets/save-the-audience-add-deduplication-activity.png)
 
 
 
-&#x200B;2. Aggiorna l&#39;etichetta dell&#39;attività Deduplication in `Dedup customer id`
+2. Aggiorna l&#39;etichetta dell&#39;attività Deduplication in `Dedup customer id`
 
-![Etichetta attività di deduplicazione impostata su Dedup customer id](assets/save-the-audience-deduplication-label.png)
-
-
-
-&#x200B;3. Ora fai clic sul pulsante **+ Aggiungi attributo** e seleziona il campo dallo schema con titolo **ID cliente**
-
-![Pulsante Aggiungi attributo per l&#39;attività Deduplication](assets/save-the-audience-add-attribute-button.png)
-
-![Campo ID cliente selezionato dallo schema](assets/save-the-audience-select-customer-id-field.png)
+   ![Etichetta attività di deduplicazione impostata su Dedup customer id](assets/save-the-audience-deduplication-label.png)
 
 
 
-&#x200B;4. Nelle impostazioni di deduplicazione, assicurati di disporre del seguente set:
+3. Ora fai clic sul pulsante **+ Aggiungi attributo** e seleziona il campo dallo schema con titolo **ID cliente**
+
+   ![Pulsante Aggiungi attributo per l&#39;attività Deduplication](assets/save-the-audience-add-attribute-button.png)
+
+   ![Campo ID cliente selezionato dallo schema](assets/save-the-audience-select-customer-id-field.png)
+
+
+
+4. Nelle impostazioni di deduplicazione, assicurati di disporre del seguente set:
    - **Duplicati da mantenere:** `1`
    - **Metodo di deduplicazione:** `Random selection`
 
-![Impostazioni di deduplicazione con duplicati da mantenere e metodo](assets/save-the-audience-deduplication-settings.png)
+   ![Impostazioni di deduplicazione con duplicati da mantenere e metodo](assets/save-the-audience-deduplication-settings.png)
 
->[!NOTE]
->
->Le altre opzioni di deduplicazione consentono di specificare una logica personalizzata.  Nella maggior parte dei casi, se devi deduplicare, lo farai utilizzando la chiave primaria della tabella.
+   >[!NOTE]
+   >
+   >Le altre opzioni di deduplicazione consentono di specificare una logica personalizzata.  Nella maggior parte dei casi, se devi deduplicare, lo farai utilizzando la chiave primaria della tabella.
 
 
 
-&#x200B;5. Al termine dell’operazione, l’area di lavoro si presenta così. Fai clic sul pulsante **Salva** in alto a destra prima di proseguire.
+5. Al termine dell’operazione, l’area di lavoro si presenta così. Fai clic sul pulsante **Salva** in alto a destra prima di proseguire.
 
 ![Attività di deduplicazione completamente configurata nell&#39;area di lavoro](assets/save-the-audience-deduplication-configured.png)
 
@@ -93,9 +92,9 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 1. Fai clic sull&#39;icona **+** dopo l&#39;attività Deduplicazione e seleziona l&#39;attività **Salva pubblico**
 
-![Aggiungi l&#39;attività Salva pubblico dopo la deduplicazione](assets/save-the-audience-add-save-audience-activity.png)
+   ![Aggiungi l&#39;attività Salva pubblico dopo la deduplicazione](assets/save-the-audience-add-save-audience-activity.png)
 
-&#x200B;2. Nella barra a destra, imposta le proprietà dell’attività sui seguenti elementi:
+2. Nella barra a destra, imposta le proprietà dell’attività sui seguenti elementi:
    - **Etichetta pubblico**: `Apple Upgrade Eligible Customer Accounts`
    - **Campo di mappatura profilo**: `dep-rel: Customer Account - customer id`
 
@@ -126,15 +125,15 @@ Per impostazione predefinita, la chiave primaria della dimensione di targeting (
 
 1. Rinomina il campo del pubblico predefinito di Target in **Cliente\_ID** come mostrato di seguito:
 
-![Il campo del pubblico di destinazione è stato rinominato in Customer_ID](assets/save-the-audience-field-renamed.png)
+   ![Il campo del pubblico di destinazione è stato rinominato in Customer_ID](assets/save-the-audience-field-renamed.png)
 
->[!TIP]
->
->Ora hai un nome di campo leggibile 🎉
+   >[!TIP]
+   >
+   >Ora hai un nome di campo leggibile 🎉
 
 
 
-&#x200B;2. Fai clic sul pulsante **Avvia** per eseguire il flusso di lavoro. Il flusso di lavoro è ora simile al seguente e i conteggi sono visualizzati come segue:
+2. Fai clic sul pulsante **Avvia** per eseguire il flusso di lavoro. Il flusso di lavoro è ora simile al seguente e i conteggi sono visualizzati come segue:
    - Genera pubblico: `65`
    - Converti riga in account: `65`
    - ID cliente deduplicazione: `46`

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Creare un pubblico Edge
 description: Crea e pubblica un pubblico valutato da Edge insieme a un equivalente batch per confrontare il modo in cui ciascuno di essi risponde agli eventi in arrivo in tempo reale.
 doc-type: article
 solution: Experience Platform
 exl-id: 79265a8f-81dd-41a3-89c5-c6646e435328
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -42,7 +41,7 @@ Questo pubblico verrà utilizzato per qualificare un utente quando un payload (a
 1. Vai a **Tipi di pubblico** e fai clic nella cartella **Experience Platform**
 1. Trascina &#39;n rilasciare il pubblico denominato **dep: qualsiasi streaming di eventi (entro un&#39;ora)** nell&#39;area di lavoro
 
-![Trascinamento del pubblico Dep: Qualsiasi evento in streaming (entro un&#39;ora) nell&#39;area di lavoro del generatore di regole](assets/create-edge-audience-drag-audience-to-canvas.png)
+   ![Trascinamento del pubblico Dep: Qualsiasi evento in streaming (entro un&#39;ora) nell&#39;area di lavoro del generatore di regole](assets/create-edge-audience-drag-audience-to-canvas.png)
 
 
 

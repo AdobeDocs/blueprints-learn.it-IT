@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Crea schema
 description: Utilizza l’API del registro degli schemi per assemblare uno schema del cliente da una classe di profilo e da riferimenti a gruppi di campi standard e personalizzati.
 doc-type: article
 solution: Experience Platform
 exl-id: 78ebc5b8-d088-48e9-857f-87085a87a280
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -23,30 +22,30 @@ ht-degree: 0%
 
 1. Fare clic sulla chiamata API `Step 4 - Create Customer Account Schema` nella cartella `XDM Schema Lab -> Create Schema`.
 
-![Passaggio 4 - Creazione della chiamata API dello schema account cliente nella raccolta Postman](assets/create-schema-click-on-the-step-4-create-customer-account-schema.png)
+   ![Passaggio 4 - Creazione della chiamata API dello schema account cliente nella raccolta Postman](assets/create-schema-click-on-the-step-4-create-customer-account-schema.png)
 
 
 
-&#x200B;2. Apri il corpo della chiamata e visualizza la struttura di come è definito uno schema. Ricorda che uno schema è sempre composto da una sola (1) classe e da uno o più gruppi di campi.
+2. Apri il corpo della chiamata e visualizza la struttura di come è definito uno schema. Ricorda che uno schema è sempre composto da una sola (1) classe e da uno o più gruppi di campi.
 
-&#x200B;3. Compila i campi `title` e `description` nel corpo dello schema con quanto segue:
+3. Compila i campi `title` e `description` nel corpo dello schema con quanto segue:
 
-- Titolo -> `Sample Customer Schema - <your sandbox number>`
-- Descrizione -> `Sample Customer Schema - <your sandbox number>`
+   - Titolo -> `Sample Customer Schema - <your sandbox number>`
+   - Descrizione -> `Sample Customer Schema - <your sandbox number>`
 
-&#x200B;4. Compilare i campi `$ref` con i `$ids` salvati dalle precedenti sezioni del laboratorio completate: [Creare gruppi di campi personalizzati](./create-custom-field-groups.md) e [Ottenere la classe del profilo](./get-profile-class.md). È necessario disporre di $id per ciascuno dei seguenti elementi:
+4. Compilare i campi `$ref` con i `$ids` salvati dalle precedenti sezioni del laboratorio completate: [Creare gruppi di campi personalizzati](./create-custom-field-groups.md) e [Ottenere la classe del profilo](./get-profile-class.md). È necessario disporre di $id per ciascuno dei seguenti elementi:
 
-- Classe -> Profilo individuale XDM
-- Gruppo di campi -> Dettagli demografici
-- Gruppo di campi -> Dettagli di contatto personali
-- Gruppo di campi -> Dettagli su consenso e preferenze
-- Gruppo di campi (personalizzato) -> Dettagli account cliente
+   - Classe -> Profilo individuale XDM
+   - Gruppo di campi -> Dettagli demografici
+   - Gruppo di campi -> Dettagli di contatto personali
+   - Gruppo di campi -> Dettagli su consenso e preferenze
+   - Gruppo di campi (personalizzato) -> Dettagli account cliente
 
-![Corpo della richiesta schema vuoto prima di aggiungere riferimenti a classi e gruppi di campi](assets/create-schema-empty-schema-api-body.png "Corpo API schema vuoto")
+   ![Corpo della richiesta schema vuoto prima di aggiungere riferimenti a classi e gruppi di campi](assets/create-schema-empty-schema-api-body.png "Corpo API schema vuoto")
 
 
 
-&#x200B;5. Esamina il corpo finale e assicurati che sia simile a questo
+5. Esamina il corpo finale e assicurati che sia simile a questo
 
 ![Corpo della richiesta dello schema completato con titolo, descrizione e tutti i valori $ref popolati](assets/create-schema-example-of-final-body-payload.png "Esempio di payload del corpo finale")
 

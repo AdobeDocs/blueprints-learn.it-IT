@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Creare
 description: Crea un pubblico in streaming che trovi i profili che hanno effettuato oggi un ordine per un iPhone 14, esplorando la selezione dell’origine evento e i contenitori array.
 doc-type: article
 solution: Experience Platform
 exl-id: b8c1080e-b093-4d50-94da-5aced6bf0a08
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 0%
@@ -48,9 +47,9 @@ Si ottengono molti oggetti correlati a un ordine
 
 >[!NOTE]
 >
->&#x200B;* Non c&#39;è nessuna &quot;i&quot; per la &quot;cartella&quot; dell&#39;ordine. Anche se la nostra descrizione è stata compilata, non la contiene e questo può essere fonte di confusione per l’addetto al marketing, in quanto potrebbe provare a utilizzarla o voler sapere di cosa si tratta.
->&#x200B;* La &quot;i&quot; per le schede evento ripete semplicemente il tipo, poiché il Tipo evento è un campo, non molti.
->&#x200B;* I dati di riepilogo vengono visualizzati solo se il valore è presente in più del 2% dei profili uniti. Questo determina anche il completamento automatico quando si filtra su una stringa.
+>* Non c&#39;è nessuna &quot;i&quot; per la &quot;cartella&quot; dell&#39;ordine. Anche se la nostra descrizione è stata compilata, non la contiene e questo può essere fonte di confusione per l’addetto al marketing, in quanto potrebbe provare a utilizzarla o voler sapere di cosa si tratta.
+>* La &quot;i&quot; per le schede evento ripete semplicemente il tipo, poiché il Tipo evento è un campo, non molti.
+>* I dati di riepilogo vengono visualizzati solo se il valore è presente in più del 2% dei profili uniti. Questo determina anche il completamento automatico quando si filtra su una stringa.
 
 
 
@@ -58,7 +57,7 @@ Utilizza la scheda Tipo evento inserito ordine e trascinala nell’area di lavor
 
 ![Trascina la scheda del tipo di evento Ordine inoltrato nell&#39;area di lavoro](assets/build-audience-1-drag-order-placed-event-onto-canvas.png)
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >**Facoltativo:**
 >
@@ -247,7 +246,7 @@ Non modificare la mappatura, fai clic su Avanti e su Fine
 >
 >I contenitori consentono di fare riferimento a una variabile evento o a un elemento Array. Puoi saperne di più sulle ramificazioni di questo in questo Blog, ma per semplicità, questo ti consente di specificare se un singolo elemento nell’array soddisfa entrambe le condizioni o se la condizione può essere distribuita su due elementi.
 >
->[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780?profile.language=it](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780?profile.language=it)
+>[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780)
 
 >[!WARNING]
 >

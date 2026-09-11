@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Riassunto
 description: Esamina i passaggi del laboratorio di modellazione API, dalla creazione dello schema dell’account cliente fino all’applicazione di patch JSON, al contrassegno delle identità e alla creazione della relazione di ricerca.
 doc-type: article
 solution: Experience Platform
 exl-id: 0279cd68-af7b-43b4-8c6c-d8f8f96f0c0e
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Il video seguente riassume il modo in cui hai creato lo schema, le identità e i
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459564/?quality=12&learn=on)
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >Prima di tutto congratulazioni! Costruire cose tramite API non è facile, ma comprendere come funziona ti aiuterà a comprendere il sistema nel suo complesso. Kudos!
 

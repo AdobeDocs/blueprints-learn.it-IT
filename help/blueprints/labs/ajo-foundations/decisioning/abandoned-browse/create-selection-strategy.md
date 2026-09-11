@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Crea strategia di selezione
 description: Configura una strategia di selezione che colleghi una raccolta di offerte, regole di idoneità e una formula di classificazione per le decisioni.
 doc-type: article
 solution: Experience Platform
 exl-id: 066ad087-6845-4ab5-9a6e-8dad1aa848f8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -26,35 +25,35 @@ Immagina che abbiamo avuto centinaia di offerte utilizzate in quaranta raccolte 
 1. Se necessario, espandi **Decisioning** nella barra a sinistra e fai clic su **Configurazione strategia**. Arriva alla pagina &quot;Regole di decisione&quot;, in cui viene visualizzata la regola di decisione &quot;Piani di livello superiore&quot; creata in precedenza e utilizzata come requisiti di idoneità per gli articoli dell’offerta telefonica di livello superiore.
 2. Fai clic su **Strategie di selezione** sotto il menu &#39;Metodi di classificazione&#39;. Senza strategie di selezione disponibili, fare clic sul pulsante blu **Crea strategia di selezione**.
 
-![Pagina Strategie di selezione con il pulsante Crea strategia di selezione](assets/create-selection-strategy-create-button.png)
+   ![Pagina Strategie di selezione con il pulsante Crea strategia di selezione](assets/create-selection-strategy-create-button.png)
 
-&#x200B;3. Assegna un nome alla strategia di selezione **Strategia di selezione iPhone 17**
-&#x200B;4. È possibile notare che una strategia di selezione richiede 3 elementi.
+3. Assegna un nome alla strategia di selezione **Strategia di selezione iPhone 17**
+4. È possibile notare che una strategia di selezione richiede 3 elementi.
    - Una raccolta di offerte
    - Requisiti di idoneità
    - Un metodo di classificazione
 
-Fai clic sul pulsante **Seleziona raccolta**, seleziona la casella accanto all&#39;unica raccolta disponibile (**Raccolta iPhone 17**) e fai clic su **Salva**.
+   Fai clic sul pulsante **Seleziona raccolta**, seleziona la casella accanto all&#39;unica raccolta disponibile (**Raccolta iPhone 17**) e fai clic su **Salva**.
 
-&#x200B;5. Lascia il menu a discesa &quot;Idoneità&quot; impostato su Tutti i visitatori.
+5. Lascia il menu a discesa &quot;Idoneità&quot; impostato su Tutti i visitatori.
 
->[!NOTE]
->
->L’idoneità può essere applicata a livello di offerta, di strategia di selezione o di Percorso/campagna tramite i criteri di inserimento nel Percorso o nella campagna. Dipende tutto dal caso d’uso che stai cercando di realizzare. Se fai clic sull&#39;elenco a discesa **Idoneità**, vengono visualizzate le stesse opzioni per Pubblico e Regola di decisione visualizzate a livello di offerta. Nel nostro caso d’uso, volevamo solo limitare offerte specifiche, quindi aveva senso fare l’idoneità a livello di offerta.
+   >[!NOTE]
+   >
+   >L’idoneità può essere applicata a livello di offerta, di strategia di selezione o di Percorso/campagna tramite i criteri di inserimento nel Percorso o nella campagna. Dipende tutto dal caso d’uso che stai cercando di realizzare. Se fai clic sull&#39;elenco a discesa **Idoneità**, vengono visualizzate le stesse opzioni per Pubblico e Regola di decisione visualizzate a livello di offerta. Nel nostro caso d’uso, volevamo solo limitare offerte specifiche, quindi aveva senso fare l’idoneità a livello di offerta.
 
-&#x200B;6. Imposta il **metodo di classificazione** su **formula,** quindi fai clic sul pulsante **Seleziona formula**
+6. Imposta il **metodo di classificazione** su **formula,** quindi fai clic sul pulsante **Seleziona formula**
 
->[!NOTE]
->
->Potresti aver notato le opzioni &quot;Priorità offerta&quot; e &quot;Modello di IA&quot; nel menu a discesa del metodo di classificazione. Se desideri restituire solo le offerte utilizzando solo la priorità originale, scegli l’opzione &quot;Priorità offerta&quot;.
->
->L’opzione Modello di intelligenza artificiale utilizza un modello di intelligenza artificiale che analizza impression, clic e conversioni per le offerte restituite per determinare quale offerta visualizzare all’utente. Non li utilizzeremo in questo laboratorio perché sono richieste soglie minime di dati e due settimane per addestrare i modelli.
+   >[!NOTE]
+   >
+   >Potresti aver notato le opzioni &quot;Priorità offerta&quot; e &quot;Modello di IA&quot; nel menu a discesa del metodo di classificazione. Se desideri restituire solo le offerte utilizzando solo la priorità originale, scegli l’opzione &quot;Priorità offerta&quot;.
+   >
+   >L’opzione Modello di intelligenza artificiale utilizza un modello di intelligenza artificiale che analizza impression, clic e conversioni per le offerte restituite per determinare quale offerta visualizzare all’utente. Non li utilizzeremo in questo laboratorio perché sono richieste soglie minime di dati e due settimane per addestrare i modelli.
 
-&#x200B;7. Selezionare la casella accanto all&#39;unica formula di classificazione disponibile (**iPhone 17 Ranking Formula**) e fare clic su **Salva**. Al termine, la strategia di selezione sarà simile alla seguente:
+7. Selezionare la casella accanto all&#39;unica formula di classificazione disponibile (**iPhone 17 Ranking Formula**) e fare clic su **Salva**. Al termine, la strategia di selezione sarà simile alla seguente:
 
-![Strategia di selezione completata con raccolta, idoneità e formula di classificazione impostate](assets/create-selection-strategy-completed-configuration.png)
+   ![Strategia di selezione completata con raccolta, idoneità e formula di classificazione impostate](assets/create-selection-strategy-completed-configuration.png)
 
-&#x200B;8. Una volta corretta la strategia di selezione, fai clic sul pulsante blu **Crea**.
+8. Una volta corretta la strategia di selezione, fai clic sul pulsante blu **Crea**.
 
 >[!TIP]
 >

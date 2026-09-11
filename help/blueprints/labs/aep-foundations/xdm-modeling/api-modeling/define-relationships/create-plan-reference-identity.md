@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Crea identità riferimento piano
 description: Utilizza l’API del registro dello schema per creare un descrittore di identità di riferimento nello schema di ricerca in modo che possa essere utilizzato nella segmentazione batch.
 doc-type: article
 solution: Experience Platform
 exl-id: b3b8f480-af3b-4bf8-b74e-3842f59691b6
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -17,15 +16,15 @@ ht-degree: 0%
 
 1. Fai clic sulla richiesta API `Step 3 - Reference Descriptor for Plan` nella cartella `XDM Schema Lab -> Create Relationship Descriptors`
 
->[!CAUTION]
->
->Non eseguire ancora la richiesta
+   >[!CAUTION]
+   >
+   >Non eseguire ancora la richiesta
 
-![Passaggio 3 - Descrittore di riferimento per la richiesta API dello schema del piano](assets/create-plan-reference-identity-step-3-descriptor-request.jpeg "Passaggio 3 - Descrittore di riferimento per lo schema del piano")
+   ![Passaggio 3 - Descrittore di riferimento per la richiesta API dello schema del piano](assets/create-plan-reference-identity-step-3-descriptor-request.jpeg "Passaggio 3 - Descrittore di riferimento per lo schema del piano")
 
 
 
-&#x200B;2. Aggiorna le seguenti proprietà nel corpo della chiamata API.
+2. Aggiorna le seguenti proprietà nel corpo della chiamata API.
 
 - Aggiorna il valore della proprietà `xdm:sourceSchema` in `$id` dello schema `Customer Account` salvato dal passaggio [Crea schema](../build-schema/create-schema.md)
 - Aggiorna il valore di `xdm:sourceProperty` nel percorso del campo `planID` dallo schema `Customer Account`
@@ -54,9 +53,9 @@ SOLO ESEMPIO
 
 
 
-&#x200B;3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
+3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
 
-&#x200B;4. Eseguire l&#39;API facendo clic sul pulsante `Send`
+4. Eseguire l&#39;API facendo clic sul pulsante `Send`
 
 Dovresti ora visualizzare una risposta `201 Created` come segue
 

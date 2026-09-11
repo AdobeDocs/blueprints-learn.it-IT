@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Installazione di Postman
 description: Installa Postman e acquisisci familiarità con le sue raccolte, gli ambienti e l’interfaccia di Workspace prima di effettuare chiamate API nei laboratori successivi.
 doc-type: article
 solution: Experience Platform
 exl-id: c277edb5-f758-4955-bcd7-b15a9b9ab949
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 Al termine di questa esercitazione, potrai installare Postman, configurare un’area di lavoro e un ambiente di base per effettuare chiamate API successive necessarie per i laboratori futuri.
 
-&#x200B;> [!IMPORTANT]
+>[!IMPORTANT]
 >
 >Postman è richiesto per vari laboratori in questo corso.  Anche se hai già installato Postman, dovrai completare questa esercitazione per assicurarti di aver installato e configurato correttamente i file di ambiente e la raccolta API.
 

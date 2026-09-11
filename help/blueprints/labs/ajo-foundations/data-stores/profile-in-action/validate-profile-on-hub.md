@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Convalida profilo su hub
 description: Scopri come cercare un profilo nell’hub Profilo cliente in tempo reale e verificarne gli eventi e l’appartenenza ai segmenti dopo un evento in streaming.
 doc-type: article
 solution: Experience Platform
 exl-id: f1c8b1ac-e57c-48c6-aa91-5c83f79ce7e3
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -53,9 +52,9 @@ In Adobe Experience Platform, cerca il profilo appena inviato dall’evento appe
 
 1. Fai clic sull&#39;intestazione **Attributi** e visualizza **JSON**
 
-![Visualizzazione JSON attributi profilo con segmentMembership](assets/validate-profile-on-hub-json-view.png)
+   ![Visualizzazione JSON attributi profilo con segmentMembership](assets/validate-profile-on-hub-json-view.png)
 
-&#x200B;2. Trova **segmentMembership**.  Deve essere simile al seguente (gli ID saranno diversi)
+2. Trova **segmentMembership**.  Deve essere simile al seguente (gli ID saranno diversi)
 
 ```json
   "segmentMembership": {
@@ -75,7 +74,7 @@ In Adobe Experience Platform, cerca il profilo appena inviato dall’evento appe
 >
 >**Come leggere segmentMembership?**
 >
->[https://experienceleague.adobe.com/it/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/field-groups/profile/segmentation)
+>[https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation)
 >
 >**ups:** Questa è la chiave della mappa per diversi tipi di pubblico supportati da AEP.  La chiave ups contiene i tipi di pubblico creati dal Generatore di regole.  Altri tipi di pubblico saranno contenuti in altre chiavi (ad esempio, AAM).
 >

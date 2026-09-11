@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Crea stream di dati
 description: Crea e configura un flusso di dati con i servizi di inoltro eventi e Adobe Experience Platform per instradare gli eventi edge in ingresso.
 doc-type: article
 solution: Experience Platform
 exl-id: f7ada451-2f87-48f4-8673-7bfa0df9d0d3
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
@@ -58,13 +57,13 @@ Questo consente di utilizzare l’inoltro degli eventi per i dati ricevuti da qu
 
 1. Fai clic su **Aggiungi servizio**
 
-![Pagina dettagli flusso di dati con il pulsante Aggiungi servizio evidenziato](assets/create-datastream-add-service-button.png "Aggiungi servizio")
+   ![Pagina dettagli flusso di dati con il pulsante Aggiungi servizio evidenziato](assets/create-datastream-add-service-button.png "Aggiungi servizio")
 
 1. Configura i seguenti elementi:
 
-- Servizio -> Inoltro eventi
-- Property (Proprietà) -> Seleziona la proprietà creata nel passaggio precedente.  Deve essere denominato nel modo seguente: Proprietà inoltro eventi SB + \&lt;numero sandbox>
-- Ambiente -> Sviluppo
+   - Servizio -> Inoltro eventi
+   - Property (Proprietà) -> Seleziona la proprietà creata nel passaggio precedente.  Deve essere denominato nel modo seguente: Proprietà inoltro eventi SB + \&lt;numero sandbox>
+   - Ambiente -> Sviluppo
 
 1. Al termine, fai clic su **Salva**
 
@@ -80,17 +79,17 @@ Questo ti consente di inviare i dati all’hub e inviarli a un set di dati per i
 
 1. Fai clic su **Aggiungi servizio**
 
-![Pagina dettagli flusso di dati con il pulsante Aggiungi servizio evidenziato per aggiungere il servizio Adobe Experience Platform](assets/create-datastream-add-second-service-button.png "Aggiungi un nuovo servizio")
+   ![Pagina dettagli flusso di dati con il pulsante Aggiungi servizio evidenziato per aggiungere il servizio Adobe Experience Platform](assets/create-datastream-add-second-service-button.png "Aggiungi un nuovo servizio")
 
 1. Configura i seguenti elementi:
 
-- Servizio -> Adobe Experience Platform
-- Set di dati evento -> dep: Web
-- Set di dati profilo -> dep: account cliente
-- Seleziona la casella di controllo -> Segmentazione Edge
-- Seleziona casella di controllo -> Destinazione Personalization
+   - Servizio -> Adobe Experience Platform
+   - Set di dati evento -> dep: Web
+   - Set di dati profilo -> dep: account cliente
+   - Seleziona la casella di controllo -> Segmentazione Edge
+   - Seleziona casella di controllo -> Destinazione Personalization
 
-![Configurazione del servizio Adobe Experience Platform con set di dati evento, set di dati profilo e caselle di controllo di segmentazione impostate](assets/create-datastream-aep-service-config.png "Configurazione del servizio")
+   ![Configurazione del servizio Adobe Experience Platform con set di dati evento, set di dati profilo e caselle di controllo di segmentazione impostate](assets/create-datastream-aep-service-config.png "Configurazione del servizio")
 
 1. Al termine, fare clic su **Salva**.
 

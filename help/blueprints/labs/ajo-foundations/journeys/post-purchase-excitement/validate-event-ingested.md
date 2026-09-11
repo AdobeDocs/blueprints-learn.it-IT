@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Convalida evento acquisito
 description: Conferma che un evento Ordine spedito è stato acquisito in un profilo e lo qualifica per i tipi di pubblico previsti.
 doc-type: article
 solution: Experience Platform
 exl-id: c04397dd-8b5c-48a8-82b5-78188b8374f1
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -26,20 +25,20 @@ Verifica che l’evento sia stato correttamente acquisito in Adobe Experience Pl
    - **Valore identità** -> `henry.creel@emailsim.io`
 2. Fai clic sulla scheda **Eventi**. Cerca l&#39;evento `orders.shipped`.
 
-![order.shipped evento visualizzato nella scheda Eventi del profilo](assets/validate-event-ingested-orders-shipped-event.png)
+   ![order.shipped evento visualizzato nella scheda Eventi del profilo](assets/validate-event-ingested-orders-shipped-event.png)
 
->[!WARNING]
->
->Hai ricevuto **message.feedback** eventi.  Questi provengono dai Percorsi e in genere indicano un errore o un’esclusione.  Fai clic su di essi e osserva `reason`.
->
->Alcuni esempi che potresti incontrare in produzione potrebbero essere:
->
->- EmailNoAddressFoundInProfile (si è tentato di inviare un messaggio e-mail a un profilo privo di indirizzo e-mail)
->- EmailNoConsent (hai tentato di inviare un’e-mail a un profilo il cui consenso era impostato su no.
+   >[!WARNING]
+   >
+   >Hai ricevuto **message.feedback** eventi.  Questi provengono dai Percorsi e in genere indicano un errore o un’esclusione.  Fai clic su di essi e osserva `reason`.
+   >
+   >Alcuni esempi che potresti incontrare in produzione potrebbero essere:
+   >
+   >- EmailNoAddressFoundInProfile (si è tentato di inviare un messaggio e-mail a un profilo privo di indirizzo e-mail)
+   >- EmailNoConsent (hai tentato di inviare un’e-mail a un profilo il cui consenso era impostato su no.
 
 
 
-&#x200B;3. Convalida che il profilo è qualificato per le **audience** (potrebbero essere necessari alcuni minuti).
+3. Convalida che il profilo è qualificato per le **audience** (potrebbero essere necessari alcuni minuti).
    - Qualsiasi evento Edge (entro 15 minuti)
    - Qualsiasi streaming di eventi (entro 15 minuti)
 
@@ -54,10 +53,10 @@ Dopo aver convalidato il profilo ricevuto, invia alcuni eventi con spedizione or
 1. Torna a Postman, trova il **evento ordine di spedizione**
 2. fai clic sul **Corpo** e modifica il **indirizzo e-mail** nel tuo.
 
-![Indirizzo e-mail modificato nel corpo della richiesta Postman](assets/validate-event-ingested-change-email-in-postman-body.png)
+   ![Indirizzo e-mail modificato nel corpo della richiesta Postman](assets/validate-event-ingested-change-email-in-postman-body.png)
 
-&#x200B;3. **Salva** e premi **Invia**.
-&#x200B;4. Torna ai passaggi 1-3 e convalida utilizzando il tuo indirizzo e-mail.
+3. **Salva** e premi **Invia**.
+4. Torna ai passaggi 1-3 e convalida utilizzando il tuo indirizzo e-mail.
 
 ## Riassunto
 

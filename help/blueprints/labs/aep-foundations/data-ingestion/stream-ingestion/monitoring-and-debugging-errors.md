@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Monitoraggio e debug degli errori
 description: Utilizza il dashboard di monitoraggio end-to-end di Streaming per identificare e interpretare gli errori INGEST, DCVS e MAPPER in un flusso di dati in streaming.
 doc-type: article
 solution: Experience Platform
 exl-id: 268abf15-14ac-45e3-8cd7-8d180ee5b1e3
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 1. Passa a **Monitoraggio->Streaming end-to-end** e individua il **flusso di dati**:
 
-![Individuazione del flusso di dati in streaming nella sezione Monitoraggio](assets/monitoring-and-debugging-errors-locate-your-dataflow-in-monitoring.png "Individuazione del flusso di dati nel monitoraggio")
+   ![Individuazione del flusso di dati in streaming nella sezione Monitoraggio](assets/monitoring-and-debugging-errors-locate-your-dataflow-in-monitoring.png "Individuazione del flusso di dati nel monitoraggio")
 
 
 
@@ -43,29 +42,29 @@ ht-degree: 0%
 
 1. Se il flusso di dati presentava errori perché non hai seguito le istruzioni, viene visualizzato quanto segue.
 
-![Errori segnalati per un flusso di dati in streaming con errori di mappatura](assets/monitoring-and-debugging-errors-failures-reported.png "Errori segnalati")
+   ![Errori segnalati per un flusso di dati in streaming con errori di mappatura](assets/monitoring-and-debugging-errors-failures-reported.png "Errori segnalati")
 
 
 
 1. Se fai clic su Errori, ottieni la seguente schermata:
 
-![Schermata di diagnostica degli errori che mostra i dettagli degli errori INGEST, DCVS e MAPPER](assets/monitoring-and-debugging-errors-preview-error-diagnostics.png "Anteprima diagnostica degli errori")
+   ![Schermata di diagnostica degli errori che mostra i dettagli degli errori INGEST, DCVS e MAPPER](assets/monitoring-and-debugging-errors-preview-error-diagnostics.png "Anteprima diagnostica degli errori")
 
->[!NOTE]
->
->Un microbatch di successo potrebbe richiedere più di 15 minuti, in quanto potrebbe richiedere tempo per scrivere i record nel data lake.
+   >[!NOTE]
+   >
+   >Un microbatch di successo potrebbe richiedere più di 15 minuti, in quanto potrebbe richiedere tempo per scrivere i record nel data lake.
 
 
 
 1. Analizza il messaggio di errore, identifica i **campi di origine/destinazione,** e cerca il codice:
 
-- **ACQUISISCI XXXX** - Si tratta di un errore grave a causa di danneggiamento dei dati o problemi di formattazione, ad esempio non seguendo un formato regex.
-- **DCVS XXXX** - Questo errore viene visualizzato con `required` campi. Se i valori non esistono o non sono mappati correttamente (non all&#39;interno dell&#39;elenco enum), queste righe vengono ignorate.
-- **MAPPER XXXX** - Si tratta di avvisi e non vengono ignorate righe. I valori, tuttavia, potrebbero essere stati &quot;annullati&quot;; pertanto è necessario verificare che non influiscano sulle attività a valle.
+   - **ACQUISISCI XXXX** - Si tratta di un errore grave a causa di danneggiamento dei dati o problemi di formattazione, ad esempio non seguendo un formato regex.
+   - **DCVS XXXX** - Questo errore viene visualizzato con `required` campi. Se i valori non esistono o non sono mappati correttamente (non all&#39;interno dell&#39;elenco enum), queste righe vengono ignorate.
+   - **MAPPER XXXX** - Si tratta di avvisi e non vengono ignorate righe. I valori, tuttavia, potrebbero essere stati &quot;annullati&quot;; pertanto è necessario verificare che non influiscano sulle attività a valle.
 
 1. Per correggere gli errori, passa a **Origini->Flussi dati->Nome flusso dati->Aggiorna flusso dati** e correggi i mapping.
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Per ricaricare il file di esempio JSON, devi prima eliminarlo e aggiungerlo nuovamente in modo che ora il mapper venga aggiornato con una nuova copia per la convalida.
 

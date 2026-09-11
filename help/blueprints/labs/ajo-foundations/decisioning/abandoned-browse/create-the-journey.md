@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Creazione del Percorso
 description: Crea un percorso che attivi un’azione esperienza basata su codice e criteri decisionali per distribuire le offerte JSON ai profili idonei.
 doc-type: article
 solution: Experience Platform
 exl-id: 34f56d95-564b-4cf6-b105-22da276e8e41
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 0%
@@ -26,9 +25,9 @@ ht-degree: 0%
 7. Seleziona **dep: interessato al pubblico di iPhone 17**.
 8. Verificare che l&#39;elenco a discesa **Namespace** sia impostato su **customerID.** A questo punto, il Percorso si presenta così:
 
-![Area di lavoro di Percorso con l&#39;evento Audience Qualification aggiunto e spazio dei nomi impostato su customerID](assets/create-the-journey-audience-qualification-event.png)
+   ![Area di lavoro di Percorso con l&#39;evento Audience Qualification aggiunto e spazio dei nomi impostato su customerID](assets/create-the-journey-audience-qualification-event.png)
 
-&#x200B;9. Quando tutti avranno l&#39;aspetto corretto, fai clic sul pulsante blu **Salva** per salvare l&#39;avanzamento.
+9. Quando tutti avranno l&#39;aspetto corretto, fai clic sul pulsante blu **Salva** per salvare l&#39;avanzamento.
 
 >[!NOTE]
 >
@@ -42,33 +41,33 @@ ht-degree: 0%
 2. Quando viene visualizzata la sovrapposizione &#39;Seleziona tipo di azione&#39;, seleziona l&#39;azione **Esperienza basata su codice** e fai clic sul pulsante blu **Aggiungi**.
 3. Nelle proprietà &quot;Azione\:Esperienza basata su codice&quot; ora visibili, fai clic sul pulsante **Configura azione**.
 
-![Proprietà di azione dell&#39;esperienza basata su codice con il pulsante Configura azione](assets/create-the-journey-configure-action-button.png)
+   ![Proprietà di azione dell&#39;esperienza basata su codice con il pulsante Configura azione](assets/create-the-journey-configure-action-button.png)
 
-&#x200B;4. Modifica il menu a discesa **Configurazione base codice** in **jsonOffer\_cbe** cbe creato nell&#39;ultima sezione.
+4. Modifica il menu a discesa **Configurazione base codice** in **jsonOffer\_cbe** cbe creato nell&#39;ultima sezione.
 
-![Elenco a discesa della configurazione basata su codice impostato sul canale jsonOffer_cbe](assets/create-the-journey-select-jsonoffer-cbe.png)
+   ![Elenco a discesa della configurazione basata su codice impostato sul canale jsonOffer_cbe](assets/create-the-journey-select-jsonoffer-cbe.png)
 
-&#x200B;5. Fare clic sul pulsante **Modifica contenuto** sopra il menu a discesa &#39;Configurazione basata su codice&#39;.
-&#x200B;6. Nella schermata risultante dell&#39;editor di esperienze basato su codice, fare clic sul pulsante **Modifica codice**. Nella schermata risultante viene aggiunto il JSON restituito alle richieste Experience Event
+5. Fare clic sul pulsante **Modifica contenuto** sopra il menu a discesa &#39;Configurazione basata su codice&#39;.
+6. Nella schermata risultante dell&#39;editor di esperienze basato su codice, fare clic sul pulsante **Modifica codice**. Nella schermata risultante viene aggiunto il JSON restituito alle richieste Experience Event
 
-![Schermata di modifica del codice per l&#39;editor esperienze basato su codice](assets/create-the-journey-edit-code-screen.png)
+   ![Schermata di modifica del codice per l&#39;editor esperienze basato su codice](assets/create-the-journey-edit-code-screen.png)
 
-&#x200B;7. Nell&#39;ultimo lato sinistro dell&#39;editor di codice fare clic sulla voce di menu **Criterio di decisione**, quindi fare clic sul pulsante **Aggiungi criterio di decisione** nel nuovo menu.
+7. Nell&#39;ultimo lato sinistro dell&#39;editor di codice fare clic sulla voce di menu **Criterio di decisione**, quindi fare clic sul pulsante **Aggiungi criterio di decisione** nel nuovo menu.
 
-![Menu dei criteri di decisione con il pulsante Aggiungi criteri di decisione](assets/create-the-journey-add-decision-policy-button.png)
+   ![Menu dei criteri di decisione con il pulsante Aggiungi criteri di decisione](assets/create-the-journey-add-decision-policy-button.png)
 
->[!NOTE]
->
->Se una strategia di selezione è quella in cui si associa una raccolta di offerte a un metodo di classificazione (e si applica l’idoneità a livello di strategia), allora per criterio di decisione si intende quella in cui si associa una strategia di selezione a una consegna specifica di un canale.
+   >[!NOTE]
+   >
+   >Se una strategia di selezione è quella in cui si associa una raccolta di offerte a un metodo di classificazione (e si applica l’idoneità a livello di strategia), allora per criterio di decisione si intende quella in cui si associa una strategia di selezione a una consegna specifica di un canale.
 
-&#x200B;8. Denomina il criterio di decisione **iPhone 17 DP** e lascia il numero di elementi impostato su 1.
+8. Denomina il criterio di decisione **iPhone 17 DP** e lascia il numero di elementi impostato su 1.
 
->[!NOTE]
->
->Fino a questo momento, hai configurato le offerte e come ordinarle, ma non hai configurato quante restituirle. In questa sezione puoi configurare quante offerte devono essere restituite.
+   >[!NOTE]
+   >
+   >Fino a questo momento, hai configurato le offerte e come ordinarle, ma non hai configurato quante restituirle. In questa sezione puoi configurare quante offerte devono essere restituite.
 
-&#x200B;9. Fai clic sul pulsante blu **Avanti**. In questo punto è possibile aggiungere la strategia di selezione. Fai clic sul pulsante **+Aggiungi** (potrebbe essere necessario scorrere verso il basso per visualizzarlo) e scegli **Strategia di selezione**.
-&#x200B;10. Seleziona la casella accanto all&#39;unica strategia di selezione che dovresti avere (**iPhone 17 Selection Strategy**) e fai clic su **Salva**. Al termine, questo è ciò che viene visualizzato:
+9. Fai clic sul pulsante blu **Avanti**. In questo punto è possibile aggiungere la strategia di selezione. Fai clic sul pulsante **+Aggiungi** (potrebbe essere necessario scorrere verso il basso per visualizzarlo) e scegli **Strategia di selezione**.
+10. Seleziona la casella accanto all&#39;unica strategia di selezione che dovresti avere (**iPhone 17 Selection Strategy**) e fai clic su **Salva**. Al termine, questo è ciò che viene visualizzato:
 
 ![Strategia di selezione di iPhone 17 selezionata per il criterio di decisione](assets/create-the-journey-selection-strategy-selected.png)
 
@@ -78,16 +77,16 @@ ht-degree: 0%
 >
 >L’offerta di fallback è facoltativa perché si applicherebbe solo se gli utenti finali potessero essere (o diventare) non idonei per nessuna delle offerte. Nel nostro caso, la nostra strategia di selezione era per tutti i visitatori, e le uniche persone che avrebbero raggiunto il nodo CBE erano quelle che sono entrate nel Percorso. L’autenticazione è un requisito per l’entrata nel Percorso (lo spazio dei nomi impostato nel Percorso è uno che avrebbero solo se fossero stati autenticati). Abbiamo anche creato un’offerta di fallback nella formula di classificazione, quindi nel nostro caso non è necessario impostare questa offerta di fallback.
 
-&#x200B;11. Fai clic sul pulsante blu **Avanti** per rivedere il criterio di decisione.
+11. Fai clic sul pulsante blu **Avanti** per rivedere il criterio di decisione.
 
 ![Rivedi il passaggio per il criterio di decisione prima di crearlo](assets/create-the-journey-review-decision-policy.png)
 
-&#x200B;12. Una volta che tutto sembra corretto, fai clic sul pulsante blu **Crea**. Una volta creato, si ritorna alla pagina dell’editor di espressioni.
-&#x200B;13. Dovresti visualizzare una schermata simile a quella seguente; in caso contrario, fai di nuovo clic su **Criterio di decisione** per visualizzare il criterio di decisione.
+12. Una volta che tutto sembra corretto, fai clic sul pulsante blu **Crea**. Una volta creato, si ritorna alla pagina dell’editor di espressioni.
+13. Dovresti visualizzare una schermata simile a quella seguente; in caso contrario, fai di nuovo clic su **Criterio di decisione** per visualizzare il criterio di decisione.
 
 ![L&#39;editor espressioni che mostra il criterio di decisione è pronto per l&#39;inserimento](assets/create-the-journey-decision-policy-ready.png)
 
-&#x200B;14. Fare clic sul pulsante **+ Inserisci criterio** per visualizzare un ciclo ForEach nell&#39;editor di codice:
+14. Fare clic sul pulsante **+ Inserisci criterio** per visualizzare un ciclo ForEach nell&#39;editor di codice:
 
 ![Ciclo ForEach inserito nell&#39;editor di codice dopo l&#39;inserimento del criterio di decisione](assets/create-the-journey-foreach-loop-inserted.png)
 
@@ -95,15 +94,15 @@ ht-degree: 0%
 >
 >Perché un ciclo per ogni ciclo? Nel nostro caso, stiamo solo restituendo una singola offerta. Tuttavia, considera i passaggi precedenti in cui potevamo restituire più offerte. Quando si considera la funzionalità, il meccanismo di ciclo qui ha senso.
 
-&#x200B;15. Aggiungi un JSON valido entro i limiti del ciclo per restituire la marca, il modello e il livello del telefono che deve essere offerto all’utente finale. Poiché è attivo anche il limite di frequenza, è necessario aggiungere un trackingToken alla risposta. Per ulteriori informazioni, consulta le istruzioni più avanti. Per risparmiare tempo, copia e incolla queste righe di codice nell&#39;editor di codice all&#39;interno del ciclo For Each:
+15. Aggiungi un JSON valido entro i limiti del ciclo per restituire la marca, il modello e il livello del telefono che deve essere offerto all’utente finale. Poiché è attivo anche il limite di frequenza, è necessario aggiungere un trackingToken alla risposta. Per ulteriori informazioni, consulta le istruzioni più avanti. Per risparmiare tempo, copia e incolla queste righe di codice nell&#39;editor di codice all&#39;interno del ciclo For Each:
 
 ```javascript
-   {
-        "make":"",
-        "model":"",
-        "tier":"",
-        "trackingToken":""
-    },
+{
+     "make":"",
+     "model":"",
+     "tier":"",
+     "trackingToken":""
+ },
 ```
 
 ![JSON iniziale con campi make, model, tier e trackingToken all&#39;interno del ciclo ForEach](assets/create-the-journey-initial-json-in-loop.png)
@@ -112,14 +111,14 @@ ht-degree: 0%
 >
 >Ricorda che hai aggiunto attributi allo schema XDM dell’offerta standard, in particolare la marca, il modello e il livello. Quindi, al momento della creazione delle offerte, hai popolato questi attributi. Ora puoi aggiungere tali attributi come variabili compilate con i valori dell’offerta selezionata. Il campo trackingToken è un valore generato dal sistema e utilizzato per tracciare clic e impression.
 
-&#x200B;16. Posizionare il cursore tra **&quot;&quot;** del nodo &#39;make&#39;. Inserire la creazione dell&#39;offerta spostandosi nel menu del criterio di decisione sul nodo **\_dep > Dispositivo > Rendi**.  Fai clic sull&#39;icona **+** nell&#39;elemento **Make** per visualizzare l&#39;elemento nell&#39;editor.
+16. Posizionare il cursore tra **&quot;&quot;** del nodo &#39;make&#39;. Inserire la creazione dell&#39;offerta spostandosi nel menu del criterio di decisione sul nodo **\_dep > Dispositivo > Rendi**.  Fai clic sull&#39;icona **+** nell&#39;elemento **Make** per visualizzare l&#39;elemento nell&#39;editor.
 
 ![Crea un attributo dal criterio di decisione popolato nell&#39;editor JSON](assets/create-the-journey-populate-make-attribute.png)
 
-&#x200B;17. Aggiungere gli attributi **model** e **tier** in modo simile.
-&#x200B;18. Fai clic su **Criterio decisione** nella navigazione attributi per tornare al livello principale.
-&#x200B;19. Popolare l&#39;attributo trackingToken passando al valore del token di tracciamento tramite **\_experience > decisioning > decisionitem > Tracking Token** path.
-&#x200B;20. Infine, racchiudere l&#39;intero codice in un set di parentesi quadre (**\[]**). Il codice JSON finale deve essere simile al seguente:
+17. Aggiungere gli attributi **model** e **tier** in modo simile.
+18. Fai clic su **Criterio decisione** nella navigazione attributi per tornare al livello principale.
+19. Popolare l&#39;attributo trackingToken passando al valore del token di tracciamento tramite **\_experience > decisioning > decisionitem > Tracking Token** path.
+20. Infine, racchiudere l&#39;intero codice in un set di parentesi quadre (**\[]**). Il codice JSON finale deve essere simile al seguente:
 
 ![Codice JSON finale racchiuso tra parentesi quadre per la risposta CBE](assets/create-the-journey-final-json-code.png)
 
@@ -129,16 +128,16 @@ ht-degree: 0%
 
 
 
-&#x200B;21. Una volta visualizzata la schermata precedente, fai clic su **Salva e chiudi** in alto a destra per salvare il codice. Viene quindi visualizzata di nuovo la pagina Esperienza basata su codice.
-&#x200B;22. Fai clic sull&#39;icona freccia indietro **\&lt;** accanto al nome del Percorso e vieni reindirizzato all&#39;area di lavoro.
+21. Una volta visualizzata la schermata precedente, fai clic su **Salva e chiudi** in alto a destra per salvare il codice. Viene quindi visualizzata di nuovo la pagina Esperienza basata su codice.
+22. Fai clic sull&#39;icona freccia indietro **\&lt;** accanto al nome del Percorso e vieni reindirizzato all&#39;area di lavoro.
 
 ![Area di lavoro di Percorso dopo il ritorno dall&#39;editor esperienze basato su codice](assets/create-the-journey-return-to-canvas.png)
 
-&#x200B;23. Fai clic sul pulsante blu **Salva** per salvare il nodo dell&#39;azione CBE. Il Percorso si presenta ora come segue:
+23. Fai clic sul pulsante blu **Salva** per salvare il nodo dell&#39;azione CBE. Il Percorso si presenta ora come segue:
 
 ![Area di lavoro Percorsi con il nodo azioni CBE completato](assets/create-the-journey-completed-canvas.png)
 
-&#x200B;24. Al termine del Percorso, fai clic sul pulsante blu **Pubblica** in alto a destra e di nuovo **Pubblica** quando viene visualizzata la casella di conferma. Dopo un momento o due, vedete che il vostro Percorso è ora live!
+24. Al termine del Percorso, fai clic sul pulsante blu **Pubblica** in alto a destra e di nuovo **Pubblica** quando viene visualizzata la casella di conferma. Dopo un momento o due, vedete che il vostro Percorso è ora live!
 
 ![Pubblicato e live iPhone 17 Abbandona il Percorso di navigazione](assets/create-the-journey-published-live.png)
 

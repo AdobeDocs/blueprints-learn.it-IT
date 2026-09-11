@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Esercitazione di laboratorio
 description: Utilizzare una cartella di lavoro stampabile per mappare tre casi d'uso di Connection 5G ai componenti dell'architettura AJO e al motore di orchestrazione appropriati.
 doc-type: article
 solution: Experience Platform
 exl-id: 9e8f24a4-f206-41fe-8107-7184c0761698
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -20,7 +19,7 @@ ht-degree: 0%
 - Mappatura dei casi d&#39;uso alla cartella di lavoro dell&#39;architettura - [Stampa cartella di lavoro di seguito]
 - Penna, matita o evidenziatore
 
-Scarica file — [Mappatura delle funzionalità su Architecture Exercise.pdf](assets/lab-exercise-mapping-capabilities-to-architecture-exercise.pdf)
+Scarica file — [Mappatura delle funzionalità su Architecture Exercise.pdf](assets/lab-exercise-mapping-capabilities-to-architecture.pdf)
 
 **Per ciascuno dei tre casi di utilizzo di Connection 5G, verrà eseguito quanto segue:**
 

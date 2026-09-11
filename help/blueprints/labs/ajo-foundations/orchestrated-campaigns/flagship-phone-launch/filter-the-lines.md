@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Filtra le righe
 description: Scopri come filtrare le linee cliente che hanno rinunciato all’accesso con un’attività Split e utilizzare Modifica dimensione per allineare la dimensione di destinazione di un flusso di lavoro alla configurazione del canale SMS.
 doc-type: article
 solution: Experience Platform
 exl-id: fb556a27-5c73-4457-ae98-dba43d445c7f
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
@@ -25,33 +24,33 @@ Nei passaggi successivi escluderai tutte le righe di cui non è consentito il ta
 
 1. Fai clic sull&#39;icona **+** nella transizione inferiore dell&#39;attività Fork e seleziona l&#39;attività **Dividi** nel popup.
 
-![Aggiungi un&#39;attività Split al ramo del fork inferiore](assets/filter-the-lines-add-split-activity.png)
+   ![Aggiungi un&#39;attività Split al ramo del fork inferiore](assets/filter-the-lines-add-split-activity.png)
 
 
 
-&#x200B;2. Nella barra a destra, aggiorna l&#39;etichetta in modo che indichi quanto segue: `Filter out opt'd out lines`
+2. Nella barra a destra, aggiorna l&#39;etichetta in modo che indichi quanto segue: `Filter out opt'd out lines`
 
-![Dividi etichetta attività impostata su Escludi righe rinuncia](assets/filter-the-lines-set-split-label.png)
-
-
-
-&#x200B;3. Nella barra a destra espandi la sezione **Sottoinsieme** del segmento predefinito e fai clic sul pulsante **Crea filtro**
-
-![Crea pulsante filtro nella sezione Sottoinsieme](assets/filter-the-lines-create-filter-button.png)
+   ![Dividi etichetta attività impostata su Escludi righe rinuncia](assets/filter-the-lines-set-split-label.png)
 
 
 
-&#x200B;4. Aggiungi una condizione per assicurarti di rimuovere tutte le righe cliente che hanno rinunciato alla messaggistica SMS, quindi fai clic su **Conferma**.
+3. Nella barra a destra espandi la sezione **Sottoinsieme** del segmento predefinito e fai clic sul pulsante **Crea filtro**
 
-![Condizione che rimuove le linee cliente rifiutate da SMS](assets/filter-the-lines-sms-optin-condition.png)
-
->[!NOTE]
->
->Devi capire come creare la condizione, ma il risultato finale corrisponde alla schermata precedente.  Ce l&#39;hai!
+   ![Crea pulsante filtro nella sezione Sottoinsieme](assets/filter-the-lines-create-filter-button.png)
 
 
 
-&#x200B;5. Fare clic sul pulsante Salva in alto a destra per salvare i dati.  L&#39;area di lavoro è simile ora\...
+4. Aggiungi una condizione per assicurarti di rimuovere tutte le righe cliente che hanno rinunciato alla messaggistica SMS, quindi fai clic su **Conferma**.
+
+   ![Condizione che rimuove le linee cliente rifiutate da SMS](assets/filter-the-lines-sms-optin-condition.png)
+
+   >[!NOTE]
+   >
+   >Devi capire come creare la condizione, ma il risultato finale corrisponde alla schermata precedente.  Ce l&#39;hai!
+
+
+
+5. Fare clic sul pulsante Salva in alto a destra per salvare i dati.  L&#39;area di lavoro è simile ora\...
 
 ![Area di lavoro del flusso di lavoro dopo il salvataggio dell&#39;attività divisa](assets/filter-the-lines-canvas-after-split-save.png)
 
@@ -61,19 +60,19 @@ Nei passaggi successivi escluderai tutte le righe di cui non è consentito il ta
 
 1. Nell&#39;area di lavoro del flusso di lavoro, fai clic sull&#39;icona **+** dopo la condizione di suddivisione aggiunta e seleziona l&#39;**attività SMS**
 
-![Aggiungi l&#39;attività SMS dopo la condizione di suddivisione](assets/filter-the-lines-add-sms-activity.png)
+   ![Aggiungi l&#39;attività SMS dopo la condizione di suddivisione](assets/filter-the-lines-add-sms-activity.png)
 
-![Attività SMS aggiunta all&#39;area di lavoro del flusso di lavoro](assets/filter-the-lines-sms-activity-on-canvas.png)
-
-
-
-&#x200B;2. Nella barra a destra, fai clic sul pulsante Modifica SMS per avviare la configurazione del messaggio SMS
-
-![Modifica pulsante SMS nella barra a destra](assets/filter-the-lines-edit-sms-button.png)
+   ![Attività SMS aggiunta all&#39;area di lavoro del flusso di lavoro](assets/filter-the-lines-sms-activity-on-canvas.png)
 
 
 
-&#x200B;3. Nella barra di navigazione in alto, fai clic sulla voce di menu Azioni, quindi seleziona il canale creato in precedenza dal menu a discesa Configurazione SMS.
+2. Nella barra a destra, fai clic sul pulsante Modifica SMS per avviare la configurazione del messaggio SMS
+
+   ![Modifica pulsante SMS nella barra a destra](assets/filter-the-lines-edit-sms-button.png)
+
+
+
+3. Nella barra di navigazione in alto, fai clic sulla voce di menu Azioni, quindi seleziona il canale creato in precedenza dal menu a discesa Configurazione SMS.
 
 ![Errore di configurazione SMS senza risultati](assets/filter-the-lines-sms-configuration-no-results.png)
 
@@ -109,25 +108,25 @@ Come si fa a far funzionare tutto questo?  Aggiungi una dimensione di modifica �
 
 1. Fai clic sul pulsante Indietro nella schermata di modifica SMS
 
-![Pulsante Indietro per uscire dalla schermata di modifica SMS](assets/filter-the-lines-exit-sms-editor.png)
+   ![Pulsante Indietro per uscire dalla schermata di modifica SMS](assets/filter-the-lines-exit-sms-editor.png)
 
 
 
-&#x200B;2. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona **+** **icon** tra le attività Filter e SMS e selezionare **Change Dimension**.
+2. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona **+** **icon** tra le attività Filter e SMS e selezionare **Change Dimension**.
 
-![Aggiungi un&#39;attività di modifica della dimensione tra il filtro e l&#39;SMS](assets/filter-the-lines-add-change-dimension.png)
+   ![Aggiungi un&#39;attività di modifica della dimensione tra il filtro e l&#39;SMS](assets/filter-the-lines-add-change-dimension.png)
 
 
 
-&#x200B;3. A destra, aggiorna la dimensione di modifica con le seguenti informazioni:
+3. A destra, aggiorna la dimensione di modifica con le seguenti informazioni:
    - **Etichetta:** `Convert Line to Account`
    - **Nuova dimensione di destinazione:**`dep-rel: Customer Account`
 
-![Cambia dimensione configurata per la conversione da riga a conto](assets/filter-the-lines-change-dimension-settings.png)
+   ![Cambia dimensione configurata per la conversione da riga a conto](assets/filter-the-lines-change-dimension-settings.png)
 
 
 
-&#x200B;4. Fai clic sul pulsante **Salva** in alto a destra dell&#39;area di lavoro per salvare i tuoi dati. Al termine, il flusso di lavoro si presenterà così...
+4. Fai clic sul pulsante **Salva** in alto a destra dell&#39;area di lavoro per salvare i tuoi dati. Al termine, il flusso di lavoro si presenterà così...
 
 ![Area di lavoro del flusso di lavoro dopo l&#39;aggiunta della dimensione di modifica](assets/filter-the-lines-workflow-after-change-dimension.png)
 
@@ -141,17 +140,17 @@ Ora che hai corretto il flusso di lavoro, riconfigura l’SMS.
 
 1. Fai clic sull&#39;attività SMS nell&#39;area di lavoro del flusso di lavoro, quindi nella barra a sinistra fai clic sul pulsante **Modifica SMS**
 
-![Modifica pulsante SMS per riconfigurare il messaggio SMS](assets/filter-the-lines-edit-sms-button.png)
+   ![Modifica pulsante SMS per riconfigurare il messaggio SMS](assets/filter-the-lines-edit-sms-button.png)
 
->[!NOTE]
->
->Il caricamento di questa schermata richiede un po&#39; di tempo.  Lo so che è fastidioso, fidati che si sta aggiustando
-
-
+   >[!NOTE]
+   >
+   >Il caricamento di questa schermata richiede un po&#39; di tempo.  Lo so che è fastidioso, fidati che si sta aggiustando
 
 
 
-&#x200B;2. Nella barra di navigazione in alto, fai clic sulla voce di menu **Azioni**, quindi seleziona il canale creato in precedenza dal menu a discesa della configurazione SMS.
+
+
+2. Nella barra di navigazione in alto, fai clic sulla voce di menu **Azioni**, quindi seleziona il canale creato in precedenza dal menu a discesa della configurazione SMS.
 
 ![La configurazione SMS ha mostrato correttamente il canale selezionato](assets/filter-the-lines-sms-configuration-selected.png)
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Riepilogo
 description: Rivedi i passaggi chiave e una lista di controllo per il completamento per creare campagne personalizzate e conformi al brand con frammenti, strumenti di intelligenza artificiale e simulazione in Adobe Journey Optimizer.
 doc-type: article
 solution: Experience Platform
 exl-id: 8c4d8a66-190d-4714-95a3-37955b1e1a8c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -36,7 +35,7 @@ In questo corso hai esplorato l’intero percorso di creazione di campagne perso
 
 
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >**SE STAI LEGGENDO, SIGNIFICA CHE SEI ALLA FINE DEL LABORATORIO.**
 >

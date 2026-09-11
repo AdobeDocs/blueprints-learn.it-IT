@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Oggetti standard del modello
 description: Crea uno schema Profilo individuale nell’interfaccia utente di e aggiungi e taglia gruppi di campi standard come Dettagli demografici e Consenso e preferenze.
 doc-type: article
 solution: Experience Platform
 exl-id: ea516c0b-3644-483c-a167-0264cc795449
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 1. Fai clic sulla scheda **Schemi** nella barra a sinistra
 
-![Scheda Schemi nella barra di navigazione a sinistra](assets/model-standard-objects-schemas-tab-left-rail.png "Passa agli schemi utilizzando la barra a sinistra")
+   ![Scheda Schemi nella barra di navigazione a sinistra](assets/model-standard-objects-schemas-tab-left-rail.png "Passa agli schemi utilizzando la barra a sinistra")
 
 
 
@@ -36,13 +35,13 @@ ht-degree: 0%
 
 1. Per iniziare, fai clic su **Crea schema**
 
-![Pulsante Crea schema](assets/model-standard-objects-create-schema-button.png "Crea schema")
+   ![Pulsante Crea schema](assets/model-standard-objects-create-schema-button.png "Crea schema")
 
 
 
 1. Seleziona **Manuale**
 
-![Seleziona opzione di creazione schema manuale](assets/model-standard-objects-select-manual-option.png "Seleziona manuale")
+   ![Seleziona opzione di creazione schema manuale](assets/model-standard-objects-select-manual-option.png "Seleziona manuale")
 
 
 
@@ -68,24 +67,24 @@ In Adobe Experience Platform esistono molti gruppi di campi XDM standard da aggi
 
 1. Fai clic su **+ (aggiungi)** nella barra a sinistra nella sezione del gruppo di campi.
 
-![Pulsante Aggiungi gruppo di campi nella barra a sinistra](assets/model-standard-objects-add-field-group-button.png "Aggiungi un gruppo di campi")
+   ![Pulsante Aggiungi gruppo di campi nella barra a sinistra](assets/model-standard-objects-add-field-group-button.png "Aggiungi un gruppo di campi")
 
 
 
 1. Cercare **Dettagli demografici** o trovarli sfogliando l&#39;elenco.
 
-- Quando si trova il gruppo di campi, fare clic sulla lente di ingrandimento a destra del gruppo di campi per visualizzarne la struttura.  Si tratta di un modo utile per visualizzare in anteprima ciò che stai per aggiungere allo schema senza aggiungerlo effettivamente.
-- Al termine della revisione, chiudi l’anteprima
+   - Quando si trova il gruppo di campi, fare clic sulla lente di ingrandimento a destra del gruppo di campi per visualizzarne la struttura.  Si tratta di un modo utile per visualizzare in anteprima ciò che stai per aggiungere allo schema senza aggiungerlo effettivamente.
+   - Al termine della revisione, chiudi l’anteprima
 
 
 
-![Fare clic sulla lente di ingrandimento per visualizzare in anteprima la struttura del gruppo di campi](assets/model-standard-objects-click-magnify-glass-to-preview-field-group-structure.png "Fare clic sulla lente di ingrandimento per visualizzare in anteprima la struttura del gruppo di campi")
+   ![Fare clic sulla lente di ingrandimento per visualizzare in anteprima la struttura del gruppo di campi](assets/model-standard-objects-click-magnify-glass-to-preview-field-group-structure.png "Fare clic sulla lente di ingrandimento per visualizzare in anteprima la struttura del gruppo di campi")
 
-![Anteprima della struttura del gruppo di campi Dettagli demografici](assets/model-standard-objects-demographic-details-structure-preview.png)
+   ![Anteprima della struttura del gruppo di campi Dettagli demografici](assets/model-standard-objects-demographic-details-structure-preview.png)
 
 
 
-&#x200B;3. **Selezionare** la casella di controllo accanto al gruppo di campi, quindi fare clic sul pulsante **Aggiungi gruppi di campi**
+3. **Selezionare** la casella di controllo accanto al gruppo di campi, quindi fare clic sul pulsante **Aggiungi gruppi di campi**
 
 ![Selezionare il gruppo di campi Dettagli demografici per aggiungerlo allo schema](assets/model-standard-objects-select-demographic-details-field-group.png "Selezionare il gruppo di campi Dettagli demografici per aggiungerlo allo schema")
 
@@ -126,24 +125,24 @@ Per rimuovere campi da qualsiasi gruppo di campi standard di Adobe puoi utilizza
 1. Seleziona l&#39;oggetto **person** nello schema
 1. Fai clic su **Gestisci campi correlati** nella barra a destra
 
-![Opzione Gestisci campi correlati per l&#39;oggetto persona nel gruppo di campi Dettagli demografici](assets/model-standard-objects-manage-related-fields-person-object.png "Gestisci campi correlati per l&#39;oggetto persona come parte del gruppo di campi Dettagli demografici")
+   ![Opzione Gestisci campi correlati per l&#39;oggetto persona nel gruppo di campi Dettagli demografici](assets/model-standard-objects-manage-related-fields-person-object.png "Gestisci campi correlati per l&#39;oggetto persona come parte del gruppo di campi Dettagli demografici")
 
 
 
 1. Espandere l&#39;oggetto person facendo clic sulla freccia a sinistra dell&#39;oggetto person ed espandere l&#39;oggetto full name facendo clic sulla freccia a sinistra dell&#39;oggetto name. Mantieni solo i campi seguenti:
 
-- person.name.firstName
-- person.name.lastName
-- person.bornDayAndMonth
-- person.bornYear
+   - person.name.firstName
+   - person.name.lastName
+   - person.bornDayAndMonth
+   - person.bornYear
 
-Al termine, fai clic sul pulsante **Conferma** nell&#39;angolo superiore destro.
+   Al termine, fai clic sul pulsante **Conferma** nell&#39;angolo superiore destro.
 
-![Finestra di dialogo Gestisci campi correlati che mostra i campi persona di Dettagli demografici selezionati](assets/model-standard-objects-demographic-details-person-fields-dialog.png "Gestisci i campi correlati dell&#39;oggetto persona di Dettagli demografici")
+   ![Finestra di dialogo Gestisci campi correlati che mostra i campi persona di Dettagli demografici selezionati](assets/model-standard-objects-demographic-details-person-fields-dialog.png "Gestisci i campi correlati dell&#39;oggetto persona di Dettagli demografici")
 
->[!NOTE]
->
->È possibile selezionare la casella di controllo superiore per **Dettagli demografici** per deselezionare automaticamente tutti gli oggetti figlio e quindi riselezionare solo quelli necessari.
+   >[!NOTE]
+   >
+   >È possibile selezionare la casella di controllo superiore per **Dettagli demografici** per deselezionare automaticamente tutti gli oggetti figlio e quindi riselezionare solo quelli necessari.
 
 
 

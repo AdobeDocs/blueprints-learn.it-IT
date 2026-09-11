@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Simulazione dei contenuti
 description: Scopri come utilizzare lo strumento di simulazione di Adobe Journey Optimizer con dati di profilo di esempio per convalidare campi personalizzati, varianti di contenuto e comportamenti di fallback.
 doc-type: article
 solution: Experience Platform
 exl-id: 3e2b064f-5680-461c-a49e-2a61514e146f
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -51,9 +50,9 @@ Dopo alcuni secondi viene visualizzato un pannello di simulazione.
    - **Jason** → di età inferiore a 40 anni
 2. Fare clic su **Carica dati di input**.
 
-![Pulsante Carica dati di input nel pannello di simulazione](assets/content-simulation-click-upload-input-data.png)
+   ![Pulsante Carica dati di input nel pannello di simulazione](assets/content-simulation-click-upload-input-data.png)
 
-&#x200B;3. Scegli **sample.csv** e fai clic su **Continua**.
+3. Scegli **sample.csv** e fai clic su **Continua**.
 
 ![Scegliere sample.csv e fare clic su Continua](assets/content-simulation-choose-sample-csv-continue.png)
 

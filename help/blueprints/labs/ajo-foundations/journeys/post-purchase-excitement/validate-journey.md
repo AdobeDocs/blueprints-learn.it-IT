@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Convalida percorso
 description: Verifica l’esecuzione del percorso tramite i conteggi di entrata e uscita, i rapporti sulla consegna e-mail e i dati del servizio di query per gli eventi dei passaggi.
 doc-type: article
 solution: Experience Platform
 exl-id: 2e6e73e5-6bd8-4dde-ba06-29b67f927131
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -24,10 +23,10 @@ Verifica che il percorso sia stato attivato ed eseguito come previsto.  I rappor
 1. Vai al Percorso Spedizione ordine e aprilo se lo hai chiuso
 2. Sono stati immessi almeno 2 profili
 
-![Numero di profili immessi visualizzato per il percorso](assets/validate-journey-profile-entered-count.png)
+   ![Numero di profili immessi visualizzato per il percorso](assets/validate-journey-profile-entered-count.png)
 
-&#x200B;3. Fai clic su **Visualizza rapporto** -> **Ultime 24 ore** in alto a destra.
-&#x200B;4. Per impostazione predefinita, ti trovi nella scheda **Percorso** (nella barra a sinistra)
+3. Fai clic su **Visualizza rapporto** -> **Ultime 24 ore** in alto a destra.
+4. Per impostazione predefinita, ti trovi nella scheda **Percorso** (nella barra a sinistra)
    - Vedrai alcune entrate e uscite (il conteggio dipenderà dal numero di eventi inviati, da eventuali test, da eventuali errori, ecc.)
 
 ![Scheda Percorso che riporta entrate ed uscite](assets/validate-journey-journey-tab-enters-exits.png)
@@ -56,33 +55,33 @@ Se lo desideri, puoi fare clic sull&#39;interruttore in alto per **escludere eve
 
 3 Eventi esterni
 
-&#x200B;5. Fai clic sulla scheda **E-mail** (nella barra a sinistra)
+5. Fai clic sulla scheda **E-mail** (nella barra a sinistra)
    - **E-mail - Prestazioni invio**
      - Sono presenti alcuni valori per **Delivered** e **Sent** (il conteggio dipenderà dal numero di eventi inviati, da eventuali errori e così via)
      - Speriamo di non avere errori (a meno che non si siano verificati alcuni problemi in precedenza)
    - **E-mail - Statistiche**
      - E-mail - 3 mirate, inviate, consegnate
 
-![Scheda E-mail con le prestazioni e le statistiche di invio](assets/validate-journey-email-tab-sending-performance.png)
+   ![Scheda E-mail con le prestazioni e le statistiche di invio](assets/validate-journey-email-tab-sending-performance.png)
 
-&#x200B;6. Controlla la tua **casella in entrata** e verifica di aver ricevuto l&#39;e-mail (è simile a quella riportata di seguito)
+6. Controlla la tua **casella in entrata** e verifica di aver ricevuto l&#39;e-mail (è simile a quella riportata di seguito)
    - *,* il tuo ordine ha spedito l&#39;ETA: *10/17/2026* Numero di registrazione: *051009364*
 
-&#x200B;> [!NOTE]
->
->Controlla la cartella Spam per AJO Campaigns [ajo-campaigns@email.dep-labs.com](mailto:ajo-campaigns@email.dep-labs.com)
+   >[!NOTE]
+   >
+   >Controlla la cartella Spam per AJO Campaigns [ajo-campaigns@email.dep-labs.com](mailto:ajo-campaigns@email.dep-labs.com)
 
->[!NOTE]
->
->**Perché manca il nome?**
->
->Abbiamo modificato il nodo E-mail per controllare il contesto dell’evento per l’indirizzo e-mail.  Tuttavia, il nome nella personalizzazione si sta estraendo da \{\{profile.person.name.firstName\}\}.
->
->Quando cerchi il tuo profilo per la tua e-mail, hai un firstName?
+   >[!NOTE]
+   >
+   >**Perché manca il nome?**
+   >
+   >Abbiamo modificato il nodo E-mail per controllare il contesto dell’evento per l’indirizzo e-mail.  Tuttavia, il nome nella personalizzazione si sta estraendo da \{\{profile.person.name.firstName\}\}.
+   >
+   >Quando cerchi il tuo profilo per la tua e-mail, hai un firstName?
 
 
 
-&#x200B;7. *Dopo 30-60 minuti*, puoi anche controllare il set di dati nel data lake con: **Query** -> **Crea query** -> **Copia/Incolla SQL** -> **Esegui**
+7. *Dopo 30-60 minuti*, puoi anche controllare il set di dati nel data lake con: **Query** -> **Crea query** -> **Copia/Incolla SQL** -> **Esegui**
 
 >[!NOTE]
 >
@@ -120,7 +119,7 @@ I risultati hanno più di 100 colonne e ti danno un’idea dei record degli even
 
 >[!NOTE]
 >
->Curioso del significato di ogni campo, consulta il dizionario degli schemi di AJO e modifica l&#39;elenco a discesa con lo schema Eventi passaggio di Percorso: [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=it](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=it)
+>Curioso del significato di ogni campo, consulta il dizionario degli schemi di AJO e modifica l&#39;elenco a discesa con lo schema Eventi passaggio di Percorso: [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en)
 
 
 

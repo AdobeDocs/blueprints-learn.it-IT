@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Istruzioni di distribuzione
 description: Utilizza DEP CLI per distribuire nella sandbox gli schemi, i set di dati, i flussi di dati e i dati di esempio di AJO Architectural Foundations lab Pack.
 doc-type: article
 solution: Experience Platform
 exl-id: 3d6e9a1c-7b2f-4e8a-9d0c-1f5a8b6c2e3d
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 1%
@@ -67,15 +66,15 @@ La CLI viene distribuita in qualsiasi sandbox in cui punti il file di ambiente, 
 1. Copia `envFiles/sample-env.json` e assegnagli un nuovo nome, ad esempio `my-env.json`
 2. Apri il file e compila i campi seguenti utilizzando i valori di [Configurazione di Developer Console](developer-console-setup.md):
 
-| **Campo** | **Valore** |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `API_KEY` | ID client |
-| `CLIENT_SECRET` | Segreto client |
-| `IMS_ORG` | ID organizzazione |
-| `SCOPES` | Deve includere entrambi gli ambiti API di Experience Platform e API di Adobe Journey Optimizer <br />*(ad esempio cjm.suppression\_service.client.delete, cjm.suppression\_service.client.all, openid, session, AdobeID, read\_organization, additional\_info.projectedProductContext)* |
-| `SANDBOX_NAME` | La sandbox di destinazione deve essere vuota e di tipo `dev` |
+   | **Campo** | **Valore** |
+   | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | `API_KEY` | ID client |
+   | `CLIENT_SECRET` | Segreto client |
+   | `IMS_ORG` | ID organizzazione |
+   | `SCOPES` | Deve includere entrambi gli ambiti API di Experience Platform e API di Adobe Journey Optimizer <br />*(ad esempio cjm.suppression\_service.client.delete, cjm.suppression\_service.client.all, openid, session, AdobeID, read\_organization, additional\_info.projectedProductContext)* |
+   | `SANDBOX_NAME` | La sandbox di destinazione deve essere vuota e di tipo `dev` |
 
-&#x200B;3. Salva e chiudi il file
+3. Salva e chiudi il file
 
 >[!NOTE]
 >
@@ -118,7 +117,8 @@ Il passaggio 1 dura circa 2 minuti, il passaggio 2 circa 6 minuti.
 >[!NOTE]
 >
 >Utilizzare il passaggio 6 invece di eseguire separatamente i passaggi 4 e 5: esegue la stessa operazione in un passaggio con l&#39;attesa di propagazione gestita automaticamente.
-> [!NOTE]
+
+>[!NOTE]
 >
 >Tutti i tempi di attesa indicati sopra vengono controllati automaticamente da CLI. Se esegui un passaggio troppo presto, questo blocca e ti dice quanto tempo aspettare.
 

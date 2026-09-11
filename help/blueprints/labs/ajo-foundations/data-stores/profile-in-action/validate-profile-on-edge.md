@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Convalida profilo su Edge
 description: Scopri come controllare l’archivio profili di Edge e la scheda Appartenenza pubblico per confermare lo stato di un profilo sulla rete Edge.
 doc-type: article
 solution: Experience Platform
 exl-id: f82ceba7-6916-49ff-8776-2d0238560df8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -23,15 +22,15 @@ Verifica che il profilo non esista nell’archivio dei profili di rete di Edge.
 
 1. Fai clic sulla scheda **Attributi** e sul pulsante di scelta **Edge** per visualizzare il profilo Edge
 
-![Profilo Edge visualizzato nella scheda Attributi](assets/validate-profile-on-edge-attributes-tab.png)
+   ![Profilo Edge visualizzato nella scheda Attributi](assets/validate-profile-on-edge-attributes-tab.png)
 
->[!NOTE]
->
->È possibile che venga visualizzata una versione &quot;ridotta&quot; del profilo, costituita solo dalle identità a seconda del tempo trascorso.
+   >[!NOTE]
+   >
+   >È possibile che venga visualizzata una versione &quot;ridotta&quot; del profilo, costituita solo dalle identità a seconda del tempo trascorso.
 
 
 
-&#x200B;2. Fai clic sulla scheda Appartenenza al pubblico.  Sarà **vuoto**.
+2. Fai clic sulla scheda Appartenenza al pubblico.  Sarà **vuoto**.
 
 ![Scheda Appartenenza pubblico vuota nel profilo Edge](assets/validate-profile-on-edge-empty-audience-membership-tab.png)
 

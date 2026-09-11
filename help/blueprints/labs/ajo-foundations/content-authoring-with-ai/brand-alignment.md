@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Allineamento del brand
 description: Scopri come valutare il contenuto delle e-mail rispetto alle linee guida del marchio utilizzando il punteggio di allineamento del marchio basato sull’intelligenza artificiale di AJO e applicare le raccomandazioni di intelligenza artificiale per migliorare la conformità.
 doc-type: article
 solution: Experience Platform
 exl-id: 2385232e-9059-469a-975d-3c7ace146c29
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%
@@ -46,11 +45,11 @@ Questo modulo ti insegna a eseguire la valutazione, interpretare i risultati e m
 2. Individua la scheda **Allineamento marchio** nella barra laterale a destra o l&#39;icona **%** nella barra laterale.
 3. Fai clic su per aprire il pannello.
 
-![Scheda Allineamento marchio e icona percentuale nella barra laterale](assets/brand-alignment-open-panel-icon.png)
+   ![Scheda Allineamento marchio e icona percentuale nella barra laterale](assets/brand-alignment-open-panel-icon.png)
 
-&#x200B;4. Assicurati che venga applicato il marchio corretto:
+4. Assicurati che venga applicato il marchio corretto:
    - **Connessione 5G** (impostazione predefinita).
-&#x200B;5. Fare clic su **Valutazione punteggio**.
+5. Fare clic su **Valutazione punteggio**.
 
 **Interpreta il punteggio del marchio e il feedback:** Dopo alcuni istanti verrà visualizzato il punteggio di conformità al marchio per il contenuto. Questo punteggio può essere presentato sotto forma di valutazione (ad es. Alta, Medium o Bassa) o di percentuale, insieme a un indicatore di colore (verde, giallo, rosso) e al momento della valutazione. Un punteggio alto indica che il contenuto è in linea con le linee guida del brand, mentre un punteggio medio o basso indica un allineamento moderato o insufficiente.
 
@@ -103,23 +102,23 @@ Interpreta i risultati per comprendere quanto strettamente l’e-mail corrispond
 1. Fai clic su blocchi di testo o immagini contrassegnati all’interno dell’e-mail.
 2. Utilizzare il paragrafo incollato nell&#39;esercizio precedente, come illustrato di seguito.
 
-![Blocco di testo contrassegnato dal paragrafo di descrizione incollato](assets/brand-alignment-flagged-text-block.png)
+   ![Blocco di testo contrassegnato dal paragrafo di descrizione incollato](assets/brand-alignment-flagged-text-block.png)
 
-&#x200B;3. Utilizza le modifiche suggerite fornite da AI. Fai clic sull’icona come mostrato di seguito.
+3. Utilizza le modifiche suggerite fornite da AI. Fai clic sull’icona come mostrato di seguito.
 
-![Icona del suggerimento IA per l&#39;applicazione delle modifiche suggerite](assets/brand-alignment-ai-suggestion-icon.png)
+   ![Icona del suggerimento IA per l&#39;applicazione delle modifiche suggerite](assets/brand-alignment-ai-suggestion-icon.png)
 
-&#x200B;4. Fare clic sul pulsante **Correggi con IA** come illustrato di seguito.
+4. Fare clic sul pulsante **Correggi con IA** come illustrato di seguito.
 
-![Correzione con pulsante AI per una linea guida con flag](assets/brand-alignment-fix-with-ai-button.png)
+   ![Correzione con pulsante AI per una linea guida con flag](assets/brand-alignment-fix-with-ai-button.png)
 
-&#x200B;5. Le modifiche suggerite sono evidenziate in verde e il testo rimosso è evidenziato in rosso barrato, come illustrato di seguito. Inoltre, il punteggio è stato aggiornato (in questo caso, è dell’80%). Fare clic sul pulsante **Applica** per rendere effettive le modifiche.
+5. Le modifiche suggerite sono evidenziate in verde e il testo rimosso è evidenziato in rosso barrato, come illustrato di seguito. Inoltre, il punteggio è stato aggiornato (in questo caso, è dell’80%). Fare clic sul pulsante **Applica** per rendere effettive le modifiche.
 
-![Modifiche suggerite evidenziate in verde con testo rimosso barrato in rosso](assets/brand-alignment-apply-suggested-changes.png)
+   ![Modifiche suggerite evidenziate in verde con testo rimosso barrato in rosso](assets/brand-alignment-apply-suggested-changes.png)
 
-&#x200B;6. Le modifiche vengono applicate con il nuovo testo.
-&#x200B;7. Rivedi tutte le aree evidenziate e apporta gli aggiornamenti necessari per correggere il contenuto, utilizzando l’intelligenza artificiale o modificando manualmente. Prima di procedere, assicurati che tutte le modifiche necessarie siano state completate.
-&#x200B;8. Salva le modifiche.
+6. Le modifiche vengono applicate con il nuovo testo.
+7. Rivedi tutte le aree evidenziate e apporta gli aggiornamenti necessari per correggere il contenuto, utilizzando l’intelligenza artificiale o modificando manualmente. Prima di procedere, assicurati che tutte le modifiche necessarie siano state completate.
+8. Salva le modifiche.
 
 ![Salvataggio delle modifiche dopo la correzione del contenuto contrassegnato](assets/brand-alignment-save-changes.png)
 
@@ -131,16 +130,16 @@ Interpreta i risultati per comprendere quanto strettamente l’e-mail corrispond
 3. Fare clic su **Rivaluta punteggio**.
 4. Confronta il nuovo punteggio con quello precedente.
 
-![Confronto del punteggio del marchio rivalutato con il punteggio precedente](assets/brand-alignment-re-evaluate-score-comparison.png)
+   ![Confronto del punteggio del marchio rivalutato con il punteggio precedente](assets/brand-alignment-re-evaluate-score-comparison.png)
 
-Ad esempio:
+   Ad esempio:
 
-- Punteggio originale: **56%**
-- Punteggio aggiornato: **90%**
+   - Punteggio originale: **56%**
+   - Punteggio aggiornato: **90%**
 
-Ciò indica che gli aggiornamenti sono stati allineati correttamente all’e-mail con gli standard del brand.
+   Ciò indica che gli aggiornamenti sono stati allineati correttamente all’e-mail con gli standard del brand.
 
-&#x200B;5. Fai clic su **Salva** per finalizzare l&#39;e-mail.
+5. Fai clic su **Salva** per finalizzare l&#39;e-mail.
 
 ![Pulsante Salva per finalizzare l&#39;e-mail](assets/brand-alignment-save-finalize-email.png)
 

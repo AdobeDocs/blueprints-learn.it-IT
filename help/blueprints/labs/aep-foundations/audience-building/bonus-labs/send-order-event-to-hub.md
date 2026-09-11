@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Invia evento ordine all'hub
 description: Scopri come inviare in streaming un evento di ordine all’hub tramite API, creare un segmento di ordine in streaming, attivarlo in una destinazione e convalidare i risultati del profilo.
 doc-type: article
 solution: Experience Platform
 exl-id: d5de39d7-7340-487a-86fa-504344daeab7
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
@@ -93,7 +92,7 @@ Inizia raccogliendo i seguenti valori:
 1. Passa a **Origini** nella barra a sinistra, quindi fai clic su **Account** nel menu di navigazione in alto
 1. Cerca **dep: API HTTP \[raw]**, evidenzia la riga, copia e salva il valore dell&#39;**endpoint di streaming** da qualche parte a cui potrai fare riferimento in seguito
 
-Account  e copia il relativo endpoint di streaming&rbrack;(assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep: HTTP API \[raw]&quot;)
+Account  e copia il relativo endpoint di streaming](assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep: HTTP API \[raw]&quot;)
 
 ## Trova ID flusso di dati
 
@@ -115,7 +114,7 @@ Copia i valori salvati nei passaggi precedenti nelle posizioni evidenziate di se
 
 Al termine, la richiesta API finale dovrebbe essere simile a questa
 
-&#x200B;> [!CAUTION]
+>[!CAUTION]
 >
 >NON ESEGUIRE ANCORA!
 

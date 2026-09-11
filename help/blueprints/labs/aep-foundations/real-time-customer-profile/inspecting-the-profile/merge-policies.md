@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Criteri di unione
 description: Crea un criterio di unione senza unione di identità e confronta le ricerche di profilo per e-mail, ID cliente e GAID per vedere come i grafici delle identità modellano l’assembly del profilo.
 doc-type: article
 solution: Experience Platform
 exl-id: ac7eb22f-141e-4cd8-9a2f-6a9687c3e839
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 0%
@@ -30,7 +29,7 @@ Un criterio di unione esegue due operazioni:
    - Precedenza timestamp: utilizza il record più recente di tutti i set di dati come set di verità e lascia che tutti gli altri record riempiano i vuoti in ordine da recente a meno recente
    - Precedenza set di dati: scegli quali set di dati profilo individuali XDM possono essere utilizzati per formare il profilo e in quale ordine assemblarli
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Quando si sceglie il metodo di unione Precedenza set di dati, è possibile scegliere quali set di dati XDM Profilo individuale e XDM Experience Event possono essere utilizzati nella formazione del profilo.
 >
@@ -122,9 +121,9 @@ Procedi e apri il visualizzatore profili seguendo i passaggi seguenti:
 1. Fai clic sul pulsante **Visualizza** per cercare il profilo
 1. Fai clic sul **collegamento** al profilo per visualizzarne i dettagli
 
-![Ricerca del profilo Depeche Mode per e-mail utilizzando il criterio di unione predefinito basato su timestamp](assets/merge-policies-lookup-depeche-mode-default-merge-policy.png "Ricerca Depeche Mode con il criterio di unione predefinito basato su timestamp")
+   ![Ricerca del profilo Depeche Mode per e-mail utilizzando il criterio di unione predefinito basato su timestamp](assets/merge-policies-lookup-depeche-mode-default-merge-policy.png "Ricerca Depeche Mode con il criterio di unione predefinito basato su timestamp")
 
-Eseguire un&#39;altra ricerca per il profilo Modalità Depeche, ma questa volta utilizzando il criterio di unione **Nessuna unione ID**.
+   Eseguire un&#39;altra ricerca per il profilo Modalità Depeche, ma questa volta utilizzando il criterio di unione **Nessuna unione ID**.
 
 1. Fai clic con il pulsante destro del mouse su **Profili** nella barra a sinistra, quindi seleziona **apri in una nuova scheda**
 1. Nella navigazione superiore, seleziona **Sfoglia**
@@ -198,7 +197,7 @@ Quando il grafo delle identità viene utilizzato con l’archivio dei profili, p
 
 Senza il grafo delle identità, l’archivio profili può recuperare solo frammenti di profilo utilizzando un singolo identificatore (ad esempio, identità primaria)
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >**Avere del tempo in più e provare...:**
 >

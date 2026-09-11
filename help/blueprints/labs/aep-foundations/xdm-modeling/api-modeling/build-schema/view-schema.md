@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Visualizza schema
 description: Visualizza uno schema cliente appena creato sia nell’interfaccia utente di Experience Platform che tramite una chiamata Get Schema API.
 doc-type: article
 solution: Experience Platform
 exl-id: 29302546-46dc-4c97-8fd8-deab6977635c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -19,9 +18,9 @@ ht-degree: 0%
 
 1. Apri il browser e torna alla sezione `Schema -> Browse`.
 
->[!NOTE]
->
->Aggiorna l’interfaccia utente per visualizzarla, poiché è stata appena creata e devi eseguire nuovamente una query nel registro dello schema
+   >[!NOTE]
+   >
+   >Aggiorna l’interfaccia utente per visualizzarla, poiché è stata appena creata e devi eseguire nuovamente una query nel registro dello schema
 
 2. Cerca lo schema `Sample Customer Schema - <your sandbox number>`
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Accedi e sfoglia
 description: Accedi a Adobe Experience Platform e passa alla sezione Schemi per sfogliare schemi, gruppi di campi e tipi di dati esistenti.
 doc-type: article
 solution: Experience Platform
 exl-id: 35cac81f-4711-425e-8df1-b0c302eda562
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -43,7 +42,7 @@ Fai clic sull’icona Experience Platform dal pannello di accesso rapido per acc
 
 1. Fai clic sulla scheda **Schemi** nella barra a sinistra
 
-![Scheda Schemi nella barra di navigazione a sinistra](assets/login-and-browse-schemas-tab-left-rail.png "Passa agli schemi utilizzando la barra a sinistra")
+   ![Scheda Schemi nella barra di navigazione a sinistra](assets/login-and-browse-schemas-tab-left-rail.png "Passa agli schemi utilizzando la barra a sinistra")
 
 1. Nella navigazione in alto sono disponibili opzioni per sfogliare gli schemi esistenti e visualizzare i gruppi di campi e i tipi di dati attualmente presenti nel registro XDM.
 

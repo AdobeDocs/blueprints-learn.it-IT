@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Trasmetti un profilo
 description: Utilizza Postman, l’endpoint di streaming e l’ID del flusso di dati per inviare un record del profilo cliente a Adobe Experience Platform tramite l’API HTTP.
 doc-type: article
 solution: Experience Platform
 exl-id: 937d153c-9230-4f5a-a397-6c177a3ea890
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 0%
@@ -79,18 +78,18 @@ Effettua le seguenti operazioni:
 
 1. Copia il valore dell&#39;**endpoint di streaming** e salvalo nel computer locale (supponendo che non sia stato eseguito il passaggio della sezione precedente). Se non sei andato via, puoi trovarlo in Origini->Account.
 
->[!NOTE]
->
->Se non hai eseguito l&#39;accesso, puoi accedere a questa pagina effettuando le seguenti operazioni:
->
->- Fai clic su **Origini** nella barra a sinistra
->- Verifica di essere nella scheda **Account** e fai clic sull&#39;account creato con titolo **Acquisizione in streaming - \&lt;Iniziali>**
+   >[!NOTE]
+   >
+   >Se non hai eseguito l&#39;accesso, puoi accedere a questa pagina effettuando le seguenti operazioni:
+   >
+   >- Fai clic su **Origini** nella barra a sinistra
+   >- Verifica di essere nella scheda **Account** e fai clic sull&#39;account creato con titolo **Acquisizione in streaming - \&lt;Iniziali>**
 
->[!NOTE]
->
->Se non visualizzi questo valore, accertati di non aver selezionato la riga del flusso di dati facendo clic su di essa.  NON FARE CLIC SUI COLLEGAMENTI BLU
+   >[!NOTE]
+   >
+   >Se non visualizzi questo valore, accertati di non aver selezionato la riga del flusso di dati facendo clic su di essa.  NON FARE CLIC SUI COLLEGAMENTI BLU
 
-![URL endpoint di streaming visualizzato sul lato destro dei dettagli account](assets/stream-a-profile-streaming-endpoint-url-on-the-right.png)
+   ![URL endpoint di streaming visualizzato sul lato destro dei dettagli account](assets/stream-a-profile-streaming-endpoint-url-on-the-right.png)
 
 
 
@@ -106,34 +105,34 @@ Passa all’applicazione Postman e aggiorna la richiesta Crea account cliente co
 
 1. Apri Postman e passa a **Data Ingestion Lab -> Crea richiesta API account cliente** e aprila
 
-![Crea richiesta API account cliente aperta in Postman](assets/stream-a-profile-create-customer-account-api-request.png)
+   ![Crea richiesta API account cliente aperta in Postman](assets/stream-a-profile-create-customer-account-api-request.png)
 
 
 
 1. Copia e incolla il valore dell&#39;**endpoint di streaming** salvato in precedenza nell&#39;URL della richiesta
 
-![Valore endpoint di streaming incollato nell&#39;URL della richiesta Crea account cliente](assets/stream-a-profile-create-customer-account-streaming-endpoint-url.png)
+   ![Valore endpoint di streaming incollato nell&#39;URL della richiesta Crea account cliente](assets/stream-a-profile-create-customer-account-streaming-endpoint-url.png)
 
 
 
 1. Copia e incolla il valore ID flusso di dati salvato in precedenza nel valore dell&#39;intestazione **x-adobe-flow-id**
 
-![ID flusso di dati incollato nel valore di intestazione x-adobe-flow-id](assets/stream-a-profile-copy-paste-x-adobe-flow-id.png)
+   ![ID flusso di dati incollato nel valore di intestazione x-adobe-flow-id](assets/stream-a-profile-copy-paste-x-adobe-flow-id.png)
 
 
 
 1. Nel corpo della richiesta, aggiorna i seguenti attributi, come segue:
 
-- **firstName** -> Nome
-- **cognome** -> cognome
-- **email** -> Indirizzo e-mail
-- **data_nascita** -> AAAA-MM-GG
+   - **firstName** -> Nome
+   - **cognome** -> cognome
+   - **email** -> Indirizzo e-mail
+   - **data_nascita** -> AAAA-MM-GG
 
-**5. Salva** la tua richiesta
+   **5. Salva** la tua richiesta
 
 1. Fai clic sul pulsante **Invia** per eseguire la richiesta di streaming nel tuo profilo account cliente
 
-![Richiesta di creazione account cliente finale pronta per l&#39;invio in Postman](assets/stream-a-profile-final-create-customer-account-request.png)
+   ![Richiesta di creazione account cliente finale pronta per l&#39;invio in Postman](assets/stream-a-profile-final-create-customer-account-request.png)
 
 
 

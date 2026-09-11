@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Creare altre identità
 description: Utilizza l’API del registro dello schema per creare un descrittore di identità dell’indirizzo e-mail non primario per lo schema Account cliente.
 doc-type: article
 solution: Experience Platform
 exl-id: 22c40299-fb93-4d41-a23b-f8629df3e7b9
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -17,11 +16,11 @@ ht-degree: 0%
 
 1. Fai clic sulla chiamata API `Step 2 - Create Email Address Identity for Customer Account Schema` nella cartella `XDM Schema Lab -> Create Identity Descriptors`
 
->[!CAUTION]
->
->Non eseguire ancora la richiesta
+   >[!CAUTION]
+   >
+   >Non eseguire ancora la richiesta
 
-![Passaggio 2 - Crea identità indirizzo e-mail per richiesta Postman schema account cliente](assets/create-other-identities-step-2-postman-request.jpeg "Passaggio 2 - Crea descrittore identità indirizzo e-mail")
+   ![Passaggio 2 - Crea identità indirizzo e-mail per richiesta Postman schema account cliente](assets/create-other-identities-step-2-postman-request.jpeg "Passaggio 2 - Crea descrittore identità indirizzo e-mail")
 
 
 
@@ -29,23 +28,23 @@ ht-degree: 0%
 
 1. Aggiorna il valore `xdm:isPrimary` nel corpo della richiesta a `false`
 
-SOLO ESEMPIO
+   SOLO ESEMPIO
 
-```json
-{
-  "@type": "xdm:descriptorIdentity",
-  "xdm:sourceSchema": "https://ns.adobe.com/devbc/schemas/8415ac18dd8943e35d12caf0c24b57b4a5a9ab7fd637245e",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/personalEmail/address",
-  "xdm:namespace": "Email",
-  "xdm:property": "xdm:code",
-  "xdm:isPrimary": false
-}
-```
+   ```json
+   {
+     "@type": "xdm:descriptorIdentity",
+     "xdm:sourceSchema": "https://ns.adobe.com/devbc/schemas/8415ac18dd8943e35d12caf0c24b57b4a5a9ab7fd637245e",
+     "xdm:sourceVersion": 1,
+     "xdm:sourceProperty": "/personalEmail/address",
+     "xdm:namespace": "Email",
+     "xdm:property": "xdm:code",
+     "xdm:isPrimary": false
+   }
+   ```
 
->[!NOTE]
->
->Ricorda di aggiornare il nome tenant precedente (\_devbc) con il tuo
+   >[!NOTE]
+   >
+   >Ricorda di aggiornare il nome tenant precedente (\_devbc) con il tuo
 
 
 

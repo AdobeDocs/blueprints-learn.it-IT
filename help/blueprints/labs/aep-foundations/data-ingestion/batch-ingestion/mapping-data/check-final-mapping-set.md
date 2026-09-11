@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Verifica set di mappatura finale
 description: Confronta le mappature di campi semplici e calcolate per lo schema Account cliente con il set di mappatura finale previsto.
 doc-type: article
 solution: Experience Platform
 exl-id: d1521d08-1ccb-405f-b728-a2777598cb9f
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # Verifica set di mappatura finale
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Se si proviene da Streaming Ingestion Lab, fare clic sul link seguente per procedere al passaggio successivo:
 >
@@ -52,7 +51,7 @@ ht-degree: 0%
 | shipping\_state | shippingAddress.state |
 | shipping\_street\_address | shippingAddress.street1 |
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Prima di continuare, assicurati che la mappatura finale corrisponda a quanto mostrato di seguito.
 
@@ -66,6 +65,6 @@ ht-degree: 0%
 | concat(date\_part(&quot;mese&quot;, date(nascita\_Date,&quot;M/g/aaaa&quot;)).toString(), &quot;-&quot;, date\_part(&quot;giorno&quot;, date(nascita\_Date,&quot;M/g/aaaa&quot;)).toString()) | person.bornDayAndMonth |
 | date\_part(&quot;yyyy&quot;,date(nascita\_Date,&quot;M/d/yyyy&quot;)) | person.bornYear |
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Prima di continuare, assicurati che la mappatura finale corrisponda a quanto mostrato di seguito

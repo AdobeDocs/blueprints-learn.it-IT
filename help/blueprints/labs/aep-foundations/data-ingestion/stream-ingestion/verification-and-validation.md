@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Verifica e convalida
 description: Visualizza l’anteprima di un set di dati in streaming nell’interfaccia utente ed esegui query SQL per verificare i record acquisiti e i campi schema nidificati.
 doc-type: article
 solution: Experience Platform
 exl-id: fbdb0b6b-08b6-49b8-b6ab-d59d5941c678
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -20,13 +19,13 @@ ht-degree: 0%
 1. Fai clic su **Set di dati**
 1. **Individua** e **fai clic** sul nome del set di dati creato.
 
-![Accesso al set di dati creato nel riquadro Set di dati](assets/verification-and-validation-access-the-dataset-in-the-datasets-pane.png "Accesso al set di dati nel riquadro Set di dati")
+   ![Accesso al set di dati creato nel riquadro Set di dati](assets/verification-and-validation-access-the-dataset-in-the-datasets-pane.png "Accesso al set di dati nel riquadro Set di dati")
 
 
 
 1. Fai clic su **Anteprima set di dati** nell&#39;angolo superiore destro
 
-![Pulsante Anteprima set di dati nell&#39;angolo superiore destro della schermata del set di dati](assets/verification-and-validation-preview-dataset-button.png "Il set di dati di anteprima si trova nell&#39;angolo superiore destro ")
+   ![Pulsante Anteprima set di dati nell&#39;angolo superiore destro della schermata del set di dati](assets/verification-and-validation-preview-dataset-button.png "Il set di dati di anteprima si trova nell&#39;angolo superiore destro ")
 
 
 
@@ -45,7 +44,7 @@ ht-degree: 0%
 1. **Chiudi** l&#39;anteprima
 1. Nella schermata Set di dati fare clic sull&#39;icona Copia in **Nome tabella**. Nella schermata di esempio seguente, il nome della tabella è `customer_account_sm`
 
-![Copia del nome della tabella dalla schermata Set di dati per l&#39;utilizzo in una query](assets/verification-and-validation-copy-the-table-name.png "Copia del nome della tabella")
+   ![Copia del nome della tabella dalla schermata Set di dati per l&#39;utilizzo in una query](assets/verification-and-validation-copy-the-table-name.png "Copia del nome della tabella")
 
 
 
@@ -53,21 +52,21 @@ ht-degree: 0%
 
 1. Fai clic su **Crea query**
 
-![Accesso all&#39;editor query dalla sezione Query](assets/verification-and-validation-access-the-query-editor.png "Accesso all&#39;editor query")
+   ![Accesso all&#39;editor query dalla sezione Query](assets/verification-and-validation-access-the-query-editor.png "Accesso all&#39;editor query")
 
 
 
 1. Attiva/disattiva **Editor query avanzato**
 
-![Interfaccia dell&#39;editor delle query con l&#39;opzione Editor query avanzato abilitata](assets/verification-and-validation-enhanced-query-editor-toggle.png "Interfaccia dell&#39;editor delle query")
+   ![Interfaccia dell&#39;editor delle query con l&#39;opzione Editor query avanzato abilitata](assets/verification-and-validation-enhanced-query-editor-toggle.png "Interfaccia dell&#39;editor delle query")
 
 
 
 1. Copia e incolla la seguente query SQL nell&#39;**Editor**. Ricordarsi di sostituire `<table_name>` con il valore ottenuto nel passaggio 2.
 
-```sql
-SELECT * FROM <table_name>
-```
+   ```sql
+   SELECT * FROM <table_name>
+   ```
 
 
 
@@ -77,9 +76,9 @@ SELECT * FROM <table_name>
 
 1. Inoltre, esegui la seguente query SQL per recuperare lo schema XDM insieme ai dati:
 
-```sql
-SELECT to_json(shippingAddress) FROM <table_name>
-```
+   ```sql
+   SELECT to_json(shippingAddress) FROM <table_name>
+   ```
 
 
 

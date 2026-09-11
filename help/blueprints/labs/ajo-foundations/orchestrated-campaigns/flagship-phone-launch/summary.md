@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Riepilogo
 description: Riprendi la creazione di una campagna orchestrata con un canale SMS che esegue il targeting sia degli account dei clienti che di singole righe e salva un pubblico in Audience Portal.
 doc-type: article
 solution: Experience Platform
 exl-id: 587758b6-b1c1-4ce3-bcc9-ad4f6640188d
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 1%
@@ -36,7 +35,7 @@ Se lo aveste provato in Percorsi non sareste stati in grado di soddisfare entram
 
 
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >**SE STAI LEGGENDO, SIGNIFICA CHE SEI ALLA FINE DEL LABORATORIO.**
 >

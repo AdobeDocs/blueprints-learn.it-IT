@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Oggetti personalizzati del modello
 description: Crea nell’editor schema campi e oggetti personalizzati per account, piani e customerID, inclusi i valori enum, per modellare i dati senza un equivalente di gruppo di campi standard.
 doc-type: article
 solution: Experience Platform
 exl-id: 8c39b226-05f3-458a-b023-c59221a6713a
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -36,11 +35,11 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 1. Aggiungi un nuovo campo facendo clic sul pulsante **+ (aggiungi)** nella parte superiore dello schema
 
-![Pulsante Aggiungi (+) nella parte superiore dello schema per aggiungere un campo personalizzato](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)
+   ![Pulsante Aggiungi (+) nella parte superiore dello schema per aggiungere un campo personalizzato](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)
 
->[!NOTE]
->
->Osserva che la barra a destra si apre con alcuni campi da compilare
+   >[!NOTE]
+   >
+   >Osserva che la barra a destra si apre con alcuni campi da compilare
 
 
 
@@ -73,14 +72,14 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 1. Aggiungi i seguenti campi sotto l’oggetto Account appena creato.
 
-| Nome campo | Nome visualizzato | Tipo |
-| ------------ | ------------- | ---------- |
-| *createDate* | *Crea data* | *DataOra* |
-| *endDate* | *Data di fine* | *DataOra* |
+   | Nome campo | Nome visualizzato | Tipo |
+   | ------------ | ------------- | ---------- |
+   | *createDate* | *Crea data* | *DataOra* |
+   | *endDate* | *Data di fine* | *DataOra* |
 
->[!NOTE]
->
->Durante l&#39;aggiunta dei nuovi campi, l&#39;opzione **Assegna a** è già stata compilata e fa riferimento al gruppo di campi utilizzato per l&#39;oggetto account.
+   >[!NOTE]
+   >
+   >Durante l&#39;aggiunta dei nuovi campi, l&#39;opzione **Assegna a** è già stata compilata e fa riferimento al gruppo di campi utilizzato per l&#39;oggetto account.
 
 
 
@@ -88,28 +87,28 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 
 
-![Schema account cliente con oggetto account e campi figlio aggiunti](assets/model-custom-objects-account-object-with-child-fields.png)
+   ![Schema account cliente con oggetto account e campi figlio aggiunti](assets/model-custom-objects-account-object-with-child-fields.png)
 
 
 
 1. Aggiungi un altro campo personalizzato all’oggetto account. Fare clic sul pulsante **+ (add)** accanto all&#39;oggetto account.  Crea il seguente campo:
 
-| Nome campo | Nome visualizzato | Tipo | Enumerazioni |
-| ----------- | ----------------- | -------- | --------------------------------------- |
-| *acqSource* | *Source acquisito* | *Stringa* | *web :: Web *<br />*inStore :: nello Store* |
+   | Nome campo | Nome visualizzato | Tipo | Enumerazioni |
+   | ----------- | ----------------- | -------- | --------------------------------------- |
+   | *acqSource* | *Source acquisito* | *Stringa* | *web :: Web *<br />*inStore :: nello Store* |
 
-Questo campo richiede valori standardizzati, quindi utilizza l&#39;opzione **Enum &amp; Valori suggeriti** all&#39;interno delle proprietà dei campi. Seleziona il pulsante di scelta **Enum** per aggiungere la convalida per questo campo al momento dell&#39;acquisizione, nonché etichette intuitive. Aggiungete i valori enum come mostrato di seguito:
+   Questo campo richiede valori standardizzati, quindi utilizza l&#39;opzione **Enum &amp; Valori suggeriti** all&#39;interno delle proprietà dei campi. Seleziona il pulsante di scelta **Enum** per aggiungere la convalida per questo campo al momento dell&#39;acquisizione, nonché etichette intuitive. Aggiungete i valori enum come mostrato di seguito:
 
-- *web :: Web*
-- *inStore :: nello Store*
+   - *web :: Web*
+   - *inStore :: nello Store*
 
 
 
-![Sono stati aggiunti i valori enum web e inStore per il campo Source di acquisizione](assets/model-custom-objects-enum-values-for-acquisition-source-field.png)
+   ![Sono stati aggiunti i valori enum web e inStore per il campo Source di acquisizione](assets/model-custom-objects-enum-values-for-acquisition-source-field.png)
 
->[!NOTE]
->
->L’obiettivo dei valori Enum e Suggested è facilitare la segmentazione per l’utente finale. Le enumerazioni impongono la convalida al momento dell’acquisizione dei dati, mentre i valori consigliati no. Per ulteriori informazioni su questa funzione, consulta la documentazione disponibile qui -> [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it#enums-and-suggested-values)
+   >[!NOTE]
+   >
+   >L’obiettivo dei valori Enum e Suggested è facilitare la segmentazione per l’utente finale. Le enumerazioni impongono la convalida al momento dell’acquisizione dei dati, mentre i valori consigliati no. Per ulteriori informazioni su questa funzione, consulta la documentazione disponibile qui -> [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values)
 
 
 

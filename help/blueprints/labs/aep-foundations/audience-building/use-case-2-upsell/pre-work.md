@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Pre-lavoro
 description: Esamina i campi dello schema per l’utilizzo della fatturazione e il nome del piano, evidenziando come le descrizioni mancanti e i campi duplicati possano confondere i generatori di pubblico.
 doc-type: article
 solution: Experience Platform
 exl-id: c26de19e-82da-4070-a918-2d2c8ef2c116
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -22,15 +21,15 @@ Per questo caso d’uso non c’è molto lavoro preliminare da fare. Fondamental
 1. Crea un nuovo pubblico
 1. Cerca &quot;utilizzo&quot; in Attributi. Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
 
-![Cerca utilizzo in Attributi - nessuna descrizione visualizzata](assets/pre-work-search-usage-in-attributes.png)
+   ![Cerca utilizzo in Attributi - nessuna descrizione visualizzata](assets/pre-work-search-usage-in-attributes.png)
 
 
 
-&#x200B;3. Cerca &quot;utilizzo&quot; negli Eventi.  Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
+3. Cerca &quot;utilizzo&quot; negli Eventi.  Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
 
 ![Cerca informazioni sull&#39;utilizzo negli eventi - nessuna descrizione visualizzata](assets/pre-work-search-usage-in-events.png)
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Nessuno di questi elementi contiene descrizioni, pertanto l’addetto al marketing potrebbe fare alcune supposizioni e formulare ipotesi errate.
 >
@@ -41,7 +40,8 @@ Per questo caso d’uso non c’è molto lavoro preliminare da fare. Fondamental
 >- Consigliato/preferito in casi d’uso specifici?
 >
 >Fornendo queste informazioni nelle descrizioni, possiamo guidarli meglio.
-> [!NOTE]
+
+>[!NOTE]
 >
 >Prova a cercare &quot;Fatturazione&quot;.  Nota che non viene visualizzato come attributo di profilo.  Viene visualizzato come scheda del tipo di evento insieme al campo &quot;Utilizzo dati fatturazione&quot;.
 >

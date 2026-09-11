@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Configurare la destinazione di streaming
 description: Configura una destinazione di streaming API HTTP con un endpoint webhook, criteri di governance, tipi di pubblico e mappature di campi per testare l’attivazione dei segmenti.
 doc-type: article
 solution: Experience Platform
 exl-id: c52d301f-b308-40fc-a59c-ace1c96ccd13
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
@@ -55,15 +54,15 @@ Nell’interfaccia utente di Experience Platform, passa al catalogo delle destin
 1. Tipo di connessione **Nessuno**
 1. Fai clic su **Connetti alla destinazione**
 
-![Connetti alla destinazione](assets/setup-streaming-destination-connect-to-destination.png "Connetti alla destinazione")
+   ![Connetti alla destinazione](assets/setup-streaming-destination-connect-to-destination.png "Connetti alla destinazione")
 
->[!NOTE]
->
->In genere, in questa fase vengono aggiunte credenziali di autenticazione, ma per questo webhook non ne è richiesta alcuna.
+   >[!NOTE]
+   >
+   >In genere, in questa fase vengono aggiunte credenziali di autenticazione, ma per questo webhook non ne è richiesta alcuna.
 
 
 
-&#x200B;3. Compila i dettagli di configurazione della destinazione come segue:
+3. Compila i dettagli di configurazione della destinazione come segue:
 
 - **Nome** -> `Streaming DEP Webhook - [Your Initials]`
 - **Descrizione** -> `[your webhook endpoint you copied above]`
@@ -92,7 +91,7 @@ Al termine, assicurati che la configurazione corrisponda a quella visualizzata d
 >
 >Ulteriori informazioni sui criteri di governance in Experience League
 >
->[https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=it#core-actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=it#core-actions)
+>[https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions)
 
 ## Seleziona tipi di pubblico
 

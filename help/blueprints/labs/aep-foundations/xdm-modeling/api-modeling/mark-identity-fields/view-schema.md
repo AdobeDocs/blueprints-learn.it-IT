@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Visualizza schema
 description: Visualizza i descrittori di identità di uno schema tramite l’interfaccia utente e l’API e confronta le opzioni di intestazione Accept per le risposte dello schema risolte e non risolte.
 doc-type: article
 solution: Experience Platform
 exl-id: 44eedb82-259f-4f7f-84fe-acc2b42376eb
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -28,13 +27,13 @@ ht-degree: 0%
 
 1. Selezionare l&#39;API `Step 3 - Get Customer Account Schema and its descriptors` facendo clic su di essa.
 
-![Passaggio 3 - Ottieni schema account cliente con richiesta API descrittori](assets/view-schema-step-3-get-customer-account-schema-w-descriptors.png "Passaggio 3 - Ottieni schema account cliente con descrittori")
+   ![Passaggio 3 - Ottieni schema account cliente con richiesta API descrittori](assets/view-schema-step-3-get-customer-account-schema-w-descriptors.png "Passaggio 3 - Ottieni schema account cliente con descrittori")
 
 
 
 1. Nell&#39;URL della richiesta sostituisci `<replace me>` con `$meta:altId` salvato dalla sezione precedente (Crea schema) alla fine della chiamata come mostrato di seguito
 
-![Richiesta passaggio finale 5 con altId aggiunto all&#39;URL](assets/view-schema-final-step-5-request.png "Richiesta passaggio finale 5")
+   ![Richiesta passaggio finale 5 con altId aggiunto all&#39;URL](assets/view-schema-final-step-5-request.png "Richiesta passaggio finale 5")
 
 
 
@@ -61,7 +60,7 @@ Nota l&#39;intestazione **Accept** utilizzata nella richiesta. Questa intestazio
 
 >[!NOTE]
 >
->Puoi trovare ulteriori informazioni sulle varie intestazioni Accept qui -> [Endpoint API dello schema di Experience League](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/schemas.html?lang=it#lookup)
+>Puoi trovare ulteriori informazioni sulle varie intestazioni Accept qui -> [Endpoint API dello schema di Experience League](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/schemas.html?lang=en#lookup)
 
 
 

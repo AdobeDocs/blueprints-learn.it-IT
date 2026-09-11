@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Configura per profilo
 description: Contrassegna i campi di identità principale e di persona, crea una relazione di schema, abilita uno schema per Real-Time Customer Profile e rivedi lo schema di unione dei profili.
 doc-type: article
 solution: Experience Platform
 exl-id: 52cfc0d2-ba8c-4f81-9e03-c5c2c5e276b7
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%
@@ -141,6 +140,7 @@ Sfoglia la classe Profilo individuale XDM e quindi impiega qualche istante per r
 >[!NOTE]
 >
 >Osserva che lo schema mostrato è una visualizzazione combinata aggregata di tutti gli schemi abilitati per il profilo nella sandbox. Campi simili all’interno della struttura XDM gerarchica si uniscono, mentre campi con nomi e/o gerarchie diversi vengono aggiunti alla visualizzazione complessiva.
-> [!NOTE]
+
+>[!NOTE]
 >
 >Solo la classe basata su Profilo individuale XDM esegue unioni tra campi con nomi simili.

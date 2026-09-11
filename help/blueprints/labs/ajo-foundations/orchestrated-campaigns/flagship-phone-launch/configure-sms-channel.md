@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Configurare il canale SMS
 description: Scopri come configurare un canale SMS basato su Twilio e le relative dimensioni di esecuzione da utilizzare nelle campagne orchestrate.
 doc-type: article
 solution: Experience Platform
 exl-id: 63c994f2-4b6b-42e9-aa82-cb6697390a08
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -56,22 +55,22 @@ Ora mapperai queste credenziali API a una configurazione di canale utilizzabile 
 
 1. Passa a **Canali** → **Impostazioni generali** → **Configurazioni canale**.
 
-![Passa a Configurazioni canale in Impostazioni generali](assets/configure-sms-channel-navigate-channel-configurations.png)
+   ![Passa a Configurazioni canale in Impostazioni generali](assets/configure-sms-channel-navigate-channel-configurations.png)
 
 
 
-&#x200B;2. Fai clic su **Crea configurazione canale**.
+2. Fai clic su **Crea configurazione canale**.
 
-![Pulsante Crea configurazione canale](assets/configure-sms-channel-click-create-configuration.png)
+   ![Pulsante Crea configurazione canale](assets/configure-sms-channel-click-create-configuration.png)
 
 
 
-&#x200B;3. Inserisci le impostazioni di configurazione del canale SMS con i seguenti valori:
+3. Inserisci le impostazioni di configurazione del canale SMS con i seguenti valori:
    - **Nome:** `Relational-SMS-Multi-Entity`
    - **Canale:** `Mobile Message`
    - **Azione di marketing:** `SMS Targeting`
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Se ricevi un errore che indica che l’utente non dispone delle autorizzazioni necessarie, ignoralo e continua.
 
@@ -93,46 +92,46 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 
 1. In Dettagli di esecuzione, fare clic sulla scheda **Campagna orchestrata**
 
-![Scheda Campagna orchestrata in Dettagli esecuzione](assets/configure-sms-channel-execution-details-tab.png)
+   ![Scheda Campagna orchestrata in Dettagli esecuzione](assets/configure-sms-channel-execution-details-tab.png)
 
 
 
-&#x200B;2. Verifica che la casella di controllo **Abilitato** sia selezionata
+2. Verifica che la casella di controllo **Abilitato** sia selezionata
 
-![Casella di controllo abilitata selezionata per le campagne orchestrate](assets/configure-sms-channel-enabled-checkbox.png)
+   ![Casella di controllo abilitata selezionata per le campagne orchestrate](assets/configure-sms-channel-enabled-checkbox.png)
 
 
 
-&#x200B;3. Avanti nella sottosezione **Dimensione di esecuzione** assicurati che le seguenti impostazioni siano configurate come segue:
+3. Avanti nella sottosezione **Dimensione di esecuzione** assicurati che le seguenti impostazioni siano configurate come segue:
    - **Consegna su messaggio per:** `Target + Secondary Dimension`
    - **Dimension di destinazione profilo:** `dep-rel: Customer Account - customer_id`
    - **Dimension secondario:** `Customer Line`
 
-![Impostazioni della dimensione di esecuzione con la dimensione di destinazione e la dimensione secondaria](assets/configure-sms-channel-execution-dimension-setup.png)
+   ![Impostazioni della dimensione di esecuzione con la dimensione di destinazione e la dimensione secondaria](assets/configure-sms-channel-execution-dimension-setup.png)
 
-![Dimension secondario impostato su Customer Line nelle impostazioni della dimensione di esecuzione &quot;Dimension secondario&quot;](assets/configure-sms-channel-secondary-dimension-detail.png "Dimension secondario")
+   ![Dimension secondario impostato su Customer Line nelle impostazioni della dimensione di esecuzione &quot;Dimension secondario&quot;](assets/configure-sms-channel-secondary-dimension-detail.png "Dimension secondario")
 
->[!NOTE]
->
->In questo modo si comunica alle campagne orchestrate che quando inviano messaggi, devono consegnare un messaggio per record che corrisponde al profilo di Target Dimension.
-
-
-
-&#x200B;4. Nell&#39;intestazione Indirizzo di esecuzione assicurarsi di selezionare il pulsante di opzione per **Dimension secondario** e quindi fare clic sul pulsante Modifica nel **Campo di esecuzione SMS**
-
-![Indirizzo di esecuzione impostato su Dimension secondario con campo di modifica](assets/configure-sms-channel-execution-address-selection.png)
+   >[!NOTE]
+   >
+   >In questo modo si comunica alle campagne orchestrate che quando inviano messaggi, devono consegnare un messaggio per record che corrisponde al profilo di Target Dimension.
 
 
 
-&#x200B;5. Nel popup, fare clic nello schema **dep-rel: Customer Line** e selezionare **Mobile Phone**.
+4. Nell&#39;intestazione Indirizzo di esecuzione assicurarsi di selezionare il pulsante di opzione per **Dimension secondario** e quindi fare clic sul pulsante Modifica nel **Campo di esecuzione SMS**
 
-![Finestra a comparsa schema per Dep-rel: schema della linea cliente](assets/configure-sms-channel-customer-line-schema-popup.png)
-
-![Campo Telefono cellulare selezionato dal modulo: Schema cliente &quot;Campo Telefono cellulare&quot;](assets/configure-sms-channel-mobile-phone-field-selected.png "Campo Telefono cellulare")
+   ![Indirizzo di esecuzione impostato su Dimension secondario con campo di modifica](assets/configure-sms-channel-execution-address-selection.png)
 
 
 
-&#x200B;6. Conferma le corrispondenze della sezione dei dettagli di esecuzione finale di seguito
+5. Nel popup, fare clic nello schema **dep-rel: Customer Line** e selezionare **Mobile Phone**.
+
+   ![Finestra a comparsa schema per Dep-rel: schema della linea cliente](assets/configure-sms-channel-customer-line-schema-popup.png)
+
+   ![Campo Telefono cellulare selezionato dal modulo: Schema cliente &quot;Campo Telefono cellulare&quot;](assets/configure-sms-channel-mobile-phone-field-selected.png "Campo Telefono cellulare")
+
+
+
+6. Conferma le corrispondenze della sezione dei dettagli di esecuzione finale di seguito
 
 ![Configurazione dei dettagli dell&#39;esecuzione finale corrispondente alle impostazioni richieste](assets/configure-sms-channel-final-execution-details.png)
 
@@ -142,21 +141,21 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 
 1. Puoi fare clic sul pulsante **Invia** per completare la configurazione e visualizzare un messaggio di successo
 
-![Messaggio di esito positivo dopo l&#39;invio della configurazione del canale](assets/configure-sms-channel-submit-success-message.png)
+   ![Messaggio di esito positivo dopo l&#39;invio della configurazione del canale](assets/configure-sms-channel-submit-success-message.png)
 
 
 
-&#x200B;2. Nella pagina di inventario delle configurazioni del canale, verifica che lo stato sia **Attivo** prima di procedere
+2. Nella pagina di inventario delle configurazioni del canale, verifica che lo stato sia **Attivo** prima di procedere
 
-![Stato configurazione canale visualizzato come Attivo](assets/configure-sms-channel-active-status.png)
+   ![Stato configurazione canale visualizzato come Attivo](assets/configure-sms-channel-active-status.png)
 
->[!CAUTION]
->
->Attendi che lo stato diventi **Attivo** altrimenti i futuri passaggi del laboratorio non avranno esito positivo
+   >[!CAUTION]
+   >
+   >Attendi che lo stato diventi **Attivo** altrimenti i futuri passaggi del laboratorio non avranno esito positivo
 
 
 
-&#x200B;3. Quando lo stato diventa Attivo, l’operazione è completata.
+3. Quando lo stato diventa Attivo, l’operazione è completata.
 
 >[!TIP]
 >
@@ -168,4 +167,4 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 
 Ora hai visto come configurare correttamente un canale SMS.  Tieni presente che si tratta di un SMS basato su API, pertanto a seconda del provider possono utilizzare metodi alternativi per l’autenticazione.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration) se sei interessato.

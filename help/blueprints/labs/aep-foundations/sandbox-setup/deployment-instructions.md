@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Istruzioni di distribuzione
 description: Utilizza DEP CLI per distribuire nella sandbox gli schemi, i set di dati, i flussi di dati e i dati di profilo di esempio di AEP Foundations lab Pack.
 doc-type: article
 solution: Experience Platform
 exl-id: 9f2b6d4a-8e1c-4b7a-a3d5-6c9f0e2a4b8d
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 1%
@@ -15,7 +14,7 @@ ht-degree: 1%
 
 # Istruzioni di distribuzione
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Questa opzione è necessaria solo se si lavora nei laboratori al proprio ritmo. Se ti trovi in un corso o evento di formazione live, la sandbox è già stata distribuita per te.
 
@@ -58,17 +57,17 @@ Il lab pack AEP Foundations viene distribuito nella sandbox utilizzando DEP CLI,
 La CLI viene distribuita in qualsiasi sandbox in cui punti il file di ambiente, pertanto deve essere impostata correttamente prima di eseguire qualsiasi operazione.
 
 1. Copia `envFiles/sample-env.json` e assegnagli un nuovo nome, ad esempio `my-env.json`
-2. Apri il file e compila i campi seguenti utilizzando i valori di [Installazione di Developer Console](developer-console-setup.md):
+1. Apri il file e compila i campi seguenti utilizzando i valori di [Installazione di Developer Console](developer-console-setup.md):
 
-| **Campo** | **Valore** |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `API_KEY` | ID client |
-| `CLIENT_SECRET` | Segreto client |
-| `IMS_ORG` | ID organizzazione |
-| `SCOPES` | Deve includere ambiti API di Experience Platform (openid, session, AdobeID, read_organization, additional_info.projectedProductContext) |
-| `SANDBOX_NAME` | La sandbox di destinazione deve essere vuota e di tipo `dev` |
+   | **Campo** | **Valore** |
+   | --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+   | `API_KEY` | ID client |
+   | `CLIENT_SECRET` | Segreto client |
+   | `IMS_ORG` | ID organizzazione |
+   | `SCOPES` | Deve includere ambiti API di Experience Platform (openid, session, AdobeID, read_organization, additional_info.projectedProductContext) |
+   | `SANDBOX_NAME` | La sandbox di destinazione deve essere vuota e di tipo `dev` |
 
-&#x200B;3. Salva e chiudi il file
+1. Salva e chiudi il file
 
 >[!NOTE]
 >
@@ -90,7 +89,7 @@ Dal menu principale, seleziona **AEP Foundation**. Ci sono tre passaggi, che dev
 
 Il passaggio 1 richiede circa 2 minuti, il passaggio 2 circa 6 minuti e il passaggio 3 è una convalida rapida senza attese proprie. Gli intervalli di 60 e 15 minuti tra i passaggi consentono ad AEP di completare la propagazione dei dati dietro le quinte, che rappresentano la maggior parte della sequenza temporale di 2 ore.
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >La CLI controlla automaticamente questi tempi di attesa. Se si esegue un passaggio troppo presto, questo blocca e indica quanti minuti rimangono, non è necessario tenere traccia dell&#39;orologio da soli.
 

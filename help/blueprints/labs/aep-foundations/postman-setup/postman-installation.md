@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Installazione di Postman
 description: Installa Postman e acquisisci familiarità con le sue raccolte, i suoi ambienti e la sua interfaccia prima di avviare i laboratori API di bootcamp.
 doc-type: article
 solution: Experience Platform
 exl-id: 012878d9-fe87-4178-8b36-40b267b06760
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # Installazione di Postman
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Postman è richiesto per vari laboratori in questo corso.  Anche se hai già installato Postman, dovrai sottoporti a questa esercitazione per assicurarti di aver installato e configurato correttamente i file di ambiente e la raccolta API.
 

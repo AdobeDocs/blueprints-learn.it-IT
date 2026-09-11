@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Creazione di frammenti di contenuto
 description: Scopri come suddividere una progettazione e-mail in frammenti riutilizzabili, come un blocco di intestazione, che rimangano coerenti tra i modelli in Adobe Journey Optimizer.
 doc-type: article
 solution: Experience Platform
 exl-id: 253a9332-dc08-420d-ac11-2bf342f0dc38
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 0%
@@ -85,21 +84,21 @@ Crea un frammento di intestazione con cui iniziare. Tuttavia, prima di creare il
 
 1. Dalla navigazione a sinistra, individua la sezione **Gestione contenuto** e fai clic su **Assets**.
 
-![Sezione Content Management con opzione Assets nel menu di navigazione a sinistra](assets/building-content-fragments-content-management-assets-nav.png)
+   ![Sezione Content Management con opzione Assets nel menu di navigazione a sinistra](assets/building-content-fragments-content-management-assets-nav.png)
 
-&#x200B;2. Fai clic su **Assets** nella sezione Gestione Assets.
+2. Fai clic su **Assets** nella sezione Gestione Assets.
 
-![Opzione Assets nella sezione Gestione di Assets](assets/building-content-fragments-assets-under-assets-management.png)
+   ![Opzione Assets nella sezione Gestione di Assets](assets/building-content-fragments-assets-under-assets-management.png)
 
-&#x200B;3. Creare una cartella facendo clic sul pulsante **&quot;Crea cartella&quot;**.
+3. Creare una cartella facendo clic sul pulsante **&quot;Crea cartella&quot;**.
 
-![Pulsante Crea cartella nell&#39;area Assets](assets/building-content-fragments-click-create-folder-button.png)
+   ![Pulsante Crea cartella nell&#39;area Assets](assets/building-content-fragments-click-create-folder-button.png)
 
-&#x200B;4. Assegna un nome come nome e cognome. Esempio: Nish\_Pithia\_LabAssets (un ricordo)
+4. Assegna un nome come nome e cognome. Esempio: Nish\_Pithia\_LabAssets (un ricordo)
 
-![Assegnazione di nomi e cognomi alla nuova cartella di risorse](assets/building-content-fragments-name-asset-folder.png)
+   ![Assegnazione di nomi e cognomi alla nuova cartella di risorse](assets/building-content-fragments-name-asset-folder.png)
 
-&#x200B;5. **Crea un nuovo frammento:** In Gestione contenuto, fai clic su **Frammenti** e crea un nuovo frammento.
+5. **Crea un nuovo frammento:** In Gestione contenuto, fai clic su **Frammenti** e crea un nuovo frammento.
 
    ![Opzione Frammenti in Gestione contenuto per creare un nuovo frammento](assets/building-content-fragments-click-fragments-create-new.png)
 
@@ -113,35 +112,35 @@ Crea un frammento di intestazione con cui iniziare. Tuttavia, prima di creare il
 
    ![Campi Nome frammento intestazione, descrizione e Tipo frammento visivo](assets/building-content-fragments-fragment-name-type-details.png)
 
-&#x200B;6. Fai clic sul **pulsante Crea** in alto a destra.
+6. Fai clic sul **pulsante Crea** in alto a destra.
 
-![Pulsante Crea in alto a destra nella finestra di dialogo Nuovo frammento](assets/building-content-fragments-click-create-button-top-right.png)
+   ![Pulsante Crea in alto a destra nella finestra di dialogo Nuovo frammento](assets/building-content-fragments-click-create-button-top-right.png)
 
-Viene visualizzata una schermata di creazione del frammento vuota.
+   Viene visualizzata una schermata di creazione del frammento vuota.
 
-&#x200B;7. Fai clic su Colonne 1:1 in Strutture e trascina sull’area di lavoro come mostrato di seguito. (Cliccate sull&#39;immagine qui sotto per vedere l&#39;immagine animata)
+7. Fai clic su Colonne 1:1 in Strutture e trascina sull’area di lavoro come mostrato di seguito. (Cliccate sull&#39;immagine qui sotto per vedere l&#39;immagine animata)
 
-![Demo animata del trascinamento di una struttura a colonne 1:1 nell&#39;area di lavoro del frammento](assets/building-content-fragments-drag-1-1-columns-structure.gif)
+   ![Demo animata del trascinamento di una struttura a colonne 1:1 nell&#39;area di lavoro del frammento](assets/building-content-fragments-drag-1-1-columns-structure.gif)
 
-&#x200B;8. Quindi, trascina &quot;**immagine**&quot; sulla riga 1:1 appena aggiunta
+8. Quindi, trascina &quot;**immagine**&quot; sulla riga 1:1 appena aggiunta
 
-![Trascinamento di un componente immagine nella riga 1:1](assets/building-content-fragments-drag-image-onto-row.png)
+   ![Trascinamento di un componente immagine nella riga 1:1](assets/building-content-fragments-drag-image-onto-row.png)
 
-&#x200B;9. Carica l’immagine del logo fornita. Fare clic su **&quot;Pulsante Importa file multimediali&quot;**
+9. Carica l’immagine del logo fornita. Fare clic su **&quot;Pulsante Importa file multimediali&quot;**
 
-![Pulsante Importa file multimediali per caricare l&#39;immagine del logo](assets/building-content-fragments-click-import-media-button.png)
+   ![Pulsante Importa file multimediali per caricare l&#39;immagine del logo](assets/building-content-fragments-click-import-media-button.png)
 
-&#x200B;10. **Carica il logo:** Carica il logo (*C5G-Logo.png*) dalla cartella delle immagini del toolkit e fai clic su Avanti.
+10. **Carica il logo:** Carica il logo (*C5G-Logo.png*) dalla cartella delle immagini del toolkit e fai clic su Avanti.
 
 ![Selezione di C5G-Logo.png dalla cartella toolkit da caricare](assets/building-content-fragments-upload-logo-select-file.png)
 
 ![Dopo aver selezionato il caricamento del logo, fai clic su Avanti](assets/building-content-fragments-upload-logo-click-next.png)
 
-&#x200B;11. Seleziona la **cartella risorse** creata, quindi fai clic su **Importa**. Il file viene salvato nella cartella.
+11. Seleziona la **cartella risorse** creata, quindi fai clic su **Importa**. Il file viene salvato nella cartella.
 
 ![Selezione della cartella di risorse creata e clic su Importa](assets/building-content-fragments-select-asset-folder-import.png)
 
-&#x200B;12. Il logo è posizionato correttamente, ma è troppo grande e deve essere ridimensionato. Per ridimensionare il logo, aggiornarne le proprietà. Fare clic sulla **scheda Stile** e impostare la larghezza su 40% trascinando il dispositivo di scorrimento, come illustrato di seguito.
+12. Il logo è posizionato correttamente, ma è troppo grande e deve essere ridimensionato. Per ridimensionare il logo, aggiornarne le proprietà. Fare clic sulla **scheda Stile** e impostare la larghezza su 40% trascinando il dispositivo di scorrimento, come illustrato di seguito.
 
 >[!NOTE]
 >
@@ -151,15 +150,15 @@ Viene visualizzata una schermata di creazione del frammento vuota.
 
 ![Dispositivo di scorrimento della larghezza della scheda di stile impostato su 40% per ridimensionare il logo](assets/building-content-fragments-resize-logo-width-slider.png)
 
-&#x200B;13. Fare clic su **&quot;Salva&quot;** per salvare il frammento. Ricevi una notifica con barra verde alla conferma.
+13. Fare clic su **&quot;Salva&quot;** per salvare il frammento. Ricevi una notifica con barra verde alla conferma.
 
 ![Barra di conferma verde dopo il salvataggio del frammento](assets/building-content-fragments-save-fragment-confirmation.png)
 
-&#x200B;14. Il frammento salvato è in modalità bozza. Prima di utilizzarlo, è necessario pubblicarlo. Fai clic sul pulsante **indietro**.
+14. Il frammento salvato è in modalità bozza. Prima di utilizzarlo, è necessario pubblicarlo. Fai clic sul pulsante **indietro**.
 
 ![Pulsante Indietro per lasciare il frammento bozza prima della pubblicazione](assets/building-content-fragments-click-back-button-draft.png)
 
-&#x200B;15. Fare clic sul pulsante &quot;**Pubblica**&quot;. Viene visualizzato il messaggio &quot;Pubblicazione del frammento in corso. L’operazione potrebbe richiedere del tempo. Al termine riceverai una notifica.&quot; alla conferma. Il frammento è pronto per essere utilizzato per la creazione di modelli.
+15. Fare clic sul pulsante &quot;**Pubblica**&quot;. Viene visualizzato il messaggio &quot;Pubblicazione del frammento in corso. L’operazione potrebbe richiedere del tempo. Al termine riceverai una notifica.&quot; alla conferma. Il frammento è pronto per essere utilizzato per la creazione di modelli.
 
 ![Pulsante Pubblica e messaggio di conferma del frammento di pubblicazione](assets/building-content-fragments-click-publish-fragment-button.png)
 

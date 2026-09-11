@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Modifica schema - Patch JSON
 description: Utilizza una chiamata API PATCH JSON per aggiungere un nuovo campo a un gruppo di campi tenant esistente e visualizzare la modifica riflessa nello schema.
 doc-type: article
 solution: Experience Platform
 exl-id: c0313594-d998-4525-a0a4-d9d844bed5ef
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -22,7 +21,7 @@ Si supponga per un minuto che dopo aver generato lo schema sia necessario tornar
 Per ulteriori informazioni su JSON PATCH, consulta i collegamenti riportati di seguito. Tuttavia, ai fini di questa esercitazione, supponiamo di avere un&#39;idea del funzionamento di 😄
 
 - [https://jsonpatch.com/](https://jsonpatch.com/)
-- [Nozioni di base sulle API di Experience League](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=it#json-patch)
+- [Nozioni di base sulle API di Experience League](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=en#json-patch)
 
 ![Diagramma dell&#39;applicazione della patch a un campo planDescription mancante in uno schema esistente](assets/modify-schema-json-patch-patching-missing-plan-description-field.png "Applicazione della patch a un campo Plan Description mancante")
 
@@ -48,11 +47,11 @@ Per aggiungere un nuovo campo a uno schema, è necessario eseguire le operazioni
 1. Selezionare la chiamata API `Step 1 - Get Tenant Field groups` che si trova nella cartella `XDM Schema Lab -> Customize Schema`
 1. Eseguire la richiesta facendo clic sul pulsante `Send`
 
-![Passaggio 1 - Ottieni richiesta API per gruppi di campi tenant](assets/modify-schema-json-patch-step-1-get-tenant-field-groups.png "Passaggio 1 - Ottieni gruppi di campi tenant")
+   ![Passaggio 1 - Ottieni richiesta API per gruppi di campi tenant](assets/modify-schema-json-patch-step-1-get-tenant-field-groups.png "Passaggio 1 - Ottieni gruppi di campi tenant")
 
->[!NOTE]
->
->Ricorda che hai creato l&#39;oggetto `plan` all&#39;interno di un gruppo di campi personalizzato. Gli oggetti creati personalizzati nel registro dello schema XDM sono denominati &quot;tenant&quot;, da cui la chiamata API che utilizza il percorso `/schemaregistry/tenant/mixins/`.
+   >[!NOTE]
+   >
+   >Ricorda che hai creato l&#39;oggetto `plan` all&#39;interno di un gruppo di campi personalizzato. Gli oggetti creati personalizzati nel registro dello schema XDM sono denominati &quot;tenant&quot;, da cui la chiamata API che utilizza il percorso `/schemaregistry/tenant/mixins/`.
 
 
 
@@ -129,32 +128,32 @@ Il percorso completo è simile a quello visualizzato di seguito.  Copia questo p
 
 1. Fai clic sulla chiamata API `Step 3 - Modify Tenant Field group` nella cartella `XDM Schema Lab -> Customize Schema`
 
-![Passaggio 3 - Modifica chiamata API gruppo di campi tenant](assets/modify-schema-json-patch-step-3-modify-tenant-field-group.png "Passaggio 3 - Modifica gruppo di campi tenant")
+   ![Passaggio 3 - Modifica chiamata API gruppo di campi tenant](assets/modify-schema-json-patch-step-3-modify-tenant-field-group.png "Passaggio 3 - Modifica gruppo di campi tenant")
 
 
 
-&#x200B;2. Aggiorna il corpo della richiesta con le seguenti informazioni
+2. Aggiorna il corpo della richiesta con le seguenti informazioni
 
-- **op** ->` add`
-- **percorso** -> `path from previous step +`&#x200B;` the new field name`
-- **valore** ->
-  - **titolo** -> `Plan Description`
-  - **tipo** -> `string`
-  - **descrizione** -> `High-level details about the plan`
+   - **op** ->` add`
+   - **percorso** -> `path from previous step +`` the new field name`
+   - **valore** ->
+     - **titolo** -> `Plan Description`
+     - **tipo** -> `string`
+     - **descrizione** -> `High-level details about the plan`
 
-Al termine la richiesta API dovrebbe avere un aspetto simile al seguente
+   Al termine la richiesta API dovrebbe avere un aspetto simile al seguente
 
-![Corpo della richiesta JSON PATCH completato aggiungendo il campo planDescription](assets/modify-schema-json-patch-step-3-final-call-example.png "Passaggio 3 - Esempio di chiamata finale")
+   ![Corpo della richiesta JSON PATCH completato aggiungendo il campo planDescription](assets/modify-schema-json-patch-step-3-final-call-example.png "Passaggio 3 - Esempio di chiamata finale")
 
->[!WARNING]
->
->Assicurati di includere il nuovo nome del campo, **planDescription,** nel percorso
+   >[!WARNING]
+   >
+   >Assicurati di includere il nuovo nome del campo, **planDescription,** nel percorso
 
 
 
-&#x200B;3. Se tutto sembra buono `Save` la tua chiamata
+3. Se tutto sembra buono `Save` la tua chiamata
 
-&#x200B;4. `Execute` la chiamata per eseguire PATCH
+4. `Execute` la chiamata per eseguire PATCH
 
 Dovresti visualizzare una risposta di `200 OK ` e il campo `planDescription` nel gruppo di campi dovrebbe essere visualizzato nel modo seguente:
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Aggiungere attività e-mail
 description: Scopri come aggiungere e configurare due attività e-mail su rami Fork separati utilizzando diverse configurazioni del canale e-mail in una campagna orchestrata.
 doc-type: article
 solution: Experience Platform
 exl-id: e911a251-9f9f-484c-a2de-101b0fc2c417
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
@@ -31,49 +30,49 @@ Nei passaggi successivi, sfrutterai la campagna per aggiungere due attività E-m
 
 1. Fai clic su **+** del flusso principale e seleziona **E-mail** dalle **attività canale**
 
-![Aggiungi attività e-mail](assets/add-email-activities-select-email-activity.png)
+   ![Aggiungi attività e-mail](assets/add-email-activities-select-email-activity.png)
 
-Viene aperto il riquadro dei dettagli **E-mail**
+   Viene aperto il riquadro dei dettagli **E-mail**
 
-![Riquadro dettagli e-mail](assets/add-email-activities-email-details-pane.png)
+   ![Riquadro dettagli e-mail](assets/add-email-activities-email-details-pane.png)
 
-&#x200B;2. Rinomina l&#39;etichetta in **E-mail utilizzando l&#39;attributo di profilo** per l&#39;attività **E-mail** e fai clic su **Modifica e-mail**. La creazione del corpo dell’e-mail è solo a scopo di test
+2. Rinomina l&#39;etichetta in **E-mail utilizzando l&#39;attributo di profilo** per l&#39;attività **E-mail** e fai clic su **Modifica e-mail**. La creazione del corpo dell’e-mail è solo a scopo di test
 
-![Rinomina etichetta attività e-mail e fai clic su Modifica e-mail](assets/add-email-activities-rename-and-edit-email.png)
+   ![Rinomina etichetta attività e-mail e fai clic su Modifica e-mail](assets/add-email-activities-rename-and-edit-email.png)
 
-&#x200B;3. Seleziona la scheda **Azioni** e dal menu a discesa seleziona **Configurazione del canale profilo-e-mail**
+3. Seleziona la scheda **Azioni** e dal menu a discesa seleziona **Configurazione del canale profilo-e-mail**
 
-![Selezionare la configurazione del canale e-mail del profilo nella scheda Azioni](assets/add-email-activities-select-profile-email-channel.png)
+   ![Selezionare la configurazione del canale e-mail del profilo nella scheda Azioni](assets/add-email-activities-select-profile-email-channel.png)
 
-&#x200B;4. Quindi, fai clic su **Modifica contenuto** per aggiungere del contenuto di prova
+4. Quindi, fai clic su **Modifica contenuto** per aggiungere del contenuto di prova
 
-![Fare clic su Modifica contenuto per aggiungere il contenuto del test](assets/add-email-activities-edit-content.png)
+   ![Fare clic su Modifica contenuto per aggiungere il contenuto del test](assets/add-email-activities-edit-content.png)
 
-&#x200B;5. Fornisci una **riga oggetto** (&quot;Aggiorna offerta per i membri del piano di base&quot;) e fai clic sul pulsante **Modifica corpo dell&#39;e-mail**
+5. Fornisci una **riga oggetto** (&quot;Aggiorna offerta per i membri del piano di base&quot;) e fai clic sul pulsante **Modifica corpo dell&#39;e-mail**
 
-![Aggiungi l&#39;oggetto e modifica il corpo dell&#39;e-mail](assets/add-email-activities-subject-line-edit-body.png)
+   ![Aggiungi l&#39;oggetto e modifica il corpo dell&#39;e-mail](assets/add-email-activities-subject-line-edit-body.png)
 
-&#x200B;6. Ci sono molte opzioni, per questo test, scegli **Crea il codice tuo** opzione HTML
+6. Ci sono molte opzioni, per questo test, scegli **Crea il codice tuo** opzione HTML
 
-![Scegli un codice per la tua opzione HTML](assets/add-email-activities-code-your-own-html.png)
+   ![Scegli un codice per la tua opzione HTML](assets/add-email-activities-code-your-own-html.png)
 
-&#x200B;7. In **E-mail Designer**, inserisci una riga di test &quot;Offerta di aggiornamento disponibile!&quot; subito prima dei tag `</body></html>` come mostrato e fai clic su **Salva**
+7. In **E-mail Designer**, inserisci una riga di test &quot;Offerta di aggiornamento disponibile!&quot; subito prima dei tag `</body></html>` come mostrato e fai clic su **Salva**
 
-![Inserire la riga di test in E-mail Designer e fare clic su Salva](assets/add-email-activities-email-designer-save.png)
+   ![Inserire la riga di test in E-mail Designer e fare clic su Salva](assets/add-email-activities-email-designer-save.png)
 
-&#x200B;8. Attendi che il messaggio di conferma venga visualizzato nell’angolo in basso a destra
+8. Attendi che il messaggio di conferma venga visualizzato nell’angolo in basso a destra
 
-![Messaggio di conferma visualizzato](assets/add-email-activities-confirmation-message.png)
+   ![Messaggio di conferma visualizzato](assets/add-email-activities-confirmation-message.png)
 
-&#x200B;9. Fai clic sulla **freccia a sinistra** accanto a **Invia e-mail a Designer** per uscire
+9. Fai clic sulla **freccia a sinistra** accanto a **Invia e-mail a Designer** per uscire
 
-![Fare clic sulla freccia sinistra per uscire da E-mail Designer](assets/add-email-activities-exit-email-designer.png)
+   ![Fare clic sulla freccia sinistra per uscire da E-mail Designer](assets/add-email-activities-exit-email-designer.png)
 
-&#x200B;10. Viene visualizzata una finestra di dialogo di conferma, fai clic sul pulsante **Salva e chiudi**
+10. Viene visualizzata una finestra di dialogo di conferma, fai clic sul pulsante **Salva e chiudi**
 
 ![Finestra di dialogo di conferma con il pulsante Salva e chiudi](assets/add-email-activities-save-and-close-dialog.png)
 
-&#x200B;11. Controlla le proprietà e le azioni Email, incluso il testo aggiunto al corpo dell’Email. Fai clic sulla **freccia a sinistra** per tornare all&#39;area di lavoro della campagna
+11. Controlla le proprietà e le azioni Email, incluso il testo aggiunto al corpo dell’Email. Fai clic sulla **freccia a sinistra** per tornare all&#39;area di lavoro della campagna
 
 ![Torna all&#39;area di lavoro della campagna](assets/add-email-activities-back-to-campaign-canvas.png)
 

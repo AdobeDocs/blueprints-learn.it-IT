@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Creare gruppi di campi personalizzati
 description: Utilizza l’API del registro dello schema per creare un gruppo di campi Dettagli account cliente personalizzato e salvarne il valore $id da utilizzare in uno schema successivo.
 doc-type: article
 solution: Experience Platform
 exl-id: d3262db9-7c0b-476a-843f-1a2c224ee792
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
@@ -69,17 +68,17 @@ Inoltre, osserva come ogni campo specifico del foglio di mappatura viene convali
 
 
 
-&#x200B;2. Aggiorna `title` e `description` per il gruppo di campi utilizzando il seguente formato: `Customer Account Details - Sandbox <your number here>`
+2. Aggiorna `title` e `description` per il gruppo di campi utilizzando il seguente formato: `Customer Account Details - Sandbox <your number here>`
 
 
 
-![Titolo di esempio e descrizione compilati per il gruppo di campi personalizzato](assets/create-custom-field-groups-field-group-title-description-example.png "Titolo gruppo di campi e descrizione")
+   ![Titolo di esempio e descrizione compilati per il gruppo di campi personalizzato](assets/create-custom-field-groups-field-group-title-description-example.png "Titolo gruppo di campi e descrizione")
 
 
 
-&#x200B;3. Eseguire facendo clic sul pulsante `Send`.  Dovresti trovare una risposta simile alla schermata seguente.
+3. Eseguire facendo clic sul pulsante `Send`.  Dovresti trovare una risposta simile alla schermata seguente.
 
-&#x200B;4. Copia il valore `$id` del gruppo di campi Dettagli account cliente appena creato.
+4. Copia il valore `$id` del gruppo di campi Dettagli account cliente appena creato.
 
 ![Risposta API riuscita dopo la creazione del gruppo di campi personalizzato](assets/create-custom-field-groups-step-2-create-custom-field-group-success.png "Passaggio 2 - Creazione del gruppo di campi personalizzato completata")
 

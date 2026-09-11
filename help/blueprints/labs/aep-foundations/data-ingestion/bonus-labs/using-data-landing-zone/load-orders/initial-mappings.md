@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Mappature iniziali
 description: Mappa manualmente i campi _id e timestamp richiesti per un set di dati Experience Event utilizzando espressioni di campo calcolato.
 doc-type: article
 solution: Experience Platform
 exl-id: 4052d104-bf0c-4b2d-a298-8075279aeaf8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -31,23 +30,23 @@ Come nell’esercizio precedente, dovrai verificare la mappatura e, in alcuni ca
 
 1. Per mappare **\_id,** scrivi la seguente espressione di campo calcolato e fai clic su anteprima
 
-```none
-concat(orderID, "-", lastOrderStatusUpdate)
-```
+   ```none
+   concat(orderID, "-", lastOrderStatusUpdate)
+   ```
 
-![Il campo calcolato per la mappatura _id, pronto per il salvataggio](assets/initial-mappings-calculated-field-for-id-mapping.png "Il campo calcolato per la mappatura _id avrà un aspetto simile a questo. Fare clic su Salva per salvare il campo calcolato")
+   ![Il campo calcolato per la mappatura _id, pronto per il salvataggio](assets/initial-mappings-calculated-field-for-id-mapping.png "Il campo calcolato per la mappatura _id avrà un aspetto simile a questo. Fare clic su Salva per salvare il campo calcolato")
 
-![Mappatura del campo calcolato con l&#39;attributo _id](assets/initial-mappings-map-calculated-field-to-id.png "Mappatura del campo calcolato con _id")
+   ![Mappatura del campo calcolato con l&#39;attributo _id](assets/initial-mappings-map-calculated-field-to-id.png "Mappatura del campo calcolato con _id")
 
 1. Assicurati che il campo **timestamp** nello schema di destinazione sia mappato al seguente campo calcolato:
 
-```none
-lastOrderStatusUpdate
-```
+   ```none
+   lastOrderStatusUpdate
+   ```
 
-![Anteprima espressione campo calcolato per la mappatura timestamp](assets/initial-mappings-expression-preview.png "Scrivere l&#39;espressione seguente e fare clic su Anteprima. NOTA che questo valore distingue tra maiuscole e minuscole e deve essere scritto esattamente in questo modo")
+   ![Anteprima espressione campo calcolato per la mappatura timestamp](assets/initial-mappings-expression-preview.png "Scrivere l&#39;espressione seguente e fare clic su Anteprima. NOTA che questo valore distingue tra maiuscole e minuscole e deve essere scritto esattamente in questo modo")
 
-![Mappatura dell&#39;espressione del campo calcolato &quot;inStore&quot; su order._devbc.acqSource](assets/initial-mappings-map-instore-expression-to-acqsource.png)
+   ![Mappatura dell&#39;espressione del campo calcolato &quot;inStore&quot; su order._devbc.acqSource](assets/initial-mappings-map-instore-expression-to-acqsource.png)
 
 1. Mappa l&#39;espressione del campo calcolato **&quot;inStore&quot;** su **order.\_devbc.acqSource**
 
@@ -57,7 +56,7 @@ lastOrderStatusUpdate
 
 Se la schermata di mappatura ora lamenta la presenza di una mappatura duplicata come **orderStatus** mappata a **order.\_devbc.acqSource,** fai clic sull&#39;icona &quot;-&quot; per rimuovere la mappatura.
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Tieni presente che più campi di input non possono essere mappati sullo stesso campo di output, in quanto questo rende ambigua la mappatura. Tuttavia, un singolo campo di input può essere mappato su più campi di output nello schema XDM.
 

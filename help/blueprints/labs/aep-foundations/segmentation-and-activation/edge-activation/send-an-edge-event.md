@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Inviare un evento Edge
 description: Invia un evento web non autenticato a Edge tramite Postman e verificane il flusso attraverso l’inoltro degli eventi, l’acquisizione del profilo e la qualificazione del pubblico Edge.
 doc-type: article
 solution: Experience Platform
 exl-id: 8d6e9552-1fa0-4f12-928c-03f836c1652e
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -110,11 +109,11 @@ In Adobe Experience Platform, cerca il profilo appena inviato dall’evento appe
 1. Fai clic su **Visualizza** per cercare il profilo
 1. Fai clic sul **ID profilo** per aprire il profilo
 
-![Risultati della ricerca per la ricerca di profili con il collegamento Visualizza per aprire il profilo corrispondente](assets/send-an-edge-event-lookup-profile.png "Profilo di ricerca")
+   ![Risultati della ricerca per la ricerca di profili con il collegamento Visualizza per aprire il profilo corrispondente](assets/send-an-edge-event-lookup-profile.png "Profilo di ricerca")
 
 1. Fai clic su **Eventi** nella barra di navigazione superiore per visualizzare l&#39;evento appena inviato
 
-![Scheda Eventi profilo con l&#39;evento esperienza appena inviato all&#39;Edge](assets/send-an-edge-event-view-profile-event.png "Visualizza l&#39;evento profilo")
+   ![Scheda Eventi profilo con l&#39;evento esperienza appena inviato all&#39;Edge](assets/send-an-edge-event-view-profile-event.png "Visualizza l&#39;evento profilo")
 
 1. Verifica che il profilo sia idoneo per i tipi di pubblico esaminando la scheda Appartenenza al pubblico nella navigazione superiore. Dovresti visualizzare quanto segue:
 

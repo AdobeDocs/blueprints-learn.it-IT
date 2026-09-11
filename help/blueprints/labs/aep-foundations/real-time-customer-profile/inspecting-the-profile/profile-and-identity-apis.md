@@ -1,11 +1,10 @@
 ---
-hold: true
 title: API di profilo e identità
 description: Utilizza l’API dell’entità profilo e l’API cluster del servizio Identity in Postman per cercare attributi di profilo, eventi e identità collegate.
 doc-type: article
 solution: Experience Platform
 exl-id: 1db55c5b-fdf8-4c63-b435-477626bb0450
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 1%
@@ -80,17 +79,17 @@ Per ottenere un’idea dell’API di ricerca entità, utilizza il profilo Modali
 1. Fai clic sulla richiesta **Ricerca entità (attributi)** per aprirla
 1. Eseguire la chiamata facendo clic sul pulsante **Invia**
 
-![Riquadro richieste Postman per la chiamata di ricerca entità (attributi) prima dell&#39;invio](assets/profile-and-identity-apis-entity-lookup-attributes-request.png "API di ricerca entità profilo (attributi)")
+   ![Riquadro richieste Postman per la chiamata di ricerca entità (attributi) prima dell&#39;invio](assets/profile-and-identity-apis-entity-lookup-attributes-request.png "API di ricerca entità profilo (attributi)")
 
-Una richiesta corretta dovrebbe rispondere con un `200 OK` e si dovrebbe vedere un risultato che contiene tutti gli attributi per il profilo Modalità Depeche.
+   Una richiesta corretta dovrebbe rispondere con un `200 OK` e si dovrebbe vedere un risultato che contiene tutti gli attributi per il profilo Modalità Depeche.
 
-![Risposta OK 200 contenente tutti gli attributi per il profilo Modalità Depeche](assets/profile-and-identity-apis-successful-attributes-api-response.png "Risposta API entità profilo (attributi) riuscita")
+   ![Risposta OK 200 contenente tutti gli attributi per il profilo Modalità Depeche](assets/profile-and-identity-apis-successful-attributes-api-response.png "Risposta API entità profilo (attributi) riuscita")
 
->[!NOTE]
->
->Per impostazione predefinita, se non è specificato alcun criterio di unione in una richiesta di entità profilo, viene utilizzato il criterio di unione predefinito nella sandbox
+   >[!NOTE]
+   >
+   >Per impostazione predefinita, se non è specificato alcun criterio di unione in una richiesta di entità profilo, viene utilizzato il criterio di unione predefinito nella sandbox
 
-Con l’API di entità è possibile utilizzare una serie di parametri di query per modificare ciò che viene restituito in risposta.
+   Con l’API di entità è possibile utilizzare una serie di parametri di query per modificare ciò che viene restituito in risposta.
 
 1. Nella richiesta di ricerca entità (attributi), fai clic sull&#39;opzione **Parametri** per la richiesta
 1. Seleziona la casella accanto a **Chiave** denominata **campi**
@@ -106,7 +105,7 @@ Una richiesta corretta dovrebbe rispondere con un `200 OK` e dovrebbero essere v
 
 ![Risposta OK filtrata 200 che mostra solo i campi Nome, Cognome e Prodotti attivi](assets/profile-and-identity-apis-successful-filtered-attributes-response.png "Risposta API di ricerca entità profilo (attributi) riuscita con filtro abilitato")
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >Congratulazioni!  Hai cercato correttamente gli attributi di un profilo utilizzando l’API di entità profilo
 

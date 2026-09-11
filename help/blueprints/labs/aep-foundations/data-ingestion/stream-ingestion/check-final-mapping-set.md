@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Verifica set di mappatura finale
 description: Confronta le mappature di acquisizione in streaming con la passthrough finale prevista e il set di mappatura campo calcolato.
 doc-type: article
 solution: Experience Platform
 exl-id: 8802aaca-f566-4972-8bd6-41aca9fae9bf
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 ## Mappature pass-through
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Prima di continuare, assicurati che la mappatura finale corrisponda a quanto mostrato di seguito.
 
@@ -62,7 +61,7 @@ ht-degree: 0%
 | concat(date\_part(&quot;mm&quot;, date(nascita\_Date, &quot;aaaa-M-g&quot;)).toString(), &quot;-&quot;, date\_part(&quot;gg&quot;, date(nascita\_Date, &quot;aaaa-M-g&quot;)).toString()) | person.bornDayAndMonth |
 | date\_part(&quot;aaaa&quot;,date(nascita\_Date,&quot;aaaa-M-g&quot;)) | person.bornYear |
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Prima di continuare, assicurati che la mappatura finale corrisponda a quanto mostrato di seguito
 

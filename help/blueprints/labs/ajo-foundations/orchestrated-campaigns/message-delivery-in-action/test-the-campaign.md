@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Testare la campagna
 description: Scopri come eseguire una campagna orchestrata in modalità di test e capire perché un canale e-mail basato su profilo di AEP genera errori di consegna che un canale basato su relazioni evita.
 doc-type: article
 solution: Experience Platform
 exl-id: e77ae8ab-f18f-4683-8fdd-ba4f4629d96c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 0%
@@ -23,15 +22,15 @@ Nei passaggi successivi eseguirai la campagna in modalità di test per confermar
 
 1. Una volta configurati i due flussi e-mail, la campagna si presenta come segue. Fai clic sul pulsante **Avvia** per eseguire la campagna in **Modalità test**
 
-![Fare clic su Avvia per eseguire la campagna in modalità di test](assets/test-the-campaign-click-start-test-mode.png)
+   ![Fare clic su Avvia per eseguire la campagna in modalità di test](assets/test-the-campaign-click-start-test-mode.png)
 
->[!NOTE]
->
->Come accennato nel laboratorio precedente, la modalità di test ti consente di convalidare l’esecuzione della campagna e i risultati delle varie attività. Ogni attività viene eseguita in sequenza fino al raggiungimento della fine del flusso.
+   >[!NOTE]
+   >
+   >Come accennato nel laboratorio precedente, la modalità di test ti consente di convalidare l’esecuzione della campagna e i risultati delle varie attività. Ogni attività viene eseguita in sequenza fino al raggiungimento della fine del flusso.
 
 
 
-&#x200B;2. Viene avviata l’esecuzione di test di tutte le attività della campagna, verifica i risultati
+2. Viene avviata l’esecuzione di test di tutte le attività della campagna, verifica i risultati
 
 ![Esecuzione test delle attività campagna in corso](assets/test-the-campaign-verify-execution-results.png)
 
@@ -41,27 +40,27 @@ Nei passaggi successivi eseguirai la campagna in modalità di test per confermar
 
 1. Per verificare la consegna di e-mail, fai clic sull&#39;attività **Invia e-mail utilizzando l&#39;attributo di profilo** e nel riquadro a destra fai clic su **Esegui test**
 
-![Esegui il test per l&#39;e-mail utilizzando l&#39;attività dell&#39;attributo del profilo](assets/test-the-campaign-run-test-profile-attribute.png)
+   ![Esegui il test per l&#39;e-mail utilizzando l&#39;attività dell&#39;attributo del profilo](assets/test-the-campaign-run-test-profile-attribute.png)
 
-&#x200B;2. Attendi il messaggio di conferma, quindi fai clic su **Visualizza report** per visualizzare i dettagli del test e-mail
+2. Attendi il messaggio di conferma, quindi fai clic su **Visualizza report** per visualizzare i dettagli del test e-mail
 
-![Fare clic su Visualizza report per visualizzare i dettagli del test e-mail](assets/test-the-campaign-view-report-1.png)
+   ![Fare clic su Visualizza report per visualizzare i dettagli del test e-mail](assets/test-the-campaign-view-report-1.png)
 
-&#x200B;3. La pagina del rapporto e-mail presenta le statistiche della campagna e lo stato di esecuzione. Il test E-mail è una verifica dell’attività per garantire che non vi siano errori e non invii e-mail. In genere il completamento richiede circa \~**5** minuti.
+3. La pagina del rapporto e-mail presenta le statistiche della campagna e lo stato di esecuzione. Il test E-mail è una verifica dell’attività per garantire che non vi siano errori e non invii e-mail. In genere il completamento richiede circa \~**5** minuti.
 
-![Pagina report e-mail con statistiche campagna](assets/test-the-campaign-campaign-statistics-1.png)
+   ![Pagina report e-mail con statistiche campagna](assets/test-the-campaign-campaign-statistics-1.png)
 
->[!NOTE]
->
->Potrebbe essere necessario aggiornare la pagina alcune volte per visualizzare il risultato del test finale.
+   >[!NOTE]
+   >
+   >Potrebbe essere necessario aggiornare la pagina alcune volte per visualizzare il risultato del test finale.
 
 
 
-&#x200B;4. Una volta completato il test e-mail, vengono presentati i risultati. Percentuale di errori. Fare clic su **Visualizza altro** per conoscerne il motivo.
+4. Una volta completato il test e-mail, vengono presentati i risultati. Percentuale di errori. Fare clic su **Visualizza altro** per conoscerne il motivo.
 
-![Frequenza errori con collegamento Visualizza altro](assets/test-the-campaign-error-rate-view-more.png)
+   ![Frequenza errori con collegamento Visualizza altro](assets/test-the-campaign-error-rate-view-more.png)
 
-&#x200B;5. Il motivo indica `Email address not found in profile`
+5. Il motivo indica `Email address not found in profile`
 
 ![Motivo: indirizzo e-mail non trovato nel profilo](assets/test-the-campaign-email-not-found-reason.png)
 
@@ -79,13 +78,13 @@ Nei passaggi successivi eseguirai la campagna in modalità di test per confermar
 
 1. Ripeti lo stesso processo per l&#39;attività **E-mail utilizzando Target Dimension**
 
-![Esegui il test per la posta elettronica utilizzando l&#39;attività di Target Dimension](assets/test-the-campaign-run-test-target-dimension.png)
+   ![Esegui il test per la posta elettronica utilizzando l&#39;attività di Target Dimension](assets/test-the-campaign-run-test-target-dimension.png)
 
-&#x200B;2. Attendi il messaggio di conferma, quindi fai clic su **Visualizza report** per visualizzare i dettagli del test e-mail
+2. Attendi il messaggio di conferma, quindi fai clic su **Visualizza report** per visualizzare i dettagli del test e-mail
 
-![Fare clic su Visualizza report per visualizzare i dettagli del test e-mail](assets/test-the-campaign-view-report-2.png)
+   ![Fare clic su Visualizza report per visualizzare i dettagli del test e-mail](assets/test-the-campaign-view-report-2.png)
 
-&#x200B;3. Una volta completato il test e-mail, vengono presentati i risultati. In questo caso, non ci saranno errori
+3. Una volta completato il test e-mail, vengono presentati i risultati. In questo caso, non ci saranno errori
 
 ![Statistiche campagna senza errori](assets/test-the-campaign-campaign-statistics-2.png)
 
@@ -111,4 +110,4 @@ Fai clic sul pulsante **Interrompi** per interrompere la **modalità di test** p
 
 Ora hai visto come testare la campagna creata per comprenderne il flusso e il comportamento. In questo caso, le sfumature dell’utilizzo delle diverse impostazioni per la configurazione del canale e-mail sono state ben comprese durante l’esecuzione del flusso di test.
 
-Ulteriori informazioni sulla modalità di test della campagna [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns), se sei interessato.
+Ulteriori informazioni sulla modalità di test della campagna [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns), se sei interessato.

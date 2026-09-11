@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Pianifica flusso di dati
 description: Configura una pianificazione ricorrente del flusso di dati di 15 minuti con backfill abilitato e scopri come gli orari di avvio UTC influiscono sulle esecuzioni.
 doc-type: article
 solution: Experience Platform
 exl-id: 9865b1eb-0d98-4cae-a928-69ea897607ca
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -47,7 +46,7 @@ Dopo aver fatto clic su **Fine**, viene visualizzata la schermata **Flussi dati*
 
 ![Schermata Flussi dati che mostra il nuovo flusso di dati con stato Nessuna esecuzione](assets/schedule-dataflow-dataflows-screen-no-runs-status.png "Schermata Origini flussi dati")
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >Devi aggiornare la pagina continuamente per visualizzare l’aggiornamento di stato, in quanto il backend non invia aggiornamenti all’interfaccia utente.
 
