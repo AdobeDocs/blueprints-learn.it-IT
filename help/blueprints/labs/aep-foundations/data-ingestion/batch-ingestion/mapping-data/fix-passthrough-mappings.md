@@ -60,7 +60,7 @@ Il mapping è corretto, ma dopo un&#39;ispezione più dettagliata **email** non 
 
 E questo in cui **email\_optIn** non esegue correttamente il mapping all&#39;oggetto di consenso errato
 
-![email_optIn mappato in modo errato all&#39;oggetto di consenso ](assets/fix-passthrough-mappings-email-optin-wrong-consent-object.png "email_optIn sembra mappato correttamente, ma non è corretto in base ai requisiti")
+![email_optIn mappato in modo errato all&#39;oggetto di consenso &#x200B;](assets/fix-passthrough-mappings-email-optin-wrong-consent-object.png "email_optIn sembra mappato correttamente, ma non è corretto in base ai requisiti")
 
 
 

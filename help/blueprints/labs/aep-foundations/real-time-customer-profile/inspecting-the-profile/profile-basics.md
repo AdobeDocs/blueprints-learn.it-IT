@@ -52,7 +52,7 @@ Fai clic sull&#39;oggetto **account** e osserva cosa appare nella barra a destra
 1. Fai clic sul pulsante **Visualizza** per cercare il profilo
 1. Fai clic sul **collegamento** al profilo per visualizzarne i dettagli
 
-![Scheda Sfoglia visualizzatore profili con spazio dei nomi e-mail e depeche.mode@dep.com ](assets/profile-basics-profile-viewer-browse-tab.png "Visualizzatore profili (Sfoglia)")
+![Scheda Sfoglia visualizzatore profili con spazio dei nomi e-mail e depeche.mode@dep.com &#x200B;](assets/profile-basics-profile-viewer-browse-tab.png "Visualizzatore profili (Sfoglia)")
 
 
 
