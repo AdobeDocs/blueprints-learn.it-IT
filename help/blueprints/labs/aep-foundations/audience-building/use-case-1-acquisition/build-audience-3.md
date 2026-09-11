@@ -158,7 +158,7 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 >
 >Abbiamo suddiviso quello che è un requisito semplice in molti tipi di pubblico per alcuni motivi. Il requisito è lo streaming, ma questi due requisiti trasformano il nostro pubblico in batch. Ulteriori dettagli qui sulle regole di idoneità per lo streaming qui:
 >
->[https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html)
+>[https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=it](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=it)
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 >
 >Dobbiamo comprendere che quando utilizziamo un pubblico all’interno di un pubblico, AEP tenterà di sequenziarlo quando possibile. In alcuni casi questo non è possibile, ad es. Se utilizzi un pubblico di tipi di pubblico, l’interdizione dal profilo avviene ogni 24 ore.
 >
->[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535)
+>[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535?profile.language=it](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535?profile.language=it)
 
 
 

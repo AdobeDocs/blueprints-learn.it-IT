@@ -119,7 +119,7 @@ I risultati hanno più di 100 colonne e ti danno un’idea dei record degli even
 
 >[!NOTE]
 >
->Curioso del significato di ogni campo, consulta il dizionario degli schemi di AJO e modifica l&#39;elenco a discesa con lo schema Eventi passaggio di Percorso: [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en)
+>Curioso del significato di ogni campo, consulta il dizionario degli schemi di AJO e modifica l&#39;elenco a discesa con lo schema Eventi passaggio di Percorso: [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=it](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=it)
 
 
 

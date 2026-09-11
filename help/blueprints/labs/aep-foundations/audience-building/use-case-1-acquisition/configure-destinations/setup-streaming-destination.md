@@ -91,7 +91,7 @@ Al termine, assicurati che la configurazione corrisponda a quella visualizzata d
 >
 >Ulteriori informazioni sui criteri di governance in Experience League
 >
->[https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions)
+>[https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=it#core-actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=it#core-actions)
 
 ## Seleziona tipi di pubblico
 

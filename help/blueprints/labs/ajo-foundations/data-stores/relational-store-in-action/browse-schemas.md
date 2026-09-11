@@ -69,4 +69,4 @@ Effettua le seguenti operazioni:
 
 Ora puoi vedere quanto è facile navigare nell’interfaccia utente Schema e relazioni.  Puoi selezionare uno o più schemi specifici e navigare per visualizzare le relazioni utili per comprendere e utilizzare i dati nell’orchestrazione delle campagne.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/get-started-schemas) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/data-management/get-started-schemas) se sei interessato.

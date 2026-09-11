@@ -74,7 +74,7 @@ In Adobe Experience Platform, cerca il profilo appena inviato dall’evento appe
 >
 >**Come leggere segmentMembership?**
 >
->[https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation)
+>[https://experienceleague.adobe.com/it/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/field-groups/profile/segmentation)
 >
 >**ups:** Questa è la chiave della mappa per diversi tipi di pubblico supportati da AEP.  La chiave ups contiene i tipi di pubblico creati dal Generatore di regole.  Altri tipi di pubblico saranno contenuti in altre chiavi (ad esempio, AAM).
 >

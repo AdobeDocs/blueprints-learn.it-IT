@@ -21,7 +21,7 @@ Si supponga per un minuto che dopo aver generato lo schema sia necessario tornar
 Per ulteriori informazioni su JSON PATCH, consulta i collegamenti riportati di seguito. Tuttavia, ai fini di questa esercitazione, supponiamo di avere un&#39;idea del funzionamento di 😄
 
 - [https://jsonpatch.com/](https://jsonpatch.com/)
-- [Nozioni di base sulle API di Experience League](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=en#json-patch)
+- [Nozioni di base sulle API di Experience League](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=it#json-patch)
 
 ![Diagramma dell&#39;applicazione della patch a un campo planDescription mancante in uno schema esistente](assets/modify-schema-json-patch-patching-missing-plan-description-field.png "Applicazione della patch a un campo Plan Description mancante")
 

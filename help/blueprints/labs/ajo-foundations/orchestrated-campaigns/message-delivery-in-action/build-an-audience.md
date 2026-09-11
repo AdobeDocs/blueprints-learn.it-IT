@@ -80,4 +80,4 @@ Nel prossimo set di passaggi creerai un pubblico dallo schema relazionale selezi
 
 Ora hai visto quanto è facile utilizzare l’attività Genera pubblico nella campagna scegliendo la dimensione di targeting giusta dallo schema relazionale. Quindi hai aggiunto una condizione per perfezionare i criteri di creazione del pubblico e hai utilizzato l’opzione di aggiornamento per verificare il numero previsto di righe.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/build-audience) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/build-audience) se sei interessato.
