@@ -25,7 +25,7 @@ Questo passaggio è semplice in quanto tutto ciò che desideri è aggiungere un�
 
 ## Creare il fork
 
-1. Nell&#39;area di lavoro del flusso di lavoro, fai clic sull&#39;icona **+** **** dopo l&#39;attività Genera pubblico e seleziona l&#39;**Attività Fork**
+1. Nell&#39;area di lavoro del flusso di lavoro, fai clic sull&#39;icona **+** **&#x200B;**&#x200B;dopo l&#39;attività Genera pubblico e seleziona l&#39;**Attività Fork**
 
    ![Aggiungi un&#39;attività Fork dopo l&#39;attività Genera pubblico](assets/fork-the-result-add-fork-activity.png)
 

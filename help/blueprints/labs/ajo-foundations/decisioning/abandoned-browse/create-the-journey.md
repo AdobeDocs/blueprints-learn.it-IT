@@ -77,16 +77,16 @@ ht-degree: 0%
 >
 >L’offerta di fallback è facoltativa perché si applicherebbe solo se gli utenti finali potessero essere (o diventare) non idonei per nessuna delle offerte. Nel nostro caso, la nostra strategia di selezione era per tutti i visitatori, e le uniche persone che avrebbero raggiunto il nodo CBE erano quelle che sono entrate nel Percorso. L’autenticazione è un requisito per l’entrata nel Percorso (lo spazio dei nomi impostato nel Percorso è uno che avrebbero solo se fossero stati autenticati). Abbiamo anche creato un’offerta di fallback nella formula di classificazione, quindi nel nostro caso non è necessario impostare questa offerta di fallback.
 
-11. Fai clic sul pulsante blu **Avanti** per rivedere il criterio di decisione.
+&#x200B;11. Fai clic sul pulsante blu **Avanti** per rivedere il criterio di decisione.
 
 ![Rivedi il passaggio per il criterio di decisione prima di crearlo](assets/create-the-journey-review-decision-policy.png)
 
-12. Una volta che tutto sembra corretto, fai clic sul pulsante blu **Crea**. Una volta creato, si ritorna alla pagina dell’editor di espressioni.
-13. Dovresti visualizzare una schermata simile a quella seguente; in caso contrario, fai di nuovo clic su **Criterio di decisione** per visualizzare il criterio di decisione.
+&#x200B;12. Una volta che tutto sembra corretto, fai clic sul pulsante blu **Crea**. Una volta creato, si ritorna alla pagina dell’editor di espressioni.
+&#x200B;13. Dovresti visualizzare una schermata simile a quella seguente; in caso contrario, fai di nuovo clic su **Criterio di decisione** per visualizzare il criterio di decisione.
 
 ![L&#39;editor espressioni che mostra il criterio di decisione è pronto per l&#39;inserimento](assets/create-the-journey-decision-policy-ready.png)
 
-14. Fare clic sul pulsante **+ Inserisci criterio** per visualizzare un ciclo ForEach nell&#39;editor di codice:
+&#x200B;14. Fare clic sul pulsante **+ Inserisci criterio** per visualizzare un ciclo ForEach nell&#39;editor di codice:
 
 ![Ciclo ForEach inserito nell&#39;editor di codice dopo l&#39;inserimento del criterio di decisione](assets/create-the-journey-foreach-loop-inserted.png)
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 >
 >Perché un ciclo per ogni ciclo? Nel nostro caso, stiamo solo restituendo una singola offerta. Tuttavia, considera i passaggi precedenti in cui potevamo restituire più offerte. Quando si considera la funzionalità, il meccanismo di ciclo qui ha senso.
 
-15. Aggiungi un JSON valido entro i limiti del ciclo per restituire la marca, il modello e il livello del telefono che deve essere offerto all’utente finale. Poiché è attivo anche il limite di frequenza, è necessario aggiungere un trackingToken alla risposta. Per ulteriori informazioni, consulta le istruzioni più avanti. Per risparmiare tempo, copia e incolla queste righe di codice nell&#39;editor di codice all&#39;interno del ciclo For Each:
+&#x200B;15. Aggiungi un JSON valido entro i limiti del ciclo per restituire la marca, il modello e il livello del telefono che deve essere offerto all’utente finale. Poiché è attivo anche il limite di frequenza, è necessario aggiungere un trackingToken alla risposta. Per ulteriori informazioni, consulta le istruzioni più avanti. Per risparmiare tempo, copia e incolla queste righe di codice nell&#39;editor di codice all&#39;interno del ciclo For Each:
 
 ```javascript
 {
@@ -111,14 +111,14 @@ ht-degree: 0%
 >
 >Ricorda che hai aggiunto attributi allo schema XDM dell’offerta standard, in particolare la marca, il modello e il livello. Quindi, al momento della creazione delle offerte, hai popolato questi attributi. Ora puoi aggiungere tali attributi come variabili compilate con i valori dell’offerta selezionata. Il campo trackingToken è un valore generato dal sistema e utilizzato per tracciare clic e impression.
 
-16. Posizionare il cursore tra **&quot;&quot;** del nodo &#39;make&#39;. Inserire la creazione dell&#39;offerta spostandosi nel menu del criterio di decisione sul nodo **\_dep > Dispositivo > Rendi**.  Fai clic sull&#39;icona **+** nell&#39;elemento **Make** per visualizzare l&#39;elemento nell&#39;editor.
+&#x200B;16. Posizionare il cursore tra **&quot;&quot;** del nodo &#39;make&#39;. Inserire la creazione dell&#39;offerta spostandosi nel menu del criterio di decisione sul nodo **\_dep > Dispositivo > Rendi**.  Fai clic sull&#39;icona **+** nell&#39;elemento **Make** per visualizzare l&#39;elemento nell&#39;editor.
 
 ![Crea un attributo dal criterio di decisione popolato nell&#39;editor JSON](assets/create-the-journey-populate-make-attribute.png)
 
-17. Aggiungere gli attributi **model** e **tier** in modo simile.
-18. Fai clic su **Criterio decisione** nella navigazione attributi per tornare al livello principale.
-19. Popolare l&#39;attributo trackingToken passando al valore del token di tracciamento tramite **\_experience > decisioning > decisionitem > Tracking Token** path.
-20. Infine, racchiudere l&#39;intero codice in un set di parentesi quadre (**\[]**). Il codice JSON finale deve essere simile al seguente:
+&#x200B;17. Aggiungere gli attributi **model** e **tier** in modo simile.
+&#x200B;18. Fai clic su **Criterio decisione** nella navigazione attributi per tornare al livello principale.
+&#x200B;19. Popolare l&#39;attributo trackingToken passando al valore del token di tracciamento tramite **\_experience > decisioning > decisionitem > Tracking Token** path.
+&#x200B;20. Infine, racchiudere l&#39;intero codice in un set di parentesi quadre (**\[]**). Il codice JSON finale deve essere simile al seguente:
 
 ![Codice JSON finale racchiuso tra parentesi quadre per la risposta CBE](assets/create-the-journey-final-json-code.png)
 
@@ -128,16 +128,16 @@ ht-degree: 0%
 
 
 
-21. Una volta visualizzata la schermata precedente, fai clic su **Salva e chiudi** in alto a destra per salvare il codice. Viene quindi visualizzata di nuovo la pagina Esperienza basata su codice.
-22. Fai clic sull&#39;icona freccia indietro **\&lt;** accanto al nome del Percorso e vieni reindirizzato all&#39;area di lavoro.
+&#x200B;21. Una volta visualizzata la schermata precedente, fai clic su **Salva e chiudi** in alto a destra per salvare il codice. Viene quindi visualizzata di nuovo la pagina Esperienza basata su codice.
+&#x200B;22. Fai clic sull&#39;icona freccia indietro **\&lt;** accanto al nome del Percorso e vieni reindirizzato all&#39;area di lavoro.
 
 ![Area di lavoro di Percorso dopo il ritorno dall&#39;editor esperienze basato su codice](assets/create-the-journey-return-to-canvas.png)
 
-23. Fai clic sul pulsante blu **Salva** per salvare il nodo dell&#39;azione CBE. Il Percorso si presenta ora come segue:
+&#x200B;23. Fai clic sul pulsante blu **Salva** per salvare il nodo dell&#39;azione CBE. Il Percorso si presenta ora come segue:
 
 ![Area di lavoro Percorsi con il nodo azioni CBE completato](assets/create-the-journey-completed-canvas.png)
 
-24. Al termine del Percorso, fai clic sul pulsante blu **Pubblica** in alto a destra e di nuovo **Pubblica** quando viene visualizzata la casella di conferma. Dopo un momento o due, vedete che il vostro Percorso è ora live!
+&#x200B;24. Al termine del Percorso, fai clic sul pulsante blu **Pubblica** in alto a destra e di nuovo **Pubblica** quando viene visualizzata la casella di conferma. Dopo un momento o due, vedete che il vostro Percorso è ora live!
 
 ![Pubblicato e live iPhone 17 Abbandona il Percorso di navigazione](assets/create-the-journey-published-live.png)
 

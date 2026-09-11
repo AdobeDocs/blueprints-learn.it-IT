@@ -36,15 +36,15 @@ Crea un pubblico di tutti i profili con un utilizzo elevato dei dati di fatturaz
 
 
 
-3. Cercare il nome del piano nel profilo e aggiungerlo (Profilo individuale XDM > Dispositivo > Dettagli piano > Nome piano). Seleziona Does not Equal &quot;Ultimate&quot;
+&#x200B;3. Cercare il nome del piano nel profilo e aggiungerlo (Profilo individuale XDM > Dispositivo > Dettagli piano > Nome piano). Seleziona Does not Equal &quot;Ultimate&quot;
 
    ![Il nome del piano selezionato non è uguale a Ultimate](assets/option-2-use-pre-aggregates-select-does-not-equal-ultimate.png)
 
 
 
-4. Fornisci una descrizione.  Il metodo di valutazione della convalida è Streaming.
+&#x200B;4. Fornisci una descrizione.  Il metodo di valutazione della convalida è Streaming.
 
-5. Salva il pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate (Agg)*&quot;
+&#x200B;5. Salva il pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate (Agg)*&quot;
 
 >[!NOTE]
 >

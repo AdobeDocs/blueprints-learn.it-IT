@@ -77,7 +77,7 @@ Un modo per considerare le regole di adeguamento delle priorità è trattarle co
 
 3. Lascia l&#39;operatore impostato su &quot;È uguale a&quot; e nella casella di testo rimanente immetti il nome dell&#39;elemento di offerta ultra-tier, che è **iphone:17\:ultra**. Dopo aver inserito il testo, l’interfaccia utente si aggiorna e indica che la condizione corrispondente è stata accettata.
 4. Fai clic su **+Aggiungi condizione**, quindi fai clic sulla **nuova casella di testo visualizzata** (contiene il testo &#39;*Fai clic per creare un elemento di decisione...*&#39;
-5. Fare clic sull&#39;opzione **Seleziona attributo** disponibile**.**
+5. Fare clic sull&#39;opzione **Seleziona attributo** disponibile&#x200B;**.**
 6. Quando si apre la finestra di dialogo &#39;Seleziona un attributo&#39;, fare clic su **Attributi profilo > Persona** (probabilmente sarà necessario scorrere verso il basso) **> Anno di nascita**. Una volta selezionata, fai clic su **Salva.**
 
    >[!NOTE]
@@ -144,7 +144,7 @@ Un modo per considerare le regole di adeguamento delle priorità è trattarle co
 >- Gli utenti nati nel 1990 con un ID **piano = 1** avranno offerte Ultra e Pro rimosse, anche se si sono classificati ai primi posti. L&#39;utente vede le offerte Base e Generic solo perché i livelli Ultra e Pro hanno una condizione aggiuntiva: solo gli utenti con **ID piano 2 o 3** possono vederle.
 >- Poiché l&#39;offerta generica non ha regole per il limite di frequenza, l&#39;utente dell&#39;anno di nascita **1970** non vedrà mai l&#39;offerta Ultra, in quanto il suo punteggio di priorità è inferiore al punteggio incrementato del generico.
 
-5. Con tutte le regole e il punteggio di priorità predefinito attivo, scorri verso l&#39;alto e fai clic sul pulsante blu **Crea** nell&#39;angolo superiore destro.
+&#x200B;5. Con tutte le regole e il punteggio di priorità predefinito attivo, scorri verso l&#39;alto e fai clic sul pulsante blu **Crea** nell&#39;angolo superiore destro.
 
 >[!TIP]
 >

@@ -69,27 +69,27 @@ Questo passaggio illustra come riutilizzare i modelli nei diversi percorsi, cons
 
 ![Modifica opzione e-mail per l&#39;attività e-mail della campagna](assets/creating-the-email-click-edit-email.png)
 
-11. Fai clic sulla **scheda Azione** e seleziona **la tua** configurazione e-mail. Nella sandbox potrebbe essere visualizzato come E-mail relazionale. (Seleziona qualsiasi)
+&#x200B;11. Fai clic sulla **scheda Azione** e seleziona **la tua** configurazione e-mail. Nella sandbox potrebbe essere visualizzato come E-mail relazionale. (Seleziona qualsiasi)
 
 ![Scheda Azione con la configurazione e-mail selezionata](assets/creating-the-email-action-tab-email-configuration.png)
 
-12. Fai clic sulla **scheda Contenuto**
+&#x200B;12. Fai clic sulla **scheda Contenuto**
 
 ![Scheda Contenuto nell&#39;editor e-mail](assets/creating-the-email-click-content-tab.png)
 
-13. Fai clic su **Applica modello di contenuto**
+&#x200B;13. Fai clic su **Applica modello di contenuto**
 
 ![Opzione Applica modello di contenuto nell&#39;editor e-mail](assets/creating-the-email-click-apply-content-template.png)
 
-14. Seleziona il modello **&quot;Modello promozionale&quot;** creato e fai clic su **Conferma**
+&#x200B;14. Seleziona il modello **&quot;Modello promozionale&quot;** creato e fai clic su **Conferma**
 
 ![Selezione del modello promozionale e clic su Conferma](assets/creating-the-email-select-promotional-template-confirm.png)
 
-15. Fai clic su **Modifica corpo dell&#39;e-mail**
+&#x200B;15. Fai clic su **Modifica corpo dell&#39;e-mail**
 
 ![Modifica il corpo dell&#39;e-mail dopo l&#39;applicazione del modello](assets/creating-the-email-click-edit-email-body.png)
 
-16. Conferma che i nuovi blocchi di intestazione, protagonista, piè di pagina e contenuto vengano visualizzati correttamente.
+&#x200B;16. Conferma che i nuovi blocchi di intestazione, protagonista, piè di pagina e contenuto vengano visualizzati correttamente.
 
 ![I blocchi di intestazione, protagonista, piè di pagina e contenuto vengono visualizzati correttamente nell&#39;e-mail](assets/creating-the-email-header-hero-footer-blocks-confirmed.png)
 

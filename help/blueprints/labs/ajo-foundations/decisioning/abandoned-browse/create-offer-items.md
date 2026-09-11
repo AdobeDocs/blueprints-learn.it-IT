@@ -84,7 +84,7 @@ Il primo e più semplice elemento di offerta creato è l&#39;offerta di fallback
 >
 >In pratica, e nel caso di offerte più complesse, è necessario attivare un processo di approvazione appropriato per garantire che gli elementi dell’offerta siano stati creati correttamente. Per risparmiare tempo in questo laboratorio, è sufficiente approvare ogni elemento di offerta che si crea.
 
-12. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
+&#x200B;12. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
 
 ## Crea articolo offerta modello base
 
@@ -150,7 +150,7 @@ Ora che sono state create le offerte del modello generico e di base, potete pass
 
 ![Configurazione completata per l&#39;elemento di offerta Ultra tier](assets/create-offer-items-ultra-offer-final-config.png)
 
-11. Dopo aver verificato che tutte le impostazioni siano corrette, salva e approva l&#39;elemento dell&#39;offerta. Ora puoi vedere tutti e quattro gli elementi dell’offerta, ciascuno con una priorità univoca.
+&#x200B;11. Dopo aver verificato che tutte le impostazioni siano corrette, salva e approva l&#39;elemento dell&#39;offerta. Ora puoi vedere tutti e quattro gli elementi dell’offerta, ciascuno con una priorità univoca.
 
 ![Pagina Offerte in cui sono elencati tutti e quattro gli elementi di offerta con priorità univoche](assets/create-offer-items-all-four-offers-priority.png)
 

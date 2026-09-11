@@ -55,7 +55,7 @@ Se lo desideri, puoi fare clic sull&#39;interruttore in alto per **escludere eve
 
 3 Eventi esterni
 
-5. Fai clic sulla scheda **E-mail** (nella barra a sinistra)
+&#x200B;5. Fai clic sulla scheda **E-mail** (nella barra a sinistra)
    - **E-mail - Prestazioni invio**
      - Sono presenti alcuni valori per **Delivered** e **Sent** (il conteggio dipenderà dal numero di eventi inviati, da eventuali errori e così via)
      - Speriamo di non avere errori (a meno che non si siano verificati alcuni problemi in precedenza)
@@ -64,7 +64,7 @@ Se lo desideri, puoi fare clic sull&#39;interruttore in alto per **escludere eve
 
    ![Scheda E-mail con le prestazioni e le statistiche di invio](assets/validate-journey-email-tab-sending-performance.png)
 
-6. Controlla la tua **casella in entrata** e verifica di aver ricevuto l&#39;e-mail (è simile a quella riportata di seguito)
+&#x200B;6. Controlla la tua **casella in entrata** e verifica di aver ricevuto l&#39;e-mail (è simile a quella riportata di seguito)
    - *,* il tuo ordine ha spedito l&#39;ETA: *10/17/2026* Numero di registrazione: *051009364*
 
    >[!NOTE]
@@ -81,7 +81,7 @@ Se lo desideri, puoi fare clic sull&#39;interruttore in alto per **escludere eve
 
 
 
-7. *Dopo 30-60 minuti*, puoi anche controllare il set di dati nel data lake con: **Query** -> **Crea query** -> **Copia/Incolla SQL** -> **Esegui**
+&#x200B;7. *Dopo 30-60 minuti*, puoi anche controllare il set di dati nel data lake con: **Query** -> **Crea query** -> **Copia/Incolla SQL** -> **Esegui**
 
 >[!NOTE]
 >

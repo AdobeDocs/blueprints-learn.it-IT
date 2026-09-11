@@ -68,7 +68,7 @@ Inoltre, osserva come ogni campo specifico del foglio di mappatura viene convali
 
 
 
-2. Aggiorna `title` e `description` per il gruppo di campi utilizzando il seguente formato: `Customer Account Details - Sandbox <your number here>`
+&#x200B;2. Aggiorna `title` e `description` per il gruppo di campi utilizzando il seguente formato: `Customer Account Details - Sandbox <your number here>`
 
 
 
@@ -76,9 +76,9 @@ Inoltre, osserva come ogni campo specifico del foglio di mappatura viene convali
 
 
 
-3. Eseguire facendo clic sul pulsante `Send`.  Dovresti trovare una risposta simile alla schermata seguente.
+&#x200B;3. Eseguire facendo clic sul pulsante `Send`.  Dovresti trovare una risposta simile alla schermata seguente.
 
-4. Copia il valore `$id` del gruppo di campi Dettagli account cliente appena creato.
+&#x200B;4. Copia il valore `$id` del gruppo di campi Dettagli account cliente appena creato.
 
 ![Risposta API riuscita dopo la creazione del gruppo di campi personalizzato](assets/create-custom-field-groups-step-2-create-custom-field-group-success.png "Passaggio 2 - Creazione del gruppo di campi personalizzato completata")
 

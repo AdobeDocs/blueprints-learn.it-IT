@@ -84,7 +84,7 @@ In Adobe Experience Platform esistono molti gruppi di campi XDM standard da aggi
 
 
 
-3. **Selezionare** la casella di controllo accanto al gruppo di campi, quindi fare clic sul pulsante **Aggiungi gruppi di campi**
+&#x200B;3. **Selezionare** la casella di controllo accanto al gruppo di campi, quindi fare clic sul pulsante **Aggiungi gruppi di campi**
 
 ![Selezionare il gruppo di campi Dettagli demografici per aggiungerlo allo schema](assets/model-standard-objects-select-demographic-details-field-group.png "Selezionare il gruppo di campi Dettagli demografici per aggiungerlo allo schema")
 

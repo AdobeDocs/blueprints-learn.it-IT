@@ -48,7 +48,7 @@ Questa parte dell’esercizio semplifica la personalizzazione. Aggiungi nome e c
 
    ![Icona Personalizzazione nella barra degli strumenti del testo e-mail](assets/personalization-and-content-experimentation-click-personalization-icon.png)
 
-4. Cerca **F****first Name**.
+4. Cerca **F**&#x200B;**first Name**.
 
    ![Ricerca dell&#39;attributo First Name nel pannello di personalizzazione](assets/personalization-and-content-experimentation-search-first-name-field.png)
 

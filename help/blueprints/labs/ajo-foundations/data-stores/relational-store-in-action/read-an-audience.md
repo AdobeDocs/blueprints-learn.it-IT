@@ -128,11 +128,11 @@ Orchestrated Campaign utilizza lo schema relazionale per tutte le attività. Qua
 
 ![Attributo Source selezionato dalle colonne della dimensione Targeting](assets/read-an-audience-select-source-attribute.png)
 
-11. I valori distinti per la colonna Source sono disponibili nel menu a discesa. Per la **condizione personalizzata**, seleziona **&quot;In Store&quot;** dal menu a discesa e fai clic su **Conferma** per uscire
+&#x200B;11. I valori distinti per la colonna Source sono disponibili nel menu a discesa. Per la **condizione personalizzata**, seleziona **&quot;In Store&quot;** dal menu a discesa e fai clic su **Conferma** per uscire
 
 ![Condizione personalizzata impostata su In Store](assets/read-an-audience-set-in-store-condition.png)
 
-12. Nel riquadro dei dettagli dell&#39;attività **Divisione**, le impostazioni per la prima Divisione sono state completate. Fai clic su **Aggiungi segmento** alla seconda suddivisione
+&#x200B;12. Nel riquadro dei dettagli dell&#39;attività **Divisione**, le impostazioni per la prima Divisione sono state completate. Fai clic su **Aggiungi segmento** alla seconda suddivisione
 
 ![Pulsante Aggiungi segmento nel riquadro dei dettagli attività di suddivisione](assets/read-an-audience-add-segment-button.png)
 
@@ -140,33 +140,33 @@ Orchestrated Campaign utilizza lo schema relazionale per tutte le attività. Qua
 
 ![Nuovo segmento denominato Risultato](assets/read-an-audience-new-result-segment.png)
 
-13. Rinomina &quot;**Risultato**&quot; in &quot;**Non nell&#39;archivio**&quot; e fai clic su **Crea filtro** per impostare la condizione del filtro
+&#x200B;13. Rinomina &quot;**Risultato**&quot; in &quot;**Non nell&#39;archivio**&quot; e fai clic su **Crea filtro** per impostare la condizione del filtro
 
 ![Segmento rinominato in Non in archivio con l&#39;opzione filtro](assets/read-an-audience-rename-not-in-store-segment.png)
 
-14. Nel riquadro **Crea filtro**, fare clic su **Aggiungi condizione**. Segui lo stesso approccio di cui sopra, espandi la **dimensione di targeting** facendo clic su **>**, quindi seleziona `Source` dall&#39;elenco e fai clic su **Conferma**
+&#x200B;14. Nel riquadro **Crea filtro**, fare clic su **Aggiungi condizione**. Segui lo stesso approccio di cui sopra, espandi la **dimensione di targeting** facendo clic su **>**, quindi seleziona `Source` dall&#39;elenco e fai clic su **Conferma**
 
 ![Dimensione targeting espansa per mostrare le colonne dell&#39;archivio relazionale](assets/read-an-audience-expand-targeting-dimension.png)
 
 ![Attributo Source selezionato dalle colonne della dimensione Targeting](assets/read-an-audience-select-source-attribute.png)
 
-15. Per la **condizione personalizzata**, selezionare **&quot;In store&quot;** dal menu a discesa e per l&#39;operatore selezionare &quot;**diverso da**&quot;. Fai clic su **Conferma** per uscire
+&#x200B;15. Per la **condizione personalizzata**, selezionare **&quot;In store&quot;** dal menu a discesa e per l&#39;operatore selezionare &quot;**diverso da**&quot;. Fai clic su **Conferma** per uscire
 
 ![Condizione personalizzata impostata su non uguale a In Store](assets/read-an-audience-set-not-in-store-condition.png)
 
-16. Nel riquadro dei dettagli dell&#39;attività **Divisione**, le impostazioni per le due divisioni sono state completate. Fai clic su **Avvia** per eseguire la campagna in **Modalità test**
+&#x200B;16. Nel riquadro dei dettagli dell&#39;attività **Divisione**, le impostazioni per le due divisioni sono state completate. Fai clic su **Avvia** per eseguire la campagna in **Modalità test**
 
 ![Pulsante Avvia per eseguire la campagna in modalità di test dopo la configurazione della suddivisione](assets/read-an-audience-start-test-mode-second-run.png)
 
-17. L’esecuzione del test inizia e i risultati vengono visualizzati al termine. Poiché nello schema relazionale sono state trovate solo **7** dimensioni di destinazione corrispondenti, lo stesso conteggio viene osservato anche dopo le operazioni di suddivisione (**7** e **0**)
+&#x200B;17. L’esecuzione del test inizia e i risultati vengono visualizzati al termine. Poiché nello schema relazionale sono state trovate solo **7** dimensioni di destinazione corrispondenti, lo stesso conteggio viene osservato anche dopo le operazioni di suddivisione (**7** e **0**)
 
 ![Dividi risultati attività con conteggi di 7 e 0](assets/read-an-audience-verify-split-counts.png)
 
-18. Fai clic su ogni casella dei risultati e **Anteprima risultati** per visualizzare i risultati
+&#x200B;18. Fai clic su ogni casella dei risultati e **Anteprima risultati** per visualizzare i risultati
 
 ![Opzione Anteprima risultati per ogni casella risultati divisa](assets/read-an-audience-preview-split-results.png)
 
-19. Fai clic su **Interrompi** per interrompere la **modalità di test** della campagna
+&#x200B;19. Fai clic su **Interrompi** per interrompere la **modalità di test** della campagna
 
 ![Pulsante Interrompi per terminare l&#39;esecuzione finale della modalità di test](assets/read-an-audience-stop-test-mode-final.png)
 

@@ -25,7 +25,7 @@ Per questo caso d’uso non c’è molto lavoro preliminare da fare. Fondamental
 
 
 
-3. Cerca &quot;utilizzo&quot; negli Eventi.  Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
+&#x200B;3. Cerca &quot;utilizzo&quot; negli Eventi.  Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
 
 ![Cerca informazioni sull&#39;utilizzo negli eventi - nessuna descrizione visualizzata](assets/pre-work-search-usage-in-events.png)
 

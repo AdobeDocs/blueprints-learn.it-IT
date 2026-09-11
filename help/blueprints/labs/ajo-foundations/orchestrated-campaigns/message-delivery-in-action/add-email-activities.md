@@ -72,7 +72,7 @@ Nei passaggi successivi, sfrutterai la campagna per aggiungere due attività E-m
 
 ![Finestra di dialogo di conferma con il pulsante Salva e chiudi](assets/add-email-activities-save-and-close-dialog.png)
 
-11. Controlla le proprietà e le azioni Email, incluso il testo aggiunto al corpo dell’Email. Fai clic sulla **freccia a sinistra** per tornare all&#39;area di lavoro della campagna
+&#x200B;11. Controlla le proprietà e le azioni Email, incluso il testo aggiunto al corpo dell’Email. Fai clic sulla **freccia a sinistra** per tornare all&#39;area di lavoro della campagna
 
 ![Torna all&#39;area di lavoro della campagna](assets/add-email-activities-back-to-campaign-canvas.png)
 

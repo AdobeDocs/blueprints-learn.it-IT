@@ -208,7 +208,7 @@ Dopo aver verificato che la schermata sia simile a quella riportata di seguito, 
 
 
 
-4. Al termine dell’operazione, dovresti vedere che l’azione è stata aggiunta alla regola. Fai clic su **Salva** per continuare.
+&#x200B;4. Al termine dell’operazione, dovresti vedere che l’azione è stata aggiunta alla regola. Fai clic su **Salva** per continuare.
 
 ![Editor regole che mostra l&#39;azione configurata con il pulsante Salva evidenziato](assets/create-property-save-rule-button.png "Salva la regola")
 

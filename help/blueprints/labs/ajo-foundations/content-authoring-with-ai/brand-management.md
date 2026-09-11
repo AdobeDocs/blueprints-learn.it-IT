@@ -214,7 +214,7 @@ Quindi, migliora il brand aggiungendo una regola che assicuri che i pulsanti e-m
 
 5. Fare clic su **Aggiungi**.
 
-   ![Pulsante Aggiungi per la regola di esclusione push ](assets/brand-management-click-add-rule-button.png)
+   ![Pulsante Aggiungi per la regola di esclusione push &#x200B;](assets/brand-management-click-add-rule-button.png)
 
 6. Conferma che la nuova regola Do not venga visualizzata come `Be pushy` nell&#39;elenco.
 

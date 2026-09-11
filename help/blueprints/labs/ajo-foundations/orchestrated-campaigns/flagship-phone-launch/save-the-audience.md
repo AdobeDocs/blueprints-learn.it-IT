@@ -22,7 +22,7 @@ Nei passaggi successivi salverai il pubblico creato su Audience Portal in modo c
 
 ## Modificare la dimensione
 
-1. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona ****+**** nel ramo **Salva pubblico** e dall&#39;elenco delle attività selezionare l&#39;attività **Cambia dimensione**
+1. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona **&#x200B;**+**&#x200B;** nel ramo **Salva pubblico** e dall&#39;elenco delle attività selezionare l&#39;attività **Cambia dimensione**
 
    ![Aggiungi l&#39;attività di modifica della dimensione nel ramo Save Audience](assets/save-the-audience-add-change-dimension.png)
 

@@ -108,15 +108,15 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-5. Fai clic su Audiences —> Experience Platform. Trascina Somma utilizzo fatturazione > 140 GB e Media utilizzo fatturazione >= 20 GB accanto a Nome piano.
+&#x200B;5. Fai clic su Audiences —> Experience Platform. Trascina Somma utilizzo fatturazione > 140 GB e Media utilizzo fatturazione >= 20 GB accanto a Nome piano.
 
    ![Trascina i tipi di pubblico di utilizzo fatturazione accanto a Nome piano](assets/option-1-using-audiences-to-aggregate-20-gb-next-to-plan-name.png)
 
 
 
-6. Copiare lo pseudo codice nella descrizione
+&#x200B;6. Copiare lo pseudo codice nella descrizione
 
-7. Seleziona questa opzione per Streaming. **Non può essere in streaming**. Apporta alcune modifiche:
+&#x200B;7. Seleziona questa opzione per Streaming. **Non può essere in streaming**. Apporta alcune modifiche:
 
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-8. Sostituisci **Nome piano (Nome piano)** con: Profilo individuale XDM > Devbc > Dettagli piano > **Nome piano**
+&#x200B;8. Sostituisci **Nome piano (Nome piano)** con: Profilo individuale XDM > Devbc > Dettagli piano > **Nome piano**
 
    ![Sostituisci nome piano (nome piano) con il campo Nome piano denormalizzato](assets/option-1-using-audiences-to-aggregate-replace-denormalized-plan-name.png)
 
@@ -142,7 +142,7 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-9. Verifica di poter salvare l’elemento come Streaming. Salva pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate*&quot;
+&#x200B;9. Verifica di poter salvare l’elemento come Streaming. Salva pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate*&quot;
 
 >[!NOTE]
 >

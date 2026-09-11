@@ -134,17 +134,17 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 
 
 
-5. Fornisci una descrizione.
+&#x200B;5. Fornisci una descrizione.
 
-6. Cambia in streaming
+&#x200B;6. Cambia in streaming
 
-7. Salva come &quot;*ha visitato la pagina iPhone 14 ma non ne è proprietario né l&#39;ha ordinata*&quot;
+&#x200B;7. Salva come &quot;*ha visitato la pagina iPhone 14 ma non ne è proprietario né l&#39;ha ordinata*&quot;
 
-8. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
+&#x200B;8. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
 
-9. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
+&#x200B;9. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
 
-10. Fare clic su Avanti e su Fine
+&#x200B;10. Fare clic su Avanti e su Fine
 
 >[!NOTE]
 >

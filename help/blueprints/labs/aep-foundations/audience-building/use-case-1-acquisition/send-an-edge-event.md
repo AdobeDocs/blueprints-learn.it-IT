@@ -142,13 +142,13 @@ In Adobe Experience Platform, cerca il profilo appena inviato dall’evento appe
 
 
 
-3. Fai clic su **Eventi** nella barra di navigazione superiore per visualizzare l&#39;evento appena inviato
+&#x200B;3. Fai clic su **Eventi** nella barra di navigazione superiore per visualizzare l&#39;evento appena inviato
 
    ![Visualizza l&#39;evento nella scheda Eventi del profilo](assets/send-an-edge-event-view-the-profile-event.png)
 
 
 
-4. Verifica che il profilo sia idoneo per i tipi di pubblico esaminando la scheda Appartenenza al pubblico nella navigazione superiore.  Dovresti visualizzare quanto segue:
+&#x200B;4. Verifica che il profilo sia idoneo per i tipi di pubblico esaminando la scheda Appartenenza al pubblico nella navigazione superiore.  Dovresti visualizzare quanto segue:
 
 - Qualsiasi evento Edge (negli ultimi 15 minuti)
 - Qualsiasi streaming di eventi (nell’ultima ora)

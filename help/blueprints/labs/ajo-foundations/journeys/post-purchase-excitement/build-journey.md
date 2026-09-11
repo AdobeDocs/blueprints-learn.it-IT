@@ -188,7 +188,7 @@ Per quanto riguarda i contenuti, dovrai mantenere le cose semplici. Come stupidi
 
 ![Pulsante Salva e freccia indietro in alto a destra e in alto a sinistra](assets/build-journey-save-and-back-arrow.png)
 
-12. Infine, fai clic sull&#39;icona **\&lt; Indietro** in alto a sinistra per tornare all&#39;area di lavoro del Percorso
+&#x200B;12. Infine, fai clic sull&#39;icona **\&lt; Indietro** in alto a sinistra per tornare all&#39;area di lavoro del Percorso
 
 ![Icona Indietro in alto a sinistra per tornare all&#39;area di lavoro del Percorso](assets/build-journey-back-icon-to-journey-canvas.png)
 

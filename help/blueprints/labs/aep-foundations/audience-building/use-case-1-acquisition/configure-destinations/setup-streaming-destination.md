@@ -62,7 +62,7 @@ Nell’interfaccia utente di Experience Platform, passa al catalogo delle destin
 
 
 
-3. Compila i dettagli di configurazione della destinazione come segue:
+&#x200B;3. Compila i dettagli di configurazione della destinazione come segue:
 
 - **Nome** -> `Streaming DEP Webhook - [Your Initials]`
 - **Descrizione** -> `[your webhook endpoint you copied above]`

@@ -105,16 +105,16 @@ Dovresti vedere qualcosa di simile a questo nel registro:
 
 
 
-8. **Chiudi** il browser **scheda**
-9. **Chiudi modalità test** in alto a destra
+&#x200B;8. **Chiudi** il browser **scheda**
+&#x200B;9. **Chiudi modalità test** in alto a destra
 
    ![Pulsante Chiudi modalità test in alto a destra](assets/test-journey-close-test-mode.png)
 
-10. Fai clic su **Pubblica** il Percorso in alto a destra
+&#x200B;10. Fai clic su **Pubblica** il Percorso in alto a destra
 
 ![Pulsante Pubblica per il Percorso in alto a destra](assets/test-journey-publish-journey.png)
 
-11. **Chiudi** il **Percorso** facendo clic sulla freccia \&lt;- in alto a sinistra
+&#x200B;11. **Chiudi** il **Percorso** facendo clic sulla freccia \&lt;- in alto a sinistra
 
 ![Freccia indietro in alto a sinistra per chiudere il Percorso](assets/test-journey-close-journey-back-arrow.png)
 

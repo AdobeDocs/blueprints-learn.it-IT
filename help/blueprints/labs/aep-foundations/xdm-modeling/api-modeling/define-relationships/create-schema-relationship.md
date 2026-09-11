@@ -57,9 +57,9 @@ SOLO ESEMPIO
 
 
 
-3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
+&#x200B;3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
 
-4. Eseguire l&#39;API facendo clic sul pulsante `Send`
+&#x200B;4. Eseguire l&#39;API facendo clic sul pulsante `Send`
 
 Dovresti ora visualizzare una risposta `201 Created` come segue
 
