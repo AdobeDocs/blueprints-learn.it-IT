@@ -4,19 +4,17 @@ description: Importa la raccolta API Postman di bootcamp e verifica che le varia
 doc-type: article
 solution: Experience Platform
 exl-id: 7562c7f1-0d60-4a3a-8bce-fa42bda08962
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '424'
 ht-degree: 0%
-
 ---
-
 
 # Importa raccolta API
 
 ## Obiettivo
 
-In questo passaggio verrà importata la raccolta API che contiene tutte le varie richieste da effettuare durante il bootcamp.  Queste richieste API dipendono dal file di ambiente appena importato.
+In questo passaggio, puoi importare la raccolta API, che contiene tutte le varie richieste da effettuare durante il bootcamp.  Queste richieste API dipendono dal file di ambiente appena importato.
 
 
 
@@ -32,7 +30,7 @@ In questo passaggio verrà importata la raccolta API che contiene tutte le varie
 
 ![verifica importazione raccolta postman](assets/import-api-collection-verify-collection-imported.png)
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni!  Importazione della raccolta Postman del campo di avvio completata
 
@@ -42,12 +40,12 @@ In questo passaggio verrà importata la raccolta API che contiene tutte le varie
 
 La raccolta importata contiene tutte le chiamate API necessarie per i laboratori in tutto il campo di avvio.  Ogni lab è organizzato in una cartella specifica con il proprio set di richieste.
 
-I dettagli di ciascuna cartella sono disponibili qui sotto:
+I dettagli di ciascuna cartella vengono visualizzati di seguito:
 
 - **Labs profilo e Percorso** - Contiene un set di richieste per l&#39;invio di un evento Web e un evento che simula una conferma di spedizione.
 - **Labs decisioning** - Contiene richieste per 3 visitatori che imitano le chiamate all&#39;inizio e alla fine della pagina che in genere si troverebbero in un sito con tag AEP Web SDK.
 
-Per garantire che l’ambiente e la raccolta funzionino correttamente insieme, segui la procedura riportata di seguito.
+Per garantire il corretto funzionamento dell’ambiente e della raccolta insieme, segui la procedura riportata di seguito.
 
 1. Se necessario, fai clic su **Raccolte** nella barra a sinistra, quindi espandi la cartella **Labs profilo e Percorso**.
 2. Fai clic sulla richiesta **Crea evento Web** e noterai che le variabili di ambiente sono **rosse**

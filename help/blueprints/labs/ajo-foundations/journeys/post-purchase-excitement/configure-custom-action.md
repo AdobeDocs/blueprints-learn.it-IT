@@ -4,19 +4,17 @@ description: Configura un’azione personalizzata riutilizzabile in Adobe Journe
 doc-type: article
 solution: Experience Platform
 exl-id: f81cc8be-bc2a-43cb-a2d4-89834aa94dcb
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '492'
 ht-degree: 0%
-
 ---
-
 
 # Configura azione personalizzata
 
 ## Finalità di apprendimento
 
-Creazione di un&#39;azione personalizzata che definisce il modo in cui il percorso comunicherà con un endpoint o un servizio esterno per ottenere un&#39;ETA per l&#39;arrivo del pacchetto.
+Creazione di un&#39;azione personalizzata che definisce il modo in cui il percorso comunica con un endpoint o un servizio esterno per ottenere un&#39;ETA quando arriva il pacchetto.
 
 ## Passa alle azioni
 
@@ -57,7 +55,7 @@ Nell’area di configurazione dell’endpoint fornisci i seguenti dettagli:
 
 >[!NOTE]
 >
->Una variabile consente di trasmettere un valore durante un percorso rispetto a un valore statico per tutti i percorsi
+>Una variabile consente di trasmettere un valore durante un percorso invece di utilizzare un valore statico per tutti i percorsi
 
 - **Tipo di autenticazione**: `No Authentication`
 
@@ -69,7 +67,7 @@ Nell’area di configurazione dell’endpoint fornisci i seguenti dettagli:
 
 ### Dettagli del payload di risposta
 
-Ora devi fornire un payload di esempio in modo che l’azione sappia come dovrebbe essere il payload di risposta.
+Ora devi fornire un payload di esempio in modo che l’azione sappia come si presenta il payload di risposta.
 
 1. Nell&#39;area Payload fare clic sull&#39;icona **Matita** per aprire la schermata Configurazione campo
 
@@ -105,7 +103,7 @@ Ora devi fornire un payload di esempio in modo che l’azione sappia come dovreb
 
 ### Verifica l’azione
 
-1. Fai clic sul pulsante **Invia richiesta di test** nella barra in basso a destra per verificare che non sia stato incasinato nulla 😀
+1. Fai clic sul pulsante **Invia richiesta di test** nella barra in basso a destra per confermare che la configurazione funziona correttamente
 
    ![Pulsante Invia richiesta di test nella barra in basso a destra](assets/configure-custom-action-click-send-test-request.png)
 
@@ -132,13 +130,13 @@ Ora devi fornire un payload di esempio in modo che l’azione sappia come dovreb
 
    >[!WARNING]
    >
-   >Se non visualizzi una risposta 200 o un’anteprima, non continuare. Alza il tuo ✋ per ottenere aiuto.
+   >Se non visualizzi una risposta 200 o un’anteprima, non continuare. Chiedi aiuto al tuo facilitatore.
 
 
 
 4. Fai clic sul pulsante **Annulla** per tornare alla schermata Azione, quindi scorri di nuovo nella barra in alto a destra e fai clic sul pulsante **Salva**
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni! La tua azione personalizzata è live, grazie alle tue abilità a livello di esperti Ctrl+C, Ctrl+V.
 

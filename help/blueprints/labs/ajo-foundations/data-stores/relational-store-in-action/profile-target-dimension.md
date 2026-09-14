@@ -4,23 +4,21 @@ description: Scopri come etichettare un campo di schema relazionale come identit
 doc-type: article
 solution: Experience Platform
 exl-id: bfc71051-e471-4d5c-a9a7-bb6805a5acb1
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '559'
 ht-degree: 0%
-
 ---
-
 
 # Dimension di destinazione profilo
 
 ## Obiettivo
 
-Nei passaggi successivi, scorri l’interfaccia utente per visualizzare lo schema e impostare l’identità. Successivamente, configurerai Profile Target Dimension (Target profilo), che è il tipo di entità di targeting e riconciliazione della campagna con il profilo di AEP per la consegna.
+Nei passaggi successivi sposti l’interfaccia utente per visualizzare lo schema e impostare l’identità. Quindi, imposta il Dimension di destinazione profilo, che è il tipo di entità di destinazione e riconciliazione della campagna con il profilo di AEP per la consegna.
 
-## Perché questo è importante
+## Perché questa configurazione è importante
 
-Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimizer come è possibile unire i dati tra Real-Time Customer Profile e Relational Store. Gli ingredienti di questa configurazione sono i seguenti:
+Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimizer come è possibile unire i dati tra Real-Time Customer Profile e Relational Store. I componenti di questa configurazione sono i seguenti:
 
 - Uno schema relazionale
 - Un singolo campo dallo schema relazionale
@@ -28,7 +26,7 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 >[!CAUTION]
 >
->Senza questa configurazione attiva, non è possibile leggere o condividere tipi di pubblico né inviare messaggi da Campagne orchestrate
+>Questa configurazione deve essere attiva prima di poter leggere o condividere tipi di pubblico o inviare messaggi da campagne orchestrate
 
 ## Etichettare l’identità
 
@@ -100,7 +98,7 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 >
 >Il nome del record creato è una concatenazione del nome dello schema *(dep-rel: Customer Account)* e del campo con etichetta identità *(customer\_id)*
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni! Questo conclude il passaggio di creazione del Dimension di Target profilo nel laboratorio.
 
@@ -108,4 +106,4 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 Ora hai visto quanto è facile navigare nello schema, contrassegnare un attributo come identità e creare il Dimension di destinazione del profilo.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension) se sei interessato.

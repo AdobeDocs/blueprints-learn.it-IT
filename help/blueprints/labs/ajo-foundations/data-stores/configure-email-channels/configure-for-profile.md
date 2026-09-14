@@ -4,19 +4,17 @@ description: Scopri come configurare un canale e-mail utilizzando l’attributo 
 doc-type: article
 solution: Experience Platform
 exl-id: bb85e0aa-554e-4527-bf91-e7fd4f69ce71
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 8%
-
+source-wordcount: '656'
+ht-degree: 5%
 ---
-
 
 # Configura per profilo
 
 ## Obiettivo
 
-Nei passaggi successivi verrà creata una configurazione del canale e-mail con Percorsi e campagne orchestrate utilizzando l’attributo profilo AEP `personalEmail.address`
+Nei passaggi successivi, crei una configurazione del canale e-mail con Percorsi e campagne orchestrate utilizzando l’attributo profilo AEP `personalEmail.address`
 
 ## Creare la configurazione del canale
 
@@ -47,6 +45,10 @@ Imposta il **Tipo di e-mail** su **Marketing**
 Dal menu a discesa **Sottodominio**, seleziona **email.dep-labs.com**
 
 ![Menu a discesa Sottodominio con email.dep-labs.com selezionato](assets/configure-for-profile-select-email-subdomain.png "Configura sottodominio")
+
+>[!NOTE]
+>
+>Se esegui il self-service e non disponi di un sottodominio con provisioning preliminare, seleziona il tuo sottodominio delegato ad Adobe qui invece di `email.dep-labs.com`. Per informazioni su come delegarne una, vedere [Configurazione](../../setup.md).
 
 ## Configurare i dettagli del pool IP
 
@@ -80,7 +82,7 @@ Lascia vuoto questo campo
 
 >[!NOTE]
 >
->Per conservare una copia delle e-mail inviate, puoi includere nell’invio un indirizzo e-mail in Ccn. Immetti l’indirizzo e-mail desiderato in modo che ogni e-mail venga inviata anche in copia per conoscenza nascosta a questo indirizzo Ccn. Il dominio dell’indirizzo Ccn non deve essere lo stesso di un sottodominio delegato ad Adobe. Questa funzione è facoltativa. *Come utilizzare Ccn per le e-mail*
+>Per conservare una copia delle e-mail inviate, puoi includere nell’invio un indirizzo e-mail in Ccn. Per copiare ogni e-mail inviata a questo indirizzo Ccn, immettere l&#39;indirizzo e-mail desiderato. Il dominio dell’indirizzo Ccn non deve essere lo stesso di un sottodominio delegato ad Adobe. Questa funzione è facoltativa. *Come utilizzare Ccn per le e-mail*
 
 ## Configurare i parametri dei tentativi e-mail
 
@@ -138,7 +140,7 @@ Lascia le impostazioni predefinite
 
 >[!NOTE]
 >
->Per le campagne orchestrate, esegui il targeting dell&#39;account cliente con un&#39;e-mail, quindi devi inviare solo *un messaggio per profilo*.  L&#39;indirizzo di esecuzione utilizzato proviene dal profilo stesso (ovvero ciò che viene memorizzato nel profilo di AEP nell&#39;attributo **personalEmail.address**)
+>Per le campagne orchestrate, esegui il targeting dell&#39;account cliente con un&#39;e-mail, quindi devi inviare solo *un messaggio per profilo*.  L&#39;indirizzo di esecuzione utilizzato proviene dal profilo stesso (in particolare, ciò che viene memorizzato nel profilo di AEP nell&#39;attributo **personalEmail.address**)
 
 
 ## Rivedi e salva
@@ -148,7 +150,7 @@ Lascia le impostazioni predefinite
 
 >[!NOTE]
 >
->È stato osservato che l’elaborazione della configurazione del canale e-mail richiede fino a 2 ore.  Che schifo!
+>È stato osservato che l’elaborazione della configurazione del canale e-mail richiede fino a 2 ore.
 >
 >Continua con l’esercizio successivo mentre attendi l’elaborazione di questa configurazione di canale.
 

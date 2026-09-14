@@ -4,19 +4,17 @@ description: Contrassegna i campi di identità principale e di persona, crea una
 doc-type: article
 solution: Experience Platform
 exl-id: 52cfc0d2-ba8c-4f81-9e03-c5c2c5e276b7
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '911'
 ht-degree: 0%
-
 ---
-
 
 # Configura per profilo
 
 ## Panoramica
 
-Per utilizzare uno schema per Real-Time Customer Profile, devi prima assicurarti che sia configurato correttamente. Ciò significa prendere ciò che hai identificato durante il laboratorio LID come identità primarie/di persona, identità di relazione, ecc. e garantire che tali configurazioni vengano effettuate in ogni schema. Al termine di tutto, puoi &quot;capovolgere lo switch&quot; e abilitare uno schema da utilizzare con il profilo.
+Per utilizzare uno schema per Real-Time Customer Profile, devi innanzitutto assicurarti che sia configurato correttamente. Questo passaggio significa prendere ciò che hai identificato durante il laboratorio LID come identità primarie/di persona, identità di relazione, ecc. e garantire che tali configurazioni vengano effettuate a ogni schema. Al termine di tutto, abiliti uno schema da utilizzare con il profilo.
 
 Osservando l&#39;XDM su carta Connection 5G ERD, vengono visualizzate le seguenti informazioni sullo schema dell&#39;account cliente.  Questo è il lavoro che rimane da svolgere per utilizzare lo schema all’interno di Real-Time Customer Profile.
 
@@ -27,7 +25,7 @@ Osservando l&#39;XDM su carta Connection 5G ERD, vengono visualizzate le seguent
 
 ## Contrassegna il campo di identità principale
 
-Ogni schema richiede un campo di identità principale se deve essere utilizzato con Real-Time Customer Profile. Segui i passaggi seguenti per contrassegnare un campo come identità primaria.
+Ogni schema richiede un campo di identità principale se deve essere utilizzato con Real-Time Customer Profile. Per contrassegnare un campo come identità primaria, segui la procedura riportata di seguito.
 
 1. Apri lo schema **Account cliente** creato
 1. Seleziona il campo **\_\&lt;nome-tenant>.customerID** facendo clic sul campo nello schema
@@ -47,7 +45,7 @@ Ogni schema richiede un campo di identità principale se deve essere utilizzato 
 
 >[!NOTE]
 >
->Inoltre, nella barra a sinistra dovresti vedere i seguenti elementi. Le identità (primarie o non primarie) vengono visualizzate qui e anche le **identità primarie** sono contrassegnate come campi obbligatori.
+>Inoltre, nella barra a sinistra sono ora visibili i seguenti elementi. Le identità (primarie o non primarie) vengono visualizzate qui e anche le **identità primarie** sono contrassegnate come campi obbligatori.
 >
 >
 >
@@ -57,7 +55,7 @@ Ogni schema richiede un campo di identità principale se deve essere utilizzato 
 
 ## Contrassegna i campi di identità della persona
 
-Ricorda che ogni schema da utilizzare con il profilo cliente in tempo reale **può facoltativamente contenere** campi di identità di altre persone. Per contrassegnare un campo come identità di persona, esegui le seguenti azioni sullo schema Account cliente creato in precedenza.
+Ogni schema può **facoltativamente contenere** campi di identità di altre persone. Questa regola si applica a qualsiasi schema utilizzato con Real-Time Customer Profile. Per contrassegnare un campo come identità di persona, esegui le seguenti azioni sullo schema Account cliente creato in precedenza.
 
 1. Seleziona il campo **personalEmail.address**
 1. Controlla la casella di controllo **Identità** trovata nella barra a destra
@@ -74,7 +72,7 @@ Ricorda che ogni schema da utilizzare con il profilo cliente in tempo reale **pu
 
 ## Creare la relazione tra schemi
 
-Per correlare lo schema del piano allo schema dell’account cliente come descritto nell’ERD, è necessario definire una relazione. Per creare una relazione di schema tra gli schemi Account cliente e Piano (ricerca), segui i passaggi seguenti.
+Per correlare lo schema Piano allo schema Conto cliente come descritto in ERD, è necessario definire una relazione. Per creare una relazione di schema tra gli schemi Account cliente e Piano (ricerca), effettua le seguenti operazioni.
 
 ### Aggiungi relazione
 
@@ -88,7 +86,7 @@ Per correlare lo schema del piano allo schema dell’account cliente come descri
 ### Definisci relazione
 
 1. Nella casella di selezione Tipo selezionare l&#39;opzione **Uno a uno**
-1. Nella casella di selezione Schema di riferimento scegliere lo schema denominato **dep: Plan \[Lookup]** (creato in precedenza)
+1. Nella casella di selezione Schema di riferimento scegliere lo schema denominato **dep: Plan \[Lookup]** (questo schema è stato creato in precedenza)
 1. Fai clic su **Applica** e **Salva**
 
 ![Definizione di una relazione uno-a-uno con dep: piano [ricerca] schema](assets/configure-for-profile-define-one-to-one-relationship.png)
@@ -105,7 +103,7 @@ Al termine della procedura, dovresti vedere la visualizzazione della relazione c
 
 ## Configurare lo schema per il profilo
 
-Real-time Customer Profile unisce dati provenienti da origini diverse per creare una visualizzazione completa di ogni singolo cliente. Se desideri che i dati acquisiti da uno schema partecipino a questo processo, devi configurare lo schema da utilizzare nel profilo. A questo scopo, devi effettuare le seguenti operazioni:
+Real-Time Customer Profile unisce dati provenienti da origini diverse per creare una visualizzazione completa di ogni singolo cliente. Se desideri che i dati acquisiti da uno schema partecipino a questo processo, devi configurare lo schema da utilizzare nel profilo. A questo scopo, devi effettuare le seguenti operazioni:
 
 
 
@@ -119,7 +117,7 @@ Real-time Customer Profile unisce dati provenienti da origini diverse per creare
 
 ![Attiva il pulsante nel modale visualizzato dopo aver attivato/disattivato l&#39;opzione di profilo](assets/configure-for-profile-enable-profile-modal.png)
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni!  Hai appena creato uno schema da utilizzare con Real-Time Customer Profile.
 
@@ -127,7 +125,7 @@ Real-time Customer Profile unisce dati provenienti da origini diverse per creare
 
 ## Rivedi lo schema di unione profili
 
-Come accennato in precedenza, la potenza di XDM + Real-Time Customer Profile è la capacità di assemblare una varietà di frammenti di un individuo e i loro comportamenti insieme.  Questa viene definita &quot;visualizzazione unione&quot; del cliente.  Nei passaggi seguenti, puoi visualizzare in anteprima come si presenta questa unione per ogni classe XDM configurata per Real-Time Customer Profile
+Come accennato in precedenza, la potenza di XDM + Real-Time Customer Profile è la capacità di assemblare una varietà di frammenti di un individuo e i loro comportamenti insieme.  Questa aggregazione viene definita &quot;visualizzazione unione&quot; del cliente.  Nei passaggi seguenti, puoi visualizzare in anteprima come si presenta questa unione per ogni classe XDM configurata per Real-Time Customer Profile
 
 1. Passa a **Profili** nella barra a sinistra
 1. Seleziona la scheda **Schema unione** nel menu principale
@@ -143,4 +141,4 @@ Sfoglia la classe Profilo individuale XDM e quindi impiega qualche istante per r
 
 >[!NOTE]
 >
->Solo la classe basata su Profilo individuale XDM esegue unioni tra campi con nomi simili.
+>Solo la classe XDM basata su profilo individuale esegue unioni tra campi con nomi simili.

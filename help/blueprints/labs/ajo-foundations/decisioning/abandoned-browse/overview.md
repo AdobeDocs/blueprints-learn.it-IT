@@ -4,13 +4,11 @@ description: Scopri come creare un flusso di lavoro decisionale completo e abban
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 37b8a0b3-2820-4303-81d2-19890a3c5782
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '461'
 ht-degree: 0%
-
 ---
-
 
 # Sfoglia abbandonata
 
@@ -20,31 +18,32 @@ ht-degree: 0%
 >
 >Prima di avviare questo laboratorio, è necessario aver completato i seguenti laboratori
 
+- **Installazione di Postman** **—>** [Installazione di Postman](../../postman-setup/postman-installation.md)
 - **Archivi dati — Profilo in azione** **—>** [Crea flusso di dati](../../data-stores/profile-in-action/create-datastream.md)
 
-Se non hai completato queste esercitazioni, fallo adesso prima di continuare.
+Se non hai completato questi laboratori, fallo ora prima di continuare.
 
 ## Panoramica di Lab
 
-Questo video illustra come la descrizione del caso d’uso abbandonato per i browser riveli gli elementi decisionali e cosa verrà realizzato in questo laboratorio per offrire in tempo reale un’offerta telefonica personalizzata e basata su criteri di idoneità.
+In questo video, scopri come la descrizione del caso d’uso abbandonata per i browser rivela i suoi elementi decisionali e cosa verrà realizzato in questo laboratorio per offrire in tempo reale un’offerta telefonica personalizzata e basata su criteri di idoneità.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491316/)
 
 ## Obiettivi aziendali
 
-Il caso d’uso aziendale di questo laboratorio è che Connection 5G vuole aumentare le vendite del nuovo telefono di punta di Apple, iPhone 17, rivolgendosi ai clienti che hanno navigato nella pagina della panoramica di iPhone 17 ma non hanno acquistato. Gli obiettivi principali della campagna sono i seguenti:
+Per questo laboratorio, Connection 5G vuole aumentare le vendite del nuovo telefono di punta di Apple, iPhone 17, rivolgendosi ai clienti che hanno navigato nella pagina della panoramica di iPhone 17 ma non hanno acquistato. Gli obiettivi principali della campagna sono i seguenti:
 
 - **Identifica i clienti ad alto intento** rilevando quando un utente visualizza più volte una pagina di telefono di punta senza completare un acquisto.
-- **Attiva un&#39;esperienza personalizzata in tempo reale** su tutte le superfici digitali di proprietà di Connection 5G quando si verifica questo comportamento.
+- **Attiva un&#39;esperienza personalizzata in tempo reale** su tutte le superfici digitali di Connection 5G quando si verifica questo comportamento.
 - **Distribuisci offerte contestuali** in base agli attributi chiave del cliente, ad esempio **età del titolare dell&#39;account** e il relativo **piano mobile corrente**.
 - **Assicurati che l&#39;idoneità per le offerte sia applicata** in modo che i clienti vedano solo le offerte telefoniche compatibili con il proprio piano.
-- **Regola dinamicamente il livello telefonico offerto** (ad es. base, pro, ultra) in base al coinvolgimento del cliente o alla risposta alle offerte precedenti.
+- **Regola dinamicamente il livello telefonico offerto** (ad esempio, base, pro, ultra) in base al coinvolgimento del cliente o alla risposta alle offerte precedenti.
 - **Fornisci una personalizzazione coerente tra i canali** utilizzando la logica decisionale centralizzata per determinare l&#39;offerta migliore in tempo reale.
 - **Aumenta la probabilità di conversione** presentando l&#39;offerta telefonica di punta più pertinente a ciascun cliente al momento giusto.
 
 ## Obiettivi di apprendimento del laboratorio
 
-Per soddisfare i suddetti obiettivi di business in questo laboratorio, imparerai a:
+Per soddisfare gli obiettivi di business di cui sopra in questo laboratorio, imparerai a:
 
 - **Estendi il modello dati dell&#39;offerta** aggiungendo attributi personalizzati allo schema dell&#39;offerta in modo che possano essere utilizzati nella logica decisionale.
 - **Crea regole di idoneità** che determinano quali profili sono idonei per offerte specifiche in base agli attributi del profilo.
@@ -55,4 +54,4 @@ Per soddisfare i suddetti obiettivi di business in questo laboratorio, imparerai
 - **Configura un canale di esperienza basata su codice** per consentire ai sistemi esterni di richiedere risultati decisionali e ricevere offerte in formato JSON.
 - **Verifica il flusso di lavoro decisionale end-to-end** inviando eventi di esperienza e richieste di decisione per convalidare la logica di idoneità, il comportamento di classificazione e i limiti di frequenza.
 
-Completando questa esercitazione, acquisirai un&#39;esperienza pratica nella progettazione e nella convalida di un **flusso di lavoro completo di offer decisioning in Adobe Journey Optimizer** per soddisfare il caso d&#39;uso aziendale.
+Completando questo laboratorio, acquisisci esperienza pratica nella progettazione e nella convalida di un **flusso di lavoro completo di offer decisioning in Adobe Journey Optimizer** per soddisfare il caso d&#39;uso aziendale.

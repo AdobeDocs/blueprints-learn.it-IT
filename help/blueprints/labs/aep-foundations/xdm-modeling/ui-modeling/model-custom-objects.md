@@ -4,19 +4,17 @@ description: Crea nell’editor schema campi e oggetti personalizzati per accoun
 doc-type: article
 solution: Experience Platform
 exl-id: 8c39b226-05f3-458a-b023-c59221a6713a
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '988'
 ht-degree: 0%
-
 ---
-
 
 # Oggetti personalizzati del modello
 
 ## Aggiunta di campi personalizzati
 
-Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predefiniti che modellino i campi personalizzati dell’account cliente.  I campi seguenti sono attualmente considerati personalizzati e devono essere modellati all’interno dello schema XDM.
+Come descritto nella lezione, non esistono gruppi di campi o tipi di dati standard predefiniti che modellino i campi personalizzati dell’account cliente.  I campi seguenti sono attualmente considerati personalizzati e devono essere modellati all’interno dello schema XDM.
 
 - \_\&lt;nome-tenant>.account.createDate
 - \_\&lt;nome-tenant>.account.endDate
@@ -27,7 +25,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 >[!NOTE]
 >
->Nota: \&lt;tenant-name> sarà specifico per l’ambiente in cui si sta lavorando
+>Nota che \&lt;tenant-name> è specifico per l’ambiente in cui si sta lavorando
 
 
 
@@ -51,7 +49,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 >[!WARNING]
 >
->I nomi dei campi devono seguire un maiuscolo specifico. Il motivo è che abbiamo già creato in precedenza lo stesso schema che stai creando. Se il case è spento, si verifica un conflitto con i percorsi dei campi dello schema preesistente nella sandbox
+>I nomi dei campi devono seguire un maiuscolo specifico. Il motivo è che lo stesso schema che stai creando è già stato creato in precedenza. Se il case è spento, si verifica un conflitto con i percorsi dei campi dello schema preesistente nella sandbox
 
 ![Aggiunta dell&#39;oggetto account con il relativo gruppo di campi assegnato](assets/model-custom-objects-adding-the-account-object.png "Aggiunta dell&#39;oggetto account")
 
@@ -61,7 +59,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 >[!NOTE]
 >
->Il nuovo gruppo di campi personalizzato viene visualizzato nella barra a sinistra sotto `Field groups` senza l&#39;icona del lucchetto.  Indica che si tratta di un gruppo di campi personalizzato.
+>Il nuovo gruppo di campi personalizzato viene visualizzato nella barra a sinistra sotto `Field groups` senza l&#39;icona del lucchetto.  Questa icona di blocco mancante indica che si tratta di un gruppo di campi personalizzato.
 
 >[!WARNING]
 >
@@ -70,7 +68,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 
 
-1. Aggiungi i seguenti campi sotto l’oggetto Account appena creato.
+1. Aggiungi i campi seguenti sotto l’oggetto Account appena creato.
 
    | Nome campo | Nome visualizzato | Tipo |
    | ------------ | ------------- | ---------- |
@@ -83,7 +81,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 
 
-1. Al termine, l’oggetto account degli schemi dovrebbe essere simile a quello riportato di seguito. **Salva** lo schema.
+1. Al termine, l’oggetto account dello schema si presenta come segue. **Salva** lo schema.
 
 
 
@@ -97,7 +95,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
    | ----------- | ----------------- | -------- | --------------------------------------- |
    | *acqSource* | *Source acquisito* | *Stringa* | *web :: Web *<br />*inStore :: nello Store* |
 
-   Questo campo richiede valori standardizzati, quindi utilizza l&#39;opzione **Enum &amp; Valori suggeriti** all&#39;interno delle proprietà dei campi. Seleziona il pulsante di scelta **Enum** per aggiungere la convalida per questo campo al momento dell&#39;acquisizione, nonché etichette intuitive. Aggiungete i valori enum come mostrato di seguito:
+   Questo campo richiede valori standardizzati, quindi utilizza l&#39;opzione **Enum &amp; Valori suggeriti** nelle proprietà del campo. Seleziona il pulsante di scelta **Enum** per aggiungere la convalida per questo campo al momento dell&#39;acquisizione, nonché etichette intuitive. Aggiungete i valori enum come mostrato di seguito:
 
    - *web :: Web*
    - *inStore :: nello Store*
@@ -108,7 +106,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
    >[!NOTE]
    >
-   >L’obiettivo dei valori Enum e Suggested è facilitare la segmentazione per l’utente finale. Le enumerazioni impongono la convalida al momento dell’acquisizione dei dati, mentre i valori consigliati no. Per ulteriori informazioni su questa funzione, consulta la documentazione disponibile qui -> [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it#enums-and-suggested-values)
+   >L’obiettivo dei valori Enum e Suggested è facilitare la segmentazione per l’utente finale. Le enumerazioni impongono la convalida al momento dell’acquisizione dei dati, mentre i valori consigliati no. Per ulteriori informazioni su questa funzione, consulta la documentazione qui -> [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values)
 
 
 
@@ -116,7 +114,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati predef
 
 1. **Salva** lo schema
 
->[!TIP]
+>[!SUCCESS]
 >
 >Il primo oggetto personalizzato e i primi campi sono stati creati correttamente nel registro dello schema XDM.
 
@@ -161,7 +159,7 @@ Al termine, verifica che lo schema corrisponda alla schermata seguente. Se sembr
 
 ## Creazione campo ID cliente
 
-L&#39;aggiunta del campo **customerID** come campo è critica perché fungerà da identità primaria per lo schema e da campo generale in cui memorizzare i dati.
+L&#39;aggiunta del campo **customerID** come campo è critica perché funge da identità primaria per lo schema e da campo generale in cui conservare i dati.
 
 Effettua gli stessi passaggi eseguiti in precedenza e utilizza la tabella seguente per fare riferimento ai metadati del campo.
 
@@ -171,13 +169,13 @@ Effettua gli stessi passaggi eseguiti in precedenza e utilizza la tabella seguen
 
 >[!NOTE]
 >
->`customerID` può essere posizionato ovunque nello schema da una prospettiva gerarchica. In questa esercitazione abbiamo scelto di mantenerla nella directory principale e non nidificarla all&#39;interno di uno degli oggetti personalizzati creati in precedenza.  In questo caso l’architettura dei dati ha delle opinioni
+>`customerID` può essere posizionato ovunque nello schema da una prospettiva gerarchica. In questa esercitazione, il campo customerID rimane nella radice e non è nidificato all&#39;interno di uno degli oggetti personalizzati creati in precedenza.  Questo posizionamento è il luogo in cui l’architettura dei dati ha opinioni
 >
 >😄
 
 
 
-Una volta completato, il risultato finale dovrebbe essere simile alla schermata seguente
+Al termine dell’operazione, il risultato finale sarà simile alla schermata seguente
 
 ![Schema account cliente con campo customerID aggiunto alla radice](assets/model-custom-objects-customerid-field-added.png)
 
@@ -189,6 +187,6 @@ Una volta completato, il risultato finale dovrebbe essere simile alla schermata 
 
 ![Schema finale con tutti gli oggetti e i campi personalizzati aggiunti](assets/model-custom-objects-final-schema-with-custom-objects.jpeg "Schema finale con oggetti personalizzati")
 
->[!TIP]
+>[!SUCCESS]
 >
->Hai creato il tuo primo schema XDM. Nella sezione successiva verrà configurato lo schema da utilizzare con Real-Time Customer Profile.
+>Hai creato il tuo primo schema XDM. Nella sezione successiva, configura lo schema da utilizzare con Real-Time Customer Profile.

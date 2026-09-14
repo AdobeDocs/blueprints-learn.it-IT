@@ -4,13 +4,11 @@ description: Installa e configura Azure Storage Explorer con un URL SAS per la c
 doc-type: overview-page
 solution: Experience Platform
 exl-id: d61bef25-7039-450d-a8e7-01bb12e8df7c
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
-
 ---
-
 
 # Utilizzo della Data Landing Zone
 
@@ -21,14 +19,14 @@ Se non hai scaricato Azure Storage Explorer, fallo adesso, in quanto è un requi
 [Scarica Azure Storage Explorer](https://azure.microsoft.com/en-us/blog/microsoft-azure-data-lake-storage-adls-in-storage-explorer-public-preview/)
 
 1. Installare l’applicazione
-1. Al primo avvio accettare il contratto di licenza con l&#39;utente finale
+1. La prima volta che si apre l&#39;applicazione, accettare il contratto di licenza con l&#39;utente finale
 
 ![Schermata del contratto di licenza con l&#39;utente finale in Azure Storage Explorer](assets/overview-end-user-license-agreement-screen.png "Schermata del contratto di licenza con l&#39;utente finale")
 
 
 ## Configurare Azure Storage Explorer con Experience Platform
 
-1. Apri Azure Storage Explorer e fai clic sull&#39;icona **Seleziona risorsa**, quindi seleziona **ADLS Gen 2 Container o directory**
+1. Apri Azure Storage Explorer e fai clic sull&#39;icona **Seleziona risorsa**, quindi seleziona **ADLS Gen2 Container or directory**
 
    ![Selezione del contenitore o della directory ADLS Gen2 come risorsa in Azure Storage Explorer](assets/overview-choose-the-resource-as-shown-above.png)
 
@@ -50,7 +48,7 @@ Se non hai scaricato Azure Storage Explorer, fallo adesso, in quanto è un requi
 
 
 
-1. Vai a Adobe Experience Platform ed esegui il passaggio alla Data Landing zone effettuando le seguenti operazioni:
+1. Vai a Adobe Experience Platform e passa alla Data Landing Zone effettuando le seguenti operazioni:
 
    - Passa a **Origini -> Catalogo**
    - Seleziona **Archiviazione cloud** nelle origini
@@ -85,6 +83,6 @@ Ora dovresti vedere una schermata simile a quella riportata di seguito
 
 ![Azure Storage Explorer mostra l&#39;account della zona di destinazione dati connesso correttamente](assets/overview-successfully-connected-account.png)
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni!  Configurazione di Azure Storage Explorer completata

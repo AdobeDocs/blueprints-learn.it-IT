@@ -4,13 +4,11 @@ description: Utilizza l’API del registro dello schema per creare un descrittor
 doc-type: article
 solution: Experience Platform
 exl-id: db690081-e857-4875-8bb9-7ac197d73cab
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '144'
 ht-degree: 0%
-
 ---
-
 
 # Creare un’identità primaria
 
@@ -50,10 +48,10 @@ ht-degree: 0%
 
 1. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
 
-1. Eseguire l&#39;API facendo clic sul pulsante `Send`. Dovresti ora visualizzare una risposta `201 Created` come segue
+1. Eseguire l&#39;API facendo clic sul pulsante `Send`. Viene visualizzata una risposta `201 Created` come mostrato di seguito
 
 ![201 Risposta creata dopo la creazione del descrittore di identità primaria](assets/create-primary-identity-201-created-response.png "Il descrittore di identità primaria è stato creato")
 
->[!TIP]
+>[!SUCCESS]
 >
->Congratulazioni!  Hai appena creato un descrittore di identità primaria nello schema
+>Congratulazioni!  Hai creato un descrittore di identità primaria nello schema

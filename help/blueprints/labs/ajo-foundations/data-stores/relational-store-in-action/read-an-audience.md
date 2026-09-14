@@ -4,13 +4,11 @@ description: Scopri come utilizzare l’attività Read Audience con un Profile T
 doc-type: article
 solution: Experience Platform
 exl-id: f825efe9-4349-4195-a017-c956c15df946
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1264'
 ht-degree: 0%
-
 ---
-
 
 # Leggere un pubblico
 
@@ -128,11 +126,11 @@ Orchestrated Campaign utilizza lo schema relazionale per tutte le attività. Qua
 
 ![Attributo Source selezionato dalle colonne della dimensione Targeting](assets/read-an-audience-select-source-attribute.png)
 
-&#x200B;11. I valori distinti per la colonna Source sono disponibili nel menu a discesa. Per la **condizione personalizzata**, seleziona **&quot;In Store&quot;** dal menu a discesa e fai clic su **Conferma** per uscire
+11. I valori distinti per la colonna Source sono disponibili nel menu a discesa. Per la **condizione personalizzata**, seleziona **&quot;In Store&quot;** dal menu a discesa e fai clic su **Conferma** per uscire
 
 ![Condizione personalizzata impostata su In Store](assets/read-an-audience-set-in-store-condition.png)
 
-&#x200B;12. Nel riquadro dei dettagli dell&#39;attività **Divisione**, le impostazioni per la prima Divisione sono state completate. Fai clic su **Aggiungi segmento** alla seconda suddivisione
+12. Nel riquadro dei dettagli dell&#39;attività **Divisione**, le impostazioni per la prima Divisione sono state completate. Fai clic su **Aggiungi segmento** alla seconda suddivisione
 
 ![Pulsante Aggiungi segmento nel riquadro dei dettagli attività di suddivisione](assets/read-an-audience-add-segment-button.png)
 
@@ -140,48 +138,48 @@ Orchestrated Campaign utilizza lo schema relazionale per tutte le attività. Qua
 
 ![Nuovo segmento denominato Risultato](assets/read-an-audience-new-result-segment.png)
 
-&#x200B;13. Rinomina &quot;**Risultato**&quot; in &quot;**Non nell&#39;archivio**&quot; e fai clic su **Crea filtro** per impostare la condizione del filtro
+13. Rinomina &quot;**Risultato**&quot; in &quot;**Non nell&#39;archivio**&quot; e fai clic su **Crea filtro** per impostare la condizione del filtro
 
 ![Segmento rinominato in Non in archivio con l&#39;opzione filtro](assets/read-an-audience-rename-not-in-store-segment.png)
 
-&#x200B;14. Nel riquadro **Crea filtro**, fare clic su **Aggiungi condizione**. Segui lo stesso approccio di cui sopra, espandi la **dimensione di targeting** facendo clic su **>**, quindi seleziona `Source` dall&#39;elenco e fai clic su **Conferma**
+14. Nel riquadro **Crea filtro**, fare clic su **Aggiungi condizione**. Segui lo stesso approccio di cui sopra, espandi la **dimensione di targeting** facendo clic su **>**, quindi seleziona `Source` dall&#39;elenco e fai clic su **Conferma**
 
 ![Dimensione targeting espansa per mostrare le colonne dell&#39;archivio relazionale](assets/read-an-audience-expand-targeting-dimension.png)
 
 ![Attributo Source selezionato dalle colonne della dimensione Targeting](assets/read-an-audience-select-source-attribute.png)
 
-&#x200B;15. Per la **condizione personalizzata**, selezionare **&quot;In store&quot;** dal menu a discesa e per l&#39;operatore selezionare &quot;**diverso da**&quot;. Fai clic su **Conferma** per uscire
+15. Per la **condizione personalizzata**, selezionare **&quot;In store&quot;** dal menu a discesa e per l&#39;operatore selezionare &quot;**diverso da**&quot;. Fai clic su **Conferma** per uscire
 
 ![Condizione personalizzata impostata su non uguale a In Store](assets/read-an-audience-set-not-in-store-condition.png)
 
-&#x200B;16. Nel riquadro dei dettagli dell&#39;attività **Divisione**, le impostazioni per le due divisioni sono state completate. Fai clic su **Avvia** per eseguire la campagna in **Modalità test**
+16. Nel riquadro dei dettagli dell&#39;attività **Divisione**, le impostazioni per le due divisioni sono state completate. Fai clic su **Avvia** per eseguire la campagna in **Modalità test**
 
 ![Pulsante Avvia per eseguire la campagna in modalità di test dopo la configurazione della suddivisione](assets/read-an-audience-start-test-mode-second-run.png)
 
-&#x200B;17. L’esecuzione del test inizia e i risultati vengono visualizzati al termine. Poiché nello schema relazionale sono state trovate solo **7** dimensioni di destinazione corrispondenti, lo stesso conteggio viene osservato anche dopo le operazioni di suddivisione (**7** e **0**)
+17. L’esecuzione del test inizia e i risultati vengono visualizzati al termine. Poiché nello schema relazionale sono state trovate solo **7** dimensioni di destinazione corrispondenti, lo stesso conteggio viene osservato anche dopo le operazioni di suddivisione (**7** e **0**)
 
 ![Dividi risultati attività con conteggi di 7 e 0](assets/read-an-audience-verify-split-counts.png)
 
-&#x200B;18. Fai clic su ogni casella dei risultati e **Anteprima risultati** per visualizzare i risultati
+18. Fai clic su ogni casella dei risultati e **Anteprima risultati** per visualizzare i risultati
 
 ![Opzione Anteprima risultati per ogni casella risultati divisa](assets/read-an-audience-preview-split-results.png)
 
-&#x200B;19. Fai clic su **Interrompi** per interrompere la **modalità di test** della campagna
+19. Fai clic su **Interrompi** per interrompere la **modalità di test** della campagna
 
 ![Pulsante Interrompi per terminare l&#39;esecuzione finale della modalità di test](assets/read-an-audience-stop-test-mode-final.png)
 
 >[!NOTE]
 >
->Mentre il pubblico Read mostrava **9** profili. Poiché abbiamo creato un filtro su Source e il campo Source esiste nello store relazionale, abbiamo dovuto unirci dallo store dei profili allo store relazionale per controllarlo. Quando è stato aggiunto allo schema relazionale tramite il Dimension di destinazione di Campaign, solo un totale di **7** profili ha restituito una corrispondenza. Questi **7** ID cliente corrispondenti sono disponibili per l&#39;utilizzo nelle seguenti attività che tentano di utilizzare dati relazionali. Tutti gli ID cliente **7** avevano `Source` impostati su **&quot;In Store&quot;**, come evidenziato dai flussi di suddivisione.
+>Il pubblico Read ha mostrato **9** profili. Poiché hai creato un filtro su Source e il campo Source esiste nell’archivio relazionale, è necessario unirsi all’archivio profili con l’archivio relazionale per controllarlo. Quando si unisce allo schema relazionale tramite Campaign Target Dimension, solo un totale di **7** profili corrisponde. Questi **7** ID cliente corrispondenti sono disponibili per l&#39;utilizzo nelle seguenti attività che tentano di utilizzare dati relazionali. Tutti gli ID cliente **7** avevano `Source` impostati su **&quot;In Store&quot;**, come evidenziato dai flussi di suddivisione.
 >
 >Pertanto, mantenere la coerenza dei dati è fondamentale quando si utilizzano i profili AEP insieme alle relative controparti relazionali per l’arricchimento.
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni, questo completa il laboratorio sull’utilizzo dell’attività Read Audience con lo schema relazionale.
 
 ## Riassunto
 
-Ora hai visto quanto è facile creare una campagna, eseguire un’attività Read Audience insieme al Dimension di destinazione del profilo per sfruttare lo schema relazionale. Hai utilizzato l’attività Dividi per dividere il pubblico in base a una condizione. Infine, la modalità di test ha aiutato a capire che è importante disporre della coerenza dei dati tra il profilo e lo schema relazionale.
+Ora hai visto quanto è facile creare una campagna, eseguire un’attività Read Audience insieme al Dimension di destinazione del profilo per utilizzare lo schema relazionale. Hai utilizzato l’attività Dividi per dividere il pubblico in base a una condizione. Infine, la modalità di test ha aiutato a capire che è importante disporre della coerenza dei dati tra il profilo e lo schema relazionale.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience) se sei interessato.

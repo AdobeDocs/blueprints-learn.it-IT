@@ -4,21 +4,19 @@ description: Utilizza l’API dell’entità profilo e l’API cluster del servi
 doc-type: article
 solution: Experience Platform
 exl-id: 1db55c5b-fdf8-4c63-b435-477626bb0450
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1143'
 ht-degree: 1%
-
 ---
-
 
 # API di profilo e identità
 
 ## API entità profilo
 
-Sapere come utilizzare le API di profilo è fondamentale quando si tratta di lavorare con Real-Time Customer Profile. Offre la possibilità di eseguire rapidamente operazioni di triage ed debug, esponendo al contempo le aziende a infinite possibilità di integrazione di sistemi, dai call center ai chioschi.
+Sapere come utilizzare le API di profilo è fondamentale quando si tratta di lavorare con Real-Time Customer Profile. Offre la possibilità di eseguire rapidamente operazioni di triage ed debug, esponendo al contempo l&#39;utente a molte possibili integrazioni di sistema, dai call center ai chioschi.
 
-Una delle API più importanti è l’API dell’entità profilo.  Questa API consente di cercare un singolo profilo (come hai visto nell’interfaccia utente), ma utilizza parametri per determinare se visualizzare gli attributi o gli eventi del profilo.
+Una delle API più importanti è l’API dell’entità profilo. Questa API ti consente di cercare un singolo profilo, proprio come hai visto nell’interfaccia utente. Utilizza i parametri per determinare se visualizzare gli attributi o gli eventi del profilo.
 
 Di seguito sono riportate tutte le specifiche del metodo GET per l’API dell’entità profilo
 
@@ -89,7 +87,7 @@ Per ottenere un’idea dell’API di ricerca entità, utilizza il profilo Modali
    >
    >Per impostazione predefinita, se non è specificato alcun criterio di unione in una richiesta di entità profilo, viene utilizzato il criterio di unione predefinito nella sandbox
 
-   Con l’API di entità è possibile utilizzare una serie di parametri di query per modificare ciò che viene restituito in risposta.
+   Con l’API di entità, utilizza i parametri di query per modificare ciò che viene restituito nella risposta.
 
 1. Nella richiesta di ricerca entità (attributi), fai clic sull&#39;opzione **Parametri** per la richiesta
 1. Seleziona la casella accanto a **Chiave** denominata **campi**
@@ -99,13 +97,13 @@ Per ottenere un’idea dell’API di ricerca entità, utilizza il profilo Modali
 
 >[!NOTE]
 >
->Si noti anche un parametro per specificare `mergePolicyId`.  Puoi trovare il valore per questo utilizzando altre API o cercando l’ID utilizzando l’interfaccia utente.
+>Si noti anche un parametro per specificare `mergePolicyId`. Per trovare il valore per questo, utilizza altre API o cerca l’ID utilizzando l’interfaccia utente.
 
 Una richiesta corretta dovrebbe rispondere con un `200 OK` e dovrebbero essere visualizzati solo i campi specificati nel filtro parametri appena abilitato: Nome, Cognome e un array di Prodotti attivi.
 
 ![Risposta OK filtrata 200 che mostra solo i campi Nome, Cognome e Prodotti attivi](assets/profile-and-identity-apis-successful-filtered-attributes-response.png "Risposta API di ricerca entità profilo (attributi) riuscita con filtro abilitato")
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni!  Hai cercato correttamente gli attributi di un profilo utilizzando l’API di entità profilo
 
@@ -124,20 +122,20 @@ Una richiesta corretta dovrebbe rispondere con un `200 OK` e si dovrebbe vedere 
 
 ![Risposta OK 200 contenente tutti gli eventi per il profilo Modalità Depeche](assets/profile-and-identity-apis-successful-events-api-response.png "Risposta API Ricerca entità profilo riuscita (eventi)")
 
-Proprio come per la ricerca degli attributi di profilo, l’API di entità dispone di più parametri di query che possono essere utilizzati per modificare ciò che viene restituito in risposta.
+Quando cerchi gli attributi del profilo, l’API di entità dispone di ancora più parametri di query che modificano ciò che viene restituito nella risposta.
 
-Per provarne alcuni, abilitali nella sezione Parametri ed esegui la richiesta.  Provatelo e vedete come funziona!
+Provane alcuni attivandoli nella sezione Parametri ed eseguendo la richiesta. Guarda come funziona!
 
 ![Richiesta di ricerca entità (eventi) con parametri di query aggiuntivi abilitati nella sezione Parametri](assets/profile-and-identity-apis-entity-lookup-events-query-params.png "Ricerca entità profilo per eventi esperienza")
 
 **Definizioni parametri query di esempio**
 
 | Chiave | Valore | Descrizione |
-| ------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| mergePolicyId | \&lt;blank> | Se fornito, puoi cambiare il criterio di unione utilizzato per eseguire la ricerca. Se il lab viene lasciato vuoto, verrà utilizzato il criterio di unione predefinito delle sandbox |
-| campi | eventType,timestamp,identityMap | Visualizza questi campi solo da ogni evento, indipendentemente dal fatto che il campo specificato abbia un valore |
-| proprietà | eventType=&quot;order.placed&quot; | Filtra gli eventi del profilo in base a quelli di tipo &quot;order.placed&quot; |
-| orderby | +timestamp | Ordina gli eventi in ordine decrescente |
+| ------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| mergePolicyId | \&lt;blank> | Cambia il criterio di unione utilizzato per la ricerca. Se non specificato, viene utilizzato il criterio di unione predefinito della sandbox |
+| campi | eventType,timestamp,identityMap | Visualizza solo questi campi da ogni evento, indipendentemente dal fatto che abbiano o meno un valore |
+| proprietà | eventType=&quot;order.placed&quot; | Filtra gli eventi solo a quelli del tipo specificato |
+| orderby | +timestamp | Ordina gli eventi in ordine crescente |
 | limit | 5 | Mostra solo 5 eventi nella risposta |
 
 >[!NOTE]
@@ -157,7 +155,7 @@ Prova tu stesso:
 
 >[!NOTE]
 >
->Nota: i parametri nella richiesta sono lo spazio dei nomi e l’ID dell’identità (ovvero il valore)
+>Nota: i parametri nella richiesta sono lo spazio dei nomi e l’ID dell’identità (ovvero, il valore)
 
 
 

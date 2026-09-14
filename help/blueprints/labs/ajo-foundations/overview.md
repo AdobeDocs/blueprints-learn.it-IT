@@ -4,20 +4,18 @@ description: Esplora l’architettura di Adobe Journey Optimizer, l’orchestraz
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 0b6c3ca7-3061-4d89-a6f8-f4c6a681706a
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '272'
 ht-degree: 1%
-
 ---
-
 
 # Panoramica
 
-## Cosa imparerai
+## Cosa impara
 
 1. **Architettura e funzionalità di Adobe Journey Optimizer:**
-   - Scopri come AJO viene creato in modalità nativa su Adobe Experience Platform e dove si inserisce nello stack di personalizzazione
+   - Scopri come AJO è stato sviluppato in modalità nativa su Adobe Experience Platform e come si colloca tra gli strumenti di personalizzazione
    - Esplorare le funzionalità di base che alimentano percorsi cliente orchestrati in tempo reale
 1. **Archivi dati:**
    - Differenziare tra Real-Time Customer Profile e Relational Store in AJO
@@ -51,8 +49,13 @@ ht-degree: 1%
 - Esposizione a CDP, automazione del marketing o altre piattaforme martech
 
 
+## Prerequisiti
+
+Se stai lavorando a questo bootcamp al tuo ritmo, due laboratori hanno bisogno di account esterni organizzati in anticipo: **Configura i canali e-mail** ha bisogno di un sottodominio delegato ad Adobe, e **Flagship phone launch** ha bisogno di credenziali SMS. Per ulteriori dettagli, vedere [Configurazione](setup.md).
+
+
 ## Introduzione
 
-Questo video presenta Adobe Journey Optimizer e spiega cosa significa la personalizzazione su larga scala, perché è difficile da raggiungere e come AJO, integrata in modalità nativa su Adobe Experience Platform, affronta queste sfide.
+Questo video introduce Adobe Journey Optimizer e spiega cosa significa la personalizzazione su larga scala, perché è difficile da raggiungere e come AJO affronta queste sfide. AJO è stato sviluppato in modalità nativa su Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486223/)

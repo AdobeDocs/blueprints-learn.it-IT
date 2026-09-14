@@ -4,13 +4,11 @@ description: Scarica e importa la raccolta API Postman di bootcamp contenente le
 doc-type: article
 solution: Experience Platform
 exl-id: 18d820c5-56ad-46b8-a9cf-f725555d2db3
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 
 # Raccolta API
 
@@ -25,7 +23,7 @@ Scarica il file — [AEP Foundations Bootcamp (Labs).postman_collection.json](as
 1. Apri `Postman API Collection File` dall&#39;alto nel browser facendo clic sul file
 1. Copia l’URL del file negli Appunti
 1. Avvia Postman nel computer locale e fai clic sul pulsante `Import` nell&#39;area di lavoro
-1. Incollare l&#39;URL di `Postman API Collection File` nella casella di testo modale di importazione sulla sovrapposizione.  Questo dovrebbe attivare un’importazione automatica
+1. Incollare l&#39;URL di `Postman API Collection File` nella casella di testo modale di importazione. Questo attiva un’importazione automatica
 
 ![Fare clic sul pulsante Importa nell&#39;area di lavoro di Postman per importare la raccolta API](assets/api-collection-click-import-button.png "Pulsante Importa")
 
@@ -33,7 +31,7 @@ Scarica il file — [AEP Foundations Bootcamp (Labs).postman_collection.json](as
 
 ![Incollare l&#39;URL del file di raccolta API nella casella di testo modale per l&#39;importazione di Postman](assets/api-collection-import-modal-paste-url.png "Casella di testo modale del pulsante di importazione")
 
-Ora dovresti vedere una raccolta compilata nella scheda `Collections` della barra laterale a sinistra denominata `AEP Foundations Bootcamp`
+È ora visibile una raccolta compilata nella scheda `Collections` della barra laterale sinistra denominata `AEP Foundations Bootcamp`
 
 
 
@@ -41,7 +39,7 @@ Ora dovresti vedere una raccolta compilata nella scheda `Collections` della barr
 
 ## Panoramica sulla raccolta Bootcamp di AEP Foundations
 
-La raccolta API importata contiene tutte le chiamate API necessarie per i laboratori in tutto il campo di avvio.  Ogni laboratorio è organizzato in una cartella specifica con il proprio set di API.  Tienilo presente mentre lavori nei laboratori questa settimana.
+La raccolta API importata contiene tutte le chiamate API necessarie per i laboratori in tutto il campo di avvio.  Ogni laboratorio è organizzato in una cartella specifica con il proprio set di API.  Tieni presente questa struttura di cartelle mentre completi i laboratori questa settimana.
 
 I dettagli di ciascuna cartella sono disponibili qui sotto:
 
@@ -50,6 +48,6 @@ I dettagli di ciascuna cartella sono disponibili qui sotto:
 - **Data Ingestion Lab** - contiene un set di richieste per lo streaming di dati in Experience Platform
 - **Profile Lab** - contiene un set di richieste per la visualizzazione delle caratteristiche e dei comportamenti del profilo cliente in tempo reale
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni!  Importazione della raccolta Postman del campo di avvio completata

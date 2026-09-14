@@ -4,13 +4,11 @@ description: Genera un token di accesso server-to-server OAuth in Postman e comp
 doc-type: article
 solution: Experience Platform
 exl-id: e38a1bd4-5a09-40c6-8303-c3770801c864
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '562'
 ht-degree: 0%
-
 ---
-
 
 # Token di accesso
 
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 
 
-Per stabilire una connessione API sicura a un prodotto Adobe, Adobe fornisce la creazione di una credenziale server-to-server OAuth. A questo scopo, devi innanzitutto creare un progetto per sviluppatori all’interno di Adobe Developer Console. Per poter accedere a Developer Console è necessario disporre dei diritti di sviluppatore assegnati all’interno di Adobe Admin Console. Una volta ottenuti questi diritti, puoi creare progetti per sviluppatori utilizzando le varie API relative ai prodotti Adobe. Qui entra in gioco le credenziali server-to-server OAuth. Per generare un token di accesso è necessario trasmettere un determinato set di attestazioni al servizio Identity Management (IMS) di Adobe. Per le credenziali da server a server OAuth, una chiamata di esempio sarà simile alla seguente:
+Per stabilire una connessione API sicura a un prodotto Adobe, Adobe fornisce la creazione di una credenziale server-to-server OAuth. A questo scopo, devi innanzitutto creare un progetto per sviluppatori all’interno di Adobe Developer Console. Per poter accedere a Developer Console è necessario disporre dei diritti di sviluppatore assegnati all’interno di Adobe Admin Console. Una volta ottenuti questi diritti, puoi creare progetti per sviluppatori che utilizzano varie API relative ai prodotti Adobe. A questo punto puoi utilizzare le credenziali server-to-server OAuth. Per generare un token di accesso è necessario trasmettere un determinato set di attestazioni al servizio Identity Management (IMS) di Adobe. Per le credenziali da server a server OAuth, una chiamata di esempio ha l&#39;aspetto seguente:
 
 ```curl
 curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3?client_id={CLIENT_ID}' \
@@ -28,13 +26,13 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3?client_id={CLIENT_ID}'
 
 >[!NOTE]
 >
->Ulteriori informazioni sul processo e2e per la creazione del progetto per sviluppatori tramite le credenziali server-to-server OAuth [qui](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens). Per il bootcamp verrà eseguito un &quot;handwave&quot; di questo passaggio del processo 😄
+>Ulteriori informazioni sul processo e2e per la creazione del progetto per sviluppatori utilizzando le credenziali server-to-server OAuth [qui](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens). Per il campo di avvio, questo passaggio è intenzionalmente semplificato.
 
 
 
 ## Adobe Experience Platform + Adobe IMS
 
-Ogni richiesta a qualsiasi servizio Adobe deve includere il token di accesso nell’intestazione Autorizzazione insieme al segreto client generato durante la creazione del progetto per sviluppatori. Inoltre, Experience Platform e le applicazioni a essa associate richiedono la presenza di altri due parametri di intestazione per ogni richiesta.
+Ogni richiesta a qualsiasi servizio Adobe deve includere il token di accesso nell’intestazione Autorizzazione insieme al segreto client generato durante la creazione del progetto per sviluppatori. Inoltre, Experience Platform e le applicazioni associate richiedono altri due parametri di intestazione per ogni richiesta.
 
 - `x-gw-ims-org-id` - questo parametro specifica `IMS Org` a cui appartiene la richiesta e garantisce che l&#39;elaborazione delle richieste venga risolta nell&#39;ambiente SaaS appropriato
 - `x-sandbox-name` - questo parametro specifica quale sandbox elaborare la richiesta in Experience Platform
@@ -43,11 +41,11 @@ Ora che hai capito qualcosa su come Adobe protegge le API e su cosa è necessari
 
 >[!CAUTION]
 >
->Se non si specifica il parametro `x-sandbox-name`, la richiesta non avrà esito negativo come previsto. Al contrario, per impostazione predefinita la richiesta viene elaborata nella sandbox `default` che viene fornita automaticamente con qualsiasi ambiente Experience Platform
+>La richiesta non riesce se non si specifica il parametro `x-sandbox-name`. Al contrario, per impostazione predefinita la richiesta viene elaborata nella sandbox `default` che viene fornita automaticamente con qualsiasi ambiente Experience Platform
 
 >[!NOTE]
 >
->Come parte di questo bootcamp abbiamo creato un progetto per sviluppatori e fornito un file di ambiente Postman con tutti i valori necessari per richiedere un `access_token`. Questo è ciò che hai caricato nei passaggi precedenti del laboratorio
+>Questo campo di avvio include un progetto per sviluppatori e un file di ambiente Postman con tutti i valori necessari per richiedere un `access_token`. Questo file di ambiente è ciò che hai caricato nei passaggi precedenti del lab
 
 ## Autenticazione con Postman
 
@@ -73,13 +71,13 @@ Risposta corretta
 }
 ```
 
-`token_type` - sarà sempre di tipo bearer
+`token_type` - è sempre di tipo bearer
 
-`access_token`: verifica l&#39;autorizzazione e viene richiesta nell&#39;intestazione di autorizzazione di tutte le chiamate API
+`access_token` - dimostra l&#39;autorizzazione ed è richiesto nell&#39;intestazione di autorizzazione di tutte le chiamate API
 
 `expires_in` - millisecondi fino alla scadenza del token di accesso (oggi periodo di scadenza di 24 ore)
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni! Hai autenticato correttamente e il tuo access\_token è ora salvato nel file di ambiente
 
@@ -89,7 +87,7 @@ Risposta corretta
 
 ### Token non valido
 
-Ciò si verifica quando `private_key` nel file di ambiente non è formattato correttamente o non è più valido. In questo caso, assicurati di aver copiato l’intera chiave, comprese le interruzioni di riga
+Questo errore si verifica quando `private_key` nel file di ambiente non è formattato correttamente o non è più valido. Se visualizzi questo errore, assicurati di aver copiato l’intera chiave, comprese le interruzioni di riga
 
 Esempio:
 
@@ -109,12 +107,12 @@ some uber long varchar set is here
 
 ### IMS\_ORG non valido
 
-Questo errore si verifica quando si dimentica di impostare l&#39;ambiente postman dal menu a discesa
+Questo errore si verifica quando si dimentica di impostare l’ambiente Postman dal menu a discesa
 
 ![Errore IMS_ORG non trovato nell&#39;ambiente attivo quando non è selezionato alcun ambiente Postman](assets/access-token-forgot-to-select-postman-environment.png)
 
 >[!NOTE]
 >
->Non dimenticare di impostare l’ambiente postman durante l’esecuzione di chiamate API
+>Non dimenticare di impostare l’ambiente Postman durante l’esecuzione di chiamate API
 >
 >![Selezione dell&#39;ambiente di bootcamp AEP dal menu a discesa dell&#39;ambiente Postman](assets/access-token-set-postman-environment.png)

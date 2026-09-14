@@ -4,13 +4,11 @@ description: Crea uno schema Profilo individuale nell’interfaccia utente di e 
 doc-type: article
 solution: Experience Platform
 exl-id: ea516c0b-3644-483c-a167-0264cc795449
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '990'
 ht-degree: 0%
-
 ---
-
 
 # Oggetti standard del modello
 
@@ -52,7 +50,7 @@ ht-degree: 0%
 
 ## Denomina lo schema
 
-Gli schemi basati su classi di profili individuali XDM consentono di raccogliere gli attributi di un individuo che verrà unito al profilo. La classe stessa contiene campi non modificabili, ad esempio *modifiedByBatchID*, *PersonID* e così via.
+Gli schemi basati su classi di profili individuali XDM consentono di raccogliere gli attributi di un singolo utente uniti al profilo. La classe stessa contiene campi non modificabili, ad esempio *modifiedByBatchID*, *PersonID* e così via.
 
 1. Assegna un nome e una descrizione allo schema.
    - **Nome visualizzato schema** —> *Account cliente - \[Iniziali]*
@@ -63,7 +61,7 @@ Gli schemi basati su classi di profili individuali XDM consentono di raccogliere
 
 ## Aggiungi gruppo di campi Dettagli demografici
 
-In Adobe Experience Platform esistono molti gruppi di campi XDM standard da aggiungere allo schema e personalizzare.
+In Adobe Experience Platform esistono molti gruppi di campi XDM standard da aggiungere allo schema e personalizzarli.
 
 1. Fai clic su **+ (aggiungi)** nella barra a sinistra nella sezione del gruppo di campi.
 
@@ -73,7 +71,7 @@ In Adobe Experience Platform esistono molti gruppi di campi XDM standard da aggi
 
 1. Cercare **Dettagli demografici** o trovarli sfogliando l&#39;elenco.
 
-   - Quando si trova il gruppo di campi, fare clic sulla lente di ingrandimento a destra del gruppo di campi per visualizzarne la struttura.  Si tratta di un modo utile per visualizzare in anteprima ciò che stai per aggiungere allo schema senza aggiungerlo effettivamente.
+   - Quando si trova il gruppo di campi, fare clic sulla lente di ingrandimento a destra del gruppo di campi per visualizzarne la struttura.  Questo passaggio è utile per visualizzare in anteprima ciò che stai per aggiungere allo schema senza aggiungerlo.
    - Al termine della revisione, chiudi l’anteprima
 
 
@@ -84,7 +82,7 @@ In Adobe Experience Platform esistono molti gruppi di campi XDM standard da aggi
 
 
 
-&#x200B;3. **Selezionare** la casella di controllo accanto al gruppo di campi, quindi fare clic sul pulsante **Aggiungi gruppi di campi**
+3. **Selezionare** la casella di controllo accanto al gruppo di campi, quindi fare clic sul pulsante **Aggiungi gruppi di campi**
 
 ![Selezionare il gruppo di campi Dettagli demografici per aggiungerlo allo schema](assets/model-standard-objects-select-demographic-details-field-group.png "Selezionare il gruppo di campi Dettagli demografici per aggiungerlo allo schema")
 
@@ -96,7 +94,7 @@ In Adobe Experience Platform esistono molti gruppi di campi XDM standard da aggi
 - Dettagli di contatto personali
 - Dettagli su consenso e preferenze
 
-Al termine, lo schema dovrebbe essere simile a quello riportato di seguito. Fai clic sul pulsante **Salva** e salva il tuo lavoro.
+Al termine, lo schema si presenta come l’immagine seguente. Fai clic sul pulsante **Salva** e salva il tuo lavoro.
 
 ![Schema dopo l&#39;aggiunta di dettagli demografici, dettagli contatto personale e gruppi di campi Dettagli consenso e preferenze](assets/model-standard-objects-final-schema-after-adding-field-groups.png "Schema finale dopo il salvataggio di ")
 
@@ -120,7 +118,7 @@ Il gruppo di campi Dettagli demografici ha incluso molti campi, ma in base alla 
 - person.bornDayAndMonth
 - person.bornYear
 
-Per rimuovere campi da qualsiasi gruppo di campi standard di Adobe puoi utilizzare l&#39;opzione **Gestisci campi correlati**. Gestisci campi correlati consente di rimuovere i campi standard dallo schema, in modo da disporre solo dei campi necessari.
+Per rimuovere campi da qualsiasi gruppo di campi standard di Adobe, utilizza l&#39;opzione **Gestisci campi correlati**. Gestisci campi correlati consente di rimuovere i campi standard dallo schema, in modo da mantenere solo i campi necessari.
 
 1. Seleziona l&#39;oggetto **person** nello schema
 1. Fai clic su **Gestisci campi correlati** nella barra a destra
@@ -136,7 +134,7 @@ Per rimuovere campi da qualsiasi gruppo di campi standard di Adobe puoi utilizza
    - person.bornDayAndMonth
    - person.bornYear
 
-   Al termine, fai clic sul pulsante **Conferma** nell&#39;angolo superiore destro.
+   Al termine, fare clic sul pulsante **Conferma** nell&#39;angolo superiore destro.
 
    ![Finestra di dialogo Gestisci campi correlati che mostra i campi persona di Dettagli demografici selezionati](assets/model-standard-objects-demographic-details-person-fields-dialog.png "Gestisci i campi correlati dell&#39;oggetto persona di Dettagli demografici")
 
@@ -146,7 +144,7 @@ Per rimuovere campi da qualsiasi gruppo di campi standard di Adobe puoi utilizza
 
 
 
-1. Al termine, dovresti visualizzare l’oggetto persona nello schema, come illustrato di seguito. Se tutto si presenta correttamente, fai clic sul pulsante **Salva** per salvare lo schema.
+1. Al termine, dovresti visualizzare l’oggetto persona nello schema, come illustrato di seguito. Per salvare lo schema, fai clic sul pulsante **Salva** se tutto si presenta correttamente.
 
 ![Oggetto persona Dettagli demografici finali con solo i campi necessari](assets/model-standard-objects-final-demographic-details-person-object.png "Gruppo di campi Dettagli demografici finali con solo i campi necessari")
 
@@ -155,7 +153,7 @@ Per rimuovere campi da qualsiasi gruppo di campi standard di Adobe puoi utilizza
 Effettua la stessa serie di passaggi eseguita in precedenza ma questa volta per il gruppo di campi Consenso e preferenze.
 
 1. Fai clic sul nome del gruppo di campi **Consenso e preferenze** nella barra a sinistra per evidenziarne i campi nello schema.
-1. Seleziona l&#39;oggetto **consents**, quindi utilizza il processo **Manage related fields** per rimuovere i campi non necessari dall&#39;oggetto di consenso. Mantieni solo i campi seguenti:
+1. Selezionare l&#39;oggetto **consensi** e quindi utilizzare il processo **Gestisci campi correlati** per rimuovere i campi non necessari dall&#39;oggetto dei consensi. Mantieni solo i campi seguenti:
 
 - consents.marketing.email.val
 - consents.marketing.sms.val
@@ -168,10 +166,10 @@ Effettua la stessa serie di passaggi eseguita in precedenza ma questa volta per 
 
 
 
-Al termine, lo schema finale dovrebbe essere simile a questo.  Assicurarsi di fare clic su **Salva** prima di continuare.
+Al termine dell’operazione, lo schema finale si presenta così. Assicurarsi di fare clic su **Salva** prima di continuare.
 
 ![Schema dopo la gestione dei campi correlati per il gruppo di campi Consenso e preferenze](assets/model-standard-objects-final-consent-and-preferences-fields.png "Campi correlati gestiti per il gruppo di campi Consenso e preferenze")
 
->[!TIP]
+>[!SUCCESS]
 >
 >Ora hai completato l’aggiunta di componenti standard allo schema. Ottimo lavoro! Passa alla creazione di alcuni attributi personalizzati per lo schema.

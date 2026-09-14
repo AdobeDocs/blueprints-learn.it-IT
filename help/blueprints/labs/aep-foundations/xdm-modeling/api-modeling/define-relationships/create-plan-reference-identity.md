@@ -4,13 +4,11 @@ description: Utilizza l’API del registro dello schema per creare un descrittor
 doc-type: article
 solution: Experience Platform
 exl-id: b3b8f480-af3b-4bf8-b74e-3842f59691b6
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 
 # Crea identità riferimento piano
 
@@ -49,26 +47,26 @@ SOLO ESEMPIO
 
 >[!NOTE]
 >
->Ricordati di aggiornare il nome tenant precedente (\_devbc) con il tuo
+>Ricorda di aggiornare il nome tenant precedente (\_devbc) con il tuo
 
 
 
-&#x200B;3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
+3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
 
-&#x200B;4. Eseguire l&#39;API facendo clic sul pulsante `Send`
+4. Eseguire l&#39;API facendo clic sul pulsante `Send`
 
-Dovresti ora visualizzare una risposta `201 Created` come segue
+Ora viene visualizzata una risposta `201 Created` simile alla seguente
 
 ![201 Risposta creata dopo la creazione del descrittore identità di riferimento Dep: Plan Lookup](assets/create-plan-reference-identity-dep-plan-descriptor-result.png "dep: descrittore identità di riferimento Plan Lookup")
 
 >[!NOTE]
 >
->Un descrittore di identità di riferimento viene sempre definito nello schema di ricerca (ad esempio sourceSchema)
+>Un descrittore di identità di riferimento viene sempre definito nello schema di ricerca (ovvero, sourceSchema)
 
 >[!NOTE]
 >
->I descrittori di identità di riferimento vengono creati automaticamente nel backend quando crei relazioni dall’interfaccia utente dello schema. **È necessario crearli in modo esplicito solo quando si utilizzano le API per creare schemi**
+>I descrittori di identità di riferimento vengono creati automaticamente sul server quando crei relazioni dall’interfaccia utente dello schema. **È necessario crearli in modo esplicito solo quando si utilizzano le API per creare schemi**
 
->[!TIP]
+>[!SUCCESS]
 >
->Fantastico! Hai appena creato tutti i descrittori richiesti per correlare lo schema `dep: Lookup Plan` allo schema `Customer Account` e hai abilitato il riferimento a esso durante la segmentazione batch
+>Fantastico! Per correlare lo schema `dep: Lookup Plan` allo schema `Customer Account` e consentirne il riferimento durante la segmentazione batch, sono stati creati tutti i descrittori richiesti
