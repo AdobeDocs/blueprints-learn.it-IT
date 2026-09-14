@@ -108,4 +108,4 @@ Per interrompere la **modalità test** per la campagna, fare clic sul pulsante *
 
 Ora hai visto come testare la campagna creata per comprenderne il flusso e il comportamento. In questo caso, le sfumature dell’utilizzo delle diverse impostazioni per la configurazione del canale e-mail erano ben note durante l’esecuzione del flusso di test.
 
-Ulteriori informazioni sulla modalità di test della campagna [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns) se sei interessato.
+Ulteriori informazioni sulla modalità di test della campagna [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns) se sei interessato.

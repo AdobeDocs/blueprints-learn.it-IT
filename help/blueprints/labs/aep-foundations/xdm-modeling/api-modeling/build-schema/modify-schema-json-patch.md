@@ -19,7 +19,7 @@ Si supponga che dopo la creazione dello schema sia necessario aggiungere un camp
 Per ulteriori informazioni su JSON PATCH, consulta i collegamenti riportati di seguito. Per questo laboratorio, supponiamo di avere una conoscenza generale di come funziona.
 
 - [https://jsonpatch.com/](https://jsonpatch.com/)
-- [Nozioni di base sulle API di Experience League](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=en#json-patch)
+- [Nozioni di base sulle API di Experience League](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=it#json-patch)
 
 ![Diagramma dell&#39;applicazione della patch a un campo planDescription mancante in uno schema esistente](assets/modify-schema-json-patch-patching-missing-plan-description-field.png "Applicazione della patch a un campo Plan Description mancante")
 
