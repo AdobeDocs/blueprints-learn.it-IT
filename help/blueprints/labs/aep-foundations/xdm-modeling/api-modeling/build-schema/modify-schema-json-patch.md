@@ -133,7 +133,7 @@ Il percorso completo è simile a quello visualizzato di seguito.  Copia questo p
 2. Aggiorna il corpo della richiesta con le seguenti informazioni
 
    - **op** ->` add`
-   - **percorso** -> `path from previous step +`` the new field name`
+   - **percorso** -> `path from previous step +`&#x200B;` the new field name`
    - **valore** ->
      - **titolo** -> `Plan Description`
      - **tipo** -> `string`
