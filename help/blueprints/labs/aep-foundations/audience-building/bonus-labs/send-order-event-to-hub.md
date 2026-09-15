@@ -4,15 +4,17 @@ description: Scopri come inviare in streaming un evento di ordine all’hub tram
 doc-type: article
 solution: Experience Platform
 exl-id: d5de39d7-7340-487a-86fa-504344daeab7
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '696'
 ht-degree: 0%
-
 ---
 
-
 # Invia evento ordine all&#39;hub
+
+>[!IMPORTANT]
+>
+>Completare l&#39;[installazione di Postman](../../postman-setup/postman-installation.md) prima di avviare questa esercitazione. È inoltre necessario accedere a [webhook.site](https://webhook.site/) e alla destinazione **Webhook DEP streaming** creata nel [caso di utilizzo acquisizione](../use-case-1-acquisition/configure-destinations/setup-streaming-destination.md).
 
 ## Streaming su Hub e Edge
 
@@ -92,7 +94,7 @@ Inizia raccogliendo i seguenti valori:
 1. Passa a **Origini** nella barra a sinistra, quindi fai clic su **Account** nel menu di navigazione in alto
 1. Cerca **dep: API HTTP \[raw]**, evidenzia la riga, copia e salva il valore dell&#39;**endpoint di streaming** da qualche parte a cui potrai fare riferimento in seguito
 
-Account  e copia il relativo endpoint di streaming&rbrack;(assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep: HTTP API \[raw]&quot;)
+Account  e copia il relativo endpoint di streaming](assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep: HTTP API \[raw]&quot;)
 
 ## Trova ID flusso di dati
 

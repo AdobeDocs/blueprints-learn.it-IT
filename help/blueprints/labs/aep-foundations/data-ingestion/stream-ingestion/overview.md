@@ -4,13 +4,11 @@ description: Carica i dati dell’account del cliente tramite un’origine di st
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 973a9cac-dc9d-4c5f-87c3-16a55efd1314
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '120'
 ht-degree: 0%
-
 ---
-
 
 # Acquisizione del flusso
 
@@ -22,6 +20,10 @@ In questo esercizio, caricheremo i dati dell’account cliente da un’origine d
 - Importazione set di mappatura da un altro flusso di dati
 - Recupero ID flusso di dati e ID set di dati dall’interfaccia utente
 - Utilizzo dell’API REST per acquisire un evento
+
+>[!IMPORTANT]
+>
+>Completare l&#39;[installazione di Postman](../../setup.md) prima di avviare questa esercitazione.
 
 >[!NOTE]
 >

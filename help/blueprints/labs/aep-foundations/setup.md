@@ -4,15 +4,21 @@ description: Completa i passaggi di configurazione sandbox e Postman necessari p
 doc-type: article
 solution: Experience Platform
 exl-id: 2b6e8a4c-9d1f-4c7a-b3e6-8a2c5f9d1e7b
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '183'
 ht-degree: 1%
 ---
 
 # Configurazione
 
 Prima di avviare i laboratori AEP Foundations, completa i passaggi di configurazione indicati di seguito. I passaggi necessari dipendono da come si sta effettuando il bootcamp.
+
+## Requisiti e accesso
+
+- Completa l&#39;[installazione di Postman](#postman-setup) prima di avviare i laboratori che eseguono chiamate API.
+- L&#39;accesso a [webhook.site](https://webhook.site/) è necessario per i laboratori di attivazione di Edge e audience che inviano eventi a una destinazione esterna.
+- Gli esercizi di metodologia LID richiedono una stampante per stampare la cartella di lavoro e una penna o una matita per completarla. Consulta [Prerequisiti per la metodologia LID](lid-methodology/prerequisites.md).
 
 ## Configurazione sandbox
 

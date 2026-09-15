@@ -4,9 +4,9 @@ description: Esplora l’architettura di Adobe Journey Optimizer, l’orchestraz
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 0b6c3ca7-3061-4d89-a6f8-f4c6a681706a
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '274'
 ht-degree: 1%
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ## Prerequisiti
 
-Se stai lavorando a questo bootcamp al tuo ritmo, due laboratori hanno bisogno di account esterni organizzati in anticipo: **Configura i canali e-mail** ha bisogno di un sottodominio delegato ad Adobe, e **Flagship phone launch** ha bisogno di credenziali SMS. Per ulteriori dettagli, vedere [Configurazione](setup.md).
+Se stai lavorando a questo campo di avvio secondo il tuo ritmo, completa [Configurazione di Postman](setup.md#postman-setup) prima di avviare i laboratori. **Configurare i canali e-mail** e i relativi laboratori dipendenti richiedono un sottodominio delegato ad Adobe, mentre **Flagship phone launch** richiede le credenziali SMS. Per ulteriori dettagli, vedere [Configurazione](setup.md).
 
 
 ## Introduzione
