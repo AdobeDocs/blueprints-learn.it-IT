@@ -4,39 +4,37 @@ description: Scopri come eseguire un flusso di lavoro di Campaign orchestrato in
 doc-type: article
 solution: Experience Platform
 exl-id: c3b35b27-92ae-44ca-a5fb-3f76990f9db4
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '678'
 ht-degree: 0%
-
 ---
-
 
 # Eseguire il flusso di lavoro
 
 ## Obiettivo
 
-Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutto, l’attività SMS utilizzando la modalità di test.
+Nei passaggi successivi scopri come testare il flusso di lavoro e, soprattutto, l’attività SMS utilizzando la modalità di test.
 
 
 
 ## Verifica flusso di lavoro
 
-1. Al termine, il flusso di lavoro finale si presenterà simile al seguente. Controlla che tutto sia a posto. Vedi:
+1. Al termine, il flusso di lavoro finale si presenterà simile al seguente. Ricontrolla che tutto sia a posto. Vedi:
 
    ![Area di lavoro del flusso di lavoro finale pronta per il test](assets/run-the-workflow-final-workflow-canvas.png)
 
-2. Se non hai già interrotto il flusso di lavoro, assicurati di farlo ora facendo clic sul pulsante **Interrompi** in alto a destra.
+2. Se non hai già interrotto il flusso di lavoro, fai clic sul pulsante **Interrompi** in alto a destra.
 
    ![Pulsante Interrompi in alto a destra del flusso di lavoro](assets/run-the-workflow-click-stop-button.png)
 
    >[!NOTE]
    >
-   >Se lo si desidera, è possibile provare a fare clic sul pulsante Riavvia, ma è probabile che venga visualizzato un errore poiché sono state aggiunte attività dopo la creazione del flusso di lavoro e la cache non è più valida.
+   >Se necessario, prova a fare clic sul pulsante Riavvia, ma è probabile che venga visualizzato un errore perché dopo la creazione del flusso di lavoro hai aggiunto delle attività e la cache non è più valida.
 
 
 
-3. Fai clic sul pulsante **Inizio** per eseguire e verificare l&#39;fine del flusso di lavoro
+3. Fai clic sul pulsante **Inizio** per eseguire e verificare il flusso di lavoro end-to-end
 
    ![Pulsante Avvia per eseguire il test del flusso di lavoro](assets/run-the-workflow-click-start-button.png)
 
@@ -50,7 +48,7 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
 
 
-5. Sono presenti **33 record** e la dimensione di targeting corrisponde all&#39;ID cliente (la chiave di join per il profilo)
+5. Sono presenti **33 record** e la dimensione di targeting corrisponde all&#39;ID cliente (la chiave di join al profilo)
 
 ![33 record con dimensione di targeting corrispondente all&#39;ID cliente](assets/run-the-workflow-33-records-customer-id.png)
 
@@ -70,7 +68,7 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
    >[!NOTE]
    >
-   >Inizialmente questa schermata non verrà compilata perché l’esecuzione dei test richiede un po’ di tempo. Potrebbe essere necessario aggiornare alcune volte prima di visualizzare i risultati.
+   >Inizialmente questa schermata non viene compilata perché l’esecuzione dei test richiede un po’ di tempo. Potrebbe essere necessario aggiornare alcune volte prima di visualizzare i risultati.
 
 
 
@@ -96,11 +94,11 @@ Nei passaggi successivi scoprirai come testare il flusso di lavoro e, soprattutt
 
 ## Spiegazione
 
-Ecco cos&#39;è successo.
+Ecco cosa è successo.
 
 - Avevi 33 righe cliente a cui inviare un messaggio SMS
 - Dopo la modifica dell&#39;attività dimensione 4 di quelle linee cliente non aveva un conto cliente associato
-- L’unione a Real-Time Customer Profile richiede di disporre di un ID cliente e, poiché questi 4 record non contengono alcun nome, non è possibile cercare un profilo o crearne uno nuovo al volo
+- L’unione a Real-Time Customer Profile richiede di disporre di un ID cliente e, poiché nessuno di questi 4 record consente di cercare un profilo o crearne immediatamente uno nuovo
 
 Risultato —> Campagne orchestrate elimina questi 4 record durante l’esecuzione del messaggio
 
@@ -111,9 +109,9 @@ Risultato —> Campagne orchestrate elimina questi 4 record durante l’esecuzio
 >1. Assicurati che venga creato un registro di esclusione per i record a cui manca una dimensione di targeting al momento dell’invio
 >2. Aggiornare l’attività di modifica della dimensione per eseguire un inner join anziché un join esterno che rimuoverebbe questi 4 record in primo piano
 
->[!TIP]
+>[!SUCCESS]
 >
->Congratulazioni! Ora sei ufficialmente certificato per lanciare le tue Orchestrated Campaigns e trasmettere messaggi al mondo—responsabilmente, speriamo. Lanciati sul mercato come una maestosa magia digitale!
+>Congratulazioni! Ora sei ufficialmente certificato per lanciare le tue Orchestrated Campaigns e trasmettere messaggi al mondo in modo responsabile. Ora è possibile commercializzare con fiducia!
 
 
 
@@ -122,7 +120,7 @@ Risultato —> Campagne orchestrate elimina questi 4 record durante l’esecuzio
 Non lo farete in laboratorio, ma per il contesto ecco cosa succede al momento della pubblicazione:
 
 1. Il modulo di pianificazione entra se per la campagna è impostata una pianificazione
-1. Le attività Save Audience creano la shell del pubblico in nel Portale pubblico e i profili qualificati iniziano a acquisirli
+1. Le attività Save Audience creano la shell del pubblico all’interno del Portale dell’audience e i profili qualificati iniziano a acquisire
 1. Viene avviata l’esecuzione del messaggio per la prima attività messaggio nel flusso di lavoro
    - Le ricerche di profilo vengono eseguite sullo snapshot del profilo
      - I profili corrispondenti rispettano il consenso trovato sul profilo

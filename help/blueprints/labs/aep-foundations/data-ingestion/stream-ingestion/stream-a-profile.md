@@ -4,13 +4,11 @@ description: Utilizza Postman, l’endpoint di streaming e l’ID del flusso di 
 doc-type: article
 solution: Experience Platform
 exl-id: 937d153c-9230-4f5a-a397-6c177a3ea890
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '620'
 ht-degree: 0%
-
 ---
-
 
 # Trasmetti un profilo
 
@@ -72,7 +70,7 @@ Alcuni elementi importanti da notare nella richiesta precedente:
 
 ## Raccogli i valori richiesti
 
-Prima di poter inviare in streaming i dati, è necessario raccogliere alcuni dei valori richiesti elencati in precedenza (ovvero, in particolare, i valori &quot;intestazione&quot; dell’URL dell’endpoint di streaming e del contenuto del corpo).
+Prima di inviare i dati in streaming, raccogli i valori richiesti elencati sopra (in particolare, i valori &quot;header&quot; dell’URL dell’endpoint di streaming e del contenuto del corpo).
 
 Effettua le seguenti operazioni:
 
@@ -101,7 +99,7 @@ Effettua le seguenti operazioni:
 
 ## Aggiornare la richiesta API
 
-Passa all’applicazione Postman e aggiorna la richiesta Crea account cliente con le informazioni appena raccolte.
+Passa all’applicazione Postman e aggiorna la richiesta Crea account cliente con le informazioni raccolte.
 
 1. Apri Postman e passa a **Data Ingestion Lab -> Crea richiesta API account cliente** e aprila
 
@@ -136,7 +134,7 @@ Passa all’applicazione Postman e aggiorna la richiesta Crea account cliente co
 
 
 
-1. Dovresti ricevere una risposta `200 OK` che indica che è stata ricevuta correttamente da Adobe Experience Platform
+1. Ricevi una risposta `200 OK` che indica che il Adobe Experience Platform l&#39;ha ricevuto correttamente
 
 Esempio 200 Risposta OK
 
@@ -151,8 +149,8 @@ Esempio 200 Risposta OK
 
 >[!NOTE]
 >
->Osserva **xactionId** nella risposta.  Se si verifica un errore in cui non viene visualizzato un record acquisito, questo deve sempre essere fornito come parte di un ticket di assistenza clienti, in quanto si tratta di un punto elenco di tracciamento utilizzato dai nostri team di supporto per eseguire il debug di eventuali problemi dell’ambiente
+>Osserva **xactionId** nella risposta.  Se si verifica un errore in cui non viene visualizzato un record acquisito, questo deve sempre essere fornito come parte di un ticket di assistenza clienti in quanto è un riferimento chiave utilizzato dai nostri team di supporto per eseguire il debug di eventuali problemi dell’ambiente
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni!  Hai inviato correttamente lo streaming di un record di profilo in Adobe Experience Platform

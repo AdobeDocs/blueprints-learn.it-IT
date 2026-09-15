@@ -4,13 +4,11 @@ description: Visualizza l’anteprima di un set di dati in streaming nell’inte
 doc-type: article
 solution: Experience Platform
 exl-id: fbdb0b6b-08b6-49b8-b6ab-d59d5941c678
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '278'
 ht-degree: 0%
-
 ---
-
 
 # Verifica e convalida
 
@@ -35,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**Il set di dati di anteprima** mostrerà solo le prime righe del set di dati. Gli oggetti array non sono visualizzabili.
+>**L&#39;anteprima del set di dati** mostra solo le prime righe del set di dati. Gli oggetti array non sono visualizzabili.
 
 
 
@@ -62,7 +60,7 @@ ht-degree: 0%
 
 
 
-1. Copia e incolla la seguente query SQL nell&#39;**Editor**. Ricordarsi di sostituire `<table_name>` con il valore ottenuto nel passaggio 2.
+1. Copiare e incollare la seguente query SQL nell&#39;**Editor**. Ricordarsi di sostituire `<table_name>` con il valore ottenuto nel passaggio 2.
 
    ```sql
    SELECT * FROM <table_name>
@@ -82,12 +80,12 @@ ht-degree: 0%
 
 
 
-1. Per accedere ai dati nel `postalCode` **nodo**, digitare:
+1. Digitare quanto segue per accedere ai dati nel `postalCode` **nodo**:
 
 ```sql
 SELECT shippingAddress.postalCode FROM <table_name>
 ```
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni!  Hai acquisito e creato correttamente un set di esempio di profili cliente in tempo reale

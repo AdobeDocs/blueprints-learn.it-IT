@@ -4,13 +4,11 @@ description: Ottieni una panoramica della creazione di una campagna orchestrata 
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 04c509f1-aa10-4d29-aa59-5e627b79e498
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '283'
 ht-degree: 0%
-
 ---
-
 
 # Lancio di punta del telefono
 
@@ -20,15 +18,20 @@ ht-degree: 0%
 >
 >Prima di avviare questo laboratorio, è necessario aver completato i seguenti laboratori
 
+- **Installazione di Postman** **—>** [Installazione di Postman](../../postman-setup/postman-installation.md)
 - **Archivi dati - Archivio relazionale in azione** **—>** [Dimension di destinazione profilo](../../data-stores/relational-store-in-action/profile-target-dimension.md)
 - **Archivi dati — Configura canali e-mail —>** [Configura per relazionale](../../data-stores/configure-email-channels/configure-for-relational.md)
   *(il completamento di questo passaggio di installazione richiede fino a 3 ore)*
 
-Se non hai completato queste esercitazioni, fallo adesso prima di continuare.
+Se non hai completato questi laboratori, fallo ora prima di continuare.
+
+>[!CAUTION]
+>
+>Questa esercitazione richiede credenziali SMS nella sandbox per completare il passaggio Configura canale SMS: non vengono inviati messaggi effettivi, ma devono essere presenti credenziali Twilio. Consulta [Configurazione](../../setup.md) se hai eseguito il provisioning automatico e non hai ancora eseguito il provisioning di questi.
 
 ## Panoramica di Lab
 
-Questo video illustra come il caso d’uso del lancio del telefono di punta corrisponde alle campagne orchestrate, riassumendo le domande e l’architettura di pensiero critiche prima di creare la campagna indirizzando i titolari di account e le singole linee.
+In questo video, scopri come il caso d’uso del lancio del telefono di punta corrisponde alle campagne orchestrate, riassumendo le domande e l’architettura di pensiero critiche prima di creare la campagna indirizzando i titolari di account e le singole linee.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486217/)
 
@@ -44,7 +47,7 @@ Questo video illustra come il caso d’uso del lancio del telefono di punta corr
 
 ## Descrizione del caso d’uso
 
-Immediatamente dopo il lancio di un dispositivo di punta del produttore, invia un messaggio mirato agli account holder e agli utenti di linea con modelli meno recenti, invitandoli ad aggiornare e sperimentare il futuro del mobile.
+Immediatamente dopo il lancio di un dispositivo di punta del produttore, inviare un messaggio mirato agli account holder e agli utenti di linea con modelli meno recenti, invitandoli ad effettuare l&#39;aggiornamento alla tecnologia mobile più recente.
 
 **Callout chiave:**
 

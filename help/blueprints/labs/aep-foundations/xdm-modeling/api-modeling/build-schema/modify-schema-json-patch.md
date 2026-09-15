@@ -4,21 +4,19 @@ description: Utilizza una chiamata API PATCH JSON per aggiungere un nuovo campo 
 doc-type: article
 solution: Experience Platform
 exl-id: c0313594-d998-4525-a0a4-d9d844bed5ef
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '805'
 ht-degree: 0%
-
 ---
-
 
 # Modifica schema - Patch JSON
 
 ## Panoramica
 
-Si supponga per un minuto che dopo aver generato lo schema sia necessario tornare indietro e aggiungere un campo aggiuntivo all&#39;oggetto `plan` denominato `planDescription` perché si è dimenticato di aggiungerlo al momento della creazione oppure perché si è trattato di una richiesta inviata dopo mesi.  Per eseguire questa attività è sufficiente eseguire un&#39;operazione `PATCH` che aggiorna lo schema con il nuovo campo.
+Si supponga che dopo la creazione dello schema sia necessario aggiungere un campo aggiuntivo all&#39;oggetto `plan` denominato `planDescription`. Questa necessità potrebbe sorgere perché hai dimenticato di aggiungerlo quando hai creato lo schema o perché si trattava di una richiesta pervenuta dopo mesi. Per eseguire questa attività, eseguire un&#39;operazione `PATCH` che aggiorna lo schema con il nuovo campo.
 
-Per ulteriori informazioni su JSON PATCH, consulta i collegamenti riportati di seguito. Tuttavia, ai fini di questa esercitazione, supponiamo di avere un&#39;idea del funzionamento di 😄
+Per ulteriori informazioni su JSON PATCH, consulta i collegamenti riportati di seguito. Per questo laboratorio, supponiamo di avere una conoscenza generale di come funziona.
 
 - [https://jsonpatch.com/](https://jsonpatch.com/)
 - [Nozioni di base sulle API di Experience League](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=it#json-patch)
@@ -29,16 +27,16 @@ Per ulteriori informazioni su JSON PATCH, consulta i collegamenti riportati di s
 >
 >Tenere presenti i punti seguenti:
 >
->- Uno schema è composto da una (1) classe e da uno (1) o più gruppi di campi
->- Non è possibile aggiungere nuovi campi direttamente a uno schema senza prima aggiungerli a un gruppo di campi. In questo modo è possibile riutilizzare un campo in qualsiasi schema che utilizzi quel gruppo di campi.
+>- Uno schema è composto da una classe e da uno o più gruppi di campi
+>- È necessario aggiungere nuovi campi a un gruppo di campi prima di aggiungerli a uno schema. Questa restrizione garantisce la riutilizzabilità di un campo in qualsiasi schema che utilizza tale gruppo di campi.
 
 
 
-Per aggiungere un nuovo campo a uno schema, è necessario eseguire le operazioni seguenti in ordine.  Questo è ciò che si fa nei seguenti passaggi di laboratorio.
+Per aggiungere un nuovo campo a uno schema, è necessario eseguire le operazioni seguenti in ordine. Questo processo è quello che si fa nei seguenti passaggi di laboratorio.
 
 - Identifica il gruppo di campi in cui desideri aggiungere la nuova proprietà
 - Creare una chiamata PATCH JSON per aggiornare il gruppo di campi
-- Esegui la chiamata PATCH JSON per aggiornare il gruppo di campi (che verrà ereditato dallo schema)
+- Esegui la chiamata PATCH JSON per aggiornare il gruppo di campi (ereditato dallo schema)
 
 
 
@@ -51,23 +49,23 @@ Per aggiungere un nuovo campo a uno schema, è necessario eseguire le operazioni
 
    >[!NOTE]
    >
-   >Ricorda che hai creato l&#39;oggetto `plan` all&#39;interno di un gruppo di campi personalizzato. Gli oggetti creati personalizzati nel registro dello schema XDM sono denominati &quot;tenant&quot;, da cui la chiamata API che utilizza il percorso `/schemaregistry/tenant/mixins/`.
+   >Ricorda che hai creato l&#39;oggetto `plan` all&#39;interno di un gruppo di campi personalizzato. Gli oggetti creati personalizzati nel registro dello schema XDM sono denominati &quot;tenant&quot;, pertanto la chiamata API che utilizza il percorso `/schemaregistry/tenant/mixins/`.
 
 
 
 1. Nella risposta cerca l&#39;ID schema per il gruppo di campi personalizzati creato in precedenza con titolo `Customer Account Details - Sandbox <your number here> `
 
-1. Copia `$meta:altId` e salvalo in un luogo sicuro, in quanto sarà necessario per il passaggio successivo
+1. Copia `$meta:altId` e salvalo in un luogo sicuro per il passaggio successivo
 
 ![Individuazione del gruppo di campi Dettagli account cliente personalizzato nella risposta API](assets/modify-schema-json-patch-search-field-group-response.jpeg "Cercare la risposta per il gruppo di campi Dettagli account cliente")
 
 >[!CAUTION]
 >
->Assicurati di selezionare il gruppo di campi corretto da copiare.  Esiste un nome con lo stesso nome `dep: Customer Account Details` che dovresti **non** usare
+>Assicurati di selezionare il gruppo di campi corretto da copiare. Non utilizzare il gruppo di campi con nome simile denominato `dep: Customer Account Details`
 
 >[!WARNING]
 >
->Non continuare finché non hai salvato `$meta:altId ` da qualche parte.  Sarà necessaria nelle prossime fasi del laboratorio
+>È necessario `$meta:altId` per i futuri passaggi del laboratorio, quindi salvarlo in qualche punto prima di continuare
 
 
 
@@ -119,7 +117,7 @@ Il percorso completo è simile a quello visualizzato di seguito.  Copia questo p
 ```
 
 - **op (Operazione)** -> indica l&#39;azione che deve essere eseguita da PATCH
-- **Percorso** -> si tratta del percorso che si desidera creare, aggiornare o eliminare (ovvero il puntatore JSON alla posizione del nuovo campo)
+- **Percorso** -> si tratta del percorso che si desidera creare, aggiornare o eliminare, ovvero il puntatore JSON alla posizione del nuovo campo
 - **Valore** -> è un campo facoltativo ed è utilizzato solo per creare o sostituire un campo esistente
 
 
@@ -155,11 +153,11 @@ Il percorso completo è simile a quello visualizzato di seguito.  Copia questo p
 
 4. `Execute` la chiamata per eseguire PATCH
 
-Dovresti visualizzare una risposta di `200 OK ` e il campo `planDescription` nel gruppo di campi dovrebbe essere visualizzato nel modo seguente:
+Nel gruppo di campi viene visualizzata una risposta `200 OK` e il campo `planDescription`, come segue:
 
 ![200 Risposta OK dopo aver applicato correttamente la patch al gruppo di campi con planDescription](assets/modify-schema-json-patch-step-3-200-ok-successful-patch.png "Passaggio 3 - 200 OK PATCH") completato
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni! Aggiornamento di un gruppo di campi/schema tramite JSON PATCH completato
 
@@ -167,6 +165,6 @@ Dovresti visualizzare una risposta di `200 OK ` e il campo `planDescription` nel
 
 ## Visualizzare la modifica nell’interfaccia utente
 
-Sfoglia lo schema tramite l’interfaccia utente e osserva il campo appena aggiunto.  Fantastico, eh?
+Sfoglia lo schema tramite l’interfaccia utente e visualizza il campo appena aggiunto.
 
 ![Campo Descrizione piano visibile nello schema dopo la patch JSON nell&#39;interfaccia utente di Experience Platform](assets/modify-schema-json-patch-plan-description-added-to-field-group.png "Descrizione piano aggiunta al gruppo di campi Dettagli account cliente - Sandbox \&lt;numero>. Modifica schema JSON")

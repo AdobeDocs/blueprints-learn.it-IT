@@ -4,13 +4,11 @@ description: Completa i passaggi di configurazione sandbox e Postman necessari p
 doc-type: article
 solution: Experience Platform
 exl-id: 2b6e8a4c-9d1f-4c7a-b3e6-8a2c5f9d1e7b
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '124'
 ht-degree: 1%
-
 ---
-
 
 # Configurazione
 
@@ -20,9 +18,9 @@ Prima di avviare i laboratori AEP Foundations, completa i passaggi di configuraz
 
 >[!NOTE]
 >
->Se partecipi a un corso o evento di formazione live, la sandbox è già stata distribuita: salta questa sezione e passa direttamente a Configurazione di Postman, di seguito.
+>Se partecipi a un corso o evento di formazione live, la sandbox è già stata distribuita: salta questa sezione e passa direttamente a Configurazione di Postman di seguito.
 
-Se stai lavorando a questo campo di avvio secondo il tuo ritmo e non disponi già di una sandbox funzionante con le risorse lab distribuite, completa prima quanto segue:
+Se non disponi già di una sandbox funzionante con le risorse lab distribuite, completa i passaggi seguenti:
 
 - [Installazione di Developer Console](sandbox-setup/developer-console-setup.md)
 - [Istruzioni di implementazione](sandbox-setup/deployment-instructions.md)

@@ -4,13 +4,11 @@ description: Utilizza l’API del registro degli schemi per assemblare uno schem
 doc-type: article
 solution: Experience Platform
 exl-id: 78ebc5b8-d088-48e9-857f-87085a87a280
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '340'
 ht-degree: 0%
-
 ---
-
 
 # Crea schema
 
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->**Non eseguire la chiamata...eppure**
+>**Non eseguire ancora la chiamata**
 
 1. Fare clic sulla chiamata API `Step 4 - Create Customer Account Schema` nella cartella `XDM Schema Lab -> Create Schema`.
 
@@ -33,7 +31,7 @@ ht-degree: 0%
    - Titolo -> `Sample Customer Schema - <your sandbox number>`
    - Descrizione -> `Sample Customer Schema - <your sandbox number>`
 
-4. Compilare i campi `$ref` con i `$ids` salvati dalle precedenti sezioni del laboratorio completate: [Creare gruppi di campi personalizzati](./create-custom-field-groups.md) e [Ottenere la classe del profilo](./get-profile-class.md). È necessario disporre di $id per ciascuno dei seguenti elementi:
+4. Compilare i campi `$ref` con i `$ids` salvati dalle precedenti sezioni del laboratorio completate: [Creare gruppi di campi personalizzati](./create-custom-field-groups.md) e [Ottenere la classe del profilo](./get-profile-class.md). Hai $id per ciascuno dei seguenti elementi:
 
    - Classe -> Profilo individuale XDM
    - Gruppo di campi -> Dettagli demografici
@@ -76,8 +74,8 @@ In caso di esito positivo, la risposta per la creazione dello schema dovrebbe ot
 
 >[!WARNING]
 >
->Non continuare finché non avrai salvato `$id` e `$meta:altId` da qualche parte.  Saranno necessarie nelle prossime fasi del laboratorio
+>Non continuare finché non avrai salvato `$id` e `$meta:altId` da qualche parte.  Sono necessari in fasi di laboratorio future
 
->[!TIP]
+>[!SUCCESS]
 >
->**Congratulazioni! Hai appena creato uno schema utilizzando solo le API**
+>**Congratulazioni! Hai creato uno schema utilizzando solo le API**

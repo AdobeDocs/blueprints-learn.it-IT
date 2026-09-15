@@ -1,9 +1,8 @@
 ---
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 5%
-
+source-wordcount: '475'
+ht-degree: 4%
 ---
 ﻿---
 title: Panoramica
@@ -24,17 +23,21 @@ exl-id: 70eaf77b-e407-4fbc-8338-ab47784e0721
 - **Archivi dati - Archivio relazionale in azione** **—>** [Dimension di destinazione profilo](../data-stores/relational-store-in-action/profile-target-dimension.md)
 - **Archivi dati — Configura canali e-mail —>** [Configura per relazionale](../data-stores/configure-email-channels/configure-for-relational.md)
 
-Se non hai completato queste esercitazioni, fallo adesso prima di continuare.
+Se non hai completato questi laboratori, fallo ora prima di continuare.
+
+>[!CAUTION]
+>
+>Questo laboratorio richiede un sottodominio delegato ad Adobe nella sandbox. Consulta [Configurazione](../setup.md) se sei al passo con i tuoi impegni e non ne hai ancora uno.
 
 ## Panoramica di Lab
 
-In questo video scoprirai cosa aspettarti nei tre atti di questo laboratorio pratico: configurazione del marchio Connection 5G, creazione di frammenti, modelli e un’e-mail assistita da intelligenza artificiale, convalida tramite simulazione e invio di una bozza.
+In questo video imparerai cosa aspettarti dalle tre parti di questo laboratorio pratico: configurazione del marchio Connection 5G, creazione di frammenti e modelli, creazione di un’e-mail assistita da intelligenza artificiale e convalida tramite simulazione e invio di una bozza.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491145/)
 
 ## Obiettivi di apprendimento
 
-Al termine di questo modulo, sarai in grado di:
+Al termine di questo modulo, potrai:
 
 1. Spiegare l’importanza della creazione di contenuti in Adobe Journey Optimizer.
 1. Identifica e descrive i concetti chiave, tra cui Marchi, Linee guida per i marchi, Percorsi e Modelli.
@@ -69,7 +72,7 @@ Le linee guida per i marchi definiscono:
 - Stile e tono di scrittura
 - Regole vocali
 - Requisiti legali
-- Standard visivi quali colore, immagini e iconografia
+- Standard visivi (colore, immagini, iconografia)
 
 ### &#x200B;3. Percorsi
 
@@ -94,7 +97,7 @@ I modelli sono strutture riutilizzabili per i canali, ad esempio:
 
 1. Apri Adobe Journey Optimizer nel browser.
 1. Accedi con le tue credenziali.
-1. Arrivi sul cruscotto principale.
+1. Viene visualizzato il quadro comandi principale.
 
 ### Individua il menu di navigazione principale
 
@@ -114,7 +117,7 @@ Prima di iniziare a creare il tuo marchio, scopri gli **strumenti per la creazio
 - Modelli di contenuto
 - Frammenti
 
-Fai clic su ciascuna di esse e acquisisci familiarità con l’interfaccia utente. Questo laboratorio analizza in dettaglio ogni sezione.
+Per acquisire familiarità con l’interfaccia utente, selezionane una. Questo laboratorio analizza in dettaglio ogni sezione.
 
 ![Strumenti per la creazione di contenuti, inclusi Assets, modelli di contenuto e frammenti nel menu di navigazione](assets/overview-content-creation-tools-navigation-menu.png)
 

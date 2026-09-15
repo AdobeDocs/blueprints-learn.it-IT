@@ -1,16 +1,14 @@
 ---
 title: Automatizzare con API
-description: Esegui una raccolta Postman che automatizza la creazione di schemi, gruppi di campi, descrittori di identità e relazione e set di dati in un'unica operazione.
+description: Esegui una raccolta Postman che automatizza la creazione di schemi, gruppi di campi, descrittori di identità e relazioni e set di dati in una singola esecuzione.
 doc-type: article
 solution: Experience Platform
 exl-id: a490f93f-19da-4de3-81c8-4569c49c5354
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '303'
 ht-degree: 0%
-
 ---
-
 
 # Automatizzare con API
 
@@ -50,7 +48,7 @@ Per scoprire come automatizzare le distribuzioni utilizzando le API, esegui una 
 
 
 
-1. Potrai vedere che le chiamate API iniziano a essere eseguite in ordine e, una volta completate, dovresti vedere 32 test superati.
+1. Vedrai che le chiamate API iniziano a essere eseguite in ordine e, una volta completate, vedrai 32 test superati.
 
    ![Automazione riuscita con 32 test superati](assets/automate-with-apis-successful-automation-32-passed-tests.png "Automazione riuscita")
 
@@ -64,6 +62,6 @@ Per scoprire come automatizzare le distribuzioni utilizzando le API, esegui una 
 
 ![Due set di dati creati con Postman: prefisso corrispondente agli schemi automatizzati](assets/automate-with-apis-datasets-created-in-ui.png "Set di dati di automazione")
 
->[!TIP]
+>[!SUCCESS]
 >
->Congratulazioni!  Hai appena automatizzato la distribuzione di spazi dei nomi di identità, gruppi di campi, schemi, descrittori di identità/relazione e l’abilitazione di uno schema per il profilo e la generazione di un set di dati utilizzando lo schema
+>Congratulazioni!  Hai automatizzato la distribuzione di spazi dei nomi di identità, gruppi di campi, schemi, descrittori di identità/relazione, hai abilitato uno schema per il profilo e generato un set di dati utilizzando lo schema

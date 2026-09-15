@@ -4,13 +4,11 @@ description: Scopri come utilizzare l’attività Read Audience con un Profile T
 doc-type: article
 solution: Experience Platform
 exl-id: f825efe9-4349-4195-a017-c956c15df946
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1264'
 ht-degree: 0%
-
 ---
-
 
 # Leggere un pubblico
 
@@ -172,16 +170,16 @@ Orchestrated Campaign utilizza lo schema relazionale per tutte le attività. Qua
 
 >[!NOTE]
 >
->Mentre il pubblico Read mostrava **9** profili. Poiché abbiamo creato un filtro su Source e il campo Source esiste nello store relazionale, abbiamo dovuto unirci dallo store dei profili allo store relazionale per controllarlo. Quando è stato aggiunto allo schema relazionale tramite il Dimension di destinazione di Campaign, solo un totale di **7** profili ha restituito una corrispondenza. Questi **7** ID cliente corrispondenti sono disponibili per l&#39;utilizzo nelle seguenti attività che tentano di utilizzare dati relazionali. Tutti gli ID cliente **7** avevano `Source` impostati su **&quot;In Store&quot;**, come evidenziato dai flussi di suddivisione.
+>Il pubblico Read ha mostrato **9** profili. Poiché hai creato un filtro su Source e il campo Source esiste nell’archivio relazionale, è necessario unirsi all’archivio profili con l’archivio relazionale per controllarlo. Quando si unisce allo schema relazionale tramite Campaign Target Dimension, solo un totale di **7** profili corrisponde. Questi **7** ID cliente corrispondenti sono disponibili per l&#39;utilizzo nelle seguenti attività che tentano di utilizzare dati relazionali. Tutti gli ID cliente **7** avevano `Source` impostati su **&quot;In Store&quot;**, come evidenziato dai flussi di suddivisione.
 >
 >Pertanto, mantenere la coerenza dei dati è fondamentale quando si utilizzano i profili AEP insieme alle relative controparti relazionali per l’arricchimento.
 
->[!TIP]
+>[!SUCCESS]
 >
 >Congratulazioni, questo completa il laboratorio sull’utilizzo dell’attività Read Audience con lo schema relazionale.
 
 ## Riassunto
 
-Ora hai visto quanto è facile creare una campagna, eseguire un’attività Read Audience insieme al Dimension di destinazione del profilo per sfruttare lo schema relazionale. Hai utilizzato l’attività Dividi per dividere il pubblico in base a una condizione. Infine, la modalità di test ha aiutato a capire che è importante disporre della coerenza dei dati tra il profilo e lo schema relazionale.
+Ora hai visto quanto è facile creare una campagna, eseguire un’attività Read Audience insieme al Dimension di destinazione del profilo per utilizzare lo schema relazionale. Hai utilizzato l’attività Dividi per dividere il pubblico in base a una condizione. Infine, la modalità di test ha aiutato a capire che è importante disporre della coerenza dei dati tra il profilo e lo schema relazionale.
 
 Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience) se sei interessato.

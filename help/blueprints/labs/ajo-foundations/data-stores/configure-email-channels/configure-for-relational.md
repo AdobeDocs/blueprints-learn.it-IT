@@ -4,19 +4,17 @@ description: Scopri come configurare un canale e-mail utilizzando l’attributo 
 doc-type: article
 solution: Experience Platform
 exl-id: 6f299942-79a6-42c2-8a5b-dd4bccd6aad4
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 10%
-
+source-wordcount: '535'
+ht-degree: 3%
 ---
-
 
 # Configura per relazionale
 
 ## Obiettivo
 
-Nei passaggi successivi verrà creata una configurazione del canale e-mail da utilizzare solo con le campagne orchestrate, utilizzando l&#39;attributo `email` dello schema relazionale `dep-rel: Customer Account`
+Nei passaggi successivi, crei una configurazione del canale e-mail da utilizzare solo con le campagne orchestrate, utilizzando l&#39;attributo `email` dello schema relazionale `dep-rel: Customer Account`
 
 ## Creare la configurazione del canale
 
@@ -52,6 +50,10 @@ Dal menu a discesa **Sottodominio**, seleziona **email.dep-labs.com**
 
 ![Menu a discesa Sottodominio con email.dep-labs.com selezionato](assets/configure-for-profile-select-email-subdomain.png "Configura sottodominio")
 
+>[!NOTE]
+>
+>Se esegui il self-service e non disponi di un sottodominio con provisioning preliminare, seleziona il tuo sottodominio delegato ad Adobe qui invece di `email.dep-labs.com`. Per informazioni su come delegarne una, vedere [Configurazione](../../setup.md).
+
 ## Configurare i dettagli del pool IP
 
 Dal menu a discesa **Pool IP**, seleziona **marketing**
@@ -60,7 +62,7 @@ Dal menu a discesa **Pool IP**, seleziona **marketing**
 
 ## Configurare l’annullamento dell’iscrizione all’elenco
 
-1. Assicurati che l&#39;opzione di attivazione/disattivazione sia **abilitata** per l&#39;annullamento dell&#39;iscrizione a un elenco
+1. Assicurati che l&#39;opzione di attivazione/disattivazione sia **abilitata** per l&#39;annullamento dell&#39;iscrizione all&#39;elenco
 1. Nell&#39;area delle preferenze per l&#39;annullamento dell&#39;iscrizione all&#39;elenco verificare che tutte le caselle di controllo siano **selezionate**
 1. In Gestione collegamenti assicurarsi che **Adobe managed** sia selezionato
 1. Per il livello di consenso, assicurati che sia impostato su **Canale**
@@ -80,11 +82,11 @@ Dal menu a discesa **Pool IP**, seleziona **marketing**
 
 ## Configura e-mail Ccn
 
-Lascia vuoto questo campo
+Lascia vuoto il campo e-mail Ccn
 
 >[!NOTE]
 >
->Per conservare una copia delle e-mail inviate, puoi includere nell’invio un indirizzo e-mail in Ccn. Immetti l’indirizzo e-mail desiderato in modo che ogni e-mail venga inviata anche in copia per conoscenza nascosta a questo indirizzo Ccn. Il dominio dell’indirizzo Ccn non deve essere lo stesso di un sottodominio delegato ad Adobe. Questa funzione è facoltativa. *Come utilizzare Ccn per le e-mail*
+>Per conservare una copia delle e-mail inviate, inviarle a una casella in entrata Ccn. Inserisci l’indirizzo e-mail desiderato, in modo che ogni e-mail inviata venga inviata anche a questo indirizzo in Ccn. Il dominio dell’indirizzo Ccn non deve essere lo stesso di un sottodominio delegato ad Adobe. Questa funzione è facoltativa. *Come utilizzare Ccn per le e-mail*
 
 ## Configurare i parametri dei tentativi e-mail
 
@@ -126,7 +128,7 @@ Lascia le impostazioni predefinite
 
 >[!NOTE]
 >
->Per le campagne orchestrate, esegui il targeting dell’account cliente con un’e-mail, quindi devi inviare un solo messaggio per Dimension di Target.  L&#39;indirizzo di esecuzione utilizzato proviene dal Dimension di destinazione stesso (ovvero ciò che è memorizzato nella tabella **dep-rel: Account cliente** per l&#39;indirizzo **email**)
+>Per le campagne orchestrate, esegui il targeting dell’account cliente con un’e-mail, quindi devi inviare un solo messaggio per Dimension di Target.  L&#39;indirizzo di esecuzione utilizzato proviene dal Dimension di destinazione stesso (ovvero, ciò che è memorizzato nella tabella **dep-rel: Account cliente** per l&#39;indirizzo **email**)
 
 
 ## Rivedi e salva
