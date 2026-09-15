@@ -44,7 +44,7 @@ Due laboratori più avanti in questo campo di avvio dipendono da account esterni
 
 ### Sottodominio delegato
 
-Il laboratorio [Configura i canali e-mail](data-stores/configure-email-channels/overview.md) e tutto ciò che dipende da esso ([Consegna dei messaggi in azione](orchestrated-campaigns/message-delivery-in-action/overview.md), [Eccitazione post-acquisto](journeys/post-purchase-excitement/overview.md) e [Marchi AJO](content-authoring-with-ai/overview.md)) richiede un sottodominio delegato ad Adobe per l&#39;invio delle e-mail. Se non disponi già di un dominio, registrane uno con qualsiasi registrar di dominio (ad esempio, NameCheap). Quindi, per delegare un sottodominio di esso (ad esempio, `email.yourdomain.com`) ad Adobe, segui le [istruzioni di delega del sottodominio di Adobe](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain).
+Il laboratorio [Configura i canali e-mail](data-stores/configure-email-channels/overview.md) e tutto ciò che dipende da esso ([Consegna dei messaggi in azione](orchestrated-campaigns/message-delivery-in-action/overview.md), [Eccitazione post-acquisto](journeys/post-purchase-excitement/overview.md) e [Marchi AJO](content-authoring-with-ai/overview.md)) richiede un sottodominio delegato ad Adobe per l&#39;invio delle e-mail. Se non disponi già di un dominio, registrane uno con qualsiasi registrar di dominio (ad esempio, NameCheap). Quindi, per delegare un sottodominio di esso (ad esempio, `email.yourdomain.com`) ad Adobe, segui le [istruzioni di delega del sottodominio di Adobe](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain).
 
 >[!NOTE]
 >
