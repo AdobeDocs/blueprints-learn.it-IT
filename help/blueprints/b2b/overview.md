@@ -7,20 +7,24 @@ exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
 TQID: https://experienceleague.adobe.com/eCN6p4FgOY5k3JqjlMx55YJjYMChqTiwxH-LWagH7pk
 product_v2:
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
+    internal-label: Personalization
+source-git-commit: 7f0b624616480cf563142c08eb0598d1dd55d551
 workflow-type: tm+mt
-source-wordcount: 287
-ht-degree: 82%
-
+source-wordcount: '352'
+ht-degree: 67%
 ---
-
 # Progetti di analisi, attivazione e marketing B2B
 
 L’attivazione di profili e pubblico B2B è fondamentale per il successo nel mondo del data-driven marketing. Tuttavia, molti brand continuano a concentrarsi sull’attivazione in base al canale, che spesso risulta in incoerenza a livello di portata e personalizzazione.
@@ -31,6 +35,8 @@ Con l’approccio di priorità al canale, ogni canale funziona come un comparto 
 |---|---|---|
 | **[Analisi B2B](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=it)** | <ul><li>Includere informazioni sull’account B2B nell’analisi della customer journey</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
 | **[Attivazione del pubblico B2B](b2bactivation.md)** | <ul><li>Rivolgiti a un pubblico B2B su tutti i canali; web, e-mail e pubblicitari</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B Edition</li></ul> |
+| **[Attivazione del pubblico B2B e del profilo](b2b-audience-profile-activation.md)** | <ul><li>Creare e attivare persone e tipi di pubblico dell’account da profili B2B unificati per diversi canali e destinazioni</li></ul> | <ul><li>Adobe Real-Time Customer Data Platform B2B edition</li><li>Adobe Journey Optimizer B2B edition</li><li>Adobe Customer Journey Analytics B2B edition</li></ul> |
+| **[Attivazione account B2B](b2b-account-activation.md)** | <ul><li>Attiva i tipi di pubblico dell’account per destinazioni pubblicitarie e archiviazione cloud per targeting, attività di vendita e analisi</li></ul> | <ul><li>Adobe Real-Time Customer Data Platform B2B edition</li></ul> |
 | **[Acquisto di attività di marketing e gestione dei Percorsi basate sui gruppi](/help/blueprints/b2b/b2b-buying-group-journeys.md)** | <ul><li>Progetta e crea un percorso di account che qualifichi i lead per un gruppo di acquisto che aumenti l’efficacia dell’attività di marketing nella qualificazione dei lead e nelle opportunità di vendita</li></ul> | <ul><li>Adobe Journey Optimizer B2B edition</li><li>Adobe Real-time Customer Data Platform B2B Edition</li><li>Adobe Marketo Engage</li></ul> |
 | **[Blueprint per l’integrazione di Marketo Engage e Workfront - Panoramica](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)** | <ul><li>Ottimizza la pianificazione, lo sviluppo e l’esecuzione delle campagne di marketing B2B</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
 | **[Blueprint per l’integrazione di Marketo Engage e Workfront - Acquisizione e creazione](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)** | <ul><li>Automatizza tutti i passaggi dalla ricezione della richiesta per una campagna di marketing B2B fino all’esecuzione del suo sviluppo</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |

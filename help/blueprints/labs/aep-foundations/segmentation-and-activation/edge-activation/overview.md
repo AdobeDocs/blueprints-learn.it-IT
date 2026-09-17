@@ -4,13 +4,11 @@ description: Scopri le differenze tra le velocità di attivazione di Edge, strea
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 9ecadff9-3838-4cd4-93b1-7c23a232f84c
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '175'
 ht-degree: 0%
-
 ---
-
 
 # Attivazione di Edge
 
@@ -23,6 +21,10 @@ Adobe offre tre velocità di attivazione per soddisfare le diverse esigenze:
 1. Batch
 
 Scopriremo come effettuare l’attivazione utilizzando Adobe Edge con Event Forwarding, Edge Audiences e Edge Personalization. Verrà quindi mostrato come utilizzare le destinazioni di streaming dall’hub sia per Edge che per una destinazione esterna.
+
+>[!IMPORTANT]
+>
+>Completare l&#39;[installazione di Postman](../../setup.md) prima di avviare questa esercitazione. È inoltre necessario accedere a [webhook.site](https://webhook.site/) per acquisire l&#39;evento inviato alla destinazione esterna.
 
 >[!NOTE]
 >

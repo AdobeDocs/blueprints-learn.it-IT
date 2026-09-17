@@ -4,15 +4,17 @@ description: Scopri come inviare un evento web direttamente all’Hub utilizzand
 doc-type: article
 solution: Experience Platform
 exl-id: a8343499-b4d5-4540-8fe1-7497bc20e437
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '512'
 ht-degree: 0%
-
 ---
 
-
 # Invia evento web all’hub
+
+>[!IMPORTANT]
+>
+>Completare l&#39;[installazione di Postman](../../postman-setup/postman-installation.md) prima di avviare questa esercitazione. È inoltre necessario accedere a [webhook.site](https://webhook.site/) per il [flusso di lavoro di attivazione con destinazione esterna](../use-case-1-acquisition/configure-destinations/setup-streaming-destination.md) correlato.
 
 ## Apri Postman
 
@@ -85,9 +87,8 @@ In caso di esito positivo, la chiamata dovrebbe dare la seguente risposta...
    1. Qualsiasi evento Edge (entro 15 minuti)
       1. Ricorda: anche tutti i tipi di pubblico salvati con una valutazione Edge vengono valutati sull’hub quando vengono inseriti i dati in streaming
    2. dep: qualsiasi streaming di eventi (entro un’ora)
-1. Se non hai nuovi segmenti, potresti non visualizzare nulla nel webhook.
-1. L&#39;inoltro degli eventi non invierà nulla.
-   1. Perché? Questo evento è stato inviato all’hub, non all’Edge, pertanto non verrà visualizzato nulla da Inoltrare come evento, né in Assurance.
+1. Questo evento Hub non viene inviato al tuo webhook.
+   1. L’inoltro degli eventi elabora gli eventi inviati ad Edge, non quelli inviati direttamente all’hub. Utilizza il [flusso di lavoro di attivazione con destinazione esterna](../use-case-1-acquisition/configure-destinations/setup-streaming-destination.md) per acquisire un evento in webhook.site.
 1. Dopo almeno 30 minuti, puoi anche controllare il set di dati con quanto segue:
    1. Modifica il nome della tabella seguente con quello della sandbox.  Per trovarlo, vai all&#39;elenco dei set di dati e filtra su &quot;`dest`&quot;, apri il set di dati e copia il nome della tabella nella barra a destra.
 
