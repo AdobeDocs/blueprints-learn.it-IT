@@ -2,14 +2,12 @@
 title: Migliorare l’onboarding dei clienti
 description: Scopri come accelerare il time-to-value per i nuovi clienti con esperienze di benvenuto e percorsi di attivazione semplificati e personalizzati.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 3a156fbb-b078-469a-8604-0d6d340e9941
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '162'
-ht-degree: 3%
-
+ht-degree: 9%
 ---
-
-
 # Migliorare l’onboarding dei clienti
 
 Accelerare il time-to-value per i nuovi clienti con esperienze di benvenuto e percorsi di attivazione semplificati e personalizzati. Questo obiettivo si concentra sull&#39;obiettivo di guidare i nuovi clienti attraverso la loro esperienza iniziale con comunicazioni tempestive e pertinenti che guidano l&#39;adozione dei prodotti e il coinvolgimento anticipato.

@@ -2,14 +2,12 @@
 title: Ripristino di carrelli e Percorsi abbandonati
 description: Scopri come coinvolgere nuovamente gli utenti che abbandonano durante i flussi di acquisto, applicazione o iscrizione con follow-up tempestivi e personalizzati.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 4e0f84b4-1b2a-4728-a551-ef1b2bde99ba
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 2%
-
+ht-degree: 8%
 ---
-
-
 # Recupera carrelli e percorsi abbandonati
 
 Coinvolgi nuovamente gli utenti che abbandonano durante i flussi di acquisto, applicazione o iscrizione con follow-up personalizzati e tempestivi. Questo obiettivo si concentra sull’acquisizione di ricavi persi rilevando gli eventi di abbandono in tempo reale e fornendo messaggi contestuali che affrontano le barriere e incentivano il completamento.

@@ -3,14 +3,12 @@ title: Principali obiettivi aziendali
 description: Scopri gli obiettivi aziendali chiave che i modelli di casi d’uso di Adobe Experience Platform aiutano le organizzazioni a raggiungere.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 doc-type: overview-page
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: ebebdf85-3ca0-4d8d-a14e-3808dfe43382
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
-
 ---
-
-
 # Obiettivi aziendali chiave
 
 Gli obiettivi aziendali chiave definiscono i risultati strategici che le organizzazioni intendono raggiungere attraverso le iniziative di esperienza digitale. Ogni obiettivo è associato a uno o più [modelli di casi d&#39;uso](/help/blueprints/use-case-patterns/overview.md) che descrivono come implementare Adobe Experience Platform e le applicazioni per ottenere tali risultati.

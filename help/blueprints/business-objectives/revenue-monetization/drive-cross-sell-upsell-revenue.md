@@ -2,14 +2,12 @@
 title: Incrementa le attività di cross-selling e upselling
 description: Scopri come promuovere prodotti o servizi complementari e premium per i clienti esistenti in base al comportamento e alla cronologia degli acquisti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 35e136e8-8b66-4f4c-8e77-7466553fc4b7
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 3%
-
+ht-degree: 10%
 ---
-
-
 # Incrementa le vendite incrociate e incrementa i ricavi
 
 Promuovere prodotti o servizi complementari e di alta qualità ai clienti esistenti in base al comportamento e alla cronologia degli acquisti. Questo obiettivo si concentra sull’aumento del valore per il cliente, presentando i consigli e le offerte di prodotto giusti al momento giusto attraverso decisioni personalizzate e un coinvolgimento multicanale.
