@@ -1,17 +1,15 @@
 ---
 title: Percorsi B2B con blueprint dei dati Marketo
-description: Blueprint per la distribuzione rapida di Journey Optimizer B2B edition utilizzando i dati Marketo Engage.
+description: Blueprint per la distribuzione rapida di Journey Optimizer B2B Edition utilizzando i dati Marketo Engage.
 solution: Journey Optimizer B2B Edition
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2069'
 ht-degree: 2%
-
 ---
-
 # Percorsi B2B con blueprint dei dati Marketo
 
-Questa guida completa illustra il processo di integrazione di Marketo Engage con Adobe Journey Optimizer B2B edition. Copre la configurazione di schemi personalizzati, l’acquisizione di profili e account e l’orchestrazione di percorsi personalizzati per i gruppi di acquisto. Utilizzando i dati di Marketo Engage, questo blueprint assicura un targeting e un coinvolgimento precisi su più canali, stimolando una domanda più qualificata e migliorando l’esperienza dei clienti.
+Questa guida completa illustra il processo di integrazione di Marketo Engage con Adobe Journey Optimizer B2B Edition. Copre la configurazione di schemi personalizzati, l’acquisizione di profili e account e l’orchestrazione di percorsi personalizzati per i gruppi di acquisto. Utilizzando i dati di Marketo Engage, questo blueprint assicura un targeting e un coinvolgimento precisi su più canali, stimolando una domanda più qualificata e migliorando l’esperienza dei clienti.
 
 ## Casi di utilizzo
 
@@ -35,11 +33,7 @@ Questa guida completa illustra il processo di integrazione di Marketo Engage con
 | Integrazione | Descrizione |
 | :-- | :--- |
 | [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) | Adobe Experience Platform semplifica l’acquisizione dei dati da Marketo, fornendo funzionalità per strutturare, etichettare e migliorare i dati utilizzando i suoi servizi. |
-| [Journey Optimizer B2B edition - Azioni Marketo Engage](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes/action-nodes#marketo-engage-actions) | Sincronizza Account-Based Marketing in Journey Optimizer B2B edition con le iniziative basate sui lead in Marketo Engage utilizzando azioni basate sulle persone per gestire le iscrizioni agli elenchi e richiedere campagne. |
-
-## Architettura
-
-![Architettura della soluzione per Journey Optimizer B2B edition con dati Marketo](/help/blueprints/b2b/assets/ajo-b2b-architecture-simplified.png){zoomable="yes"}
+| [Journey Optimizer B2B Edition - Azioni Marketo Engage](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes/action-nodes#marketo-engage-actions) | Sincronizza Account-Based Marketing in Journey Optimizer B2B Edition con le iniziative basate sui lead in Marketo Engage utilizzando azioni basate sulle persone per gestire le iscrizioni agli elenchi e richiedere campagne. |
 
 ## Fasi di implementazione
 
@@ -48,21 +42,21 @@ Questa guida completa illustra il processo di integrazione di Marketo Engage con
    * Utilizza [modelli](https://experienceleague.adobe.com/it/docs/experience-platform/sources/ui-tutorials/templates) nell&#39;interfaccia utente di Platform
 1. Crea schemi relazionali necessari per rappresentare entità aziendali, come acquisti, licenze o registrazioni di eventi per le decisioni di percorso e la personalizzazione e-mail.
 1. Completa la [configurazione XDM](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management){target="_blank"}.
-   * Rivedi il set di campi XDM standard selezionati per impostazione predefinita in Journey Optimizer B2B edition, noti anche come _campi gestiti_. Rivedi il set di campi gestiti andando su Configurazione XDM in **[!UICONTROL Amministrazione]** > **[!UICONTROL Configurazioni]**.
-      * Seleziona la scheda **[!UICONTROL Standard]**, quindi fai clic su **[!UICONTROL Modifica campi gestiti]** sia per XDM Individual Profile che per XDM Business Account.
-      * Selezionare l&#39;opzione **[!UICONTROL Mostra solo campi selezionati]** per visualizzare l&#39;elenco corrente dei campi selezionati.
-      * Aggiungi o rimuovi i campi in base alle esigenze.
-         * `workEmail.address` è obbligatorio nel set di dati Persona.
-         * `accountName` è obbligatorio nel set di dati dell&#39;account.
+   * Rivedi il set di campi XDM standard selezionati per impostazione predefinita in Journey Optimizer B2B Edition, noti anche come _campi gestiti_. Rivedi il set di campi gestiti andando su Configurazione XDM in **[!UICONTROL Amministrazione]** > **[!UICONTROL Configurazioni]**.
+     * Seleziona la scheda **[!UICONTROL Standard]**, quindi fai clic su **[!UICONTROL Modifica campi gestiti]** sia per XDM Individual Profile che per XDM Business Account.
+     * Selezionare l&#39;opzione **[!UICONTROL Mostra solo campi selezionati]** per visualizzare l&#39;elenco corrente dei campi selezionati.
+     * Aggiungi o rimuovi i campi in base alle esigenze.
+       * `workEmail.address` è obbligatorio nel set di dati Persona.
+       * `accountName` è obbligatorio nel set di dati dell&#39;account.
    * Configura il set di campi XDM da utilizzare per le azioni _Aggiorna profilo persona_ e _Aggiorna profilo account_ in percorsi. Questi campi sono anche noti come _campi aggiornabili_.
-      * nella scheda _[!UICONTROL Standard]_, fai clic su **[!UICONTROL Modifica campi aggiornabili]** sia per XDM Individual Profile che per XDM Business Account.
-      * Seleziona lo schema, il set di dati e i campi da aggiornare.
+     * nella scheda _[!UICONTROL Standard]_, fai clic su **[!UICONTROL Modifica campi aggiornabili]** sia per XDM Individual Profile che per XDM Business Account.
+     * Seleziona lo schema, il set di dati e i campi da aggiornare.
    * Configura gli schemi relazionali e i campi da utilizzare nei percorsi.
-      * Seleziona la scheda **[!UICONTROL Relazionale]** e fai clic su **[!UICONTROL Seleziona schema XDM relazionale]**.
-      * Seleziona lo schema, lo spazio dei nomi e i campi che desideri utilizzare.
+     * Seleziona la scheda **[!UICONTROL Relazionale]** e fai clic su **[!UICONTROL Seleziona schema XDM relazionale]**.
+     * Seleziona lo schema, lo spazio dei nomi e i campi che desideri utilizzare.
    * Configura gli eventi di esperienza da utilizzare nei percorsi.
-      * Selezionare la scheda **[!UICONTROL Eventi]** e quindi fare clic su **[!UICONTROL Seleziona evento esperienza]**.
-      * Seleziona l’evento esperienza e i campi da utilizzare.
+     * Selezionare la scheda **[!UICONTROL Eventi]** e quindi fare clic su **[!UICONTROL Seleziona evento esperienza]**.
+     * Seleziona l’evento esperienza e i campi da utilizzare.
 1. Configura il [connettore di origine Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo).
    * Utilizza il dizionario dati per definire il [mapping di importazione](https://experienceleague.adobe.com/it/docs/experience-platform/data-prep/ui/mapping#import-mapping) per il connettore di origine.
    * Si consiglia di non abilitare il profilo prima di prendere in considerazione le [considerazioni sull&#39;implementazione](#implementation-considerations).
@@ -79,23 +73,23 @@ Questa guida completa illustra il processo di integrazione di Marketo Engage con
 
 ## Configurazione consigliata
 
-Per semplificare l’implementazione e garantire la compatibilità con Adobe Journey Optimizer B2B edition, si consiglia di eseguire la configurazione seguente:
+Per semplificare l’implementazione e garantire la compatibilità con Adobe Journey Optimizer B2B Edition, si consiglia di eseguire la configurazione seguente:
 
 * **Utilizzare i campi di identità predefiniti:**
-   * _email_ e _b2b_ person_ devono essere mantenuti come campi di identità nello schema della persona per supportare l&#39;unione di identità e l&#39;attivazione del pubblico.
+  * _email_ e _b2b_ person_ devono essere mantenuti come campi di identità nello schema della persona per supportare l&#39;unione di identità e l&#39;attivazione del pubblico.
 * **Utilizzare i mapping predefiniti per il connettore Source di Marketo:**
-   * Sfrutta le mappature di campi predefinite fornite da Adobe per semplificare l’acquisizione dei dati e ridurre il sovraccarico di configurazione.
+  * Sfrutta le mappature di campi predefinite fornite da Adobe per semplificare l’acquisizione dei dati e ridurre il sovraccarico di configurazione.
 * **Usa mappature predefinite per AJO B2B:**
-   * Adottare le [mappature di campi standard](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/admin/xdm-field-management/field-mapping) per Journey Optimizer B2B edition per garantire la compatibilità con la logica di acquisto del gruppo e l&#39;orchestrazione del percorso.
+  * Adottare le [mappature di campi standard](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/admin/xdm-field-management/field-mapping) per Journey Optimizer B2B Edition per garantire la compatibilità con la logica di acquisto del gruppo e l&#39;orchestrazione del percorso.
 * **Blocca aggiornamenti campi su tutti i campi eccetto e-mail:**
-   * In Marketo Engage, configura la gestione dei campi per [bloccare gli aggiornamenti](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) da Adobe Experience Platform per tutti i campi eccetto _e-mail_. In questo modo è possibile mantenere l&#39;integrità dei dati e al tempo stesso abilitare la risoluzione delle identità.
+  * In Marketo Engage, configura la gestione dei campi per [bloccare gli aggiornamenti](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field) da Adobe Experience Platform per tutti i campi eccetto _e-mail_. In questo modo è possibile mantenere l&#39;integrità dei dati e al tempo stesso abilitare la risoluzione delle identità.
 * **Implementare le regole di collegamento delle identità utilizzando e-mail come spazio dei nomi di identità univoco**
-   * Configura [le regole di collegamento del grafo delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) in Adobe Experience Platform per utilizzare _email_ in modo esplicito come spazio dei nomi di identità univoco. Queste regole garantiscono che i profili vengano uniti in modo accurato tra le origini dati in cui è presente _email_, consentendo una solida risoluzione delle identità. Seguendo le best practice di Adobe, definisci le regole di collegamento che danno priorità alle e-mail come identificatori stabili e univoci a livello globale per mantenere un grafico di identità coerente e conforme alla privacy.
-Questa configurazione fornisce un equilibrio tra facilità di distribuzione e governance dei dati, garantendo una base affidabile per l’orchestrazione dei percorsi B2B.
+  * Configura [le regole di collegamento del grafo delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) in Adobe Experience Platform per utilizzare _email_ in modo esplicito come spazio dei nomi di identità univoco. Queste regole garantiscono che i profili vengano uniti in modo accurato tra le origini dati in cui è presente _email_, consentendo una solida risoluzione delle identità. Seguendo le best practice di Adobe, definisci le regole di collegamento che danno priorità alle e-mail come identificatori stabili e univoci a livello globale per mantenere un grafico di identità coerente e conforme alla privacy.
+    Questa configurazione fornisce un equilibrio tra facilità di distribuzione e governance dei dati, garantendo una base affidabile per l’orchestrazione dei percorsi B2B.
 
 ## Considerazioni sull’implementazione
 
-Quando si implementa Adobe Journey Optimizer B2B edition, è fondamentale comprendere le funzionalità di unione delle identità fornite da Real-time Customer Data Platform. Questa piattaforma esegue l’unione delle identità a livello di persona e di account, garantendo una visualizzazione unificata dei dati dei clienti.
+Quando si implementa Adobe Journey Optimizer B2B Edition, è fondamentale comprendere le funzionalità di unione delle identità fornite da Real-time Customer Data Platform. Questa piattaforma esegue l’unione delle identità a livello di persona e di account, garantendo una visualizzazione unificata dei dati dei clienti.
 
 ### Punti chiave
 
@@ -105,7 +99,7 @@ Quando si implementa Adobe Journey Optimizer B2B edition, è fondamentale compre
 * **Considerazioni per l&#39;e-mail**: è essenziale valutare attentamente l&#39;utilizzo dell&#39;e-mail come identificatore per l&#39;unione dei frammenti di profilo. Anche se può essere utile, il rischio di un collasso di identità deve essere attentamente considerato rispetto ai vantaggi. Uno degli svantaggi è che senza e-mail come identificatore, l’iscrizione a un pubblico esterno creata da AJO B2B non si integra nel profilo esistente.
 * **Integrazione della persona Marketo**: AJO B2B utilizza la persona Marketo con l&#39;ID lead più basso quando più record Marketo vengono uniti in un singolo profilo.
 
-Tenendo presenti questi punti, puoi prendere decisioni informate su come configurare l’unione delle identità in Adobe Journey Optimizer B2B edition, garantendo profili cliente precisi e affidabili.
+Tenendo presenti questi punti, puoi prendere decisioni informate su come configurare l’unione di identità in Adobe Journey Optimizer B2B Edition, garantendo profili cliente precisi e affidabili.
 
 ### Valutazione dei risultati dell’unione delle identità
 
@@ -206,8 +200,8 @@ Se è meglio mantenere l&#39;e-mail come campo di identità per i tuoi casi d&#3
 
 Per una comprensione completa dei guardrail applicabili ai Percorsi B2B con Marketo Engage, consulta la seguente documentazione ufficiale:
 
-* [Adobe Journey Optimizer B2B edition - Descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
-Include guardrail e parametri di utilizzo specifici per Journey Optimizer B2B edition.
+* [Adobe Journey Optimizer B2B Edition - Descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
+Include guardrail e parametri di utilizzo specifici per Journey Optimizer B2B Edition.
 * [Guardrail di distribuzione Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/blueprints-learn/architecture/architecture-overview/guardrails?lang=en)
 Include i guardrail generali di installazione e architettura nelle soluzioni Adobe Experience Platform.
 * [Adobe Marketo Engage - Descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-marketo-engage---product-description.html#performance-guardrails)
@@ -224,5 +218,5 @@ Fornisce indicazioni sui limiti di acquisizione, segmentazione e attivazione dei
 * [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
 * [Marketo Engage](https://experienceleague.adobe.com/it/docs/marketo/using/home)
 * [Adobe Experience Platform - Connettore Marketo Source](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-* [Documentazione di Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview)
-* [Gestione dei campi XDM (Journey Optimizer B2B edition)](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management)
+* [Documentazione di Adobe Journey Optimizer B2B Edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview)
+* [Gestione dei campi XDM (Journey Optimizer B2B Edition)](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/admin/xdm-field-management/xdm-field-management)

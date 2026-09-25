@@ -4,13 +4,11 @@ description: Esamina i campi dello schema per l’utilizzo della fatturazione e 
 doc-type: article
 solution: Experience Platform
 exl-id: c26de19e-82da-4070-a918-2d2c8ef2c116
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
-
 ---
-
 
 # Pre-lavoro
 
@@ -25,7 +23,7 @@ Per questo caso d’uso non c’è molto lavoro preliminare da fare. Fondamental
 
 
 
-&#x200B;3. Cerca &quot;utilizzo&quot; negli Eventi.  Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
+1. Cerca &quot;utilizzo&quot; negli Eventi.  Fai clic sulla &quot;i&quot; per rivedere la descrizione (non ce n’è nessuna).
 
 ![Cerca informazioni sull&#39;utilizzo negli eventi - nessuna descrizione visualizzata](assets/pre-work-search-usage-in-events.png)
 

@@ -1,16 +1,14 @@
 ---
-title: Creare
+title: Crea pubblico #3
 description: Crea un pubblico di visitatori della pagina di prodotto di iPhone 14 e combinalo con altri tipi di pubblico utilizzando audience per abilitare l’attivazione dello streaming.
 doc-type: article
 solution: Experience Platform
 exl-id: 999f9a20-1655-4eab-a796-a19d69a06879
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1061'
 ht-degree: 0%
-
 ---
-
 
 # Creare #3 di pubblico
 
@@ -134,17 +132,17 @@ Questo pubblico dovrebbe essere diretto.  Potremmo avere più pagine di prodotto
 
 
 
-&#x200B;5. Fornisci una descrizione.
+1. Fornisci una descrizione.
 
-&#x200B;6. Cambia in streaming
+1. Cambia in streaming
 
-&#x200B;7. Salva come &quot;*ha visitato la pagina iPhone 14 ma non ne è proprietario né l&#39;ha ordinata*&quot;
+1. Salva come &quot;*ha visitato la pagina iPhone 14 ma non ne è proprietario né l&#39;ha ordinata*&quot;
 
-&#x200B;8. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
+1. Fai clic sul pulsante blu **Attiva pubblico** nella destinazione
 
-&#x200B;9. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
+1. Selezionare la destinazione del webhook **Protezione esecuzione programmi in streaming** e fare clic su Avanti
 
-&#x200B;10. Fare clic su Avanti e su Fine
+1. Fare clic su Avanti e su Fine
 
 >[!NOTE]
 >

@@ -4,13 +4,11 @@ description: Scopri come aggiungere e configurare due attività e-mail su rami F
 doc-type: article
 solution: Experience Platform
 exl-id: e911a251-9f9f-484c-a2de-101b0fc2c417
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
-
 ---
-
 
 # Aggiungere attività e-mail
 
@@ -72,7 +70,7 @@ Nei passaggi successivi, sfrutterai la campagna per aggiungere due attività E-m
 
 ![Finestra di dialogo di conferma con il pulsante Salva e chiudi](assets/add-email-activities-save-and-close-dialog.png)
 
-&#x200B;11. Controlla le proprietà e le azioni Email, incluso il testo aggiunto al corpo dell’Email. Fai clic sulla **freccia a sinistra** per tornare all&#39;area di lavoro della campagna
+1. Controlla le proprietà e le azioni Email, incluso il testo aggiunto al corpo dell’Email. Fai clic sulla **freccia a sinistra** per tornare all&#39;area di lavoro della campagna
 
 ![Torna all&#39;area di lavoro della campagna](assets/add-email-activities-back-to-campaign-canvas.png)
 

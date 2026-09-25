@@ -1,9 +1,8 @@
 ---
-source-git-commit: 7511cc0e5c099d5d3ee1275a374cd9ffdc972335
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
-
+source-wordcount: '690'
+ht-degree: 1%
 ---
 # Valutazione blueprint
 
@@ -21,7 +20,7 @@ delineare possibili approcci e considerazioni in materia di attuazione per raggi
 Forma canonica: `.claude/skills/use-case-pattern-builder/references/pattern-template.md`.
 - **Diagramma architettura**: un diagramma visivo che rappresenta la funzionalità di un sistema, ovvero
 e flussi di dati. Minima narrazione; il diagramma è l&#39;artefatto.
-Esempio canonico: [platform-data-flow.md](../help/blueprints/experience-platform/platform-data-flow.md).
+Esempio canonico: [platform-data-flow.md](../help/blueprints/architecture-diagrams/architecture-overviews/platform-data-flow.md).
 
 ## Punteggio
 
@@ -89,7 +88,7 @@ Per ogni file markdown blueprint nell’ambito:
      `audience-building-activation`, `personalization`, `campaign-management-orchestration`,
      `analysis`, `conversational-experience` o una nuova categoria con etichetta `(new) <name>`.
    - `proposed_pattern_title`: titolo breve e orientato alle azioni, secondo il modello esistente
-stile di denominazione.
+     stile di denominazione.
 6. Per `Diagram` e `Split` consigli, proporre:
    - `proposed_diagram_title` — in genere il titolo esistente troncato del frame aziendale.
 7. Acquisisci eventuali duplicati trovati confrontando l’ambito della blueprint con il catalogo di modelli esistente

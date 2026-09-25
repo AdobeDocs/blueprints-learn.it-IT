@@ -3,13 +3,11 @@ title: Attivazione del pubblico nelle destinazioni
 description: Scopri come valutare e pubblicare segmenti di pubblico in destinazioni esterne per il targeting o l’eliminazione tramite Adobe Real-Time CDP.
 solution: Real-Time Customer Data Platform, Experience Platform
 exl-id: b0b9d937-45d2-48f9-ac4c-3611c6e35f58
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1363'
 ht-degree: 4%
-
 ---
-
 # Attivazione del pubblico nelle destinazioni
 
 Questa guida descrive il caso di utilizzo dell&#39;attivazione del pubblico alle destinazioni, che valuta i segmenti di pubblico in Adobe [!DNL Real-Time Customer Data Platform] (RT-CDP) e li pubblica su piattaforme di annunci, archiviazione cloud, sistemi CRM o partner di dati per il targeting, l&#39;eliminazione, la modellazione lookalike o l&#39;arricchimento di analisi. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.
@@ -92,7 +90,7 @@ Migliora il ritorno sull’investimento marketing migliorando il targeting, l’
 
 La seguente architettura di riferimento illustra il flusso di dati di pubblico e profilo da Real-Time CDP a destinazioni aziendali, tra cui archiviazione cloud, endpoint di streaming e applicazioni SaaS.
 
-![Architettura di riferimento per l&#39;attivazione di tipi di pubblico e profili per le destinazioni enterprise](/help/blueprints/audience-activation/assets/known_activation.png)
+![Architettura di riferimento per l&#39;attivazione di Adobe Real-Time CDP](/help/blueprints/architecture-diagrams/audience-profile-activation/assets/real_time_cdp_activation.png)
 
 ## Documentazione correlata
 

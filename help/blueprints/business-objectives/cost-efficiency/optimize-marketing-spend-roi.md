@@ -2,14 +2,12 @@
 title: Ottimizzazione della spesa di marketing e del ROI
 description: Scopri come migliorare il ritorno sull’investimento marketing migliorando il targeting, l’attribuzione, l’eliminazione del pubblico e l’allocazione del budget.
 solution: Experience Platform, Real-Time Customer Data Platform
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: c744898b-bcb1-4338-ab97-e2fe6d4883b8
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
-
 # Ottimizzazione delle spese di marketing e del ROI
 
 Migliora il ritorno sull’investimento marketing migliorando il targeting, l’attribuzione, l’eliminazione del pubblico e l’allocazione del budget. Questo obiettivo affronta l’intero ciclo di ottimizzazione delle spese di marketing, dalla precisione del pubblico alla misurazione delle prestazioni e alla riallocazione continua ai canali e alle tattiche più performanti.

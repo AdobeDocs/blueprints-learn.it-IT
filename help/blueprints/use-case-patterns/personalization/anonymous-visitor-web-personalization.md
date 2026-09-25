@@ -3,13 +3,11 @@ title: Personalization Web visitatore anonimo
 description: Scopri come distribuire contenuti web personalizzati a visitatori non identificati in base a segnali comportamentali durante la sessione.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: e2446801-ffce-40e6-bfe9-abec623c9201
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1706'
 ht-degree: 4%
-
 ---
-
 # Personalizzazione web visitatore anonimo
 
 Questa guida descrive il modello di caso d’uso per la personalizzazione web del visitatore anonimo, che utilizza [!DNL Adobe Journey Optimizer] (AJO), [!DNL Adobe Real-Time Customer Data Platform] (RT-CDP) e [!DNL Adobe Experience Platform] (AEP) per fornire contenuti web personalizzati a visitatori anonimi (non identificati) in base a segnali comportamentali durante la sessione. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.
@@ -101,12 +99,6 @@ In questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 - **[!DNL Adobe Journey Optimizer] (AJO)**: configurazione della superficie del canale web, authoring dei contenuti (esperienze web e basate su codice), esecuzione di campagne, sperimentazione dei contenuti (test A/B), decisioning (selezione dinamica dei contenuti) e reporting
 - **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — Segmentazione di Edge per la valutazione del pubblico in tempo reale basata su segnali comportamentali durante la sessione; gestione anonima dei profili edge
 - **[!DNL Adobe Experience Platform] (AEP)** — [!DNL Web SDK] per la raccolta di segnali comportamentali, [!DNL Edge Network] per il routing dei dati in tempo reale e la consegna della personalizzazione, configurazione dello stream di dati
-
-## Architettura
-
-La seguente architettura di riferimento illustra come i segnali dei visitatori anonimi vengono raccolti al limite, valutati in base alle regole di pubblico e utilizzati per fornire contenuti personalizzati.
-
-![Architettura di riferimento per l&#39;attivazione e la personalizzazione del pubblico anonimo](/help/blueprints/audience-activation/assets/anonymous_activation.png)
 
 ## Documentazione correlata
 

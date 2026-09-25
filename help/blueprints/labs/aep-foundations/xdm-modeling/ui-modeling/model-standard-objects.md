@@ -4,7 +4,7 @@ description: Crea uno schema Profilo individuale nell’interfaccia utente di e 
 doc-type: article
 solution: Experience Platform
 exl-id: ea516c0b-3644-483c-a167-0264cc795449
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
@@ -82,7 +82,7 @@ In Adobe Experience Platform esistono molti gruppi di campi XDM standard da aggi
 
 
 
-&#x200B;3. **Selezionare** la casella di controllo accanto al gruppo di campi, quindi fare clic sul pulsante **Aggiungi gruppi di campi**
+1. **Selezionare** la casella di controllo accanto al gruppo di campi, quindi fare clic sul pulsante **Aggiungi gruppi di campi**
 
 ![Selezionare il gruppo di campi Dettagli demografici per aggiungerlo allo schema](assets/model-standard-objects-select-demographic-details-field-group.png "Selezionare il gruppo di campi Dettagli demografici per aggiungerlo allo schema")
 

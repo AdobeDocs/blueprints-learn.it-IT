@@ -2,14 +2,12 @@
 title: Aumenta il coinvolgimento del sito web
 description: Scopri come migliorare il tempo sul sito, le pagine per sessione e l’interazione con i contenuti web attraverso esperienze rilevanti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 41d03772-678a-4039-b470-6053c39e53aa
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 4%
-
+ht-degree: 10%
 ---
-
-
 # Aumentare il coinvolgimento con il sito Web
 
 Migliora il tempo sul sito, le pagine per sessione e l’interazione con i contenuti web tramite esperienze rilevanti. Questo obiettivo è incentrato sulla fornitura di esperienze web contestuali e personalizzate che mantengono i visitatori coinvolti e progrediscono attraverso contenuti e percorsi di conversione.

@@ -4,13 +4,11 @@ description: Crea articoli di offerta iPhone a più livelli con priorità, regol
 doc-type: article
 solution: Experience Platform
 exl-id: 76214d87-5107-4829-9d6e-91073e1008ca
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
-
 ---
-
 
 # Creare elementi di offerta
 
@@ -84,7 +82,7 @@ Il primo e più semplice elemento di offerta creato è l&#39;offerta di fallback
 >
 >In pratica, e nel caso di offerte più complesse, è necessario attivare un processo di approvazione appropriato per garantire che gli elementi dell’offerta siano stati creati correttamente. Per risparmiare tempo in questo laboratorio, è sufficiente approvare ogni elemento di offerta che si crea.
 
-&#x200B;12. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
+1. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
 
 ## Crea articolo offerta modello base
 
@@ -150,7 +148,7 @@ Ora che sono state create le offerte del modello generico e di base, potete pass
 
 ![Configurazione completata per l&#39;elemento di offerta Ultra tier](assets/create-offer-items-ultra-offer-final-config.png)
 
-&#x200B;11. Dopo aver verificato che tutte le impostazioni siano corrette, salva e approva l&#39;elemento dell&#39;offerta. Ora puoi vedere tutti e quattro gli elementi dell’offerta, ciascuno con una priorità univoca.
+1. Dopo aver verificato che tutte le impostazioni siano corrette, salva e approva l&#39;elemento dell&#39;offerta. Ora puoi vedere tutti e quattro gli elementi dell’offerta, ciascuno con una priorità univoca.
 
 ![Pagina Offerte in cui sono elencati tutti e quattro gli elementi di offerta con priorità univoche](assets/create-offer-items-all-four-offers-priority.png)
 

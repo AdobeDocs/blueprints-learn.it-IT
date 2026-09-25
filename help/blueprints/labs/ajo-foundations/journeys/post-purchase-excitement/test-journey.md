@@ -4,13 +4,11 @@ description: Utilizza il simulatore modalità test di percorso per attivare un e
 doc-type: article
 solution: Experience Platform
 exl-id: fc3dbfb9-b44b-4866-acc9-398a8b52f2b9
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
-
 ---
-
 
 # Percorso di prova
 
@@ -105,16 +103,16 @@ Dovresti vedere qualcosa di simile a questo nel registro:
 
 
 
-&#x200B;8. **Chiudi** il browser **scheda**
-&#x200B;9. **Chiudi modalità test** in alto a destra
+1. **Chiudi** il browser **scheda**
+1. **Chiudi modalità test** in alto a destra
 
    ![Pulsante Chiudi modalità test in alto a destra](assets/test-journey-close-test-mode.png)
 
-&#x200B;10. Fai clic su **Pubblica** il Percorso in alto a destra
+1. Fai clic su **Pubblica** il Percorso in alto a destra
 
-![Pulsante Pubblica per il Percorso in alto a destra](assets/test-journey-publish-journey.png)
+   ![Pulsante Pubblica per il Percorso in alto a destra](assets/test-journey-publish-journey.png)
 
-&#x200B;11. **Chiudi** il **Percorso** facendo clic sulla freccia \&lt;- in alto a sinistra
+1. **Chiudi** il **Percorso** facendo clic sulla freccia \&lt;- in alto a sinistra
 
 ![Freccia indietro in alto a sinistra per chiudere il Percorso](assets/test-journey-close-journey-back-arrow.png)
 

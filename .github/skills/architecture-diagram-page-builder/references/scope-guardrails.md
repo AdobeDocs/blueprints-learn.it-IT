@@ -1,12 +1,12 @@
 ---
-source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '665'
 ht-degree: 0%
 ---
 # Pagina guardrail di ambito: architettura e pagina pattern del caso di utilizzo
 
-Il sito blueprint separa **pagine di diagramma dell&#39;architettura** dalle **pagine di modelli di casi d&#39;uso** perché rispondono a esigenze di lettura diverse. Questo documento definisce cosa appartiene a dove e come gestire il contenuto che va oltre il limite.
+Questo sito separa **pagine di diagrammi di architettura** dalle **pagine con modelli di casi d&#39;uso** perché rispondono a esigenze diverse del lettore. Questo documento definisce cosa appartiene a dove e come gestire il contenuto che va oltre il limite.
 
 ## La distinzione principale
 
