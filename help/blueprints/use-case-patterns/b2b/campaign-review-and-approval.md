@@ -71,7 +71,7 @@ Una volta che lo stato dell’attività Ready for Review (Pronto per la revision
 
 ### Utilizza la verifica Workfront per collaborare tramite commenti e annotazioni {#use-workfront-proofing-to-collaborate}
 
-Le funzionalità di [verifica di Workfront](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html){target="_blank"} consentono al team marketing di acquisire una nuova risorsa, ad esempio un&#39;immagine o un messaggio e-mail, e di collaborare tramite commenti e annotazioni. Quando una bozza è pronta per essere pubblicata, i responsabili decisionali possono approvare la risorsa dallo strumento di bozza.
+Le funzionalità di [verifica di Workfront](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html?lang=it){target="_blank"} consentono al team marketing di acquisire una nuova risorsa, ad esempio un&#39;immagine o un messaggio e-mail, e di collaborare tramite commenti e annotazioni. Quando una bozza è pronta per essere pubblicata, i responsabili decisionali possono approvare la risorsa dallo strumento di bozza.
 
 ### Approva Workfront Proof e attiva l’approvazione delle risorse in Marketo Engage, contrassegna l’attività come completata {#approve-workfront-proof-and-trigger-asset-approval-in-marketo-engage}
 

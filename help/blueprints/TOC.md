@@ -125,8 +125,8 @@ ht-degree: 15%
       + [Journey Optimizer con Adobe Campaign v8](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
     + Blueprint obsoleti{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-        + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
-        + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+        + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/it/docs/campaign-standard){target="_blank"}
+        + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/it/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
 
 + Laboratori pratici{#labs}
   + [Panoramica pratica di Laboratori](/help/blueprints/labs/overview.md)
