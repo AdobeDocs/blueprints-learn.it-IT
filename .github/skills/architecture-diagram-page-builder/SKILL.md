@@ -1,9 +1,9 @@
 ---
 name: architecture-diagram-page-builder
 description: 'Guida alla creazione di nuove pagine di diagramma dell’architettura per l’archivio dei blueprint di Adobe Experience Platform. Utilizza questa abilità per aggiungere un nuovo diagramma dell’architettura di livello superiore, una pagina dell’architettura di integrazione o una panoramica dell’architettura delle applicazioni. Le pagine dell’architettura descrivono architetture AEP di primo livello, architetture di applicazioni e punti di integrazione primari, non casi d’uso approfonditi (che appartengono a use-case-pattern-builder). Gestisce l’intero flusso di lavoro: raccolta delle informazioni di pagina, generazione del file Markdown, inserimento nella cartella degli argomenti corretta e aggiornamento di TOC.md.'
-source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1568'
 ht-degree: 1%
 ---
 
@@ -119,8 +119,8 @@ Utilizza `./references/diagram-template.md` come modello di origine. Compila tut
    - 1-2 frasi che spiegano lo scopo del diagramma
    - L’immagine viene incorporata utilizzando la convenzione standard:
 
-     ```html
-     <img src="assets/{filename}" alt="{Alt Text}" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+     ```markdown
+     ![{Alt Text}](assets/{filename}){width="1000" zoomable="yes"}
      ```
 
 6. **`## Use case patterns supported`** — elenco puntato. Ogni punto elenco:
@@ -171,7 +171,7 @@ Dopo aver creato e aggiornato tutti i file, verifica quanto segue e segnala even
 
 2. **Collegamenti per casi d&#39;uso**: ogni collegamento per motivi nel file punta a un file Markdown esistente in `/help/blueprints/use-case-patterns/`. Utilizza la ricerca nell’area di lavoro o la lettura dei file per confermare l’esistenza di ogni destinazione.
 
-3. **Collegamenti Experience League** - Controllare che ogni URL nella sezione `## Further reading` inizi con `https://experienceleague.adobe.com/it`.
+3. **Collegamenti Experience League** - Controllare che ogni URL nella sezione `## Further reading` inizi con `https://experienceleague.adobe.com/`.
 
 4. **Posizionamento voce sommario**: la nuova voce si trova all&#39;interno della sottosezione corretta, utilizza il rientro a 4 spazi e il percorso corrisponde esattamente alla posizione del file generato.
 
@@ -185,6 +185,6 @@ Correggi eventuali problemi di convalida prima di considerare il completamento d
 
 - Utilizza sempre la sintassi `[!DNL ...]` per i nomi dei prodotti Adobe nel corpo del testo e nei punti elenco, seguendo la convenzione delle pagine esistenti.
 - I diagrammi di architettura sono tipicamente SVG (preferiti per la nitidezza e il ridimensionamento), ma PNG è accettabile per i disegni raster-source.
-- Le stringhe di incorporamento in linea (`border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;`) e `class="modal-image"` di `<img>` sono obbligatorie e abilitano l&#39;interazione di zoom modale di Experience League.
+- Utilizza un’immagine Markdown con testo alt descrittivo, un percorso relativo `assets/{filename}` e `{width="1000" zoomable="yes"}` per lo zoom del diagramma.
 - Se l&#39;utente sta creando una pagina per una nuova cartella di argomenti che non esiste ancora, interrompere e utilizzare l&#39;abilità `architecture-diagram-category-builder`, che gestisce l&#39;applicazione delle convenzioni di denominazione, la creazione di sottosezioni TOC.md, la categoria `overview.md` e la griglia delle schede della pagina di destinazione. Non creare una nuova cartella di argomenti all&#39;interno di questa abilità.
 - Se il diagramma dell&#39;architettura documenta ampiamente un *caso d&#39;uso singolo end-to-end* (con KPI, obiettivi aziendali, funzionalità), reindirizzare l&#39;utente a `use-case-pattern-builder`, che non è una pagina dell&#39;architettura.

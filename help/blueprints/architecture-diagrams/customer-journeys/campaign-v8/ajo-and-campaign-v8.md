@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 55%
@@ -49,7 +49,7 @@ Dimostra come Adobe [!DNL Journey Optimizer] può essere utilizzato con Adobe [!
 
 ## Architettura
 
-<img src="images/campaign-v8-with-ajo.svg" alt="Architettura di riferimento Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento Journey Optimizer](images/campaign-v8-with-ajo.png){width="1000" zoomable="yes"}
 
 >[!IMPORTANT]
 >È possibile utilizzare sia Journey Optimizer che Campaign per inviare messaggi in modo indipendente l’uno dall’altro, ma occorre tenere conto di alcuni aspetti tecnici. Se si desidera seguire questo percorso, collaborare con l&#39;architetto aziendale pre-vendita per assicurarsi di avere una visione di ciò che sarà necessario per supportare l&#39;implementazione
@@ -74,9 +74,9 @@ Esamina i seguenti prerequisiti per ciascuna applicazione.
 
 ## Guardrail
 
-* [Limitazioni del prodotto Journey Optimizer Guardrail](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/guardrails)
+* [Limitazioni del prodotto Journey Optimizer Guardrail](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
-* [Guardrail e indicazioni sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=it)
+* [Guardrail e indicazioni sulla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## Fasi di implementazione
 

@@ -3,7 +3,7 @@ title: Attivazione di account B2B in Advertising e destinazioni di file
 description: Utilizza il coinvolgimento basato sull’account per creare tipi di pubblico per gli account e attivarli nelle destinazioni pubblicitarie e nell’archiviazione cloud.
 solution: Real-Time Customer Data Platform
 exl-id: 578c0019-6133-4508-ae9d-8a8a463376f0
-source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -40,7 +40,7 @@ I modelli di integrazione tipici per questa blueprint includono:
 
 ## Architettura
 
-<img src="assets/b2b-account-activation.png" alt="Architettura di riferimento per il blueprint per l’attivazione dell’account B2B" style="border:1px solid #4a4a4a"  width="100%" />
+![Architettura di riferimento per il blueprint per l&#39;attivazione dell&#39;account B2B](assets/b2b-account-activation.png){width="1000" zoomable="yes"}
 
 ## Destinazioni del pubblico dell’account
 
@@ -60,19 +60,19 @@ Per un elenco più recente delle destinazioni che supportano i tipi di pubblico 
 
 Consulta i seguenti guardrail durante la progettazione e l’attivazione dei tipi di pubblico dell’account:
 
-- [Guardrail per Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails?lang=en)
-- [Pubblico dell’account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/account-audiences?lang=en)
-- [Attiva il pubblico dell’account](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)
-- [Guardrail di profilo e segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
-- [Aggiornamento dei criteri di idoneità alla segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/eligibility-criteria-update)
+- [Guardrail per Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails?lang=en)
+- [Pubblico dell’account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences?lang=en)
+- [Attiva il pubblico dell’account](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)
+- [Guardrail di profilo e segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Aggiornamento dei criteri di idoneità alla segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/eligibility-criteria-update)
 
 ## Passaggi per l’implementazione di Real-Time Customer Data Platform B2B edition, la creazione di tipi di pubblico per l’account e l’attivazione
 
-- Per i passaggi di implementazione di Real-Time Customer Data Platform B2B edition, consulta la documentazione: [Guida introduttiva a Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial?lang=en).
-- Per i passaggi di creazione del pubblico dell&#39;account, consulta la documentazione [Tipi di pubblico dell&#39;account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/account-audiences?lang=en).
-- Per i passaggi di attivazione del pubblico dell&#39;account, consulta la documentazione di [Attivare il pubblico dell&#39;account](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en):
+- Per i passaggi di implementazione di Real-Time Customer Data Platform B2B edition, consulta la documentazione: [Guida introduttiva a Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial?lang=en).
+- Per i passaggi di creazione del pubblico dell&#39;account, consulta la documentazione [Tipi di pubblico dell&#39;account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences?lang=en).
+- Per i passaggi di attivazione del pubblico dell&#39;account, consulta la documentazione di [Attivare il pubblico dell&#39;account](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en):
 
-  - Mappatura richiesta per [destinazione tipi di pubblico collegati](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en#required-mappings).
+  - Mappatura richiesta per [destinazione tipi di pubblico collegati](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en#required-mappings).
 
 ## Considerazioni sull’implementazione
 
@@ -81,11 +81,11 @@ LinkedIn Matched Audiences (Tipi di pubblico corrispondenti) ha un requisito di 
 ## Documentazione correlata
 
 - [Blueprint per l&#39;attivazione di profili e pubblico B2B](b2b-audience-profile-activation.md): blueprint principale che include l&#39;attivazione B2B a livello di persone e di account.
-- [B2B edition di Real-Time Customer Data Platform](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview?lang=en)
-- [Creare e attivare il pubblico dell’account - Video tutorial](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/audiences/create-audiences-with-b2b-data?lang=en)
-- [Creare tipi di pubblico per account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/account-audiences?lang=en)
-- [Attivare il pubblico dell’account](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)
-- [Adobe Experience Platform - Connettore di destinazione LinkedIn](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/social/linkedin?lang=en)
-- [Schemi in Real-Time CDP B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
-- [Aggiornamento dell&#39;architettura a Real-Time CDP B2B edition](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-architecture-upgrade)
-- [Guardrail per destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
+- [B2B edition di Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview?lang=en)
+- [Creare e attivare il pubblico dell’account - Video tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences-with-b2b-data?lang=en)
+- [Creare tipi di pubblico per account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences?lang=en)
+- [Attivare il pubblico dell’account](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)
+- [Adobe Experience Platform - Connettore di destinazione LinkedIn](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin?lang=en)
+- [Schemi in Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [Aggiornamento dell&#39;architettura a Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-architecture-upgrade)
+- [Guardrail per destinazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)

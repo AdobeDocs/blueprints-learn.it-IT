@@ -2,7 +2,7 @@
 title: Integrazione di Adobe Customer Journey Analytics e Adobe Journey Optimizer
 description: Architettura per l’analisi delle campagne Adobe Journey Optimizer e delle informazioni sul percorso in Adobe Customer Journey Analytics e la pubblicazione di tipi di pubblico per l’esecuzione del percorso.
 solution: Customer Journey Analytics, Journey Optimizer, Experience Platform
-source-git-commit: e0ecfa4d74b8fcc0bbaf35d44c33c725a1b1a539
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Questa architettura mostra il flusso di dati di distribuzione e interazione di A
 
 L’architettura collega i dati di consegna e interazione di Journey Optimizer con Experience Platform e Customer Journey Analytics per il reporting, l’analisi e la creazione di tipi di pubblico.
 
-<img src="assets/cja_ajo_integration.png" alt="Architettura di integrazione di Adobe Customer Journey Analytics e Adobe Journey Optimizer" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![Architettura di integrazione di Adobe Customer Journey Analytics e Adobe Journey Optimizer](assets/cja_ajo_integration.png){width="1000" zoomable="yes"}
 
 ## Flussi di dati primari e punti di integrazione
 
@@ -32,6 +32,6 @@ L’architettura collega i dati di consegna e interazione di Journey Optimizer c
 
 ## Ulteriori informazioni
 
-- [Reportistica di Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/reporting/reports/sharing-overview)
-- [Panoramica di Customer Journey Analytics](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Pubblicare tipi di pubblico di Customer Journey Analytics](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-components/audiences/publish)
+- [Reportistica di Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/reports/sharing-overview)
+- [Panoramica di Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Pubblicare tipi di pubblico di Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)

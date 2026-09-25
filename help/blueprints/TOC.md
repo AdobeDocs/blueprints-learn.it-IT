@@ -6,9 +6,9 @@ product: Adobe Experience Platform
 mini-toc-levels: 3
 role: Developer, User
 nudge: orange
-source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+source-git-commit: 7349d665e8bea0dfff5d088e2c3a56f33e5924cb
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1043'
 ht-degree: 15%
 ---
 
@@ -100,10 +100,9 @@ ht-degree: 15%
     + [Adobe Experience Platform Web SDK &amp; [!DNL Edge Network]](/help/blueprints/architecture-diagrams/architecture-overviews/websdk.md)
   + Attivazione in base a pubblico e profili{#audience-profile-activation}
     + [Panoramica](/help/blueprints/architecture-diagrams/audience-profile-activation/overview.md)
-    + Real-Time Customer Data Platform (RTCDP) {#known-customer-audience-activation}
-      + [Attivazione di Adobe Real-Time CDP](/help/blueprints/architecture-diagrams/audience-profile-activation/rtcdp-activation.md)
-      + [Accesso al profilo Edge in tempo reale](/help/blueprints/architecture-diagrams/audience-profile-activation/real-time-lookup.md)
-      + [Integrazione di Adobe Real-Time CDP e Adobe Target](/help/blueprints/architecture-diagrams/audience-profile-activation/rtcdp-target-integration.md)
+    + [Attivazione di Adobe Real-Time CDP](/help/blueprints/architecture-diagrams/audience-profile-activation/rtcdp-activation.md)
+    + [Accesso al profilo Edge in tempo reale](/help/blueprints/architecture-diagrams/audience-profile-activation/real-time-lookup.md)
+    + [Integrazione di Adobe Real-Time CDP e Adobe Target](/help/blueprints/architecture-diagrams/audience-profile-activation/rtcdp-target-integration.md)
   + Attivazione e marketing B2B{#b2b-activation-marketing}
     + [Panoramica](/help/blueprints/architecture-diagrams/b2b-activation-marketing/overview.md)
     + [Attivazione di profili e pubblico B2B](/help/blueprints/architecture-diagrams/b2b-activation-marketing/b2b-audience-profile-activation.md)
@@ -123,10 +122,6 @@ ht-degree: 15%
       + [Campaign v8](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/campaign-v8-overview.md)
       + [Real-Time CDP con Adobe [!DNL Campaign] v8](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)
       + [Journey Optimizer con Adobe Campaign v8](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
-    + Blueprint obsoleti{#deprecated-blueprints}
-      + Campaign Standard{#campaign-standard}
-        + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/it/docs/campaign-standard){target="_blank"}
-        + [Real-Time CDP con Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/it/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
 
 + Laboratori pratici{#labs}
   + [Panoramica pratica di Laboratori](/help/blueprints/labs/overview.md)

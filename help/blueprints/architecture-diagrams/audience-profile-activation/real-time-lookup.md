@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Insights
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 8%
@@ -69,7 +69,7 @@ Con questa funzionalità, puoi fornire esperienze altamente personalizzate sui t
 
 ## Diagramma architettura
 
-<img src="assets/real_time_edge_profile_access.svg" alt="Architettura di riferimento per l’accesso ai profili Edge in tempo reale" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
+![Architettura di riferimento per l&#39;accesso al profilo Edge in tempo reale](assets/real_time_edge_profile_access.png){width="1000" zoomable="yes"}
 
 ## Guardrail
 
@@ -82,25 +82,25 @@ Con questa funzionalità, puoi fornire esperienze altamente personalizzate sui t
 
 ### Configurazioni di destinazione
 
-* [Connessione Personalization personalizzata](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/custom-personalization) - Guida all&#39;implementazione primaria
-* [Panoramica sulle destinazioni di Personalization](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/overview)
-* [Attivare i tipi di pubblico per Edge Personalization Destinations](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
-* [Cercare in tempo reale gli attributi del profilo sul bordo](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
+* [Connessione Personalization personalizzata](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) - Guida all&#39;implementazione primaria
+* [Panoramica sulle destinazioni di Personalization](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview)
+* [Attivare i tipi di pubblico per Edge Personalization Destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
+* [Cercare in tempo reale gli attributi del profilo sul bordo](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
 
 ### Documentazione di SDK
 
-* [Documentazione di Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=it)
+* [Documentazione di Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)
 * [Documentazione di Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
 * [Documentazione API del server Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
 * [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
-* [Risposte ai comandi in Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html?lang=it)
+* [Risposte ai comandi in Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html)
 
 ### Documentazione su profilo e segmentazione
 
-* [[!UICONTROL Documentazione del profilo cliente in tempo reale]](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
+* [[!UICONTROL Documentazione del profilo cliente in tempo reale]](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Guardrail del profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 
 ### Tutorial
 
-* [Personalizzazione dell’hit successivo con Real-Time CDP e Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=it)
+* [Personalizzazione dell’hit successivo con Real-Time CDP e Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
 * [Configurazione dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=it)

@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 81056fd01c1a767743712c8c0826a7d4107eb8d4
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 4%
@@ -107,7 +107,7 @@ Architettura visiva e diagrammi di riferimento del flusso di dati che illustrano
   </td>
    <td>
     <a href="architecture-diagrams/architecture-overviews/websdk.md">
-      <img alt="Diagramma sequenza Edge" src="architecture-diagrams/architecture-overviews/assets/sdk_sequence_diagram.svg" />
+      <img alt="Diagramma sequenza Edge" src="architecture-diagrams/architecture-overviews/assets/sdk_sequence_diagram.png" />
     </a>
     <div>
       <a href="architecture-diagrams/architecture-overviews/websdk.md">
@@ -117,7 +117,7 @@ Architettura visiva e diagrammi di riferimento del flusso di dati che illustrano
   </td>
   <td>
     <a href="architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md">
-      <img alt="Diagramma panoramica di Journey Optimizer" src="architecture-diagrams/customer-journeys/journey-optimizer/images/ajo-architecture.svg" />
+      <img alt="Diagramma panoramica di Journey Optimizer" src="architecture-diagrams/customer-journeys/journey-optimizer/images/ajo-architecture.png" />
     </a>
     <div>
       <a href="architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md">

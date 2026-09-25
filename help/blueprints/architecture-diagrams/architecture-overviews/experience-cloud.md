@@ -77,10 +77,10 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 81056fd01c1a767743712c8c0826a7d4107eb8d4
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 72%
+ht-degree: 67%
 ---
 # Adobe Experience Cloud
 
@@ -90,17 +90,17 @@ Questi diagrammi mostrano come le applicazioni Experience Cloud, i servizi appli
 
 Il diagramma seguente illustra i vari componenti di Adobe Experience Cloud per insight e pubblico, contenuti e Commerce, customer journey e flussi di lavoro marketing, creati e integrati nella base di Adobe Experience Platform.
 
-<img src="assets/aec.png" alt="Panoramica di Experience Cloud" style="width:95%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
+![Panoramica di Experience Cloud](assets/aec.png){width="1000" zoomable="yes"}
 
 
 ## Architettura di integrazione di dati e informazioni, contenuti e commerce e distribuzione di esperienze
 
 Il diagramma di architettura seguente illustra come i vari componenti di Adobe Experience Cloud si collegano e si integrano per consentire la personalizzazione su larga scala di dati, contenuti e distribuzione di esperienze.
 
-<img src="assets/pers_at_scale_diagram.svg" alt="Experience Cloud" style="width:95%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image"/>
+![Experience Cloud](assets/pers_at_scale_diagram.png){width="1000" zoomable="yes"}
 
 ## Adobe Experience Cloud nel panorama Enterprise
 
 Il diagramma di architettura seguente illustra come le applicazioni Adobe Experience Cloud e Adobe Experience Platform si integrano in un’architettura per customer experience di livello Enterprise nelle quattro categorie di dati, insight, orchestrazione e coinvolgimento.
 
-<img src="assets/cx_architecture.svg" alt="Experience Cloud" style="width:95%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
+![Experience Cloud](assets/cx_architecture.png){width="1000" zoomable="yes"}

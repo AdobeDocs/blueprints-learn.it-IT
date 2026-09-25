@@ -26,16 +26,16 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 81056fd01c1a767743712c8c0826a7d4107eb8d4
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 65%
+ht-degree: 60%
 ---
 # Adobe Experience Platform Web SDK e [!DNL Edge Network]
 
 Per una panoramica e dettagli sul Web e sul SDK mobile e sull&#39;API server [!DNL Edge Network], vedere quanto segue.
 
-* [Panoramica di Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home)
+* [Panoramica di Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
 * [Panoramica di Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
 * [API server [!DNL Edge Network]](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
 
@@ -54,11 +54,11 @@ Per informazioni dettagliate sulla migrazione dagli SDK di specifiche applicazio
 
 Questo schema dell’architettura illustra l’implementazione e la raccolta dati tramite Experience Platform Web SDK.
 
-<img src="assets/sdk_data_flow_diagram.svg" alt="Architettura di riferimento per l’implementazione tramite Experience Platform Web/Mobile SDK" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento per l&#39;implementazione tramite Experience Platform Web e Mobile SDK](assets/sdk_data_flow_diagram.png){width="1000" zoomable="yes"}
 
 Diagramma di sequenza per Experience Edge, servizi Experience Platform e applicazioni
 
-<img src="assets/sdk_sequence_diagram.svg" alt="Architettura di riferimento per lo scenario Web Personalization online/offline" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento per lo scenario Web Personalization online/offline](assets/sdk_sequence_diagram.png){width="1000" zoomable="yes"}
 
 ## Documentazione di riferimento
 

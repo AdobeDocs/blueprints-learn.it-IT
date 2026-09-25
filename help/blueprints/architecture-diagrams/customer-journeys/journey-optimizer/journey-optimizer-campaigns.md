@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 6%
@@ -42,19 +42,19 @@ AJO Campaign Orchestration consente agli esperti di marketing di progettare ed e
 
 ## Architettura
 
-<img src="images/ajo-orchestrated-campaigns.svg" alt="Architettura di riferimento Adobe Journey Optimizer Campaign Orchestration" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento di Adobe Journey Optimizer Campaign Orchestration](images/ajo-orchestrated-campaigns.png){width="1000" zoomable="yes"}
 
 <br>
 
 ### Architettura di esecuzione dei messaggi
 
-<img src="images/ajo-orchestrated-campaigns-message-sending.png" alt="Architettura di riferimento Adobe Journey Optimizer Campaign Orchestration" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento di Adobe Journey Optimizer Campaign Orchestration](images/ajo-orchestrated-campaigns-message-sending.png){width="1000" zoomable="yes"}
 
 <br>
 
 ### Archivio relazionale - latenza di acquisizione dati
 
-<img src="images/ajo-orchestrated-campaigns-data-ingestion.png" alt="Architettura di riferimento Adobe Journey Optimizer Campaign Orchestration" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento di Adobe Journey Optimizer Campaign Orchestration](images/ajo-orchestrated-campaigns-data-ingestion.png){width="1000" zoomable="yes"}
 
 <br>
 
@@ -71,7 +71,7 @@ AJO Campaign Orchestration consente agli esperti di marketing di progettare ed e
 
 ## Guardrail
 
-[Collegamento prodotto per campagne orchestrate](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
+[Collegamento prodotto per campagne orchestrate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
 
 [Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails)
 
@@ -82,6 +82,6 @@ AJO Campaign Orchestration consente agli esperti di marketing di progettare ed e
 - [[!DNL Journey Optimizer] campagne orchestrate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/orchestrated-campaigns-landing-page.html)
 - [[!DNL Experience Platform] documentazione](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 - [Documentazione di [!DNL Experience Platform] tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
-- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
-- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=it)
+- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer] descrizione prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)

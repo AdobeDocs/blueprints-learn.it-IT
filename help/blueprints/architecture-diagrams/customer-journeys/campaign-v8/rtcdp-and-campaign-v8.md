@@ -17,10 +17,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 76%
+ht-degree: 72%
 ---
 # [!DNL Real-Time CDP] con modello di integrazione di Adobe [!DNL Campaign] v8
 
@@ -33,7 +33,7 @@ Mostra come Adobe [!DNL Experience Platform], il suo Real-Time Customer Profile 
 
 ## Architettura
 
-<img src="images/campaign-v8-with-rtcdp.svg" alt="Architettura di riferimento del blueprint per il modello di integrazione di messaggistica batch e Adobe Experience Platform" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento per il modello di integrazione Messaggistica in batch e Adobe Experience Platform](images/campaign-v8-with-rtcdp.png){width="1000" zoomable="yes"}
 
 <br>
 
