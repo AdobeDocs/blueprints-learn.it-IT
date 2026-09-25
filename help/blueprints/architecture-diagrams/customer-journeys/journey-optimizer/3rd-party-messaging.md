@@ -50,7 +50,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messag
 <br>
 
 La topologia mostra [!DNL Journey Optimizer] invio di payload transazionali a una terza parte
-applicazione di messaggistica tramite un’azione personalizzata o un’integrazione REST API. Utilizza il modello di caso d&#39;uso della messaggistica di terze parti [](/help/blueprints/use-case-patterns/campaign-management-orchestration/third-party-messaging.md)
+applicazione di messaggistica tramite un’azione personalizzata o un’integrazione REST API. Utilizza il modello di caso d&#39;uso della messaggistica di terze parti [&#128279;](/help/blueprints/use-case-patterns/campaign-management-orchestration/third-party-messaging.md)
 per prerequisiti, guardrail e linee guida per l’implementazione.
 
 <br>
