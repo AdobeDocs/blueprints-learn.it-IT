@@ -1,13 +1,12 @@
 ---
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '665'
 ht-degree: 0%
-
 ---
 # Pagina guardrail di ambito: architettura e pagina pattern del caso di utilizzo
 
-Il sito blueprint separa **pagine di diagramma dell&#39;architettura** dalle **pagine di modelli di casi d&#39;uso** perché rispondono a esigenze di lettura diverse. Questo documento definisce cosa appartiene a dove e come gestire il contenuto che va oltre il limite.
+Questo sito separa **pagine di diagrammi di architettura** dalle **pagine con modelli di casi d&#39;uso** perché rispondono a esigenze diverse del lettore. Questo documento definisce cosa appartiene a dove e come gestire il contenuto che va oltre il limite.
 
 ## La distinzione principale
 
@@ -18,7 +17,7 @@ Il sito blueprint separa **pagine di diagramma dell&#39;architettura** dalle **p
 
 | Categoria | Esempi |
 | --- | --- |
-| Architettura di primo livello | Diagrammi di panoramica di AEP e applicazioni, marketecture di Experience Cloud, topologia hub e edge |
+| Architettura di primo livello | Diagrammi di panoramica di AEP e applicazioni, marketing di Experience Cloud, topologia hub e edge |
 | Flusso dei dati di sistema | Percorsi di acquisizione in tempo reale e in batch, sincronizzazione dei profili tra hub e edge, flussi di ricerca e attivazione |
 | Punti di integrazione | Dove AEP si integra con AJO, CJA, Target, Campaign, Marketo, Workfront; limiti SDK; superfici API |
 | Topologia di distribuzione | Distribuzione di Web SDK e Mobile SDK, inoltro lato server, posizionamento di nodi edge |

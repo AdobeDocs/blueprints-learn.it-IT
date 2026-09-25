@@ -3,13 +3,11 @@ title: Blueprint, campagna e piattaforma di Campaign v8
 description: Scopri il blueprint per Campaign v8.
 solution: Campaign,Campaign v8
 version: Campaign v8
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1046'
 ht-degree: 29%
-
 ---
-
 # Blueprint per Campaign v8
 
 Adobe Campaign v8 è una piattaforma di gestione delle campagne di nuova generazione progettata per i canali di marketing tradizionali come e-mail e direct mail. Offre solide funzionalità di ETL e gestione dei dati per supportare segmentazione complessa e targeting del pubblico, insieme a un potente motore di orchestrazione per la creazione di programmi di marketing multi-touch basati su batch.
@@ -50,13 +48,13 @@ Ulteriori informazioni sui [modelli di distribuzione di Campaign v8](https://exp
 
 ### Distribuzione aziendale di Campaign (FFDA)
 
-<img src="/help/blueprints/customer-journeys/campaign-v8/images/campaign-v8-ffda.svg" alt="Architettura di riferimento per il blueprint di distribuzione di Campaign v8 (FFDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/images/campaign-v8-ffda.svg" alt="Architettura di riferimento per il blueprint di distribuzione di Campaign v8 (FFDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
 ### Distribuzione FDA di Campaign v8
 
-<img src="/help/blueprints/customer-journeys/campaign-v8/images/campaign-v8-fda.svg" alt="Blueprint per l’architettura di riferimento per Campaign v8 (FDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/images/campaign-v8-fda.svg" alt="Blueprint per l’architettura di riferimento per Campaign v8 (FDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -64,8 +62,8 @@ Ulteriori informazioni sui [modelli di distribuzione di Campaign v8](https://exp
 
 | Scenario | Descrizione | Considerazioni tecniche |
 | :-- | :--- | :--- |
-| [[!DNL Real-time Customer Data Platform] con Adobe [!DNL Campaign]](/help/blueprints/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md) | Mostra come Adobe Experience Platform e il suo Real-Time Customer Profile e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe [!DNL Campaign] per fornire conversazioni personalizzate | <ul><li>Condivisione di profili e tipi di pubblico da [!DNL Real-Time CDP] ad Adobe [!DNL Campaign] tramite l&#39;utilizzo di scambio di file di archiviazione cloud e flussi di lavoro di acquisizione di Adobe [!DNL Campaign] </li><li>Condividi facilmente i dati di consegna e interazione delle conversazioni con i clienti in [!DNL Real-Time CDP] da Adobe [!DNL Campaign] per migliorare Real-Time Customer Profile e fornire rapporti cross-channel sulle campagne di messaggistica</li></ul> |
-| [[!DNL Journey Optimizer] con Adobe [!DNL Campaign]](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare 1:1 esperienze utilizzando Real-Time Customer Profile e come sfruttare il sistema nativo di messaggistica transazionale Adobe [!DNL Campaign] per inviare il messaggio | <ul><li>È possibile inviare fino a 1 milione di messaggi all’ora tramite il server di messaggi in tempo reale.<li>Non viene eseguita alcuna limitazione da [!DNL Journey Optimizer]. Assicurarsi quindi che un Enterprise Architect pre-vendita effettui il controllo tecnico</li><li>La funzionalità Gestione delle decisioni non è supportata nei payload per Campaign v8.</li></ul> |
+| [[!DNL Real-time Customer Data Platform] con Adobe [!DNL Campaign]](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md) | Mostra come Adobe Experience Platform e il suo Real-Time Customer Profile e lo strumento di segmentazione centralizzata possono essere utilizzati con Adobe [!DNL Campaign] per fornire conversazioni personalizzate | <ul><li>Condivisione di profili e tipi di pubblico da [!DNL Real-Time CDP] ad Adobe [!DNL Campaign] tramite l&#39;utilizzo di scambio di file di archiviazione cloud e flussi di lavoro di acquisizione di Adobe [!DNL Campaign] </li><li>Condividi facilmente i dati di consegna e interazione delle conversazioni con i clienti in [!DNL Real-Time CDP] da Adobe [!DNL Campaign] per migliorare Real-Time Customer Profile e fornire rapporti cross-channel sulle campagne di messaggistica</li></ul> |
+| [[!DNL Journey Optimizer] con Adobe [!DNL Campaign]](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/ajo-and-campaign-v8.md) | Mostra come utilizzare Adobe Journey Optimizer per orchestrare esperienze 1:1 utilizzando Real-Time Customer Profile e come sfruttare il sistema nativo di messaggistica transazionale Adobe [!DNL Campaign] per inviare il messaggio | <ul><li>È possibile inviare fino a 1 milione di messaggi all’ora tramite il server di messaggi in tempo reale.<li>Non viene eseguita alcuna limitazione da [!DNL Journey Optimizer]. Assicurarsi quindi che un Enterprise Architect pre-vendita effettui il controllo tecnico</li><li>La funzionalità Gestione delle decisioni non è supportata nei payload per Campaign v8.</li></ul> |
 
 <br>
 
@@ -78,11 +76,11 @@ Per questo blueprint esistono i seguenti prerequisiti.
 - Per interagire e utilizzare il software [!DNL Campaign] v8 è necessaria la console client di Adobe [!DNL Campaign]. Si tratta di un client basato su Windows che utilizza protocolli Internet standard (SOAP, HTTP, ecc.). Assicurati che nella tua organizzazione siano state abilitate le autorizzazioni necessarie per distribuire, installare ed eseguire software.
 
 - Inserimento di indirizzi IP nell’elenco Consentiti:
-   - Identifica gli intervalli IP utilizzati da tutti gli utenti durante l’accesso alla console client.
-   - Identifica i sistemi aziendali autorizzati a comunicare con il server di messaggistica in tempo reale e verifica che dispongano di un IP o di un intervallo assegnato in modo statico e che sia possibile inserire nell’elenco Consentiti.
-   - Può essere configurato e controllato tramite il Pannello di controllo Campaign.
+  - Identifica gli intervalli IP utilizzati da tutti gli utenti durante l’accesso alla console client.
+  - Identifica i sistemi aziendali autorizzati a comunicare con il server di messaggistica in tempo reale e verifica che dispongano di un IP o di un intervallo assegnato in modo statico e che sia possibile inserire nell’elenco Consentiti.
+  - Può essere configurato e controllato tramite il Pannello di controllo Campaign.
 - Gestione chiave sFTP:
-   - Assicurati di avere le chiavi pubbliche SSH da utilizzare con l’sFTP per Campaign. Può essere configurato e controllato tramite il Pannello di controllo Campaign.
+  - Assicurati di avere le chiavi pubbliche SSH da utilizzare con l’sFTP per Campaign. Può essere configurato e controllato tramite il Pannello di controllo Campaign.
 
 ### E-mail
 
@@ -109,9 +107,9 @@ Per questo blueprint esistono i seguenti prerequisiti.
 - Lo storage può essere scalato fino a 200 milioni di profili, con possibilità di scalabilità fino a 1 miliardo di profili.
 - Imposta e controlla l&#39;accesso utente tramite Adobe [!DNL Admin Console].
 - Il caricamento dei dati in [!DNL Campaign] deve essere eseguito tramite file batch:
-   - Il supporto per il caricamento dei dati API è principalmente per la gestione di profili o oggetti semplici nel database (creazione e aggiornamento). Non è pensato per essere utilizzato per l’upload di grandi volumi di dati né operazioni in batch.
-   - Non è supportato l’utilizzo delle API per leggere i dati ai fini di un’applicazione personalizzata.
-   - I dati caricati tramite API vengono memorizzati nel database delle applicazioni e quindi replicati ogni ora nel database Cloud.
+  - Il supporto per il caricamento dei dati API è principalmente per la gestione di profili o oggetti semplici nel database (creazione e aggiornamento). Non è pensato per essere utilizzato per l’upload di grandi volumi di dati né operazioni in batch.
+  - Non è supportato l’utilizzo delle API per leggere i dati ai fini di un’applicazione personalizzata.
+  - I dati caricati tramite API vengono memorizzati nel database delle applicazioni e quindi replicati ogni ora nel database Cloud.
 - Si applicano limiti alle chiamate API. Ulteriori informazioni sono disponibili nella [Descrizione del prodotto Adobe Campaign](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 ### Determinare la dimensione del server per messaggistica in batch
@@ -128,19 +126,19 @@ Per questo blueprint esistono i seguenti prerequisiti.
 - Campaign offre la possibilità di integrazione con un provider SMS. Il provider viene fornito dal cliente e integrato con campaign per l’invio di messaggi basati su SMS.
 - Il supporto avviene tramite il protocollo SMPP.
 - Ci sono tre (3) diversi tipi di SMS, tutti supportati da Adobe:
-   - SMS MT (Mobile Terminated): SMS emesso da Adobe [!DNL Campaign] nei confronti di telefoni cellulari tramite il provider SMPP.
-   - SMS MO (Mobile Originated): SMS inviato da un dispositivo mobile ad Adobe [!DNL Campaign] tramite il provider SMPP.
-   - SMS SR (Status Report) o DR o DLR (Delivery Receipt): una ricevuta di ritorno inviata dal dispositivo mobile a Adobe [!DNL Campaign] tramite il provider SMPP che indica che l’SMS è stato ricevuto correttamente. Adobe [!DNL Campaign] potrebbe inoltre ricevere un messaggio SR che indica che non è stato possibile recapitare il messaggio, spesso con una descrizione dell&#39;errore.
+  - SMS MT (Mobile Terminated): SMS emesso da Adobe [!DNL Campaign] nei confronti di telefoni cellulari tramite il provider SMPP.
+  - SMS MO (Mobile Originated): SMS inviato da un dispositivo mobile ad Adobe [!DNL Campaign] tramite il provider SMPP.
+  - SMS SR (Status Report) o DR o DLR (Delivery Receipt): una ricevuta di ritorno inviata dal dispositivo mobile a Adobe [!DNL Campaign] tramite il provider SMPP che indica che l’SMS è stato ricevuto correttamente. Adobe [!DNL Campaign] potrebbe inoltre ricevere un messaggio SR che indica che non è stato possibile recapitare il messaggio, spesso con una descrizione dell&#39;errore.
 
 <br>
 
 ## Fasi di implementazione
 
-Consulta la guida introduttiva per l’[implementazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=it).
+Consulta la guida introduttiva per l’[implementazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html).
 
 ## Documentazione correlata
 
-- [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=it)
+- [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign-v8.html)
 - [Descrizione del prodotto Campaign v8](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-- [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/launch.html?lang=it)
-- [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
+- [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/launch.html)
+- [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html)

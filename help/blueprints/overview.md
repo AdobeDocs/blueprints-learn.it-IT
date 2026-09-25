@@ -6,20 +6,23 @@ exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 TQID: https://experienceleague.adobe.com/hScp-97-JZqFMfBJdM6820M95dVE7YoagKJYfruEdao
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+    internal-label: Implementation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d63e7dbc225a99171dc6b0e7491b517757a5c6d8
+    internal-label: Implementation
+source-git-commit: 81056fd01c1a767743712c8c0826a7d4107eb8d4
 workflow-type: tm+mt
-source-wordcount: 359
+source-wordcount: '370'
 ht-degree: 4%
-
 ---
-
 # Casi d’uso e diagrammi dell’architettura di Customer Experience Orchestration
 
 Questo sito contiene **obiettivi aziendali chiave** che delineano ad esempio il valore aziendale principale e gli obiettivi raggiungibili con Adobe Experience Platform e Applications. **I modelli di casi d&#39;uso** descrivono le funzionalità comuni di piattaforme e applicazioni con approcci di implementazione ripetibili. **Esempi di casi d&#39;uso nel settore** applicano modelli a scenari aziendali specifici per il settore verticale. **I diagrammi architettura e i blueprint** sono diagrammi di riferimento per l&#39;architettura visiva e il flusso di dati che illustrano i punti di integrazione del sistema, i flussi di dati e contenuti e la sequenza delle operazioni, fornendo un riferimento tecnico per la progettazione della soluzione. Insieme, questi livelli collegano il valore aziendale alle dipendenze e all&#39;architettura di implementazione.
@@ -93,34 +96,36 @@ Architettura visiva e diagrammi di riferimento del flusso di dati che illustrano
 <table>
 <tr>
   <td>
-    <a href="experience-platform/guardrails.md">
-      <img alt="Experience Platform Hub e architettura Edge" src="experience-platform/assets/aep_edge_hub_latency_v1.png" />
+    <a href="architecture-diagrams/architecture-overviews/guardrails.md">
+      <img alt="Experience Platform Hub e architettura Edge" src="architecture-diagrams/architecture-overviews/assets/aep_edge_hub_latency.png" />
     </a>
     <div>
-      <a href="experience-platform/guardrails.md">
+      <a href="architecture-diagrams/architecture-overviews/guardrails.md">
     <strong>Diagramma dell'architettura e dei guardrail di Experience Platform Hub e Edge</strong>
     </a>
     </div>
   </td>
    <td>
-    <a href="experience-platform/deployment/websdk.md">
-      <img alt="Diagramma sequenza Edge" src="experience-platform/deployment/assets/web_sdk_sequence.svg" />
+    <a href="architecture-diagrams/architecture-overviews/websdk.md">
+      <img alt="Diagramma sequenza Edge" src="architecture-diagrams/architecture-overviews/assets/sdk_sequence_diagram.svg" />
     </a>
     <div>
-      <a href="experience-platform/deployment/websdk.md">
+      <a href="architecture-diagrams/architecture-overviews/websdk.md">
     <strong>Diagramma sequenza Web SDK e Edge Network</strong>
     </a>
     </div>
   </td>
   <td>
-    <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
-      <img alt="Diagramma panoramica di Journey Optimizer" src="customer-journeys/journey-optimizer/images/ajo-architecture.svg" />
+    <a href="architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md">
+      <img alt="Diagramma panoramica di Journey Optimizer" src="architecture-diagrams/customer-journeys/journey-optimizer/images/ajo-architecture.svg" />
     </a>
     <div>
-      <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
+      <a href="architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md">
     <strong>Diagramma Panoramica Adobe Journey Optimizer</strong>
     </a>
     </div>
   </td>
 </tr>
 </table>
+
+[Visualizza tutti i diagrammi e i blueprint dell&#39;architettura](architecture-diagrams/overview.md)

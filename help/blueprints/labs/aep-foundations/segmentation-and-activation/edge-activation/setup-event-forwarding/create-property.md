@@ -4,13 +4,11 @@ description: Crea una proprietà di Inoltro eventi con un elemento dati e una re
 doc-type: article
 solution: Experience Platform
 exl-id: eabd5f75-7706-4c96-982e-2512509bdc55
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
-
 ---
-
 
 # Crea proprietà
 
@@ -208,7 +206,7 @@ Dopo aver verificato che la schermata sia simile a quella riportata di seguito, 
 
 
 
-&#x200B;4. Al termine dell’operazione, dovresti vedere che l’azione è stata aggiunta alla regola. Fai clic su **Salva** per continuare.
+1. Al termine dell’operazione, dovresti vedere che l’azione è stata aggiunta alla regola. Fai clic su **Salva** per continuare.
 
 ![Editor regole che mostra l&#39;azione configurata con il pulsante Salva evidenziato](assets/create-property-save-rule-button.png "Salva la regola")
 

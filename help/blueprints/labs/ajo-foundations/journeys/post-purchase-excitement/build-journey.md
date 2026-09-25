@@ -4,13 +4,11 @@ description: Crea un percorso unitario che risponda a un evento Ordine spedito, 
 doc-type: article
 solution: Experience Platform
 exl-id: 4dd15071-51e5-445a-932d-690d9a73a913
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 0%
-
 ---
-
 
 # Genera percorso
 
@@ -159,8 +157,8 @@ Per quanto riguarda i contenuti, dovrai mantenere le cose semplici. Come stupidi
 
    ```json
    {{profile.person.name.firstName}}, your order has shipped
-   ETA: 
-   Tracking Number: 
+   ETA:
+   Tracking Number:
    ```
 
 8. Aggiungi i campi di personalizzazione come segue (**fai clic sul segno più &#39;+&#39; accanto al campo nella barra a sinistra**):
@@ -188,7 +186,7 @@ Per quanto riguarda i contenuti, dovrai mantenere le cose semplici. Come stupidi
 
 ![Pulsante Salva e freccia indietro in alto a destra e in alto a sinistra](assets/build-journey-save-and-back-arrow.png)
 
-&#x200B;12. Infine, fai clic sull&#39;icona **\&lt; Indietro** in alto a sinistra per tornare all&#39;area di lavoro del Percorso
+1. Infine, fai clic sull&#39;icona **\&lt; Indietro** in alto a sinistra per tornare all&#39;area di lavoro del Percorso
 
 ![Icona Indietro in alto a sinistra per tornare all&#39;area di lavoro del Percorso](assets/build-journey-back-icon-to-journey-canvas.png)
 

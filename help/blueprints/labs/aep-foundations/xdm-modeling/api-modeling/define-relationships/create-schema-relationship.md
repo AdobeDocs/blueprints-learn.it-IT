@@ -4,13 +4,11 @@ description: Utilizza l’API del registro dello schema per creare un descrittor
 doc-type: article
 solution: Experience Platform
 exl-id: c9079585-fff1-4ee1-8992-93825fcde759
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
-
 ---
-
 
 # Crea relazione schema
 
@@ -57,9 +55,9 @@ SOLO ESEMPIO
 
 
 
-&#x200B;3. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
+1. Salva la richiesta prima di continuare a utilizzare il pulsante `Save`
 
-&#x200B;4. Eseguire l&#39;API facendo clic sul pulsante `Send`
+1. Eseguire l&#39;API facendo clic sul pulsante `Send`
 
 Dovresti ora visualizzare una risposta `201 Created` come segue
 

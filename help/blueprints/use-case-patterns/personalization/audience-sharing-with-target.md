@@ -6,13 +6,11 @@ short-description: Integra profili e pubblico di RTCDP con Adobe Target.
 solution: Real-Time Customer Data Platform, Target, Experience Platform
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
-source-git-commit: 045fac8362795eefcac0ef5202fe7a90cb6875da
+source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 33%
-
+source-wordcount: '1045'
+ht-degree: 32%
 ---
-
 
 # Customer Personalization noto con Target
 
@@ -30,7 +28,7 @@ ht-degree: 33%
 
 ### Documentazione di riferimento
 
-* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it)
+* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
 * [Configurazione dello stream di dati Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)
 
 ## Modelli di integrazione
@@ -41,20 +39,6 @@ ht-degree: 33%
 | **Condivisione in streaming e in batch del pubblico da Real-time Customer Data Platform a Target tramite l&#39;approccio Edge** | - I tipi di pubblico in streaming e in batch devono essere condivisi da Real-time Customer Data Platform a Target tramite la rete Edge. <br>- I tipi di pubblico valutati in tempo reale richiedono l&#39;implementazione di Web SDK e Edge Network. | - L’implementazione di SDK per web/mobile o API per Edge di Target non è necessaria per la condivisione di tipi di pubblico RTCDP in streaming o in batch con Target, ma è necessaria per abilitare la valutazione Edge in tempo reale. <br>- Se si utilizza AT.js, è supportata solo l’integrazione dei profili rispetto allo spazio dei nomi dell’identità ECID. <br>- Per le ricerche personalizzate dello spazio dei nomi delle identità in Edge, è necessaria la distribuzione API Web SDK/Edge e ogni identità deve essere impostata come identità nella mappa delle identità. <br>- La destinazione di destinazione deve essere configurata in Destinazioni Real-time Customer Data Platform. È supportata solo la sandbox di produzione predefinita in RTCDP. <br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform. |
 | **Condivisione in streaming e in batch del pubblico da Real-time Customer Data Platform a Target e Audience Manager tramite l&#39;approccio del servizio di condivisione del pubblico** | : questo modello di integrazione può essere utilizzato quando desideri un ulteriore arricchimento dai dati e dai tipi di pubblico di terze parti in Audience Manager. | - Web/Mobile SDK non è richiesto per la condivisione di tipi di pubblico in streaming e in batch su Target, ma è necessario per abilitare la valutazione Edge in tempo reale. <br>- Se si utilizza AT.js, è supportata solo l’integrazione dei profili rispetto allo spazio dei nomi dell’identità ECID. <br>- Per le ricerche personalizzate dello spazio dei nomi delle identità in Edge, è necessaria la distribuzione API Web SDK/Edge e ogni identità deve essere impostata come identità nella mappa delle identità. <br>- È necessario eseguire il provisioning della proiezione del pubblico tramite il servizio di condivisione del pubblico. <br>- L’integrazione con Target richiede la stessa organizzazione IMS usata per l’istanza di Experience Platform. <br>- Solo i tipi di pubblico della sandbox di produzione predefinita supportano il servizio core di condivisione del pubblico. |
 
-## Condivisione del pubblico in tempo reale, in streaming e in batch con Adobe Target
-
-Architettura
-
-![Architettura di riferimento per il blueprint di Web Personalization online/offline](/help/blueprints/audience-activation/assets/RTCDP-Target.png)
-
-Dettagli della sequenza
-
-![Architettura di riferimento per il blueprint di Web Personalization online/offline](/help/blueprints/audience-activation/assets/RTCDP-Target_flow.png)
-
-Architettura d’insieme
-
-![Architettura di riferimento per il blueprint di Web Personalization online/offline](/help/blueprints/audience-activation/assets/personalization_with_apps.png)
-
 ## Modelli di implementazione
 
 La personalizzazione per clienti noti è supportata tramite diversi approcci di implementazione.
@@ -62,7 +46,7 @@ La personalizzazione per clienti noti è supportata tramite diversi approcci di 
 ### Schema di implementazione 1 - [!DNL Edge Network] con Web/Mobile SDK o API [!DNL Edge Network] (approccio consigliato)
 
 * Utilizzo di [!DNL Edge Network] con Web/Mobile SDK. La segmentazione Edge in tempo reale richiede l’implementazione di Web/Mobile SDK o dell’API Edge.
-* [Consulta la blueprint per Experience Platform Web e Mobile SDK](/help/blueprints/experience-platform/deployment/websdk.md) per l&#39;implementazione basata su SDK.
+* [Consulta la blueprint per Experience Platform Web e Mobile SDK](/help/blueprints/architecture-diagrams/architecture-overviews/websdk.md) per l&#39;implementazione basata su SDK.
 * Per l&#39;utilizzo in Mobile SDK, è necessario installare l&#39;estensione [Adobe Journey Optimizer - Decisioning](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/).
 * [Consulta la [!DNL Edge Network] API server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it) per informazioni su un&#39;implementazione di Adobe Target basata su API con profilo Edge.
 
@@ -70,8 +54,8 @@ La personalizzazione per clienti noti è supportata tramite diversi approcci di 
 
 Mediante SDK tradizionali per specifiche applicazioni (ad esempio, AT.js e AppMeasurement.js). La valutazione dei segmenti Edge in tempo reale non è supportata da questo approccio di implementazione. Tuttavia, questo approccio supporta la condivisione del pubblico in streaming e in batch dall’hub di Experience Platform.
 
-[Consulta la documentazione del connettore Adobe Target](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
-[Consulta la blueprint di SDK specifica per l&#39;applicazione](/help/blueprints/experience-platform/deployment/appsdk.md)
+[Consulta la documentazione del connettore Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[Consulta la blueprint di Experience Platform Web SDK](/help/blueprints/architecture-diagrams/architecture-overviews/websdk.md).
 
 ## Considerazioni sull’implementazione
 

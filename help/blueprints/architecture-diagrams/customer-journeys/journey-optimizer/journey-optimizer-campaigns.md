@@ -1,0 +1,87 @@
+---
+title: '[!DNL Journey Optimizer] - Orchestrazione campagna'
+description: Consente agli addetti al marketing di coordinare comunicazioni di marketing pianificate, basate sul pubblico e con più passaggi tra i canali di messaggistica in uscita.
+solution: Journey Optimizer
+exl-id: a8ff16f8-146d-4e1f-9bd0-9eda6af0c69b
+TQID: https://experienceleague.adobe.com/aPDagEC1zZdi-Bz29fFf6g5Uy8v4qMPhDA47Cdwl-Sw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 6%
+---
+# [!DNL Journey Optimizer] - Orchestrazione campagna
+
+>[!TIP]
+>Questa architettura è documentata anche come [caso d&#39;uso](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) in Gestione e orchestrazione campagne.
+
+AJO Campaign Orchestration consente agli esperti di marketing di progettare ed eseguire comunicazioni pianificate, basate sul pubblico e in più passaggi, tra canali in uscita come e-mail, SMS, push e direct mail. A differenza dei Percorsi AJO, che reagiscono ai comportamenti dei singoli clienti utilizzando dati in tempo reale da Real-Time Customer Profile, le campagne sono attività di marketing coordinate e mirate ai tipi di pubblico a intervalli pianificati. Insieme, le campagne e i percorsi offrono approcci complementari â€&quot;le campagne guidano le strategie di brand engagement, mentre i percorsi offrono esperienze personalizzate e reattive.
+
+<br>
+
+## Architettura
+
+<img src="images/ajo-orchestrated-campaigns.svg" alt="Architettura di riferimento Adobe Journey Optimizer Campaign Orchestration" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+
+<br>
+
+### Architettura di esecuzione dei messaggi
+
+<img src="images/ajo-orchestrated-campaigns-message-sending.png" alt="Architettura di riferimento Adobe Journey Optimizer Campaign Orchestration" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+
+<br>
+
+### Archivio relazionale - latenza di acquisizione dati
+
+<img src="images/ajo-orchestrated-campaigns-data-ingestion.png" alt="Architettura di riferimento Adobe Journey Optimizer Campaign Orchestration" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+
+<br>
+
+## Considerazioni sull’architettura delle campagne
+
+- **Architettura dati**: AJO Campaign Orchestration utilizza un database relazionale sottostante per la creazione e l&#39;orchestrazione del pubblico
+- **Integrazione con Audience Portal**: integrata in modo nativo con Audience Portal nel profilo cliente in tempo reale per leggere da tipi di pubblico esistenti e salvare nuovi tipi di pubblico in durante la creazione di campagne
+- **Creazione di pubblico su richiesta**: genera, valuta ed esegui immediatamente un pubblico per casi di utilizzo di marketing urgenti
+- **Integrazione dei profili cliente in tempo reale:** fonte di verità per la cronologia del consenso e delle comunicazioni; supporta la progettazione di &quot;profili skinny&quot; per la personalizzazione
+- **Invio di messaggi con più entità:** possibilità di inviare più messaggi per profilo in un&#39;unica consegna (ad esempio inviare un messaggio per prenotazione all&#39;indirizzo e-mail del cliente)
+- **Segmentazione multi-entità**: inizia a creare un pubblico da qualsiasi entità all&#39;interno dell&#39;archivio relazionale (ad esempio, prodotto, inventario, piano, ecc.)
+
+<br>
+
+## Guardrail
+
+[Collegamento prodotto per campagne orchestrate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
+
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails)
+
+<br>
+
+## Documentazione correlata
+
+- [[!DNL Journey Optimizer] campagne orchestrate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/orchestrated-campaigns-landing-page.html)
+- [[!DNL Experience Platform] documentazione](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
+- [Documentazione di [!DNL Experience Platform] tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
+- [[!DNL Experience Platform Mobile SDK] documentazione](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+- [[!DNL Journey Optimizer] descrizione prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)

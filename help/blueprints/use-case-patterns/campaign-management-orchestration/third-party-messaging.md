@@ -1,23 +1,21 @@
 ---
-title: Journey Optimizer - Blueprint per messaggistica di terze parti
-description: Dimostra come utilizzare Adobe Journey Optimizer con sistemi di messaggistica di terze parti per inviare comunicazioni personalizzate.
+title: Journey Optimizer - Blueprint per messaggi di terze parti
+description: Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per inviare comunicazioni personalizzate.
 solution: Journey Optimizer
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 62%
-
+ht-degree: 58%
 ---
+# Blueprint per messaggi di terze parti
 
-# Blueprint per messaggistica di terze parti
-
-Dimostra come utilizzare Adobe Journey Optimizer con sistemi di messaggistica di terze parti per inviare comunicazioni personalizzate.
+Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per inviare comunicazioni personalizzate.
 
 <br>
 
 ## Architettura
 
-<img src="/help/blueprints/customer-journeys/journey-optimizer/images/3rd-party-messaging-architecture.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/images/ajo-third-party-messaging.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -37,9 +35,9 @@ Dimostra come utilizzare Adobe Journey Optimizer con sistemi di messaggistica di
 
 ## Guardrail
 
-[Collegamento prodotto guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=it)
+[Collegamento prodotto guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
 
-[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=it)
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 <br>
 
@@ -71,9 +69,9 @@ Dimostra come utilizzare Adobe Journey Optimizer con sistemi di messaggistica di
 1. Configura l’origine dati di Experience Platform e determina quali campi devono essere memorizzati in cache come parte del percorso
 1. I dati in streaming, utilizzati per avviare un percorso di clienti, devono essere configurati prima per ottenere un ID di orchestrazione. Questo ID di orchestrazione viene quindi fornito allo sviluppatore per l’utilizzo durante l’acquisizione
 1. Configurare le origini dati esterne.
-1. Configurare le azioni personalizzate per l’applicazione di terze parti.
+1. Configurare azioni personalizzate per applicazioni di terze parti
 
-### Configurazione push mobile (opzionale per l’eventuale raccolta di token da terze parti)
+### Configurazione push mobile (opzionale, poiché terze parti potrebbe raccogliere i token)
 
 1. Implementare Experience Platform Mobile SDK per raccogliere i token push e le informazioni di accesso da associare ai profili cliente noti.
 1. Utilizzare i tag di Adobe e creare una proprietà mobile con la seguente estensione:
@@ -90,6 +88,6 @@ Dimostra come utilizzare Adobe Journey Optimizer con sistemi di messaggistica di
 
 * [Documentazione di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=it)
 * [Documentazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
-* [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it)
-* [Documentazione di Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=it)
+* [Documentazione di Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html)
+* [Documentazione di Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 * [Descrizione del prodotto Journey Optimizer](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer.html)

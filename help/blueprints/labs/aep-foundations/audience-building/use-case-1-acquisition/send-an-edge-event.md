@@ -4,13 +4,11 @@ description: Invia un evento web non autenticato a Edge tramite Postman e tracci
 doc-type: article
 solution: Experience Platform
 exl-id: 465d09da-e30f-404c-8778-5df06e5a199f
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 0%
-
 ---
-
 
 # Inviare un evento Edge
 
@@ -142,13 +140,13 @@ In Adobe Experience Platform, cerca il profilo appena inviato dall’evento appe
 
 
 
-&#x200B;3. Fai clic su **Eventi** nella barra di navigazione superiore per visualizzare l&#39;evento appena inviato
+1. Fai clic su **Eventi** nella barra di navigazione superiore per visualizzare l&#39;evento appena inviato
 
    ![Visualizza l&#39;evento nella scheda Eventi del profilo](assets/send-an-edge-event-view-the-profile-event.png)
 
 
 
-&#x200B;4. Verifica che il profilo sia idoneo per i tipi di pubblico esaminando la scheda Appartenenza al pubblico nella navigazione superiore.  Dovresti visualizzare quanto segue:
+1. Verifica che il profilo sia idoneo per i tipi di pubblico esaminando la scheda Appartenenza al pubblico nella navigazione superiore.  Dovresti visualizzare quanto segue:
 
 - Qualsiasi evento Edge (negli ultimi 15 minuti)
 - Qualsiasi streaming di eventi (nell’ultima ora)

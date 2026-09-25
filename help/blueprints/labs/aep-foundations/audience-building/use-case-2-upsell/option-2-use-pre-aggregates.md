@@ -1,16 +1,14 @@
 ---
-title: Opzione
+title: Opzione #2 - use pre-aggregates
 description: Crea un pubblico completamente in streaming utilizzando gli attributi di utilizzo preaggregati calcolati a monte invece di aggregare gli eventi all’interno della regola di pubblico.
 doc-type: article
 solution: Experience Platform
 exl-id: fe6ee041-814f-41c1-91cf-c3473cbca0c2
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '312'
 ht-degree: 0%
-
 ---
-
 
 # Opzione #2: utilizzare preaggregati
 
@@ -36,15 +34,15 @@ Crea un pubblico di tutti i profili con un utilizzo elevato dei dati di fatturaz
 
 
 
-&#x200B;3. Cercare il nome del piano nel profilo e aggiungerlo (Profilo individuale XDM > Dispositivo > Dettagli piano > Nome piano). Seleziona Does not Equal &quot;Ultimate&quot;
+1. Cercare il nome del piano nel profilo e aggiungerlo (Profilo individuale XDM > Dispositivo > Dettagli piano > Nome piano). Seleziona Does not Equal &quot;Ultimate&quot;
 
    ![Il nome del piano selezionato non è uguale a Ultimate](assets/option-2-use-pre-aggregates-select-does-not-equal-ultimate.png)
 
 
 
-&#x200B;4. Fornisci una descrizione.  Il metodo di valutazione della convalida è Streaming.
+1. Fornisci una descrizione.  Il metodo di valutazione della convalida è Streaming.
 
-&#x200B;5. Salva il pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate (Agg)*&quot;
+1. Salva il pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate (Agg)*&quot;
 
 >[!NOTE]
 >

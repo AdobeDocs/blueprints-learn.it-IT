@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '407'
 ht-degree: 0%
 ---
 # Riferimento di posizionamento TOC.md
@@ -12,18 +12,19 @@ Quando l&#39;abilità genera una nuova pagina di diagramma architettura, deve ag
 
 Tutte le pagine del diagramma dell&#39;architettura si trovano nella sezione `+ Architecture Diagrams and Blueprints{#architecture-diagrams}` di primo livello in TOC.md. All’interno di tale sezione, diverse sottosezioni raggruppano le pagine per argomento.
 
+I nomi delle cartelle, gli ancoraggi del sommario e le etichette del sommario per queste sottosezioni devono seguire la regola di denominazione in `../../architecture-diagram-category-builder/references/naming-conventions.md`. Vedere il file se è necessaria una nuova categoria (utilizzare l&#39;abilità `architecture-diagram-category-builder` per tale categoria, non questa).
+
 ## Mappatura sottosezione
 
 Selezionare la sottosezione corrispondente alla cartella degli argomenti della nuova pagina:
 
 | Cartella argomenti | Titolo sottosezione sommario |
 | --- | --- |
-| `experience-platform/` | `+ Architecture overviews{#architecture-overview}` |
-| `experience-platform/deployment/` | `+ Deployment{#deployment}` (sottosezione nidificata all&#39;interno di `Architecture overviews`) |
-| `audience-activation/` | `+ Audience & Profile Activation{#audience-activation}` |
-| `b2b/` | `+ B2B activation & marketing{#b2b-activation}` |
-| `customer-journey-analytics/` | `+ Customer Journey Analytics{#customer-journey-analytics}` |
-| `customer-journeys/` | `+ Customer journeys{#customer-journeys}` |
+| `architecture-diagrams/architecture-overviews/` | `+ Architecture overviews{#architecture-overviews}` |
+| `architecture-diagrams/audience-profile-activation/` | `+ Audience & Profile Activation{#audience-profile-activation}` |
+| `architecture-diagrams/b2b-activation-marketing/` | `+ B2B activation & marketing{#b2b-activation-marketing}` |
+| `architecture-diagrams/customer-insights/` | `+ Customer Insights{#customer-insights}` |
+| `architecture-diagrams/customer-journeys/` | `+ Customer journeys{#customer-journeys}` |
 
 Se l&#39;utente propone una cartella di argomenti che non si trova in questa tabella, considerarla come una nuova sottosezione di livello superiore e sospendere l&#39;operazione. Chiedere all&#39;utente di confermare se crearla. Non inventare silenziosamente una nuova sottosezione.
 
@@ -42,63 +43,57 @@ Regole:
 
 ## Sottosezioni nidificate
 
-`+ Architecture overviews{#architecture-overview}` contiene un blocco `+ Deployment{#deployment}` nidificato per le pagine SDK. Se la nuova pagina si trova in `experience-platform/deployment/`, inserire la voce in `Deployment` con **sei** spazi di rientro:
-
-```
-      + [{Page title}](/help/blueprints/experience-platform/deployment/{filename}.md)
-```
-
-Altre sottosezioni (`Audience & Profile Activation`, `B2B activation & marketing`, ecc.) può contenere anche raggruppamenti nidificati — esaminate la sezione prima di inserire la voce. Se è presente un raggruppamento nidificato e la nuova pagina vi appartiene, applica un rientro a due spazi aggiuntivi; in caso contrario, posiziona la voce al livello superiore della sottosezione.
+`+ Architecture overviews{#architecture-overviews}` non ha raggruppamenti nidificati. Tutte le pagine in `architecture-diagrams/architecture-overviews/` (incluse le pagine di distribuzione di SDK, ad esempio `websdk.md`, `appsdk.md`) si trovano allo stesso livello di rientro a quattro spazi. Altre sottosezioni (`Audience & Profile Activation`, `B2B activation & marketing`, ecc.) può contenere ancora raggruppamenti nidificati — ispezionate la sezione prima di inserire la voce. Se è presente un raggruppamento nidificato e la nuova pagina vi appartiene, applica un rientro a due spazi aggiuntivi; in caso contrario, posiziona la voce al livello superiore della sottosezione.
 
 ## Esempi di lavoro
 
 ### Esempio 1: pagina AEP di primo livello
 
-- Cartella argomenti: `experience-platform/`
+- Cartella argomenti: `architecture-diagrams/architecture-overviews/`
 - Nome file: `mix-modeler-integration.md`
 - Titolo pagina: `Adobe Mix Modeler integration with Experience Platform`
 
 Voce:
 
 ```
-    + [Adobe Mix Modeler integration with Experience Platform](/help/blueprints/experience-platform/mix-modeler-integration.md)
+    + [Adobe Mix Modeler integration with Experience Platform](/help/blueprints/architecture-diagrams/architecture-overviews/mix-modeler-integration.md)
 ```
 
-Inserito in `+ Architecture overviews{#architecture-overview}`.
+Inserito in `+ Architecture overviews{#architecture-overviews}`.
 
 ### Esempio 2 — Architettura di percorso AJO
 
-- Cartella argomenti: `customer-journeys/`
+- Cartella argomenti: `architecture-diagrams/customer-journeys/`
 - Nome file: `cross-channel-journey-architecture.md`
 - Titolo pagina: `Cross-channel journey architecture`
 
 Voce:
 
 ```
-    + [Cross-channel journey architecture](/help/blueprints/customer-journeys/cross-channel-journey-architecture.md)
+    + [Cross-channel journey architecture](/help/blueprints/architecture-diagrams/customer-journeys/cross-channel-journey-architecture.md)
 ```
 
 Inserito in `+ Customer journeys{#customer-journeys}`.
 
-### Esempio 3: pagina SDK di distribuzione
+### Esempio 3: pagina Distribuzione di SDK
 
-- Cartella argomenti: `experience-platform/deployment/`
+- Cartella argomenti: `architecture-diagrams/architecture-overviews/`
 - Nome file: `mobile-sdk-architecture.md`
 - Titolo pagina: `Mobile SDK deployment architecture`
 
-Voce (prendere nota del rientro a sei spazi):
+Immissione (stesso rientro di quattro spazi delle altre pagine di panoramica dell’architettura):
 
 ```
-      + [Mobile SDK deployment architecture](/help/blueprints/experience-platform/deployment/mobile-sdk-architecture.md)
+    + [Mobile SDK deployment architecture](/help/blueprints/architecture-diagrams/architecture-overviews/mobile-sdk-architecture.md)
 ```
 
-Inserito in `+ Deployment{#deployment}` in `+ Architecture overviews{#architecture-overview}`.
+Inserito in `+ Architecture overviews{#architecture-overviews}`.
 
 ## Verifica
 
 Dopo aver modificato TOC.md, rileggi la sottosezione interessata e conferma:
 
-1. La nuova voce utilizza esattamente quattro spazi di rientro (o sei se nidificata sotto `Deployment`).
+1. La nuova voce utilizza esattamente quattro spazi di rientro (o sei se nidificata sotto un raggruppamento specifico della sottosezione, ad esempio il raggruppamento RTCDP di `Audience & Profile Activation`).
 2. La destinazione del collegamento corrisponde al percorso del file sul disco, inclusa l&#39;estensione `.md`.
 3. La voce è raggruppata all&#39;interno della sottosezione corretta, non fluttuando tra le sottosezioni.
 4. Nessuna voce esistente è stata riordinata o modificata.

@@ -1,16 +1,14 @@
 ---
-title: Opzione
+title: Opzione #1 - using Audiences to aggregate
 description: Crea tipi di pubblico che utilizzano l’aggregazione Somma e Media nel pubblico sugli eventi di utilizzo della fatturazione e sui dati denormalizzati del piano per abilitare la valutazione in streaming.
 doc-type: article
 solution: Experience Platform
 exl-id: da019755-07a3-406c-8ac7-7878325a14bf
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '813'
 ht-degree: 0%
-
 ---
-
 
 # Opzione #1: utilizzo dei tipi di pubblico per l’aggregazione
 
@@ -108,15 +106,15 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-&#x200B;5. Fai clic su Audiences —> Experience Platform. Trascina Somma utilizzo fatturazione > 140 GB e Media utilizzo fatturazione >= 20 GB accanto a Nome piano.
+1. Fai clic su Audiences —> Experience Platform. Trascina Somma utilizzo fatturazione > 140 GB e Media utilizzo fatturazione >= 20 GB accanto a Nome piano.
 
    ![Trascina i tipi di pubblico di utilizzo fatturazione accanto a Nome piano](assets/option-1-using-audiences-to-aggregate-20-gb-next-to-plan-name.png)
 
 
 
-&#x200B;6. Copiare lo pseudo codice nella descrizione
+1. Copiare lo pseudo codice nella descrizione
 
-&#x200B;7. Seleziona questa opzione per Streaming. **Non può essere in streaming**. Apporta alcune modifiche:
+1. Seleziona questa opzione per Streaming. **Non può essere in streaming**. Apporta alcune modifiche:
 
    >[!NOTE]
    >
@@ -126,7 +124,7 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-&#x200B;8. Sostituisci **Nome piano (Nome piano)** con: Profilo individuale XDM > Devbc > Dettagli piano > **Nome piano**
+1. Sostituisci **Nome piano (Nome piano)** con: Profilo individuale XDM > Devbc > Dettagli piano > **Nome piano**
 
    ![Sostituisci nome piano (nome piano) con il campo Nome piano denormalizzato](assets/option-1-using-audiences-to-aggregate-replace-denormalized-plan-name.png)
 
@@ -142,7 +140,7 @@ In questa build di pubblico, puoi determinare l’utilizzo totale dei dati di fa
 
 
 
-&#x200B;9. Verifica di poter salvare l’elemento come Streaming. Salva pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate*&quot;
+1. Verifica di poter salvare l’elemento come Streaming. Salva pubblico come &quot;*Utilizzo dati fatturazione elevato ma nessun piano Ultimate*&quot;
 
 >[!NOTE]
 >

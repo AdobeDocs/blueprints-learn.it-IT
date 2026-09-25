@@ -4,13 +4,11 @@ description: Configura una destinazione di streaming API HTTP con un endpoint we
 doc-type: article
 solution: Experience Platform
 exl-id: c52d301f-b308-40fc-a59c-ace1c96ccd13
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
-
 ---
-
 
 # Configurare la destinazione di streaming
 
@@ -62,7 +60,7 @@ Nell’interfaccia utente di Experience Platform, passa al catalogo delle destin
 
 
 
-&#x200B;3. Compila i dettagli di configurazione della destinazione come segue:
+1. Compila i dettagli di configurazione della destinazione come segue:
 
 - **Nome** -> `Streaming DEP Webhook - [Your Initials]`
 - **Descrizione** -> `[your webhook endpoint you copied above]`
@@ -91,7 +89,7 @@ Al termine, assicurati che la configurazione corrisponda a quella visualizzata d
 >
 >Ulteriori informazioni sui criteri di governance in Experience League
 >
->[https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=it#core-actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=it#core-actions)
+>[https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions)
 
 ## Seleziona tipi di pubblico
 

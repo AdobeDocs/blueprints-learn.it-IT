@@ -4,13 +4,11 @@ description: Utilizza l’API del registro dello schema per creare un gruppo di 
 doc-type: article
 solution: Experience Platform
 exl-id: d3262db9-7c0b-476a-843f-1a2c224ee792
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
-
 ---
-
 
 # Creare gruppi di campi personalizzati
 
@@ -68,7 +66,7 @@ Inoltre, osserva come ogni campo specifico del foglio di mappatura viene convali
 
 
 
-&#x200B;2. Aggiorna `title` e `description` per il gruppo di campi utilizzando il seguente formato: `Customer Account Details - Sandbox <your number here>`
+1. Aggiorna `title` e `description` per il gruppo di campi utilizzando il seguente formato: `Customer Account Details - Sandbox <your number here>`
 
 
 
@@ -76,9 +74,9 @@ Inoltre, osserva come ogni campo specifico del foglio di mappatura viene convali
 
 
 
-&#x200B;3. Eseguire facendo clic sul pulsante `Send`.  Dovresti trovare una risposta simile alla schermata seguente.
+1. Eseguire facendo clic sul pulsante `Send`.  Dovresti trovare una risposta simile alla schermata seguente.
 
-&#x200B;4. Copia il valore `$id` del gruppo di campi Dettagli account cliente appena creato.
+1. Copia il valore `$id` del gruppo di campi Dettagli account cliente appena creato.
 
 ![Risposta API riuscita dopo la creazione del gruppo di campi personalizzato](assets/create-custom-field-groups-step-2-create-custom-field-group-success.png "Passaggio 2 - Creazione del gruppo di campi personalizzato completata")
 

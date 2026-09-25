@@ -4,13 +4,11 @@ description: Utilizza Adobe Experience Platform Assurance per creare una session
 doc-type: article
 solution: Experience Platform
 exl-id: 94b200c0-6714-4996-a266-119cc8f7f4e2
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 1%
-
 ---
-
 
 # Monitorare l’evento
 
@@ -39,21 +37,21 @@ ht-degree: 1%
 
    ![Fare clic su Avanti dopo aver immesso il nome della sessione e l&#39;URL](assets/monitor-your-event-click-next-button.png)
 
-&#x200B;4. Copia il collegamento da qualche parte a cui puoi fare riferimento in un secondo momento
+1. Copia il collegamento da qualche parte a cui puoi fare riferimento in un secondo momento
 
-&#x200B;5. Fai clic sul pulsante **Fine**
+1. Fai clic sul pulsante **Fine**
 
    ![Copia il collegamento della sessione di Assurance e fai clic su Fine](assets/monitor-your-event-copy-link.png)
 
 
 
-&#x200B;6. Passa a **Impostazioni**
+1. Passa a **Impostazioni**
 
    ![Passa alla scheda Impostazioni nella sessione Assurance](assets/monitor-your-event-navigate-to-settings.png "Fai clic sulle impostazioni")
 
 
 
-&#x200B;7. Abilita **Transazioni evento** e **Edge Delivery** facendo clic sul pulsante **+**, quindi **Fine**
+1. Abilita **Transazioni evento** e **Edge Delivery** facendo clic sul pulsante **+**, quindi **Fine**
 
 ![Abilita transazioni eventi e Edge Delivery, quindi fai clic su Fine](assets/monitor-your-event-enable-event-transactions-and-edge-delivery.png)
 
@@ -62,14 +60,14 @@ ht-degree: 1%
 
 Vai a Postman -> Crea Edge evento web (nessuna autenticazione) -> Intestazioni
 
-1. Aggiungi **x-adobe-aep-validation-token** alle intestazioni con il collegamento copiato in precedenza da Assurance. Prendi **solo il valore ID** dopo il = nel collegamento copiato da Assurance. esempio: [https://www.adobe.com/?adb\_validation\_sessionid=](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0) [`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)
+1. Aggiungi **x-adobe-aep-validation-token** alle intestazioni con il collegamento copiato in precedenza da Assurance. Prendi **solo il valore ID** dopo il = nel collegamento copiato da Assurance. esempio: [https://www.adobe.com/?adb\_validation\_sessionid=](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)[`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)
 1. Il valore [`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0) verrebbe semplicemente utilizzato, non l&#39;URL completo
 
    ![Aggiungi l&#39;intestazione x-adobe-aep-validation-token con l&#39;ID sessione Assurance in Postman](assets/monitor-your-event-populate-the-x-adobe-aep-validation-token.png)
 
 
 
-&#x200B;3. In Postman, salva ed esegui la richiesta **Crea evento Web Edge (nessuna autenticazione)**
+1. In Postman, salva ed esegui la richiesta **Crea evento Web Edge (nessuna autenticazione)**
 
 
 
