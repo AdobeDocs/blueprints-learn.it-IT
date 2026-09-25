@@ -34,6 +34,6 @@ L’architettura precedente supporta i seguenti modelli di casi d’uso:
 
 ## Ulteriori informazioni
 
-- [Destinazioni di Adobe Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [Attivare i tipi di pubblico nelle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Guardrail di Adobe Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)
+- [Destinazioni di Adobe Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/home)
+- [Attivare i tipi di pubblico nelle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Guardrail di Adobe Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/guardrails/overview)

@@ -104,7 +104,7 @@ Questa sequenza mostra come una richiesta client raggiunge Edge Network, valuta 
 
 ### Configurare l’integrazione
 
-* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
+* [Connessione Adobe Target per Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=it)
 * [Configurazione dello stream di dati di Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)
 
 ### Implementare al bordo
