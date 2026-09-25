@@ -60,7 +60,7 @@ ht-degree: 1%
 
 Vai a Postman -> Crea Edge evento web (nessuna autenticazione) -> Intestazioni
 
-1. Aggiungi **x-adobe-aep-validation-token** alle intestazioni con il collegamento copiato in precedenza da Assurance. Prendi **solo il valore ID** dopo il = nel collegamento copiato da Assurance. esempio: [https://www.adobe.com/?adb\_validation\_sessionid=](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)[`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)
+1. Aggiungi **x-adobe-aep-validation-token** alle intestazioni con il collegamento copiato in precedenza da Assurance. Prendi **solo il valore ID** dopo il = nel collegamento copiato da Assurance. esempio: [https://www.adobe.com/?adb\_validation\_sessionid=](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0) [`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)
 1. Il valore [`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0) verrebbe semplicemente utilizzato, non l&#39;URL completo
 
    ![Aggiungi l&#39;intestazione x-adobe-aep-validation-token con l&#39;ID sessione Assurance in Postman](assets/monitor-your-event-populate-the-x-adobe-aep-validation-token.png)

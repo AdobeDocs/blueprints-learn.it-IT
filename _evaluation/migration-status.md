@@ -112,10 +112,10 @@ sono solo storiche e non devono bloccare il lavoro di migrazione rimanente.
 
 ## Domande aperte ancora non risolte (da audit)
 
-2. **`journey-optimizer-journeys.md`** â€&quot; contrassegnato come duplicato incerto di `event-triggered-messaging`; verifica l&#39;ambito prima del ritaglio.
-3. Il contenuto di **`customer-journey-analytics/analysis.md`** â€&quot; riguarda Experience Platform Query Service, non CJA; puoi provare a trasferirti in `experience-platform/`.
-4. Pagina di soli collegamenti **`customer-success-stories.md`** â€&quot;; conferma la classificazione di navigazione.
-5. Domanda storica dell&#39;ancoraggio TOC sostituita dalla disposizione completa dell&#39;architettura B2B.
+&#x200B;2. **`journey-optimizer-journeys.md`** â€&quot; contrassegnato come duplicato incerto di `event-triggered-messaging`; verifica l&#39;ambito prima del ritaglio.
+&#x200B;3. Il contenuto di **`customer-journey-analytics/analysis.md`** â€&quot; riguarda Experience Platform Query Service, non CJA; puoi provare a trasferirti in `experience-platform/`.
+&#x200B;4. Pagina di soli collegamenti **`customer-success-stories.md`** â€&quot;; conferma la classificazione di navigazione.
+&#x200B;5. Domanda storica dell&#39;ancoraggio TOC sostituita dalla disposizione completa dell&#39;architettura B2B.
 
 ## Come riprendere
 
