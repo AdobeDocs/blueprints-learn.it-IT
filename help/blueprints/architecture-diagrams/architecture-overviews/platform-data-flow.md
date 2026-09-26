@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 81056fd01c1a767743712c8c0826a7d4107eb8d4
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 48%
+ht-degree: 43%
 ---
 # Flusso di dati di Adobe Experience Platform
 
@@ -35,7 +35,7 @@ ht-degree: 48%
 
 Questo diagramma illustra i vari percorsi per l’acquisizione e l’uscita dei dati da Adobe Experience Platform.
 
-<img src="assets/aep_data_flows.svg" alt="Flusso di dati in Experience Platform" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![Flusso di dati di Experience Platform](assets/aep_data_flows.png){width="1000" zoomable="yes"}
 
 ## Flussi di ingresso e uscita dei dati
 

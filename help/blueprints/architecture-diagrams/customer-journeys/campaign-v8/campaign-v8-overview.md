@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Implementation
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 29%
@@ -86,13 +86,13 @@ Ulteriori informazioni sui [modelli di distribuzione di Campaign v8](https://exp
 
 ### Distribuzione aziendale di Campaign (FFDA)
 
-<img src="images/campaign-v8-ffda.svg" alt="Architettura di riferimento per l’implementazione di Campaign v8 (FFDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento per la distribuzione di Campaign v8 (FFDA)](images/campaign-v8-ffda.png){width="1000" zoomable="yes"}
 
 <br>
 
 ### Distribuzione FDA di Campaign v8
 
-<img src="images/campaign-v8-fda.svg" alt="Architettura di riferimento per Campaign v8 (FDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento per Campaign v8 (FDA)](images/campaign-v8-fda.png){width="1000" zoomable="yes"}
 
 <br>
 

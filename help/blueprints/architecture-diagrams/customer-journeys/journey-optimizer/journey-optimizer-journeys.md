@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 12%
@@ -44,7 +44,7 @@ I Percorsi Adobe Journey Optimizer sono flussi di lavoro basati su eventi e in t
 
 ## Architettura
 
-<img src="images/ajo-journeys-architecture.svg" alt="Architettura di riferimento Adobe Journey Optimizer - Percorsi" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento Adobe Journey Optimizer - Percorsi](images/ajo-journeys-architecture.png){width="1000" zoomable="yes"}
 
 <br>
 
@@ -64,7 +64,7 @@ I Percorsi Adobe Journey Optimizer sono flussi di lavoro basati su eventi e in t
 
 [Collegamento prodotto guardrail [!DNL Journey Optimizer]](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=it)
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 <br>
 

@@ -3,7 +3,7 @@ title: Attivazione di account B2B in Advertising e destinazioni di file
 description: Utilizza il coinvolgimento basato sull’account per creare tipi di pubblico per gli account e attivarli nelle destinazioni pubblicitarie e nell’archiviazione cloud.
 solution: Real-Time Customer Data Platform
 exl-id: 578c0019-6133-4508-ae9d-8a8a463376f0
-source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -40,7 +40,7 @@ I modelli di integrazione tipici per questa blueprint includono:
 
 ## Architettura
 
-<img src="assets/b2b-account-activation.png" alt="Architettura di riferimento per il blueprint per l’attivazione dell’account B2B" style="border:1px solid #4a4a4a"  width="100%" />
+![Architettura di riferimento per il blueprint per l&#39;attivazione dell&#39;account B2B](assets/b2b-account-activation.png){width="1000" zoomable="yes"}
 
 ## Destinazioni del pubblico dell’account
 

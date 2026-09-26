@@ -2,7 +2,7 @@
 title: Journey Optimizer - Blueprint per messaggi di terze parti
 description: Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messaggistica di terze parti per inviare comunicazioni personalizzate.
 solution: Journey Optimizer
-source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 58%
@@ -15,7 +15,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messag
 
 ## Architettura
 
-<img src="/help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/images/ajo-third-party-messaging.svg" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/images/ajo-third-party-messaging.png" alt="Architettura di riferimento per il blueprint Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -37,7 +37,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messag
 
 [Collegamento prodotto guardrail Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=it)
 
-[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=it)
+[Guardrail e guida alla latenza end-to-end](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 <br>
 

@@ -2,7 +2,7 @@
 title: Attivazione di tipi di pubblico e profili B2B
 description: Distribuisci tipi di pubblico basati su account e persone con Real-Time Customer Data Platform B2B edition per l’attivazione tra canali e destinazioni.
 solution: Real-Time Customer Data Platform
-source-git-commit: 8be418e5cd64070a215b57e876bf8cc9f25529e4
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 5%
@@ -48,7 +48,7 @@ I modelli di integrazione B2B tipici per questo blueprint includono:
 
 ## Architettura
 
-<img src="assets/b2b-audience-profile-activation.png" alt="Architettura di riferimento per il blueprint di Audience B2B e Attivazione profilo" style="border:1px solid #4a4a4a"  width="100%" />
+![Architettura di riferimento per il blueprint di Audience B2B e Attivazione profilo](assets/b2b-audience-profile-activation.png){width="1000" zoomable="yes"}
 
 ## Guardrail
 

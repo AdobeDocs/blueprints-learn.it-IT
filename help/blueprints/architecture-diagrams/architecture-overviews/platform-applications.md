@@ -50,10 +50,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 81056fd01c1a767743712c8c0826a7d4107eb8d4
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 25%
+ht-degree: 19%
 ---
 # Adobe Experience Platform e applicazioni
 
@@ -68,8 +68,8 @@ Questi diagrammi dell’architettura mostrano le relazioni di Experience Platfor
 
 Questo diagramma di architettura mostra come Adobe Experience Platform si correla alle applicazioni e ai servizi applicativi Adobe Experience Cloud.
 
-<img src="assets/aep_apps_overview.svg" alt="Experience Platform e applicazioni" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![Experience Platform e applicazioni](assets/aep_apps_overview.png){width="1000" zoomable="yes"}
 
 ## Diagramma dettagliato dell’architettura
 
-<img src="assets/aep_apps_detailed.svg" alt="Experience Platform e applicazioni" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![Experience Platform e applicazioni](assets/aep_apps_detailed.png){width="1000" zoomable="yes"}

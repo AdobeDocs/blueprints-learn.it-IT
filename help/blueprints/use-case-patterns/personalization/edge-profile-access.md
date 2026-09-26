@@ -3,7 +3,7 @@ title: Accesso in tempo reale al profilo Edge per Personalization web e mobile
 description: '[!UICONTROL Accesso al Profilo cliente in tempo reale] ai server Edge di per fornire contesto per la personalizzazione web e mobile in tempo reale.'
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 719
-source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '1933'
 ht-degree: 11%
@@ -48,7 +48,7 @@ Se desideri che il profilo venga aggiornato in tempo reale con i dati in streami
 
 ## Diagramma architettura
 
-<img src="/help/blueprints/architecture-diagrams/audience-profile-activation/assets/real_time_edge_profile_access.svg" alt="Architettura di riferimento per l’accesso ai profili Edge in tempo reale" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/audience-profile-activation/assets/real_time_edge_profile_access.png" alt="Architettura di riferimento per l’accesso ai profili Edge in tempo reale" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
 
 ## Guardrail
 

@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Governance
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 05f7ecfb00f92af29838452abf4069758bb6f1b3
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 15%
@@ -45,7 +45,7 @@ Mostra come Adobe Journey Optimizer può essere utilizzato con sistemi di messag
 
 ## Architettura
 
-<img src="images/ajo-third-party-messaging.svg" alt="Architettura di riferimento Journey Optimizer" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+![Architettura di riferimento Journey Optimizer](images/ajo-third-party-messaging.png){width="1000" zoomable="yes"}
 
 <br>
 

@@ -55,7 +55,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 17%
@@ -85,13 +85,13 @@ Utilizzare questo approccio quando i tipi di pubblico valutati in [!DNL Real-Tim
 
 Questo diagramma mostra i punti di integrazione principali tra la raccolta dati, Edge Network, [!DNL Real-Time Customer Data Platform] e [!DNL Adobe Target].
 
-<img src="assets/real_time_cdp_target.svg" alt="Architettura per l’integrazione di Real-Time Customer Data Platform e Adobe Target" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![Architettura per l&#39;integrazione di Real-Time Customer Data Platform e Adobe Target](assets/real_time_cdp_target.png){zoomable="yes"}
 
 ## Diagramma del flusso di dati
 
 Questa sequenza mostra come una richiesta client raggiunge Edge Network, valuta i tipi di pubblico e il contesto del profilo, invia una richiesta di personalizzazione a [!DNL Adobe Target] e restituisce l&#39;esperienza risultante al client.
 
-<img src="assets/real_time_cdp_target_data_flow_detail.svg" alt="Flusso di dati per l’integrazione con Real-Time Customer Data Platform e Adobe Target" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![Flusso di dati per l&#39;integrazione di Real-Time Customer Data Platform e Adobe Target](assets/real_time_cdp_target_data_flow_detail.png){zoomable="yes"}
 
 ## Considerazioni sull’implementazione
 

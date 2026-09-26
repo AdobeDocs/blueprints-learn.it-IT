@@ -3,7 +3,7 @@ title: Diagrammi architettura
 description: Architettura visiva e diagrammi di riferimento del flusso di dati per Adobe Experience Platform e altre applicazioni, con informazioni su architettura della piattaforma, attivazione del pubblico, marketing B2B, approfondimenti sul cliente e percorsi di clienti.
 solution: Experience Platform
 doc-type: overview-page
-source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -18,7 +18,7 @@ I diagrammi sono organizzati nelle seguenti categorie. Seleziona una scheda per 
 <tr>
   <td style="width:33%; vertical-align:top; padding:10px; box-sizing:border-box;">
     <a href="architecture-overviews/overview.md">
-      <img alt="Panoramiche dell’architettura" src="architecture-overviews/assets/aep_apps_overview.svg" style="display:block; width:100%; height:160px; object-fit:contain; background-color:#ffffff; border:1px solid #d3d3d3; padding:10px; box-sizing:border-box;" />
+      <img alt="Panoramiche dell’architettura" src="architecture-overviews/assets/aep_apps_overview.png" style="display:block; width:100%; height:160px; object-fit:contain; background-color:#ffffff; border:1px solid #d3d3d3; padding:10px; box-sizing:border-box;" />
     </a>
     <div style="min-height:100px;">
       <a href="architecture-overviews/overview.md">
@@ -64,7 +64,7 @@ I diagrammi sono organizzati nelle seguenti categorie. Seleziona una scheda per 
   </td>
   <td style="width:33%; vertical-align:top; padding:10px; box-sizing:border-box;">
     <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
-      <img alt="Percorsi di clienti" src="customer-journeys/journey-optimizer/images/ajo-architecture.svg" style="display:block; width:100%; height:160px; object-fit:contain; background-color:#ffffff; border:1px solid #d3d3d3; padding:10px; box-sizing:border-box;" />
+      <img alt="Percorsi di clienti" src="customer-journeys/journey-optimizer/images/ajo-architecture.png" style="display:block; width:100%; height:160px; object-fit:contain; background-color:#ffffff; border:1px solid #d3d3d3; padding:10px; box-sizing:border-box;" />
     </a>
     <div style="min-height:100px;">
       <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">

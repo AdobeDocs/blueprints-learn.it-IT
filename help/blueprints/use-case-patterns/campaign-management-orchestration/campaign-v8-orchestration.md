@@ -3,7 +3,7 @@ title: Blueprint, campagna e piattaforma di Campaign v8
 description: Scopri il blueprint per Campaign v8.
 solution: Campaign,Campaign v8
 version: Campaign v8
-source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 29%
@@ -48,13 +48,13 @@ Ulteriori informazioni sui [modelli di distribuzione di Campaign v8](https://exp
 
 ### Distribuzione aziendale di Campaign (FFDA)
 
-<img src="/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/images/campaign-v8-ffda.svg" alt="Architettura di riferimento per il blueprint di distribuzione di Campaign v8 (FFDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/images/campaign-v8-ffda.png" alt="Architettura di riferimento per il blueprint di distribuzione di Campaign v8 (FFDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
 ### Distribuzione FDA di Campaign v8
 
-<img src="/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/images/campaign-v8-fda.svg" alt="Blueprint per l’architettura di riferimento per Campaign v8 (FDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/images/campaign-v8-fda.png" alt="Blueprint per l’architettura di riferimento per Campaign v8 (FDA)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 

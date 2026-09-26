@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '230'
 ht-degree: 0%
 ---
 # Modello pagina diagramma architettura
@@ -28,13 +28,13 @@ solution: {Comma-separated Adobe solutions, e.g. Experience Platform, Journey Op
 
 {1-2 sentence explanation of what the diagram shows and why it matters.}
 
-<img src="assets/{filename-1}" alt="{Alt text for diagram 1}" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![{Alt text for diagram 1}](assets/{filename-1}){width="1000" zoomable="yes"}
 
 ## {Diagram 2 section title}
 
 {1-2 sentence explanation.}
 
-<img src="assets/{filename-2}" alt="{Alt text for diagram 2}" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![{Alt text for diagram 2}](assets/{filename-2}){width="1000" zoomable="yes"}
 
 ## Primary data flows and integration points
 
@@ -70,7 +70,7 @@ The architecture above supports the following use case patterns:
 
 - **Un H1** — titolo della pagina. Corrispondenza esatta con il frontmatter `title`.
 - **Un H2 per diagramma.** Nessuna H3 all&#39;interno delle sezioni del diagramma; tienili ad un&#39;introduzione di 1-2 frasi più l&#39;immagine.
-- **`<img>`incorporamento** — sono necessari lo stile in linea e `class="modal-image"`. Guidano l’interazione modale-zoom di Experience League.
+- **Immagine Markdown incorporata**: fornire testo alternativo descrittivo e utilizzare `{width="1000" zoomable="yes"}` per i diagrammi.
 - **Percorso immagine** - sempre `assets/{filename}` (relativo alla cartella argomenti della pagina). Non utilizzare percorsi assoluti.
 - **Nomi di prodotti Adobe**: racchiudi `[!DNL ...]` nel corpo del testo e nei punti elenco. Esempio: `[!DNL Real-Time CDP]`, `[!DNL Journey Optimizer]`, `[!DNL Experience Platform]`.
 - **Collegamenti ai pattern dei casi d&#39;uso**: utilizza sempre il modulo assoluto `/help/blueprints/use-case-patterns/{category}/{file}.md` in modo che il collegamento venga risolto da qualsiasi pagina che possa trascendere questo contenuto.

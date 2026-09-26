@@ -12,7 +12,7 @@ product_v2:
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
-source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 8%
@@ -26,7 +26,7 @@ Adobe Customer Journey Analytics unisce i dati di interazione del cliente proven
 
 Questo diagramma mostra il flusso principale di dati di interazione con il cliente in Customer Journey Analytics per connessioni, visualizzazioni dati, analisi e creazione di tipi di pubblico.
 
-<img src="assets/cja.png" alt="Architettura di base di Adobe Customer Journey Analytics" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![Architettura di base di Adobe Customer Journey Analytics](assets/cja.png){width="1000" zoomable="yes"}
 
 ## Derivazioni dell&#39;architettura
 
