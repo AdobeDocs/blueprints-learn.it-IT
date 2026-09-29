@@ -3,13 +3,18 @@ title: Casi di utilizzo dei servizi finanziari
 description: Scopri come le organizzazioni di servizi finanziari utilizzano Adobe Experience Platform per personalizzare le offerte di prodotti, evitare l’abbandono e approfondire le relazioni con i clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 1f22d684-11bd-473d-8b10-5f88cb0cd088
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '4039'
 ht-degree: 0%
-
 ---
-
 # Casi di utilizzo dei servizi finanziari
 
 Le organizzazioni di servizi finanziari si affidano a Adobe Experience Platform per unificare i dati dei clienti attraverso i canali bancari, di prestito e di investimento, consentendo esperienze personalizzate che rafforzano le relazioni e stimolano la crescita. Riunendo l&#39;attività dell&#39;account, la cronologia delle transazioni e i segnali comportamentali, queste organizzazioni possono fornire l&#39;offerta giusta al momento giusto mantenendo la fiducia e la conformità che i clienti si aspettano.
@@ -211,84 +216,84 @@ Utilizza il modello [Cross-Channel Percorsi con Decisioning](/help/blueprints/us
 - Sincronizza i dati della piattaforma fedeltà, tra cui lo stato dei livelli, i saldi dei punti e la cronologia dei rimborsi, nei profili dei clienti in tempo quasi reale per evitare di promuovere saldi scaduti o imprecisi.
 - Logica di percorso dei segmenti per livello per fornire esperienze differenziate, in quanto i membri di alto livello si aspettano un trattamento esclusivo e un accesso anticipato alle promozioni.
 - Coordina i messaggi di fidelizzazione con campagne di marketing più ampie per evitare l’eccesso di messaggi e le offerte in conflitto tra i programmi.
-- Track redemption attribution across channels to measure which personalized communications drive the highest program return on investment.
+- Traccia l’attribuzione del rimborso tra i canali per misurare quali comunicazioni personalizzate determinano il maggiore ritorno sull’investimento del programma.
 
 
-## Mortgage Pre-Approval Campaigns
+## Campagne di preapprovazione mutui
 
-Target customers who are likely to be in the market for a mortgage based on profile data, behavioral signals, and life stage indicators. Proactive pre-approval outreach positions the institution as a convenient first choice during one of the largest financial decisions a customer will make.
-
-### Impatto aziendale
-
-Targeted mortgage pre-approval campaigns increase application rates and improve loan origination volume by reaching qualified prospects at the right moment.
-
-### Come implementare
-
-Use the [Multi-Step Orchestrated Journey](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) pattern to guide mortgage prospects through a multi-touch nurture sequence from awareness through pre-approval, adapting based on engagement and qualification signals. This is the right pattern when the use case requires a sequenced, multi-message flow over an extended timeline with conditional branching based on engagement and qualification signals — a single triggered message cannot accommodate the adaptive nurturing logic or the handoff to formal application processes.
-
-### Considerazioni tecniche
-
-- Combine property search behavior, savings growth trends, and lease expiration signals to build a propensity model that identifies likely mortgage seekers.
-- Ensure all pre-approval messaging complies with mortgage advertising regulations including required disclosures, rate accuracy, and equal housing language.
-- Coordinate campaign timing with rate environment changes so that outreach aligns with favorable borrowing conditions and avoids outdated rate references.
-- Build handoff workflows to loan officers so that digitally nurtured leads transition smoothly into the formal application and underwriting process.
-
-
-## Personalized Financial Education Content
-
-Deliver personalized financial education content, tips, and resources based on each customer&#39;s financial profile, goals, and interests. Relevant educational content builds trust, improves financial literacy, and creates organic opportunities to introduce relevant products.
+Puoi indirizzare l’attività ai clienti che potrebbero essere sul mercato di un mutuo sulla base di dati di profilo, segnali comportamentali e indicatori della fase di vita. La preapprovazione proattiva posiziona l&#39;ente come una comoda prima scelta durante una delle più grandi decisioni finanziarie che un cliente prenderà.
 
 ### Impatto aziendale
 
-Personalized education content increases content engagement rates and improves customer financial literacy, which in turn drives more confident product adoption.
+Le campagne mirate di preapprovazione dei mutui aumentano i tassi di applicazione e migliorano il volume di erogazione dei prestiti raggiungendo al momento giusto potenziali qualificati.
 
 ### Come implementare
 
-Use the [Cross-Channel Journey with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) pattern to deliver a curated sequence of educational content across channels, using decisioning to match topics to each customer&#39;s financial situation and interests. This is the right pattern when the journey must coordinate delivery across channels with progressive learning paths and when topic selection requires eligibility rules based on financial profile — multi-step orchestration alone does not provide the decisioning layer needed to match content to customer financial situation or prevent prerequisite violations.
+Utilizza il pattern [Multi-Step Orchestrated Percorsi](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) per guidare i potenziali clienti ipotecari attraverso una sequenza di sviluppo multi-touch dalla consapevolezza fino alla pre-approvazione, adattandosi in base ai segnali di coinvolgimento e qualifica. Questo è il modello corretto quando il caso d’uso richiede un flusso di messaggi multipli in sequenza su una timeline estesa con diramazioni condizionali basate su segnali di coinvolgimento e qualifica: un singolo messaggio attivato non può essere compatibile con la logica di sviluppo adattivo o il passaggio a processi di applicazione formali.
 
 ### Considerazioni tecniche
 
-- Map educational content to financial profile attributes such as debt-to-income ratio, savings rate, and investment experience to ensure topic relevance.
-- Tag content with difficulty levels and prerequisite topics to build progressive learning paths rather than delivering disconnected one-off articles.
-- Track content engagement at the topic level to refine personalization models and identify emerging interest areas across the customer base.
-- Ensure educational content is clearly distinguished from product marketing to maintain regulatory compliance and preserve customer trust in the program&#39;s objectivity.
+- Combina il comportamento di ricerca delle proprietà, le tendenze di crescita del risparmio e i segnali di scadenza del leasing per creare un modello di propensione che identifichi i probabili richiedenti mutuo.
+- Assicurati che tutti i messaggi di pre-approvazione siano conformi alle normative sulla pubblicità dei mutui, incluse le informazioni richieste, la precisione delle tariffe e un linguaggio per la registrazione degli alloggi uguale.
+- Coordinare la tempistica della campagna con le variazioni dell’ambiente dei tassi in modo che l’estensione sia allineata con condizioni di finanziamento favorevoli ed eviti riferimenti ai tassi superati.
+- Crea flussi di lavoro di trasferimento per i responsabili del prestito in modo che i corsi nutriti digitalmente conducano agevolmente alla transizione nel processo formale di richiesta e sottoscrizione.
 
 
-## AI Financial Product Guide
+## Contenuti personalizzati di educazione finanziaria
 
-Financial services organizations offer product portfolios — checking and savings accounts, credit cards, lending products, insurance options, and investment vehicles — that are difficult for customers to navigate without personalized guidance. Regulatory constraints prevent frontline digital experiences from providing tailored investment recommendations, but substantial value exists in helping customers understand how products work, which accounts suit their stated needs, and how to take the next step toward application. An AI financial product guide engages customers in natural conversation, asks qualifying questions about financial goals and life stage, and guides them toward the right products — without crossing into regulated advice territory.
+Consegna contenuti, suggerimenti e risorse personalizzati di educazione finanziaria in base al profilo finanziario, agli obiettivi e agli interessi di ogni cliente. I contenuti educativi pertinenti creano fiducia, migliorano l&#39;alfabetizzazione finanziaria e creano opportunità organiche per introdurre prodotti pertinenti.
 
 ### Impatto aziendale
 
-Guided conversational discovery improves product application start rates and reduces drop-off between awareness and application, while capturing intent signals that improve downstream nurture and advisor referral workflows.
+I contenuti personalizzati per l’istruzione aumentano i tassi di coinvolgimento nei contenuti e migliorano l’alfabetizzazione finanziaria dei clienti, il che a sua volta favorisce un’adozione più sicura dei prodotti.
 
 ### Come implementare
 
-Use the [Brand Concierge Conversational Experience](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md) pattern. This approach deploys the Product Advisor Agent against the approved product content library and knowledge base, using AEP Agent Orchestrator and real-time customer profile data to guide customers toward appropriate products through multi-turn dialogue grounded in brand-governed, compliance-reviewed content. This is the right pattern when the goal is interactive, multi-turn conversational discovery to help customers understand and self-select financial products — distinct from event-triggered messaging, which is one-directional and responds to discrete account events, and from personalized web experiences, which surface product content passively without engaging customers in qualifying dialogue. It requires AEP Agent Orchestrator and brand governance configuration.
+Utilizza il pattern [Cross-Channel Percorsi with Decisioning](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) per distribuire una sequenza curata di contenuti educativi tra canali, utilizzando il decisioning per abbinare gli argomenti alla situazione finanziaria e agli interessi di ogni cliente. Questo è il modello giusto quando il percorso deve coordinare la distribuzione tra i canali con percorsi di apprendimento progressivi e quando la selezione dell’argomento richiede regole di idoneità basate sul profilo finanziario. L’orchestrazione in più passaggi non fornisce da sola il livello decisionale necessario per far corrispondere i contenuti alla situazione finanziaria del cliente o prevenire violazioni dei prerequisiti.
 
 ### Considerazioni tecniche
 
-- Brand governance guardrails must be configured with compliance and legal review to define strict content boundaries: the agent must guide customers toward suitable products based on stated needs without constituting investment advice, and prohibited topics (specific return projections, guarantees, comparative performance claims) must be explicitly defined and enforced.
-- The content integration layer must be grounded in compliance-approved product descriptions, disclosures, and FAQs rather than dynamically generated claims, ensuring every response the agent delivers has been reviewed by legal and regulatory teams before deployment.
-- Real-time customer profile lookup should surface relationship data — existing products held, account tenure, and customer segment — so the agent can avoid recommending products the customer already holds and can tailor guidance to the customer&#39;s existing relationship with the institution.
-- Live agent handoff must be configured for scenarios in which customer needs exceed the scope of the conversational guide — such as complex lending situations or requests for personalized financial planning — with full conversation context transferred to the receiving advisor to avoid the customer repeating themselves.
+- Mappa i contenuti educativi agli attributi del profilo finanziario, come il rapporto debito/reddito, il tasso di risparmio e l’esperienza di investimento, per garantire la rilevanza dell’argomento.
+- Assegna tag ai contenuti con livelli di difficoltà e argomenti prerequisiti per creare percorsi di apprendimento progressivi anziché distribuire articoli una tantum disconnessi.
+- Tieni traccia del coinvolgimento dei contenuti a livello di argomento per perfezionare i modelli di personalizzazione e identificare aree di interesse emergenti in tutta la base di clienti.
+- Garantire che i contenuti educativi siano chiaramente distinti dal marketing dei prodotti per mantenere la conformità alle normative e preservare la fiducia dei clienti nell&#39;obiettività del programma.
 
 
-## Product Adoption Funnel and Churn Driver Analysis
+## Guida ai prodotti finanziari di AI
 
-Analyze where customers drop off during digital account opening, loan application, or investment onboarding flows, and identify the behavioral signals that precede product attrition. Financial institutions that cannot see these drop-off points or churn precursors are unable to distinguish between product experience failures and disqualification — making remediation efforts imprecise.
+Le organizzazioni di servizi finanziari offrono portafogli di prodotti (conti correnti e di risparmio, carte di credito, prodotti di prestito, opzioni assicurative e veicoli di investimento) che sono difficili da gestire per i clienti senza una guida personalizzata. I vincoli normativi impediscono alle esperienze digitali in prima linea di fornire consigli di investimento personalizzati, ma esiste un valore sostanziale nell’aiutare i clienti a comprendere come funzionano i prodotti, quali account soddisfano le esigenze dichiarate e come fare il passo successivo verso l’applicazione. Una guida ai prodotti finanziari coinvolge i clienti in conversazioni naturali, pone domande mirate sugli obiettivi finanziari e sulla fase di vita e li guida verso i prodotti giusti, senza entrare nel territorio regolamentato della consulenza.
 
 ### Impatto aziendale
 
-Understanding exactly where applicants abandon digital flows and which behaviors precede account closures enables product and marketing teams to prioritize experience improvements that reduce abandonment and extend customer tenure.
+L&#39;individuazione conversazionale guidata migliora i tassi di avvio delle applicazioni del prodotto e riduce il calo tra la consapevolezza e l&#39;applicazione, acquisendo al contempo segnali di intento che migliorano i flussi di lavoro a valle per l&#39;apprendimento e la consulenza.
 
 ### Come implementare
 
-Use the [Customer Analytics &amp; Insight Generation](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md) pattern. This approach connects digital behavioral data, CRM records, and product event streams to Customer Journey Analytics, where fallout visualizations identify drop-off steps and cohort analysis surfaces retention differences across product lines and acquisition segments. This is the right pattern when the objective is understanding and diagnosis — analyzing where journeys break down and what drives attrition — rather than activating a suppression audience or triggering a retention message.
+Utilizza il pattern [Esperienza conversazionale di Brand Concierge](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md). Questo approccio distribuisce Product Advisor Agent rispetto alla knowledge base e alla libreria di contenuti dei prodotti approvati, utilizzando AEP Agent Orchestrator e i dati del profilo cliente in tempo reale per guidare i clienti verso i prodotti appropriati attraverso una finestra di dialogo a più turni basata su contenuti governati dal marchio e soggetti a revisione della conformità. Questo è il modello giusto quando l’obiettivo è il rilevamento interattivo e conversazionale a più turni per aiutare i clienti a comprendere e selezionare autonomamente i prodotti finanziari, distinto dalla messaggistica attivata dagli eventi, che è unidirezionale e risponde a eventi account discreti, e dalle esperienze web personalizzate, che presentano i contenuti dei prodotti in modo passivo senza coinvolgere i clienti in un dialogo qualificato. Richiede la configurazione di AEP Agent Orchestrator e della governance del brand.
 
 ### Considerazioni tecniche
 
-- Digital application event data must capture each step in the onboarding or application flow as discrete events with consistent step identifiers so that CJA fallout analysis can isolate exactly where volume is lost.
+- I guardrail per la governance del brand devono essere configurati con una revisione legale e di conformità per definire limiti di contenuto rigidi: l’agente deve guidare i clienti verso prodotti adatti in base alle esigenze dichiarate senza costituire consulenza per gli investimenti, e gli argomenti vietati (proiezioni di ritorno specifiche, garanzie, attestazioni di prestazioni comparative) devono essere esplicitamente definiti e applicati.
+- Il livello di integrazione dei contenuti deve basarsi su descrizioni dei prodotti, divulgazioni e domande frequenti approvate in termini di conformità, anziché su richieste generate in modo dinamico, garantendo che ogni risposta fornita dall&#39;agente sia stata esaminata dai team legali e normativi prima della distribuzione.
+- La ricerca del profilo cliente in tempo reale dovrebbe far emergere i dati della relazione (prodotti esistenti detenuti, durata dell&#39;account e segmenti di clienti) in modo che l&#39;agente possa evitare di raccomandare prodotti già detenuti dal cliente e possa adattare l&#39;orientamento al rapporto esistente tra il cliente e l&#39;ente.
+- La consegna dell’agente live deve essere configurata per gli scenari in cui le esigenze del cliente superano l’ambito della guida conversazionale, ad esempio situazioni di prestito complesse o richieste di pianificazione finanziaria personalizzata, con il contesto di conversazione completo trasferito all’advisor ricevente per evitare che il cliente si ripeta.
+
+
+## Analisi del driver di abbandono e di Funnel per l&#39;adozione del prodotto
+
+Analizza dove i clienti abbandonano durante l’apertura di un account digitale, l’applicazione di un prestito o i flussi di onboarding degli investimenti e identifica i segnali comportamentali che precedono l’attrito del prodotto. Gli istituti finanziari che non vedono questi punti di riconsegna o precursori di abbandono non sono in grado di distinguere tra i fallimenti dell’esperienza del prodotto e l’interdizione, rendendo imprecisi gli sforzi di riparazione.
+
+### Impatto aziendale
+
+Sapere esattamente dove i richiedenti abbandonano i flussi digitali e quali comportamenti precedono la chiusura degli account consente ai team di prodotto e marketing di dare priorità ai miglioramenti delle esperienze che riducono l’abbandono ed estendono il mandato dei clienti.
+
+### Come implementare
+
+Utilizza il pattern [Customer Analytics &amp; Insight Generation](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md). Questo approccio collega i dati comportamentali digitali, i record di gestione delle relazioni con i clienti e i flussi di eventi dei prodotti a Customer Journey Analytics, dove le visualizzazioni di fallout identificano i passaggi di drop-off e l’analisi per coorte evidenzia differenze di conservazione tra le linee di prodotti e i segmenti di acquisizione. Questo è lo schema corretto quando l’obiettivo è comprendere e diagnosticare, analizzando dove i percorsi si guastano e cosa genera attrito, piuttosto che attivare un pubblico di soppressione o attivare un messaggio di conservazione.
+
+### Considerazioni tecniche
+
+- I dati dell’evento dell’applicazione digitale devono acquisire ogni passaggio nel flusso dell’onboarding o dell’applicazione come eventi discreti con identificatori di passaggio coerenti, in modo che l’analisi di abbandono di CJA possa isolare esattamente dove viene perso il volume.
 - I dati relativi al possesso del prodotto CRM e allo stato dell’account devono essere uniti nella connessione CJA insieme ai dati comportamentali, in modo che l’analisi dell’abbandono possa correlare i comportamenti pre-attrito con gli esiti effettivi della chiusura dell’account.
 - Le etichette di governance dei dati devono essere applicate a qualsiasi campo finanziario o di identità sensibile incluso nella connessione CJA per evitare l’esposizione PII nelle dashboard condivise a cui accedono gli analisti senza le autorizzazioni di amministratore dei dati.
 - L’analisi per coorte di conservazione richiede un livello di annidamento dei dati storici sufficiente, in genere da 12 a 24 mesi, pertanto i criteri di conservazione dei set di dati in AEP devono essere configurati in modo da preservare la cronologia degli eventi necessaria per confronti di coorte significativi.
@@ -329,5 +334,5 @@ Utilizza il pattern [Customer Analytics &amp; Insight Generation](/help/blueprin
 
 - L’unione dei dati cross-channel richiede un identificatore del cliente coerente in tutti i sistemi di origine; nelle organizzazioni con strategie di identità frammentate, i percorsi incompleti compromettono l’analisi.
 - I dati del call center e dell’interazione offline devono essere acquisiti e contrassegnati con marca temporale accurata per inserirli correttamente nella sequenza di percorso relativa ai punti di contatto digitali.
-- Data latency between source systems and the analytics workspace affects how quickly insights are available; high-frequency analysis use cases may require near-real-time ingestion rather than daily batch feeds.
-- Privacy and data governance controls must be applied to analytics datasets to prevent personally identifiable information from appearing in dashboards accessible to analysts who should not have access to individual customer records.
+- La latenza dei dati tra i sistemi di origine e l’area di lavoro di Analytics influisce sulla rapidità con cui sono disponibili le informazioni; i casi di utilizzo di analisi ad alta frequenza possono richiedere l’acquisizione quasi in tempo reale, anziché feed batch giornalieri.
+- I controlli sulla privacy e sulla governance dei dati devono essere applicati ai set di dati di Analytics per evitare che informazioni di identificazione personale vengano visualizzate in dashboard accessibili agli analisti che non dovrebbero avere accesso ai singoli record dei clienti.

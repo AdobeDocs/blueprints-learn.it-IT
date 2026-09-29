@@ -2,7 +2,10 @@
 title: Percorsi B2B con blueprint dei dati Marketo
 description: Blueprint per la distribuzione rapida di Journey Optimizer B2B Edition utilizzando i dati Marketo Engage.
 solution: Journey Optimizer B2B Edition
-source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
+product_v2:
+  - id: aacce07f-424e-489e-8d02-a4fb2f4211bd
+    internal-label: Journey Optimizer B2B Edition
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '2069'
 ht-degree: 2%
@@ -202,7 +205,7 @@ Per una comprensione completa dei guardrail applicabili ai Percorsi B2B con Mark
 
 * [Adobe Journey Optimizer B2B Edition - Descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
 Include guardrail e parametri di utilizzo specifici per Journey Optimizer B2B Edition.
-* [Guardrail di distribuzione Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/blueprints-learn/architecture/architecture-overview/guardrails?lang=en)
+* [Guardrail di distribuzione Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-overview/guardrails?lang=en)
 Include i guardrail generali di installazione e architettura nelle soluzioni Adobe Experience Platform.
 * [Adobe Marketo Engage - Descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-marketo-engage---product-description.html#performance-guardrails)
 Dettagli sulle prestazioni e sui guardrail di utilizzo per Marketo Engage, incluse considerazioni sull’attivazione e la sincronizzazione CRM.

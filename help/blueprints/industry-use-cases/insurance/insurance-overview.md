@@ -3,13 +3,18 @@ title: Casi di utilizzo assicurazioni
 description: Scopri in che modo le compagnie di assicurazione utilizzano Adobe Experience Platform per personalizzare la gestione delle policy, migliorare le esperienze di richiesta di risarcimento e promuovere la fidelizzazione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: a082598f-555b-49a4-b201-a55bee793959
-source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 0%
-
 ---
-
 # Casi di utilizzo assicurazioni
 
 Le organizzazioni assicurative utilizzano Adobe Experience Platform per unificare i dati dei titolari di polizze tra i sistemi di gestione delle polizze, delle richieste di rimborso e del coinvolgimento, al fine di fornire comunicazioni personalizzate in ogni fase della relazione con il cliente. Collegando i segnali comportamentali con le informazioni relative alle regole e alle richieste di rimborso, gli assicuratori possono coinvolgere in modo proattivo i clienti con offerte pertinenti, aggiornamenti tempestivi dei servizi e supporto significativo per la conservazione e il valore del ciclo di vita.

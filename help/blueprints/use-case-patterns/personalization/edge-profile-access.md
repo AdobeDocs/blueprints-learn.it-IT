@@ -3,7 +3,10 @@ title: Accesso in tempo reale al profilo Edge per Personalization web e mobile
 description: '[!UICONTROL Accesso al Profilo cliente in tempo reale] ai server Edge di per fornire contesto per la personalizzazione web e mobile in tempo reale.'
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 719
-source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1933'
 ht-degree: 11%

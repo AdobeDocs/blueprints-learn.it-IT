@@ -3,13 +3,14 @@ title: Audience Activation B2B
 description: Scopri come attivare tipi di pubblico B2B basati sull’account tra canali web, e-mail e pubblicitari.
 solution: Real-Time Customer Data Platform
 exl-id: 2b979159-37aa-41d4-a6b4-1105538f6546
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
-
 ---
-
 # Attivazione del pubblico B2B
 
 Questa guida descrive il modello di caso d&#39;uso dell&#39;attivazione del pubblico B2B, che utilizza [!DNL Adobe Real-Time Customer Data Platform] ([!DNL RT-CDP]) B2B edition per generare, valutare e attivare tipi di pubblico a livello di account tra canali Web, e-mail, pubblicitari e CRM. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.

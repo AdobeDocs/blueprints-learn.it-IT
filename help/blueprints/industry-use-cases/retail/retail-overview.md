@@ -3,13 +3,18 @@ title: Casi d’uso per la vendita al dettaglio
 description: Scopri come le organizzazioni di vendita al dettaglio utilizzano Adobe Experience Platform per personalizzare le esperienze di acquisto, recuperare i carrelli abbandonati e promuovere la fidelizzazione dei clienti.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 89a5b6b5-bb71-4154-bb3b-f6dbbbef13eb
-source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '6082'
 ht-degree: 0%
-
 ---
-
 # Casi d’uso per la vendita al dettaglio
 
 Le organizzazioni di vendita al dettaglio utilizzano Adobe Experience Platform per unificare i dati dei clienti provenienti da negozi online, sedi fisiche e programmi fedeltà in un’unica vista di ogni acquirente. Questa base consente esperienze di acquisto personalizzate, un’attività di sensibilizzazione tempestiva che recupera i ricavi persi e strategie di fidelizzazione che mantengono i clienti al loro ritorno.

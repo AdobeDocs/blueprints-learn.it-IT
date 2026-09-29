@@ -3,13 +3,16 @@ title: Abilitare il processo decisionale basato sui dati
 description: Scopri come fornire ai team strumenti di analisi self-service, informazioni sui clienti in tempo reale e previsioni basate sull’intelligenza artificiale per guidare la strategia.
 solution: Experience Platform, Customer Journey Analytics
 exl-id: 0ff0e873-a95c-4286-9378-56db02d209a1
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 3%
-
 ---
-
 # Abilitare il processo decisionale basato sui dati
 
 Fornisci ai team analisi self-service, informazioni sui clienti in tempo reale e previsioni basate sull’intelligenza artificiale come guida per la strategia. Questo obiettivo si concentra sul rendere i dati dei clienti e delle prestazioni accessibili e utilizzabili dai responsabili decisionali dell&#39;organizzazione.

@@ -3,13 +3,16 @@ title: Consigli comportamentali
 description: Scopri come generare consigli su elementi e contenuti utilizzando strategie di selezione e modelli di classificazione.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: db16e773-e0da-46c4-9fa5-d16f04feb46b
-source-git-commit: 9ea30e48ec0fade2f9a97b185e35fbfa93f49c43
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 5%
-
 ---
-
 # Raccomandazioni comportamentali
 
 Questa guida descrive il modello di caso d’uso per i consigli comportamentali, che utilizza [!DNL Adobe Journey Optimizer] (AJO) Decisioning, [!DNL Real-Time Customer Data Platform] (RT-CDP) e [!DNL Adobe Experience Platform] (AEP) per fornire esperienze di consigli personalizzate tra canali web, app mobili ed e-mail. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.

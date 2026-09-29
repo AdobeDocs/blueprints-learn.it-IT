@@ -4,13 +4,18 @@ description: Scopri i modelli di casi d’uso per l’implementazione di Adobe E
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 doc-type: overview-page
 exl-id: 58caa6ad-0d1c-4290-9614-c68c9c9028bb
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 0%
-
+source-wordcount: '1098'
+ht-degree: 8%
 ---
-
 # Modelli di casi d’uso
 
 I modelli di casi d’uso definiscono approcci di implementazione ripetibili per Adobe Experience Platform e le applicazioni. Ogni modello descrive una funzionalità specifica, il piano di esecuzione che la distribuisce, le applicazioni coinvolte e i [obiettivi aziendali chiave](/help/blueprints/business-objectives/overview.md) supportati.
@@ -72,7 +77,7 @@ I seguenti modelli riguardano scenari di marketing specifici per B2B: pubblico b
 | [Attivazione pubblico B2B](b2b/account-audience-activation.md) | Attiva tipi di pubblico B2B basati sull’account tra canali web, e-mail e pubblicitari | [!DNL Real-Time CDP] B2B edition |
 | [Acquisto di attività di marketing e gestione dei percorsi basate sui gruppi](b2b/buying-group-marketing.md) | Sviluppare percorsi a livello di account che qualifichino i lead in gruppi di acquisto per migliorare l’efficacia del marketing B2B | [!DNL Journey Optimizer] B2B edition, [!DNL Real-Time CDP] B2B edition |
 | [Analisi B2B](b2b/account-analytics.md) | Includere informazioni a livello di account B2B nell’analisi del percorso clienti cross-channel | [!DNL Customer Journey Analytics] B2B edition, [!DNL Real-Time CDP] B2B edition |
-| [Percorsi B2B con dati Marketo](b2b/marketo-data-journeys.md) | Distribuire Journey Optimizer B2B edition con i dati di Marketo per orchestrare percorsi di gruppi di acquisto e coinvolgimento degli account | [!DNL Journey Optimizer] B2B edition, [!DNL Marketo Engage], [!DNL Real-Time CDP] B2B edition |
+| [Percorsi B2B con dati Marketo](b2b/marketo-data-journeys.md) | Distribuire Journey Optimizer B2B Edition con i dati di Marketo per orchestrare percorsi di gruppi di acquisto e coinvolgimento degli account | [!DNL Journey Optimizer] B2B edition, [!DNL Marketo Engage], [!DNL Real-Time CDP] B2B edition |
 | [Controller supporti a pagamento B2B AJO](b2b/paid-media-orchestration.md) | Orchestrazione di campagne multimediali a pagamento B2B utilizzando la logica a cascata per assegnare account alle campagne e attivarle nelle destinazioni | [!DNL Journey Optimizer] B2B edition, [!DNL Real-Time CDP] B2B edition |
 | [Acquisizione e creazione di Marketo e Workfront](b2b/campaign-intake-and-creation.md) | Automatizzare l’inserimento delle richieste di campagne di marketing e la creazione di programmi Marketo Engage tramite Workfront Forms e Fusion | [!DNL Marketo Engage], [!DNL Workfront], [!DNL Workfront Fusion] |
 | [Revisione e approvazione di Marketo e Workfront](b2b/campaign-review-and-approval.md) | Integrare i flussi di lavoro di verifica e approvazione di Workfront con le risorse e-mail di Marketo Engage utilizzando l’automazione Fusion | [!DNL Marketo Engage], [!DNL Workfront], [!DNL Workfront Fusion] |
@@ -94,33 +99,33 @@ Utilizza questa guida quando uno scenario potrebbe adattarsi plausibilmente a pi
 *Un cliente decaduto non ha acquistato da 90 giorni. Desideri coinvolgerli di nuovo con un&#39;offerta mirata.*
 
 - **La selezione delle offerte è dinamica (diversi clienti ricevono offerte diverse in base all&#39;idoneità o alla classificazione)?**
-   - Sì → [Offer decisioning](personalization/offer-decisioning.md) come livello di offerta, racchiuso in [percorso orchestrato in più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md) per la sequenza di ricoinvolgimento
-   - No (stessa offerta a tutti i clienti non più validi) → [Solo percorso orchestrato in più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+  - Sì → [Offer decisioning](personalization/offer-decisioning.md) come livello di offerta, racchiuso in [percorso orchestrato in più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md) per la sequenza di ricoinvolgimento
+  - No (stessa offerta a tutti i clienti non più validi) → [Solo percorso orchestrato in più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
 
 ### Follow-up post acquisto
 
 *Un cliente ha appena completato un acquisto. Vuoi inviare una conferma, un consiglio di cross-selling e una notifica di premio fedeltà.*
 
 - **La sequenza richiede diramazioni adattive basate su eventi in tempo reale (ad esempio, premio richiesto, prodotto esaminato)?**
-   - Sì → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
-   - Nessuna (sequenza fissa, nessuna diramazione) → [Attivazione messaggio batch in uscita](campaign-management-orchestration/batch-outbound-message-activation.md)
+  - Sì → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+  - Nessuna (sequenza fissa, nessuna diramazione) → [Attivazione messaggio batch in uscita](campaign-management-orchestration/batch-outbound-message-activation.md)
 - **Include consigli di prodotto personalizzati?**
-   - Sì → Estendi con [Consigli comportamentali](personalization/behavioral-recommendation.md) a livello di contenuto
+  - Sì → Estendi con [Consigli comportamentali](personalization/behavioral-recommendation.md) a livello di contenuto
 
 ### Personalizzazione milestone fedeltà
 
 *Un cliente raggiunge un nuovo livello fedeltà. Desideri mostrare contenuti web personalizzati e inviare un messaggio di congratulazioni.*
 
 - **Il contenuto Web è personalizzato (contenuto diverso per livello o segmento)?**
-   - Sì → [Personalizzazione web/app visitatore noto](personalization/known-visitor-web-app-personalization.md) per la superficie web
+  - Sì → [Personalizzazione web/app visitatore noto](personalization/known-visitor-web-app-personalization.md) per la superficie web
 - **Il messaggio in uscita è un singolo invio o una sequenza di sviluppo?**
-   - Invio singolo → [Messaggistica attivata da eventi](campaign-management-orchestration/event-triggered-messaging.md)
-   - Sequenza → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+  - Invio singolo → [Messaggistica attivata da eventi](campaign-management-orchestration/event-triggered-messaging.md)
+  - Sequenza → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
 
 ### Campagna di ricoinvolgimento
 
 *Un segmento di utenti inattivi richiede una sequenza di riattivazione multi-touch.*
 
 - **I singoli messaggi devono essere selezionati da più varianti di offerta in tempo reale?**
-   - Sì → [percorso cross-channel con decisioning](campaign-management-orchestration/cross-channel-journey-with-decisioning.md)
-   - Nessun → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+  - Sì → [percorso cross-channel con decisioning](campaign-management-orchestration/cross-channel-journey-with-decisioning.md)
+  - Nessun → [percorso orchestrato con più passaggi](campaign-management-orchestration/multi-step-orchestrated-journey.md)

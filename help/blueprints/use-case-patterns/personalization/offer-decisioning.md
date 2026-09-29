@@ -3,13 +3,16 @@ title: Offer Decisioning
 description: Scopri come utilizzare la logica decisionale centralizzata per selezionare l’offerta o il contenuto migliore per un profilo tra canali diversi.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 8fd511b3-0200-41bf-aff1-e3f2a00a578e
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1707'
 ht-degree: 5%
-
 ---
-
 # Offer Decisioning
 
 Questa guida descrive il modello di casi di utilizzo di Offer Decisioning, che utilizza [!DNL Adobe Journey Optimizer] (AJO) Decisioning e [!DNL Adobe Real-Time Customer Data Platform] (RT-CDP) per implementare una logica di selezione dell’offerta centralizzata che determina l’offerta migliore successiva per ogni profilo cliente su tutti i canali. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.
@@ -48,7 +51,7 @@ Promuovere prodotti o servizi complementari e di alta qualità ai clienti esiste
 
 **[Aumenta la fedeltà dei clienti e il valore del ciclo di vita](../../business-objectives/revenue-monetization/increase-customer-loyalty-lifetime-value.md)**
 Approfondisci le relazioni con i clienti e massimizza il valore a lungo termine tramite programmi di fidelizzazione, premi e coinvolgimento personalizzato.
-**KPI:** Valore ciclo di vita cliente, mantenimento, upselling/cross-selling %
+**KPI:** valore ciclo di vita cliente, mantenimento, upselling/cross-selling %
 
 ## Esempi di casi d’uso tattici
 

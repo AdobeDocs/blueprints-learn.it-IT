@@ -3,13 +3,16 @@ title: Messaggi attivati da eventi
 description: Scopri come inviare messaggi contestuali in tempo reale in risposta a eventi comportamentali o di sistema.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 75137990-9848-40c0-abf3-adbd21d2de52
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 5%
-
 ---
-
 # Messaggistica attivata da eventi
 
 In questa guida viene descritto il modello di casi d&#39;uso per la messaggistica attivata da eventi, che utilizza [!DNL Adobe Journey Optimizer] (AJO), [!DNL Real-Time Customer Data Platform] (RT-CDP) e [!DNL Adobe Experience Platform] (AEP) per inviare messaggi contestuali in tempo reale in risposta a eventi comportamentali o di sistema. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.

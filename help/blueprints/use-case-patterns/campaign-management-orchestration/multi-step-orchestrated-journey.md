@@ -3,13 +3,16 @@ title: Percorso orchestrato con più passaggi
 description: Scopri come guidare un profilo attraverso un percorso multi-touch diramato con attese, condizioni e più azioni messaggio nel tempo.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 5667b188-1b20-4a85-aebb-74efd5f771a1
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 5%
-
 ---
-
 # Percorso orchestrato in più passaggi
 
 Questa guida descrive il modello di casi d&#39;uso del percorso orchestrato in più passaggi, che utilizza [!DNL Adobe Journey Optimizer] (AJO) e [!DNL Real-Time Customer Data Platform] (RT-CDP) per orchestrare percorsi di clienti multi-touch diramati che distribuiscono più messaggi nel tempo. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.

@@ -3,13 +3,16 @@ title: Attivazione messaggi in uscita in batch
 description: Scopri come valutare un pubblico e consegnare un messaggio in uscita pianificato in un’esecuzione batch singola.
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 192853ce-02ab-46e6-9092-3db5354bc19c
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1701'
 ht-degree: 4%
-
 ---
-
 # Attivazione di messaggi in batch in uscita
 
 Questa guida descrive il modello di caso d’uso per l’attivazione di messaggi in uscita in batch, che utilizza [!DNL Adobe Journey Optimizer] (AJO) e [!DNL Adobe Real-Time Customer Data Platform] (RT-CDP) per inviare messaggi in uscita pianificati ai segmenti di pubblico definiti. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.
