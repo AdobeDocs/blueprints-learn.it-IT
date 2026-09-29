@@ -78,7 +78,7 @@ Un modo per considerare le regole di adeguamento delle priorità è trattarle co
 
 3. Lascia l&#39;operatore impostato su &quot;È uguale a&quot; e nella casella di testo rimanente immetti il nome dell&#39;elemento di offerta ultra-tier, che è **iphone:17\:ultra**. Dopo aver inserito il testo, l’interfaccia utente si aggiorna e indica che la condizione corrispondente è stata accettata.
 4. Fai clic su **+Aggiungi condizione**, quindi fai clic sulla **nuova casella di testo visualizzata** (contiene il testo &#39;*Fai clic per creare un elemento di decisione...*&#39;
-5. Fare clic sull&#39;opzione **Seleziona attributo** disponibile**.**
+5. Fare clic sull&#39;opzione **Seleziona attributo** disponibile&#x200B;**.**
 6. Quando si apre la finestra di dialogo &#39;Seleziona un attributo&#39;, fare clic su **Attributi profilo > Persona** (probabilmente sarà necessario scorrere verso il basso) **> Anno di nascita**. Una volta selezionata, fai clic su **Salva.**
 
    >[!NOTE]
