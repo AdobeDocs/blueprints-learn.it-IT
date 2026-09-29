@@ -4,7 +4,10 @@ description: Crea una formula di classificazione che aumenti dinamicamente i pun
 doc-type: article
 solution: Experience Platform
 exl-id: 67aaca7f-366c-4db4-a5d5-017f52fbd15b
-source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1761'
 ht-degree: 0%
@@ -75,7 +78,7 @@ Un modo per considerare le regole di adeguamento delle priorità è trattarle co
 
 3. Lascia l&#39;operatore impostato su &quot;È uguale a&quot; e nella casella di testo rimanente immetti il nome dell&#39;elemento di offerta ultra-tier, che è **iphone:17\:ultra**. Dopo aver inserito il testo, l’interfaccia utente si aggiorna e indica che la condizione corrispondente è stata accettata.
 4. Fai clic su **+Aggiungi condizione**, quindi fai clic sulla **nuova casella di testo visualizzata** (contiene il testo &#39;*Fai clic per creare un elemento di decisione...*&#39;
-5. Fare clic sull&#39;opzione **Seleziona attributo** disponibile&#x200B;**.**
+5. Fare clic sull&#39;opzione **Seleziona attributo** disponibile**.**
 6. Quando si apre la finestra di dialogo &#39;Seleziona un attributo&#39;, fare clic su **Attributi profilo > Persona** (probabilmente sarà necessario scorrere verso il basso) **> Anno di nascita**. Una volta selezionata, fai clic su **Salva.**
 
    >[!NOTE]

@@ -3,13 +3,16 @@ title: Migliorare analisi e reporting
 description: Scopri come migliorare le funzionalità di reporting per ottenere informazioni di marketing più veloci e fruibili tramite dashboard unificate e strumenti self-service.
 solution: Experience Platform, Customer Journey Analytics
 exl-id: 9a663191-c89a-41f6-9a10-f99101880ac9
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 3%
-
 ---
-
 # Migliorare analisi e reporting
 
 Migliora le funzionalità di reporting per informazioni di marketing più veloci e fruibili tramite dashboard unificate e strumenti self-service. Questo obiettivo si concentra sull’offerta ai team di analisi complete e cross-channel che consentono di identificare più rapidamente tendenze, opportunità e problemi.

@@ -3,13 +3,14 @@ title: Audience Activation B2B
 description: Scopri come attivare tipi di pubblico B2B basati sull’account tra canali web, e-mail e pubblicitari.
 solution: Real-Time Customer Data Platform
 exl-id: 2b979159-37aa-41d4-a6b4-1105538f6546
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
-
 ---
-
 # Attivazione del pubblico B2B
 
 Questa guida descrive il modello di caso d&#39;uso dell&#39;attivazione del pubblico B2B, che utilizza [!DNL Adobe Real-Time Customer Data Platform] ([!DNL RT-CDP]) B2B edition per generare, valutare e attivare tipi di pubblico a livello di account tra canali Web, e-mail, pubblicitari e CRM. È progettato per architetti di soluzioni, tecnici di marketing e tecnici di implementazione che devono comprendere il funzionamento di questo modello, gli obiettivi aziendali supportati, i casi di utilizzo tattici che consente e le applicazioni Adobe coinvolte.
@@ -105,7 +106,7 @@ I KPI seguenti aiutano a misurare il successo di questo modello di caso d’uso.
 Per implementare questo modello di caso d’uso vengono utilizzate le seguenti applicazioni.
 
 - **[!DNL Real-Time CDP]B2B edition**: piattaforma di base per l&#39;unificazione del profilo account, la risoluzione dell&#39;identità B2B, la valutazione del pubblico dell&#39;account, la configurazione della destinazione specifica B2B e l&#39;attivazione del pubblico dell&#39;account
-- **[!DNL Adobe Experience Platform] (AEP)** — Infrastruttura fondamentale per la modellazione di dati XDM B2B, l&#39;acquisizione di dati da origini di automazione del marketing e del CRM, il servizio Identity e la governance
+- **[!DNL Adobe Experience Platform](AEP)** — Infrastruttura fondamentale per la modellazione di dati XDM B2B, l&#39;acquisizione di dati da origini di automazione del marketing e del CRM, il servizio Identity e la governance
 - **[!DNL Marketo Engage]** — Destinazione primaria di automazione del marketing B2B per i programmi di sviluppo dei lead, il punteggio e l&#39;esecuzione della campagna forniti dal pubblico dell&#39;account attivato
 
 ## Documentazione correlata
@@ -115,65 +116,65 @@ Le risorse seguenti forniscono ulteriore contesto e indicazioni dettagliate per 
 **[!DNL RT-CDP]B2B edition**
 
 - [Panoramica di Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b)
-- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
-- [Pubblico dell’account](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/types/account-audiences)
-- [Descrizione del prodotto B2B edition RT-CDP](https://helpx.adobe.com/it/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
+- [Schemi B2B in Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [Pubblico dell’account](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
+- [Descrizione del prodotto B2B edition RT-CDP](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
 
 **Valutazione del pubblico e segmentazione**
 
-- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/home)
-- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder)
-- [Composizione del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-composition)
-- [Segmentazione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Guardrail di segmentazione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/guardrails)
+- [Panoramica del servizio di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Guida dell’interfaccia utente di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [Composizione del pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [Segmentazione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Guardrail di segmentazione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 
 **Destinazioni e attivazione**
 
-- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/home)
-- [Catalogo delle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/overview)
-- [Destinazione Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/social/linkedin)
-- [Destinazione Salesforce CRM](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Destinazione Microsoft Dynamics 365](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
-- [Destinazione Amazon S3](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Guardrail di attivazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/guardrails)
+- [Panoramica sulle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [Catalogo delle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [Destinazione Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [LinkedIn - Destinazione tipi di pubblico corrispondenti](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Destinazione Salesforce CRM](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/salesforce)
+- [Destinazione Microsoft Dynamics 365](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
+- [Destinazione Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Attivare i tipi di pubblico nelle destinazioni di streaming](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [Attivare i tipi di pubblico nelle destinazioni batch](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Guardrail di attivazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 
 **Origini dati e connettori**
 
-- [Panoramica sulle origini](https://experienceleague.adobe.com/it/docs/experience-platform/sources/home)
-- [Connettore Marketo Engage](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Connettore Salesforce](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/crm/salesforce)
+- [Panoramica sulle origini](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+- [Connettore Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Connettore Salesforce](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/crm/salesforce)
 
 **Modellazione dati e identità**
 
-- [Panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home)
-- [Panoramica del servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home)
-- [Panoramica del profilo](https://experienceleague.adobe.com/it/docs/experience-platform/profile/home)
-- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/it/docs/experience-platform/profile/merge-policies/overview)
+- [Panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [Panoramica del servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [Panoramica del profilo](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [Panoramica sui criteri di unione](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
 
 **Governance dei dati e privacy**
 
-- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/home)
+- [Panoramica sulla governance dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
 - [Panoramica sulle etichette di utilizzo dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/labels/overview)
 - [Consenso e preferenze](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
 **Monitoraggio e osservabilità**
 
-- [Panoramica degli avvisi](https://experienceleague.adobe.com/it/docs/experience-platform/observability/alerts/overview)
-- [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/it/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [Monitorare i flussi di dati di origine](https://experienceleague.adobe.com/it/docs/experience-platform/sources/api-tutorials/monitor)
+- [Panoramica degli avvisi](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [Monitorare i flussi di dati di destinazione](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [Monitorare i flussi di dati di origine](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/monitor)
 - [Dashboard utilizzo licenze](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 **Reporting e analisi**
 
-- [Panoramica di CJA](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Panoramica delle connessioni](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-connections/overview)
-- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Panoramica di CJA](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Panoramica delle connessioni](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
+- [Panoramica delle visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
 
 **Tutorial e guide**
 
 - [Guida introduttiva a Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro)
-- [Creare uno schema per le origini B2B](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/schemas/b2b)
-- [Strumenti sandbox](https://experienceleague.adobe.com/it/docs/experience-platform/sandbox/sandbox-tooling-api/overview)
+- [Creare uno schema per le origini B2B](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [Strumenti sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/sandbox-tooling-api/overview)

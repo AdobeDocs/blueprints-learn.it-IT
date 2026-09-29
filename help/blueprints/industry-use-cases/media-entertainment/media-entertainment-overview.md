@@ -3,13 +3,18 @@ title: Casi d’uso per contenuti multimediali e intrattenimento
 description: Scopri come le organizzazioni di media e intrattenimento utilizzano Adobe Experience Platform per personalizzare l’individuazione dei contenuti, ridurre l’abbandono degli abbonati e aumentare il coinvolgimento del pubblico.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: cfcf689f-9579-447f-9ef9-72e0c80c1f27
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '3363'
 ht-degree: 0%
-
 ---
-
 # Casi d’uso per contenuti multimediali e intrattenimento
 
 Le organizzazioni che operano nel settore dei media e dell&#39;intrattenimento utilizzano Adobe Experience Platform per unificare i dati sul pubblico provenienti da piattaforme di streaming, librerie di contenuti e account di abbonati, creando un&#39;unica vista per ogni visualizzatore o ascoltatore. Questa base consente l’individuazione personalizzata dei contenuti, la conservazione proattiva degli abbonati e strategie di coinvolgimento che consentono ai tipi di pubblico di tornare per sempre.
@@ -84,43 +89,43 @@ Le esperienze di home page personalizzate migliorano il coinvolgimento della hom
 
 ### Come implementare
 
-Utilizza il pattern [Consigli comportamentali](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). This approach uses selection strategies and ranking models to reorder content rows and featured titles on the homepage based on each visitor&#39;s profile and real-time behavior. This is the right pattern when the item set is large and continuously changing and selection is driven by behavioral affinity to rank content rows dynamically — rather than a static curated set or simple attribute-based personalization.
+Utilizza il pattern [Consigli comportamentali](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md). Questo approccio utilizza strategie di selezione e modelli di classificazione per riordinare le righe di contenuto e i titoli in primo piano nella homepage in base al profilo e al comportamento in tempo reale di ogni visitatore. Questo è il pattern corretto quando il set di elementi è di grandi dimensioni e in continua evoluzione e la selezione è guidata dall’affinità comportamentale per la classificazione dinamica delle righe di contenuto, anziché un set curato statico o una semplice personalizzazione basata su attributi.
 
 ### Considerazioni tecniche
 
-- Homepage personalization must execute quickly enough to avoid perceived load delays; edge-based decisioning or server-side rendering is often required to meet sub-second response time expectations.
-- The personalization logic should blend individual preferences with editorial and promotional priorities, ensuring that tentpole releases, seasonal content, and partner-promoted titles still receive appropriate visibility.
-- Content row strategies, such as &quot;Continue Watching,&quot; &quot;Because You Watched,&quot; and &quot;Trending Now,&quot; each require distinct data inputs and ranking logic that must be orchestrated into a cohesive page layout.
-- [!DNL Experience Platform] Web SDK implementation must capture homepage interactions, including row scrolls, tile clicks, and hover behavior, to continuously refine the ranking models.
+- La personalizzazione della homepage deve essere eseguita abbastanza rapidamente da evitare ritardi di caricamento percepiti; spesso è necessario ricorrere a decisioni basate su Edge o al rendering lato server per soddisfare le aspettative relative ai tempi di risposta dei secondi secondari.
+- La logica di personalizzazione deve combinare le preferenze individuali con priorità editoriali e promozionali, garantendo che le versioni con i puntini di sospensione, i contenuti stagionali e i titoli promossi dai partner ricevano ancora la visibilità appropriata.
+- Le strategie per righe di contenuto, come &quot;Continua a guardare&quot;, &quot;Perché hai guardato&quot; e &quot;Tendenza attuale&quot;, richiedono input di dati distinti e una logica di classificazione che deve essere orchestrata in un layout di pagina coeso.
+- L&#39;implementazione di [!DNL Experience Platform] Web SDK deve acquisire le interazioni della home page, inclusi gli scorrimento delle righe, i clic sulle sezioni e il comportamento al passaggio del mouse, per perfezionare continuamente i modelli di classificazione.
 
 
-## Watchlist and Favorites Reminders
+## Promemoria elenchi di controllo e preferiti
 
-Send reminders to users about content in their watchlist that they have not watched yet, along with personalized recommendations for similar titles. Watchlists represent strong intent signals, and gentle reminders can convert that intent into actual viewing.
+Invia promemoria agli utenti sui contenuti della watchlist che non hanno ancora guardato, insieme a consigli personalizzati per titoli simili. Le liste di controllo rappresentano segnali di intento forti, e i promemoria delicati possono convertire tale intento in visualizzazione effettiva.
 
 ### Impatto aziendale
 
-Watchlist reminder programs drive improved watchlist completion rates, turning saved intent into active engagement and increasing overall platform usage.
+I programmi di promemoria della watchlist aumentano le percentuali di completamento della watchlist, trasformando gli intenti salvati in un coinvolgimento attivo e aumentando l’utilizzo complessivo della piattaforma.
 
 ### Come implementare
 
-Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). This approach triggers reminders based on watchlist activity and inactivity signals, sending timely nudges when content has been saved but not yet started. This is the right pattern when a discrete behavioral signal (watchlist inactivity) is the trigger and the required response is a single, time-sensitive message — rather than a multi-step sequence or a continuous recommendation stream.
+Utilizza il pattern [Messaggistica attivata da eventi](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md). Questo approccio attiva i promemoria in base all’attività dell’elenco di controllo e ai segnali di inattività, inviando punteggi tempestivi quando il contenuto è stato salvato ma non ancora avviato. Questo è lo schema corretto quando un segnale comportamentale discreto (inattività della watchlist) è l’attivatore e la risposta richiesta è un singolo messaggio sensibile al tempo, anziché una sequenza in più passaggi o un flusso continuo di consigli.
 
 ### Considerazioni tecniche
 
-- Reminder timing should be calibrated based on how long content has been on the watchlist and whether the user has been active on the platform recently, avoiding reminders during periods of heavy engagement when they are unnecessary.
-- Watchlist data must sync across devices in real time so that a title added on mobile is immediately reflected in reminder eligibility calculations and not duplicated across platforms.
-- Reminders should highlight contextual details such as expiring availability windows or new seasons of saved series to create natural urgency without feeling pushy.
-- Content that has been removed from the catalog or is no longer available in the subscriber&#39;s region must be automatically excluded from reminder messages and replaced with alternative recommendations.
+- La tempistica del promemoria deve essere calibrata in base a quanto tempo il contenuto è stato inserito nella watchlist e se l’utente è stato attivo sulla piattaforma di recente, evitando promemoria durante periodi di intenso coinvolgimento quando non sono necessari.
+- I dati della watchlist devono essere sincronizzati tra i dispositivi in tempo reale, affinché un titolo aggiunto su dispositivi mobili venga immediatamente riportato nei calcoli di idoneità dei promemoria e non venga duplicato tra le piattaforme.
+- I promemoria devono evidenziare i dettagli contestuali come le finestre di disponibilità in scadenza o le nuove stagioni di serie salvate per creare un’urgenza naturale senza sentirsi invadenti.
+- I contenuti che sono stati rimossi dal catalogo o che non sono più disponibili nell’area dell’utente iscritto devono essere automaticamente esclusi dai messaggi di promemoria e sostituiti con consigli alternativi.
 
 
-## Free Trial Conversion Campaigns
+## Campagne di conversione di prova gratuite
 
-Engage free trial users with personalized content recommendations and offers to encourage subscription conversion before the trial period ends. The trial window is a critical opportunity to demonstrate enough value that users are willing to pay, and a structured conversion journey significantly outperforms a single end-of-trial reminder.
+Coinvolgi gli utenti di prova gratuiti con consigli e offerte di contenuti personalizzati per incoraggiare la conversione dell’abbonamento prima della fine del periodo di prova. La finestra di prova è un’opportunità fondamentale per dimostrare un valore sufficiente che gli utenti sono disposti a pagare, e un percorso di conversione strutturato offre prestazioni significativamente superiori a un singolo promemoria di fine prova.
 
 ### Impatto aziendale
 
-Well-designed trial conversion campaigns deliver meaningful improvements in trial-to-paid conversion rates, directly increasing subscriber acquisition efficiency and reducing cost per acquisition.
+Le campagne di conversione di prova ben progettate offrono miglioramenti significativi nei tassi di conversione da prova a pagamento, aumentando direttamente l’efficienza di acquisizione degli abbonati e riducendo il costo per acquisizione.
 
 ### Come implementare
 
@@ -200,43 +205,43 @@ Personalizza i prompt e i consigli per la condivisione social in base alle prefe
 
 ### Impatto aziendale
 
-Personalized social sharing prompts achieve improved social sharing rates, amplifying organic reach and reducing paid acquisition costs.
+I prompt di condivisione social personalizzati consentono di migliorare i tassi di condivisione sociale, amplificando la portata organica e riducendo i costi di acquisizione a pagamento.
 
 ### Come implementare
 
-Utilizza il pattern [Visitatore noto Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). This approach personalizes in-app sharing experiences for identified users, surfacing contextually relevant sharing prompts based on the user&#39;s preferences and engagement patterns. This is the right pattern when personalization is driven by profile attributes and known engagement context rather than a behavioral affinity model, and the goal is to enhance in-moment experience without orchestrating a journey sequence.
+Utilizza il pattern [Visitatore noto Web/App Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md). Questo approccio personalizza le esperienze di condivisione in-app per gli utenti identificati, visualizzando messaggi di richiesta di condivisione contestualmente rilevanti in base alle preferenze dell’utente e ai pattern di coinvolgimento. Questo è il modello corretto quando la personalizzazione è guidata dagli attributi di profilo e dal contesto di coinvolgimento noto, anziché da un modello di affinità comportamentale, e l’obiettivo è quello di migliorare l’esperienza istantanea senza orchestrare una sequenza di percorso.
 
 ### Considerazioni tecniche
 
-- Sharing prompts should be triggered at natural moments of delight, such as completing a binge-worthy series or discovering a new favorite artist, rather than at arbitrary intervals that feel intrusive.
-- Pre-populated sharing messages and imagery must be dynamically generated based on the specific content being shared, including appropriate thumbnails, descriptions, and deep links that drive recipients back to the platform.
-- Privacy controls must ensure that viewing activity is only shared when the user explicitly initiates sharing; passive or automatic sharing of watch history without consent can damage trust.
-- Social platform integration must comply with each network&#39;s sharing policies and handle authentication, rate limits, and content format requirements for platforms like Instagram, TikTok, and X.
+- I prompt di condivisione dovrebbero essere attivati in momenti naturali di piacere, come il completamento di una serie degna di binge o la scoperta di un nuovo artista preferito, piuttosto che a intervalli arbitrari che si sentono invadenti.
+- I messaggi e le immagini di condivisione precompilati devono essere generati in modo dinamico in base al contenuto specifico condiviso, incluse le miniature, le descrizioni e i collegamenti profondi appropriati che riportano i destinatari alla piattaforma.
+- I controlli sulla privacy devono garantire che l’attività di visualizzazione sia condivisa solo quando l’utente avvia esplicitamente la condivisione; la condivisione passiva o automatica della cronologia di visualizzazione senza consenso può danneggiare l’attendibilità.
+- L’integrazione della piattaforma social deve rispettare i criteri di condivisione di ogni rete e gestire l’autenticazione, i limiti di tariffa e i requisiti di formato dei contenuti per piattaforme come Instagram, TikTok e X.
 
 
-## Premium Feature Upsell
+## Funzione Premium Upselling
 
-Identifica gli utenti che potrebbero beneficiare di funzionalità Premium e presentare offerte di upselling personalizzate in base ai loro pattern di utilizzo. Targeted upsell messaging to users who are already demonstrating behaviors aligned with premium value is far more effective than blanket upgrade campaigns.
+Identifica gli utenti che potrebbero beneficiare di funzionalità Premium e presentare offerte di upselling personalizzate in base ai loro pattern di utilizzo. La messaggistica mirata di upselling per gli utenti che stanno già dimostrando comportamenti allineati al valore premium è molto più efficace delle campagne di aggiornamento aperto.
 
 ### Impatto aziendale
 
-Personalized premium upsell campaigns drive improved premium feature adoption, growing average revenue per user while delivering features that genuinely match subscriber needs.
+Le campagne di upselling premium personalizzate favoriscono una migliore adozione delle funzionalità premium, con un aumento del fatturato medio per utente e la distribuzione di funzionalità che soddisfano le esigenze degli abbonati.
 
 ### Come implementare
 
-Use the [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) pattern. This approach uses centralized decision logic to evaluate each subscriber&#39;s usage patterns and select the most relevant premium offer at the right moment. This is the right pattern when offer selection must account for usage pattern constraints and premium tier eligibility rules — constraints that require governed decisioning logic rather than behavioral affinity ranking alone.
+Utilizza il pattern [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md). Questo approccio utilizza una logica decisionale centralizzata per valutare i pattern di utilizzo di ogni abbonato e selezionare l’offerta premium più rilevante al momento giusto. Questo è il modello corretto quando la selezione delle offerte deve tenere conto dei vincoli del modello di utilizzo e delle regole di idoneità del livello premium, vincoli che richiedono una logica decisionale regolamentata anziché una classificazione di affinità comportamentale da sola.
 
 ### Considerazioni tecniche
 
-- Usage pattern analysis must identify specific behaviors that indicate premium readiness, such as frequent use of features available in limited form on the basic plan, multi-device usage, or high content consumption volume.
-- Offer presentation should highlight the specific premium benefits most relevant to each user&#39;s behavior rather than listing all premium features generically; a user who frequently downloads content should see offline viewing emphasized.
-- Upsell timing should avoid moments of frustration, such as immediately after a paywall block, and instead leverage positive engagement moments when the subscriber is most receptive.
-- [!DNL Journey Optimizer] decisioning rules must coordinate upsell offers across in-app messages, email, and push notifications to present a consistent offer without overwhelming the subscriber across channels.
+- L’analisi del modello di utilizzo deve identificare comportamenti specifici che indicano una preparazione superiore, come l’uso frequente di funzioni disponibili in forma limitata sul piano di base, l’utilizzo multi-dispositivo o un elevato volume di consumo dei contenuti.
+- La presentazione dell’offerta deve evidenziare i vantaggi premium specifici più rilevanti per il comportamento di ogni utente, anziché elencare genericamente tutte le funzioni premium; un utente che scarica frequentemente i contenuti deve vedere enfatizzata la visualizzazione offline.
+- I tempi di upselling dovrebbero evitare momenti di frustrazione, come immediatamente dopo un blocco del paywall, e invece sfruttare i momenti di coinvolgimento positivo in cui l’abbonato è più ricettivo.
+- [!DNL Journey Optimizer] regole di decisioning devono coordinare le offerte di upselling tra messaggi in-app, e-mail e notifiche push per presentare un&#39;offerta coerente senza sopraffare l&#39;abbonato tra i canali.
 
 
-## Content Completion Campaigns
+## Campagne di completamento dei contenuti
 
-Remind users to finish watching or listening to content they started but did not complete, accompanied by personalized recommendations for what to enjoy next. I contenuti incompleti rappresentano un coinvolgimento non realizzato e un leggero spostamento spesso converte una sessione abbandonata in un’esperienza completata.
+Ricordare agli utenti di terminare di guardare o ascoltare i contenuti che hanno iniziato ma non hanno completato, accompagnati da consigli personalizzati su cosa apprezzare dopo. I contenuti incompleti rappresentano un coinvolgimento non realizzato e un leggero spostamento spesso converte una sessione abbandonata in un’esperienza completata.
 
 ### Impatto aziendale
 
@@ -264,7 +269,7 @@ La correlazione dei modelli di coinvolgimento dei contenuti con i risultati di f
 
 ### Come implementare
 
-Utilizza il pattern [Analisi cliente e generazione Insight](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md). Questo approccio collega i dati degli eventi in streaming, i metadati dei contenuti, i record del ciclo di vita degli abbonamenti e la cronologia delle interazioni delle campagne a Customer Journey Analytics, dove l’analisi della conservazione per coorte misura il modo in cui l’affinità dei contenuti è correlata al mandato degli abbonati e l’analisi dell’abbandono identifica i pattern di abbandono del coinvolgimento che precedono l’annullamento. Questo è lo schema corretto quando l’obiettivo è comprendere i driver comportamentali dell’abbandono e le prestazioni dei contenuti, anziché attivare un messaggio di recupero o attivare un pubblico a rischio di abbandono per la soppressione.
+Utilizza il pattern [Customer Analytics &amp; Insight Generation](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md). Questo approccio collega i dati degli eventi in streaming, i metadati dei contenuti, i record del ciclo di vita degli abbonamenti e la cronologia delle interazioni delle campagne a Customer Journey Analytics, dove l’analisi della conservazione per coorte misura il modo in cui l’affinità dei contenuti è correlata al mandato degli abbonati e l’analisi dell’abbandono identifica i pattern di abbandono del coinvolgimento che precedono l’annullamento. Questo è lo schema corretto quando l’obiettivo è comprendere i driver comportamentali dell’abbandono e le prestazioni dei contenuti, anziché attivare un messaggio di recupero o attivare un pubblico a rischio di abbandono per la soppressione.
 
 ### Considerazioni tecniche
 

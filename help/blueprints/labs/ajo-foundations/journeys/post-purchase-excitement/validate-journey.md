@@ -4,7 +4,10 @@ description: Verifica l’esecuzione del percorso tramite i conteggi di entrata 
 doc-type: article
 solution: Experience Platform
 exl-id: 2e6e73e5-6bd8-4dde-ba06-29b67f927131
-source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -117,7 +120,7 @@ I risultati hanno più di 100 colonne e ti danno un’idea dei record degli even
 
 >[!NOTE]
 >
->Curioso del significato di ogni campo, consulta il dizionario degli schemi di AJO e modifica l&#39;elenco a discesa con lo schema Eventi passaggio di Percorso: [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=it](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=it)
+>Curioso del significato di ogni campo, consulta il dizionario degli schemi di AJO e modifica l&#39;elenco a discesa con lo schema Eventi passaggio di Percorso: [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en)
 
 
 

@@ -4,7 +4,10 @@ description: Scopri come etichettare un campo di schema relazionale come identit
 doc-type: article
 solution: Experience Platform
 exl-id: bfc71051-e471-4d5c-a9a7-bb6805a5acb1
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -106,4 +109,4 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 Ora hai visto quanto è facile navigare nello schema, contrassegnare un attributo come identità e creare il Dimension di destinazione del profilo.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension) se sei interessato.

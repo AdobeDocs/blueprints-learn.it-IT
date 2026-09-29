@@ -3,13 +3,18 @@ title: Casi di utilizzo del settore automobilistico
 description: Scopri come le organizzazioni del settore automobilistico utilizzano Adobe Experience Platform per personalizzare il percorso di acquisto dei veicoli, migliorare la fidelizzazione dei servizi e fidelizzare i proprietari.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: ee83c739-0907-481d-ba3f-358af4e03c67
-source-git-commit: e5c88f240fe86bbc494402842a3d974f803aab03
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 4%
-
 ---
-
 # Casi d’uso per il settore automobilistico
 
 Le organizzazioni automobilistiche utilizzano Adobe Experience Platform per unificare i dati dei clienti provenienti dalle interazioni dei concessionari, dalla ricerca online sui veicoli, dai record dei servizi e dai sistemi di automobili collegate in un&#39;unica vista di ciascun proprietario. Questa base consente esperienze personalizzate durante l’intero ciclo di vita della proprietà, dalla ricerca iniziale sui veicoli all’acquisto, al servizio e alla fedeltà.

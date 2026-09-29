@@ -2,7 +2,12 @@
 title: Attivazione di Adobe Real-Time CDP
 description: Architettura di riferimento per l’attivazione di tipi di pubblico e dati di profilo da Adobe Real-Time CDP a destinazioni per annunci pubblicitari, social, archiviazione cloud e aziendali.
 solution: Real-Time Customer Data Platform, Experience Platform
-source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -34,6 +39,6 @@ L’architettura precedente supporta i seguenti modelli di casi d’uso:
 
 ## Ulteriori informazioni
 
-- [Destinazioni di Adobe Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/home)
-- [Attivare i tipi di pubblico nelle destinazioni](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Guardrail di Adobe Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/guardrails/overview)
+- [Destinazioni di Adobe Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [Attivare i tipi di pubblico nelle destinazioni](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Guardrail di Adobe Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)

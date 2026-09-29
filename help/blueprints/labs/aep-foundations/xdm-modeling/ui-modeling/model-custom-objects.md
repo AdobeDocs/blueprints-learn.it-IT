@@ -4,7 +4,10 @@ description: Crea nell’editor schema campi e oggetti personalizzati per accoun
 doc-type: article
 solution: Experience Platform
 exl-id: 8c39b226-05f3-458a-b023-c59221a6713a
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -106,7 +109,7 @@ Come descritto nella lezione, non esistono gruppi di campi o tipi di dati standa
 
    >[!NOTE]
    >
-   >L’obiettivo dei valori Enum e Suggested è facilitare la segmentazione per l’utente finale. Le enumerazioni impongono la convalida al momento dell’acquisizione dei dati, mentre i valori consigliati no. Per ulteriori informazioni su questa funzione, consulta la documentazione qui -> [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it#enums-and-suggested-values)
+   >L’obiettivo dei valori Enum e Suggested è facilitare la segmentazione per l’utente finale. Le enumerazioni impongono la convalida al momento dell’acquisizione dei dati, mentre i valori consigliati no. Per ulteriori informazioni su questa funzione, consulta la documentazione qui -> [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values)
 
 
 

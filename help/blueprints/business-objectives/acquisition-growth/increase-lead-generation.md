@@ -3,13 +3,18 @@ title: Aumenta generazione lead
 description: Scopri come generare lead più qualificati per la pipeline delle vendite tramite moduli, eventi, contenuti e coinvolgimento multicanale.
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 3f1226b6-b6dc-4276-9843-c0657a1b7b4d
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 7%
-
 ---
-
 # Aumentare la generazione di lead
 
 Genera lead più qualificati per la pipeline di vendita tramite moduli, eventi, contenuti e coinvolgimento multicanale. Questo obiettivo si concentra sull’aumento del volume di potenziali clienti qualificati che entrano in funnel attraverso percorsi mirati di divulgazione e conversione ottimizzati.

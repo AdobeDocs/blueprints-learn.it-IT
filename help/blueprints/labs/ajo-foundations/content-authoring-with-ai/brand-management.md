@@ -4,13 +4,14 @@ description: Scopri come creare un brand in Adobe Journey Optimizer caricando un
 doc-type: article
 solution: Experience Platform
 exl-id: 84be70f5-6c3b-40e2-ad38-ac737363f845
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1414'
 ht-degree: 0%
-
 ---
-
 
 # Gestione del brand
 
@@ -214,7 +215,7 @@ Quindi, migliora il brand aggiungendo una regola che assicuri che i pulsanti e-m
 
 5. Fare clic su **Aggiungi**.
 
-   ![Pulsante Aggiungi per la regola di esclusione push &#x200B;](assets/brand-management-click-add-rule-button.png)
+   ![Pulsante Aggiungi per la regola di esclusione push ](assets/brand-management-click-add-rule-button.png)
 
 6. Conferma che la nuova regola Do not venga visualizzata come `Be pushy` nell&#39;elenco.
 

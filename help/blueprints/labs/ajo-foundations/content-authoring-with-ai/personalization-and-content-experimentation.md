@@ -4,13 +4,14 @@ description: Scopri come personalizzare il contenuto delle e-mail con attributi 
 doc-type: article
 solution: Experience Platform
 exl-id: b79327e0-dfc4-49bf-a112-3675c825c479
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1238'
 ht-degree: 0%
-
 ---
-
 
 # Personalization e sperimentazione sui contenuti
 
@@ -48,7 +49,7 @@ Questa parte dell’esercizio semplifica la personalizzazione. Aggiungi nome e c
 
    ![Icona Personalizzazione nella barra degli strumenti del testo e-mail](assets/personalization-and-content-experimentation-click-personalization-icon.png)
 
-4. Cerca **F**&#x200B;**first Name**.
+4. Cerca **F****first Name**.
 
    ![Ricerca dell&#39;attributo First Name nel pannello di personalizzazione](assets/personalization-and-content-experimentation-search-first-name-field.png)
 

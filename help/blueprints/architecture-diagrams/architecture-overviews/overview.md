@@ -3,7 +3,10 @@ title: Panoramiche dell’architettura
 description: Diagrammi di primo livello che mostrano la combinazione di applicazioni Adobe Experience Cloud, Adobe Experience Platform e i relativi SDK, oltre a guardrail e latenze.
 solution: Experience Platform
 doc-type: overview-page
-source-git-commit: 7b2542ddb50449d5f41b81d1fe95781aaffa972a
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
