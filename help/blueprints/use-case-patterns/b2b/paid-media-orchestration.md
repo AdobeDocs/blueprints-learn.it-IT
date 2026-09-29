@@ -64,14 +64,14 @@ Flusso ad alto livello:
 
 ## Modellazione dei dati in AEP B2B
 
-Con qualsiasi orchestrazione basata sui dati, la progettazione dello schema è importante. I profili account e persona in AEP/RTCDP devono includere gli attributi utilizzati in **condizioni del percorso diviso** (ad esempio, flag di ricerca, interesse della soluzione, persona, categoria intento, punteggio di coinvolgimento). Gli schemi B2B (XDM Business Account, XDM Individual Profile, relazionale) devono rappresentare la gerarchia e le origini dati. Per informazioni dettagliate, vedere [Schemi RTCDP B2B](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) e [Documentazione Journey Optimizer B2B Edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview).
+Con qualsiasi orchestrazione basata sui dati, la progettazione dello schema è importante. I profili account e persona in AEP/RTCDP devono includere gli attributi utilizzati in **condizioni del percorso diviso** (ad esempio, flag di ricerca, interesse della soluzione, persona, categoria intento, punteggio di coinvolgimento). Gli schemi B2B (XDM Business Account, XDM Individual Profile, relazionale) devono rappresentare la gerarchia e le origini dati. Per informazioni dettagliate, vedere [Schemi RTCDP B2B](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) e [Documentazione Journey Optimizer B2B Edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b/user/guide-overview).
 
 **Nota:** la logica dei percorsi suddivisi nel percorso utilizza i dati di profilo e, se supportati, i dati relazionali; assicurati che i campi necessari per la logica delle cascate siano disponibili nel percorso.
 
 ### Guardrail
 
-- **Journey Optimizer B2B Edition** - Vedere la [descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html) per i limiti di percorso, i limiti dei nodi e il supporto della destinazione.
-- **Real-Time CDP** — Consulta [Guardrail di RTCDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) per i limiti di segmentazione e attivazione.
+- **Journey Optimizer B2B Edition** - Vedere la [descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-journey-optimizer-b2b.html) per i limiti di percorso, i limiti dei nodi e il supporto della destinazione.
+- **Real-Time CDP** — Consulta [Guardrail di RTCDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/guardrails/overview) per i limiti di segmentazione e attivazione.
 
 ## Implementazione
 
@@ -120,5 +120,5 @@ Il blueprint **Paid Media Controller** mostra come **AJO B2B e AEP** collaborino
 
 ## Documentazione correlata
 
-- [Adobe Journey Optimizer B2B Edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b) — Documentazione del prodotto.
+- [Adobe Journey Optimizer B2B Edition](https://experienceleague.adobe.com/it/docs/journey-optimizer-b2b) — Documentazione del prodotto.
 - [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) — Pubblico dell&#39;account e attivazione.

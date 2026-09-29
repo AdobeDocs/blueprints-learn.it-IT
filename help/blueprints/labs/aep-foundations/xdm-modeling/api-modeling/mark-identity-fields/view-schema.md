@@ -61,7 +61,7 @@ Nota l&#39;intestazione **Accept** utilizzata nella richiesta. Questa intestazio
 
 >[!NOTE]
 >
->Puoi trovare ulteriori informazioni sulle varie intestazioni Accept qui -> [Endpoint API dello schema di Experience League](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/schemas.html?lang=en#lookup)
+>Puoi trovare ulteriori informazioni sulle varie intestazioni Accept qui -> [Endpoint API dello schema di Experience League](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/schemas.html?lang=it#lookup)
 
 
 
