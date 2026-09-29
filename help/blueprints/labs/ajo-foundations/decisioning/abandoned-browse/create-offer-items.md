@@ -7,7 +7,7 @@ exl-id: 76214d87-5107-4829-9d6e-91073e1008ca
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 43fcd38b8bd9c068695b1f325c367d35381d6dbe
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
@@ -34,24 +34,25 @@ Infine, a parità di condizioni, Connection 5G preferirebbe vendere il modello U
 Il primo e più semplice elemento di offerta creato è l&#39;offerta di fallback, che chiunque può visualizzare per un periodo illimitato.
 
 1. Se necessario, espandi **Decisioning** nella barra a sinistra e fai clic su **Cataloghi**
-2. Viene visualizzata una pagina di offerte vuota:
+1. Viene visualizzata una pagina di offerte vuota:
 
    ![Svuota la pagina del catalogo delle offerte prima di creare qualsiasi elemento dell&#39;offerta](assets/create-offer-items-empty-offers-page.png)
 
-3. Fai clic sul pulsante blu **Crea elemento**. Viene visualizzata la pagina &quot;Crea elemento offerta&quot;.
-4. Nel campo &#39;Nome offerta&#39; immettere il testo **iphone:17\:generic**. Immettere una descrizione.
+1. Fai clic sul pulsante blu **Crea elemento**. Viene visualizzata la pagina &quot;Crea elemento offerta&quot;.
+1. Nel campo &#39;Nome offerta&#39; immettere il testo **iphone:17\:generic**. Immettere una descrizione.
 
    >[!NOTE]
    >
    >La convenzione di denominazione in lettere minuscole e separate da due punti è solo uno dei nostri progetti che potrebbe servire come uno da seguire per un cliente reale. In pratica, puoi sviluppare una strategia di denominazione diversa per gli articoli dell’offerta. Assicurati che sia documentato e coerente prima di creare elementi di offerta. In questo modo gli elementi dell’offerta saranno facilmente reperibili e raggruppabili nelle raccolte. Ulteriori informazioni più avanti.
 
-5. Poiché si tratta dell’articolo di offerta con priorità più bassa/predefinito, lascia Priorità predefinita su 1.
+1. Poiché si tratta dell’articolo di offerta con priorità più bassa/predefinito, lascia Priorità predefinita su 1.
 
    >[!NOTE]
    >
    >In Decisioning, minore è il numero, minore è la priorità. Ad esempio, un articolo di offerta con priorità 100 viene visualizzato prima di un articolo di offerta con priorità 1
 
-6. Espandere l&#39;elemento **Device** nell&#39;area &#39;Attributi personalizzati&#39;, quindi immettere le informazioni seguenti nelle caselle di testo:
+1. Espandere l&#39;elemento **Device** nell&#39;area &#39;Attributi personalizzati&#39;, quindi immettere le informazioni seguenti nelle caselle di testo:
+
    - Livello: **Generico**
    - Modello: **17**
    - Marca: **iPhone**
@@ -70,20 +71,20 @@ Il primo e più semplice elemento di offerta creato è l&#39;offerta di fallback
    >
    >La sezione precedente menzionava la necessità di prestare particolare attenzione quando si aggiungono attributi personalizzati allo schema &quot;Elementi di offerta personalizzati - Experience Decisioning&quot; generato dal sistema. Ogni nodo personalizzato aggiuntivo verrà visualizzato come campo possibile per ogni elemento dell’offerta in futuro. La creazione di attributi non necessari o specifici per una campagna confonde l’interfaccia utente per la creazione degli elementi di offerta e può causare confusione.
 
-7. Fai clic sul pulsante blu **Avanti** nell&#39;angolo superiore destro per passare al passaggio successivo.
-8. Questa offerta deve essere disponibile per tutti i visitatori e non deve avere alcun limite di frequenza, pertanto non è necessario apportare modifiche alle sezioni &quot;Idoneità&quot; o &quot;Limite&quot;. Fai di nuovo clic sul pulsante blu **Avanti** per passare all&#39;ultimo passaggio.
-9. Nel passaggio &quot;Revisione&quot;, verifica che tutti i dati siano corretti:
+1. Fai clic sul pulsante blu **Avanti** nell&#39;angolo superiore destro per passare al passaggio successivo.
+1. Questa offerta deve essere disponibile per tutti i visitatori e non deve avere alcun limite di frequenza, pertanto non è necessario apportare modifiche alle sezioni &quot;Idoneità&quot; o &quot;Limite&quot;. Fai di nuovo clic sul pulsante blu **Avanti** per passare all&#39;ultimo passaggio.
+1. Nel passaggio &quot;Revisione&quot;, verifica che tutti i dati siano corretti:
 
    ![Rivedi il passaggio che conferma i dettagli generici dell&#39;elemento dell&#39;offerta prima di salvare](assets/create-offer-items-generic-offer-review-step.png "Controlla il passaggio che conferma i dettagli generici dell&#39;elemento dell&#39;offerta prima di salvare")
 
-10. Apporta le modifiche necessarie. Al termine, fai clic sul pulsante blu **Salva**.
-11. Una volta salvato, viene visualizzato un pulsante bianco &quot;Approva&quot; nel punto in cui si trovava il pulsante &quot;Salva&quot;. Fai clic sul pulsante bianco **Approva** per approvare questo elemento dell&#39;offerta. Sotto il titolo dell’articolo dell’offerta viene visualizzato un indicatore verde &quot;Approvato&quot;:
+1. Apporta le modifiche necessarie. Al termine, fai clic sul pulsante blu **Salva**.
+1. Una volta salvato, viene visualizzato un pulsante bianco &quot;Approva&quot; nel punto in cui si trovava il pulsante &quot;Salva&quot;. Fai clic sul pulsante bianco **Approva** per approvare questo elemento dell&#39;offerta. Sotto il titolo dell’articolo dell’offerta viene visualizzato un indicatore verde &quot;Approvato&quot;:
 
-![Indicatore verde approvato sull&#39;elemento dell&#39;offerta generica](assets/create-offer-items-generic-offer-approved.png)
+   ![Indicatore verde approvato sull&#39;elemento dell&#39;offerta generica](assets/create-offer-items-generic-offer-approved.png)
 
->[!NOTE]
->
->In pratica, e nel caso di offerte più complesse, è necessario attivare un processo di approvazione appropriato per garantire che gli elementi dell’offerta siano stati creati correttamente. Per risparmiare tempo in questo laboratorio, è sufficiente approvare ogni elemento di offerta che si crea.
+   >[!NOTE]
+   >
+   >In pratica, e nel caso di offerte più complesse, è necessario attivare un processo di approvazione appropriato per garantire che gli elementi dell’offerta siano stati creati correttamente. Per risparmiare tempo in questo laboratorio, è sufficiente approvare ogni elemento di offerta che si crea.
 
 1. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
 
