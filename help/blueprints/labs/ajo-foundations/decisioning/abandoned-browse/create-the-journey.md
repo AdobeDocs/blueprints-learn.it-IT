@@ -7,7 +7,7 @@ exl-id: 34f56d95-564b-4cf6-b105-22da276e8e41
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 43fcd38b8bd9c068695b1f325c367d35381d6dbe
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 0%
@@ -39,21 +39,21 @@ ht-degree: 0%
 ## Configurare il CBE e i criteri decisionali
 
 1. Espandi il pannello a soffietto **Azioni** a sinistra dell&#39;area di lavoro, trascina l&#39;elemento **Azione** nell&#39;area di lavoro e collegalo al primo nodo.
-2. Quando viene visualizzata la sovrapposizione &#39;Seleziona tipo di azione&#39;, seleziona l&#39;azione **Esperienza basata su codice** e fai clic sul pulsante blu **Aggiungi**.
-3. Nelle proprietà &quot;Azione\:Esperienza basata su codice&quot; ora visibili, fai clic sul pulsante **Configura azione**.
+1. Quando viene visualizzata la sovrapposizione &#39;Seleziona tipo di azione&#39;, seleziona l&#39;azione **Esperienza basata su codice** e fai clic sul pulsante blu **Aggiungi**.
+1. Nelle proprietà &quot;Azione\:Esperienza basata su codice&quot; ora visibili, fai clic sul pulsante **Configura azione**.
 
    ![Proprietà di azione dell&#39;esperienza basata su codice con il pulsante Configura azione](assets/create-the-journey-configure-action-button.png)
 
-4. Modifica il menu a discesa **Configurazione base codice** in **jsonOffer\_cbe** cbe creato nell&#39;ultima sezione.
+1. Modifica il menu a discesa **Configurazione base codice** in **jsonOffer\_cbe** cbe creato nell&#39;ultima sezione.
 
    ![Elenco a discesa della configurazione basata su codice impostato sul canale jsonOffer_cbe](assets/create-the-journey-select-jsonoffer-cbe.png)
 
-5. Fare clic sul pulsante **Modifica contenuto** sopra il menu a discesa &#39;Configurazione basata su codice&#39;.
-6. Nella schermata risultante dell&#39;editor di esperienze basato su codice, fare clic sul pulsante **Modifica codice**. Nella schermata risultante viene aggiunto il JSON restituito alle richieste Experience Event
+1. Fare clic sul pulsante **Modifica contenuto** sopra il menu a discesa &#39;Configurazione basata su codice&#39;.
+1. Nella schermata risultante dell&#39;editor di esperienze basato su codice, fare clic sul pulsante **Modifica codice**. Nella schermata risultante viene aggiunto il JSON restituito alle richieste Experience Event
 
    ![Schermata di modifica del codice per l&#39;editor esperienze basato su codice](assets/create-the-journey-edit-code-screen.png)
 
-7. Nell&#39;ultimo lato sinistro dell&#39;editor di codice fare clic sulla voce di menu **Criterio di decisione**, quindi fare clic sul pulsante **Aggiungi criterio di decisione** nel nuovo menu.
+1. Nell&#39;ultimo lato sinistro dell&#39;editor di codice fare clic sulla voce di menu **Criterio di decisione**, quindi fare clic sul pulsante **Aggiungi criterio di decisione** nel nuovo menu.
 
    ![Menu dei criteri di decisione con il pulsante Aggiungi criteri di decisione](assets/create-the-journey-add-decision-policy-button.png)
 
@@ -61,22 +61,22 @@ ht-degree: 0%
    >
    >Se una strategia di selezione è quella in cui si associa una raccolta di offerte a un metodo di classificazione (e si applica l’idoneità a livello di strategia), allora per criterio di decisione si intende quella in cui si associa una strategia di selezione a una consegna specifica di un canale.
 
-8. Denomina il criterio di decisione **iPhone 17 DP** e lascia il numero di elementi impostato su 1.
+1. Denomina il criterio di decisione **iPhone 17 DP** e lascia il numero di elementi impostato su 1.
 
    >[!NOTE]
    >
    >Fino a questo momento, hai configurato le offerte e come ordinarle, ma non hai configurato quante restituirle. In questa sezione puoi configurare quante offerte devono essere restituite.
 
-9. Fai clic sul pulsante blu **Avanti**. In questo punto è possibile aggiungere la strategia di selezione. Fai clic sul pulsante **+Aggiungi** (potrebbe essere necessario scorrere verso il basso per visualizzarlo) e scegli **Strategia di selezione**.
-10. Seleziona la casella accanto all&#39;unica strategia di selezione che dovresti avere (**iPhone 17 Selection Strategy**) e fai clic su **Salva**. Al termine, questo è ciò che viene visualizzato:
+1. Fai clic sul pulsante blu **Avanti**. In questo punto è possibile aggiungere la strategia di selezione. Fai clic sul pulsante **+Aggiungi** (potrebbe essere necessario scorrere verso il basso per visualizzarlo) e scegli **Strategia di selezione**.
+1. Seleziona la casella accanto all&#39;unica strategia di selezione che dovresti avere (**iPhone 17 Selection Strategy**) e fai clic su **Salva**. Al termine, questo è ciò che viene visualizzato:
 
-![Strategia di selezione di iPhone 17 selezionata per il criterio di decisione](assets/create-the-journey-selection-strategy-selected.png)
+   ![Strategia di selezione di iPhone 17 selezionata per il criterio di decisione](assets/create-the-journey-selection-strategy-selected.png)
 
->[!NOTE]
->
->Nota come aggiungere più strategie di selezione o semplicemente aggiungere gli elementi decisionali stessi. Quando utilizzare le strategie di selezione multiple? Immagina di disporre di una griglia 4 x 4 di consigli su una delle tue proprietà digitali. Vuoi riempirli tutti con 16 offerte. È possibile che tali offerte siano distribuite su alcune raccolte, oppure che le prime due righe richiedano una strategia di selezione, mentre le ultime due righe necessitano di una strategia diversa. Nella schermata precedente, avresti scelto 16 e quindi hai utilizzato questa schermata per aggiungere tutte le strategie di selezione o le offerte necessarie per raggiungere 16.
->
->L’offerta di fallback è facoltativa perché si applicherebbe solo se gli utenti finali potessero essere (o diventare) non idonei per nessuna delle offerte. Nel nostro caso, la nostra strategia di selezione era per tutti i visitatori, e le uniche persone che avrebbero raggiunto il nodo CBE erano quelle che sono entrate nel Percorso. L’autenticazione è un requisito per l’entrata nel Percorso (lo spazio dei nomi impostato nel Percorso è uno che avrebbero solo se fossero stati autenticati). Abbiamo anche creato un’offerta di fallback nella formula di classificazione, quindi nel nostro caso non è necessario impostare questa offerta di fallback.
+   >[!NOTE]
+   >
+   >Nota come aggiungere più strategie di selezione o semplicemente aggiungere gli elementi decisionali stessi. Quando utilizzare le strategie di selezione multiple? Immagina di disporre di una griglia 4 x 4 di consigli su una delle tue proprietà digitali. Vuoi riempirli tutti con 16 offerte. È possibile che tali offerte siano distribuite su alcune raccolte, oppure che le prime due righe richiedano una strategia di selezione, mentre le ultime due righe necessitano di una strategia diversa. Nella schermata precedente, avresti scelto 16 e quindi hai utilizzato questa schermata per aggiungere tutte le strategie di selezione o le offerte necessarie per raggiungere 16.
+   >
+   >L’offerta di fallback è facoltativa perché si applicherebbe solo se gli utenti finali potessero essere (o diventare) non idonei per nessuna delle offerte. Nel nostro caso, la nostra strategia di selezione era per tutti i visitatori, e le uniche persone che avrebbero raggiunto il nodo CBE erano quelle che sono entrate nel Percorso. L’autenticazione è un requisito per l’entrata nel Percorso (lo spazio dei nomi impostato nel Percorso è uno che avrebbero solo se fossero stati autenticati). Abbiamo anche creato un’offerta di fallback nella formula di classificazione, quindi nel nostro caso non è necessario impostare questa offerta di fallback.
 
 1. Fai clic sul pulsante blu **Avanti** per rivedere il criterio di decisione.
 
