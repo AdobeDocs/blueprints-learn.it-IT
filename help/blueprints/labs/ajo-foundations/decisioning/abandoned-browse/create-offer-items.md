@@ -7,7 +7,7 @@ exl-id: 76214d87-5107-4829-9d6e-91073e1008ca
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 43fcd38b8bd9c068695b1f325c367d35381d6dbe
+source-git-commit: f76215380509d20a9204e6dd3cab4cb852e0ad31
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Il primo e più semplice elemento di offerta creato è l&#39;offerta di fallback
    >
    >In pratica, e nel caso di offerte più complesse, è necessario attivare un processo di approvazione appropriato per garantire che gli elementi dell’offerta siano stati creati correttamente. Per risparmiare tempo in questo laboratorio, è sufficiente approvare ogni elemento di offerta che si crea.
 
-1. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
+12. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
 
 ## Crea articolo offerta modello base
 
