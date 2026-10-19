@@ -86,7 +86,7 @@ Il primo e più semplice elemento di offerta creato è l&#39;offerta di fallback
    >
    >In pratica, e nel caso di offerte più complesse, è necessario attivare un processo di approvazione appropriato per garantire che gli elementi dell’offerta siano stati creati correttamente. Per risparmiare tempo in questo laboratorio, è sufficiente approvare ogni elemento di offerta che si crea.
 
-12. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
+&#x200B;12. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
 
 ## Crea articolo offerta modello base
 
