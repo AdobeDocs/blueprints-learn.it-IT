@@ -54,7 +54,7 @@ Nelle pagine seguenti vengono fornite informazioni sui guardrail per le funzioni
 **Servizi Experience Platform**
 
 * [Guardrail di acquisizione dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=it)
-* [Guardrail API [!DNL Edge Network]](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [Guardrail API [!DNL Edge Network]](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=it)
 * [Guardrail di segmentazione e profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
 * [Guardrail identità](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=it)
 * [Guardrail di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=it)
