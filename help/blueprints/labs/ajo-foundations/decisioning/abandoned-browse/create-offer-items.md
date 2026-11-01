@@ -7,7 +7,7 @@ exl-id: 76214d87-5107-4829-9d6e-91073e1008ca
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: f76215380509d20a9204e6dd3cab4cb852e0ad31
+source-git-commit: 08b695f42c2652edba7d3119734b7e8a7b3235e2
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
@@ -86,15 +86,15 @@ Il primo e più semplice elemento di offerta creato è l&#39;offerta di fallback
    >
    >In pratica, e nel caso di offerte più complesse, è necessario attivare un processo di approvazione appropriato per garantire che gli elementi dell’offerta siano stati creati correttamente. Per risparmiare tempo in questo laboratorio, è sufficiente approvare ogni elemento di offerta che si crea.
 
-&#x200B;12. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
+1. Fai clic sulla **freccia sinistra** accanto al titolo dell&#39;elemento di offerta per tornare alla pagina &quot;Offerte&quot; e visualizzi la tua offerta iphone:17\:generica elencata.
 
 ## Crea articolo offerta modello base
 
 Una volta creato l’articolo di offerta generico, puoi creare l’articolo di offerta con priorità successiva per il modello di base di iPhone 17.
 
 1. Fai nuovamente clic sul pulsante blu **Crea elemento** e assegna all&#39;offerta il nome **iphone:17\:base**
-2. Poiché si tratta dell&#39;elemento di offerta con priorità inferiore, aumenta il campo **Priorità** a **2**
-3. Espandi l&#39;area **Dispositivo** e assegna ai campi i seguenti valori:
+1. Poiché si tratta dell&#39;elemento di offerta con priorità inferiore, aumenta il campo **Priorità** a **2**
+1. Espandi l&#39;area **Dispositivo** e assegna ai campi i seguenti valori:
    - Livello: **Base**
    - Modello: **17**
    - Marca: **iPhone**
@@ -105,9 +105,9 @@ Una volta creato l’articolo di offerta generico, puoi creare l’articolo di o
 
    Quando tutto è corretto, fai clic sul pulsante blu **Avanti** per procedere al passaggio successivo.
 
-4. Questo elemento dell’offerta deve essere disponibile per tutti, quindi non esiste alcun requisito di idoneità; tuttavia, deve essere limitato a 3 impression al giorno. Fare clic sul pulsante &#39;**+ Crea limite&#39;**.
-5. Nella nuova regola di limite, modifica **Scegli evento limite** in **Impression.**
-6. Cambia il **conteggio eventi limite** in **3**. Al termine, la regola di limite si presenta così:
+1. Questo elemento dell’offerta deve essere disponibile per tutti, quindi non esiste alcun requisito di idoneità; tuttavia, deve essere limitato a 3 impression al giorno. Fare clic sul pulsante &#39;**+ Crea limite&#39;**.
+1. Nella nuova regola di limite, modifica **Scegli evento limite** in **Impression.**
+1. Cambia il **conteggio eventi limite** in **3**. Al termine, la regola di limite si presenta così:
 
    ![Regola di limite per l&#39;offerta di base impostata su 3 impression](assets/create-offer-items-base-offer-capping-rule.png)
 
@@ -123,9 +123,9 @@ Una volta creato l’articolo di offerta generico, puoi creare l’articolo di o
    >
    >I &quot;giorni&quot; menzionati nelle regole del limite di frequenza si riferiscono ai giorni nel fuso orario GMT.  Limitazione della frequenza con giorni nella logica ripristinata a mezzanotte, GMT.
 
-7. Fai clic su **Avanti** per passare al passaggio di revisione.
-8. Assicurati che tutto appaia come previsto e fai clic sul pulsante **Salva**. Una volta salvato, fai clic su **Approva.**
-9. Una volta approvata, fai clic sulla freccia sinistra accanto al titolo e torna alla pagina delle offerte. Ora vengono visualizzate due offerte, ciascuna con la priorità appropriata.
+1. Fai clic su **Avanti** per passare al passaggio di revisione.
+1. Assicurati che tutto appaia come previsto e fai clic sul pulsante **Salva**. Una volta salvato, fai clic su **Approva.**
+1. Una volta approvata, fai clic sulla freccia sinistra accanto al titolo e torna alla pagina delle offerte. Ora vengono visualizzate due offerte, ciascuna con la priorità appropriata.
 
 ![Pagina Offerte in cui sono elencati gli elementi di offerta generici e di base con le relative priorità](assets/create-offer-items-first-two-offers-priority.png)
 
@@ -134,23 +134,23 @@ Una volta creato l’articolo di offerta generico, puoi creare l’articolo di o
 Ora che sono state create le offerte del modello generico e di base, potete passare agli elementi di offerta dei modelli pro e ultra. Questi articoli di offerta devono includere anche un elemento di idoneità, perché solo i membri con un determinato livello di piano devono vedere queste offerte.
 
 1. Seguendo gli stessi passaggi e gli stessi pattern di denominazione descritti nelle sezioni precedenti, crea una nuova offerta denominata **iphone:17\:pro** e impostane la priorità su **3.**
-2. Imposta l&#39;attributo **Livello** su **Pro** e gli altri attributi personalizzati come nelle altre offerte.
-3. Nel passaggio &#39;Idoneità&#39; selezionare il pulsante di scelta **Per regola**.
-4. La barra a sinistra mostra una sola regola di decisione, quella creata in precedenza denominata &quot;Piani di livello superiore&quot;. Fai clic sull&#39;icona **+** accanto a quella regola per aggiungerla all&#39;area di lavoro.
-5. Come accennato in precedenza, l’azienda ha dichiarato che le offerte non di fallback dovrebbero avere un limite di frequenza di 3 display (o impression) al giorno. Segui i passaggi descritti nella sezione precedente per creare una regola di limite per 3 impression al giorno. Al termine, la pagina si presenta così:
+1. Imposta l&#39;attributo **Livello** su **Pro** e gli altri attributi personalizzati come nelle altre offerte.
+1. Nel passaggio &#39;Idoneità&#39; selezionare il pulsante di scelta **Per regola**.
+1. La barra a sinistra mostra una sola regola di decisione, quella creata in precedenza denominata &quot;Piani di livello superiore&quot;. Fai clic sull&#39;icona **+** accanto a quella regola per aggiungerla all&#39;area di lavoro.
+1. Come accennato in precedenza, l’azienda ha dichiarato che le offerte non di fallback dovrebbero avere un limite di frequenza di 3 display (o impression) al giorno. Segui i passaggi descritti nella sezione precedente per creare una regola di limite per 3 impression al giorno. Al termine, la pagina si presenta così:
 
    ![Idoneità all&#39;elemento dell&#39;offerta Pro e configurazione del limite per 3 impression al giorno](assets/create-offer-items-pro-offer-eligibility-capping.png)
 
-6. Dopo aver verificato che tutto è corretto, fai clic su **Avanti**. La configurazione finale dell’articolo offerta è simile alla seguente:
+1. Dopo aver verificato che tutto è corretto, fai clic su **Avanti**. La configurazione finale dell’articolo offerta è simile alla seguente:
 
    ![Configurazione completata per l&#39;elemento dell&#39;offerta livello Pro](assets/create-offer-items-pro-offer-final-config.png)
 
-7. Una volta che tutto sembra corretto, **Salva** e **Approva** l&#39;elemento dell&#39;offerta.
-8. Torna alla pagina delle offerte e verifica che le 3 offerte siano presenti e che abbiano ciascuna la priorità corretta.
-9. Crea l&#39;elemento di offerta finale e denominalo **iphone:17\:ultra,** assegnagli una priorità di **4,** e imposta gli altri attributi personalizzati con gli stessi valori delle altre offerte.
-10. Come per l’ultimo elemento di offerta, imposta l’idoneità alla regola di decisione &quot;Piani di livello superiore&quot; e imposta un limite di frequenza di 3 impression al giorno. Al termine, l&#39;oggetto dell&#39;offerta avrà un aspetto simile al seguente:
+1. Una volta che tutto sembra corretto, **Salva** e **Approva** l&#39;elemento dell&#39;offerta.
+1. Torna alla pagina delle offerte e verifica che le 3 offerte siano presenti e che abbiano ciascuna la priorità corretta.
+1. Crea l&#39;elemento di offerta finale e denominalo **iphone:17\:ultra,** assegnagli una priorità di **4,** e imposta gli altri attributi personalizzati con gli stessi valori delle altre offerte.
+1. Come per l’ultimo elemento di offerta, imposta l’idoneità alla regola di decisione &quot;Piani di livello superiore&quot; e imposta un limite di frequenza di 3 impression al giorno. Al termine, l&#39;oggetto dell&#39;offerta avrà un aspetto simile al seguente:
 
-![Configurazione completata per l&#39;elemento di offerta Ultra tier](assets/create-offer-items-ultra-offer-final-config.png)
+   ![Configurazione completata per l&#39;elemento di offerta Ultra tier](assets/create-offer-items-ultra-offer-final-config.png)
 
 1. Dopo aver verificato che tutte le impostazioni siano corrette, salva e approva l&#39;elemento dell&#39;offerta. Ora puoi vedere tutti e quattro gli elementi dell’offerta, ciascuno con una priorità univoca.
 
