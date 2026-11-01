@@ -74,7 +74,7 @@ Con questa funzionalità, puoi fornire esperienze altamente personalizzate sui t
 ## Guardrail
 
 * [Guardrail per [!UICONTROL dati Profilo cliente in tempo reale]](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
-* [Guardrail di Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [Guardrail di Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=it)
 * I profili Edge hanno un TTL (time-to-live) di 14 giorni. Se un utente non è attivo sul server Edge per 14 giorni, il profilo Edge potrebbe scadere e richiedere il recupero dall’hub, il che potrebbe influire sulla personalizzazione della prima pagina.
 * La funzione di personalizzazione di Edge supporta la valutazione in tempo reale dell’iscrizione al pubblico per i tipi di pubblico che soddisfano i criteri di segmentazione Edge. I tipi di pubblico in batch e in streaming dall’hub sono disponibili anche al limite con la configurazione appropriata.
 

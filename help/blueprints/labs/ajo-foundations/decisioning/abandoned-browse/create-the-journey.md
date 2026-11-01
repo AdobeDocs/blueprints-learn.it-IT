@@ -7,7 +7,7 @@ exl-id: 34f56d95-564b-4cf6-b105-22da276e8e41
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 43fcd38b8bd9c068695b1f325c367d35381d6dbe
+source-git-commit: 999b0f4e8d401991e099c0598b8031ceb632d8fd
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 0%
@@ -18,17 +18,17 @@ ht-degree: 0%
 ## Denomina e definisci i criteri di ingresso
 
 1. Se necessario, espandi la voce di menu **Gestione Percorsi** nella barra a sinistra e fai clic su **Percorsi**. Arrivi alla pagina &quot;Percorsi&quot;.
-2. Fai clic sul pulsante blu **Crea Percorso**.
-3. Quando viene visualizzata la sovrapposizione &#39;Crea Percorso&#39;, seleziona **Crea da zero** e fai clic su **Conferma**
-4. Nella barra a destra, assegna al Percorso il nome **iPhone 17 Abbandona Sfoglia** e fai clic sul pulsante blu **Salva** per iniziare ad aggiungere azioni all&#39;area di lavoro del Percorso.
-5. Trascina l&#39;evento **Qualificazione del pubblico** nell&#39;area di lavoro.
-6. Nella barra a destra, fai clic sull&#39;icona **Matita** per selezionare il pubblico per questo evento.
-7. Seleziona **dep: interessato al pubblico di iPhone 17**.
-8. Verificare che l&#39;elenco a discesa **Namespace** sia impostato su **customerID.** A questo punto, il Percorso si presenta così:
+1. Fai clic sul pulsante blu **Crea Percorso**.
+1. Quando viene visualizzata la sovrapposizione &#39;Crea Percorso&#39;, seleziona **Crea da zero** e fai clic su **Conferma**
+1. Nella barra a destra, assegna al Percorso il nome **iPhone 17 Abbandona Sfoglia** e fai clic sul pulsante blu **Salva** per iniziare ad aggiungere azioni all&#39;area di lavoro del Percorso.
+1. Trascina l&#39;evento **Qualificazione del pubblico** nell&#39;area di lavoro.
+1. Nella barra a destra, fai clic sull&#39;icona **Matita** per selezionare il pubblico per questo evento.
+1. Seleziona **dep: interessato al pubblico di iPhone 17**.
+1. Verificare che l&#39;elenco a discesa **Namespace** sia impostato su **customerID.** A questo punto, il Percorso si presenta così:
 
    ![Area di lavoro di Percorso con l&#39;evento Audience Qualification aggiunto e spazio dei nomi impostato su customerID](assets/create-the-journey-audience-qualification-event.png)
 
-9. Quando tutti avranno l&#39;aspetto corretto, fai clic sul pulsante blu **Salva** per salvare l&#39;avanzamento.
+1. Quando tutti avranno l&#39;aspetto corretto, fai clic sul pulsante blu **Salva** per salvare l&#39;avanzamento.
 
 >[!NOTE]
 >
