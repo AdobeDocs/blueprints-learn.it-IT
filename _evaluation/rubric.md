@@ -1,9 +1,13 @@
 ---
-source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 1%
 ---
+
 # Valutazione blueprint
 
 Questa rubrica viene applicata a ogni documento nella sezione &quot;Diagrammi architettura e blueprint&quot;
@@ -41,11 +45,11 @@ solo una breve panoramica.
 
 ### Segnali del diagramma (ciascuno = +1 diagramma)
 
-&#x200B;6. **Architettura/immagine del flusso di dati presente** - `.svg`, `.png` o `.jpg` con topologia di sistema,
+6. **Architettura/immagine del flusso di dati presente** - `.svg`, `.png` o `.jpg` con topologia di sistema,
 flusso di dati o frecce di integrazione.
-&#x200B;7. **Topologia di integrazione tra sistemi, forma di distribuzione o guardrail**: descrive come
+7. **Topologia di integrazione tra sistemi, forma di distribuzione o guardrail**: descrive come
 i componenti si connettono, dove risiedono i dati, i modelli di distribuzione (edge vs. hub) o i limiti di capacità.
-&#x200B;8. **Il pubblico è un architetto della soluzione**. Il frame utilizza distribuzione, SDK, Edge, hub o simili
+8. **Il pubblico è un architetto della soluzione**. Il frame utilizza distribuzione, SDK, Edge, hub o simili
 una terminologia orientata agli architetti piuttosto che orientata agli addetti al marketing (campagne, percorsi,
 pubblico).
 

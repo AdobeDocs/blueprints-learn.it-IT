@@ -1,9 +1,13 @@
 ---
-source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 4%
 ---
+
 # Guida di riferimento del documento blueprint - Guida dettagliata
 
 ## Tipi di documenti
@@ -14,7 +18,7 @@ ht-degree: 4%
 | **Blueprint scenario** | Caso d’uso singolo: architettura, passaggi, guardrail | e.g. `real-time-lookup.md`, `journey-optimizer-journeys.md` |
 | **SOMMARIO** | Navigazione; non utilizzare come modello di contenuto | `help/blueprints/TOC.md` |
 
-&#x200B;---
+---
 
 ## Riferimento di sezione completo
 
@@ -45,7 +49,7 @@ ht-degree: 4%
 - **Scenari blueprint** o **Modelli di integrazione**: tabella con nome scenario, breve descrizione e collegamento al blueprint dello scenario.
 - **Prerequisiti**, **Guardrail**, **Documentazione correlata**: Come sopra; concisa.
 
-&#x200B;---
+---
 
 ## Adobe Experience League — Istruzioni per l’agente
 
@@ -64,7 +68,7 @@ Non incollare nella blueprint procedure lunghe da Experience League. Riepiloga e
 | Tipo di contenuto | URL di base | Percorso di esempio |
 |--------------|----------|--------------|
 | Documentazione di Experience Platform | `https://experienceleague.adobe.com/docs/experience-platform/` | `.../profile/home.html`, `.../destinations/catalog/...` |
-| Experience League (it) | `https://experienceleague.adobe.com/it/docs/` | Stessa struttura con `/en/`. |
+| Experience League (it) | `https://experienceleague.adobe.com/en/docs/` | Stessa struttura con `/en/`. |
 | Blueprint per | `https://experienceleague.adobe.com/docs/journey-optimizer/` | `.../using/get-started/guardrails.html` |
 | Web SDK | `https://experienceleague.adobe.com/docs/experience-platform/web-sdk/` | `.../home.html`, `.../commands/command-responses.html` |
 | API server di Edge Network | `https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/` | `.../overview.html`, `.../guardrails.html` |
@@ -76,7 +80,7 @@ Utilizza il percorso canonico corrispondente al sito Experience League corrente 
 
 ### Formattazione dei collegamenti nel markdown
 
-- **Testo collegamento descrittivo**: `[Create schemas](https://experienceleague.adobe.com/it...)` non &quot;fare clic qui&quot;.
+- **Testo collegamento descrittivo**: `[Create schemas](https://experienceleague.adobe.com/...)` non &quot;fare clic qui&quot;.
 - **Nomi di prodotto nel testo**: utilizzare `[!DNL Product Name]` per stile Adobe (esempio: `[!DNL Real-time Customer Profile]`).
 - **Collegamenti esterni**: aggiungi `{target="_blank"}` solo quando il modello o la pipeline lo richiede (controlla i blueprint esistenti nell&#39;archivio).
 
@@ -97,19 +101,19 @@ Esempio:
 ## Related documentation
 
 ### Destination configurations
-* [Custom Personalization Connection](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/custom-personalization)
-* [Activate audiences to edge personalization destinations](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
+* [Custom Personalization Connection](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization)
+* [Activate audiences to edge personalization destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
 
 ### SDK documentation
-* [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=it)
-* [Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=it)
+* [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)
+* [Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 ### Profile and segmentation
-* [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
-* [Profile Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it)
+* [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Profile Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 ```
 
-&#x200B;---
+---
 
 ## Repo e TOC
 
@@ -117,7 +121,7 @@ Esempio:
 - **Assets**: individua insieme al blueprint (ad esempio `assets/`, `images/`) o in una cartella condivisa (ad esempio `experience-platform/assets/`).
 - **TOC**: modifica `help/blueprints/TOC.md` quando aggiungi, rinomina o sposta pagine blueprint. Mantenere il frontmatter (`user-guide-title`, `breadcrumb-title`, `user-guide-description`, `product`, `mini-toc-levels`, `role`) e la gerarchia `+`.
 
-&#x200B;---
+---
 
 ## Riferimenti di esempio in questo archivio
 

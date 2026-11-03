@@ -1,13 +1,14 @@
 ---
 name: blueprint-document-reference
 description: Riferimento per la creazione e la modifica di documenti di Adobe Digital Experience Blueprint. Da utilizzare per creare nuovi blueprint, aggiungere pagine blueprint o quando l’utente chiede informazioni su struttura, sezioni, modelli blueprint o riferimenti ad Adobe Experience League.
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
-
 ---
-
 
 # Riferimento documento blueprint
 
@@ -98,8 +99,8 @@ Per le pagine di panoramica o hub, utilizza una struttura più breve: introduzio
 ## Riferimento ad Adobe Experience League
 
 - **Quando collegare**: collega ad Experience League per la documentazione del prodotto, i riferimenti API, i guardrail, i tutorial e i passaggi di configurazione. Non duplicare lunghe procedure; riepiloga e collega.
-- **Formato URL**: utilizzare URL completi. Preferisci `https://experienceleague.adobe.com/docs/?lang=it...` o `https://experienceleague.adobe.com/it/docs/...`. Per i documenti per sviluppatori, `https://developer.adobe.com/...` è valido.
-- **Testo collegamento**: usa testo descrittivo (ad esempio &quot;[Crea schemi] (url)&quot; non &quot;Fai clic qui&quot;). Per i nomi dei prodotti nel testo del collegamento, utilizzare `[!DNL Product Name]` quando appropriato.
+- **Formato URL**: utilizzare URL completi. Preferisci `https://experienceleague.adobe.com/docs/...` o `https://experienceleague.adobe.com/en/docs/...`. Per i documenti per sviluppatori, `https://developer.adobe.com/...` è valido.
+- **Testo collegamento**: usa testo descrittivo (ad esempio &quot;[Crea schemi](url)&quot; non &quot;Fai clic qui&quot;). Per i nomi dei prodotti nel testo del collegamento, utilizzare `[!DNL Product Name]` quando appropriato.
 - **Sezione documentazione correlata**: fine dei blueprint con una sezione &quot;Documentazione correlata&quot; che raggruppa i collegamenti per categoria (ad esempio, configurazioni di destinazione, documentazione di SDK, profilo e segmentazione, tutorial).
 
 Per i pattern URL dettagliati, il raggruppamento di collegamenti e gli esempi, vedi [reference.md](reference.md).

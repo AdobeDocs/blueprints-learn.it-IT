@@ -2,20 +2,21 @@
 name: Adobe Experience League Authoring Guidelines
 description: Riferimento completo per le regole di authoring di Markdown di Adobe Experience League, scansionato dalla guida ufficiale all’authoring di marzo 2026.
 type: reference
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 0%
-
 ---
-
 
 # Linee guida per l’authoring di Adobe Experience League
 
 Source: https://experienceleague.adobe.com/en/docs/authoring-guide/using/home
 Scansionato: 15/03/2026
 
-&#x200B;---
+---
 
 ## &#x200B;1. METADATI/FRONT MATTER
 
@@ -54,7 +55,7 @@ Scansionato: 15/03/2026
 ### Campi obsoleti
 seo-title, seo-description, pubblico, difficoltà, uuid (dall&#39;era della migrazione)
 
-&#x200B;---
+---
 
 ## &#x200B;2. SINTASSI MARKDOWN (AROMATIZZATO CON ADOBE)
 
@@ -120,13 +121,10 @@ seo-title, seo-description, pubblico, difficoltà, uuid (dall&#39;era della migr
 
   ```
   ```javascript
-
   code here
-
   ```
 
   ```
-
   
   
 - Opzioni: `{line-numbers="true"}`, `{start-line="7"}`, `{highlight="11-13, 16"}`
@@ -143,7 +141,7 @@ seo-title, seo-description, pubblico, difficoltà, uuid (dall&#39;era della migr
 - Opzione layout tabella Markdown: aggiungi `{style="table-layout:auto"}` dopo la tabella con righe vuote
 - Evitare tabelle molto ampie/alte a causa di problemi di visibilità delle barre di scorrimento orizzontali
 
-&#x200B;---
+---
 
 ## &#x200B;3. ESTENSIONI SPECIALI DELLA SINTASSI ADOBE
 
@@ -177,8 +175,7 @@ seo-title, seo-description, pubblico, difficoltà, uuid (dall&#39;era della migr
 >[!ERROR]
 >[!SUCCESS]
 ```
-
-- CRITICO: nessuno spazio tra `>` e `[ !`. Utilizzare `>[!NOTE]` NOT `> [!NOTE]`
+- CRITICO: nessuno spazio tra `>` e `[!`. Utilizzare `>[!NOTE]` NOT `> [!NOTE]`
 - Aggiungi una riga vuota tra `>[!NOTE]` e la riga del corpo del testo
 
 ### Schede
@@ -202,7 +199,6 @@ Content here
 Content inside
 +++
 ```
-
 Nota: le sezioni comprimibili nidificate NON sono supportate.
 
 ### Scatole ombreggiature
@@ -218,7 +214,6 @@ Content here
 ```
 >[!VIDEO](https://video.tv.adobe.com/v/ID/?quality=12&learn=on)
 ```
-
 Aggiungi `{transcript=true}` per le trascrizioni.
 
 ### Altri argomenti correlati
@@ -244,7 +239,6 @@ Aggiungi `{transcript=true}` per le trascrizioni.
 ```
 [!BADGE Label]{type=Informative url="https://example.com" tooltip="text"}
 ```
-
 Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (grigio), `Caution` (giallo)
 
 ### Evidenziazione testo (anteprima)
@@ -278,7 +272,7 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 - Regole orizzontali
 - Sezioni comprimibili nidificate
 
-&#x200B;---
+---
 
 ## &#x200B;4. DENOMINAZIONE DEI FILE E STRUTTURA DELLE CARTELLE
 
@@ -308,7 +302,7 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 - Metadati sommario: `user-guide-description`, facoltativamente `breadcrumb-title`
 - `mini-toc-levels`: controlla la visualizzazione dell&#39;intestazione del menu di navigazione a destra (1-6, impostazione predefinita 2)
 
-&#x200B;---
+---
 
 ## &#x200B;5. QUALITÀ DEI CONTENUTI E STANDARD EDITORIALI
 
@@ -354,7 +348,7 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 - Solo maiuscole/minuscole per il campo di metadati `title`
 - I sostantivi appropriati sono sempre maiuscoli
 
-&#x200B;---
+---
 
 ## &#x200B;6. BEST PRACTICE SEO
 
@@ -362,7 +356,7 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 - Gerarchia di intestazioni sequenziali (h1 → h2 → h3, senza saltare mai i livelli)
 - Includi parole chiave in H1, corpo del testo e metadati (non nel metatag `keywords`, verrà ignorato da Google)
 - Evita l&#39;inserimento di parole chiave (intento > frequenza)
-- Titolo: max. 50-60 caratteri; il sistema aggiunge &quot;| Adobe ProductName&quot; automaticamente
+- Titolo: max. 50-60 caratteri; il sistema aggiunge automaticamente &quot;| Adobe ProductName&quot;
 - Descrizione: 150-160 caratteri; deve essere un call to action, non una ripetizione di contenuto
 - Aggiungi testo alternativo descrittivo a tutte le immagini
 - Includi trascrizioni video (i motori di ricerca possono solo leggere il testo)
@@ -371,7 +365,7 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 - Utilizza strumenti come AnswerThePublic, Google Trends per cercare parole chiave
 - Il contenuto deve dimostrare l&#39;E-A-T (esperienza, competenza, autorevolezza, affidabilità)
 
-&#x200B;---
+---
 
 ## &#x200B;7. LOCALIZZAZIONE
 
@@ -391,7 +385,7 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 - `[!DNL ProductName]` — impedisce la traduzione di prodotti/marchi
 - Le immagini in una cartella &quot;do-not-localize&quot; (non localizzare) sono escluse dalla localizzazione
 
-&#x200B;---
+---
 
 ## &#x200B;8. TIPI DI CONTENUTO
 
@@ -402,13 +396,13 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 - **Articoli della Knowledge Base**: breve, contenuto temporaneamente rilevante per la risoluzione dei problemi
 - **Pagina di destinazione/Home page**: gestita separatamente (SCCM)
 
-&#x200B;---
+---
 
 ## &#x200B;9. ERRORI DI CONVALIDA COMUNI DA EVITARE
 
 - Metadati `title` o `description` mancanti o vuoti
 - `description` non inizia con &quot;Ulteriori informazioni su...&quot; o &quot;Scopri come...&quot;
-- Spazio tra `>` e `[ !` nella sintassi del callout (`> [!NOTE]` anziché `>[!NOTE]`)
+- Spazio tra `>` e `[!` nella sintassi del callout (`> [!NOTE]` anziché `>[!NOTE]`)
 - Spazi in grassetto: `**text **` (lo spazio finale è in grassetto)
 - Sintassi Markdown all’interno delle tabelle HTML (ad esempio, i callout non funzionano lì)
 - ID di ancoraggio titolo duplicati in un documento
