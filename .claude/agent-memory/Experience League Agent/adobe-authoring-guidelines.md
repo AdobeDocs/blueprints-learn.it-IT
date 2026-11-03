@@ -2,13 +2,14 @@
 name: Adobe Experience League Authoring Guidelines
 description: Riferimento completo per le regole di authoring di Markdown di Adobe Experience League, scansionato dalla guida ufficiale all’authoring di marzo 2026.
 type: reference
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 0%
-
 ---
-
 
 # Linee guida per l’authoring di Adobe Experience League
 
@@ -178,7 +179,7 @@ seo-title, seo-description, pubblico, difficoltà, uuid (dall&#39;era della migr
 >[!SUCCESS]
 ```
 
-- CRITICO: nessuno spazio tra `>` e `[ !`. Utilizzare `>[!NOTE]` NOT `> [!NOTE]`
+- CRITICO: nessuno spazio tra `>` e `[!`. Utilizzare `>[!NOTE]` NOT `> [!NOTE]`
 - Aggiungi una riga vuota tra `>[!NOTE]` e la riga del corpo del testo
 
 ### Schede
@@ -362,7 +363,7 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 - Gerarchia di intestazioni sequenziali (h1 → h2 → h3, senza saltare mai i livelli)
 - Includi parole chiave in H1, corpo del testo e metadati (non nel metatag `keywords`, verrà ignorato da Google)
 - Evita l&#39;inserimento di parole chiave (intento > frequenza)
-- Titolo: max. 50-60 caratteri; il sistema aggiunge &quot;| Adobe ProductName&quot; automaticamente
+- Titolo: max. 50-60 caratteri; il sistema aggiunge automaticamente &quot;| Adobe ProductName&quot;
 - Descrizione: 150-160 caratteri; deve essere un call to action, non una ripetizione di contenuto
 - Aggiungi testo alternativo descrittivo a tutte le immagini
 - Includi trascrizioni video (i motori di ricerca possono solo leggere il testo)
@@ -408,7 +409,7 @@ Tipi: `Informative` (blu), `Positive` (verde), `Negative` (rosso), `Neutral` (gr
 
 - Metadati `title` o `description` mancanti o vuoti
 - `description` non inizia con &quot;Ulteriori informazioni su...&quot; o &quot;Scopri come...&quot;
-- Spazio tra `>` e `[ !` nella sintassi del callout (`> [!NOTE]` anziché `>[!NOTE]`)
+- Spazio tra `>` e `[!` nella sintassi del callout (`> [!NOTE]` anziché `>[!NOTE]`)
 - Spazi in grassetto: `**text **` (lo spazio finale è in grassetto)
 - Sintassi Markdown all’interno delle tabelle HTML (ad esempio, i callout non funzionano lì)
 - ID di ancoraggio titolo duplicati in un documento

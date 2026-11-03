@@ -1,13 +1,14 @@
 ---
 name: blueprint-document-reference
 description: Riferimento per la creazione e la modifica di documenti di Adobe Digital Experience Blueprint. Da utilizzare per creare nuovi blueprint, aggiungere pagine blueprint o quando l’utente chiede informazioni su struttura, sezioni, modelli blueprint o riferimenti ad Adobe Experience League.
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
-
 ---
-
 
 # Riferimento documento blueprint
 
