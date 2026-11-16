@@ -7,9 +7,9 @@ exl-id: 5602b0ba-95e2-455f-affd-081df540c999
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 5ddc029828ce7ecc167555ed900a136690b10677
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '131'
 ht-degree: 4%
 ---
 
@@ -29,9 +29,9 @@ Nei passaggi successivi inizierai con la creazione di una campagna orchestrata.
 
    ![Fai clic sul pulsante Crea campagna](assets/create-a-campaign-click-create-campaign.png)
 
-3. Seleziona **Orchestrazione - Marketing** e fai clic su **Conferma**
+3. Seleziona **Orchestration Marketing and transazionale** e fai clic su **Conferma**
 
-   ![Seleziona orchestrazione - Marketing e fai clic su Conferma](assets/create-a-campaign-select-orchestration-marketing.png)
+   ![Seleziona transazione e marketing orchestrazione, quindi fai clic su Conferma](assets/create-a-campaign-select-orchestration-marketing.png)
 
 4. Fornisci di seguito i dettagli della campagna, quindi al termine fai clic sul pulsante **Salva**
    - **Nome:** `OC-MDL-Campaign-Test`
