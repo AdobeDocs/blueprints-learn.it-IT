@@ -7,7 +7,7 @@ exl-id: bfc71051-e471-4d5c-a9a7-bb6805a5acb1
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 9750fa1d2fe4054d4c9efd76f5f58210a4d99adc
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 
 
-6. Fai clic sul pulsante **Salva** per creare il Dimension di destinazione del profilo. Viene quindi visualizzato il record.
+6. Fai clic sul pulsante **Crea** per creare il Dimension di destinazione del profilo. Viene quindi visualizzato il record.
 
 ![Record Dimension di destinazione profilo salvato nell&#39;elenco](assets/profile-target-dimension-saved-record.png)
 
@@ -109,4 +109,4 @@ Il profilo Target Dimension viene utilizzato per indicare a Adobe Journey Optimi
 
 Ora hai visto quanto è facile navigare nello schema, contrassegnare un attributo come identità e creare il Dimension di destinazione del profilo.
 
-Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension) se sei interessato.
+Puoi trovare ulteriori [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension) se sei interessato.

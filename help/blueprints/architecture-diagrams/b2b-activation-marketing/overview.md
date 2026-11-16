@@ -20,10 +20,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
+source-git-commit: ea991411ae0339bb4a1a36ac994fa76097d37307
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 80%
+source-wordcount: '164'
+ht-degree: 82%
 ---
 # Attivazione e marketing B2B
 
@@ -33,5 +33,4 @@ Con l’approccio di priorità al canale, ogni canale funziona come un comparto 
 
 | Diagramma | Descrizione |
 | --- | --- |
-| [Attivazione del pubblico B2B e del profilo](b2b-audience-profile-activation.md) | Attivare i tipi di pubblico basati su account e persone con Real-Time Customer Data Platform B2B edition |
-| [Attivazione account B2B](b2b-account-activation.md) | Account B2B di destinazione tramite annunci pubblicitari e destinazioni basate su file |
+| [Attivazione del pubblico B2B e del profilo](b2b-audience-profile-activation.md) | Attiva i tipi di pubblico delle persone tra i canali supportati e i tipi di pubblico degli account per la pubblicità e le destinazioni dei file con Real-Time Customer Data Platform B2B edition |

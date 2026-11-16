@@ -7,9 +7,9 @@ exl-id: 4d1c1d4d-0dc6-4ea1-aa3c-f959bb3b9aa8
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: f567be64556e08729dc2df77f7c120771eabf03c
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '592'
 ht-degree: 0%
 ---
 
@@ -78,6 +78,7 @@ Per creare un Percorso che utilizza un evento unitario, è necessario innanzitut
 9. Avanti aggiorna gli ultimi due valori di Spazio dei nomi e Identificatore profilo con i valori mostrati di seguito:
    - **Spazio dei nomi** —> `Email`
    - **Identificatore profilo** —> `personalEmail`
+     Puoi trovarlo sotto il nome tenant dell’ambiente che inizia con il carattere di sottolineatura, in questo esempio _dep.)
 
 ![Spazio dei nomi impostato su E-mail e Identificatore profilo impostato su personalEmail](assets/configure-event-select-profile-identifier.png)
 

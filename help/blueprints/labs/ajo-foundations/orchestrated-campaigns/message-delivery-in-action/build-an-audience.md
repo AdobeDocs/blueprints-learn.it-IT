@@ -4,13 +4,11 @@ description: Scopri come utilizzare l’attività Genera pubblico per eseguire i
 doc-type: article
 solution: Experience Platform
 exl-id: 7576e64b-d99a-4864-b877-f4ae77e1d7bd
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 9a38e7016b9fdca00bc49be00fe03a0e8e5ed26d
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
-
 ---
-
 
 # Creare un pubblico
 
@@ -40,11 +38,11 @@ Nel prossimo set di passaggi creerai un pubblico dallo schema relazionale selezi
 
    ![Fai clic su Aggiungi condizione in Crea riquadro pubblico](assets/build-an-audience-add-condition.png)
 
-6. Scorri verso il basso ed espandi `dep-rel: Plan Lookup` facendo clic su **>** accanto
+6. Scorri verso il basso ed espandi `dep-rel: Plan [Lookup]` facendo clic su **>** accanto
 
    ![Espandi dep-rel: ricerca piano](assets/build-an-audience-expand-plan-lookup.png)
 
-7. Seleziona `dep-rel: Plan Name` e fai clic su **Conferma**
+7. Seleziona `Plan Name` e fai clic su **Conferma**
 
    ![Selezionare dep-rel: nome piano](assets/build-an-audience-select-plan-name.png)
 

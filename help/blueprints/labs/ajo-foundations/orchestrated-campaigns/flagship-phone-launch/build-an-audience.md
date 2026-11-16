@@ -4,13 +4,11 @@ description: Scopri come utilizzare l’attività Genera pubblico in una campagn
 doc-type: article
 solution: Experience Platform
 exl-id: 697d3edb-2b63-4038-a934-3587495e17f7
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 44d25df10492b3df80fe3887f75ab71e1ebf4743
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
-
 ---
-
 
 # Creare un pubblico
 
@@ -165,6 +163,6 @@ Si supponga per un momento di aver digitato nell&#39;ultima condizione in modo c
 
 ## Riassunto
 
-Hai creato correttamente il primo pubblico e ora dovresti vedere quanto è facile sviluppare e convalidare i conteggi nell’attività Genera pubblico.
+Dopo aver creato correttamente un pubblico, ora dovresti vedere quanto è facile sviluppare e convalidare i conteggi nell’attività Genera pubblico.
 
 ![Compilazione dell&#39;attività del pubblico completata dopo il riassunto](assets/build-an-audience-recap-completed-audience.png)
