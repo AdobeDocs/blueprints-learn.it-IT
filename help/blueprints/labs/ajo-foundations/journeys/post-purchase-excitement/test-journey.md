@@ -27,7 +27,7 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
    ![Fare clic per convalidare il percorso](assets/test-journey-click-validate.png)
 
-5. Fai clic su **Avvisi** e assicurati che non ci siano errori (gli avvisi vanno bene)
+&#x200B;5. Fai clic su **Avvisi** e assicurati che non ci siano errori (gli avvisi vanno bene)
 
    ![Il pannello Avvisi non mostra errori dopo l&#39;apertura del percorso](assets/test-journey-alerts-no-errors.png)
 
@@ -37,9 +37,9 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
    >
    >Indica che in una variante e-mail manca il collegamento di rinuncia
 
-6. Fai clic su **Simula**, quindi seleziona **Modalità test**
+&#x200B;6. Fai clic su **Simula**, quindi seleziona **Modalità test**
 
-   ![Stampa simulazione ](assets/test-journey-select-test-mode.png)
+   ![Stampa simulazione &#x200B;](assets/test-journey-select-test-mode.png)
 
    ![Modalità di prova selezionata nel popup](assets/test-journey-select-test-mode-in-popup.png)
 
@@ -51,11 +51,11 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
 
 
-7. Fai clic su **Attiva un evento** a sinistra e compila le seguenti proprietà:
+&#x200B;7. Fai clic su **Attiva un evento** a sinistra e compila le seguenti proprietà:
    - **Tipo evento**: `orders.shipped`
    - **E-mail personale**: `henry.creel@emailsim.io`
    - **ID ordine**: `123`
-8. Fai clic su **Invia** (la risposta richiede alcuni secondi dopo aver fatto clic su Invia)
+&#x200B;8. Fai clic su **Invia** (la risposta richiede alcuni secondi dopo aver fatto clic su Invia)
 
    ![Attiva un modulo evento compilato e Invia selezionato](assets/test-journey-trigger-event-send.png)
 
@@ -71,7 +71,7 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
 
 
-9. In **Risultati** -> Fai clic su **Mostra registro** a sinistra
+&#x200B;9. In **Risultati** -> Fai clic su **Mostra registro** a sinistra
 
 ![Mostra opzione di registro in Risultati dopo l&#39;attivazione dell&#39;evento di test](assets/test-journey-show-log-results.png)
 
