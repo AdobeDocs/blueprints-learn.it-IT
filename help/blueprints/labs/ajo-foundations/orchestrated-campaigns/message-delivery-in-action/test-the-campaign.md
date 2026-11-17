@@ -7,9 +7,9 @@ exl-id: e77ae8ab-f18f-4683-8fdd-ba4f4629d96c
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 7c7ee72676fd17a248694548fb59ea87c52a293c
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '661'
 ht-degree: 0%
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ## Obiettivo
 
-Nei passaggi successivi esegui la campagna in modalità di test per confermare le funzioni previste per la campagna prima di pubblicarla. In questo caso, la modalità di test non invia e-mail, ma aiuta a verificare l’intero flusso e identificare tempestivamente i problemi.
+Nei passaggi successivi esegui la campagna in modalità di test per confermare il funzionamento previsto della campagna prima di pubblicarla. In questo caso, la modalità di test non invia e-mail, ma aiuta a verificare l’intero flusso e identificare tempestivamente i problemi.
 
 ## Avvia il flusso di lavoro
 
-1. Una volta configurati i due flussi e-mail, la campagna si presenta come segue. Fai clic sul pulsante **Avvia** per eseguire la campagna in **Modalità test**
+1. Una volta configurati i due flussi e-mail, la campagna si presenta come segue. Fai clic sul pulsante **Avvia** per eseguire la campagna in modalità di test
 
    ![Fare clic su Avvia per eseguire la campagna in modalità di test](assets/test-the-campaign-click-start-test-mode.png)
 
@@ -111,4 +111,4 @@ Per interrompere la **modalità test** per la campagna, fare clic sul pulsante *
 
 Ora hai visto come testare la campagna creata per comprenderne il flusso e il comportamento. In questo caso, le sfumature dell’utilizzo delle diverse impostazioni per la configurazione del canale e-mail erano ben note durante l’esecuzione del flusso di test.
 
-Ulteriori informazioni sulla modalità di test della campagna [qui](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns) se sei interessato.
+Ulteriori informazioni sulla modalità di test della campagna [qui](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns) se sei interessato.

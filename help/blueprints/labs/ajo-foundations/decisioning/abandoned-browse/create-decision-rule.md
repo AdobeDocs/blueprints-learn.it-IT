@@ -7,9 +7,9 @@ exl-id: 1c1e2d82-ca09-4074-813d-3b29af77388b
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 74b5a717f6c16c75e26426619885202f4b658171
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '526'
 ht-degree: 0%
 ---
 
@@ -26,13 +26,13 @@ Poiché l’idoneità è uno degli elementi costitutivi chiave di un’offerta, 
 
    >[!WARNING]
    >
-   >Accertati di essere nel menu Decisioning e NON nel menu Decision Management. Se il menu Gestione delle decisioni è espanso, comprimerlo per evitare confusione durante la navigazione in questa esercitazione.
+   >Accertati di essere nel menu Decisioning e NON nel menu Gestione delle decisioni (nel caso in cui entrambi siano visibili nell’ambiente). Se il menu Gestione delle decisioni è espanso, comprimerlo per evitare confusione durante la navigazione in questa esercitazione.
 
 3. Fai clic su **Regole di decisione** nel menu &#39;Idoneità&#39;, seguito dal pulsante **Crea regola** nell&#39;angolo superiore destro.
 
    ![Pagina Regole di decisione con il pulsante Crea regola](assets/create-decision-rule-create-rule-button.png)
 
-4. Viene visualizzata una schermata simile all’interfaccia utente del Generatore di segmenti. Aggiungere l&#39;attributo ID piano all&#39;area di lavoro delle regole facendo clic su **Profilo individuale XDM > Protezione esecuzione programmi > Dettagli piano**, quindi trascinare l&#39;attributo **ID piano** nell&#39;area di lavoro.
+4. Viene visualizzata una schermata simile all’interfaccia utente del Generatore di segmenti. Aggiungere l&#39;attributo ID piano all&#39;area di lavoro delle regole facendo clic su **Profilo individuale XDM > Protezione esecuzione programmi > Dettagli piano**, quindi trascinare l&#39;attributo **ID piano** nell&#39;area di lavoro. Il nome del tenant, che in questo esempio è Dep, potrebbe essere diverso nell’ambiente. È inoltre possibile cercare Dettagli piano nella barra di ricerca Attributi.)
 5. Modifica il menu a discesa da è uguale a **contiene.**
 6. Immetti il testo **2** nella casella, premi il tasto **TAB** per accettare il valore 2, quindi immetti un valore **3,** premi di nuovo **TAB** in modo che la regola stia cercando qualsiasi ID piano che contiene un 2 o un 3
 7. Utilizza la casella di testo **Nome** nella barra a destra per denominare la regola di decisione **Piani di livello superiore**. Se lo desideri, aggiungi una descrizione. Al termine, la regola di decisione sarà simile alla seguente:
