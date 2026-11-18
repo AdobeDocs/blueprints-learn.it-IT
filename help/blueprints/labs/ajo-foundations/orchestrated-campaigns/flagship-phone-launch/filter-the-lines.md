@@ -7,9 +7,9 @@ exl-id: fb556a27-5c73-4457-ae98-dba43d445c7f
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 689f227965176096ccd1785699de65046af4f3d3
+source-git-commit: f189618dc8bfa198b25d646faa3ca0e0f5af5916
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '443'
 ht-degree: 0%
 ---
 
@@ -57,9 +57,25 @@ Nei passaggi successivi escluderai tutte le righe di cui non è consentito il ta
 
 
 
+## Aggiungi dimensione di modifica
+
+1. Nell&#39;area di lavoro del flusso di lavoro fare clic sull&#39;icona **+** dopo la condizione di suddivisione aggiunta e selezionare l&#39;attività **Modifica dimensione**
+
+   ![Aggiungi l&#39;attività Modifica dimensione dopo la condizione di suddivisione](assets/filter-the-lines-add-change-dimension-activity.png)
+
+2. Aggiorna le proprietà della dimensione di modifica come descritto di seguito e fai clic su **Conferma**:
+Etichetta: `Convert Line to Account`
+Nuova dimensione di destinazione: `dep-rel: Customer Account`
+
+   ![Modifica dimensione di destinazione](assets/filter-the-lines-add-edit-target-dimension.png)
+
+   ![Modifica dimensione di destinazione](assets/filter-the-lines-add-select-target-dimension.png)
+
+
+
 ## Aggiungere l’attività SMS
 
-1. Nell&#39;area di lavoro del flusso di lavoro, fai clic sull&#39;icona **+** dopo la condizione di suddivisione aggiunta e seleziona **Attività messaggio mobile**
+1. Fai clic sull&#39;icona **+** dopo la dimensione di modifica aggiunta e seleziona l&#39;**Attività messaggio mobile**
 
    ![Aggiungi l&#39;attività Mobile Message dopo la condizione di suddivisione](assets/filter-the-lines-add-sms-activity.png)
 
@@ -67,9 +83,9 @@ Nei passaggi successivi escluderai tutte le righe di cui non è consentito il ta
 
 
 
-2. Nella barra a destra, fai clic sul pulsante Modifica messaggio mobile per avviare la configurazione del messaggio SMS
+2. Nella barra a destra, modifica innanzitutto la scelta di Target in **Un messaggio per dimensione secondaria**, quindi fai clic sul pulsante **Modifica messaggio mobile** per avviare la configurazione del messaggio SMS
 
-   ![Pulsante Modifica messaggio mobile nella barra a destra](assets/filter-the-lines-edit-sms-button.png)
+   ![Pulsante Destinazione e modifica messaggio mobile nella barra a destra](assets/filter-the-lines-edit-sms-button.png)
 
 
 
@@ -82,4 +98,4 @@ Nei passaggi successivi escluderai tutte le righe di cui non è consentito il ta
 
 ## Riassunto
 
-Hai filtrato tutte le righe a cui non era consentito eseguire il targeting con un messaggio SMS a causa della rinuncia e hai aggiunto un’attività SMS per coloro a cui era consentito eseguire il targeting.
+Hai filtrato tutte le righe a cui non era consentito eseguire il targeting con un messaggio SMS a causa della rinuncia, modificato la dimensione da riga a account e hai aggiunto un’attività SMS per coloro a cui era consentito eseguire il targeting.
