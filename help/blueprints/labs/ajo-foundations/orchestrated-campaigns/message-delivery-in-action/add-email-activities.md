@@ -7,9 +7,9 @@ exl-id: e911a251-9f9f-484c-a2de-101b0fc2c417
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 526f170e52c0479362c6a72bfd4cbeadc825d464
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '462'
 ht-degree: 0%
 ---
 
@@ -69,17 +69,13 @@ Nei passaggi successivi, sfrutterai la campagna per aggiungere due attività E-m
 
    ![Fare clic sulla freccia sinistra per uscire da E-mail Designer](assets/add-email-activities-exit-email-designer.png)
 
-10. Viene visualizzata una finestra di dialogo di conferma, fai clic sul pulsante **Salva e chiudi**
-
-![Finestra di dialogo di conferma con il pulsante Salva e chiudi](assets/add-email-activities-save-and-close-dialog.png)
-
-1. Controlla le proprietà e le azioni Email, incluso il testo aggiunto al corpo dell’Email. Fai clic sulla **freccia a sinistra** per tornare all&#39;area di lavoro della campagna
+10. Controlla le proprietà e le azioni Email, incluso il testo aggiunto al corpo dell’Email. Fai clic sulla **freccia a sinistra** per tornare all&#39;area di lavoro della campagna
 
 ![Torna all&#39;area di lavoro della campagna](assets/add-email-activities-back-to-campaign-canvas.png)
 
 ## Aggiungi attività e-mail ramo inferiore
 
-Torna nell&#39;area di lavoro della campagna, fai clic su **+** del flusso inferiore e seleziona **E-mail** dalle **Attività canale**. Seguire gli stessi passaggi indicati sopra (passaggi da 2 a 11) ad eccezione dei seguenti:
+Torna nell&#39;area di lavoro della campagna, fai clic su **+** del flusso inferiore e seleziona **E-mail** dalle **Attività canale**. Seguire gli stessi passaggi indicati sopra (passaggi da 2 a 10) ad eccezione dei seguenti:
 
 - Rinomina l&#39;etichetta in **E-mail utilizzando Target Dimension** per l&#39;attività **E-mail**
 - Nelle impostazioni Email, scegli la configurazione del canale Email **Relational-Email**
