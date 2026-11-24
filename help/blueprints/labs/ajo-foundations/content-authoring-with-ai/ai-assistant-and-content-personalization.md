@@ -1,27 +1,27 @@
 ---
-title: Assistente AI e personalizzazione dei contenuti
-description: Utilizza l’Assistente AI di Adobe Journey Optimizer per generare argomenti sul marchio, perfezionare la copia e il tono delle e-mail e creare immagini generate da Firefly all’interno dell’e-mail designer.
+title: Personalizzazione dei contenuti assistiti da IA
+description: Utilizza l’intelligenza artificiale di Adobe Journey Optimizer per generare l’oggetto del brand, perfezionare la copia e il tono delle e-mail e creare immagini generate da Firefly all’interno dell’e-mail designer.
 doc-type: article
 solution: Experience Platform
 exl-id: 1f30c920-7b2b-4343-b663-ebbed1ae4709
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 43a7d8153e8ad7e24162b9bb6c0d5bbcea784330
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1322'
 ht-degree: 5%
 ---
 
-# Assistente AI e personalizzazione dei contenuti
+# Personalizzazione dei contenuti assistiti da IA
 
-**Scopo:** scopri come utilizzare l&#39;Assistente all&#39;intelligenza artificiale di Adobe Journey Optimizer per generare gli oggetti, perfezionare il testo delle e-mail, regolare il tono e creare immagini Firefly direttamente all&#39;interno della finestra di progettazione e-mail.
+**Scopo:** scopri come utilizzare l&#39;intelligenza artificiale di Adobe Journey Optimizer per generare gli oggetti, perfezionare il testo delle e-mail, regolare il tono e creare immagini Firefly direttamente all&#39;interno della finestra di progettazione e-mail.
 
 ## Obiettivi di apprendimento
 
 Al termine di questo modulo, sarai in grado di:
 
-1. Utilizza l’Assistente AI per generare gli oggetti e le intestazioni preliminari.
+1. Utilizza l’intelligenza artificiale per generare gli oggetti e le intestazioni preliminari.
 1. Perfeziona testo, descrizioni, tono e messaggi dell’eroe.
 1. Applicare riformulazioni, riepiloghi e regolazioni dei toni basate sull’intelligenza artificiale.
 1. Genera immagini utilizzando Adobe Firefly con stile di riferimento e impostazioni del brand.
@@ -29,7 +29,7 @@ Al termine di questo modulo, sarai in grado di:
 
 ## Introduzione
 
-L’Assistente per l’intelligenza artificiale in AJO consente di creare contenuti più intelligenti per il brand.
+L’assistenza basata sull’intelligenza artificiale in AJO consente di creare contenuti più intelligenti e all’interno del brand.
 Può:
 
 - Genera righe oggetto
@@ -38,21 +38,21 @@ Può:
 - Creazione di immagini con marchio tramite Firefly
 - Assicurati che tutto sia allineato alle linee guida per la connessione 5G
 
-Per questo esercizio, puoi migliorare l’e-mail creata utilizzando l’Assistente AI.
+Per questo esercizio, puoi migliorare l’e-mail creata utilizzando l’intelligenza artificiale.
 
 >[!NOTE]
 >
->L&#39;Assistente IA è **non deterministico**, ovvero può generare contenuto leggermente diverso ogni volta che viene utilizzato. Le informazioni visualizzate durante l&#39;esercitazione potrebbero non corrispondere esattamente alle schermate o agli esempi contenuti in questa guida. Va bene, concentrati sull’apprendimento del processo e dei concetti anziché aspettarti risultati identici.
+>L&#39;IA è **non deterministica**, ovvero può generare contenuto leggermente diverso ogni volta che viene utilizzato. Le informazioni visualizzate durante l&#39;esercitazione potrebbero non corrispondere esattamente alle schermate o agli esempi contenuti in questa guida. Va bene, concentrati sull’apprendimento del processo e dei concetti anziché aspettarti risultati identici.
 
-## Creare la riga dell’oggetto e-mail tramite l’Assistente AI
+## Creare la riga dell’oggetto e-mail tramite IA
 
 1. Torna alla campagna facendo clic sul pulsante Indietro o modifica l’e-mail creata nel modulo precedente. Dal passaggio precedente, puoi fare clic sulla scheda **Impostazioni** a destra.
 2. Fai clic sul Contenitore e-mail > sul pulsante Modifica e-mail.
 3. Fai clic sulla scheda del contenuto e quindi sul corpo dell’e-mail
 4. Selezionare il campo **Oggetto**.
-5. Fare clic sull&#39;icona **Assistente AI**. (vedi sotto)
+5. Fai clic sull&#39;icona **IA**. (vedi sotto)
 
-   ![Icona Assistente IA nella barra degli strumenti del campo Oggetto](assets/ai-assistant-and-content-personalization-ai-assistant-icon.png)
+   ![Icona IA nella barra degli strumenti del campo Oggetto](assets/ai-assistant-and-content-personalization-ai-assistant-icon.png)
 
 6. Per impostazione predefinita, è selezionata l’opzione Linee guida per i marchi.
 7. Immetti il prompt:
@@ -63,7 +63,7 @@ Per questo esercizio, puoi migliorare l’e-mail creata utilizzando l’Assisten
 9. Esamina le quattro varianti generate.
 10. Scegli la variante con il miglior punteggio di allineamento e fai clic su **Seleziona**.
 
-![Selezione della variante dell&#39;oggetto meglio allineata dall&#39;Assistente AI](assets/ai-assistant-and-content-personalization-select-subject-line-variant.png)
+![Selezione della variante dell&#39;oggetto meglio allineata da AI](assets/ai-assistant-and-content-personalization-select-subject-line-variant.png)
 
 >[!NOTE]
 >
@@ -79,13 +79,13 @@ Per questo esercizio, puoi migliorare l’e-mail creata utilizzando l’Assisten
    ![Pulsante Modifica corpo e-mail nell&#39;editor di Campaign](assets/ai-assistant-and-content-personalization-edit-email-body-button.png)
 
 2. Fai clic sull&#39;intestazione **Product Catchy line**.
-3. Apri Assistente IA facendo clic su **Genera e seleziona un testo**
+3. Avvia assistenza IA facendo clic su **Genera e seleziona un testo**
 
-   ![Genera e seleziona un&#39;opzione di testo per l&#39;apertura dell&#39;Assistente IA](assets/ai-assistant-and-content-personalization-generate-and-select-text.png)
+   ![Genera e seleziona un&#39;opzione di testo per aprire IA](assets/ai-assistant-and-content-personalization-generate-and-select-text.png)
 
 4. Seleziona **Linee guida per il marchio Connection 5G** dal menu a discesa.
 
-   ![Opzione Linee guida per il marchio Connection 5G selezionata nel menu a discesa dell&#39;Assistente AI](assets/ai-assistant-and-content-personalization-brand-guidelines-dropdown.png)
+   ![Opzione Linee guida per il marchio Connection 5G selezionata nel menu a discesa IA](assets/ai-assistant-and-content-personalization-brand-guidelines-dropdown.png)
 
 5. Prompt:
 
@@ -117,7 +117,7 @@ Questa volta, verifichi come l’intelligenza artificiale può aiutare a individ
 
 2. Fai clic sul pulsante Valuta come mostrato di seguito.
 
-   ![Pulsante Valuta nel pannello di testo dell&#39;Assistente AI](assets/ai-assistant-and-content-personalization-click-evaluate-button.png)
+   ![Pulsante Valuta nel pannello di testo IA](assets/ai-assistant-and-content-personalization-click-evaluate-button.png)
 
 3. Il contenuto originale viene selezionato automaticamente con il marchio, come illustrato nei passaggi 1 e 2. Fare clic sul pulsante **Valuta** per continuare.
 
@@ -125,7 +125,7 @@ Questa volta, verifichi come l’intelligenza artificiale può aiutare a individ
 
 4. Come previsto, puoi notare molti errori che violano le linee guida del brand. Anche se questi possono essere corretti utilizzando l&#39;intelligenza artificiale, in questo caso non si rivedono i materiali esistenti. Invece, puoi lasciarli così come sono e creare nuovi contenuti da zero che siano completamente allineati agli standard del marchio.
 
-   ![I risultati della valutazione dell&#39;Assistente AI mostrano violazioni delle linee guida del brand](assets/ai-assistant-and-content-personalization-brand-guideline-errors.png)
+   ![I risultati della valutazione IA mostrano violazioni delle linee guida del brand](assets/ai-assistant-and-content-personalization-brand-guideline-errors.png)
 
 5. Utilizza il nuovo paragrafo generato automaticamente utilizzando l’intelligenza artificiale con il prompt seguente. È possibile utilizzare lo stesso approccio per il testo della descrizione utilizzando il prompt riportato di seguito.
 
@@ -146,7 +146,7 @@ L’e-mail ha un aspetto simile all’esempio mostrato di seguito.
 
 ## Aggiungere un’immagine generata da Firefly
 
-Finora, abbiamo testato l’Assistente AI sulla riga dell’oggetto e sul testo. E le immagini?
+Finora, abbiamo testato l’intelligenza artificiale sull’oggetto e sul testo. E le immagini?
 
 Prima di immergerti nella generazione di immagini AI, osserva quali tipi di esperienze puoi creare.
 
@@ -228,7 +228,7 @@ A questo punto, dovresti aver acquisito sicurezza nell’utilizzo dell’intelli
 
 ## Riassunto
 
-L&#39;Assistente IA è stato utilizzato correttamente per:
+Hai utilizzato correttamente l’intelligenza artificiale per:
 
 - Genera righe oggetto
 - Ridefinisci testo principale

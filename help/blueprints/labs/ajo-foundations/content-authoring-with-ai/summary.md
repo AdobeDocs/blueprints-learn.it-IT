@@ -7,9 +7,9 @@ exl-id: 8c4d8a66-190d-4714-95a3-37955b1e1a8c
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 54e14714c83a6815926f12db8aad1476b0266d7b
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '263'
 ht-degree: 0%
 ---
 
@@ -21,7 +21,7 @@ In questo corso hai esplorato l’intero percorso di creazione di campagne perso
 
 - Puoi creare, configurare e testare le comunicazioni a marchio in Adobe Journey Optimizer (AJO).
 - L&#39;utilizzo di **frammenti** e **modelli** semplifica la creazione di contenuti e garantisce la coerenza del brand tra i messaggi.
-- Gli strumenti **Assistente AI** e **Punteggio Allineamento marchio** consentono di mantenere il tono, la qualità e la conformità prima del lancio.
+- Gli strumenti **AI** e **Brand Alignment Score** consentono di mantenere il tono, la qualità e la conformità prima del lancio.
 - **Personalization** consente di personalizzare il contenuto uno a uno in base agli attributi e al comportamento del profilo in tempo reale.
 - **Il contenuto dinamico** abilita la variazione dei messaggi tra i segmenti utilizzando le regole di targeting e la logica condizionale.
 - Il test con **profili di simulazione** e l&#39;esecuzione di **controlli di conformità** garantiscono che i messaggi vengano visualizzati correttamente e corrispondano agli standard del marchio prima della pubblicazione.
@@ -30,7 +30,7 @@ In questo corso hai esplorato l’intero percorso di creazione di campagne perso
 
 - [ ] Hai creato e configurato il marchio Connection 5G?
 - [ ] Sono stati generati e applicati frammenti di intestazione/piè di pagina?
-- [ ] Hai utilizzato l&#39;Assistente AI per generare contenuti?
+- [ ] Hai utilizzato l&#39;intelligenza artificiale per generare contenuti?
 - [ ] Hai eseguito i controlli di allineamento del brand e risolto i problemi?
 - [ ] Hai testato il tuo percorso con un profilo di test e hai esaminato l&#39;e-mail?
 
