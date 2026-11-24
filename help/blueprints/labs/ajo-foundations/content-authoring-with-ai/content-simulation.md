@@ -7,9 +7,9 @@ exl-id: 3e2b064f-5680-461c-a49e-2a61514e146f
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: c0adb1eab9b0a1315e2041c1f2cb89a4bfdae4b2
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '509'
 ht-degree: 0%
 ---
 
@@ -27,7 +27,7 @@ Al termine di questo modulo, sarai in grado di:
 
 ## Introduzione
 
-In questo modulo finale, eseguirai il test dell&#39;e-mail con **due varianti condizionali** utilizzando lo strumento di simulazione in Adobe Journey Optimizer.
+In questo modulo, eseguirai il test dell&#39;e-mail con **due varianti condizionali** utilizzando lo strumento di simulazione in Adobe Journey Optimizer.
 Questo consente di visualizzare in anteprima come diversi clienti percepiranno il tuo messaggio personalizzato, garantendo precisione prima di lanciare la campagna.
 
 Verrà utilizzato il file del profilo di test di esempio **sample.csv** dal toolkit.
@@ -37,8 +37,7 @@ Verrà utilizzato il file del profilo di test di esempio **sample.csv** dal tool
 ## Aprire lo strumento di simulazione
 
 1. Apri l’e-mail completata.
-1. Fare clic su **Simula contenuto**.
-1. Seleziona **Simula variante contenuto**.
+2. Nell&#39;e-mail, fai clic su **Simula contenuto**.
 
 ![Fare clic su Simula contenuto e selezionare Simula variante contenuto](assets/content-simulation-click-simulate-content-variation.png)
 
@@ -46,39 +45,42 @@ Dopo alcuni secondi viene visualizzato un pannello di simulazione.
 
 ## Caricare i dati del profilo di test
 
-1. Apri **sample.csv** dalla cartella toolkit.
-   - **Alex** → di età superiore a 40 anni
-   - **Jason** → di età inferiore a 40 anni
-2. Fare clic su **Carica dati di input**.
+1. Fai clic su **Carica** in basso per caricare i dati di input.
 
-   ![Pulsante Carica dati di input nel pannello di simulazione](assets/content-simulation-click-upload-input-data.png)
+   ![Pulsante Carica per i dati di input nel pannello di simulazione](assets/content-simulation-click-upload-input-data.png)
 
-3. Scegli **sample.csv** e fai clic su **Continua**.
+&#x200B;3. Scegli **sample.csv** e fai clic su **Continua**.
 
-![Scegliere sample.csv e fare clic su Continua](assets/content-simulation-choose-sample-csv-continue.png)
+   ![Scegliere sample.csv e fare clic su Apri](assets/content-simulation-choose-sample-csv-continue.png)
 
-AJO elabora il file e prepara le anteprime.
+AJO elabora il file e nel tempo prepara le anteprime.
+![Anteprime varianti](assets/content-simulation-variation-previews.png)
 
 
 ## Rivedi rendering variante
 
-AJO mostra entrambe le varianti una accanto all’altra in base ai profili caricati.
+Quando fai clic su Simula contenuto nell’e-mail, AJO mostra le varianti una accanto all’altra in base ai profili caricati.
 
 **Risultati previsti:**
 
 - **Alex** → vede **Variante 1** (età superiore a 40)
+Fai clic sull&#39;icona della matita sopra la prima variante per **Mostra dettagli variante**
 
+![Fai clic sull&#39;icona della matita per visualizzare i dettagli della variante](assets/content-simulation-click-pencil-icon.png)
+
+La scheda si capovolge per mostrare i dettagli su cui si basa la personalizzazione
 ![Rendering del profilo Alex variante 1 per età superiore a 40](assets/content-simulation-variant-1-age-above-40.png)
 
-Se scorri verso l’alto puoi anche visualizzare campi personalizzati con il nome adesso, come puoi vedere di seguito.
-
-![Campo nome personalizzato visualizzato per Alex nella variante 1](assets/content-simulation-personalized-name-field-variant-1.png)
-
 - **Jason** → Visualizza **Variante 2** (Età Inferiore A 40)
+Fai clic sull&#39;icona della matita sopra la seconda variante di **Mostra dettagli variante**
 
-![Rendering profilo Jason variante 2 per età inferiore a 40](assets/content-simulation-variant-2-age-below-40.png)
+![Fai clic sull&#39;icona della matita per visualizzare i dettagli della variante](assets/content-simulation-click-pencil-icon-for-second-variant.png)
 
-Anche con il nome completo di Jason. Che figata!
+Sostituisci la visualizzazione affiancata con **Sovrapposizione verticale** per esaminare affiancati i dettagli e la personalizzazione di Jason
+
+![Rendering profilo Jason variante 2 per età inferiore a 40](assets/content-simulation-swap-view-to-vertically-stacked.png)
+
+Quando scorriamo il contenuto dell’e-mail possiamo vedere il nome completo di Jason e l’immagine del contenuto condizionale scelta. Che figata!
 
 ![Campo personalizzato con nome completo visualizzato per Jason nella variante 2](assets/content-simulation-personalized-name-field-variant-2.png)
 

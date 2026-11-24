@@ -7,9 +7,9 @@ exl-id: bf823714-7298-48fc-a18b-9bf2462ae52e
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 6f54406bc0cda8e0fa5f028201a1ed1c2953e3cf
+source-git-commit: 8a0e198d205b9003fa61cf555debc6c20585b70a
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '656'
 ht-degree: 0%
 ---
 
@@ -41,7 +41,7 @@ Questo passaggio illustra come riutilizzare i modelli nei diversi percorsi, cons
 
    ![Pulsante Crea campagna in Gestione Percorsi](assets/creating-the-email-click-create-campaign-button.png)
 
-3. Seleziona &quot;**Orchestrazione - Marketing**&quot; e fai clic su **conferma**
+3. Seleziona &quot;**Orchestration Marketing and transazionale**&quot; e fai clic su **Conferma**
 
    ![Selezione dell&#39;orchestrazione - Marketing e clic su confirm](assets/creating-the-email-select-orchestration-marketing.png)
 
@@ -107,19 +107,15 @@ Cambia le immagini dell&#39;eroe e del telefono. È necessario caricare il conte
 
    ![Rimozione dell&#39;URL di origine temporaneo dall&#39;immagine](assets/creating-the-email-remove-temporary-source-url.png)
 
-3. Fai clic su **Importa file multimediali**
+3. Fai clic su **Seleziona una risorsa**
 
-   ![Pulsante Importa file multimediali per l&#39;immagine protagonista](assets/creating-the-email-click-import-media.png)
+   ![Selezionare un pulsante di risorsa per l&#39;immagine protagonista](assets/creating-the-email-click-import-media.png)
 
-4. Carica `hero.png` dal tuo toolkit. (puoi trascinare il file)
+4. Seleziona `hero.png` dalla cartella e fai clic su **Seleziona**.
 
-   ![Caricamento di hero.png dalla cartella toolkit](assets/creating-the-email-upload-hero-png-file.png)
+   ![Selezione di hero.png dalla cartella Assets](assets/creating-the-email-select-hero-png-file.png)
 
-5. Fai clic su **Avanti,** seleziona **la cartella per le risorse** e premi **importa**
-
-   ![Selezione della cartella delle risorse e clic su Importa per l&#39;immagine protagonista](assets/creating-the-email-select-folder-import-hero.png)
-
-6. Il modello di e-mail verrà visualizzato correttamente. Viene visualizzato come segue. Fai clic su **&quot;Salva&quot;** per salvare i tuoi dati.
+5. Il modello di e-mail verrà visualizzato correttamente. Viene visualizzato come segue. Fai clic su **&quot;Salva&quot;** per salvare i tuoi dati.
 
 ![Modello di posta elettronica aggiornato con la nuova immagine protagonista prima del salvataggio](assets/creating-the-email-save-updated-email-template.png)
 
@@ -128,7 +124,7 @@ Cambia le immagini dell&#39;eroe e del telefono. È necessario caricare il conte
 
 ### Sostituisci immagini prodotto
 
-Procedi con l’aggiornamento di tutte le immagini del prodotto (immagini fornite nella cartella toolkit) e aggiungi un bordo arrotondato a tuo piacimento. L’e-mail si presenta meglio senza collegamenti interrotti, come illustrato di seguito. Ripeti il processo per tutte le schede prodotto.
+Procedi con l’aggiornamento di tutte le immagini del prodotto (le immagini erano fornite nella cartella toolkit, le hai caricate in Assets) e aggiungi un bordo arrotondato a tuo piacimento. L’e-mail si presenta meglio senza collegamenti interrotti, come illustrato di seguito. Ripeti il processo per tutte le schede prodotto.
 
 ![Invia un&#39;e-mail con tutte le immagini del prodotto aggiornate e senza collegamenti interrotti](assets/creating-the-email-product-images-updated-no-broken-links.png)
 
