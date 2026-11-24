@@ -193,13 +193,13 @@ Scorri verso il basso nella colonna sinistra e fai clic su **Altre impostazioni*
 
 ![Impostazioni dell&#39;immagine di Firefly, inclusi rapporto, tipo di contenuto e illuminazione, prima della generazione](assets/ai-assistant-and-content-personalization-firefly-image-settings.png)
 
-3. Seleziona le varianti a destra per visualizzarle e **Salva** alcuni dei tuoi preferiti nella cartella Assets per utilizzarli in un secondo momento. Puoi anche fare clic su Genera altre volte per ottenere altre varianti.
+&#x200B;3. Seleziona le varianti a destra per visualizzarle e **Salva** alcuni dei tuoi preferiti nella cartella Assets per utilizzarli in un secondo momento. Puoi anche fare clic su Genera altre volte per ottenere altre varianti.
 
 ![Sfoglia le varianti e salva alcune](assets/ai-assistant-and-content-personalization-browse-image-variations.png)
 
 ![Salva nella cartella Assets](assets/ai-assistant-and-content-personalization-save-image-variations-into-assets.png)
 
-4. Quindi per il momento è sufficiente **Annulla** dall&#39;interfaccia di generazione dell&#39;immagine.
+&#x200B;4. Quindi per il momento è sufficiente **Annulla** dall&#39;interfaccia di generazione dell&#39;immagine.
 
 
 
@@ -209,11 +209,11 @@ Scorri verso il basso nella colonna sinistra e fai clic su **Altre impostazioni*
 
 ![Fare clic su Sfoglia nel blocco immagine](assets/ai-assistant-and-content-personalization-click-browse-in-image-block.png)
 
-2. Seleziona una delle varianti e fai clic su **Seleziona**
+&#x200B;2. Seleziona una delle varianti e fai clic su **Seleziona**
 
 ![Seleziona una delle varianti](assets/ai-assistant-and-content-personalization-select-one-of-your-variations.png)
 
-3. Seleziona la scheda **Stili** nella colonna di destra e applica all&#39;immagine un raggio del bordo arrotondato di 10
+&#x200B;3. Seleziona la scheda **Stili** nella colonna di destra e applica all&#39;immagine un raggio del bordo arrotondato di 10
 
 ![Progettazione del blocco e-mail finale con angoli immagine arrotondati](assets/ai-assistant-and-content-personalization-final-block-design.png)
 

@@ -134,11 +134,11 @@ Crea un frammento di intestazione con cui iniziare. Tuttavia, prima di creare il
 
 ![Fare clic sul pulsante Sfoglia per selezionare l&#39;immagine del logo](assets/building-content-fragments-click-browse-button.png)
 
-11. Vai alla cartella, fai clic sull&#39;immagine del logo (*C5G-Logo.png*) e fai clic su **Seleziona**.
+&#x200B;11. Vai alla cartella, fai clic sull&#39;immagine del logo (*C5G-Logo.png*) e fai clic su **Seleziona**.
 
 ![Selezione di C5G-Logo.png dalla cartella Assets](assets/building-content-fragments-select-logo-from-assets.png)
 
-12. Il logo è posizionato correttamente, ma è troppo grande e deve essere ridimensionato. Per ridimensionare il logo, aggiornarne le proprietà. Fai clic sulla scheda **Stili** nella colonna di destra e imposta la larghezza su 40% trascinando il dispositivo di scorrimento, come illustrato di seguito.
+&#x200B;12. Il logo è posizionato correttamente, ma è troppo grande e deve essere ridimensionato. Per ridimensionare il logo, aggiornarne le proprietà. Fai clic sulla scheda **Stili** nella colonna di destra e imposta la larghezza su 40% trascinando il dispositivo di scorrimento, come illustrato di seguito.
 
 >[!NOTE]
 >
@@ -148,15 +148,15 @@ Crea un frammento di intestazione con cui iniziare. Tuttavia, prima di creare il
 
 ![Dispositivo di scorrimento della larghezza della scheda di stile impostato su 40% per ridimensionare il logo](assets/building-content-fragments-resize-logo-width-slider.png)
 
-13. Fare clic su **&quot;Salva&quot;** per salvare il frammento. Ricevi una notifica con barra verde alla conferma.
+&#x200B;13. Fare clic su **&quot;Salva&quot;** per salvare il frammento. Ricevi una notifica con barra verde alla conferma.
 
 ![Barra di conferma verde dopo il salvataggio del frammento](assets/building-content-fragments-save-fragment-confirmation.png)
 
-14. Il frammento salvato è in modalità bozza. Prima di utilizzarlo, è necessario pubblicarlo. Fai clic sul pulsante **indietro**.
+&#x200B;14. Il frammento salvato è in modalità bozza. Prima di utilizzarlo, è necessario pubblicarlo. Fai clic sul pulsante **indietro**.
 
 ![Pulsante Indietro per lasciare il frammento bozza prima della pubblicazione](assets/building-content-fragments-click-back-button-draft.png)
 
-15. Fare clic sul pulsante &quot;**Pubblica**&quot;. Viene visualizzato il messaggio &quot;Pubblicazione del frammento in corso. L’operazione potrebbe richiedere del tempo. Al termine riceverai una notifica.&quot; alla conferma. Il frammento è pronto per essere utilizzato per la creazione di modelli.
+&#x200B;15. Fare clic sul pulsante &quot;**Pubblica**&quot;. Viene visualizzato il messaggio &quot;Pubblicazione del frammento in corso. L’operazione potrebbe richiedere del tempo. Al termine riceverai una notifica.&quot; alla conferma. Il frammento è pronto per essere utilizzato per la creazione di modelli.
 
 ![Pulsante Pubblica e messaggio di conferma del frammento di pubblicazione](assets/building-content-fragments-click-publish-fragment-button.png)
 
