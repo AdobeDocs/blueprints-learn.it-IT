@@ -39,7 +39,7 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
 5. Fai clic su **Simula**, quindi seleziona **Modalità test**
 
-   ![Stampa simulazione ](assets/test-journey-select-test-mode.png)
+   ![Stampa simulazione &#x200B;](assets/test-journey-select-test-mode.png)
 
    ![Modalità di prova selezionata nel popup](assets/test-journey-select-test-mode-in-popup.png)
 
