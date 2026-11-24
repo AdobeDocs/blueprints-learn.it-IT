@@ -4,9 +4,9 @@ description: Scopri come suddividere una progettazione e-mail in frammenti riuti
 doc-type: article
 solution: Experience Platform
 exl-id: 253a9332-dc08-420d-ac11-2bf342f0dc38
-source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
+source-git-commit: d935e9a5179579e35c6aa5fe9e495f5bba1a1b03
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '916'
 ht-degree: 0%
 ---
 
@@ -96,7 +96,13 @@ Crea un frammento di intestazione con cui iniziare. Tuttavia, prima di creare il
 
    ![Assegnazione di nomi e cognomi alla nuova cartella di risorse](assets/building-content-fragments-name-asset-folder.png)
 
-5. **Crea un nuovo frammento:** In Gestione contenuto, fai clic su **Frammenti** e crea un nuovo frammento.
+5. Fai doppio clic sulla cartella appena creata per **aprirla**. Quindi fai clic su **Aggiungi Assets** e sfoglia o rilascia tutte le immagini .png e .jpg dalla cartella toolkit. Quindi fare clic su **Carica**
+
+   ![Fai clic su Aggiungi risorse e carica file di immagine](assets/building-content-fragments-add-assets-and-upload-image-files.png)
+
+   ![Fai clic su Carica](assets/building-content-fragments-click-upload.png)
+
+6. **Crea un nuovo frammento:** In Gestione contenuto, fai clic su **Frammenti** e crea un nuovo frammento.
 
    ![Opzione Frammenti in Gestione contenuto per creare un nuovo frammento](assets/building-content-fragments-click-fragments-create-new.png)
 
@@ -110,53 +116,47 @@ Crea un frammento di intestazione con cui iniziare. Tuttavia, prima di creare il
 
    ![Campi Nome frammento intestazione, descrizione e Tipo frammento visivo](assets/building-content-fragments-fragment-name-type-details.png)
 
-6. Fai clic sul **pulsante Crea** in alto a destra.
+7. Fai clic sul **pulsante Crea** in alto a destra.
 
    ![Pulsante Crea in alto a destra nella finestra di dialogo Nuovo frammento](assets/building-content-fragments-click-create-button-top-right.png)
 
    Viene visualizzata una schermata di creazione del frammento vuota.
 
-7. Fai clic su Colonne 1:1 in Strutture e trascina sull’area di lavoro come mostrato di seguito. (Cliccate sull&#39;immagine qui sotto per vedere l&#39;immagine animata)
+8. Passa alla scheda **Componenti** nella colonna sinistra. Quindi fare clic su **1:1 Colonna** in Strutture e trascinare sull&#39;area di lavoro come mostrato di seguito. (Cliccate sull&#39;immagine qui sotto per vedere l&#39;immagine animata)
 
-   ![Demo animata del trascinamento di una struttura a colonne 1:1 nell&#39;area di lavoro del frammento](assets/building-content-fragments-drag-1-1-columns-structure.gif)
+   ![Trascinamento di una struttura a colonne 1:1 nell&#39;area di lavoro del frammento](assets/building-content-fragments-drag-1-1-columns-structure.png)
 
-8. Quindi, trascina &quot;**immagine**&quot; sulla riga 1:1 appena aggiunta
+9. Quindi, trascina &quot;**immagine**&quot; sulla riga 1:1 appena aggiunta
 
    ![Trascinamento di un componente immagine nella riga 1:1](assets/building-content-fragments-drag-image-onto-row.png)
 
-9. Carica l’immagine del logo fornita. Fare clic su **&quot;Pulsante Importa file multimediali&quot;**
+10. Fai clic su **&quot;Sfoglia&quot;** per selezionare l&#39;immagine del logo che ti è stata fornita e che è già stata caricata in Assets.
 
-   ![Pulsante Importa file multimediali per caricare l&#39;immagine del logo](assets/building-content-fragments-click-import-media-button.png)
+![Fare clic sul pulsante Sfoglia per selezionare l&#39;immagine del logo](assets/building-content-fragments-click-browse-button.png)
 
-10. **Carica il logo:** Carica il logo (*C5G-Logo.png*) dalla cartella delle immagini del toolkit e fai clic su Avanti.
+11. Vai alla cartella, fai clic sull&#39;immagine del logo (*C5G-Logo.png*) e fai clic su **Seleziona**.
 
-![Selezione di C5G-Logo.png dalla cartella toolkit da caricare](assets/building-content-fragments-upload-logo-select-file.png)
+![Selezione di C5G-Logo.png dalla cartella Assets](assets/building-content-fragments-select-logo-from-assets.png)
 
-![Dopo aver selezionato il caricamento del logo, fai clic su Avanti](assets/building-content-fragments-upload-logo-click-next.png)
+12. Il logo è posizionato correttamente, ma è troppo grande e deve essere ridimensionato. Per ridimensionare il logo, aggiornarne le proprietà. Fai clic sulla scheda **Stili** nella colonna di destra e imposta la larghezza su 40% trascinando il dispositivo di scorrimento, come illustrato di seguito.
 
-1. Seleziona la **cartella risorse** creata, quindi fai clic su **Importa**. Il file viene salvato nella cartella.
-
-   ![Selezione della cartella di risorse creata e clic su Importa](assets/building-content-fragments-select-asset-folder-import.png)
-
-1. Il logo è posizionato correttamente, ma è troppo grande e deve essere ridimensionato. Per ridimensionare il logo, aggiornarne le proprietà. Fare clic sulla **scheda Stile** e impostare la larghezza su 40% trascinando il dispositivo di scorrimento, come illustrato di seguito.
-
-   >[!NOTE]
-   >
-   >Quando il pulsante di attivazione è attivato, il numero 40 rappresenta % e non i pixel. Se desideri un valore assoluto di precisione pixel, imposta il pulsante su px.
+>[!NOTE]
+>
+>Quando il pulsante di attivazione è attivato, il numero 40 rappresenta % e non i pixel. Se desideri un valore assoluto di precisione pixel, imposta il pulsante su px.
 
 
 
-   ![Dispositivo di scorrimento della larghezza della scheda di stile impostato su 40% per ridimensionare il logo](assets/building-content-fragments-resize-logo-width-slider.png)
+![Dispositivo di scorrimento della larghezza della scheda di stile impostato su 40% per ridimensionare il logo](assets/building-content-fragments-resize-logo-width-slider.png)
 
-1. Fare clic su **&quot;Salva&quot;** per salvare il frammento. Ricevi una notifica con barra verde alla conferma.
+13. Fare clic su **&quot;Salva&quot;** per salvare il frammento. Ricevi una notifica con barra verde alla conferma.
 
-   ![Barra di conferma verde dopo il salvataggio del frammento](assets/building-content-fragments-save-fragment-confirmation.png)
+![Barra di conferma verde dopo il salvataggio del frammento](assets/building-content-fragments-save-fragment-confirmation.png)
 
-1. Il frammento salvato è in modalità bozza. Prima di utilizzarlo, è necessario pubblicarlo. Fai clic sul pulsante **indietro**.
+14. Il frammento salvato è in modalità bozza. Prima di utilizzarlo, è necessario pubblicarlo. Fai clic sul pulsante **indietro**.
 
-   ![Pulsante Indietro per lasciare il frammento bozza prima della pubblicazione](assets/building-content-fragments-click-back-button-draft.png)
+![Pulsante Indietro per lasciare il frammento bozza prima della pubblicazione](assets/building-content-fragments-click-back-button-draft.png)
 
-1. Fare clic sul pulsante &quot;**Pubblica**&quot;. Viene visualizzato il messaggio &quot;Pubblicazione del frammento in corso. L’operazione potrebbe richiedere del tempo. Al termine riceverai una notifica.&quot; alla conferma. Il frammento è pronto per essere utilizzato per la creazione di modelli.
+15. Fare clic sul pulsante &quot;**Pubblica**&quot;. Viene visualizzato il messaggio &quot;Pubblicazione del frammento in corso. L’operazione potrebbe richiedere del tempo. Al termine riceverai una notifica.&quot; alla conferma. Il frammento è pronto per essere utilizzato per la creazione di modelli.
 
 ![Pulsante Pubblica e messaggio di conferma del frammento di pubblicazione](assets/building-content-fragments-click-publish-fragment-button.png)
 

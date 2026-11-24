@@ -7,9 +7,9 @@ exl-id: b79327e0-dfc4-49bf-a112-3675c825c479
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: a9a9e6b1a44f5f104e0454ab52da01fb47db425e
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1227'
 ht-degree: 0%
 ---
 
@@ -44,12 +44,12 @@ Personalization in Adobe Journey Optimizer consente di creare esperienze cliente
 Questa parte dell’esercizio semplifica la personalizzazione. Aggiungi nome e cognome all’e-mail in base al profilo. Personalization si basa sui dati del profilo gestiti dallo schema Profilo individuale XDM che hai definito. Lo schema Profilo individuale XDM è l’unico schema utilizzabile per personalizzare il contenuto in Journey Optimizer.
 
 1. Apri l’e-mail creata nei moduli precedenti.
-2. Aggiungi un blocco di testo sopra il titolo principale con il contenuto: **Ciao,**
+2. Aggiungi il testo **&quot;Ciao, &quot;**&quot; nel blocco del titolo principale immediatamente sopra la copia del titolo
 3. Fai clic sull&#39;icona **Personalizzazione**.
 
    ![Icona Personalizzazione nella barra degli strumenti del testo e-mail](assets/personalization-and-content-experimentation-click-personalization-icon.png)
 
-4. Cerca **F**&#x200B;**first Name**.
+4. Cerca **Nome**.
 
    ![Ricerca dell&#39;attributo First Name nel pannello di personalizzazione](assets/personalization-and-content-experimentation-search-first-name-field.png)
 
@@ -116,13 +116,13 @@ Create un&#39;altra immagine per le persone di età inferiore ai 40 anni (ricord
    ![Creazione e ridenominazione di una nuova variante in Età inferiore a 40](assets/personalization-and-content-experimentation-create-variant-age-below-40.png)
 
 5. Potresti potenzialmente creare un’immagine utilizzando Firefly visualizzando un messaggio di tipo &quot;ventenne&quot;. Tuttavia, per risparmiare tempo, nel toolkit è già presente un&#39;immagine denominata &quot;**variant-age-under-40.jpg**.
-6. Fai clic sull’immagine e Importa file multimediali.
+6. Fai clic sull&#39;immagine e **seleziona una risorsa**.
 
-   ![Clic sull&#39;immagine e Importa file multimediali per la variante seguente-40](assets/personalization-and-content-experimentation-click-image-import-media.png)
+   ![Fare clic sull&#39;immagine e selezionare una risorsa per la variante sotto-40](assets/personalization-and-content-experimentation-click-image-import-media.png)
 
-7. Seleziona l&#39;immagine **variant-age-below-40.jpg**. Importa il file facendo clic su **Avanti** e infine premi **Importa** nella cartella (dovresti trovarti già nella cartella per impostazione predefinita).
+7. Seleziona l&#39;immagine **variant-age-below-40.jpg** nella cartella Assets e fai clic su **Seleziona**.
 
-   ![Selezione e importazione dell&#39;immagine variant-age-under-40.jpg](assets/personalization-and-content-experimentation-select-below-40-image.png)
+   ![Selezione e importazione dell&#39;immagine variant-age-under-40.jpg](assets/personalization-and-content-experimentation-select-below-40-image-from-assets.png)
 
 8. Prova a passare da una variante all’altra per vedere un’immagine diversa applicata.
 

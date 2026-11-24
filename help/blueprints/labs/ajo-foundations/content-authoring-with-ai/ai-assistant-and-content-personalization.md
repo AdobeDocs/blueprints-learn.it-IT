@@ -7,9 +7,9 @@ exl-id: 1f30c920-7b2b-4343-b663-ebbed1ae4709
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 43a7d8153e8ad7e24162b9bb6c0d5bbcea784330
+source-git-commit: ea468b0eddaacdb7beaa1227c9c335371d089f34
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1311'
 ht-degree: 5%
 ---
 
@@ -91,19 +91,12 @@ Per questo esercizio, puoi migliorare l’e-mail creata utilizzando l’intellig
 
    >*Scrivi un titolo in grassetto per il lancio di iPhone 17. Mantieni il testo sotto le 10 parole*
 
-6. Fare clic su Impostazioni testo per modificare il tono e la strategia di comunicazione. Cambia la strategia di comunicazione in **FOMO (Paura di perdere)**, Lingua in **Inglese** e Tonalità in **Eccitante**. Utilizza una versione più breve riducendo la composizione.
+6. Fare clic su Impostazioni testo per modificare il tono e la strategia di comunicazione. Cambia la strategia di comunicazione in **FOMO (Paura di perdere)**, Lingua in **Inglese** e Tonalità in **Eccitante**.
 
    ![Pannello impostazioni testo con strategia di comunicazione FOMO e tono eccitante selezionato](assets/ai-assistant-and-content-personalization-text-settings-fomo-tone.png)
 
 7. Fai clic sul pulsante **Genera**
-8. Rivedi e seleziona la versione migliore,
-9. Se il testo è lungo, utilizzare il dispositivo di scorrimento per **&quot;testo più breve&quot;** e rigenerare il testo.
-
-
-
-   ![Cursore di testo più breve utilizzato per rigenerare un titolo più breve](assets/ai-assistant-and-content-personalization-shorter-text-slider.png)
-
-10. Quando sei soddisfatto del testo fai clic su **Seleziona**
+8. Rivedi e **Seleziona** la versione migliore
 
 ![Selezione del testo del titolo principale protagonista generato](assets/ai-assistant-and-content-personalization-select-generated-hero-text.png)
 
@@ -123,17 +116,17 @@ Questa volta, verifichi come l’intelligenza artificiale può aiutare a individ
 
    ![Contenuto originale selezionato automaticamente con le linee guida del brand prima della valutazione](assets/ai-assistant-and-content-personalization-evaluate-brand-alignment.png)
 
-4. Come previsto, puoi notare molti errori che violano le linee guida del brand. Anche se questi possono essere corretti utilizzando l&#39;intelligenza artificiale, in questo caso non si rivedono i materiali esistenti. Invece, puoi lasciarli così come sono e creare nuovi contenuti da zero che siano completamente allineati agli standard del marchio.
+4. Come previsto, puoi notare molti errori che violano le linee guida del brand. Anche se queste possono essere corrette utilizzando l’intelligenza artificiale, in questo caso non è necessario rivedere il testo del segnaposto. È invece possibile immettere tutto il nuovo contenuto per la descrizione.
 
    ![I risultati della valutazione IA mostrano violazioni delle linee guida del brand](assets/ai-assistant-and-content-personalization-brand-guideline-errors.png)
 
-5. Utilizza il nuovo paragrafo generato automaticamente utilizzando l’intelligenza artificiale con il prompt seguente. È possibile utilizzare lo stesso approccio per il testo della descrizione utilizzando il prompt riportato di seguito.
+5. Puoi seguire gli stessi passaggi del titolo principale precedente, utilizzando il prompt seguente oppure... per risparmiare tempo puoi anche sostituire il testo segnaposto con un paragrafo pronto fornito di seguito.
 
 Prompt:
 
 >*Scrivi una descrizione convincente del prodotto per il nuovo iPhone 17. Evidenzia le sue caratteristiche più straordinarie, come la fotocamera avanzata, la durata della batteria e le prestazioni. Il tono dovrebbe essere premium, emozionante, e facile da capire per un pubblico ampio. Mantieni il contenuto in 3 frasi.*
 
-Per risparmiare tempo, il testo è già stato creato per te. Copiare e incollare di seguito per ottenere il testo.
+Paragrafo pronto:
 
 >Scopri iPhone 17™, con una fotocamera avanzata per foto straordinarie, durata della batteria per tutto il giorno e prestazioni incredibilmente veloci che ti mantengono in testa. Non perdere questa esperienza innovativa.
 
@@ -171,7 +164,7 @@ Sappiamo che abbiamo l&#39;anno di nascita del profilo. Una delle esperienze che
 
    ![Linee guida per il marchio Connection 5G selezionate per lo stile di riferimento immagine](assets/ai-assistant-and-content-personalization-select-brand-guideline-reference.png)
 
-3. Fai clic su Carica immagine
+3. Fai clic su **Carica immagine**
 
    ![Pulsante Carica immagine nel pannello di stile riferimento di Firefly](assets/ai-assistant-and-content-personalization-click-upload-image.png)
 
@@ -186,43 +179,45 @@ Sappiamo che abbiamo l&#39;anno di nascita del profilo. Una delle esperienze che
 
 ## Scegli impostazioni immagine
 
-Scegli le **impostazioni immagine**:
+Scorri verso il basso nella colonna sinistra e fai clic su **Altre impostazioni**
+
+![Seleziona altre impostazioni](assets/ai-assistant-and-content-personalization-select-more-settings.png)
 
 1. Scegliere le impostazioni seguenti:
    - **Rapporto:** Orizzontale (4:3)
    - **Tipo di contenuto:** foto
    - **Colore e tonalità:** Tono fresco
    - **Illuminazione:** Illuminazione Drammatica
-1. Premi il pulsante **Genera**
+
+2. Premi il pulsante **Genera**
 
 ![Impostazioni dell&#39;immagine di Firefly, inclusi rapporto, tipo di contenuto e illuminazione, prima della generazione](assets/ai-assistant-and-content-personalization-firefly-image-settings.png)
 
+3. Seleziona le varianti a destra per visualizzarle e **Salva** alcuni dei tuoi preferiti nella cartella Assets per utilizzarli in un secondo momento. Puoi anche fare clic su Genera altre volte per ottenere altre varianti.
 
-## Seleziona e inserisci l&#39;immagine generata
+![Sfoglia le varianti e salva alcune](assets/ai-assistant-and-content-personalization-browse-image-variations.png)
 
-1. Rivedi i risultati di Firefly controllando tutte le immagini generate.
+![Salva nella cartella Assets](assets/ai-assistant-and-content-personalization-save-image-variations-into-assets.png)
 
-   ![Analisi dei risultati dell&#39;immagine generati da Firefly](assets/ai-assistant-and-content-personalization-review-firefly-results.png)
+4. Quindi per il momento è sufficiente **Annulla** dall&#39;interfaccia di generazione dell&#39;immagine.
 
-2. Fai clic su **Seleziona** per l&#39;immagine scelta desiderata.
 
-   ![Selezione dell&#39;immagine Firefly generata desiderata](assets/ai-assistant-and-content-personalization-select-firefly-image.png)
-
-3. Se viene richiesto un modale di caricamento, fare clic su **Avanti**.
-
-   ![Carica la richiesta modale per fare clic su Avanti](assets/ai-assistant-and-content-personalization-upload-modal-next.png)
-
-4. Quindi fare clic su **Importa**.
-
-![Pulsante Importa per inserire l&#39;immagine selezionata](assets/ai-assistant-and-content-personalization-click-import-button.png)
 
 ## Finalizzare la progettazione dei blocchi
 
-Applicate un raggio di bordo arrotondato pari a 10 per renderlo moderno, se avete tempo.
+1. Nell&#39;interfaccia di e-mail designer, fare clic su **Sfoglia** nel blocco immagine.
 
-Dopo alcune iterazioni e varianti, viene creata la progettazione finale. Il layout finale è simile all&#39;esempio.
+![Fare clic su Sfoglia nel blocco immagine](assets/ai-assistant-and-content-personalization-click-browse-in-image-block.png)
+
+2. Seleziona una delle varianti e fai clic su **Seleziona**
+
+![Seleziona una delle varianti](assets/ai-assistant-and-content-personalization-select-one-of-your-variations.png)
+
+3. Seleziona la scheda **Stili** nella colonna di destra e applica all&#39;immagine un raggio del bordo arrotondato di 10
 
 ![Progettazione del blocco e-mail finale con angoli immagine arrotondati](assets/ai-assistant-and-content-personalization-final-block-design.png)
+
+Dopo alcune iterazioni e varianti, viene creata la progettazione finale. Il layout finale è simile all&#39;esempio precedente.
 
 A questo punto, dovresti aver acquisito sicurezza nell’utilizzo dell’intelligenza artificiale per accelerare e migliorare la creazione dei contenuti.
 

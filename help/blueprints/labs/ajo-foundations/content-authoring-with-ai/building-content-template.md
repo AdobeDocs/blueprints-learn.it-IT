@@ -4,13 +4,11 @@ description: Scopri come creare un modello di e-mail riutilizzabile in Adobe Jou
 doc-type: article
 solution: Experience Platform
 exl-id: e73f06b1-be8a-4096-949c-900db13db9f8
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 0ba4d425f258e4c02e1563cdec2da1f815bfcc65
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '842'
 ht-degree: 0%
-
 ---
-
 
 # Creazione di un modello di contenuto
 
@@ -104,7 +102,7 @@ Seleziona la terza opzione. Fai clic su **Importa HTML**
 
 ### Pannello sinistro
 
-I componenti &quot;**Strutture**&quot; e &quot;**Contenuti**&quot; in Adobe Journey Optimizer (AJO) sono elementi essenziali utilizzati per la progettazione di e-mail, pagine di destinazione e frammenti di contenuto. Le strutture definiscono il framework di layout, mentre il contenuto fornisce i blocchi predefiniti effettivi posizionati all’interno di tali layout.
+Nella scheda Componenti i componenti &quot;**Strutture**&quot; e &quot;**Contenuti**&quot; in Adobe Journey Optimizer (AJO) sono elementi essenziali utilizzati per la progettazione di e-mail, pagine di destinazione e frammenti di contenuto. Le strutture definiscono il framework di layout, mentre il contenuto fornisce i blocchi predefiniti effettivi posizionati all’interno di tali layout.
 
 La sezione body in Adobe Journey Optimizer è il contenitore principale per l’e-mail o il contenuto della pagina. Funge da radice dello spazio di progettazione visiva, dove tutti i componenti struttura (colonne, layout) e contenuto (testo, immagini, pulsanti, ecc.) sono nidificati.
 
