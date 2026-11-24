@@ -4,7 +4,7 @@ description: Scopri come suddividere una progettazione e-mail in frammenti riuti
 doc-type: article
 solution: Experience Platform
 exl-id: 253a9332-dc08-420d-ac11-2bf342f0dc38
-source-git-commit: d935e9a5179579e35c6aa5fe9e495f5bba1a1b03
+source-git-commit: 71aca15b0ca0257d3ea0a84b52fed76ca4e372f0
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 0%
@@ -132,33 +132,31 @@ Crea un frammento di intestazione con cui iniziare. Tuttavia, prima di creare il
 
 10. Fai clic su **&quot;Sfoglia&quot;** per selezionare l&#39;immagine del logo che ti è stata fornita e che è già stata caricata in Assets.
 
-![Fare clic sul pulsante Sfoglia per selezionare l&#39;immagine del logo](assets/building-content-fragments-click-browse-button.png)
+    ![Fare clic sul pulsante Sfoglia per selezionare l&#39;immagine del logo](assets/building-content-fragments-click-browse-button.png)
 
-&#x200B;11. Vai alla cartella, fai clic sull&#39;immagine del logo (*C5G-Logo.png*) e fai clic su **Seleziona**.
+11. Vai alla cartella, fai clic sull&#39;immagine del logo (*C5G-Logo.png*) e fai clic su **Seleziona**.
 
-![Selezione di C5G-Logo.png dalla cartella Assets](assets/building-content-fragments-select-logo-from-assets.png)
+    ![Selezione di C5G-Logo.png dalla cartella Assets](assets/building-content-fragments-select-logo-from-assets.png)
 
-&#x200B;12. Il logo è posizionato correttamente, ma è troppo grande e deve essere ridimensionato. Per ridimensionare il logo, aggiornarne le proprietà. Fai clic sulla scheda **Stili** nella colonna di destra e imposta la larghezza su 40% trascinando il dispositivo di scorrimento, come illustrato di seguito.
+12. Il logo è posizionato correttamente, ma è troppo grande e deve essere ridimensionato. Per ridimensionare il logo, aggiornarne le proprietà. Fai clic sulla scheda **Stili** nella colonna di destra e imposta la larghezza su 40% trascinando il dispositivo di scorrimento, come illustrato di seguito.
 
->[!NOTE]
->
->Quando il pulsante di attivazione è attivato, il numero 40 rappresenta % e non i pixel. Se desideri un valore assoluto di precisione pixel, imposta il pulsante su px.
+    >[!NOTE]
+    >
+    >Quando il pulsante di attivazione è attivato, il numero 40 rappresenta % e non i pixel. Se desideri un valore assoluto di precisione pixel, imposta il pulsante su px.
 
+    ![Dispositivo di scorrimento della larghezza della scheda di stile impostato su 40% per ridimensionare il logo](assets/building-content-fragments-resize-logo-width-slider.png)
 
+13. Fare clic su **&quot;Salva&quot;** per salvare il frammento. Ricevi una notifica con barra verde alla conferma.
 
-![Dispositivo di scorrimento della larghezza della scheda di stile impostato su 40% per ridimensionare il logo](assets/building-content-fragments-resize-logo-width-slider.png)
+    ![Barra di conferma verde dopo il salvataggio del frammento](assets/building-content-fragments-save-fragment-confirmation.png)
 
-&#x200B;13. Fare clic su **&quot;Salva&quot;** per salvare il frammento. Ricevi una notifica con barra verde alla conferma.
+14. Il frammento salvato è in modalità bozza. Prima di utilizzarlo, è necessario pubblicarlo. Fai clic sul pulsante **indietro**.
 
-![Barra di conferma verde dopo il salvataggio del frammento](assets/building-content-fragments-save-fragment-confirmation.png)
+    ![Pulsante Indietro per lasciare il frammento bozza prima della pubblicazione](assets/building-content-fragments-click-back-button-draft.png)
 
-&#x200B;14. Il frammento salvato è in modalità bozza. Prima di utilizzarlo, è necessario pubblicarlo. Fai clic sul pulsante **indietro**.
+15. Fare clic sul pulsante &quot;**Pubblica**&quot;. Viene visualizzato il messaggio &quot;Pubblicazione del frammento in corso. L’operazione potrebbe richiedere del tempo. Al termine riceverai una notifica.&quot; alla conferma. Il frammento è pronto per essere utilizzato per la creazione di modelli.
 
-![Pulsante Indietro per lasciare il frammento bozza prima della pubblicazione](assets/building-content-fragments-click-back-button-draft.png)
-
-&#x200B;15. Fare clic sul pulsante &quot;**Pubblica**&quot;. Viene visualizzato il messaggio &quot;Pubblicazione del frammento in corso. L’operazione potrebbe richiedere del tempo. Al termine riceverai una notifica.&quot; alla conferma. Il frammento è pronto per essere utilizzato per la creazione di modelli.
-
-![Pulsante Pubblica e messaggio di conferma del frammento di pubblicazione](assets/building-content-fragments-click-publish-fragment-button.png)
+    ![Pulsante Pubblica e messaggio di conferma del frammento di pubblicazione](assets/building-content-fragments-click-publish-fragment-button.png)
 
 Lo stato verrà modificato in **&quot;Live&quot;**. A questo punto, hai completato la creazione di un frammento di intestazione, che verrà utilizzato nel passaggio successivo.
 
