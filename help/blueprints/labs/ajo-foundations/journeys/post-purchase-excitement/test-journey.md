@@ -7,9 +7,9 @@ exl-id: fc3dbfb9-b44b-4866-acc9-398a8b52f2b9
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 929145a02a8a2f3505e9e12ff605c500eac1cc79
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '429'
 ht-degree: 0%
 ---
 
@@ -21,9 +21,13 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
 ## Test del percorso
 
-1. Fai clic su **Percorsi** nella barra a sinistra e sulla **scheda Sfoglia** se non trovi un elenco di Percorsi
+1. Se non sei già nel percorso, fai clic su **Percorsi** nella barra a sinistra e sulla **scheda Sfoglia** se non trovi un elenco di Percorsi
 2. Fai clic sul **Percorso** per aprirlo
-3. Fai clic su **Avvisi** e assicurati che non vi siano errori (gli avvisi sono corretti)
+3. Fai clic sul pulsante **Convalida** in alto a destra
+
+   ![Fare clic per convalidare il percorso](assets/test-journey-click-validate.png)
+
+4. Fai clic su **Avvisi** e assicurati che non ci siano errori (gli avvisi vanno bene)
 
    ![Il pannello Avvisi non mostra errori dopo l&#39;apertura del percorso](assets/test-journey-alerts-no-errors.png)
 
@@ -33,9 +37,11 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
    >
    >Indica che in una variante e-mail manca il collegamento di rinuncia
 
-4. Fai clic su **Simula** e, a sinistra, seleziona **Modalità test**
+5. Fai clic su **Simula**, quindi seleziona **Modalità test**
 
-   ![Modalità test selezionata in Simula sul lato sinistro](assets/test-journey-select-test-mode.png)
+   ![Stampa simulazione &#x200B;](assets/test-journey-select-test-mode.png)
+
+   ![Modalità di prova selezionata nel popup](assets/test-journey-select-test-mode-in-popup.png)
 
 
 
@@ -45,11 +51,11 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
 
 
-5. Fai clic su **Attiva un evento** e compila le seguenti proprietà:
+6. Fai clic su **Attiva un evento** a sinistra e compila le seguenti proprietà:
    - **Tipo evento**: `orders.shipped`
    - **E-mail personale**: `henry.creel@emailsim.io`
    - **ID ordine**: `123`
-6. Fai clic su **Invia** (la risposta richiede alcuni secondi dopo aver fatto clic su Invia)
+7. Fai clic su **Invia** (la risposta richiede alcuni secondi dopo aver fatto clic su Invia)
 
    ![Attiva un modulo evento compilato e Invia selezionato](assets/test-journey-trigger-event-send.png)
 
@@ -65,7 +71,7 @@ Utilizza gli strumenti di test del percorso per verificare che l’attivatore de
 
 
 
-7. In **Risultati** -> Fai clic su **Mostra registro** a sinistra
+8. In **Risultati** -> Fai clic su **Mostra registro** a sinistra
 
 ![Mostra opzione di registro in Risultati dopo l&#39;attivazione dell&#39;evento di test](assets/test-journey-show-log-results.png)
 
@@ -106,12 +112,12 @@ Dovresti vedere qualcosa di simile a questo nel registro:
 
 
 
-1. **Chiudi** il browser **scheda**
+1. **Chiudi** il browser **scheda** per il registro
 1. **Chiudi modalità test** in alto a destra
 
    ![Pulsante Chiudi modalità test in alto a destra](assets/test-journey-close-test-mode.png)
 
-1. Fai clic su **Pubblica** il Percorso in alto a destra
+1. Fai clic di nuovo su **Convalida** e quindi **Pubblica** il Percorso in alto a destra
 
    ![Pulsante Pubblica per il Percorso in alto a destra](assets/test-journey-publish-journey.png)
 

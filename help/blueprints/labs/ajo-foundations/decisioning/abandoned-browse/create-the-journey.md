@@ -7,9 +7,9 @@ exl-id: 34f56d95-564b-4cf6-b105-22da276e8e41
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 999b0f4e8d401991e099c0598b8031ceb632d8fd
+source-git-commit: e973383e71d942cfeb86864cb92caddac6604d9a
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1740'
 ht-degree: 0%
 ---
 
@@ -19,9 +19,8 @@ ht-degree: 0%
 
 1. Se necessario, espandi la voce di menu **Gestione Percorsi** nella barra a sinistra e fai clic su **Percorsi**. Arrivi alla pagina &quot;Percorsi&quot;.
 1. Fai clic sul pulsante blu **Crea Percorso**.
-1. Quando viene visualizzata la sovrapposizione &#39;Crea Percorso&#39;, seleziona **Crea da zero** e fai clic su **Conferma**
 1. Nella barra a destra, assegna al Percorso il nome **iPhone 17 Abbandona Sfoglia** e fai clic sul pulsante blu **Salva** per iniziare ad aggiungere azioni all&#39;area di lavoro del Percorso.
-1. Trascina l&#39;evento **Qualificazione del pubblico** nell&#39;area di lavoro.
+1. Fai clic sull&#39;icona Più dopo l&#39;avvio del percorso e aggiungi l&#39;evento **Qualificazione del pubblico** nell&#39;area di lavoro.
 1. Nella barra a destra, fai clic sull&#39;icona **Matita** per selezionare il pubblico per questo evento.
 1. Seleziona **dep: interessato al pubblico di iPhone 17**.
 1. Verificare che l&#39;elenco a discesa **Namespace** sia impostato su **customerID.** A questo punto, il Percorso si presenta così:
@@ -38,9 +37,9 @@ ht-degree: 0%
 
 ## Configurare il CBE e i criteri decisionali
 
-1. Espandi il pannello a soffietto **Azioni** a sinistra dell&#39;area di lavoro, trascina l&#39;elemento **Azione** nell&#39;area di lavoro e collegalo al primo nodo.
+1. Fai clic sull&#39;icona più dopo aver qualificato il pubblico e aggiungi l&#39;elemento **Azione** nell&#39;area di lavoro.
 1. Quando viene visualizzata la sovrapposizione &#39;Seleziona tipo di azione&#39;, seleziona l&#39;azione **Esperienza basata su codice** e fai clic sul pulsante blu **Aggiungi**.
-1. Nelle proprietà &quot;Azione\:Esperienza basata su codice&quot; ora visibili, fai clic sul pulsante **Configura azione**.
+1. Nelle proprietà ora visibili di &quot;Azione\:Esperienza basata su codice&quot;, fai clic sul pulsante **Configura azione**.
 
    ![Proprietà di azione dell&#39;esperienza basata su codice con il pulsante Configura azione](assets/create-the-journey-configure-action-button.png)
 
@@ -112,7 +111,7 @@ ht-degree: 0%
    >
    >Ricorda che hai aggiunto attributi allo schema XDM dell’offerta standard, in particolare la marca, il modello e il livello. Quindi, al momento della creazione delle offerte, hai popolato questi attributi. Ora puoi aggiungere tali attributi come variabili compilate con i valori dell’offerta selezionata. Il campo trackingToken è un valore generato dal sistema e utilizzato per tracciare clic e impression.
 
-1. Posizionare il cursore tra **&quot;&quot;** del nodo &#39;make&#39;. Inserire la creazione dell&#39;offerta spostandosi nel menu del criterio di decisione sul nodo **\_dep > Dispositivo > Rendi**.  Fai clic sull&#39;icona **+** nell&#39;elemento **Make** per visualizzare l&#39;elemento nell&#39;editor.
+1. Posizionare il cursore tra **&quot;&quot;** del nodo &#39;make&#39;. Inserire la creazione dell&#39;offerta spostandosi nel menu del criterio di decisione sul nodo **\_dep > Dispositivo > Rendi**.  Fai clic sull&#39;icona **+** nell&#39;elemento **Make** per visualizzare l&#39;elemento nell&#39;editor. Il nome tenant che inizia con un carattere di sottolineatura può essere diverso per l’ambiente in uso, in questo caso è _dep.
 
    ![Crea un attributo dal criterio di decisione popolato nell&#39;editor JSON](assets/create-the-journey-populate-make-attribute.png)
 
@@ -134,11 +133,11 @@ ht-degree: 0%
 
    ![Area di lavoro di Percorso dopo il ritorno dall&#39;editor esperienze basato su codice](assets/create-the-journey-return-to-canvas.png)
 
-1. Fai clic sul pulsante blu **Salva** per salvare il nodo dell&#39;azione CBE. Il Percorso si presenta ora come segue:
+1. Fai clic sul pulsante blu **Salva** per salvare il nodo dell&#39;azione Esperienza basata su codice. Il Percorso si presenta ora come segue:
 
    ![Area di lavoro Percorsi con il nodo azioni CBE completato](assets/create-the-journey-completed-canvas.png)
 
-1. Al termine del Percorso, fai clic sul pulsante blu **Pubblica** in alto a destra e di nuovo **Pubblica** quando viene visualizzata la casella di conferma. Dopo un momento o due, vedete che il vostro Percorso è ora live!
+1. Al termine del Percorso, fare clic su **Convalida**, quindi fare clic sul pulsante **Pubblica** in alto a destra e di nuovo su **Pubblica** quando viene visualizzata la casella di conferma. Dopo un momento o due, vedete che il vostro Percorso è ora live!
 
 ![Pubblicato e live iPhone 17 Abbandona il Percorso di navigazione](assets/create-the-journey-published-live.png)
 

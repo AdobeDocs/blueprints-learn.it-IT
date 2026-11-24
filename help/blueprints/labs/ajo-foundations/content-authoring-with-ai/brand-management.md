@@ -7,9 +7,9 @@ exl-id: 84be70f5-6c3b-40e2-ad38-ac737363f845
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 89f451f2f0a0f078cd46a76bd7775cad1c11b46b
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1409'
 ht-degree: 0%
 ---
 
@@ -26,7 +26,7 @@ Al termine di questo modulo, sarai in grado di:
 - Carica ed estrai informazioni sulle linee guida del brand da un PDF.
 - Rivedi e perfeziona i dettagli del brand nelle schede Marchio, Stile di scrittura e Contenuto visivo.
 - Aggiungi una regola di esclusione per evitare la copia di pulsanti e-mail push.
-- Pubblica il brand in modo che sia disponibile per modelli, frammenti, AI Assistant e Brand Alignment.
+- Pubblica il brand in modo che sia disponibile per modelli, frammenti, IA e Allineamento brand.
 
 Scarica file - [toolkit.zip](assets/toolkit.zip)
 
@@ -131,7 +131,7 @@ La scheda **Stile scrittura** definisce la modalità di comunicazione del brand.
 
 ![Scheda Stile scrittura che definisce il tono del brand, la formulazione e le regole legali](assets/brand-management-writing-style-tab.png)
 
-Puoi aggiungere e perfezionare le regole in linguaggio naturale e anche applicarle solo a canali specifici, come e-mail o SMS. Questo offre un controllo flessibile ma preciso sul modo in cui l’Assistente AI e gli autori di contenuti devono scrivere.
+Puoi aggiungere e perfezionare le regole in linguaggio naturale e anche applicarle solo a canali specifici, come e-mail o SMS. Questo offre un controllo flessibile ma preciso sul modo in cui l’intelligenza artificiale e gli autori di contenuti dovrebbero scrivere.
 
 ### Contenuto visivo
 
@@ -223,9 +223,9 @@ Quindi, migliora il brand aggiungendo una regola che assicuri che i pulsanti e-m
 
 7. Fai clic su **Salva**.
 
-Questa regola si applica ogni volta che l’Assistente AI o gli autori lavorano sulla copia del pulsante e-mail, mantenendo i CTA allineati con il tono Connection 5G.
+Questa regola si applica ovunque IA o autori lavorino sulla copia del pulsante e-mail, mantenendo i CTA allineati con il tono Connection 5G.
 
-![Regola di esclusione pulsante e-mail applicata per l&#39;Assistente all&#39;intelligenza artificiale e gli autori](assets/brand-management-email-button-exclusion-rule-applied.png)
+![Regola di esclusione pulsante e-mail applicata per IA e autori](assets/brand-management-email-button-exclusion-rule-applied.png)
 
 >[!NOTE]
 >
@@ -264,6 +264,6 @@ In questo modulo:
 - È stato caricato il file delle linee guida per il brand e ad AJO è stato consentito di estrarre le informazioni chiave.
 - Sono state esaminate e perfezionate le schede Informazioni sul marchio, Stile di scrittura e Contenuto visivo.
 - È stata aggiunta una regola di esclusione specifica in modo che i pulsanti e-mail non vengano mai premuti.
-- Pubblicato il brand in modo che possa alimentare Assistente AI, Allineamento brand, modelli e frammenti.
+- Pubblicato il brand in modo che possa alimentare AI, Allineamento brand, modelli e frammenti.
 
 Ora disponi di un profilo di marchio **Connessione 5G** completamente configurato e pubblicato che verrà utilizzato in tutto il resto del laboratorio per mantenere tutti i contenuti nel marchio.

@@ -7,9 +7,9 @@ exl-id: 63c994f2-4b6b-42e9-aa82-cb6697390a08
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 027d4d3373dd18fa4711e5c403465c03d374de70
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '678'
 ht-degree: 0%
 ---
 
@@ -106,11 +106,11 @@ Quando selezioni Canale come messaggio mobile, viene visualizzata una nuova sezi
 3. Avanti nella sottosezione **Dimensione di esecuzione** assicurati che le seguenti impostazioni siano configurate come segue:
    - **Consegna su messaggio per:** `Target + Secondary Dimension`
    - **Dimension di destinazione profilo:** `dep-rel: Customer Account - customer_id`
-   - **Dimension secondario:** `Customer Line`
+   - **Dimension secondario:** `dep-rel: Customer Line`
 
    ![Impostazioni della dimensione di esecuzione con la dimensione di destinazione e la dimensione secondaria](assets/configure-sms-channel-execution-dimension-setup.png)
 
-   ![Dimension secondario impostato su Customer Line nelle impostazioni della dimensione di esecuzione &quot;Dimension secondario&quot;](assets/configure-sms-channel-secondary-dimension-detail.png "Dimension secondario")
+   ![Dimension secondario impostato su dep-rel: linea cliente nelle impostazioni della dimensione di esecuzione &quot;Dimension secondario&quot;](assets/configure-sms-channel-secondary-dimension-detail.png "Dimension secondario")
 
    >[!NOTE]
    >
